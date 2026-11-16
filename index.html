@@ -3,57 +3,199 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Casting Weekly | Something exciting is coming</title>
-<meta name="description" content="Casting Weekly. Something exciting is coming.">
+<title>Casting Weekly</title>
+<meta name="description" content="Casting Weekly is being rebuilt as a live map of who's making what, and with whom. Coming soon.">
+<meta name="theme-color" content="#07090c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root { --ink:#0d0b0a; --gold:#d8b36a; --cream:#f3ebdc; --muted:#9a8f7f; }
+  :root {
+    --bg:#07090c; --ink:#eef1f4; --muted:#8a94a0; --dim:#4a535d;
+    --accent:#5eead4; --accent2:#a78bfa;
+  }
   * { box-sizing:border-box; margin:0; padding:0; }
-  html,body { height:100%; }
+  html,body { height:100%; background:var(--bg); }
   body {
-    background:var(--ink); color:var(--cream);
-    font-family:'Inter',system-ui,sans-serif; font-weight:300;
-    display:flex; flex-direction:column; align-items:center; justify-content:center;
-    min-height:100vh; padding:2rem; overflow:hidden; text-align:center; position:relative;
+    color:var(--ink); font-family:'Inter',system-ui,sans-serif;
+    min-height:100vh; overflow:hidden; -webkit-font-smoothing:antialiased;
   }
-  .spot {
-    position:absolute; top:-30vh; left:50%; width:120vmax; height:120vmax;
-    transform:translateX(-50%);
-    background:radial-gradient(ellipse at center top, rgba(216,179,106,.22) 0%, rgba(216,179,106,.06) 30%, transparent 60%);
-    pointer-events:none; animation:breathe 7s ease-in-out infinite;
+  canvas { position:fixed; inset:0; width:100%; height:100%; display:block; }
+  .veil {
+    position:fixed; inset:0; pointer-events:none;
+    background:radial-gradient(ellipse 60% 55% at 30% 50%, rgba(7,9,12,.92) 0%, rgba(7,9,12,.55) 55%, rgba(7,9,12,0) 100%);
   }
-  @keyframes breathe { 0%,100%{opacity:.75} 50%{opacity:1} }
-  .wrap { position:relative; max-width:44rem; animation:rise 1.4s ease-out both; }
-  @keyframes rise { from{opacity:0; transform:translateY(14px)} to{opacity:1; transform:none} }
-  .brand {
-    font-weight:500; letter-spacing:.42em; text-transform:uppercase;
-    font-size:.78rem; color:var(--gold); margin-bottom:2.6rem;
+  .page {
+    position:relative; z-index:2; min-height:100vh;
+    display:flex; flex-direction:column; justify-content:space-between;
+    padding:clamp(1.5rem,4vw,3rem); pointer-events:none;
   }
-  .rule { width:3.5rem; height:1px; background:var(--gold); margin:0 auto 2.6rem; opacity:.7; }
+  header, footer {
+    display:flex; justify-content:space-between; align-items:center;
+    font-family:'JetBrains Mono',monospace; font-size:.75rem; letter-spacing:.08em;
+    color:var(--muted); text-transform:uppercase;
+  }
+  .logo { color:var(--ink); font-family:'Inter',sans-serif; font-weight:600; letter-spacing:.02em; font-size:.95rem; text-transform:none; }
+  .logo span { color:var(--accent); }
+  .status { display:flex; align-items:center; gap:.6rem; }
+  .dot { width:7px; height:7px; border-radius:50%; background:var(--accent); box-shadow:0 0 10px var(--accent); animation:blink 2s ease-in-out infinite; }
+  @keyframes blink { 50% { opacity:.25; } }
+  main { max-width:40rem; animation:in 1s ease-out both; }
+  @keyframes in { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:none; } }
+  .kicker {
+    font-family:'JetBrains Mono',monospace; font-size:.78rem; color:var(--accent);
+    letter-spacing:.06em; margin-bottom:1.4rem;
+  }
   h1 {
-    font-family:'Playfair Display',Georgia,serif; font-weight:500;
-    font-size:clamp(2.4rem,7vw,4.6rem); line-height:1.08; letter-spacing:-.01em;
+    font-weight:600; font-size:clamp(2.4rem,6.2vw,4.6rem); line-height:1.02; letter-spacing:-.035em;
   }
-  h1 em { font-style:italic; color:var(--gold); }
-  p.sub { margin-top:1.8rem; color:var(--muted); font-size:clamp(1rem,2.2vw,1.15rem); line-height:1.6; }
-  footer {
-    position:absolute; bottom:1.6rem; left:0; right:0;
-    font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:#5f574c;
+  h1 .soft { color:var(--muted); }
+  p.sub {
+    margin-top:1.6rem; max-width:32rem; color:var(--muted);
+    font-size:clamp(1rem,1.6vw,1.12rem); line-height:1.6;
   }
-  @media (prefers-reduced-motion:reduce){ .spot,.wrap{animation:none} }
+  p.sub strong { color:var(--ink); font-weight:500; }
+  .legend { display:flex; gap:1.4rem; flex-wrap:wrap; }
+  .legend i { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:.5rem; vertical-align:middle; }
+  @media (max-width:640px) {
+    .veil { background:radial-gradient(ellipse 120% 60% at 50% 50%, rgba(7,9,12,.9) 0%, rgba(7,9,12,.5) 60%, rgba(7,9,12,.1) 100%); }
+    .legend { display:none; }
+  }
+  @media (prefers-reduced-motion:reduce) { main,.dot { animation:none; } }
 </style>
 </head>
 <body>
-  <div class="spot" aria-hidden="true"></div>
-  <main class="wrap">
-    <div class="brand">Casting Weekly</div>
-    <div class="rule" aria-hidden="true"></div>
-    <h1>Something <em>exciting</em><br>is coming.</h1>
-    <p class="sub">The curtain is down while we set the stage. Check back soon.</p>
-  </main>
-  <footer>&copy; <span id="y">2026</span> Casting Weekly</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <canvas id="g" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="page">
+    <header>
+      <div class="logo">Casting Weekly<span>.</span></div>
+      <div class="status"><span class="dot"></span>Mapping in progress</div>
+    </header>
+    <main>
+      <div class="kicker">// coming soon</div>
+      <h1>Every project.<br>Every person.<br><span class="soft">Every connection.</span></h1>
+      <p class="sub">Casting Weekly is being rebuilt as a live map of the industry: <strong>who's making what, with whom, and what's coming next.</strong></p>
+    </main>
+    <footer>
+      <div class="legend">
+        <span><i style="background:#5eead4"></i>Projects</span>
+        <span><i style="background:#a78bfa"></i>People</span>
+        <span><i style="background:#eef1f4"></i>Companies</span>
+      </div>
+      <div>&copy; <span id="y">2026</span> Casting Weekly</div>
+    </footer>
+  </div>
+<script>
+(() => {
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const c = document.getElementById('g'), x = c.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const TYPES = [
+    { col:'94,234,212', labels:['Feature film','Limited series','West End','Tour','Pilot','Revival','Musical','Drama'] },
+    { col:'167,139,250', labels:['Casting director','Producer','Director','Writer','Showrunner','Agent','Composer'] },
+    { col:'238,241,244', labels:['Studio','Production co.','Theatre','Streamer','Broadcaster','Agency'] }
+  ];
+  let W, H, dpr, nodes = [], edges = [], pulses = [], mouse = { x:-9999, y:-9999 };
+
+  function build() {
+    dpr = Math.min(devicePixelRatio || 1, 2);
+    W = innerWidth; H = innerHeight;
+    c.width = W * dpr; c.height = H * dpr; x.setTransform(dpr,0,0,dpr,0,0);
+    const n = Math.max(40, Math.min(110, Math.round(W * H / 14000)));
+    nodes = [];
+    for (let i = 0; i < n; i++) {
+      const t = Math.random() < .42 ? 1 : (Math.random() < .6 ? 0 : 2);
+      const hub = Math.random() < .14;
+      nodes.push({
+        x: Math.random() * W, y: Math.random() * H,
+        vx: (Math.random() - .5) * .18, vy: (Math.random() - .5) * .18,
+        t, hub, r: hub ? 3.4 : 1.6 + Math.random() * 1.2,
+        label: hub ? TYPES[t].labels[Math.floor(Math.random() * TYPES[t].labels.length)] : null,
+        glow: 0
+      });
+    }
+    // connect each node to a few nearest neighbours, hubs get more
+    edges = [];
+    const seen = new Set();
+    nodes.forEach((a, i) => {
+      const k = a.hub ? 5 : 2;
+      nodes.map((b, j) => ({ j, d: (a.x-b.x)**2 + (a.y-b.y)**2 }))
+        .filter(o => o.j !== i).sort((p, q) => p.d - q.d).slice(0, k)
+        .forEach(o => { const key = i < o.j ? i+'-'+o.j : o.j+'-'+i; if (!seen.has(key)) { seen.add(key); edges.push([i, o.j]); } });
+    });
+  }
+
+  function spawnPulse() {
+    if (!edges.length) return;
+    const e = edges[Math.floor(Math.random() * edges.length)];
+    const flip = Math.random() < .5;
+    pulses.push({ a: flip ? e[1] : e[0], b: flip ? e[0] : e[1], p: 0, s: .006 + Math.random() * .01, hops: 2 + Math.floor(Math.random() * 3) });
+  }
+
+  function step() {
+    x.clearRect(0, 0, W, H);
+    for (const n of nodes) {
+      if (!reduce) { n.x += n.vx; n.y += n.vy; }
+      if (n.x < -20) n.x = W + 20; if (n.x > W + 20) n.x = -20;
+      if (n.y < -20) n.y = H + 20; if (n.y > H + 20) n.y = -20;
+      const md = Math.hypot(n.x - mouse.x, n.y - mouse.y);
+      n.glow = Math.max(n.glow * .94, md < 140 ? 1 - md / 140 : 0);
+    }
+    // edges
+    for (const [i, j] of edges) {
+      const a = nodes[i], b = nodes[j];
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (d > 320) continue;
+      const g = Math.max(a.glow, b.glow);
+      x.strokeStyle = `rgba(150,170,190,${(1 - d / 320) * (.24 + g * .5)})`;
+      x.lineWidth = .7 + g;
+      x.beginPath(); x.moveTo(a.x, a.y); x.lineTo(b.x, b.y); x.stroke();
+    }
+    // pulses travel along edges and hop on through the network
+    for (let k = pulses.length - 1; k >= 0; k--) {
+      const q = pulses[k], a = nodes[q.a], b = nodes[q.b];
+      q.p += q.s;
+      const px = a.x + (b.x - a.x) * q.p, py = a.y + (b.y - a.y) * q.p;
+      x.fillStyle = `rgba(${TYPES[b.t].col},.95)`;
+      x.shadowColor = `rgba(${TYPES[b.t].col},1)`; x.shadowBlur = 12;
+      x.beginPath(); x.arc(px, py, 1.8, 0, 7); x.fill(); x.shadowBlur = 0;
+      if (q.p >= 1) {
+        b.glow = Math.max(b.glow, .9);
+        const next = edges.filter(e => e.includes(q.b) && !e.includes(q.a));
+        if (q.hops > 0 && next.length) {
+          const e = next[Math.floor(Math.random() * next.length)];
+          q.a = q.b; q.b = e[0] === q.b ? e[1] : e[0]; q.p = 0; q.hops--;
+        } else pulses.splice(k, 1);
+      }
+    }
+    // nodes and hub labels
+    x.font = '500 10px "JetBrains Mono", monospace';
+    for (const n of nodes) {
+      const col = TYPES[n.t].col;
+      if (n.hub) {
+        x.strokeStyle = `rgba(${col},${.25 + n.glow * .5})`;
+        x.lineWidth = 1;
+        x.beginPath(); x.arc(n.x, n.y, n.r + 4 + n.glow * 3, 0, 7); x.stroke();
+      }
+      x.fillStyle = `rgba(${col},${.55 + n.glow * .45})`;
+      x.beginPath(); x.arc(n.x, n.y, n.r + n.glow * 1.5, 0, 7); x.fill();
+      if (n.label) {
+        x.fillStyle = `rgba(${col},${.45 + n.glow * .5})`;
+        x.fillText(n.label.toUpperCase(), n.x + n.r + 9, n.y + 3.5);
+      }
+    }
+    if (!reduce && Math.random() < .05 && pulses.length < 14) spawnPulse();
+    if (!reduce) requestAnimationFrame(step);
+  }
+
+  addEventListener('resize', () => { build(); if (reduce) step(); });
+  addEventListener('pointermove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+  addEventListener('pointerleave', () => { mouse.x = mouse.y = -9999; });
+  build();
+  for (let i = 0; i < 6; i++) spawnPulse();
+  step();
+})();
+</script>
 </body>
 </html>
