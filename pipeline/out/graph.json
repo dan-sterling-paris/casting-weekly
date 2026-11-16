@@ -1,0 +1,181 @@
+{
+ "coverage": {
+  "no_credits": [
+   "https://www.xroadslive.com/press/9-to-5-to-partner-with-dolly-partons-imagination-library"
+  ],
+  "no_production": [
+   "https://www.xroadslive.com/press/2021-uk-tour-of-multi-award-winning-chicago-announced",
+   "https://www.xroadslive.com/press/andrew-lloyd-webbers-smash-hit-west-end-amp-broadway-musical-to-embark-on-uk-tour-2021",
+   "https://www.xroadslive.com/press/andy-nyman-and-jenna-russel-join-the-cast-of-hello-dolly",
+   "https://www.xroadslive.com/press/annie-anita-dobson",
+   "https://www.xroadslive.com/press/annie-announced-uk",
+   "https://www.xroadslive.com/press/back-to-the-future-opens-to-electrifying-reviews-in-sydney",
+   "https://www.xroadslive.com/press/beetlejuice-its-showtime-london",
+   "https://www.xroadslive.com/press/ben-platt-watched-magic-mike-live-with-allison-janney-and-kristen-bell-and-it-was-very-satisfying"
+  ],
+  "title_unreadable": [
+   {
+    "sentence": "In 2020 she played in the widely acclaimed A German Life, a one-woman play by Christopher Hampton, produced by Crossroads Live and directed by Neil Armfield for his Adelaide Festival.",
+    "url": "https://www.xroadslive.com/press/agatha-christies-breathtaking-masterpiece-and-then-there-were-none-to-tour-to-melbourne-and-sydney"
+   },
+   {
+    "sentence": "The ever-popular Broadway musical Annie will light up Sydney’s Capitol Theatre from March next year in an exciting new production directed by Karen Johnson Mortimer and produced by John Frost for Crossroads Live.",
+    "url": "https://www.xroadslive.com/press/annie-returns-to-australia"
+   },
+   {
+    "sentence": "The musical is produced by Crossroads Live North America and Broadway Asia, under the patronage of the Secretariat for Social Affairs and Culture of the Government of the Macao SAR, organised by the Cultural Affairs Bureau (IC, from the Portuguese acronym) and will perform 12 performances from 2 – 14 August at the Macao Cultural Centre Grand Auditorium as part of the 1st Macao International Children’s Arts Festival.",
+    "url": "https://www.xroadslive.com/press/annie-the-musical-takes-part-in-the-first-macao-international-childrens-arts-festival"
+   }
+  ]
+ },
+ "edges": [
+  {
+   "fetched_at": "2026-11-16T23:09:42Z",
+   "rule": "P1",
+   "sentence": "Producers John Frost for Crossroads Live Australia and Suzanne Jones are delighted to announce that 9 TO 5 THE MUSICAL is partnering with Dolly Parton’s Imagination Library Australia to bring the joy of reading to children in need across Australia.",
+   "sha256": "55a8e7e7f47bbcd84b1fad192e580edf91c388633604fefb1993d296eb1e50dd",
+   "source": "org:crossroads-live",
+   "target": "prod:9 to 5 the musical",
+   "type": "produces",
+   "url": "https://www.xroadslive.com/press/9-to-5-to-partner-with-dolly-partons-imagination-library"
+  },
+  {
+   "fetched_at": "2026-11-16T23:09:58Z",
+   "rule": "P1",
+   "sentence": "Michael Harrison and David Ian for Crossroads Live are delighted to announce that their smash hit production of the musical ANNIE will embark on a UK and Ireland tour opening at New Wimbledon Theatre on Saturday 23 May 2026.",
+   "sha256": "07bb73c544f9e186ab4fb441f46c4c9bd254ce131a7e1276d8737ef13c9ea9bc",
+   "source": "org:crossroads-live",
+   "target": "prod:annie",
+   "type": "produces",
+   "url": "https://www.xroadslive.com/press/annie-to-tour-the-uk-and-ireland-throughout-2026"
+  },
+  {
+   "fetched_at": "2026-11-16T23:09:58Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Writer",
+   "rule": "C6",
+   "sentence": "ANNIE has Music by Charles Strouse, Lyrics by Martin Charnin and a Book by Thomas Meehan.",
+   "sha256": "07bb73c544f9e186ab4fb441f46c4c9bd254ce131a7e1276d8737ef13c9ea9bc",
+   "source": "person:thomas meehan",
+   "target": "prod:annie",
+   "type": "credit",
+   "url": "https://www.xroadslive.com/press/annie-to-tour-the-uk-and-ireland-throughout-2026"
+  },
+  {
+   "fetched_at": "2026-11-16T23:09:58Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Choreographer",
+   "rule": "C5",
+   "sentence": "It is directed by Curve’s Artistic Director Nikolai Foster with set and costume design by Colin Richmond, choreography by Nick Winston, lighting by Ben Cracknell and sound design by Richard Brooker.",
+   "sha256": "07bb73c544f9e186ab4fb441f46c4c9bd254ce131a7e1276d8737ef13c9ea9bc",
+   "source": "person:nick winston",
+   "target": "prod:annie",
+   "type": "credit",
+   "url": "https://www.xroadslive.com/press/annie-to-tour-the-uk-and-ireland-throughout-2026"
+  },
+  {
+   "fetched_at": "2026-11-16T23:09:38Z",
+   "rule": "P1",
+   "sentence": "David Ian for Crossroads Live is delighted to announce a new production of the most fantasmagorical musical of all time, CHITTY CHITTY BANG BANG, opening at Mayflower Theatre, Southampton on 30 April 2024 where it will play until 12 May 2024 ahead of a UK tour.",
+   "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
+   "source": "org:crossroads-live",
+   "target": "prod:chitty chitty bang bang",
+   "type": "produces",
+   "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
+  },
+  {
+   "fetched_at": "2026-11-16T23:09:38Z",
+   "identity": "confirmed by own site",
+   "identity_evidence": "West End productions include: Thriller Live, The Knowledge, Annie (children’s casting), Kinky Boots (children’s casting), Close to You, Sinatra, American Idiot, Dusty, The Bodyguard (children’s casting), Show Boat (children’s casting), In the Bar of a Tokyo Hotel, Priscilla Queen of the Desert, Grease, Flashdance, Piaf, The Snowman, Respect La Diva, The King and I, The Harder They Come, Showboat, Dancing in the Streets, The Rat Pack Live from Las Vegas, Chitty Chitty Bang Bang, Saturday Night Fever, Fame, Peter Pan, The Pirates of Penzance, Mum’s the Word, Daisy Pulls It Off, Napoleon, Madame Melville, Hedwig and the Angry Inch, La Cava, Smokey Joe's Café, The Rocky Horror Show, Soul Train, Rent, Always, Steaming, Ain't Misbehavin', Disgracefully Yours.",
+   "role": "Casting director",
+   "rule": "C1",
+   "sentence": "This new production will be directed by Thom Southerland (Titanic, Parade), choreographed by Karen Bruce (BBC's Strictly Come Dancing, The Bodyguard) with Set and Costume design by Morgan Large (Newsies, Joseph and the Technicolour Dreamcoat), Orchestrations and Musical Supervision by George Dyer (The Wizard of Oz, Annie, Billy Elliot)and casting by Debbie O'Brien.",
+   "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
+   "source": "person:debbie o'brien",
+   "target": "prod:chitty chitty bang bang",
+   "type": "credit",
+   "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
+  },
+  {
+   "fetched_at": "2026-11-16T23:09:38Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "C3",
+   "sentence": "This new production will be directed by Thom Southerland (Titanic, Parade), choreographed by Karen Bruce (BBC's Strictly Come Dancing, The Bodyguard) with Set and Costume design by Morgan Large (Newsies, Joseph and the Technicolour Dreamcoat), Orchestrations and Musical Supervision by George Dyer (The Wizard of Oz, Annie, Billy Elliot)and casting by Debbie O'Brien.",
+   "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
+   "source": "person:thom southerland",
+   "target": "prod:chitty chitty bang bang",
+   "type": "credit",
+   "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
+  },
+  {
+   "fetched_at": "2026-11-16T23:09:38Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Choreographer",
+   "rule": "C5",
+   "sentence": "This new production will be directed by Thom Southerland (Titanic, Parade), choreographed by Karen Bruce (BBC's Strictly Come Dancing, The Bodyguard) with Set and Costume design by Morgan Large (Newsies, Joseph and the Technicolour Dreamcoat), Orchestrations and Musical Supervision by George Dyer (The Wizard of Oz, Annie, Billy Elliot)and casting by Debbie O'Brien.",
+   "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
+   "source": "person:karen bruce",
+   "target": "prod:chitty chitty bang bang",
+   "type": "credit",
+   "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
+  }
+ ],
+ "method": "pattern rules, no AI",
+ "nodes": [
+  {
+   "id": "org:crossroads-live",
+   "kind": "producer",
+   "label": "Crossroads Live",
+   "url": "https://www.xroadslive.com"
+  },
+  {
+   "id": "person:debbie o'brien",
+   "kind": "person",
+   "label": "Debbie O'Brien"
+  },
+  {
+   "id": "person:karen bruce",
+   "kind": "person",
+   "label": "Karen Bruce"
+  },
+  {
+   "id": "person:nick winston",
+   "kind": "person",
+   "label": "Nick Winston"
+  },
+  {
+   "id": "person:thom southerland",
+   "kind": "person",
+   "label": "Thom Southerland"
+  },
+  {
+   "id": "person:thomas meehan",
+   "kind": "person",
+   "label": "Thomas Meehan"
+  },
+  {
+   "id": "prod:9 to 5 the musical",
+   "kind": "production",
+   "label": "9 TO 5 THE MUSICAL"
+  },
+  {
+   "id": "prod:annie",
+   "kind": "production",
+   "label": "ANNIE"
+  },
+  {
+   "id": "prod:chitty chitty bang bang",
+   "kind": "production",
+   "label": "CHITTY CHITTY BANG BANG"
+  }
+ ],
+ "seeds": [
+  "crossroads-live",
+  "debbie-obrien-casting"
+ ]
+}

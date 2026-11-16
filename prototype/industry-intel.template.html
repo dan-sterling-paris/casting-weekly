@@ -141,7 +141,7 @@ button,input{font:inherit;color:inherit}
   </aside>
 
   <main class="stage" id="stage" aria-label="Network graph">
-    <div class="hud"><b>LIVE NETWORK</b> · CLICK A NODE TO OPEN ITS FILE · DRAG · SCROLL TO ZOOM</div>
+    <div class="hud"><b>LIVE NETWORK · NO AI</b> · CLICK A NODE TO OPEN ITS FILE · DRAG · SCROLL TO ZOOM</div>
     <div class="zoom"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zfit" aria-label="Fit to screen">⤢</button></div>
   </main>
 
@@ -157,7 +157,7 @@ button,input{font:inherit;color:inherit}
 "use strict";
 const RAW = JSON.parse(document.getElementById("data").textContent);
 const E = RAW.edges, TNAME = RAW.theatres;
-const KIND = {cd:{label:"Casting director", color:"var(--amber)", chip:"amber"}, person:{label:"Creative", color:"var(--person)", chip:""}, prod:{label:"Production", color:"var(--cyan)", chip:"cyan"}, theatre:{label:"Theatre / company", color:"var(--violet)", chip:"violet"}};
+const KIND = {cd:{label:"Casting director", color:"var(--amber)", chip:"amber"}, person:{label:"Creative", color:"var(--person)", chip:""}, prod:{label:"Production", color:"var(--cyan)", chip:"cyan"}, theatre:{label:"Producer / company", color:"var(--violet)", chip:"violet"}};
 
 /* ---- build graph ---- */
 const nodes = new Map(), links = [];
@@ -205,7 +205,7 @@ const tg = document.getElementById("toggles");
 for(const k of ["cd","person","prod","theatre"]){
   const b = document.createElement("button"); b.className = "tg"; b.type = "button"; b.setAttribute("aria-pressed","true");
   const sw = document.createElement("i"); sw.className = "sw" + (k==="prod" ? " sq" : ""); sw.style.background = KIND[k].color;
-  b.append(sw, ({cd:"Casting directors",person:"Creatives",prod:"Productions",theatre:"Theatres & companies"})[k], Object.assign(document.createElement("small"), {textContent: count(k)}));
+  b.append(sw, ({cd:"Casting directors",person:"Creatives",prod:"Productions",theatre:"Producers & companies"})[k], Object.assign(document.createElement("small"), {textContent: count(k)}));
   b.addEventListener("click", () => { visible[k] = !visible[k]; b.setAttribute("aria-pressed", visible[k]); paint(); });
   tg.append(b);
 }
@@ -242,7 +242,7 @@ G.each(function(n){
 });
 G.call(d3.drag().on("start",(ev,d)=>{ if(!ev.active) sim.alphaTarget(.25).restart(); d.fx=d.x; d.fy=d.y; })
   .on("drag",(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on("end",(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
-const T = root.append("g").selectAll("text").data(N).join("text").attr("class", n => "node-label" + (n.kind==="prod" ? " prod" : "")).attr("dy", n => -size(n) - 6).attr("text-anchor","middle").text(n => n.label.length > 34 ? n.label.slice(0,32) + "…" : n.label);
+const T = root.append("g").selectAll("text").data(N).join("text").attr("class", n => "node-label" + (n.kind==="prod" ? " prod" : "")).attr("dy", n => n.kind === "theatre" ? size(n) + 18 : -size(n) - 6).attr("text-anchor","middle").text(n => n.label.length > 34 ? n.label.slice(0,32) + "…" : n.label);
 
 const sim = d3.forceSimulation(N)
   .force("link", d3.forceLink(links).id(d=>d.id).distance(l => l.kind === "venue" ? 70 : 46).strength(.7))
@@ -314,6 +314,19 @@ function renderDossier(){
     assoc.slice(0,24).forEach(q => { const b = el("button"); b.type = "button"; b.style.borderColor = q.kind==="cd" ? "rgba(245,184,61,.45)" : ""; b.append(q.label); if(q._shared > 1) b.append(el("small",null,"×"+q._shared)); b.onclick = () => select(q, true); a.append(b); });
     s.append(a); D.append(s);
   }
+  const conf = n.credits.find(c => c.identity === "confirmed by own site");
+  if(conf && n.kind !== "prod" && n.kind !== "theatre"){
+    const idb = el("div","d-sec"); idb.append(el("p","lbl","Identity"));
+    const ch = el("div","chips"); ch.append(el("span","chip ok","Confirmed by own site")); idb.append(ch);
+    idb.append(el("p",null,"Their own website also names " + conf.production + ":"));
+    const full = conf.identityEvidence || "", at = full.toLowerCase().indexOf(conf.production.toLowerCase());
+    const ex = at < 0 ? full : (at > 80 ? "…" : "") + full.slice(Math.max(0, at - 80), at + conf.production.length + 60) + (at + conf.production.length + 60 < full.length ? "…" : "");
+    idb.append(el("div","ev", "“" + ex + "”"), el("div","prov", "debbieobrien.net · own credits list · rule ID1 (same title on own site)")); D.append(idb);
+  }
+  if(n.kind === "prod" && n.credits[0] && n.credits[0].producerEvidence){
+    const pb = el("div","d-sec"); pb.append(el("p","lbl","Producer · rule " + n.credits[0].producerRule));
+    pb.append(el("div","ev", "“" + n.credits[0].producerEvidence + "”")); D.append(pb);
+  }
   const s = el("div","d-sec"); s.append(el("p","lbl", n.kind === "theatre" ? "Productions on file" : "Evidence"));
   const list = n.kind === "theatre" ? prods.flatMap(p => p.credits) : n.credits;
   list.forEach(c => {
@@ -324,7 +337,9 @@ function renderDossier(){
     h4.append(btn); if(n.kind === "theatre") h4.append(" — " + c.person);
     box.append(h4, el("div","ev","“" + c.evidence + "”"));
     const pv = el("div","prov"); const a = el("a",null,c.url.replace(/^https?:\/\/(www\.)?/,"")); a.href = c.url; a.target = "_blank"; a.rel = "noopener";
-    pv.append(a, el("span","v","✓ on page · " + RAW.swept)); box.append(pv); s.append(box);
+    pv.append(a, el("span","v","✓ on page · " + RAW.swept));
+    if(c.rule) pv.append(el("span",null,"RULE " + c.rule + " · NO AI"), el("span",null,"PAGE HASH " + c.sha));
+    box.append(pv); s.append(box);
   });
   D.append(s);
 }

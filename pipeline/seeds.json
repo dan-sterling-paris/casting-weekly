@@ -1,0 +1,32 @@
+{
+ "note": "Seeds are entered by a person, never chosen by AI. Each one is a site the pipeline may read, if its robots.txt allows. max_pages caps each site (20 pages in total for this test); must_include pages are always read first.",
+ "seeds": [
+  {
+   "id": "crossroads-live",
+   "name": "Crossroads Live",
+   "kind": "producer",
+   "url": "https://www.xroadslive.com",
+   "read": [
+    "/press/"
+   ],
+   "max_pages": 14,
+   "must_include": [
+    "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
+   ]
+  },
+  {
+   "id": "debbie-obrien-casting",
+   "name": "Debbie O'Brien Casting",
+   "kind": "person-site",
+   "person": "Debbie O'Brien",
+   "url": "https://www.debbieobrien.net",
+   "read": [
+    "/"
+   ],
+   "max_pages": 6,
+   "must_include": [
+    "https://www.debbieobrien.net/debbie-obrien.html"
+   ]
+  }
+ ]
+}

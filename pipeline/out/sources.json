@@ -1,0 +1,38 @@
+[
+ {
+  "id": "crossroads-live",
+  "name": "Crossroads Live",
+  "url": "https://www.xroadslive.com/",
+  "checked_at": "2026-11-16T23:08:01Z",
+  "robots_status": 200,
+  "our_agent_allowed": true,
+  "ai_bots_blocked": [
+   "ClaudeBot",
+   "anthropic-ai",
+   "GPTBot",
+   "CCBot",
+   "Google-Extended",
+   "Bytespider",
+   "Applebot-Extended"
+  ],
+  "allowed_paths": {
+   "/press/": true
+  },
+  "terms_url": null,
+  "terms_flagged": []
+ },
+ {
+  "id": "debbie-obrien-casting",
+  "name": "Debbie O'Brien Casting",
+  "url": "https://www.debbieobrien.net/",
+  "checked_at": "2026-11-16T23:08:03Z",
+  "robots_status": 200,
+  "our_agent_allowed": true,
+  "ai_bots_blocked": [],
+  "allowed_paths": {
+   "/": true
+  },
+  "terms_url": null,
+  "terms_flagged": []
+ }
+]

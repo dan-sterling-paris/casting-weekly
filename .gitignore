@@ -1,3 +1,4 @@
 catalogue/cache/
 __pycache__/
 *.log
+pipeline/cache/
