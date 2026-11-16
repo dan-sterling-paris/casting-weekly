@@ -178,5 +178,74 @@
   "title": "LOVE NEVER DIES BREAKDOWN",
   "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
   "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "the-choir-of-man",
+  "url": "https://thechoirofman.com",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:15:21Z",
+  "title": "The Choir of Man | Official Tickets Website",
+  "sha256": "4bb700f559c793b99a231807fc04f98a7230aa858bc327e9e6f009cd36c3498a",
+  "file": "4bb700f559c793b9.txt"
+ },
+ {
+  "seed": "burlesque-the-musical",
+  "url": "https://www.burlesqueonstage.com/",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:15:29Z",
+  "title": "Burlesque The Musical",
+  "sha256": "5f6253d724f871ed0c4e4e10a666ecb7cd3e41b3a0be24ca6ff4eae791807022",
+  "file": "5f6253d724f871ed.txt"
+ },
+ {
+  "seed": "burlesque-the-musical",
+  "url": "https://www.burlesqueonstage.com/cast",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:15:31Z",
+  "title": "Cast | Burlesque the Musical",
+  "sha256": "37ba4f2ff252a9716a5a1d8cf8cc3dad68af071db042c4a0e3f5aa9b0ccb0e8c",
+  "file": "37ba4f2ff252a971.txt"
+ },
+ {
+  "seed": "burlesque-the-musical",
+  "url": "https://www.burlesqueonstage.com/creative",
+  "status": 404,
+  "fetched_at": "2026-11-16T23:15:33Z"
+ },
+ {
+  "seed": "burlesque-the-musical",
+  "url": "https://www.burlesqueonstage.com/faqs",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:15:35Z",
+  "title": "Burlesque FAQs",
+  "sha256": "8fa5f08988b0e9dddb67ce1d6f8cf6b47f27f4e24d5710910fb2764ee530dbe8",
+  "file": "8fa5f08988b0e9dd.txt"
+ },
+ {
+  "seed": "burlesque-the-musical",
+  "url": "https://www.burlesqueonstage.com/media-gallery",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:15:37Z",
+  "title": "Gallery | Burlesque the Musical",
+  "sha256": "29c42df6f3ffa94eeed732ef34b711086db52289ae4e28c50fb52fd5f6388fbe",
+  "file": "29c42df6f3ffa94e.txt"
+ },
+ {
+  "seed": "burlesque-the-musical",
+  "url": "https://www.burlesqueonstage.com/privacy",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:15:39Z",
+  "title": "Privacy",
+  "sha256": "72fd162128fa825712f059a108729e212b77c0c249c729a621c94be716f5dd96",
+  "file": "72fd162128fa8257.txt"
+ },
+ {
+  "seed": "harry-blumenau-agent",
+  "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:16:01Z",
+  "title": "Harry Blumenau CDG CSA - United Agents",
+  "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+  "file": "01dcb8b5445f6dbb.txt"
  }
 ]

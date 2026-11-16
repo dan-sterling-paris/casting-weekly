@@ -167,7 +167,7 @@ for(const e of E){
   e.production = cleanTitle(e.production);
   const p = add("p:"+e.person.toLowerCase(), e.role === "Casting director" ? "cd" : "person", e.person);
   if(e.role === "Casting director") p.kind = "cd";
-  const pr = add("r:"+e.production.toLowerCase()+"|"+e.venue, "prod", e.production);
+  const pr = add("r:"+e.production.toLowerCase(), "prod", e.production);
   const th = add("t:"+e.venue, "theatre", TNAME[e.venue] || e.venue);
   pr.theatre = th.label;
   p.credits.push(e); pr.credits.push(e);
@@ -331,9 +331,9 @@ function renderDossier(){
   const list = n.kind === "theatre" ? prods.flatMap(p => p.credits) : n.credits;
   list.forEach(c => {
     const box = el("div","cred");
-    box.append(el("div","r" + (c.role === "Casting director" ? "" : " other"), c.role));
+    box.append(el("div","r" + (c.role === "Casting director" ? "" : " other"), (c.roleAsStated || c.role) + (c.year ? " · " + c.year : "")));
     const h4 = el("h4"); const btn = el("button", null, n.kind === "prod" ? c.person : c.production);
-    btn.onclick = () => select(nodes.get(n.kind === "prod" ? "p:"+c.person.toLowerCase() : "r:"+c.production.toLowerCase()+"|"+c.venue), true);
+    btn.onclick = () => select(nodes.get(n.kind === "prod" ? "p:"+c.person.toLowerCase() : "r:"+c.production.toLowerCase()), true);
     h4.append(btn); if(n.kind === "theatre") h4.append(" — " + c.person);
     box.append(h4, el("div","ev","“" + c.evidence + "”"));
     const pv = el("div","prov"); const a = el("a",null,c.url.replace(/^https?:\/\/(www\.)?/,"")); a.href = c.url; a.target = "_blank"; a.rel = "noopener";

@@ -17,10 +17,18 @@ def norm_title(s):
 
 def confirm(title, own_site_text):
     """Return the line of the person's own site that names the title, or None."""
-    t = norm_title(title)
+    t = norm_work(title)
     if not t:
         return None
     for line in own_site_text.split("\n"):
         if re.search(r"\b" + re.escape(t) + r"\b", norm_title(line)):
             return line.strip()
     return None
+
+
+def norm_work(title):
+    """One key per show: 'The Choir of Man' == 'CHOIR OF MAN'; 'Burlesque The Musical' == 'BURLESQUE'."""
+    t = norm_title(title)
+    t = re.sub(r"^the ", "", t)
+    t = re.sub(r" (the )?musical$", "", t)
+    return t

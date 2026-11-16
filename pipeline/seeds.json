@@ -27,6 +27,44 @@
    "must_include": [
     "https://www.debbieobrien.net/debbie-obrien.html"
    ]
+  },
+  {
+   "id": "the-choir-of-man",
+   "name": "The Choir of Man (official site)",
+   "kind": "production-site",
+   "production": "The Choir of Man",
+   "url": "https://www.thechoirofman.com",
+   "read": [
+    "/"
+   ],
+   "max_pages": 6,
+   "must_include": []
+  },
+  {
+   "id": "burlesque-the-musical",
+   "name": "Burlesque The Musical (official site)",
+   "kind": "production-site",
+   "production": "Burlesque The Musical",
+   "url": "https://www.burlesquethemusical.com",
+   "read": [
+    "/"
+   ],
+   "max_pages": 6,
+   "must_include": []
+  },
+  {
+   "id": "harry-blumenau-agent",
+   "name": "Harry Blumenau (United Agents profile)",
+   "kind": "person-site",
+   "person": "Harry Blumenau",
+   "url": "https://www.unitedagents.co.uk",
+   "read": [
+    "/harry-blumenau-cdg-csa/"
+   ],
+   "max_pages": 1,
+   "must_include": [
+    "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/"
+   ]
   }
  ]
 }

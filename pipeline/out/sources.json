@@ -3,7 +3,7 @@
   "id": "crossroads-live",
   "name": "Crossroads Live",
   "url": "https://www.xroadslive.com/",
-  "checked_at": "2026-11-16T23:08:01Z",
+  "checked_at": "2026-11-16T23:13:51Z",
   "robots_status": 200,
   "our_agent_allowed": true,
   "ai_bots_blocked": [
@@ -25,12 +25,54 @@
   "id": "debbie-obrien-casting",
   "name": "Debbie O'Brien Casting",
   "url": "https://www.debbieobrien.net/",
-  "checked_at": "2026-11-16T23:08:03Z",
+  "checked_at": "2026-11-16T23:13:53Z",
   "robots_status": 200,
   "our_agent_allowed": true,
   "ai_bots_blocked": [],
   "allowed_paths": {
    "/": true
+  },
+  "terms_url": null,
+  "terms_flagged": []
+ },
+ {
+  "id": "the-choir-of-man",
+  "name": "The Choir of Man (official site)",
+  "url": "https://www.thechoirofman.com/",
+  "checked_at": "2026-11-16T23:13:56Z",
+  "robots_status": 200,
+  "our_agent_allowed": true,
+  "ai_bots_blocked": [],
+  "allowed_paths": {
+   "/": true
+  },
+  "terms_url": null,
+  "terms_flagged": []
+ },
+ {
+  "id": "burlesque-the-musical",
+  "name": "Burlesque The Musical (official site)",
+  "url": "https://www.burlesquethemusical.com/",
+  "checked_at": "2026-11-16T23:13:58Z",
+  "robots_status": 404,
+  "our_agent_allowed": true,
+  "ai_bots_blocked": [],
+  "allowed_paths": {
+   "/": true
+  },
+  "terms_url": null,
+  "terms_flagged": []
+ },
+ {
+  "id": "harry-blumenau-agent",
+  "name": "Harry Blumenau (United Agents profile)",
+  "url": "https://www.unitedagents.co.uk/",
+  "checked_at": "2026-11-16T23:14:00Z",
+  "robots_status": 200,
+  "our_agent_allowed": true,
+  "ai_bots_blocked": [],
+  "allowed_paths": {
+   "/harry-blumenau-cdg-csa/": true
   },
   "terms_url": null,
   "terms_flagged": []

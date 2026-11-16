@@ -69,3 +69,24 @@ def production(text):
             return ("P2", m.group("t").strip(), sent)
         return ("P0", None, sent)
     return None
+
+
+# ---- A1: agency CV layout (United Agents uses it for every client) ----
+#   TITLE IN CAPITALS / year or year range / venue or company / role / "Dir. Name & Name"
+YEAR_LINE = re.compile(r"^(19|20)\d\d(\s*[–-]\s*(19|20)\d\d)?$")
+CV_ROLE = re.compile(r"Casting Director|Director|Writer|Choreographer|Producer", re.I)
+
+
+def agent_cv(text):
+    """Return one dict per credit block in an agency CV page laid out as above."""
+    lines = [l.strip() for l in text.split("\n")]
+    out = []
+    for i in range(len(lines) - 4):
+        title, year, venue, role, dirl = lines[i:i + 5]
+        if not (title and title.upper() == title and re.search(r"[A-Z]{2}", title) and YEAR_LINE.match(year)
+                and venue and CV_ROLE.search(role) and dirl.startswith("Dir. ")):
+            continue
+        directors = [n.strip() for n in re.split(r",| & | and ", dirl[5:]) if n.strip()]
+        out.append({"title": title, "year": year, "venue": venue, "role": role, "directors": directors,
+                    "evidence": " / ".join([title, year, venue, role, dirl])})
+    return out

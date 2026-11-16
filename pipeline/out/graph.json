@@ -13,6 +13,14 @@
    "https://www.xroadslive.com/press/beetlejuice-its-showtime-london",
    "https://www.xroadslive.com/press/ben-platt-watched-magic-mike-live-with-allison-janney-and-kristen-bell-and-it-was-very-satisfying"
   ],
+  "official_site_no_credits": [
+   "https://thechoirofman.com",
+   "https://www.burlesqueonstage.com/",
+   "https://www.burlesqueonstage.com/cast",
+   "https://www.burlesqueonstage.com/faqs",
+   "https://www.burlesqueonstage.com/media-gallery",
+   "https://www.burlesqueonstage.com/privacy"
+  ],
   "title_unreadable": [
    {
     "sentence": "In 2020 she played in the widely acclaimed A German Life, a one-woman play by Christopher Hampton, produced by Crossroads Live and directed by Neil Armfield for his Adelaide Festival.",
@@ -35,7 +43,7 @@
    "sentence": "Producers John Frost for Crossroads Live Australia and Suzanne Jones are delighted to announce that 9 TO 5 THE MUSICAL is partnering with Dolly Parton’s Imagination Library Australia to bring the joy of reading to children in need across Australia.",
    "sha256": "55a8e7e7f47bbcd84b1fad192e580edf91c388633604fefb1993d296eb1e50dd",
    "source": "org:crossroads-live",
-   "target": "prod:9 to 5 the musical",
+   "target": "prod:9 to 5",
    "type": "produces",
    "url": "https://www.xroadslive.com/press/9-to-5-to-partner-with-dolly-partons-imagination-library"
   },
@@ -123,15 +131,221 @@
    "target": "prod:chitty chitty bang bang",
    "type": "credit",
    "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "BURLESQUE THE MUSICAL / 2026 / UK Tour / Casting Director / Dir. Robin Antin & Racky Plews",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:burlesque",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "rule": "A1",
+   "sentence": "BURLESQUE THE MUSICAL / 2026 / UK Tour / Casting Director / Dir. Robin Antin & Racky Plews",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:uk-tour",
+   "target": "prod:burlesque",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BURLESQUE THE MUSICAL / 2026 / UK Tour / Casting Director / Dir. Robin Antin & Racky Plews",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:robin antin",
+   "target": "prod:burlesque",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BURLESQUE THE MUSICAL / 2026 / UK Tour / Casting Director / Dir. Robin Antin & Racky Plews",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:racky plews",
+   "target": "prod:burlesque",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "BURLESQUE / 2025 / Savoy Theatre / Casting Director / Dir. Todrick Hall",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:burlesque",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Savoy Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "rule": "A1",
+   "sentence": "BURLESQUE / 2025 / Savoy Theatre / Casting Director / Dir. Todrick Hall",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:savoy-theatre",
+   "target": "prod:burlesque",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Savoy Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BURLESQUE / 2025 / Savoy Theatre / Casting Director / Dir. Todrick Hall",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:todrick hall",
+   "target": "prod:burlesque",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Savoy Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "BURLESQUE / 2024 / Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:burlesque",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "rule": "A1",
+   "sentence": "BURLESQUE / 2024 / Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:manchester-opera-house-theatre-royal-glasgow-adama-entertainment",
+   "target": "prod:burlesque",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BURLESQUE / 2024 / Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nick winston",
+   "target": "prod:burlesque",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Co-Casting Director",
+   "rule": "A1",
+   "sentence": "CHOIR OF MAN / 2022 / Arts Theatre / Co-Casting Director / Dir. Nic Doodson",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:choir of man",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Arts Theatre",
+   "year": "2022"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "rule": "A1",
+   "sentence": "CHOIR OF MAN / 2022 / Arts Theatre / Co-Casting Director / Dir. Nic Doodson",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:arts-theatre",
+   "target": "prod:choir of man",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Arts Theatre",
+   "year": "2022"
+  },
+  {
+   "fetched_at": "2026-11-16T23:16:01Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "CHOIR OF MAN / 2022 / Arts Theatre / Co-Casting Director / Dir. Nic Doodson",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nic doodson",
+   "target": "prod:choir of man",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Arts Theatre",
+   "year": "2022"
   }
  ],
  "method": "pattern rules, no AI",
  "nodes": [
   {
+   "id": "org:arts-theatre",
+   "kind": "organisation",
+   "label": "Arts Theatre"
+  },
+  {
    "id": "org:crossroads-live",
-   "kind": "producer",
-   "label": "Crossroads Live",
-   "url": "https://www.xroadslive.com"
+   "kind": "organisation",
+   "label": "Crossroads Live"
+  },
+  {
+   "id": "org:manchester-opera-house-theatre-royal-glasgow-adama-entertainment",
+   "kind": "organisation",
+   "label": "Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment"
+  },
+  {
+   "id": "org:savoy-theatre",
+   "kind": "organisation",
+   "label": "Savoy Theatre"
+  },
+  {
+   "id": "org:uk-tour",
+   "kind": "organisation",
+   "label": "UK Tour"
   },
   {
    "id": "person:debbie o'brien",
@@ -139,14 +353,34 @@
    "label": "Debbie O'Brien"
   },
   {
+   "id": "person:harry blumenau",
+   "kind": "person",
+   "label": "Harry Blumenau"
+  },
+  {
    "id": "person:karen bruce",
    "kind": "person",
    "label": "Karen Bruce"
   },
   {
+   "id": "person:nic doodson",
+   "kind": "person",
+   "label": "Nic Doodson"
+  },
+  {
    "id": "person:nick winston",
    "kind": "person",
    "label": "Nick Winston"
+  },
+  {
+   "id": "person:racky plews",
+   "kind": "person",
+   "label": "Racky Plews"
+  },
+  {
+   "id": "person:robin antin",
+   "kind": "person",
+   "label": "Robin Antin"
   },
   {
    "id": "person:thom southerland",
@@ -159,7 +393,12 @@
    "label": "Thomas Meehan"
   },
   {
-   "id": "prod:9 to 5 the musical",
+   "id": "person:todrick hall",
+   "kind": "person",
+   "label": "Todrick Hall"
+  },
+  {
+   "id": "prod:9 to 5",
    "kind": "production",
    "label": "9 TO 5 THE MUSICAL"
   },
@@ -169,13 +408,26 @@
    "label": "ANNIE"
   },
   {
+   "id": "prod:burlesque",
+   "kind": "production",
+   "label": "Burlesque The Musical"
+  },
+  {
    "id": "prod:chitty chitty bang bang",
    "kind": "production",
    "label": "CHITTY CHITTY BANG BANG"
+  },
+  {
+   "id": "prod:choir of man",
+   "kind": "production",
+   "label": "The Choir of Man"
   }
  ],
  "seeds": [
   "crossroads-live",
-  "debbie-obrien-casting"
+  "debbie-obrien-casting",
+  "the-choir-of-man",
+  "burlesque-the-musical",
+  "harry-blumenau-agent"
  ]
 }
