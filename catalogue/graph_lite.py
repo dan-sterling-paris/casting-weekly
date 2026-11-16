@@ -26,7 +26,11 @@ for f in glob.glob("catalogue/cache/2026-11-16/*.txt") + glob.glob("catalogue/ca
         key = (name.lower(), title.lower(), ROLES[role.lower()])
         if key in seen: continue
         seen.add(key); edges.append({"person": name, "role": ROLES[role.lower()], "production": title, "venue": venue, "url": url, "evidence": ev})
-data = json.dumps({"edges": edges}, ensure_ascii=False).replace("</", "<\\/")
-tpl = Path("prototype/industry-graph.template.html").read_text()
-Path("prototype/industry-graph.html").write_text(tpl.replace("__DATA__", data))
+names = {s["id"]: s["name"] for s in json.loads(Path("catalogue/sources.json").read_text())["sources"]}
+names.update({"debbieobrien": "Debbie O'Brien Casting", "norwichtheatre": "Norwich Theatre", "wintergardensblackpool": "Winter Gardens Blackpool"})
+data = json.dumps({"edges": edges, "theatres": names, "swept": "16 NOV 2026"}, ensure_ascii=False).replace("</", "<\\/")
+for name in ("industry-graph", "industry-intel"):
+    tpl = Path("prototype/%s.template.html" % name)
+    if tpl.exists():
+        Path("prototype/%s.html" % name).write_text(tpl.read_text().replace("__DATA__", data))
 print(len(edges), "credits;", len({e["person"] for e in edges}), "people;", len({e["production"] for e in edges}), "productions")
