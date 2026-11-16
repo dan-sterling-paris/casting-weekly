@@ -1,0 +1,431 @@
+<title>Casting Weekly</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a trade-paper catalogue. One column of content under a wrapping nav; cards with a ticket-stub date; detail pages with sourced facts. */
+:root{
+  --bg:#FFFFFF; --panel:#F5F5F2; --ink:#121317; --muted:#53565F; --line:#DEDFE3;
+  --hi:#FFD43B; --hi-ink:#121317; --link:#1846C7; --good:#1D6A36; --sample:#8A4B00; --sample-bg:#FFF2D6;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111215; --panel:#1B1D22; --ink:#ECEDEF; --muted:#A5A9B3; --line:#2E3138;
+  --hi:#F5C518; --hi-ink:#121317; --link:#93AEFF; --good:#6FD08C; --sample:#F2B14C; --sample-bg:#33270F; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#111215; --panel:#1B1D22; --ink:#ECEDEF; --muted:#A5A9B3; --line:#2E3138;
+  --hi:#F5C518; --hi-ink:#121317; --link:#93AEFF; --good:#6FD08C; --sample:#F2B14C; --sample-bg:#33270F; color-scheme:dark }
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.proto{background:var(--ink);color:var(--bg);font-size:13px;text-align:center;padding-block:7px}
+header.site{border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding-block:14px}
+.logo{font-family:var(--display);font-weight:800;font-size:23px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+nav.main{display:flex;flex-wrap:wrap;gap:2px 18px}
+nav.main a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px;padding-block:10px;border-bottom:2px solid transparent}
+nav.main a[aria-current="page"]{border-bottom-color:var(--ink)}
+main{padding-block:28px 72px;min-height:60vh}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(32px,5.5vw,60px);line-height:1.04;letter-spacing:-.025em;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(22px,3vw,28px);letter-spacing:-.01em;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:21px;line-height:1.2;margin:0;text-wrap:balance}
+.lede{font-size:18px;color:var(--muted);max-width:62ch;margin:14px 0 0}
+.mark{background:var(--hi);color:var(--hi-ink);padding:0 10px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.eyebrow{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 20px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-top:40px}
+.section-head p{margin:0;color:var(--muted);font-size:14px}
+.search{display:flex;gap:8px;margin-top:26px;max-width:640px}
+.search input{flex:1 1 auto;min-width:0;font:inherit;font-size:17px;padding:13px 15px;border:1.5px solid var(--ink);border-radius:10px;background:var(--bg);color:var(--ink)}
+.btn{font:inherit;font-weight:700;font-size:15px;min-height:46px;padding:0 18px;border-radius:10px;border:0;background:var(--ink);color:var(--bg);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:20px}
+.tile{display:block;padding:18px;border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none;background:var(--bg)}
+.tile:hover{border-color:var(--ink)}
+.tile b{font-family:var(--display);font-size:19px;display:block}
+.tile span{color:var(--muted);font-size:14px}
+.list{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.card{display:flex;gap:16px;padding:16px;border:1px solid var(--line);border-radius:14px;color:var(--ink);text-decoration:none;background:var(--bg)}
+a.card:hover{border-color:var(--ink)}
+.stub{flex:0 0 62px;text-align:center;border:2px solid var(--ink);border-radius:8px;padding:5px 0;align-self:flex-start}
+.stub .m{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.stub .d{font-family:var(--display);font-weight:800;font-size:25px;line-height:1}
+.stub .y{font-size:11px;color:var(--muted)}
+.card .body{min-width:0;display:flex;flex-direction:column;gap:3px}
+.meta{color:var(--muted);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{font-size:12px;font-weight:600;padding:3px 8px;border-radius:99px;background:var(--panel);color:var(--ink)}
+.chip.cast{background:transparent;border:1px solid var(--good);color:var(--good)}
+.chip.sample{background:var(--sample-bg);color:var(--sample)}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:18px;padding:14px;background:var(--panel);border-radius:12px}
+.filters label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600}
+.filters input,.filters select{font:inherit;font-size:15px;font-weight:400;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);min-height:44px;min-width:0}
+.filters .check{flex-direction:row;align-items:center;gap:8px;align-self:end;min-height:44px}
+.filters .check input{width:20px;height:20px;min-height:0}
+.count{font-size:14px;color:var(--muted);margin-top:12px}
+.empty{padding:28px 18px;border:1px dashed var(--line);border-radius:14px;text-align:center;color:var(--muted)}
+.crumb{display:inline-flex;align-items:center;gap:6px;font-size:15px;min-height:44px}
+.detail{display:flex;flex-wrap:wrap;gap:32px;margin-top:8px}
+.detail .main-col{flex:999 1 540px;min-width:0}
+.detail aside{flex:1 1 280px;display:flex;flex-direction:column;gap:16px}
+.box{border:1px solid var(--line);border-radius:14px;padding:18px}
+.box.strong{border:2px solid var(--ink)}
+.facts{margin:18px 0 0;border-top:1px solid var(--line)}
+.fact{padding:12px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:190px minmax(0,1fr);gap:4px 18px}
+.fact dt{font-size:14px;font-weight:600;color:var(--muted)}
+.fact dd{margin:0;font-size:16px;font-weight:600;overflow-wrap:anywhere}
+.fact details{grid-column:2;font-size:13px}
+.fact summary{cursor:pointer;color:var(--link);font-weight:500;min-height:28px;display:inline-flex;align-items:center}
+.fact blockquote{margin:6px 0 0;padding:8px 12px;background:var(--panel);border-radius:8px;color:var(--muted);overflow-wrap:anywhere}
+.attrib{font-size:14px;color:var(--muted);margin-top:10px;overflow-wrap:anywhere}
+.copyrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.copyrow code{font-family:inherit;font-weight:600;background:var(--panel);padding:8px 10px;border-radius:8px;user-select:all}
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:16px}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+.step{border-top:2px solid var(--ink);padding-top:12px}
+.step b{display:block;font-size:17px}
+.step p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.note{background:var(--sample-bg);color:var(--ink);border-radius:12px;padding:12px 14px;font-size:14px;margin-top:16px}
+.people{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.people a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;border:1px solid var(--line);border-radius:99px;color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+.people a:hover{border-color:var(--ink)}
+.results h2{margin-top:26px;font-size:20px}
+footer.site{border-top:1px solid var(--line);background:var(--panel)}
+footer.site .wrap{padding-block:26px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;font-size:14px;color:var(--muted)}
+footer.site p{margin:0;max-width:60ch}
+@media (max-width:560px){
+  nav.main{flex-wrap:nowrap;overflow-x:auto;width:100%;gap:18px;scrollbar-width:none}
+  nav.main a{white-space:nowrap}
+  .fact{grid-template-columns:minmax(0,1fr)}
+  .fact details{grid-column:1}
+  .stub{flex-basis:54px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="proto">Prototype for testing. Coming up and Who's who use 25 real productions checked on 16 Nov 2026. Items marked Sample are not real.</div>
+<header class="site"><div class="wrap">
+  <a class="logo" href="#home">Casting Weekly</a>
+  <nav class="main" aria-label="Main">
+    <a href="#coming-up">Coming up</a>
+    <a href="#whos-who">Who's who</a>
+    <a href="#opportunities">Opportunities</a>
+    <a href="#where-to-look">Where to look</a>
+    <a href="#rates">Rates and rules</a>
+    <a href="#how-we-check">How we check</a>
+  </nav>
+</div></header>
+<main class="wrap" id="view" tabindex="-1"></main>
+<footer class="site"><div class="wrap">
+  <p>Casting Weekly lists facts from organisations' own pages and links to them. We don't copy anyone's wording or images. To have something corrected or removed, email office@castingweekly.com and it's done within 24 hours.</p>
+  <p><a href="#how-we-check">How we check</a></p>
+</div></footer>
+
+<script type="application/json" id="data">{"checked": "16 Nov 2026", "productions": [{"id": "sheffield-theatres-bones-in-the-desert", "title": "Bones In The Desert", "theatre": "Sheffield Theatres", "theatreId": "sheffield-theatres", "city": "Sheffield", "region": "Yorkshire", "venue": "Playhouse", "first": "2026-11-19", "last": null, "producer": "Half Moon", "writer": "Joe Nerssessian", "director": null, "castingDirector": null, "cast": false, "pageUrl": "https://www.sheffieldtheatres.co.uk/events/bones-in-the-desert", "facts": [{"label": "Title", "display": "Bones In The Desert", "evidence": "Bones In The Desert | Sheffield Theatres"}, {"label": "Venue", "display": "Playhouse", "evidence": "Playhouse"}, {"label": "First date listed", "display": "Thu 19 Nov 2026", "evidence": "Thu 19 Nov"}, {"label": "Produced or presented by", "display": "Half Moon", "evidence": "Half Moon presents"}, {"label": "Writer", "display": "Joe Nerssessian", "evidence": "by Joe Nerssessian"}]}, {"id": "leeds-playhouse-dr-seuss-s-how-the-grinch-stole-christmas-the-musical", "title": "Dr Seuss's How The Grinch Stole Christmas! The Musical", "theatre": "Leeds Playhouse", "theatreId": "leeds-playhouse", "city": "Leeds", "region": "Yorkshire", "venue": "Leeds Playhouse", "first": "2026-11-19", "last": "2027-01-16", "producer": null, "writer": null, "director": "Tom Wright", "castingDirector": null, "cast": true, "pageUrl": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "facts": [{"label": "Title", "display": "Dr Seuss's How The Grinch Stole Christmas! The Musical", "evidence": "Dr Seuss’s How The Grinch Stole Christmas! The Musical"}, {"label": "Venue", "display": "Leeds Playhouse", "evidence": "The Musical - Leeds Playhouse"}, {"label": "First date listed", "display": "Thu 19 Nov 2026", "evidence": "19 Nov 2026 – 16 Jan 2027"}, {"label": "Last date listed", "display": "Sat 16 Jan 2027", "evidence": "19 Nov 2026 – 16 Jan 2027"}, {"label": "Director", "display": "Tom Wright", "evidence": "directed by the Playhouse’s Artistic Director Tom Wright"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "Cast Joel Montague The Grinch"}]}, {"id": "octagon-cinderella-a-fairytale", "title": "Cinderella: A Fairytale", "theatre": "Octagon Theatre Bolton", "theatreId": "octagon", "city": "Bolton", "region": "North West", "venue": "Octagon Bolton", "first": "2026-11-20", "last": "2027-01-09", "producer": null, "writer": null, "director": "Sarah Punshon", "castingDirector": null, "cast": true, "pageUrl": "https://octagonbolton.co.uk/events/cinderella-a-fairytale", "facts": [{"label": "Title", "display": "Cinderella: A Fairytale", "evidence": "Cinderella: A Fairytale | Octagon Bolton"}, {"label": "Venue", "display": "Octagon Bolton", "evidence": "Cinderella: A Fairytale | Octagon Bolton"}, {"label": "First date listed", "display": "Fri 20 Nov 2026", "evidence": "Fri 20 Nov 2026 – Sat 9 Jan 2027"}, {"label": "Last date listed", "display": "Sat 9 Jan 2027", "evidence": "Fri 20 Nov 2026 – Sat 9 Jan 2027"}, {"label": "Director", "display": "Sarah Punshon", "evidence": "Directed by Sarah Punshon"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "Cast George Bury Off-Stage Swing"}]}, {"id": "northern-stage-the-christmas-sorting-office", "title": "The Christmas Sorting Office", "theatre": "Northern Stage", "theatreId": "northern-stage", "city": "Newcastle", "region": "North East", "venue": "Northern Stage", "first": "2026-11-21", "last": "2027-01-02", "producer": "Northern Stage", "writer": null, "director": "Stan Hodgson", "castingDirector": null, "cast": false, "pageUrl": "https://northernstage.co.uk/whats-on/the-christmas-sorting-office/", "facts": [{"label": "Title", "display": "The Christmas Sorting Office", "evidence": "The Christmas Sorting Office | Northern Stage"}, {"label": "Venue", "display": "Northern Stage", "evidence": "The Christmas Sorting Office | Northern Stage"}, {"label": "First date listed", "display": "Sat 21 Nov 2026", "evidence": "21 Nov 2026 – 2 Jan 2027"}, {"label": "Last date listed", "display": "Sat 2 Jan 2027", "evidence": "21 Nov 2026 – 2 Jan 2027"}, {"label": "Produced or presented by", "display": "Northern Stage", "evidence": "A Northern Stage production, created and directed by Stan Hodgson"}, {"label": "Director", "display": "Stan Hodgson", "evidence": "A Northern Stage production, created and directed by Stan Hodgson"}]}, {"id": "sheffield-theatres-singin-in-the-rain", "title": "Singin' in the Rain", "theatre": "Sheffield Theatres", "theatreId": "sheffield-theatres", "city": "Sheffield", "region": "Yorkshire", "venue": "Crucible", "first": "2026-11-26", "last": "2027-01-16", "producer": "Sheffield Theatres, Chichester Festival Theatre and Stage Entertainment", "writer": null, "director": "Jonathan Church", "castingDirector": null, "cast": true, "pageUrl": "https://www.sheffieldtheatres.co.uk/news/cast-announced-for-singin-in-the-rain", "facts": [{"label": "Title", "display": "Singin' in the Rain", "evidence": "Cast announced for Singin' in the Rain"}, {"label": "Venue", "display": "Crucible", "evidence": "opening at the Crucible this Christmas"}, {"label": "First date listed", "display": "Thu 26 Nov 2026", "evidence": "from Thursday 26 November 2026 – Saturday 16 January 2027"}, {"label": "Last date listed", "display": "Sat 16 Jan 2027", "evidence": "from Thursday 26 November 2026 – Saturday 16 January 2027"}, {"label": "Produced or presented by", "display": "Sheffield Theatres, Chichester Festival Theatre and Stage Entertainment", "evidence": "the Sheffield Theatres, Chichester Festival Theatre and Stage Entertainment production of Singin’ In The Rain"}, {"label": "Director", "display": "Jonathan Church", "evidence": "Singin’ in the Rain is Directed by Jonathan Church"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "The cast includes: Grant Almirall (Don Lockwood)"}]}, {"id": "hull-truck-the-wind-in-the-willows", "title": "The Wind in The Willows", "theatre": "Hull Truck Theatre", "theatreId": "hull-truck", "city": "Hull", "region": "Yorkshire", "venue": "Hull Truck Theatre", "first": "2026-11-27", "last": "2027-01-03", "producer": null, "writer": null, "director": "Mark Babych", "castingDirector": null, "cast": true, "pageUrl": "https://www.hulltruck.co.uk/news/cast-announcement-for-the-wind-in-the-willows-at-hull-truck-theatre-proudly-supported-by-hull-trains/", "facts": [{"label": "Title", "display": "The Wind in The Willows", "evidence": "The Wind in The Willows at Hull Truck Theatre"}, {"label": "Venue", "display": "Hull Truck Theatre", "evidence": "The Wind in The Willows at Hull Truck Theatre"}, {"label": "First date listed", "display": "Fri 27 Nov 2026", "evidence": "will be on stage in Stage 1 from Friday 27 November 2026 - Sunday 3 January 2027"}, {"label": "Last date listed", "display": "Sun 3 Jan 2027", "evidence": "will be on stage in Stage 1 from Friday 27 November 2026 - Sunday 3 January 2027"}, {"label": "Director", "display": "Mark Babych", "evidence": "Directed by Hull Truck Theatre’s Artistic Director, Mark Babych"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "We are thrilled to announce the cast for our brand-new adaptation of the enduring family favourite The Wind in The Willows"}]}, {"id": "sheffield-theatres-cinderella", "title": "Cinderella", "theatre": "Sheffield Theatres", "theatreId": "sheffield-theatres", "city": "Sheffield", "region": "Yorkshire", "venue": "Lyceum", "first": "2026-11-28", "last": "2027-01-03", "producer": null, "writer": "Paul Hendy", "director": "Paul Hendy", "castingDirector": null, "cast": true, "pageUrl": "https://www.sheffieldtheatres.co.uk/events/cinderella-2026", "facts": [{"label": "Title", "display": "Cinderella", "evidence": "Cinderella | Sheffield Theatres"}, {"label": "Venue", "display": "Lyceum", "evidence": "Lyceum"}, {"label": "First date listed", "display": "Sat 28 Nov 2026", "evidence": "Sat 28 Nov 2026 – Sun 3 Jan 2027"}, {"label": "Last date listed", "display": "Sun 3 Jan 2027", "evidence": "Sat 28 Nov 2026 – Sun 3 Jan 2027"}, {"label": "Writer", "display": "Paul Hendy", "evidence": "Writer & Director PAUL HENDY"}, {"label": "Director", "display": "Paul Hendy", "evidence": "Writer & Director PAUL HENDY"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "with an amazing cast including Ore Oduba"}]}, {"id": "royal-exchange-a-little-night-music", "title": "A Little Night Music", "theatre": "Royal Exchange Theatre", "theatreId": "royal-exchange", "city": "Manchester", "region": "North West", "venue": "Royal Exchange Theatre", "first": "2026-12-05", "last": "2027-01-30", "producer": null, "writer": null, "director": null, "castingDirector": null, "cast": true, "pageUrl": "https://www.royalexchange.co.uk/event/a-little-night-music/", "facts": [{"label": "Title", "display": "A Little Night Music", "evidence": "A Little Night Music - Royal Exchange Theatre"}, {"label": "Venue", "display": "Royal Exchange Theatre", "evidence": "A Little Night Music - Royal Exchange Theatre"}, {"label": "First date listed", "display": "Sat 5 Dec 2026", "evidence": "Sat 5 Dec 2026 – Sat 30 Jan 2027"}, {"label": "Last date listed", "display": "Sat 30 Jan 2027", "evidence": "Sat 5 Dec 2026 – Sat 30 Jan 2027"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "Starring Michelle Gomez."}]}, {"id": "hull-truck-spiders", "title": "Spiders", "theatre": "Hull Truck Theatre", "theatreId": "hull-truck", "city": "Hull", "region": "Yorkshire", "venue": "Hull Truck Theatre", "first": "2027-01-28", "last": "2027-02-20", "producer": null, "writer": "Martha Godber", "director": null, "castingDirector": null, "cast": false, "pageUrl": "https://www.hulltruck.co.uk/news/a-brand-new-season-of-new-writing-awaits-at-hull-truck-theatre-in-2027/", "facts": [{"label": "Title", "display": "Spiders", "evidence": "the new play that everyone in Hull is talking about, Spiders (Thursday 28 January – Saturday 20 February)"}, {"label": "Venue", "display": "Hull Truck Theatre", "evidence": "Hull Truck Theatre will kick off the season with local writer Martha Godber"}, {"label": "First date listed", "display": "Thu 28 Jan 2027", "evidence": "Spiders (Thursday 28 January – Saturday 20 February)"}, {"label": "Last date listed", "display": "Sat 20 Feb 2027", "evidence": "Spiders (Thursday 28 January – Saturday 20 February)"}, {"label": "Writer", "display": "Martha Godber", "evidence": "local writer Martha Godber"}]}, {"id": "leeds-playhouse-wedding-fayre", "title": "Wedding Fayre", "theatre": "Leeds Playhouse", "theatreId": "leeds-playhouse", "city": "Leeds", "region": "Yorkshire", "venue": "Leeds Playhouse", "first": "2027-02-16", "last": "2027-02-17", "producer": null, "writer": null, "director": "Jenny Sealey", "castingDirector": null, "cast": false, "pageUrl": "https://www.leedsplayhouse.org.uk/event/wedding-fayre/", "facts": [{"label": "Title", "display": "Wedding Fayre", "evidence": "Wedding Fayre - Leeds Playhouse"}, {"label": "Venue", "display": "Leeds Playhouse", "evidence": "Wedding Fayre - Leeds Playhouse"}, {"label": "First date listed", "display": "Tue 16 Feb 2027", "evidence": "16 – 17 Feb 2027"}, {"label": "Last date listed", "display": "Wed 17 Feb 2027", "evidence": "16 – 17 Feb 2027"}, {"label": "Director", "display": "Jenny Sealey", "evidence": "is directed by Graeae Artistic Director Jenny Sealey"}]}, {"id": "leeds-playhouse-romeo-and-juliet", "title": "Romeo and Juliet", "theatre": "Leeds Playhouse", "theatreId": "leeds-playhouse", "city": "Leeds", "region": "Yorkshire", "venue": "Leeds Playhouse", "first": "2027-03-03", "last": "2027-03-20", "producer": null, "writer": "William Shakespeare", "director": "Chelsea Walker", "castingDirector": "Becky Paris", "cast": true, "pageUrl": "https://www.leedsplayhouse.org.uk/event/romeo-and-juliet-3/", "facts": [{"label": "Title", "display": "Romeo and Juliet", "evidence": "Romeo and Juliet - Leeds Playhouse"}, {"label": "Venue", "display": "Leeds Playhouse", "evidence": "Romeo and Juliet - Leeds Playhouse"}, {"label": "First date listed", "display": "Wed 3 Mar 2027", "evidence": "3 – 20 Mar 2027"}, {"label": "Last date listed", "display": "Sat 20 Mar 2027", "evidence": "3 – 20 Mar 2027"}, {"label": "Writer", "display": "William Shakespeare", "evidence": "William Shakespeare Writer"}, {"label": "Director", "display": "Chelsea Walker", "evidence": "Chelsea Walker Director"}, {"label": "Casting director", "display": "Becky Paris", "evidence": "Becky Paris Casting Director"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "Cast Matthew Anthony Ralph Romeo"}]}, {"id": "northern-stage-dry-bits", "title": "Dry Bits", "theatre": "Northern Stage", "theatreId": "northern-stage", "city": "Newcastle", "region": "North East", "venue": "Northern Stage", "first": "2027-03-16", "last": null, "producer": null, "writer": "Imogen Ashby", "director": null, "castingDirector": null, "cast": false, "pageUrl": "https://northernstage.co.uk/whats-on/dry-bits/", "facts": [{"label": "Title", "display": "Dry Bits", "evidence": "Dry Bits | Northern Stage"}, {"label": "Venue", "display": "Northern Stage", "evidence": "Dry Bits | Northern Stage"}, {"label": "First date listed", "display": "Tue 16 Mar 2027", "evidence": "16 Mar 2027"}, {"label": "Writer", "display": "Imogen Ashby", "evidence": "from local writer-performer Imogen Ashby"}]}, {"id": "new-vic-the-39-steps", "title": "The 39 Steps", "theatre": "New Vic Theatre", "theatreId": "new-vic", "city": "Newcastle-under-Lyme", "region": "West Midlands", "venue": "New Vic Theatre", "first": "2027-03-20", "last": "2027-04-17", "producer": null, "writer": null, "director": "Theresa Heskins", "castingDirector": null, "cast": true, "pageUrl": "https://www.newvictheatre.org.uk/productions/the-39-steps-3/", "facts": [{"label": "Title", "display": "The 39 Steps", "evidence": "The 39 Steps - New Vic Theatre"}, {"label": "Venue", "display": "New Vic Theatre", "evidence": "The 39 Steps - New Vic Theatre"}, {"label": "First date listed", "display": "Sat 20 Mar 2027", "evidence": "Showing: Saturday 20 March–Saturday 17 April 2027"}, {"label": "Last date listed", "display": "Sat 17 Apr 2027", "evidence": "Showing: Saturday 20 March–Saturday 17 April 2027"}, {"label": "Director", "display": "Theresa Heskins", "evidence": "Directed by Theresa Heskins"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "Original cast members Michael Hugo and Gareth Cassidy return"}]}, {"id": "northern-stage-what-wood-victoria-do", "title": "What Wood Victoria Do?", "theatre": "Northern Stage", "theatreId": "northern-stage", "city": "Newcastle", "region": "North East", "venue": "Northern Stage", "first": "2027-04-01", "last": null, "producer": null, "writer": null, "director": "Sarah-Louise Young", "castingDirector": null, "cast": false, "pageUrl": "https://northernstage.co.uk/whats-on/what-wood-victoria-do/", "facts": [{"label": "Title", "display": "What Wood Victoria Do?", "evidence": "What Wood Victoria Do? | Northern Stage"}, {"label": "Venue", "display": "Northern Stage", "evidence": "What Wood Victoria Do? | Northern Stage"}, {"label": "First date listed", "display": "Thu 1 Apr 2027", "evidence": "1 Apr 2027"}, {"label": "Director", "display": "Sarah-Louise Young", "evidence": "Directed by Sarah-Louise Young"}]}, {"id": "everyman-playhouse-constellations", "title": "Constellations", "theatre": "Liverpool Everyman & Playhouse", "theatreId": "everyman-playhouse", "city": "Liverpool", "region": "North West", "venue": "Everyman", "first": "2027-04-17", "last": "2027-05-08", "producer": null, "writer": "Nick Payne", "director": "Yusra Warsama", "castingDirector": null, "cast": false, "pageUrl": "https://everymanplayhouse.com/event/constellations/", "facts": [{"label": "Title", "display": "Constellations", "evidence": "Constellations - Liverpool Everyman & Playhouse Theatres"}, {"label": "Venue", "display": "Everyman", "evidence": "Everyman Sat 17 Apr – Sat 8 May 2027"}, {"label": "First date listed", "display": "Sat 17 Apr 2027", "evidence": "Sat 17 Apr – Sat 8 May 2027"}, {"label": "Last date listed", "display": "Sat 8 May 2027", "evidence": "Sat 17 Apr – Sat 8 May 2027"}, {"label": "Writer", "display": "Nick Payne", "evidence": "Nick Payne Writer"}, {"label": "Director", "display": "Yusra Warsama", "evidence": "Yusra Warsama Director"}]}, {"id": "nottingham-playhouse-romeo-juliet", "title": "Romeo & Juliet", "theatre": "Nottingham Playhouse", "theatreId": "nottingham-playhouse", "city": "Nottingham", "region": "East Midlands", "venue": "Nottingham Playhouse", "first": "2027-04-20", "last": "2027-05-08", "producer": null, "writer": "William Shakespeare", "director": null, "castingDirector": null, "cast": false, "pageUrl": "https://nottinghamplayhouse.co.uk/events/romeo-juliet/", "facts": [{"label": "Title", "display": "Romeo & Juliet", "evidence": "Romeo & Juliet - Nottingham Playhouse"}, {"label": "Venue", "display": "Nottingham Playhouse", "evidence": "Romeo & Juliet - Nottingham Playhouse"}, {"label": "First date listed", "display": "Tue 20 Apr 2027", "evidence": "Tue 20 Apr – Sat 8 May 2027"}, {"label": "Last date listed", "display": "Sat 8 May 2027", "evidence": "Tue 20 Apr – Sat 8 May 2027"}, {"label": "Writer", "display": "William Shakespeare", "evidence": "by William Shakespeare"}]}, {"id": "sheffield-theatres-the-silence-of-the-lambs", "title": "The Silence of the Lambs", "theatre": "Sheffield Theatres", "theatreId": "sheffield-theatres", "city": "Sheffield", "region": "Yorkshire", "venue": "Lyceum", "first": "2027-05-04", "last": "2027-05-08", "producer": null, "writer": "Gina Gionfriddo", "director": "Nikolai Foster", "castingDirector": null, "cast": true, "pageUrl": "https://www.sheffieldtheatres.co.uk/events/silence-of-the-lambs", "facts": [{"label": "Title", "display": "The Silence of the Lambs", "evidence": "The Silence of the Lambs | Sheffield Theatres"}, {"label": "Venue", "display": "Lyceum", "evidence": "Lyceum"}, {"label": "First date listed", "display": "Tue 4 May 2027", "evidence": "Tue 4 – Sat 8 May 2027"}, {"label": "Last date listed", "display": "Sat 8 May 2027", "evidence": "Tue 4 – Sat 8 May 2027"}, {"label": "Writer", "display": "Gina Gionfriddo", "evidence": "Written by the award-winning Gina Gionfriddo"}, {"label": "Director", "display": "Nikolai Foster", "evidence": "directed by the acclaimed Nikolai Foster"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "starring John Partridge"}]}, {"id": "new-vic-folk", "title": "Folk", "theatre": "New Vic Theatre", "theatreId": "new-vic", "city": "Newcastle-under-Lyme", "region": "West Midlands", "venue": "New Vic Theatre", "first": "2027-05-07", "last": "2027-05-29", "producer": "New Vic", "writer": "Nell Leyshon", "director": "Polly Wain", "castingDirector": null, "cast": false, "pageUrl": "https://www.newvictheatre.org.uk/productions/folk/", "facts": [{"label": "Title", "display": "Folk", "evidence": "Folk - New Vic Theatre"}, {"label": "Venue", "display": "New Vic Theatre", "evidence": "Folk - New Vic Theatre"}, {"label": "First date listed", "display": "Fri 7 May 2027", "evidence": "Showing: Friday 7 May–Saturday 29 May 2027"}, {"label": "Last date listed", "display": "Sat 29 May 2027", "evidence": "Showing: Friday 7 May–Saturday 29 May 2027"}, {"label": "Produced or presented by", "display": "New Vic", "evidence": "New Vic Production"}, {"label": "Writer", "display": "Nell Leyshon", "evidence": "By Nell Leyshon"}, {"label": "Director", "display": "Polly Wain", "evidence": "Directed by Polly Wain"}]}, {"id": "nottingham-playhouse-my-name-is-rachel-corrie", "title": "My Name Is Rachel Corrie", "theatre": "Nottingham Playhouse", "theatreId": "nottingham-playhouse", "city": "Nottingham", "region": "East Midlands", "venue": "Nottingham Playhouse", "first": "2027-05-14", "last": "2027-05-15", "producer": null, "writer": null, "director": "Ian Kershaw", "castingDirector": null, "cast": true, "pageUrl": "https://nottinghamplayhouse.co.uk/events/my-name-is-rachel-corrie/", "facts": [{"label": "Title", "display": "My Name Is Rachel Corrie", "evidence": "My Name Is Rachel Corrie - Nottingham Playhouse"}, {"label": "Venue", "display": "Nottingham Playhouse", "evidence": "My Name Is Rachel Corrie - Nottingham Playhouse"}, {"label": "First date listed", "display": "Fri 14 May 2027", "evidence": "Fri 14 – Sat 15 May 2027"}, {"label": "Last date listed", "display": "Sat 15 May 2027", "evidence": "Fri 14 – Sat 15 May 2027"}, {"label": "Director", "display": "Ian Kershaw", "evidence": "is directed by Ian Kershaw"}, {"label": "Cast", "display": "Cast announced on the theatre's page", "evidence": "with Harriet Bibby (Coronation Street, Doctors, Brassic) in the role of Rachel"}]}, {"id": "leeds-playhouse-grimeboy", "title": "Grimeboy", "theatre": "Leeds Playhouse", "theatreId": "leeds-playhouse", "city": "Leeds", "region": "Yorkshire", "venue": "Leeds Playhouse", "first": "2027-05-26", "last": "2027-05-29", "producer": null, "writer": "Casey Bailey", "director": "Madeleine Kludje", "castingDirector": null, "cast": false, "pageUrl": "https://www.leedsplayhouse.org.uk/event/grimeboy/", "facts": [{"label": "Title", "display": "Grimeboy", "evidence": "Grimeboy - Leeds Playhouse"}, {"label": "Venue", "display": "Leeds Playhouse", "evidence": "Grimeboy - Leeds Playhouse"}, {"label": "First date listed", "display": "Wed 26 May 2027", "evidence": "26 – 29 May 2027"}, {"label": "Last date listed", "display": "Sat 29 May 2027", "evidence": "26 – 29 May 2027"}, {"label": "Writer", "display": "Casey Bailey", "evidence": "award-winning writer Casey Bailey"}, {"label": "Director", "display": "Madeleine Kludje", "evidence": "Directed by Birmingham Rep’s Deputy Artistic Director Madeleine Kludje."}]}, {"id": "lyceum-mother-courage-and-her-children", "title": "Mother Courage and her Children", "theatre": "Royal Lyceum Theatre Edinburgh", "theatreId": "lyceum", "city": "Edinburgh", "region": "Scotland", "venue": "Lyceum", "first": "2027-05-28", "last": "2027-06-19", "producer": "Royal Lyceum Theatre Edinburgh", "writer": null, "director": null, "castingDirector": null, "cast": false, "pageUrl": "https://lyceum.org.uk/events/mother-courage-her-children", "facts": [{"label": "Title", "display": "Mother Courage and her Children", "evidence": "Mother Courage and her Children | Lyceum"}, {"label": "Venue", "display": "Lyceum", "evidence": "Mother Courage and her Children | Lyceum"}, {"label": "First date listed", "display": "Fri 28 May 2027", "evidence": "Fri 28 May – Sat 19 Jun 2027"}, {"label": "Last date listed", "display": "Sat 19 Jun 2027", "evidence": "Fri 28 May – Sat 19 Jun 2027"}, {"label": "Produced or presented by", "display": "Royal Lyceum Theatre Edinburgh", "evidence": "A Royal Lyceum Theatre Edinburgh production."}]}, {"id": "northern-stage-pride-and-prejudice-but-funny", "title": "Pride and Prejudice... But Funny", "theatre": "Northern Stage", "theatreId": "northern-stage", "city": "Newcastle", "region": "North East", "venue": "Northern Stage", "first": "2027-05-29", "last": null, "producer": "Lamphouse Theatre", "writer": null, "director": null, "castingDirector": null, "cast": false, "pageUrl": "https://northernstage.co.uk/whats-on/pride-and-prejudice-but-funny/", "facts": [{"label": "Title", "display": "Pride and Prejudice... But Funny", "evidence": "Pride and Prejudice... But Funny | Northern Stage"}, {"label": "Venue", "display": "Northern Stage", "evidence": "Pride and Prejudice... But Funny | Northern Stage"}, {"label": "First date listed", "display": "Sat 29 May 2027", "evidence": "29 May 2027"}, {"label": "Produced or presented by", "display": "Lamphouse Theatre", "evidence": "Lamphouse Theatre presents"}]}, {"id": "everyman-playhouse-mog-the-forgetful-cat", "title": "Mog the Forgetful Cat", "theatre": "Liverpool Everyman & Playhouse", "theatreId": "everyman-playhouse", "city": "Liverpool", "region": "North West", "venue": "Playhouse", "first": "2027-06-01", "last": "2027-06-05", "producer": null, "writer": null, "director": null, "castingDirector": null, "cast": false, "pageUrl": "https://everymanplayhouse.com/event/mog-the-forgetful-cat/", "facts": [{"label": "Title", "display": "Mog the Forgetful Cat", "evidence": "Mog the Forgetful Cat - Liverpool Everyman & Playhouse Theatres"}, {"label": "Venue", "display": "Playhouse", "evidence": "Playhouse Tue 1 – Sat 5 Jun 2027"}, {"label": "First date listed", "display": "Tue 1 Jun 2027", "evidence": "Tue 1 – Sat 5 Jun 2027"}, {"label": "Last date listed", "display": "Sat 5 Jun 2027", "evidence": "Tue 1 – Sat 5 Jun 2027"}]}, {"id": "lyceum-zog-and-the-flying-doctors", "title": "Zog and The Flying Doctors", "theatre": "Royal Lyceum Theatre Edinburgh", "theatreId": "lyceum", "city": "Edinburgh", "region": "Scotland", "venue": "Lyceum", "first": "2027-07-06", "last": "2027-07-11", "producer": null, "writer": null, "director": "Katie Beard and Bobby Delaney", "castingDirector": null, "cast": false, "pageUrl": "https://lyceum.org.uk/events/zog-the-flying-doctors-2027", "facts": [{"label": "Title", "display": "Zog and The Flying Doctors", "evidence": "Zog and The Flying Doctors | Lyceum"}, {"label": "Venue", "display": "Lyceum", "evidence": "Zog and The Flying Doctors | Lyceum"}, {"label": "First date listed", "display": "Tue 6 Jul 2027", "evidence": "Tue 6 – Sun 11 Jul 2027"}, {"label": "Last date listed", "display": "Sun 11 Jul 2027", "evidence": "Tue 6 – Sun 11 Jul 2027"}, {"label": "Director", "display": "Katie Beard and Bobby Delaney", "evidence": "Directors Katie Beard and Bobby Delaney"}]}, {"id": "everyman-playhouse-the-rock-n-roll-panto-2027-hansel-and-gretel", "title": "The Rock 'n' Roll Panto 2027: Hansel and Gretel", "theatre": "Liverpool Everyman & Playhouse", "theatreId": "everyman-playhouse", "city": "Liverpool", "region": "North West", "venue": "Everyman", "first": "2027-11-13", "last": "2028-01-15", "producer": null, "writer": "Billie Collins", "director": "Ellie Hurt", "castingDirector": null, "cast": false, "pageUrl": "https://everymanplayhouse.com/event/the-rock-n-roll-panto-2027-hansel-gretel/", "facts": [{"label": "Title", "display": "The Rock 'n' Roll Panto 2027: Hansel and Gretel", "evidence": "The Rock ‘n’ Roll Panto 2027: Hansel and Gretel - Liverpool Everyman & Playhouse Theatres"}, {"label": "Venue", "display": "Everyman", "evidence": "Everyman Sat 13 Nov 2027 – Sat 15 Jan 2028"}, {"label": "First date listed", "display": "Sat 13 Nov 2027", "evidence": "Sat 13 Nov 2027 – Sat 15 Jan 2028"}, {"label": "Last date listed", "display": "Sat 15 Jan 2028", "evidence": "Sat 13 Nov 2027 – Sat 15 Jan 2028"}, {"label": "Writer", "display": "Billie Collins", "evidence": "Billie Collins Writer"}, {"label": "Director", "display": "Ellie Hurt", "evidence": "Ellie Hurt Director"}]}], "theatres": [{"id": "leeds-playhouse", "name": "Leeds Playhouse", "url": "https://www.leedsplayhouse.org.uk", "city": "Leeds", "region": "Yorkshire"}, {"id": "sheffield-theatres", "name": "Sheffield Theatres", "url": "https://www.sheffieldtheatres.co.uk", "city": "Sheffield", "region": "Yorkshire"}, {"id": "royal-exchange", "name": "Royal Exchange Theatre", "url": "https://www.royalexchange.co.uk", "city": "Manchester", "region": "North West"}, {"id": "bristol-old-vic", "name": "Bristol Old Vic", "url": "https://bristololdvic.org.uk", "city": "Bristol", "region": "South West"}, {"id": "nottingham-playhouse", "name": "Nottingham Playhouse", "url": "https://nottinghamplayhouse.co.uk", "city": "Nottingham", "region": "East Midlands"}, {"id": "lyceum", "name": "Royal Lyceum Theatre Edinburgh", "url": "https://lyceum.org.uk", "city": "Edinburgh", "region": "Scotland"}, {"id": "northern-stage", "name": "Northern Stage", "url": "https://northernstage.co.uk", "city": "Newcastle", "region": "North East"}, {"id": "everyman-playhouse", "name": "Liverpool Everyman & Playhouse", "url": "https://www.everymanplayhouse.com", "city": "Liverpool", "region": "North West"}, {"id": "new-vic", "name": "New Vic Theatre", "url": "https://www.newvictheatre.org.uk", "city": "Newcastle-under-Lyme", "region": "West Midlands"}, {"id": "octagon", "name": "Octagon Theatre Bolton", "url": "https://octagonbolton.co.uk", "city": "Bolton", "region": "North West"}, {"id": "sjt", "name": "Stephen Joseph Theatre", "url": "https://www.sjt.uk.com", "city": "Scarborough", "region": "Yorkshire"}, {"id": "hull-truck", "name": "Hull Truck Theatre", "url": "https://www.hulltruck.co.uk", "city": "Hull", "region": "Yorkshire"}]}</script>
+<script>
+(function(){
+"use strict";
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const P = DATA.productions;
+const view = document.getElementById("view");
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const MONTHS_LONG = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+/* ---------- helpers ---------- */
+function h(tag, attrs, ...kids){
+  const n = document.createElement(tag);
+  if(attrs) for(const [k,v] of Object.entries(attrs)){
+    if(v == null || v === false) continue;
+    if(k === "class") n.className = v; else if(k === "text") n.textContent = v;
+    else if(k.startsWith("on")) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v === true ? "" : v);
+  }
+  for(const k of kids.flat()){ if(k == null || k === false) continue; n.append(k.nodeType ? k : document.createTextNode(String(k))); }
+  return n;
+}
+function slug(s){ return s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""); }
+const WD = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function fmt(iso){ const d = new Date(iso + "T12:00:00"); return WD[d.getDay()] + " " + d.getDate() + " " + MONTHS[d.getMonth()] + " " + d.getFullYear(); }
+function range(p){ return p.last && p.last !== p.first ? fmt(p.first) + " to " + fmt(p.last) : fmt(p.first); }
+function stub(iso){ const [y,m,d] = iso.split("-"); return h("div",{class:"stub","aria-hidden":"true"}, h("div",{class:"m",text:MONTHS[+m-1]}), h("div",{class:"d",text:String(+d)}), h("div",{class:"y",text:y})); }
+function names(v){ return v ? v.split(/\s+and\s+/).map(s=>s.trim()).filter(Boolean) : []; }
+
+/* people index from director, writer, casting director credits */
+const PEOPLE = {};
+for(const p of P){
+  for(const [key, role] of [["director","Director"],["writer","Writer"],["castingDirector","Casting director"]]){
+    for(const n of names(p[key])){
+      const id = slug(n);
+      (PEOPLE[id] = PEOPLE[id] || {id, name:n, credits:[]}).credits.push({role, p});
+    }
+  }
+}
+const THEATRES = Object.fromEntries(DATA.theatres.map(t => [t.id, t]));
+const REGIONS = [...new Set(DATA.theatres.map(t=>t.region))].sort();
+
+const WHERE = [
+  {group:"Casting platforms", items:[
+    ["Spotlight","Membership","The main UK directory of professional performers. Casting directors send breakdowns to members and their agents.","https://www.spotlight.com","spotlight.com"],
+    ["Mandy","Free and paid","Job listings for actors, singers, dancers and crew across theatre, screen and more.","https://www.mandy.com","mandy.com"],
+    ["Backstage","Free and paid","Casting calls and auditions, with a UK section.","https://www.backstage.com","backstage.com"]]},
+  {group:"Unions and industry", items:[
+    ["Equity","Members","The performers' trade union. Members get job information and advice on contracts and rates.","https://www.equity.org.uk","equity.org.uk"],
+    ["The Stage","Free to browse","The theatre industry's newspaper, with a jobs and auditions section.","https://www.thestage.co.uk","thestage.co.uk"],
+    ["Arts Jobs","Free to browse","Arts Council England's listings for jobs and opportunities in the arts.","https://www.artsjobs.org.uk","artsjobs.org.uk"]]},
+  {group:"Casting directors", items:[
+    ["The Casting Directors' Guild","Free to browse","The professional body for UK casting directors, with a members' directory.","https://www.thecdg.co.uk","thecdg.co.uk"]]},
+  {group:"Straight from theatres", items: DATA.theatres.map(t => [t.name, "Free", "Their own website, where they announce productions and any open calls. " + t.city + ".", t.url, t.url.replace(/^https?:\/\/(www\.)?/,"")])}
+];
+const OPPS = [
+  {kind:"General auditions", title:"General auditions for local actors", org:"Example Rep Theatre", place:"Leeds", when:"Sat 5 Dec 2026", note:"Book a slot; for professional actors based in the region."},
+  {kind:"Funded scheme", title:"Associate artist scheme 2027", org:"Example Producing Theatre", place:"Manchester", when:"Applications close Fri 15 Jan 2027", note:"Paid placement for early-career theatre makers."},
+  {kind:"Festival call", title:"Open call for new work", org:"Example Festival", place:"Edinburgh", when:"Applications close Mon 1 Feb 2027", note:"Companies apply to present work at the festival."}
+];
+const RATES = [
+  ["UK Theatre / Equity (subsidised)","Regional producing theatres that receive public funding.","Minimum weekly salary: [from the current agreement]"],
+  ["UK Theatre / Equity (commercial)","Commercial productions and tours in regional theatres.","Minimum weekly salary: [from the current agreement]"],
+  ["SOLT / Equity","West End theatres.","Minimum weekly salary: [from the current agreement]"],
+  ["ITC / Equity","Independent and small-scale companies, including many touring and theatre-for-young-audiences companies.","Minimum weekly salary: [from the current agreement]"]
+];
+
+/* ---------- shared pieces ---------- */
+function prodCard(p){
+  const people = [p.director && ("Directed by " + p.director)].filter(Boolean);
+  return h("a",{class:"card", href:"#production-"+p.id},
+    stub(p.first),
+    h("div",{class:"body"},
+      h("span",{class:"eyebrow", text: p.theatre + " · " + p.city}),
+      h("h3",{text:p.title}),
+      h("span",{class:"meta", text: (p.venue ? p.venue + " · " : "") + range(p)}),
+      people.length ? h("span",{class:"meta", text: people.join(" · ")}) : null,
+      h("div",{class:"chips"}, p.cast ? h("span",{class:"chip cast",text:"Cast announced"}) : h("span",{class:"chip",text:"Cast not listed yet"}))
+    ));
+}
+function sectionHead(title, note){ return h("div",{class:"section-head"}, h("h2",{text:title}), note ? h("p",{text:note}) : null); }
+function upcoming(list){ return list.slice().sort((a,b)=> a.first < b.first ? -1 : a.first > b.first ? 1 : a.title.localeCompare(b.title)); }
+
+/* ---------- views ---------- */
+function Home(){
+  const q = h("input",{type:"search", id:"home-q", placeholder:"Show, theatre, director or town", "aria-label":"Search the catalogue"});
+  const form = h("form",{class:"search", onsubmit:e=>{e.preventDefault(); location.hash = "search-" + encodeURIComponent(q.value.trim());}}, q, h("button",{class:"btn",type:"submit",text:"Search"}));
+  return [
+    h("h1",{}, "Where do I go to find my next job?", h("br"), h("span",{class:"mark",text:"Casting Weekly."})),
+    h("p",{class:"lede", text:"A catalogue of what's being made in UK theatre and who's making it, taken from the organisations' own pages. Every fact is checked against its source and dated."}),
+    form,
+    h("div",{class:"tiles"},
+      tile("#coming-up","Coming up", P.length + " productions from " + new Set(P.map(p=>p.theatreId)).size + " theatres"),
+      tile("#whos-who","Who's who", DATA.theatres.length + " theatres, " + Object.keys(PEOPLE).length + " people credited"),
+      tile("#opportunities","Opportunities","General auditions, schemes, festival calls"),
+      tile("#where-to-look","Where to look","Every place UK casting is posted")),
+    sectionHead("Opening soonest", "Checked " + DATA.checked),
+    h("div",{class:"list"}, upcoming(P).slice(0,5).map(prodCard)),
+    h("p",{}, h("a",{href:"#coming-up", text:"See all " + P.length + " productions"}))
+  ];
+}
+function tile(href, title, sub){ return h("a",{class:"tile", href}, h("b",{text:title}), h("span",{text:sub})); }
+
+function ComingUp(){
+  const months = [...new Set(P.map(p=>p.first.slice(0,7)))].sort();
+  const st = ComingUp.state || (ComingUp.state = {q:"", month:"", region:"", theatre:"", nocast:false});
+  const list = h("div",{class:"list"}); const count = h("p",{class:"count","aria-live":"polite"});
+  const theatresWith = DATA.theatres.filter(t => P.some(p=>p.theatreId===t.id));
+  function sel(id, label, opts, key){
+    const s = h("select",{id, onchange:()=>{st[key]=s.value; draw();}}, h("option",{value:"",text:"All"}), opts.map(([v,t])=>h("option",{value:v,text:t})));
+    s.value = st[key]; return h("label",{for:id}, label, s);
+  }
+  const q = h("input",{type:"search", id:"cu-q", value:st.q, placeholder:"Title, theatre, person", oninput:()=>{st.q=q.value; draw();}});
+  const nc = h("input",{type:"checkbox", id:"cu-nocast", onchange:()=>{st.nocast=nc.checked; draw();}}); nc.checked = st.nocast;
+  function draw(){
+    const t = st.q.toLowerCase().trim();
+    const res = upcoming(P).filter(p =>
+      (!st.month || p.first.startsWith(st.month)) && (!st.region || p.region===st.region) && (!st.theatre || p.theatreId===st.theatre) && (!st.nocast || !p.cast) &&
+      (!t || [p.title,p.theatre,p.city,p.venue,p.director,p.writer,p.castingDirector,p.producer].join(" ").toLowerCase().includes(t)));
+    count.textContent = res.length === 1 ? "1 production" : res.length + " productions";
+    list.replaceChildren(...(res.length ? res.map(prodCard) : [h("div",{class:"empty",text:"Nothing matches those filters. Try fewer filters or another search."})]));
+  }
+  draw();
+  return [
+    h("h1",{text:"Coming up"}),
+    h("p",{class:"lede", text:"Productions announced by UK theatres, opening from now to November 2027. Each fact comes word for word from the theatre's own page, checked " + DATA.checked + "."}),
+    h("div",{class:"filters"},
+      h("label",{for:"cu-q"}, "Search", q),
+      sel("cu-month","Opening in", months.map(m=>[m, MONTHS_LONG[+m.slice(5)-1] + " " + m.slice(0,4)]), "month"),
+      sel("cu-region","Region", REGIONS.filter(r=>P.some(p=>p.region===r)).map(r=>[r,r]), "region"),
+      sel("cu-theatre","Theatre", theatresWith.map(t=>[t.id,t.name]), "theatre"),
+      h("label",{class:"check", for:"cu-nocast"}, nc, "Cast not listed yet")),
+    count, list
+  ];
+}
+
+function Production(id){
+  const p = P.find(x=>x.id===id);
+  if(!p) return NotFound();
+  const t = THEATRES[p.theatreId];
+  const copyBtn = h("button",{class:"btn ghost", type:"button", text:"Copy address", onclick:async e=>{
+    try{ await navigator.clipboard.writeText("office@castingweekly.com"); e.target.textContent = "Copied"; } catch(_){ const c = e.target.previousSibling; const r = document.createRange(); r.selectNodeContents(c); const s = getSelection(); s.removeAllRanges(); s.addRange(r); e.target.textContent = "Selected, press copy"; }
+  }});
+  const credits = [];
+  for(const [key, role] of [["director","Director"],["writer","Writer"],["castingDirector","Casting director"]])
+    for(const n of names(p[key])) credits.push(h("a",{href:"#person-"+slug(n), text: n + " (" + role.toLowerCase() + ")"}));
+  return [
+    h("a",{class:"crumb", href:"#coming-up", text:"← Coming up"}),
+    h("div",{class:"detail"},
+      h("div",{class:"main-col"},
+        h("span",{class:"eyebrow", text: p.theatre + " · " + p.city}),
+        h("h1",{text:p.title, style:"margin-top:6px"}),
+        h("p",{class:"lede", text: range(p)}),
+        h("div",{class:"chips"}, p.cast ? h("span",{class:"chip cast",text:"Cast announced"}) : h("span",{class:"chip",text:"Cast not listed yet"})),
+        h("dl",{class:"facts"}, p.facts.map(f => h("div",{class:"fact"},
+          h("dt",{text:f.label}), h("dd",{text:f.display}),
+          h("details",{}, h("summary",{text:"Where this came from"}), h("blockquote",{text:"“" + f.evidence + "”"}))))),
+        h("p",{class:"attrib"}, "As stated by " + p.theatre + " on ", h("a",{href:p.pageUrl, target:"_blank", rel:"noopener", text:p.pageUrl.replace(/^https?:\/\//,"")}), ", checked " + DATA.checked + "."),
+        credits.length ? [h("h2",{text:"People", style:"margin-top:28px;font-size:20px"}), h("div",{class:"people"}, credits)] : null
+      ),
+      h("aside",{},
+        h("div",{class:"box strong"},
+          h("b",{text:"Read the full details"}),
+          h("p",{class:"meta", text:"Dates, tickets and any casting news are on the theatre's own page."}),
+          h("a",{class:"btn", href:p.pageUrl, target:"_blank", rel:"noopener", text:"Open " + p.theatre + "'s page ↗"})),
+        h("div",{class:"box"},
+          h("b",{}, h("a",{href:"#theatre-"+p.theatreId, text:p.theatre})),
+          h("p",{class:"meta", text: p.city + " · " + p.region + ". " + P.filter(x=>x.theatreId===p.theatreId).length + " productions coming up."})),
+        h("div",{class:"box"},
+          h("b",{text:"Something wrong?"}),
+          h("p",{class:"meta", text:"Tell us and we'll check it against the source the same day. Organisations can ask for removal at any time."}),
+          h("div",{class:"copyrow"}, h("code",{text:"office@castingweekly.com"}), copyBtn)))
+    )
+  ];
+}
+
+function WhosWho(){
+  const ppl = Object.values(PEOPLE).sort((a,b)=>a.name.localeCompare(b.name));
+  return [
+    h("h1",{text:"Who's who"}),
+    h("p",{class:"lede", text:"The theatres we check, and the people credited on their upcoming productions. Built only from what each theatre's page says."}),
+    sectionHead("Theatres", DATA.theatres.length + " checked daily in this test"),
+    h("div",{class:"grid2"}, DATA.theatres.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(t => {
+      const n = P.filter(p=>p.theatreId===t.id).length;
+      return h("a",{class:"tile", href:"#theatre-"+t.id}, h("b",{text:t.name}), h("span",{text: t.city + " · " + t.region + " · " + (n ? n + (n===1?" production":" productions") + " coming up" : "nothing listed yet")}));
+    })),
+    sectionHead("People", ppl.length + " credited as director, writer or casting director"),
+    h("div",{class:"people"}, ppl.map(x => h("a",{href:"#person-"+x.id, text:x.name})))
+  ];
+}
+function Theatre(id){
+  const t = THEATRES[id]; if(!t) return NotFound();
+  const list = upcoming(P.filter(p=>p.theatreId===id));
+  return [
+    h("a",{class:"crumb", href:"#whos-who", text:"← Who's who"}),
+    h("span",{class:"eyebrow", text:t.city + " · " + t.region}),
+    h("h1",{text:t.name, style:"margin-top:6px"}),
+    h("p",{class:"lede"}, "Website: ", h("a",{href:t.url, target:"_blank", rel:"noopener", text:t.url.replace(/^https?:\/\/(www\.)?/,"")})),
+    sectionHead("Coming up", list.length ? "Checked " + DATA.checked : null),
+    list.length ? h("div",{class:"list"}, list.map(prodCard)) : h("div",{class:"empty", style:"margin-top:16px", text:"No upcoming productions could be confirmed from this theatre's pages in this check."})
+  ];
+}
+function Person(id){
+  const x = PEOPLE[id]; if(!x) return NotFound();
+  return [
+    h("a",{class:"crumb", href:"#whos-who", text:"← Who's who"}),
+    h("h1",{text:x.name}),
+    h("p",{class:"lede", text:"Credited on " + x.credits.length + (x.credits.length===1?" upcoming production":" upcoming productions") + ", as stated on the theatres' own pages."}),
+    h("div",{class:"list"}, x.credits.map(c => h("div",{}, h("p",{class:"eyebrow", style:"margin:0 0 6px", text:c.role}), prodCard(c.p))))
+  ];
+}
+
+function Opportunities(){
+  return [
+    h("h1",{text:"Opportunities"}),
+    h("p",{class:"lede", text:"General auditions, funded schemes, festival calls and open submission windows, from the organisations' own pages."}),
+    h("p",{class:"note", text:"Sample section. These three are made up to show the layout. Real opportunities come from the same checked pipeline as Coming up."}),
+    h("div",{class:"list"}, OPPS.map(o => h("div",{class:"card"},
+      h("div",{class:"body"},
+        h("span",{class:"eyebrow", text:o.kind + " · " + o.place}),
+        h("h3",{text:o.title}),
+        h("span",{class:"meta", text:o.org + " · " + o.when}),
+        h("span",{class:"meta", text:o.note}),
+        h("div",{class:"chips"}, h("span",{class:"chip sample", text:"Sample"}))))))
+  ];
+}
+function WhereToLook(){
+  return [
+    h("h1",{text:"Where to look"}),
+    h("p",{class:"lede", text:"Every place UK casting is posted, what it is and who it's for. We link to these; we never copy their listings."}),
+    h("p",{class:"note", text:"Descriptions are drafts, to be confirmed with each organisation before launch."}),
+    WHERE.map(g => [sectionHead(g.group), h("div",{class:"grid2"}, g.items.map(([name, access, about, url, dom]) => h("div",{class:"box"},
+      h("div",{style:"display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:baseline"}, h("h3",{text:name}), h("span",{class:"chip", text:access})),
+      h("p",{class:"meta", text:about}),
+      h("a",{href:url, target:"_blank", rel:"noopener", text:dom + " ↗"}))))])
+  ];
+}
+function Rates(){
+  return [
+    h("h1",{text:"Rates and rules"}),
+    h("p",{class:"lede", text:"The main theatre contracts in plain words, so you know what a listing's “Equity rates” means."}),
+    h("p",{class:"note", text:"Draft. Each amount will be filled in from the published agreement, with a link to it and the date it applies from. Nothing here is a real figure yet."}),
+    h("div",{class:"grid2"}, RATES.map(([name, covers, rate]) => h("div",{class:"box"}, h("h3",{text:name}), h("p",{class:"meta", text:covers}), h("p",{style:"margin:8px 0 0;font-weight:600", text:rate}))))
+  ];
+}
+function HowWeCheck(){
+  const steps = [
+    ["Own pages only","Facts come from the theatre's, producer's or organisation's own website, read politely and only where its rules allow. Never from other listings sites."],
+    ["Word for word","Every fact must appear word for word on the source page. A program, not a person or AI, checks that. If it isn't there, it isn't shown."],
+    ["Two readings","Two separate readings of each page must agree. Where they differ, the fact is left out."],
+    ["Dated and linked","Every entry says when it was checked and links to the source. Dates are confirmed against the printed weekday or year."],
+    ["Kept current","Pages are checked again every day. Entries come down when the source changes or the dates pass."],
+    ["Your right to remove","Any organisation can ask for a correction or removal. It's done within 24 hours."]
+  ];
+  return [
+    h("h1",{text:"How we check"}),
+    h("p",{class:"lede", text:"Casting Weekly collates; it never invents. This is how every entry gets here."}),
+    h("div",{class:"steps"}, steps.map(([b,p]) => h("div",{class:"step"}, h("b",{text:b}), h("p",{text:p}))))
+  ];
+}
+function Search(term){
+  const t = term.toLowerCase().trim();
+  const prods = t ? upcoming(P).filter(p => [p.title,p.theatre,p.city,p.venue,p.director,p.writer,p.castingDirector,p.producer].join(" ").toLowerCase().includes(t)) : [];
+  const thea = t ? DATA.theatres.filter(x => (x.name + " " + x.city + " " + x.region).toLowerCase().includes(t)) : [];
+  const ppl = t ? Object.values(PEOPLE).filter(x => x.name.toLowerCase().includes(t)) : [];
+  const where = t ? WHERE.flatMap(g=>g.items).filter(i => (i[0] + " " + i[2]).toLowerCase().includes(t)) : [];
+  const q = h("input",{type:"search", id:"s-q", value:term, "aria-label":"Search the catalogue"});
+  const total = prods.length + thea.length + ppl.length + where.length;
+  return [
+    h("h1",{text:"Search"}),
+    h("form",{class:"search", onsubmit:e=>{e.preventDefault(); location.hash = "search-" + encodeURIComponent(q.value.trim());}}, q, h("button",{class:"btn",type:"submit",text:"Search"})),
+    h("p",{class:"count", text: t ? total + " results for “" + term + "”" : "Type a show, theatre, person or town."}),
+    h("div",{class:"results"},
+      prods.length ? [h("h2",{text:"Coming up"}), h("div",{class:"list"}, prods.map(prodCard))] : null,
+      thea.length ? [h("h2",{text:"Theatres"}), h("div",{class:"grid2"}, thea.map(x=>tile("#theatre-"+x.id, x.name, x.city + " · " + x.region)))] : null,
+      ppl.length ? [h("h2",{text:"People"}), h("div",{class:"people"}, ppl.map(x=>h("a",{href:"#person-"+x.id, text:x.name})))] : null,
+      where.length ? [h("h2",{text:"Where to look"}), h("div",{class:"grid2"}, where.map(i=>tile("#where-to-look", i[0], i[1])))] : null,
+      t && !total ? h("div",{class:"empty", text:"Nothing found. Try a theatre name, a town or a director."}) : null)
+  ];
+}
+function NotFound(){ return [h("h1",{text:"Page not found"}), h("p",{class:"lede"}, h("a",{href:"#home", text:"Go to the home page"}))]; }
+
+/* ---------- router ---------- */
+const NAV = {"coming-up":"coming-up","production":"coming-up","whos-who":"whos-who","theatre":"whos-who","person":"whos-who","opportunities":"opportunities","where-to-look":"where-to-look","rates":"rates","how-we-check":"how-we-check"};
+function route(){
+  const raw = decodeURIComponent(location.hash.slice(1)) || "home";
+  let out, key = raw;
+  if(raw === "home") out = Home();
+  else if(raw === "coming-up") out = ComingUp();
+  else if(raw.startsWith("production-")) { out = Production(raw.slice(11)); key = "production"; }
+  else if(raw === "whos-who") out = WhosWho();
+  else if(raw.startsWith("theatre-")) { out = Theatre(raw.slice(8)); key = "theatre"; }
+  else if(raw.startsWith("person-")) { out = Person(raw.slice(7)); key = "person"; }
+  else if(raw === "opportunities") out = Opportunities();
+  else if(raw === "where-to-look") out = WhereToLook();
+  else if(raw === "rates") out = Rates();
+  else if(raw === "how-we-check") out = HowWeCheck();
+  else if(raw.startsWith("search-")) { out = Search(raw.slice(7)); key = "search"; }
+  else out = NotFound();
+  view.replaceChildren(...[out].flat(3).filter(Boolean));
+  for(const a of document.querySelectorAll("nav.main a")) a.toggleAttribute("aria-current", a.getAttribute("href").slice(1) === NAV[key]);
+  for(const a of document.querySelectorAll("nav.main a")) if(a.hasAttribute("aria-current")) a.setAttribute("aria-current","page");
+  const h1 = view.querySelector("h1"); document.title = (h1 && raw !== "home" ? h1.textContent + " · " : "") + "Casting Weekly";
+  window.scrollTo(0,0);
+}
+addEventListener("hashchange", route);
+route();
+})();
+</script>
