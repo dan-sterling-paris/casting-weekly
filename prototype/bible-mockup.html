@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Casting Weekly: the industry bible (mockup)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a living industry directory. Sticky header with "Ask" search; profile pages with credits, connections graph and sourced facts. */
+:root{
+  --bg:#FFFFFF; --panel:#F5F5F2; --ink:#121317; --muted:#53565F; --line:#DEDFE3;
+  --hi:#FFD43B; --hi-ink:#121317; --link:#1846C7; --good:#1D6A36; --warn-bg:#FFF2D6;
+  --node-cd:#121317; --node-th:#1846C7; --node-dir:#B4541A;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#111215; --panel:#1B1D22; --ink:#ECEDEF; --muted:#A5A9B3; --line:#2E3138;
+  --hi:#F5C518; --hi-ink:#121317; --link:#93AEFF; --good:#6FD08C; --warn-bg:#33270F;
+  --node-cd:#ECEDEF; --node-th:#93AEFF; --node-dir:#F0A06A; color-scheme:dark }}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+.mock{background:var(--hi);color:var(--hi-ink);font-size:13px;font-weight:600;text-align:center;padding:7px 16px}
+header.site{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;padding-block:12px}
+.logo{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.02em;color:var(--ink);text-decoration:none;margin-right:auto}
+nav.main{display:flex;gap:16px;overflow-x:auto;scrollbar-width:none}
+nav.main a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px;white-space:nowrap;padding-block:8px;border-bottom:2px solid transparent}
+nav.main a[aria-current="page"]{border-bottom-color:var(--ink)}
+.followbadge{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;border-radius:99px;background:var(--hi);color:var(--hi-ink);font-size:12px;font-weight:700;margin-left:4px}
+main{padding-block:28px 80px;min-height:70vh}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(32px,5.4vw,60px);line-height:1.04;letter-spacing:-.025em;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(21px,2.6vw,26px);margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.25;margin:0}
+.lede{font-size:18px;color:var(--muted);max-width:64ch;margin:14px 0 0}
+.mark{background:var(--hi);color:var(--hi-ink);padding:0 10px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.eyebrow{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.sh{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 18px;border-bottom:2px solid var(--ink);padding-bottom:9px;margin-top:40px}
+.sh p{margin:0;color:var(--muted);font-size:14px}
+.ask{margin-top:24px;max-width:760px}
+.askbox{display:flex;gap:8px}
+.askbox input{flex:1;min-width:0;font:inherit;font-size:17px;padding:14px 16px;border:1.5px solid var(--ink);border-radius:12px;background:var(--bg);color:var(--ink)}
+.btn{font:inherit;font-weight:700;font-size:15px;min-height:48px;padding:0 18px;border-radius:12px;border:0;background:var(--ink);color:var(--bg);cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-decoration:none;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.on{background:var(--hi);color:var(--hi-ink)}
+.examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.examples button{font:inherit;font-size:14px;padding:8px 12px;border-radius:99px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;text-align:left}
+.examples button:hover{border-color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
+.tile{display:block;padding:18px;border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none}
+.tile:hover{border-color:var(--ink)}
+.tile b{display:block;font-family:var(--display);font-size:20px}
+.tile .n{font-family:var(--display);font-weight:800;font-size:30px;line-height:1;display:block;margin-bottom:6px}
+.tile span{color:var(--muted);font-size:14px}
+.cols{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:32px;margin-top:8px}
+.list{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.row{display:flex;gap:14px;align-items:flex-start;padding:14px;border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none}
+a.row:hover{border-color:var(--ink)}
+.av{flex:0 0 44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:16px;background:var(--panel);border:1.5px solid var(--ink)}
+.av.th{border-radius:10px;border-color:var(--node-th);color:var(--node-th)}
+.av.dir{border-color:var(--node-dir);color:var(--node-dir)}
+.row .body{min-width:0;display:flex;flex-direction:column;gap:2px}
+.meta{color:var(--muted);font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px;background:var(--panel);color:var(--ink)}
+.tag.good{background:transparent;border:1px solid var(--good);color:var(--good)}
+.feed .row{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:12px 0}
+.dot{flex:0 0 10px;height:10px;border-radius:50%;background:var(--hi);margin-top:7px;border:1px solid var(--ink)}
+.profile-head{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:flex-start;justify-content:space-between}
+.profile-head .who{display:flex;gap:16px;align-items:center;min-width:0}
+.profile-head .av{flex-basis:72px;height:72px;font-size:24px}
+.facts{margin:16px 0 0;border-top:1px solid var(--line)}
+.fact{display:grid;grid-template-columns:200px minmax(0,1fr);gap:4px 18px;padding:12px 0;border-bottom:1px solid var(--line)}
+.fact dt{font-size:14px;font-weight:600;color:var(--muted)}
+.fact dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.src{grid-column:2;font-size:13px;color:var(--muted)}
+.src a{font-weight:500}
+table.credits{width:100%;border-collapse:collapse;font-size:15px}
+.tablewrap{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:12px}
+table.credits th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:10px 12px;background:var(--panel)}
+table.credits td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:top}
+table.credits td.y{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.graph{margin-top:14px;border:1px solid var(--line);border-radius:14px;padding:8px;background:var(--panel)}
+.graph svg{display:block;width:100%;height:auto}
+.graph text{font-family:var(--body);font-size:14px;fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);padding:6px 8px 4px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.box{border:1px solid var(--line);border-radius:14px;padding:18px}
+.box + .box{margin-top:14px}
+.answer{margin-top:22px;border:2px solid var(--ink);border-radius:14px;padding:20px}
+.answer p{margin:0 0 10px}
+.answer ol{margin:6px 0 0;padding-left:22px}
+.cite{font-size:12px;font-weight:700;vertical-align:super;margin-left:2px}
+.sources{margin-top:12px;font-size:13px;color:var(--muted)}
+.note{background:var(--warn-bg);border-radius:12px;padding:12px 14px;font-size:14px;margin-top:16px}
+.res{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-top:14px}
+.crumb{display:inline-flex;align-items:center;min-height:40px;font-size:15px}
+footer.site{border-top:1px solid var(--line);background:var(--panel)}
+footer.site .wrap{padding-block:24px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between}
+footer.site p{margin:0;max-width:62ch}
+@media (max-width:820px){ .cols{grid-template-columns:minmax(0,1fr)} }
+@media (max-width:560px){ .fact{grid-template-columns:minmax(0,1fr)} .src{grid-column:1} .askbox{flex-direction:column} }
+</style>
+</head>
+<body>
+<div class="mock">Mockup for preview. Every name, theatre, credit and source here is fictional.</div>
+<header class="site"><div class="wrap">
+  <a class="logo" href="#home">Casting Weekly</a>
+  <nav class="main" aria-label="Main">
+    <a href="#casting-directors">Casting directors</a>
+    <a href="#theatres">Theatres &amp; producers</a>
+    <a href="#directors">Directors</a>
+    <a href="#agencies">Agencies</a>
+    <a href="#resources">Resources</a>
+    <a href="#following">Following<span class="followbadge" id="fcount">0</span></a>
+  </nav>
+</div></header>
+<main class="wrap" id="view"></main>
+<footer class="site"><div class="wrap">
+  <p>The Casting Weekly bible is built from organisations' own pages and public registers. Every fact shows its source and the date it was checked. Anyone listed can ask for a correction or removal, done within 24 hours.</p>
+  <p>Checked daily · Last full check 16 Nov 2026</p>
+</div></footer>
+
+<script>
+(function(){
+"use strict";
+/* ---------------- fictional data ---------------- */
+const CHECKED = "16 Nov 2026";
+const TH = {
+  northgate:{name:"Northgate Playhouse", city:"Leeds", region:"Yorkshire", kind:"Producing theatre", ad:"Ruth Ashdown-Kessler", ga:"Holds general auditions for regional actors twice a year", url:"northgate-playhouse.example"},
+  riverside:{name:"Riverside Rep", city:"Bristol", region:"South West", kind:"Producing theatre", ad:"Felix Amberley-Noon", ga:"No general auditions; casting through agents", url:"riverside-rep.example"},
+  foundry:{name:"The Foundry Theatre", city:"Glasgow", region:"Scotland", kind:"Producing theatre", ad:"Morag Ellisande", ga:"Part of a rotating open casting workshop with other Scottish theatres", url:"foundry-theatre.example"},
+  saltmarsh:{name:"Saltmarsh Arts Centre", city:"Hull", region:"Yorkshire", kind:"Producing and receiving venue", ad:"Kwame Hollis-Varga", ga:"Open call for local actors each spring", url:"saltmarsh-arts.example"},
+  kingsway:{name:"Kingsway Productions", city:"London", region:"London", kind:"Commercial producer", ad:"(producer) Lydia Strand-Okafor", ga:"Casting through agents only", url:"kingsway-productions.example"},
+  harbour:{name:"Harbour Lights Touring", city:"Plymouth", region:"South West", kind:"Touring and young people's theatre", ad:"Dev Prakash-Marlow", ga:"Annual open call for actor-musicians", url:"harbour-lights.example"}
+};
+const CD = {
+  fenwick:{name:"Marguerite Fenwick-Oduya", company:"Fenwick Casting", base:"Leeds", work:["Plays","Musicals","New writing"], subs:"Accepts submissions through agents. Self-submissions welcome for regional general auditions only.", url:"fenwickcasting.example", since:2009},
+  quarrender:{name:"Tobias Quarrender", company:"Quarrender Casting", base:"London", work:["Musicals","West End","Tours"], subs:"Agent submissions only.", url:"quarrendercasting.example", since:2004},
+  halloway:{name:"Priya Halloway-Stone", company:"Halloway-Stone Casting", base:"Glasgow", work:["Plays","Classical","Screen"], subs:"Agent submissions; open to letters from Scottish-based actors twice a year (January and July).", url:"hallowaystone.example", since:2012},
+  morrow:{name:"Declan Morrow-Ibe", company:"Morrow-Ibe Casting", base:"Bristol", work:["Plays","Young audiences","Actor-musicians"], subs:"Agent submissions; self-submissions for actor-musician calls when advertised.", url:"morrowibe.example", since:2016},
+  lindqvist:{name:"Saskia Lindqvist-Hart", company:"Lindqvist-Hart Casting", base:"Manchester", work:["New writing","Plays","Panto"], subs:"Agent submissions; general submissions from northern actors in March.", url:"lindqvisthart.example", since:2018}
+};
+const DIR = {
+  ashdown:{name:"Ruth Ashdown-Kessler", role:"Artistic Director, Northgate Playhouse"},
+  amberley:{name:"Felix Amberley-Noon", role:"Artistic Director, Riverside Rep"},
+  ellisande:{name:"Morag Ellisande", role:"Artistic Director, The Foundry Theatre"},
+  okonjo:{name:"Ines Okonjo-Raft", role:"Freelance director"},
+  pemberley:{name:"Callum Pemberley-Shaw", role:"Freelance director and choreographer"},
+  hollis:{name:"Kwame Hollis-Varga", role:"Artistic Director, Saltmarsh Arts Centre"}
+};
+const AG = [
+  {name:"Lantern Artists", city:"London", note:"Represents actors and actor-musicians. Accepts new client enquiries by email (as stated on their site).", open:true},
+  {name:"Brightwater Personal Management", city:"Manchester", note:"Co-operative agency. Opens to new members twice a year.", open:true},
+  {name:"Sixth Row Talent", city:"Glasgow", note:"Theatre and screen. Not taking new clients at present.", open:false},
+  {name:"Westway Creative Agency", city:"London", note:"Musical theatre specialists. Enquiries through an online form.", open:true}
+];
+/* credits: [year, production, theatreId, cdId, directorId, kind] */
+const CREDITS = [
+  [2026,"Hedda Gabler","northgate","fenwick","ashdown","Play"],
+  [2026,"The Lantern Field (new play)","northgate","fenwick","okonjo","New writing"],
+  [2025,"Twelfth Night","northgate","fenwick","ashdown","Classical"],
+  [2025,"Peter Pan (pantomime)","saltmarsh","lindqvist","hollis","Panto"],
+  [2026,"Coldwater Lane (new play)","saltmarsh","lindqvist","hollis","New writing"],
+  [2024,"A Doll's House","riverside","morrow","amberley","Play"],
+  [2025,"The Snow Queen","harbour","morrow","okonjo","Young audiences"],
+  [2026,"Treasure Island (actor-musician)","riverside","morrow","amberley","Actor-musicians"],
+  [2026,"Sweet Ruin (musical)","kingsway","quarrender","pemberley","Musical"],
+  [2025,"Bright Lights, Big Tour (musical)","kingsway","quarrender","pemberley","Musical"],
+  [2024,"The Seagull","foundry","halloway","ellisande","Classical"],
+  [2025,"Macbeth","foundry","halloway","ellisande","Classical"],
+  [2026,"North Wind (new play)","foundry","halloway","okonjo","New writing"],
+  [2024,"Oliver Twist","northgate","fenwick","pemberley","Musical"],
+  [2026,"Robin Hood (pantomime)","northgate","lindqvist","hollis","Panto"]
+];
+const FEED = [
+  ["2 days ago","fenwick","Marguerite Fenwick-Oduya is credited as casting director on The Lantern Field at Northgate Playhouse."],
+  ["3 days ago","northgate","Northgate Playhouse announced its spring 2027 season: four productions, two of them new plays."],
+  ["5 days ago","harbour","Harbour Lights Touring opened its annual open call for actor-musicians. Closes 15 Jan 2027."],
+  ["1 week ago","halloway","Priya Halloway-Stone's website now says she is open to letters from Scottish-based actors in January."],
+  ["1 week ago","saltmarsh","Saltmarsh Arts Centre listed a new artistic team page."]
+];
+const RES = [
+  {cat:"Unions and rates", items:[["Performers' union","Membership, contract advice, legal help and minimum rates for most theatre work."],["Rates explained","Minimum weekly salaries under each theatre agreement, with the date each applies from."],["Holiday pay and subsistence","What you're owed on tour and how it's calculated."]]},
+  {cat:"Contracts", items:[["Which contract is this?","The main theatre agreements in plain words: subsidised, commercial, West End, independent."],["Before you sign","The clauses to check: exclusivity, buyouts, cancellation, billing."],["Red flags","Pay-to-audition, unpaid 'profit share' that never pays, requests for money up front."]]},
+  {cat:"Funding and bursaries", items:[["Hardship funds","Charities that help performers in financial difficulty."],["Training bursaries","Grants towards classes, voice and movement work."],["Project funding","Public funding for making your own work."]]},
+  {cat:"Training and development", items:[["Free industry workshops","Theatres' own artist development programmes."],["Self-tape guide","Formats and specs casting directors ask for."],["Getting an agent","How agencies take on clients, and what a fair commission is."]]},
+  {cat:"Wellbeing and legal", items:[["Mental health support","Confidential helplines for people working in the arts."],["Safe workplaces","Reporting bullying and harassment, and your rights."],["Tax and accounts","Self-employment basics for performers."]]}
+];
+
+/* ---------------- following (kept in this browser only) ---------------- */
+let FOLLOW = new Set();
+try{ FOLLOW = new Set(JSON.parse(localStorage.getItem("cw-follow") || "[]")); }catch(_){}
+function saveFollow(){ try{ localStorage.setItem("cw-follow", JSON.stringify([...FOLLOW])); }catch(_){} document.getElementById("fcount").textContent = FOLLOW.size; }
+saveFollow();
+
+/* ---------------- helpers ---------------- */
+const view = document.getElementById("view");
+function h(tag, attrs, ...kids){
+  const n = document.createElement(tag);
+  if(attrs) for(const [k,v] of Object.entries(attrs)){
+    if(v == null || v === false) continue;
+    if(k === "class") n.className = v; else if(k === "text") n.textContent = v;
+    else if(k.startsWith("on")) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v === true ? "" : v);
+  }
+  for(const k of kids.flat(3)){ if(k == null || k === false) continue; n.append(k.nodeType ? k : document.createTextNode(String(k))); }
+  return n;
+}
+const S = "http://www.w3.org/2000/svg";
+function s(tag, attrs, text){ const n = document.createElementNS(S, tag); for(const [k,v] of Object.entries(attrs||{})) n.setAttribute(k, v); if(text) n.textContent = text; return n; }
+function initials(n){ return n.split(/[\s-]+/).filter(w=>/^[A-Z]/.test(w)).slice(0,2).map(w=>w[0]).join(""); }
+function sh(title, note){ return h("div",{class:"sh"}, h("h2",{text:title}), note ? h("p",{text:note}) : null); }
+function src(url){ return h("span",{class:"src"}, "Source: ", h("a",{href:"#", onclick:e=>e.preventDefault(), text:url}), " · checked " + CHECKED); }
+function followBtn(key, label){
+  const b = h("button",{class:"btn ghost", type:"button"});
+  const paint = () => { const on = FOLLOW.has(key); b.textContent = on ? "Following" : "Follow " + label; b.className = "btn " + (on ? "on" : "ghost"); b.setAttribute("aria-pressed", on); };
+  b.addEventListener("click", () => { FOLLOW.has(key) ? FOLLOW.delete(key) : FOLLOW.add(key); saveFollow(); paint(); });
+  paint(); return b;
+}
+function cdRow(id){ const c = CD[id]; const n = CREDITS.filter(x=>x[3]===id).length;
+  return h("a",{class:"row", href:"#cd-"+id}, h("div",{class:"av",text:initials(c.name)}), h("div",{class:"body"}, h("h3",{text:c.name}), h("span",{class:"meta",text:c.company + " · " + c.base + " · " + n + " credits in the last 3 years"}), h("div",{class:"tags"}, c.work.map(w=>h("span",{class:"tag",text:w}))))); }
+function thRow(id){ const t = TH[id]; const cds = [...new Set(CREDITS.filter(x=>x[2]===id).map(x=>CD[x[3]].name))];
+  return h("a",{class:"row", href:"#th-"+id}, h("div",{class:"av th",text:initials(t.name)}), h("div",{class:"body"}, h("h3",{text:t.name}), h("span",{class:"meta",text:t.kind + " · " + t.city}), h("span",{class:"meta",text:"Casts with: " + (cds.join(", ") || "not yet known")}))); }
+function dirRow(id){ const d = DIR[id]; const n = CREDITS.filter(x=>x[4]===id).length;
+  return h("a",{class:"row", href:"#dir-"+id}, h("div",{class:"av dir",text:initials(d.name)}), h("div",{class:"body"}, h("h3",{text:d.name}), h("span",{class:"meta",text:d.role + " · " + n + " productions"}))); }
+
+/* connections graph: centre node with linked nodes around it */
+function graph(center, links){
+  const W = 480, H = 380, cx = W/2, cy = H/2 - 6, RX = 150, RY = 125;
+  const svg = s("svg",{viewBox:`0 0 ${W} ${H}`, role:"img", "aria-label":"Connections: " + center.label + " linked to " + links.map(l=>l.label).join(", ")});
+  links.forEach((l,i) => {
+    const a = -Math.PI/2 + Math.PI/links.length + i * 2*Math.PI/links.length;
+    l.x = cx + RX*Math.cos(a); l.y = cy + RY*Math.sin(a);
+    svg.append(s("line",{x1:cx,y1:cy,x2:l.x,y2:l.y,stroke:"var(--line)","stroke-width":1 + Math.min(l.w,4)*1.2}));
+    if(l.w > 1) svg.append(s("text",{x:(cx+l.x)/2, y:(cy+l.y)/2 - 4, "text-anchor":"middle", "font-weight":"700"}, "×" + l.w));
+  });
+  links.forEach(l => {
+    const g = s("g",{style:"cursor:pointer", tabindex:"0"});
+    g.addEventListener("click", () => location.hash = l.href);
+    g.addEventListener("keydown", e => { if(e.key === "Enter") location.hash = l.href; });
+    g.append(s("circle",{cx:l.x, cy:l.y, r:9, fill:l.color}));
+    g.append(s("text",{x:l.x, y:l.y + (l.y < cy - 20 ? -15 : 26), "text-anchor":"middle"}, l.label));
+    svg.append(g);
+  });
+  svg.append(s("circle",{cx, cy, r:16, fill:"var(--hi)", stroke:"var(--ink)", "stroke-width":2}));
+  svg.append(s("text",{x:cx, y:cy - 26, "text-anchor":"middle", "font-weight":"700"}, center.label));
+  return h("div",{class:"graph"}, svg, h("div",{class:"legend"},
+    h("span",{}, h("i",{style:"background:var(--node-cd)"}), "Casting director"),
+    h("span",{}, h("i",{style:"background:var(--node-th)"}), "Theatre or producer"),
+    h("span",{}, h("i",{style:"background:var(--node-dir)"}), "Director"),
+    h("span",{text:"Thicker line = more productions together"})));
+}
+function count(arr){ const m = new Map(); arr.forEach(k => m.set(k, (m.get(k)||0)+1)); return [...m.entries()].sort((a,b)=>b[1]-a[1]); }
+
+/* ---------------- ask ---------------- */
+const QA = {
+  "Who casts for Northgate Playhouse?": {
+    p:"Northgate Playhouse has used two casting directors in the last three years:",
+    li:[["Marguerite Fenwick-Oduya","#cd-fenwick"," cast 4 of its 5 productions, including Hedda Gabler (2026) and Twelfth Night (2025).",1],["Saskia Lindqvist-Hart","#cd-lindqvist"," cast its 2026 pantomime, Robin Hood.",2]],
+    after:"The theatre holds general auditions for regional actors twice a year.", srcs:["northgate-playhouse.example/productions","northgate-playhouse.example/get-involved"]},
+  "Which casting directors work on actor-musician shows in the South West?": {
+    p:"One casting director matches:",
+    li:[["Declan Morrow-Ibe","#cd-morrow"," cast Treasure Island (actor-musician) at Riverside Rep in 2026 and The Snow Queen for Harbour Lights Touring in 2025. His site says he takes self-submissions for actor-musician calls when they're advertised.",1]],
+    after:"Harbour Lights Touring also has an annual open call for actor-musicians, open now until 15 Jan 2027.", srcs:["riverside-rep.example/treasure-island","morowibe.example/submissions","harbour-lights.example/open-call"]},
+  "Who does Ines Okonjo-Raft usually cast with?": {
+    p:"Ines Okonjo-Raft has directed three productions in the last three years, each with a different casting director:",
+    li:[["Marguerite Fenwick-Oduya","#cd-fenwick"," for The Lantern Field at Northgate Playhouse (2026).",1],["Declan Morrow-Ibe","#cd-morrow"," for The Snow Queen with Harbour Lights Touring (2025).",2],["Priya Halloway-Stone","#cd-halloway"," for North Wind at The Foundry Theatre (2026).",3]],
+    after:"There's no regular pairing yet; each theatre's usual casting director was used.", srcs:["northgate-playhouse.example/the-lantern-field","harbour-lights.example/the-snow-queen","foundry-theatre.example/north-wind"]},
+  "Which agencies are open to new clients?": {
+    p:"Three agencies in the bible say on their own sites that they're open to new clients:",
+    li:[["Lantern Artists (London)","#agencies"," by email.",1],["Brightwater Personal Management (Manchester)","#agencies"," a co-operative that opens twice a year.",2],["Westway Creative Agency (London)","#agencies"," musical theatre, through an online form.",3]],
+    after:"", srcs:["lanternartists.example/join","brightwater-pm.example/membership","westway-creative.example/contact"]}
+};
+function Ask(q){
+  const a = QA[q];
+  if(a){
+    return h("div",{class:"answer", "aria-live":"polite"},
+      h("p",{class:"eyebrow", text:"Answer from checked facts"}),
+      h("p",{text:a.p}),
+      h("ol",{}, a.li.map(([n,href,rest,c]) => h("li",{}, h("a",{href, text:n}), rest, h("span",{class:"cite", text:"["+c+"]"})))),
+      a.after ? h("p",{style:"margin-top:10px", text:a.after}) : null,
+      h("div",{class:"sources"}, "Sources: ", a.srcs.map((u,i)=>[ "[" + (i+1) + "] ", h("a",{href:"#", onclick:e=>e.preventDefault(), text:u}), i < a.srcs.length-1 ? " · " : ""]), " · all checked " + CHECKED));
+  }
+  const t = q.toLowerCase();
+  const hits = [
+    ...Object.entries(CD).filter(([k,v]) => (v.name+" "+v.company+" "+v.base+" "+v.work.join(" ")).toLowerCase().includes(t)).map(([k])=>cdRow(k)),
+    ...Object.entries(TH).filter(([k,v]) => (v.name+" "+v.city+" "+v.region+" "+v.kind).toLowerCase().includes(t)).map(([k])=>thRow(k)),
+    ...Object.entries(DIR).filter(([k,v]) => (v.name+" "+v.role).toLowerCase().includes(t)).map(([k])=>dirRow(k))
+  ];
+  return h("div",{class:"answer"},
+    h("p",{class:"eyebrow", text:"Matches"}),
+    hits.length ? h("div",{class:"list"}, hits) : h("p",{text:"Nothing in this mockup matches. Try one of the example questions."}),
+    h("p",{class:"note", text:"In the mockup, only the example questions get a written answer. In the real bible, any question is answered from checked facts, with every claim linked to its source."}));
+}
+function askBlock(initial){
+  const out = h("div");
+  const input = h("input",{type:"search", id:"ask", placeholder:"Ask the bible: who casts for…, which agencies…", "aria-label":"Ask the bible"});
+  function run(q){ input.value = q; out.replaceChildren(Ask(q)); }
+  const form = h("form",{class:"askbox", onsubmit:e=>{e.preventDefault(); if(input.value.trim()) run(input.value.trim());}}, input, h("button",{class:"btn", type:"submit", text:"Ask"}));
+  const ex = h("div",{class:"examples"}, Object.keys(QA).map(q => h("button",{type:"button", text:q, onclick:()=>run(q)})));
+  if(initial) setTimeout(()=>run(initial));
+  return h("div",{class:"ask"}, form, ex, out);
+}
+
+/* ---------------- views ---------------- */
+function Home(){
+  return [
+    h("h1",{}, "Where do I go for my next performing job?", h("br"), h("span",{class:"mark",text:"Casting Weekly."})),
+    h("p",{class:"lede", text:"The industry bible: who casts what, for whom, and how they want to hear from you. Built from theatres' and casting directors' own pages, checked every day."}),
+    askBlock(),
+    h("div",{class:"tiles"},
+      h("a",{class:"tile", href:"#casting-directors"}, h("span",{class:"n",text:Object.keys(CD).length}), h("b",{text:"Casting directors"}), h("span",{text:"Who they cast for and how to approach them"})),
+      h("a",{class:"tile", href:"#theatres"}, h("span",{class:"n",text:Object.keys(TH).length}), h("b",{text:"Theatres & producers"}), h("span",{text:"Who casts there, general auditions"})),
+      h("a",{class:"tile", href:"#directors"}, h("span",{class:"n",text:Object.keys(DIR).length}), h("b",{text:"Directors"}), h("span",{text:"Credits and who they work with"})),
+      h("a",{class:"tile", href:"#agencies"}, h("span",{class:"n",text:AG.length}), h("b",{text:"Agencies"}), h("span",{text:"Who's open to new clients"})),
+      h("a",{class:"tile", href:"#resources"}, h("span",{class:"n",text:RES.reduce((a,c)=>a+c.items.length,0)}), h("b",{text:"Resources"}), h("span",{text:"Rates, contracts, funding, help"}))),
+    h("div",{class:"cols"},
+      h("div",{}, sh("Just changed", "From the last 7 days"), h("div",{class:"list feed"}, FEED.map(feedRow))),
+      h("div",{}, sh("Most active casting directors"), h("div",{class:"list"}, count(CREDITS.map(c=>c[3])).slice(0,3).map(([k])=>cdRow(k)))))
+  ];
+}
+function feedRow([when, key, text]){
+  const href = CD[key] ? "#cd-"+key : "#th-"+key;
+  return h("a",{class:"row", href}, h("span",{class:"dot"}), h("div",{class:"body"}, h("span",{text}), h("span",{class:"meta", text:when + " · source checked " + CHECKED})));
+}
+function CastingDirectors(){
+  return [h("h1",{text:"Casting directors"}), h("p",{class:"lede", text:"Every casting director credited on a UK production we check, with what they cast and how they say they accept submissions."}),
+    h("div",{class:"list"}, Object.keys(CD).map(cdRow))];
+}
+function Theatres(){
+  return [h("h1",{text:"Theatres & producers"}), h("p",{class:"lede", text:"Producing theatres, touring companies and producers: who runs them, who casts for them, and whether they hold general auditions."}),
+    h("div",{class:"list"}, Object.keys(TH).map(thRow))];
+}
+function Directors(){
+  return [h("h1",{text:"Directors"}), h("p",{class:"lede", text:"Directors credited on the productions we check, and the casting directors and theatres they work with."}),
+    h("div",{class:"list"}, Object.keys(DIR).map(dirRow))];
+}
+function Agencies(){
+  return [h("h1",{text:"Agencies"}), h("p",{class:"lede", text:"Talent agencies, from their own websites and the company register. We list the agency, never their clients."}),
+    h("div",{class:"list"}, AG.map(a => h("div",{class:"row"}, h("div",{class:"av",text:initials(a.name)}), h("div",{class:"body"}, h("h3",{text:a.name}), h("span",{class:"meta",text:a.city + ". " + a.note}), h("div",{class:"tags"}, a.open ? h("span",{class:"tag good",text:"Open to new clients"}) : h("span",{class:"tag",text:"Not taking new clients"})), src(a.name.toLowerCase().replace(/[^a-z]+/g,"") + ".example")))))];
+}
+function Resources(){
+  return [h("h1",{text:"Resources"}), h("p",{class:"lede", text:"Everything a working performer needs, in plain words, with the official source linked and dated."}),
+    RES.map(g => [sh(g.cat), h("div",{class:"res"}, g.items.map(([t,d]) => h("div",{class:"box"}, h("h3",{text:t}), h("p",{class:"meta", style:"margin:6px 0 0", text:d}))))])];
+}
+function Following(){
+  const keys = [...FOLLOW];
+  const feed = FEED.filter(f => FOLLOW.has(f[1]));
+  return [h("h1",{text:"Following"}), h("p",{class:"lede", text:"Follow casting directors and theatres to hear when they're credited on something new, announce a season or open general auditions."}),
+    keys.length ? [sh("You follow"), h("div",{class:"list"}, keys.map(k => CD[k] ? cdRow(k) : TH[k] ? thRow(k) : null)),
+      sh("Updates"), feed.length ? h("div",{class:"list feed"}, feed.map(feedRow)) : h("p",{class:"meta", text:"No updates yet for the people and theatres you follow."})]
+    : h("div",{class:"box", style:"margin-top:18px"}, h("p",{style:"margin:0", text:"You're not following anyone yet. Open a casting director or theatre and press Follow."}))];
+}
+function CDProfile(id){
+  const c = CD[id]; if(!c) return NotFound();
+  const cr = CREDITS.filter(x=>x[3]===id).sort((a,b)=>b[0]-a[0]);
+  const links = [...count(cr.map(x=>"th:"+x[2])), ...count(cr.map(x=>"dir:"+x[4]))].map(([k,w]) => {
+    const [t,i] = k.split(":"); return t === "th" ? {label:TH[i].name, href:"th-"+i, color:"var(--node-th)", w} : {label:DIR[i].name, href:"dir-"+i, color:"var(--node-dir)", w}; });
+  return [
+    h("a",{class:"crumb", href:"#casting-directors", text:"← Casting directors"}),
+    h("div",{class:"profile-head"},
+      h("div",{class:"who"}, h("div",{class:"av",text:initials(c.name)}), h("div",{}, h("span",{class:"eyebrow",text:"Casting director · " + c.base}), h("h1",{text:c.name}))),
+      followBtn(id, c.name.split(" ")[0])),
+    h("div",{class:"cols"},
+      h("div",{},
+        h("dl",{class:"facts"},
+          h("div",{class:"fact"}, h("dt",{text:"Company"}), h("dd",{text:c.company}), src(c.url)),
+          h("div",{class:"fact"}, h("dt",{text:"How to approach"}), h("dd",{text:c.subs}), src(c.url + "/submissions")),
+          h("div",{class:"fact"}, h("dt",{text:"Works on"}), h("dd",{text:c.work.join(", ")}), h("span",{class:"src", text:"From their credits below"})),
+          h("div",{class:"fact"}, h("dt",{text:"Casting since"}), h("dd",{text:String(c.since)}), src("Companies House: " + c.company + " Ltd"))),
+        sh("Credits", cr.length + " in the last 3 years"),
+        h("div",{class:"tablewrap"}, h("table",{class:"credits"},
+          h("thead",{}, h("tr",{}, h("th",{text:"Year"}), h("th",{text:"Production"}), h("th",{text:"Theatre"}), h("th",{text:"Director"}))),
+          h("tbody",{}, cr.map(x => h("tr",{}, h("td",{class:"y",text:x[0]}), h("td",{}, x[1], h("div",{class:"meta",text:x[5]})), h("td",{}, h("a",{href:"#th-"+x[2], text:TH[x[2]].name})), h("td",{}, h("a",{href:"#dir-"+x[4], text:DIR[x[4]].name})))))))),
+      h("div",{},
+        sh("Connections"), graph({label:c.name}, links),
+        h("div",{class:"box", style:"margin-top:14px"}, h("h3",{text:"What this tells you"}),
+          h("p",{class:"meta", style:"margin:6px 0 0", text: c.name.split(" ")[0] + " casts most often for " + TH[count(cr.map(x=>x[2]))[0][0]].name + ". Productions there are the most likely route to " + (c.name.split(" ")[0]) + "'s office. Patterns are worked out from the credits; they are not promises."}))))
+  ];
+}
+function THProfile(id){
+  const t = TH[id]; if(!t) return NotFound();
+  const cr = CREDITS.filter(x=>x[2]===id).sort((a,b)=>b[0]-a[0]);
+  const cds = count(cr.map(x=>x[3]));
+  const links = [...cds.map(([k,w])=>({label:CD[k].name, href:"cd-"+k, color:"var(--node-cd)", w})), ...count(cr.map(x=>x[4])).map(([k,w])=>({label:DIR[k].name, href:"dir-"+k, color:"var(--node-dir)", w}))];
+  return [
+    h("a",{class:"crumb", href:"#theatres", text:"← Theatres & producers"}),
+    h("div",{class:"profile-head"},
+      h("div",{class:"who"}, h("div",{class:"av th",text:initials(t.name)}), h("div",{}, h("span",{class:"eyebrow",text:t.kind + " · " + t.city + ", " + t.region}), h("h1",{text:t.name}))),
+      followBtn(id, "theatre")),
+    h("div",{class:"cols"},
+      h("div",{},
+        sh("Who casts here"),
+        h("div",{class:"list"}, cds.map(([k,w]) => h("a",{class:"row", href:"#cd-"+k}, h("div",{class:"av",text:initials(CD[k].name)}), h("div",{class:"body"}, h("h3",{text:CD[k].name}), h("span",{class:"meta", text:"Cast " + w + " of " + cr.length + " productions here since " + Math.min(...cr.map(x=>x[0]))}))))),
+        h("dl",{class:"facts", style:"margin-top:24px"},
+          h("div",{class:"fact"}, h("dt",{text:"Artistic director"}), h("dd",{text:t.ad}), src(t.url + "/our-team")),
+          h("div",{class:"fact"}, h("dt",{text:"General auditions"}), h("dd",{text:t.ga}), src(t.url + "/get-involved")),
+          h("div",{class:"fact"}, h("dt",{text:"Website"}), h("dd",{text:t.url}), src(t.url))),
+        sh("Productions", "Last 3 years"),
+        h("div",{class:"tablewrap"}, h("table",{class:"credits"},
+          h("thead",{}, h("tr",{}, h("th",{text:"Year"}), h("th",{text:"Production"}), h("th",{text:"Casting director"}), h("th",{text:"Director"}))),
+          h("tbody",{}, cr.map(x => h("tr",{}, h("td",{class:"y",text:x[0]}), h("td",{text:x[1]}), h("td",{}, h("a",{href:"#cd-"+x[3], text:CD[x[3]].name})), h("td",{}, h("a",{href:"#dir-"+x[4], text:DIR[x[4]].name})))))))),
+      h("div",{}, sh("Connections"), graph({label:t.name}, links)))
+  ];
+}
+function DirProfile(id){
+  const d = DIR[id]; if(!d) return NotFound();
+  const cr = CREDITS.filter(x=>x[4]===id).sort((a,b)=>b[0]-a[0]);
+  const links = [...count(cr.map(x=>x[3])).map(([k,w])=>({label:CD[k].name, href:"cd-"+k, color:"var(--node-cd)", w})), ...count(cr.map(x=>x[2])).map(([k,w])=>({label:TH[k].name, href:"th-"+k, color:"var(--node-th)", w}))];
+  return [
+    h("a",{class:"crumb", href:"#directors", text:"← Directors"}),
+    h("div",{class:"profile-head"}, h("div",{class:"who"}, h("div",{class:"av dir",text:initials(d.name)}), h("div",{}, h("span",{class:"eyebrow",text:d.role}), h("h1",{text:d.name})))),
+    h("div",{class:"cols"},
+      h("div",{}, sh("Productions", cr.length + " in the last 3 years"),
+        h("div",{class:"tablewrap"}, h("table",{class:"credits"},
+          h("thead",{}, h("tr",{}, h("th",{text:"Year"}), h("th",{text:"Production"}), h("th",{text:"Theatre"}), h("th",{text:"Casting director"}))),
+          h("tbody",{}, cr.map(x => h("tr",{}, h("td",{class:"y",text:x[0]}), h("td",{text:x[1]}), h("td",{}, h("a",{href:"#th-"+x[2], text:TH[x[2]].name})), h("td",{}, h("a",{href:"#cd-"+x[3], text:CD[x[3]].name})))))))),
+      h("div",{}, sh("Connections"), graph({label:d.name}, links)))
+  ];
+}
+function NotFound(){ return [h("h1",{text:"Page not found"}), h("p",{}, h("a",{href:"#home", text:"Back to the home page"}))]; }
+
+/* ---------------- router ---------------- */
+const ROUTES = {"home":Home,"casting-directors":CastingDirectors,"theatres":Theatres,"directors":Directors,"agencies":Agencies,"resources":Resources,"following":Following};
+const NAV = {"cd":"casting-directors","th":"theatres","dir":"directors"};
+function route(){
+  const r = location.hash.slice(1) || "home";
+  let out, navKey = r;
+  if(ROUTES[r]) out = ROUTES[r]();
+  else { const m = r.match(/^(cd|th|dir)-(.+)$/); if(m){ out = {cd:CDProfile, th:THProfile, dir:DirProfile}[m[1]](m[2]); navKey = NAV[m[1]]; } else out = NotFound(); }
+  view.replaceChildren(...[out].flat(4).filter(Boolean));
+  for(const a of document.querySelectorAll("nav.main a")){ if(a.getAttribute("href").slice(1) === navKey) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); }
+  window.scrollTo(0,0);
+}
+addEventListener("hashchange", route);
+route();
+})();
+</script>
+</body>
+</html>
