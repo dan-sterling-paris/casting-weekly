@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casting Weekly | Something exciting is coming</title>
+<meta name="description" content="Casting Weekly. Something exciting is coming.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#0d0b0a; --gold:#d8b36a; --cream:#f3ebdc; --muted:#9a8f7f; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { height:100%; }
+  body {
+    background:var(--ink); color:var(--cream);
+    font-family:'Inter',system-ui,sans-serif; font-weight:300;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    min-height:100vh; padding:2rem; overflow:hidden; text-align:center; position:relative;
+  }
+  .spot {
+    position:absolute; top:-30vh; left:50%; width:120vmax; height:120vmax;
+    transform:translateX(-50%);
+    background:radial-gradient(ellipse at center top, rgba(216,179,106,.22) 0%, rgba(216,179,106,.06) 30%, transparent 60%);
+    pointer-events:none; animation:breathe 7s ease-in-out infinite;
+  }
+  @keyframes breathe { 0%,100%{opacity:.75} 50%{opacity:1} }
+  .wrap { position:relative; max-width:44rem; animation:rise 1.4s ease-out both; }
+  @keyframes rise { from{opacity:0; transform:translateY(14px)} to{opacity:1; transform:none} }
+  .brand {
+    font-weight:500; letter-spacing:.42em; text-transform:uppercase;
+    font-size:.78rem; color:var(--gold); margin-bottom:2.6rem;
+  }
+  .rule { width:3.5rem; height:1px; background:var(--gold); margin:0 auto 2.6rem; opacity:.7; }
+  h1 {
+    font-family:'Playfair Display',Georgia,serif; font-weight:500;
+    font-size:clamp(2.4rem,7vw,4.6rem); line-height:1.08; letter-spacing:-.01em;
+  }
+  h1 em { font-style:italic; color:var(--gold); }
+  p.sub { margin-top:1.8rem; color:var(--muted); font-size:clamp(1rem,2.2vw,1.15rem); line-height:1.6; }
+  footer {
+    position:absolute; bottom:1.6rem; left:0; right:0;
+    font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:#5f574c;
+  }
+  @media (prefers-reduced-motion:reduce){ .spot,.wrap{animation:none} }
+</style>
+</head>
+<body>
+  <div class="spot" aria-hidden="true"></div>
+  <main class="wrap">
+    <div class="brand">Casting Weekly</div>
+    <div class="rule" aria-hidden="true"></div>
+    <h1>Something <em>exciting</em><br>is coming.</h1>
+    <p class="sub">The curtain is down while we set the stage. Check back soon.</p>
+  </main>
+  <footer>&copy; <span id="y">2026</span> Casting Weekly</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
