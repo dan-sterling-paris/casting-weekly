@@ -81,10 +81,6 @@
     "writer": {
      "value": "Anna Morris",
      "evidence": "Written and performed by award-winning comedian, actor and writer Anna Morris"
-    },
-    "cast_announced": {
-     "value": true,
-     "evidence": "Written and performed by award-winning comedian, actor and writer Anna Morris"
     }
    }
   },
@@ -124,7 +120,7 @@
     },
     "cast_announced": {
      "value": true,
-     "evidence": "Joel Montague The Grinch"
+     "evidence": "Cast Joel Montague The Grinch"
     }
    }
   },
@@ -192,7 +188,7 @@
     },
     "cast_announced": {
      "value": true,
-     "evidence": "Matthew Anthony Ralph Romeo Lauren Conroy Juliet"
+     "evidence": "Cast Matthew Anthony Ralph Romeo"
     }
    }
   },
@@ -812,7 +808,7 @@
     },
     "cast_announced": {
      "value": true,
-     "evidence": "Mole will be played by local East Riding of Yorkshire actor, singer and musician, Jo Patmore"
+     "evidence": "Cast Announcement for The Wind in The Willows at Hull Truck Theatre"
     }
    }
   },
@@ -1057,10 +1053,6 @@
     "writer": {
      "value": "Imogen Ashby",
      "evidence": "A riotous new one-woman show from local writer-performer Imogen Ashby."
-    },
-    "cast_announced": {
-     "value": true,
-     "evidence": "A riotous new one-woman show from local writer-performer Imogen Ashby."
     }
    }
   },
@@ -1180,7 +1172,7 @@
     },
     "cast_announced": {
      "value": true,
-     "evidence": "Romeo Matthew Anthony Ralph"
+     "evidence": "Cast Sister Catrin Aaron"
     }
    }
   },
@@ -1252,7 +1244,7 @@
     },
     "cast_announced": {
      "value": true,
-     "evidence": "Eve Pereira Cinderella"
+     "evidence": "Cast George Bury Off-Stage Swing"
     }
    }
   },
@@ -1316,7 +1308,7 @@
     },
     "cast_announced": {
      "value": true,
-     "evidence": "Michelle Gomez Desiree Armfeldt"
+     "evidence": "Starring Michelle Gomez."
     }
    }
   },
@@ -1356,7 +1348,7 @@
     },
     "cast_announced": {
      "value": true,
-     "evidence": "Ore Oduba Prince Charming"
+     "evidence": "with an amazing cast including Ore Oduba"
     }
    }
   },
@@ -1485,10 +1477,6 @@
     "last_performance": {
      "value": "2027-04-03",
      "evidence": "Tue 30 Mar – Sat 3 Apr 2027"
-    },
-    "cast_announced": {
-     "value": true,
-     "evidence": "Giovanna Fletcher and much loved stage and screen favourite Tom Chambers star"
     }
    }
   },
@@ -1524,7 +1512,7 @@
     },
     "cast_announced": {
      "value": true,
-     "evidence": "Andrew McLeod - Darren"
+     "evidence": "Cast Andrew McLeod - Darren"
     }
    }
   }
