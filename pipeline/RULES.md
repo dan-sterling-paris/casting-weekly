@@ -9,8 +9,8 @@ The producer's names come from its seed (`aliases`). Names in `ignore_in_titles`
 
 | ID | Matches | Example |
 |---|---|---|
-| P2 | (tried first) A producer sentence with a capitalised title right after "production of" | "…a new production of The Wizard of Oz" |
-| P1 | A producer sentence with the show title IN CAPITALS. Capitals followed by a capitalised word ("ARDA Studio") are a name, not a title | "David Ian for Crossroads Live is delighted to announce a new production of … CHITTY CHITTY BANG BANG" |
+| P2 | (tried first) A producer sentence with a capitalised title right after "production of" or "season of" (titles may contain "+" and "&") | "…a new production of The Wizard of Oz" |
+| P1 | A producer sentence with the show title IN CAPITALS. Capitals followed by a capitalised word ("ARDA Studio") or by "and producers" ("QPAC and producers") are an organisation, not a title | "David Ian for Crossroads Live is delighted to announce a new production of … CHITTY CHITTY BANG BANG" |
 
 A **producer sentence** is one where the verb (announce, present, produce, co-produce) sits right next to the producer's name ("X is delighted to announce", "X presents", "produced by … X", "for X"), never across a semicolon or a second "by". So "general management by X; … executive produced by Y" does not count as X producing.
 | P0 | A producer sentence where no title could be read. Nothing is created; the page is listed under coverage. | |

@@ -1,185 +1,5 @@
 [
  {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/hamilton-announces-casting-for-korean-premiere",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:39Z",
-  "title": "Hamilton announces casting for Korean Premiere — Crossroads Live",
-  "sha256": "ffd0daf61c702f26013da5ba526727ec3e2db70d086fba8a45c4e4284e1f49f5",
-  "file": "ffd0daf61c702f26.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/everybody-say-yeah-kinky-boots-is-returning-to-chinanbsp",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:41Z",
-  "title": "Everybody say YEAH! Kinky Boots is returning to China!  — Crossroads Live",
-  "sha256": "230c06ae35cc85feb3cfbbe38d7c5b1079bfa68082add7924a1f2ed0657434a9",
-  "file": "230c06ae35cc85fe.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/christmas-comes-early-at-the-crossroads-pantomimes",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:43Z",
-  "title": "Christmas Comes Early at the Crossroads Pantomimes Summer Party — Crossroads Live",
-  "sha256": "ffe3c3fd19fd41b311f25a9600c9d657c59cb071916e05a1f202c818f3f99b2e",
-  "file": "ffe3c3fd19fd41b3.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/beetlejuice-its-showtime-london",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:45Z",
-  "title": "It’s Showtime, London — Crossroads Live",
-  "sha256": "0df493b2a4e097877be9efd32144b9d32eb7023582e55d39f6814dfb37edf6c1",
-  "file": "0df493b2a4e09787.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/the-wiz-announces-company-for-new-na-tour",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:47Z",
-  "title": "The Wiz announces company for new North American tour. — Crossroads Live",
-  "sha256": "f21985b53dce325d1e07e8c266f7a9eff9b934dc9a0b281740732db4de45bb1d",
-  "file": "f21985b53dce325d.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/us-theatre-awards-season-the-lost-boys-titanique-and-beaches-all-nominated",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:49Z",
-  "title": "US Theatre Awards Season: The Lost Boys, Titanique and Beaches all nominated — Crossroads Live",
-  "sha256": "d921c1d5954441ca7b18e6dd565960129a34a2a1db7a3ce27bec3dcdd840fc27",
-  "file": "d921c1d5954441ca.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/just-in-time-nominated-for-6-tony-awards",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:51Z",
-  "title": "Just In Time nominated for 6 Tony Awards — Crossroads Live",
-  "sha256": "3134774cd1f49f917dd5c8ba37c59680ae82ad4a884e7430c4fea5c1011ee89f",
-  "file": "3134774cd1f49f91.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/silence-of-the-lambs-makes-thrilling-world-stage-premiere-in-leicester",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:54Z",
-  "title": "The Silence of the Lambs makes thrilling world stage premiere in Leicester — Crossroads Live",
-  "sha256": "446cfb669b91c289ecee2157c022c11847bdb47f5131b300007b721c450b3829",
-  "file": "446cfb669b91c289.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/magic-mike-live-international-reveals-casting-and-theatre-transformation-plans",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:55Z",
-  "title": "Magic Mike Live International reveals casting and theatre transformation plans. — Crossroads Live",
-  "sha256": "9c8f351a01825040ad778e75e052b04a3b3ee3f772581319e44fa0ffeb7eb843",
-  "file": "9c8f351a01825040.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/solt-uk-theatre-conference-2026",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:57Z",
-  "title": "Society of London Theatre & UK Theatre Conference 2026 — Crossroads Live",
-  "sha256": "6f8c6a02f981807b2fce3dbe1f7424b0db84bc9e4f0c19e53e17169f8b6fe62e",
-  "file": "6f8c6a02f981807b.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/dead-special-beetlejuice-opens-in-the-west-end",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:40:59Z",
-  "title": "Dead Special - Beetlejuice opens in the West End! — Crossroads Live",
-  "sha256": "e416ec8e014f1c11f9c2992126e0511050576f44fef82b7c7c874b83ef208d35",
-  "file": "e416ec8e014f1c11.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/waitress-proof-that-a-touring-production-has-the-power-to-outshine-the-original",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:01Z",
-  "title": "Waitress ‘Proof that a touring production has the power to outshine the original’ — Crossroads Live",
-  "sha256": "f47a6b4b0eef761b9ce332b9c579422df9407cdc68f9650d32e859437193d1ad",
-  "file": "f47a6b4b0eef761b.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/jesus-christ-superstar-rocks-the-philippines",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:03Z",
-  "title": "Jesus Christ Superstar Rocks The Philippines! — Crossroads Live",
-  "sha256": "a2045690f39d89247b4d093575cdac400fe8d2a0191372c94c9f5dd6c31c56ce",
-  "file": "a2045690f39d8924.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/full-west-end-cast-announced-for-beetlejuice",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:05Z",
-  "title": "Full West End cast announced for Beetlejuice — Crossroads Live",
-  "sha256": "ef7f3c6dd7784654ce62abbb79b78c2db59b3fd706461ff74dbf284e2876b4f8",
-  "file": "ef7f3c6dd7784654.txt"
- },
- {
-  "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/debbie-obrien.html",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:10Z",
-  "title": "Debbie O'Brien",
-  "sha256": "0bdfa3354992842c88e0ab26c275354da00b0c51c999eba4a29ae5b7a49d5317",
-  "file": "0bdfa3354992842c.txt"
- },
- {
-  "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/ncl-june.html",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:12Z",
-  "title": "BURN THE FLOOR",
-  "sha256": "f72311f3cdaf2362a9ba6f302c9f1daceabbabef9ffd64b07fd19d89e49f8174",
-  "file": "f72311f3cdaf2362.txt"
- },
- {
-  "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/fabulist.html",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:14Z",
-  "title": "THE FABULIST",
-  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
-  "file": "a185a99420065389.txt"
- },
- {
-  "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/bodyguard.html",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:16Z",
-  "title": "BODYGUARD BREAKDOWN",
-  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
-  "file": "a185a99420065389.txt"
- },
- {
-  "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/cc.html",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:18Z",
-  "title": "CC",
-  "sha256": "7eb9b39104acfd01ffe9c74583bd648a4e3cffd6c39a179d94ddba0971fa4132",
-  "file": "7eb9b39104acfd01.txt"
- },
- {
-  "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/ptp-foh.html",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:41:20Z",
-  "title": "PTP Audience Managers",
-  "sha256": "854e9b9639fda8f1f38bf37d077c21471e06f97b3bad60f4b8f995d2a65f0c7d",
-  "file": "854e9b9639fda8f1.txt"
- },
- {
   "seed": "the-choir-of-man",
   "url": "https://thechoirofman.com",
   "status": 200,
@@ -254,5 +74,1787 @@
   "title": "Harry Blumenau CDG CSA - United Agents",
   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
   "file": "01dcb8b5445f6dbb.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/hamilton-announces-casting-for-korean-premiere",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:11Z",
+  "title": "Hamilton announces casting for Korean Premiere — Crossroads Live",
+  "sha256": "ffd0daf61c702f26013da5ba526727ec3e2db70d086fba8a45c4e4284e1f49f5",
+  "file": "ffd0daf61c702f26.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/everybody-say-yeah-kinky-boots-is-returning-to-chinanbsp",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:13Z",
+  "title": "Everybody say YEAH! Kinky Boots is returning to China!  — Crossroads Live",
+  "sha256": "230c06ae35cc85feb3cfbbe38d7c5b1079bfa68082add7924a1f2ed0657434a9",
+  "file": "230c06ae35cc85fe.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/christmas-comes-early-at-the-crossroads-pantomimes",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:15Z",
+  "title": "Christmas Comes Early at the Crossroads Pantomimes Summer Party — Crossroads Live",
+  "sha256": "ffe3c3fd19fd41b311f25a9600c9d657c59cb071916e05a1f202c818f3f99b2e",
+  "file": "ffe3c3fd19fd41b3.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/beetlejuice-its-showtime-london",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:17Z",
+  "title": "It’s Showtime, London — Crossroads Live",
+  "sha256": "0df493b2a4e097877be9efd32144b9d32eb7023582e55d39f6814dfb37edf6c1",
+  "file": "0df493b2a4e09787.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/the-wiz-announces-company-for-new-na-tour",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:19Z",
+  "title": "The Wiz announces company for new North American tour. — Crossroads Live",
+  "sha256": "f21985b53dce325d1e07e8c266f7a9eff9b934dc9a0b281740732db4de45bb1d",
+  "file": "f21985b53dce325d.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/us-theatre-awards-season-the-lost-boys-titanique-and-beaches-all-nominated",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:21Z",
+  "title": "US Theatre Awards Season: The Lost Boys, Titanique and Beaches all nominated — Crossroads Live",
+  "sha256": "d921c1d5954441ca7b18e6dd565960129a34a2a1db7a3ce27bec3dcdd840fc27",
+  "file": "d921c1d5954441ca.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/just-in-time-nominated-for-6-tony-awards",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:23Z",
+  "title": "Just In Time nominated for 6 Tony Awards — Crossroads Live",
+  "sha256": "3134774cd1f49f917dd5c8ba37c59680ae82ad4a884e7430c4fea5c1011ee89f",
+  "file": "3134774cd1f49f91.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/silence-of-the-lambs-makes-thrilling-world-stage-premiere-in-leicester",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:25Z",
+  "title": "The Silence of the Lambs makes thrilling world stage premiere in Leicester — Crossroads Live",
+  "sha256": "446cfb669b91c289ecee2157c022c11847bdb47f5131b300007b721c450b3829",
+  "file": "446cfb669b91c289.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/magic-mike-live-international-reveals-casting-and-theatre-transformation-plans",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:27Z",
+  "title": "Magic Mike Live International reveals casting and theatre transformation plans. — Crossroads Live",
+  "sha256": "9c8f351a01825040ad778e75e052b04a3b3ee3f772581319e44fa0ffeb7eb843",
+  "file": "9c8f351a01825040.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/solt-uk-theatre-conference-2026",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:29Z",
+  "title": "Society of London Theatre & UK Theatre Conference 2026 — Crossroads Live",
+  "sha256": "6f8c6a02f981807b2fce3dbe1f7424b0db84bc9e4f0c19e53e17169f8b6fe62e",
+  "file": "6f8c6a02f981807b.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/dead-special-beetlejuice-opens-in-the-west-end",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:31Z",
+  "title": "Dead Special - Beetlejuice opens in the West End! — Crossroads Live",
+  "sha256": "e416ec8e014f1c11f9c2992126e0511050576f44fef82b7c7c874b83ef208d35",
+  "file": "e416ec8e014f1c11.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/waitress-proof-that-a-touring-production-has-the-power-to-outshine-the-original",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:33Z",
+  "title": "Waitress ‘Proof that a touring production has the power to outshine the original’ — Crossroads Live",
+  "sha256": "f47a6b4b0eef761b9ce332b9c579422df9407cdc68f9650d32e859437193d1ad",
+  "file": "f47a6b4b0eef761b.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/jesus-christ-superstar-rocks-the-philippines",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:35Z",
+  "title": "Jesus Christ Superstar Rocks The Philippines! — Crossroads Live",
+  "sha256": "a2045690f39d89247b4d093575cdac400fe8d2a0191372c94c9f5dd6c31c56ce",
+  "file": "a2045690f39d8924.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/full-west-end-cast-announced-for-beetlejuice",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:37Z",
+  "title": "Full West End cast announced for Beetlejuice — Crossroads Live",
+  "sha256": "ef7f3c6dd7784654ce62abbb79b78c2db59b3fd706461ff74dbf284e2876b4f8",
+  "file": "ef7f3c6dd7784654.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/celebrating-our-world-beating-theatre-on-world-theatre-day",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:39Z",
+  "title": "Celebrating our world-beating theatre on World Theatre Day — Crossroads Live",
+  "sha256": "c7e637b9fac2240dfb6892be2795bf2a5b7215f3327585b046253b2d1572e593",
+  "file": "c7e637b9fac2240d.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/comedy-legends-french-amp-saunders-reunite-for-cinderella-at-london-palladium",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:41Z",
+  "title": "Comedy legends French & Saunders reunite for Cinderella at London Palladium — Crossroads Live",
+  "sha256": "c32aab354e77a5b8641a4945e7792e481d020d4fe7c9a59c2823de299f8e92ba",
+  "file": "c32aab354e77a5b8.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/spring-forward-gearing-up-for-our-new-broadway-openings",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:43Z",
+  "title": "Spring Forward! Gearing up for our new Broadway openings — Crossroads Live",
+  "sha256": "c49605069feeb065dd1abbf7c80318b67242b2859f083218079880aa7beee023",
+  "file": "c49605069feeb065.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/world-premiere-sotl-announced-2026",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:45Z",
+  "title": "World premiere of The Silence of the Lambs announced for 2026 — Crossroads Live",
+  "sha256": "bc15daf7299ce878398511397d6e6fe0535e32305bf72e5d36aeffd816d9c7de",
+  "file": "bc15daf7299ce878.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/waitress-to-premiere-in-australia-in-2026",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:47Z",
+  "title": "Waitress to premiere in Australia in 2026 — Crossroads Live",
+  "sha256": "395db9d3bdd682f37d1a8a44b9b512a3858618755d6f50121bf596e04aac9cd5",
+  "file": "395db9d3bdd682f3.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/back-to-the-future-opens-to-electrifying-reviews-in-sydney",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:49Z",
+  "title": "Back To The Future opens to electrifying reviews in Sydney — Crossroads Live",
+  "sha256": "900db5aa846b396bceed8209b18aa21b77212aee49af4db9d3fb8f547d027832",
+  "file": "900db5aa846b396b.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/annie-to-tour-the-uk-and-ireland-throughout-2026",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:51Z",
+  "title": "Annie to tour the UK and Ireland throughout 2026 — Crossroads Live",
+  "sha256": "07bb73c544f9e186ab4fb441f46c4c9bd254ce131a7e1276d8737ef13c9ea9bc",
+  "file": "07bb73c544f9e186.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/cluedo-announces-australian-premiere-for-2026",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:53Z",
+  "title": "Cluedo announces Australian premiere for 2026 — Crossroads Live",
+  "sha256": "61460217a752102f24dc86646d333d86320697a5a7d3f644b40d140752781c56",
+  "file": "61460217a752102f.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/my-fair-lady-returns-to-sydney-for-70th-anniversary",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:55Z",
+  "title": "My Fair Lady returns to Sydney for 70th Anniversary — Crossroads Live",
+  "sha256": "775558a535a9942721b0866a9988bf823fe75fa74f4ee3b96c094d5ee2a4740e",
+  "file": "775558a535a99427.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/great-scott-sydney-to-host-back-to-the-future-the-musical-next-year",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:57Z",
+  "title": "Great Scott! Sydney to host Back To The Future: The Musical in 2025 — Crossroads Live",
+  "sha256": "832298588e43cd42c6d55cda4812f93f80c5b727614ea7acffb776230accf629",
+  "file": "832298588e43cd42.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/annie-returns-to-australia",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:46:59Z",
+  "title": "Annie Returns To Australia — Crossroads Live",
+  "sha256": "c6a600f7d461072f777152c6de753049ec903d42ead07507df2b8b9f4f0f6824",
+  "file": "c6a600f7d461072f.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/major-new-musical-announcement-broadway-hit-musical-anastasia-tonbsppremiere-in-australia-in-2025",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:01Z",
+  "title": "Broadway hit musical Anastasia to premiere in Australia — Crossroads Live",
+  "sha256": "180eba60bef750c1d178492ba6353bc490bd73b1f8db75cdf91bd0ed7385dcc2",
+  "file": "180eba60bef750c1.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/crossroads-live-touches-down-in-china",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:03Z",
+  "title": "Crossroads Live touches down in China — Crossroads Live",
+  "sha256": "0472054a8b2e881f7ae61800a625bdfe9e9a664c7aa152c2e58722999ecf8d95",
+  "file": "0472054a8b2e881f.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/chicago-paints-the-town-red-in-china",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:05Z",
+  "title": "Chicago paints the town red in China — Crossroads Live",
+  "sha256": "e732b54f9203f859c01a2a35a4823a4d4663ef727868b20dbcf2ffee10b5fc0c",
+  "file": "e732b54f9203f859.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/the-phantom-of-the-opera-makes-its-debut-in-india",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:07Z",
+  "title": "The Phantom of the Opera makes its debut in India — Crossroads Live",
+  "sha256": "aca1d70128a3feb9667a538e74fb1bee9ffe2bb64f4d0b234584d39327e99aed",
+  "file": "aca1d70128a3feb9.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/the-olivier-awards-nominations-are-announced",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:09Z",
+  "title": "The Olivier Awards nominations are announced — Crossroads Live",
+  "sha256": "bb29489ac3fdbd81ed22a88e2022c11f0ce7f30b6f5944521ddf2fd0af64b05f",
+  "file": "bb29489ac3fdbd81.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/mean-girls-wins-best-new-musical-uk-whatsonstage",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:11Z",
+  "title": "Mean Girls wins Best New Musical at UK WhatsOnStage Awards — Crossroads Live",
+  "sha256": "fc229093fbba5849ec51e8ca62603a22ee3a9d18b763ccc12f2c52412143b099",
+  "file": "fc229093fbba5849.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/cxl-enjoys-a-record-breaking-year",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:13Z",
+  "title": "Crossroads Live enjoys a record-breaking year — Crossroads Live",
+  "sha256": "4350938eb18f2f501b855808b28ee9173a53f2d53988dbbee5ca670569947bcf",
+  "file": "4350938eb18f2f50.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/elf-the-musical-opens-on-broadway-to-sparklejollytwinklejingley-reviews",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:15Z",
+  "title": "Elf the Musical opens on Broadway to sparklejollytwinklejingley reviews! — Crossroads Live",
+  "sha256": "987c40677ed8153acae5df889eae64d9747ff1424ea142c2ebd6f1f071bc2d81",
+  "file": "987c40677ed8153a.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/cats-returns-to-its-original-australian-home-after-40-yearslet-the-memory-live-again",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:17Z",
+  "title": "Cats returns to its original Australian home after 40 years — Crossroads Live",
+  "sha256": "4115b6cae0c1679144da4beb54acc36064b44426f609749cb7323a4231801063",
+  "file": "4115b6cae0c16791.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/crossroads-live-sponsor-the-stage-debut-awards-for-the-second-year",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:19Z",
+  "title": "Crossroads Live sponsor The Stage Debut Awards for the second year — Crossroads Live",
+  "sha256": "bb6bc76871b7ce5aac66c34be0e85be8e7bae01a8b4f335e061617cde0de2687",
+  "file": "bb6bc76871b7ce5a.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/agatha-christies-breathtaking-masterpiece-and-then-there-were-none-to-tour-to-melbourne-and-sydney",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:21Z",
+  "title": "Agatha Christie’s breath-taking masterpiece And Then There Were None to tour to Melbourne and Sydney — Crossroads Live",
+  "sha256": "3263febfb5477ca8469e7188a616fe3ed34729ca9ab57dc938d806148b4b5a04",
+  "file": "3263febfb5477ca8.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/celebrating-one-year-of-crossroads-live-scholarships-at-mountview",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:24Z",
+  "title": "Celebrating one year of Crossroads Live Scholarships at Mountview — Crossroads Live",
+  "sha256": "62ce6b70d0ad1280d35d65920348e8e14218117ec5166bb8eb5e8c5110d11158",
+  "file": "62ce6b70d0ad1280.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/the-award-wining-triumphant-story-now-on-tour",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:25Z",
+  "title": "The triumphant, award-winning story, TINA – The Tina Turner Musical, is rolling across America — Crossroads Live",
+  "sha256": "87381d84e97581efd605b74cb206a4181f6e2ff9cce854df1115df6006e26432",
+  "file": "87381d84e97581ef.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/world-premiere-announced-for-my-best-friends-wedding-at-ogunquit-playhouse",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:27Z",
+  "title": "World premiere announced for My Best Friend’s Wedding at Ogunquit Playhouse — Crossroads Live",
+  "sha256": "e94e957843043902fdc72ff43bd168e79d858633c60e91fbff07ce8442ba6a9f",
+  "file": "e94e957843043902.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/annie-the-musical-takes-part-in-the-first-macao-international-childrens-arts-festival",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:29Z",
+  "title": "Annie the Musical takes part in the first Macao International Children’s Arts Festival — Crossroads Live",
+  "sha256": "c59591741711a00d6feee503987002aae7c3ce6968f768fde884eb5b30923d90",
+  "file": "c59591741711a00d.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/hallelujah-jesus-christ-superstar-is-coming-to-australianbsp",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:31Z",
+  "title": "Hallelujah! Jesus Christ Superstar is coming to Australia.  — Crossroads Live",
+  "sha256": "b5dfca86572f725585f4b35e5699b0b972fc0c87c970b3e8caf666739dd05ee4",
+  "file": "b5dfca86572f7255.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/brand-new-production-of-chitty-chitty-bang-bang-opens-in-uk",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:33Z",
+  "title": "Brand new production of Chitty Chitty Bang Bang opens in UK — Crossroads Live",
+  "sha256": "bd279535184b10a22b1f089b60dd4453786e92eaa06f20f45ffa61167b653b81",
+  "file": "bd279535184b10a2.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/its-all-about-connection-at-usitt-2024-in-seattle",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:35Z",
+  "title": "It’s all about connection at USITT 2024 in Seattle — Crossroads Live",
+  "sha256": "cbf7b96abf223c8718562bb21796c36935f6e1fabcc653c0c8b2ac94639ddb21",
+  "file": "cbf7b96abf223c87.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/new-musical-babies-to-open-at-the-other-palace-in-london",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:37Z",
+  "title": "New musical BABIES to open at The Other Palace in London — Crossroads Live",
+  "sha256": "aa1d16c9ab5b49a6710fc7669388be3f6be0727f7d2b97dc5474a8d02c88538e",
+  "file": "aa1d16c9ab5b49a6.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/praise-be-tickets-now-on-sale-for-sister-act-in-australia",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:39Z",
+  "title": "Praise be! Tickets now on sale for Sister Act in Australia. — Crossroads Live",
+  "sha256": "b1f8dda9c498784cb59890ea3c2cb979f23fe24b9188ea49b56e50d3333e6b97",
+  "file": "b1f8dda9c498784c.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/celebrating-2023-with-thestage100",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:41Z",
+  "title": "Celebrating 2023 with #TheStage100 — Crossroads Live",
+  "sha256": "b51bf4fc28378c3e33a3c2235e0b95b4e37526c3a49fa40d8aa673c2c6fae95f",
+  "file": "b51bf4fc28378c3e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/broadways-smash-hit-musical-is-coming-to-the-savoy-theatre-london-from-june-2024",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:43Z",
+  "title": "Broadway’s SMASH HIT musical is coming to the Savoy Theatre, London, from June 2024! — Crossroads Live",
+  "sha256": "7dfca4b459ab877061b02c555916774582250914beb25de5d256ec0aaab7368c",
+  "file": "7dfca4b459ab8770.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/the-stage-debut-awards",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:45Z",
+  "title": "Winners are announced for The Stage Debut Awards — Crossroads Live",
+  "sha256": "014e527ce74e7056b37eac5acddf9b85e0405d0d45677aaa67bfe0661b07dd94",
+  "file": "014e527ce74e7056.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/crossroads-live-partners-with-mountview-academy-of-theatre-arts-to-award-100k-of-scholarship-support-over-the-next-four-years",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:47Z",
+  "title": "Crossroads Live partners with leading UK drama school, Mountview to offer scholarship programme — Crossroads Live",
+  "sha256": "bc7701e9c8036743e56b3b39e4881e266e543ab7bc8099192e55685b2c6ee6db",
+  "file": "bc7701e9c8036743.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/crossroads-live-sponsor-creative-award-at-the-stage-debut-awards-in-london",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:49Z",
+  "title": "Crossroads Live sponsor creative award at The Stage Debut Awards in London — Crossroads Live",
+  "sha256": "96eb20d5214dc28907943da7e6f2203dd86f22c47f4d9aba1f9fdb82dd1567a3",
+  "file": "96eb20d5214dc289.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tickets-now-on-sale-as-the-sizzling-star-studded-cast-announced-for-the-sharpest-slickest-show-on-the-block",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:51Z",
+  "title": "Tickets Now on Sale as the Sizzling Star-Studded Cast Announced for “The Sharpest, Slickest Show on the Block” — Crossroads Live",
+  "sha256": "0f5375721440ecae929be1a5ba45bcbb0c3300f74c19720ef5b22ee68ec7ad0c",
+  "file": "0f5375721440ecae.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/final-cast-members-announced",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:53Z",
+  "title": "Final Cast Members Announced — Crossroads Live",
+  "sha256": "69a509520133a1b04c4c4e769b051a70fd987f0dce66720e0979eb72f354f191",
+  "file": "69a509520133a1b0.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/the-sharpest-slickest-show-on-the-block-returns-to-australia",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:55Z",
+  "title": "“The sharpest, slickest show on the block” returns to Australia — Crossroads Live",
+  "sha256": "f27afe0eeca8070f071b85df86d17e2c0a3591e88dc8aeebdff51f488b04fc3a",
+  "file": "f27afe0eeca8070f.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:57Z",
+  "title": "The most fantasmagorical musical of all time is back for a UK tour in 2024 — Crossroads Live",
+  "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
+  "file": "b5b9d26e3a70f637.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/grease-to-return-to-australia-from-january-2024",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:47:59Z",
+  "title": "GREASE to return to Australia from January 2024 — Crossroads Live",
+  "sha256": "0f14b0e865c9bb3e4305ca5b1180eef3f75413cecd4d9afe82c5ef4fcba4554d",
+  "file": "0f14b0e865c9bb3e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/peter-pan-will-be-flying-into-the-london-palladium-this-christmas",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:01Z",
+  "title": "Peter Pan will be flying into The London Palladium this Christmas — Crossroads Live",
+  "sha256": "9a5e393dd6837643a2a656d8d57ec410e507fcce0ec24863fa208926835d1faf",
+  "file": "9a5e393dd6837643.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/were-delighted-to-appear-in-the-top-10-of-the-stage-100-as-a-new-entry-for-the-new-year",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:03Z",
+  "title": "We’re delighted to appear in the Top 10 of The Stage 100 as a NEW entry for the New Year! — Crossroads Live",
+  "sha256": "e40446d98b5a05a990ee0af43048e3ad9b7440608c00e3beb203600895c1742b",
+  "file": "e40446d98b5a05a9.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/enjoy-spectacular-five-star-festive-fun-this-holiday-season",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:05Z",
+  "title": "Enjoy Spectacular Five-Star Festive Fun this Holiday Season! — Crossroads Live",
+  "sha256": "e7042b13447e7a9e572d6f7e4924397a82daad56cf6191e87c5b2c4e495fb346",
+  "file": "e7042b13447e7a9e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/celebrating-4-years-magic-mike-london",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:07Z",
+  "title": "Wishing Magic Mike London a happy 4th birthday! — Crossroads Live",
+  "sha256": "200915368dca8d9ad957da481bf7166298db1c8a43f11fed93e17906412bb33a",
+  "file": "200915368dca8d9a.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/wellbeing-specialist-role",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:09Z",
+  "title": "We’re recruiting a Wellbeing Specialist who will provide mental health support to our  companies — Crossroads Live",
+  "sha256": "ccf9dca17e13184c909e155761ed17516a36ecaa2128dbe1ca843d400f5605f5",
+  "file": "ccf9dca17e13184c.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/one-month-today-until-our-first-spectacular-pantomime-of-the-season-beauty-and-the-beast-begins-at-kings-theatre-glasgow",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:11Z",
+  "title": "One month until our first pantomime of the season, Beauty and the Beast, begins at Kings Theatre Glasgow — Crossroads Live",
+  "sha256": "08cb2ba80074136f06bd6f544fde201ee377231b7f0fdb0d31a709033ac43456",
+  "file": "08cb2ba80074136f.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/jason-donovan-stars-in-the-50th-anniversary-tour-of-the-rocky-horror-show-in-sydney",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:13Z",
+  "title": "Jason Donovan stars in the 50th Anniversary Tour of The Rocky Horror Show in Sydney 2023 — Crossroads Live",
+  "sha256": "33473664a9535df16d00eee2760500e24f56b6028053b131e2563c648dd19a4a",
+  "file": "33473664a9535df1.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/broadways-biggest-blockbuster-wicked-is-coming-to-sydney-in-2023",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:15Z",
+  "title": "Broadway’s biggest blockbuster, Wicked, is coming to Sydney in 2023! — Crossroads Live",
+  "sha256": "12c74ecf3681bb7e27217a77f7d4a85eca08b4ae9ec18b7bb807ae8afd5411a4",
+  "file": "12c74ecf3681bb7e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/kristen-bell-says-seeing-magic-mike-live-was-akin-to-her-wedding-day-and-kids-births",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:17Z",
+  "title": "Kristen Bell Says Seeing 'Magic Mike Live' Was Akin to Her Wedding Day and Kids' Births — Crossroads Live",
+  "sha256": "47d9b88b9cd0f262f80ee501b43666fecc2792871e0c6be70a3d8b9127ba1101",
+  "file": "47d9b88b9cd0f262.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/magic-mike-live-in-london-extends-booking-period-through-1-january-2023",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:19Z",
+  "title": "MAGIC MIKE LIVE in London Extends Booking Period Through 1 January 2023 — Crossroads Live",
+  "sha256": "887f7d56457043b0e807e2e9acc4c170adac1be8631a44f2cf66a3a18da61213",
+  "file": "887f7d56457043b0.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/immersive-tupac-shakur-exhibit-comes-to-la-live-this-week",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:21Z",
+  "title": "Immersive Tupac Shakur exhibit comes to LA Live this week — Crossroads Live",
+  "sha256": "4cc975cc01d0a5d49f9c2715477108a0e87e3b3407ca47d8c702e98918a48acb",
+  "file": "4cc975cc01d0a5d4.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/complete-2022-chicago-tour-cast-revealed-with-sheila-ferguson-as-mama-morton",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:23Z",
+  "title": "Complete 2022 Chicago tour cast revealed with Sheila Ferguson as Mama Morton — Crossroads Live",
+  "sha256": "d37ae272efbbdf63358acee70c77fcf4e96044d7518b8ac101179196770e6055",
+  "file": "d37ae272efbbdf63.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/ben-platt-watched-magic-mike-live-with-allison-janney-and-kristen-bell-and-it-was-very-satisfying",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:25Z",
+  "title": "Ben Platt Watched ‘Magic Mike Live’ With Allison Janney And Kristen Bell And It Was ‘Very Satisfying’ — Crossroads Live",
+  "sha256": "95eac7b273d21c1aa7d0d40834f696ab20855b6eb359626fc31f2dd58f0d6974",
+  "file": "95eac7b273d21c1a.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/sandra-marvin-currently-on-tour-with-waitress",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:27Z",
+  "title": "Sandra Marvin, currently on tour with Waitress — Crossroads Live",
+  "sha256": "6a52f859cafe8992d9da85d4519b7515fd9b7980ec66d477049a313d985d91bd",
+  "file": "6a52f859cafe8992.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/rodgers-and-hammersteins-cinderella-is-coming-to-melbourne-next-year",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:29Z",
+  "title": "Rodgers and Hammerstein's CINDERELLA is Coming to Melbourne Next Year — Crossroads Live",
+  "sha256": "0d8ecd37cd6b87c2c5bd2f0942282a62b8b541554c619331977cd1091f993d40",
+  "file": "0d8ecd37cd6b87c2.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/evelyn-hoskins-currently-on-tour-with-waitress",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:31Z",
+  "title": "Evelyn Hoskins, currently on tour with Waitress — Crossroads Live",
+  "sha256": "10187d8328694619a8d3d5fae0f32de9d6e0c3b144f4b9caec2ff6dccbe17904",
+  "file": "10187d8328694619.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/magic-mike-live-cast-put-wwe-duo-pretty-deadly-through-their-paces-as-temperatures-soar",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:33Z",
+  "title": "Magic Mike Live cast put WWE duo Pretty Deadly through their paces as temperatures soar — Crossroads Live",
+  "sha256": "98fb9ec5733cd0a9d9b97b71ec417cec7942f2d98efbf74b66b83776959c45d5",
+  "file": "98fb9ec5733cd0a9.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/9-to-5-to-partner-with-dolly-partons-imagination-library",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:35Z",
+  "title": "9 to 5 to Partner With Dolly Parton's Imagination Library — Crossroads Live",
+  "sha256": "55a8e7e7f47bbcd84b1fad192e580edf91c388633604fefb1993d296eb1e50dd",
+  "file": "55a8e7e7f47bbcd8.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/chelsea-halfpenny-will-succeed-lucie-jones-in-uk-and-ireland-tour-of-waitress",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:37Z",
+  "title": "Chelsea Halfpenny Will Succeed Lucie Jones in U.K. and Ireland Tour of Waitress — Crossroads Live",
+  "sha256": "cae248dadef5f0b4ae5d069e3691ba2f55cce3ebeca8d4333970b569e4c7f8fe",
+  "file": "cae248dadef5f0b4.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/caroline-oconnor-and-eddie-perfect-will-lead-9-to-5-the-musical-in-sydney",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:39Z",
+  "title": "Caroline O'Connor and Eddie Perfect Will Lead 9 TO 5 THE MUSICAL — Crossroads Live",
+  "sha256": "7467baa14c0868181a3353d73d5907d50ad9ed0d4eac211bb03d78965f348601",
+  "file": "7467baa14c086818.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/full-cast-announced-for-charlie-and-the-chocolate-factory-premiere-queensland-season",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:41Z",
+  "title": "Full Cast Announced for Charlie and the Chocolate Factory Premiere Queensland Season — Crossroads Live",
+  "sha256": "96d45226b305fe172ddb70465364b17760429ae69c2adbed781b9bd6bc2a2088",
+  "file": "96d45226b305fe17.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/lead-cast-members-announced-for-australias-rodgers-hammersteins-cinderella",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:43Z",
+  "title": "Lead Cast Members Announced for Australia’s Rodgers + Hammerstein’s Cinderella — Crossroads Live",
+  "sha256": "1de420bb91e711dd490c62404fe1155a489858fc565dd1c57ebc3dd9d2846ef3",
+  "file": "1de420bb91e711dd.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/crossroads-live-acquires-qdos-pantomimes",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:45Z",
+  "title": "Crossroads Live Acquires Qdos Pantomimes — Crossroads Live",
+  "sha256": "17929488e2b79b35d796ee404df17e168f996053a28d2f12a2b060a13ee6823b",
+  "file": "17929488e2b79b35.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/school-of-rock-confirms-dates-for-first-uk-and-ireland-tour",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:47Z",
+  "title": "School of Rock confirms dates for first UK and Ireland tour — Crossroads Live",
+  "sha256": "cbf0b032ccbe9934c432123ba5cbddbff667e8de05102b7b7001036bbe6090d5",
+  "file": "cbf0b032ccbe9934.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/waitress-uk-and-ireland-tour-cast",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:49Z",
+  "title": "Waitress UK tour cast to include Lucie Jones, Matt Willis and Sandra Marvin — Crossroads Live",
+  "sha256": "8acfd94e2d58420f4480ccc77313f08606e641b911e45668740b66b6a2e51b26",
+  "file": "8acfd94e2d58420f.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/2021-uk-tour-of-multi-award-winning-chicago-announced",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:51Z",
+  "title": "2021 UK Tour of multi-award winning Chicago announced — Crossroads Live",
+  "sha256": "b26f6f93453d656ed3bfd7690619bf844af203bd07b0d3b72f329b5cc7ff0ef3",
+  "file": "b26f6f93453d656e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/mml-channing-tatums",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:53Z",
+  "title": "Channing Tatum’s Magic Mike Live Comes to London — Crossroads Live",
+  "sha256": "7e795c62e04a5ec8e9b1ab5d8b556b15e706afcc7a37ae7eda62125bd3db1b9e",
+  "file": "7e795c62e04a5ec8.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/full-casting-announced-for-the-forthcoming-uk-tour-of-annie",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:55Z",
+  "title": "Full Casting Announced for the Forthcoming Uk Tour of Annie — Crossroads Live",
+  "sha256": "d761380c0c049ef986a3136ff2be8835637c6e9af8dda24407776f9397c51c66",
+  "file": "d761380c0c049ef9.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/the-spellbinding-sequel-to-the-phantom-of-the-opera",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:57Z",
+  "title": "The Spellbinding Sequel to The Phantom of the Opera — Crossroads Live",
+  "sha256": "bb04b781839d4829b0de65d8847109743506c947a489e677d9579ace67daab66",
+  "file": "bb04b781839d4829.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/calling-all-talented-young-musicians-across-the-country",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:48:59Z",
+  "title": "Calling all talented young musicians across the country! — Crossroads Live",
+  "sha256": "e1a34bd739f2f28b463656bf33b4f31a78a0fe162e5c97d90d8cd15bb6015295",
+  "file": "e1a34bd739f2f28b.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/andrew-lloyd-webbers-smash-hit-west-end-amp-broadway-musical-to-embark-on-uk-tour-2021",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:01Z",
+  "title": "Andrew Lloyd Webber’s Smash Hit West End & Broadway Musical To Embark on Uk Tour, 2021 — Crossroads Live",
+  "sha256": "d16129e5bc3b264c67a50eeaa39ce48749a17ee9bf29d1930365d1c8366b0bed",
+  "file": "d16129e5bc3b264c.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/andy-nyman-and-jenna-russel-join-the-cast-of-hello-dolly",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:03Z",
+  "title": "Andy Nyman and Jenna Russel join the cast of Hello, Dolly! — Crossroads Live",
+  "sha256": "ae0a1e53087076912576bb11b59dcbe003c886f40d8b19fd333e77f686c13b27",
+  "file": "ae0a1e5308707691.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/world-premiere-of-mbfw",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:05Z",
+  "title": "Michael Harrison and David Ian Present the World Premiere of My Best Friend’s Wedding the Musical — Crossroads Live",
+  "sha256": "fa74ced6df2185e346a526e9506bfe5af3dbd01cd816d9b09e27250985d072b8",
+  "file": "fa74ced6df2185e3.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/imelda-staunton-headline-hello-dolly",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:07Z",
+  "title": "Four-Time Olivier Award Winner Imelda Staunton to Headline New Production of the Iconic Musical Hello, Dolly! — Crossroads Live",
+  "sha256": "6b2b4ad022821df48dd340511989b1f7f5f612c1c6460dd888e6d2e35c67cdc4",
+  "file": "6b2b4ad022821df4.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/beverley-knight-drifters-girl",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:09Z",
+  "title": "Beverley Knight to Star as Legendary Manager of the Drifters in New Musical About the Iconic Group — Crossroads Live",
+  "sha256": "d06b71bea7389a2a8ddbaa4a663a661055c9d16a18ab3b6a3d6ed8a97f8bf306",
+  "file": "d06b71bea7389a2a.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/cast-changes-bodyguard",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:11Z",
+  "title": "Cast Changes Announced for the National Tour of the Smash Hit Musical the Bodyguard — Crossroads Live",
+  "sha256": "01a7431799466ad480a259cf23ffbbbd5fda370ea9d1527989cbbe66b6714134",
+  "file": "01a7431799466ad4.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/lesley-joseph-to-play-miss-hannigan-in-annie-1",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:13Z",
+  "title": "Lesley Joseph to Play ‘Miss Hannigan’ in Annie — Crossroads Live",
+  "sha256": "c78820a11b1cff419b7244c0d42dcf2c12c53c0558216bca8c9f741de0a3732d",
+  "file": "c78820a11b1cff41.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/jodie-prenger-to-play-miss-hannigan-in-annie",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:15Z",
+  "title": "Jodie Prenger to Play ‘Miss Hannigan’ in Annie — Crossroads Live",
+  "sha256": "26a16a4ed575503a1299fcf152e4c1ee2720322096324a5bd6711a3f9c8e7ce2",
+  "file": "26a16a4ed575503a.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/lesley-joseph-to-play-miss-hannigan-in-annie",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:17Z",
+  "title": "Lesley Joseph to Play ‘Miss Hannigan’ in Annie — Crossroads Live",
+  "sha256": "478ea6af914df6a69efb3567ebb31bdfbad281abb07ade12eac62969a9d6853e",
+  "file": "478ea6af914df6a6.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/annie-anita-dobson",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:19Z",
+  "title": "Anita Dobson and Craig Revel Horwood to Star as ‘Miss Hannigan’ — Crossroads Live",
+  "sha256": "8da5f6592b4a4318d6df91d2ed8617888e21a7fb90aab5e57854aa1026e19c6b",
+  "file": "8da5f6592b4a4318.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/dates-announced-tootsie",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:21Z",
+  "title": "Performance Dates & On-sale Information Announced for Tootsie — Crossroads Live",
+  "sha256": "3a9c0b9553159d526cbf7a26c539bd2379b70e5484a83a6883a08df77348f7a3",
+  "file": "3a9c0b9553159d52.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/bodyguard-alexandra-burke-returns",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:23Z",
+  "title": "Alexandra Burke Returns to the Starring Role of Rachel Marron — Crossroads Live",
+  "sha256": "158d2486b35b489f539d67b103e99078ebea5e868ae0742b2c42d1f84a7d3744",
+  "file": "158d2486b35b489f.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/annie-announced-uk",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:25Z",
+  "title": "Dates Announced for the Uk Tour of Annie — Crossroads Live",
+  "sha256": "9eeda4ce75859a1b09a3cb64b701134a0847fe2a5bc01758c106d214124218be",
+  "file": "9eeda4ce75859a1b.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/category/Industry",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:27Z",
+  "title": "Industry — Press — Crossroads Live",
+  "sha256": "c926efb3ed29b8c2eaa92e8836f684a1e59d699557000e804374a94f6992d343",
+  "file": "c926efb3ed29b8c2.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/category/AU",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:29Z",
+  "title": "AU — Press — Crossroads Live",
+  "sha256": "57f1941695ffaba9aa6d0e3bd945444f705b0a924373a985fb561deb2269e7bd",
+  "file": "57f1941695ffaba9.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/category/UK",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:31Z",
+  "title": "UK — Press — Crossroads Live",
+  "sha256": "3f89254e21cf267d77eeb3c4cafd66b76471f9a8d9eb14e2b120c13e2a29f45f",
+  "file": "3f89254e21cf267d.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/category/Pantomimes",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:33Z",
+  "title": "Pantomimes — Press — Crossroads Live",
+  "sha256": "09662ded286af075c99237831e7e5731c1d48a9cd7616a053be3dec40527411a",
+  "file": "09662ded286af075.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/category/North+America",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:35Z",
+  "title": "North America — Press — Crossroads Live",
+  "sha256": "8c184ee940946de716681582e5202e377012a8bcfde9397f2dfa5d5c7937a68b",
+  "file": "8c184ee940946de7.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/category/Press",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:37Z",
+  "title": "Press — Press — Crossroads Live",
+  "sha256": "c926efb3ed29b8c2eaa92e8836f684a1e59d699557000e804374a94f6992d343",
+  "file": "c926efb3ed29b8c2.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/category/International",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:39Z",
+  "title": "International — Press — Crossroads Live",
+  "sha256": "1e3ec78aa71c045d9fc27d5619602a7225b1b1348840de4960281412ca1d557f",
+  "file": "1e3ec78aa71c045d.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/The+Silence+of+the+Lambs",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:41Z",
+  "title": "The Silence of the Lambs — Press — Crossroads Live",
+  "sha256": "7ea4bceca113b82e1a4c61f88fa849266a609835aa006a439e6bfef0bfb59e4c",
+  "file": "7ea4bceca113b82e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/The+Stage+Debut+Awards",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:43Z",
+  "title": "The Stage Debut Awards — Press — Crossroads Live",
+  "sha256": "47a6748ac676169e1cf0afb57defed49d52865ae85351b49d404488309000a30",
+  "file": "47a6748ac676169e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Tootsie",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:45Z",
+  "title": "Tootsie — Press — Crossroads Live",
+  "sha256": "950c56f14146023c2676bc730bd797badac196243edc93f75428aedf8798e4e1",
+  "file": "950c56f14146023c.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Back+to+the+Future",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:47Z",
+  "title": "Back to the Future — Press — Crossroads Live",
+  "sha256": "e623aea60b1d38acfa3b8b6de1952eea301e74450d0d1165272a59360240db32",
+  "file": "e623aea60b1d38ac.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Hello+Dolly",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:49Z",
+  "title": "Hello Dolly — Press — Crossroads Live",
+  "sha256": "3735b0d94ad662aa75dd51c38dc85e3349208e60388e1719e4ec8e59ad64d73a",
+  "file": "3735b0d94ad662aa.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Charlie+and+the+Chocolate+Factory",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:51Z",
+  "title": "Charlie and the Chocolate Factory — Press — Crossroads Live",
+  "sha256": "cdc0dbc80a0bc389bc24ac9be15b768afa85e5465945afbb504254e102d5dfbd",
+  "file": "cdc0dbc80a0bc389.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/UK+Theatre+Conference",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:53Z",
+  "title": "UK Theatre Conference — Press — Crossroads Live",
+  "sha256": "bfcf961fff8eabc757b2cff3acfb2c95690380452ea207954728d79d420c0594",
+  "file": "bfcf961fff8eabc7.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Beetlejuice",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:55Z",
+  "title": "Beetlejuice — Press — Crossroads Live",
+  "sha256": "3dfe95a98b9da173d4fd77a3effd33c76163126e27fed138c28585109d110add",
+  "file": "3dfe95a98b9da173.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Beaches",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:57Z",
+  "title": "Beaches — Press — Crossroads Live",
+  "sha256": "e2d164a26421a7ccdcfc7f3d1ac056470327dc28df64cf84e7ded022c0c6c447",
+  "file": "e2d164a26421a7cc.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Titanique",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:49:59Z",
+  "title": "Titanique — Press — Crossroads Live",
+  "sha256": "e2d164a26421a7ccdcfc7f3d1ac056470327dc28df64cf84e7ded022c0c6c447",
+  "file": "e2d164a26421a7cc.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/The+Phantom+of+the+Opera",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:01Z",
+  "title": "The Phantom of the Opera — Press — Crossroads Live",
+  "sha256": "35c75f160c1aec900e10366eff169cce94cc2dc35bb0773573955803093a6589",
+  "file": "35c75f160c1aec90.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Cinderella",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:03Z",
+  "title": "Cinderella — Press — Crossroads Live",
+  "sha256": "c6e988d4b32980b1672752419fcc9c755120c6b70182f03c7a5dff136562410b",
+  "file": "c6e988d4b32980b1.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Pantomime",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:05Z",
+  "title": "Pantomime — Press — Crossroads Live",
+  "sha256": "6ad9d21a2ed2104962e003b35bd7d3db27a4885cd28423ed4643bc9fe7b1da66",
+  "file": "6ad9d21a2ed21049.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Wicked",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:07Z",
+  "title": "Wicked — Press — Crossroads Live",
+  "sha256": "f5665ec99d7bccd427bee17797ef3d3b8e628c521c78c7b45ec154ed8ac3cfd0",
+  "file": "f5665ec99d7bccd4.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/The+Lost+Boys",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:09Z",
+  "title": "The Lost Boys — Press — Crossroads Live",
+  "sha256": "e2d164a26421a7ccdcfc7f3d1ac056470327dc28df64cf84e7ded022c0c6c447",
+  "file": "e2d164a26421a7cc.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Hamilton",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:11Z",
+  "title": "Hamilton — Press — Crossroads Live",
+  "sha256": "101e992933ff9a3e924267ba37735855c1bfbaa583506017261966cbfd4560da",
+  "file": "101e992933ff9a3e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/And+Then+There+Were+None",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:13Z",
+  "title": "And Then There Were None — Press — Crossroads Live",
+  "sha256": "85dfc12195836a73a4471914c29813b824401ce344871e328e60ae064e92f035",
+  "file": "85dfc12195836a73.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Cluedo",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:15Z",
+  "title": "Cluedo — Press — Crossroads Live",
+  "sha256": "0545f792e6d00f785946a3ef4f19a97c3628dc6bb56c2d70561f497f63009ef3",
+  "file": "0545f792e6d00f78.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Jesus+Christ+Superstar",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:17Z",
+  "title": "Jesus Christ Superstar — Press — Crossroads Live",
+  "sha256": "0253ed2427fbbbdaa4ec6679376a190dd4ab5e120b9be9a906cf6a21084cf1c4",
+  "file": "0253ed2427fbbbda.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Annie",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:19Z",
+  "title": "Annie — Press — Crossroads Live",
+  "sha256": "e50cce180912874d613547a0a9a22256dbac908206eecb268ab0fdf0b66b6392",
+  "file": "e50cce180912874d.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Society+of+London+Theatre",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:21Z",
+  "title": "Society of London Theatre — Press — Crossroads Live",
+  "sha256": "bfcf961fff8eabc757b2cff3acfb2c95690380452ea207954728d79d420c0594",
+  "file": "bfcf961fff8eabc7.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/The+Wiz",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:23Z",
+  "title": "The Wiz — Press — Crossroads Live",
+  "sha256": "dc1f02e0e584b337f62ff6e1f678834df784ed4433ae8e2c0b6e4d6b0cb5b024",
+  "file": "dc1f02e0e584b337.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Sister+Act",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:25Z",
+  "title": "Sister Act — Press — Crossroads Live",
+  "sha256": "957e4319718cb50bf7dba78485841550857d1cf4041858cf85e04b2a67c4151f",
+  "file": "957e4319718cb50b.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Love+Never+Dies",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:27Z",
+  "title": "Love Never Dies — Press — Crossroads Live",
+  "sha256": "5f79fccfce977f544f6ec3d750918a752f8e73cd8f0c36a3d730bea2ce2ddcbc",
+  "file": "5f79fccfce977f54.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Just+In+Time",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:29Z",
+  "title": "Just In Time — Press — Crossroads Live",
+  "sha256": "7142bc0d1b34870e593d8e7e0f3f6160fe27dd925e7a16788c8916eeef05a8c3",
+  "file": "7142bc0d1b34870e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Cats",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:31Z",
+  "title": "Cats — Press — Crossroads Live",
+  "sha256": "1dccb94aa7dc3b10471539e0728531e04618711c4a9339f6a65e4f1611ec7629",
+  "file": "1dccb94aa7dc3b10.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Grease",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:33Z",
+  "title": "Grease — Press — Crossroads Live",
+  "sha256": "b63dc9f2dd76e17e616e9e621cbc4bbdd86617d6d070231f8b2a52ba20b4bcaa",
+  "file": "b63dc9f2dd76e17e.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Chicago",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:35Z",
+  "title": "Chicago — Press — Crossroads Live",
+  "sha256": "3c6b06f3fb0fc2abe2cc9f197d851564a6b7b4b86e0fd8efa87b44bbd5a5dd4e",
+  "file": "3c6b06f3fb0fc2ab.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/My+Best+Friends+Wedding",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:37Z",
+  "title": "My Best Friends Wedding — Press — Crossroads Live",
+  "sha256": "44bc366e6b3f3e94e475a504a1b736f3eec6cfc90844cf5925a9f74d1acf70d7",
+  "file": "44bc366e6b3f3e94.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/United+Kingdom",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:39Z",
+  "title": "United Kingdom — Press — Crossroads Live",
+  "sha256": "06a8dee61a84c23c032516d9008f7458ed92a0ebc5816b39f450f26442b5961c",
+  "file": "06a8dee61a84c23c.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/My+Fair+Lady",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:41Z",
+  "title": "My Fair Lady — Press — Crossroads Live",
+  "sha256": "5c1ec7fdfa7b96a63059c267dc5d8dd3c29fe784e7f3732297ea9810d4ba9284",
+  "file": "5c1ec7fdfa7b96a6.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/9+to+5",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:43Z",
+  "title": "9 to 5 — Press — Crossroads Live",
+  "sha256": "1f61d88c3621ecf6356b9b5eeb9c28dad3a0cdb9e85c423e669139a2bb6ad827",
+  "file": "1f61d88c3621ecf6.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Magic+Mike+Live",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:45Z",
+  "title": "Magic Mike Live — Press — Crossroads Live",
+  "sha256": "eb333a72282f5fc2f68a4257496978f3a976de5c2d1b9142a34befd23c57a826",
+  "file": "eb333a72282f5fc2.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Wake+Me+When+Im+Free",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:47Z",
+  "title": "Wake Me When Im Free — Press — Crossroads Live",
+  "sha256": "de7ccfdb7eaff7a98428f8c828539f0578f388674074ede2384fac9d351409f1",
+  "file": "de7ccfdb7eaff7a9.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Tupac+Shakur",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:49Z",
+  "title": "Tupac Shakur — Press — Crossroads Live",
+  "sha256": "de7ccfdb7eaff7a98428f8c828539f0578f388674074ede2384fac9d351409f1",
+  "file": "de7ccfdb7eaff7a9.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Waitress",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:51Z",
+  "title": "Waitress — Press — Crossroads Live",
+  "sha256": "90ec32be35a855e379dcbab522450cfae77ba7fdccbe9724f24a4b13472bc28f",
+  "file": "90ec32be35a855e3.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/The+Bodyguard",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:53Z",
+  "title": "The Bodyguard — Press — Crossroads Live",
+  "sha256": "2e12b4e3165036f303e165f8fb053a50f3836927feb29f5e411ca79223f93453",
+  "file": "2e12b4e3165036f3.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Babies",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:55Z",
+  "title": "Babies — Press — Crossroads Live",
+  "sha256": "53d48d933e3720adf7fe87bc828f3151276c80df27aacdc0e8ea62f45c486e8d",
+  "file": "53d48d933e3720ad.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/School+of+Rock",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:57Z",
+  "title": "School of Rock — Press — Crossroads Live",
+  "sha256": "3813b0ccf81b64cef55e77a39d502cbe0c526eef624246e2e5d92e571ebb5957",
+  "file": "3813b0ccf81b64ce.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Peter+Pan",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:50:59Z",
+  "title": "Peter Pan — Press — Crossroads Live",
+  "sha256": "62ff4b977e906eab18189c61158e3b36a59e5511c7ece4cd7eff202d07bbcffe",
+  "file": "62ff4b977e906eab.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Reviews",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:01Z",
+  "title": "Reviews — Press — Crossroads Live",
+  "sha256": "4890ce555db9aca0626d9fad5d6d05305aab2e1ad40fc13a6b79b7ed2bd9ade3",
+  "file": "4890ce555db9aca0.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/The+Drifters+Girl",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:03Z",
+  "title": "The Drifters Girl — Press — Crossroads Live",
+  "sha256": "9c5d6241f95b2664af40f7a1571f4d9bfeb19647db805b6ba780b7d4d7653030",
+  "file": "9c5d6241f95b2664.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Anastasia",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:05Z",
+  "title": "Anastasia — Press — Crossroads Live",
+  "sha256": "fdcf9bc73933b4f003db11def0902b07862112a779ca840273c765269c9e75e9",
+  "file": "fdcf9bc73933b4f0.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/The+Rocky+Horror+Show",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:07Z",
+  "title": "The Rocky Horror Show — Press — Crossroads Live",
+  "sha256": "d55a84a506d1665c2703f65b0b227ca1f568dd01f0fa196cba7192ad97445006",
+  "file": "d55a84a506d1665c.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Mean+Girls",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:09Z",
+  "title": "Mean Girls — Press — Crossroads Live",
+  "sha256": "efcc0b357509571a67fdcab5d0b7527503419a06ef3c38888c31e2d2e9857569",
+  "file": "efcc0b357509571a.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Kinky+Boots",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:11Z",
+  "title": "Kinky Boots — Press — Crossroads Live",
+  "sha256": "193fbec046fc4671a851f5cdb8f8ee2a5aa72fce3f0295e5efae02856382f914",
+  "file": "193fbec046fc4671.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/tag/Chitty+Chitty+Bang+Bang",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:13Z",
+  "title": "Chitty Chitty Bang Bang — Press — Crossroads Live",
+  "sha256": "15a8f67bd1ed014d07a1ffb1d5e8877ab904833e3a0919c6eaceb5565f96701e",
+  "file": "15a8f67bd1ed014d.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/debbie-obrien.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:22Z",
+  "title": "Debbie O'Brien",
+  "sha256": "0bdfa3354992842c88e0ab26c275354da00b0c51c999eba4a29ae5b7a49d5317",
+  "file": "0bdfa3354992842c.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/ncl-june.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:26Z",
+  "title": "BURN THE FLOOR",
+  "sha256": "f72311f3cdaf2362a9ba6f302c9f1daceabbabef9ffd64b07fd19d89e49f8174",
+  "file": "f72311f3cdaf2362.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/fabulist.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:27Z",
+  "title": "THE FABULIST",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/bodyguard.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:32Z",
+  "title": "BODYGUARD BREAKDOWN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/cc.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:32Z",
+  "title": "CC",
+  "sha256": "7eb9b39104acfd01ffe9c74583bd648a4e3cffd6c39a179d94ddba0971fa4132",
+  "file": "7eb9b39104acfd01.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/ptp-foh.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:41Z",
+  "title": "PTP Audience Managers",
+  "sha256": "854e9b9639fda8f1f38bf37d077c21471e06f97b3bad60f4b8f995d2a65f0c7d",
+  "file": "854e9b9639fda8f1.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/cyfi-2.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:44Z",
+  "title": "CAN YOU FEEL IT",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/contact.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:45Z",
+  "title": "Contact",
+  "sha256": "093cff8b27986fe65c3ca70d8a008cdcd3359f91dbcdb52ac975edd12d312bac",
+  "file": "093cff8b27986fe6.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/cruise-lines.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:50Z",
+  "title": "CRUISE LINES",
+  "sha256": "e13f84c606b588cac170a47c7f86f5f3402444a270983c50aa537374a503dd68",
+  "file": "e13f84c606b588ca.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/syd.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:53Z",
+  "title": "SYD NORMAN'S POUR HOUSE",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/choir-of-man.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:51:57Z",
+  "title": "COM BREAKDOWN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/childrens-casting.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:01Z",
+  "title": "CHILDREN'S CASTING",
+  "sha256": "8485202a5fe51c642dd21a8c68cb8cdcb83d24e1073b69337f32e4c3bcc2247b",
+  "file": "8485202a5fe51c64.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/cyfi-3.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:07Z",
+  "title": "CAN YOU FEEL IT",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/whitney-tina.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:10Z",
+  "title": "Whitney Tina",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/starlight-paris.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:17Z",
+  "title": "STARLIGHT EXPRESS",
+  "sha256": "29e0bfbae37021a2b4128ef387478328eb4cdc4b31765291acb2248eeec1fc0c",
+  "file": "29e0bfbae37021a2.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/general-meetings.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:17Z",
+  "title": "GENERAL MEETINGS",
+  "sha256": "b442d6a56fe0106459c28a1399077c5159a78456258820cfd9f5b0b9e6a8e7ed",
+  "file": "b442d6a56fe01064.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/summer-breakdown.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:20Z",
+  "title": "SUMMER BREAKDOWN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/hjb.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:24Z",
+  "title": "HJB",
+  "sha256": "2047f1c66d81ac146703749e246e51f4142f8d681a93a04e9a8b1beb2ca6e780",
+  "file": "2047f1c66d81ac14.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/starlight-express.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:27Z",
+  "title": "STARLIGHT EXPRESS",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/archive-lnd.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:29Z",
+  "title": "LOVE NEVER DIES BREAKDOWN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/the-snowman.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:31Z",
+  "title": "THE SNOWMAN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/talk.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:34Z",
+  "title": "TALK",
+  "sha256": "951d71a012ddd71eb48fc538133764951466f24a86e501e714c4097dae25cf55",
+  "file": "951d71a012ddd71e.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/priscilla-the-party.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:36Z",
+  "title": "PRISCILLA THE PARTY",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/archived-casting.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:39Z",
+  "title": "BREAKDOWNS AND AUDITIONS",
+  "sha256": "901a5bce05f0f97f76b7b02a0bb128cdf5435735e42503d4b69eb0834848f80f",
+  "file": "901a5bce05f0f97f.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/frankie.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:40Z",
+  "title": "FRANKIE GOES TO BOLLYWOOD",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/fairytale.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:42Z",
+  "title": "A FAIRYTALE FOR CHRISTMAS",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/our-team.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:45Z",
+  "title": "OUR TEAM",
+  "sha256": "d29a809bbd11ca6d3654a0f690654e231a3fef71147fd5dab588b9958589845a",
+  "file": "d29a809bbd11ca6d.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/privacy-policy.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:46Z",
+  "title": "Privacy Policy",
+  "sha256": "e9bcbbad30e717d28987e0dec979cf07f1d052ee14ca017ecdc7afaaa743a8cf",
+  "file": "e9bcbbad30e717d2.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/aida.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:52Z",
+  "title": "AIDA CRUISES",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/btf.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:55Z",
+  "title": "BURN THE FLOOR",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/king--i-breakdown.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:52:58Z",
+  "title": "KING & I BREAKDOWN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/the-snowman-boy.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:01Z",
+  "title": "THE SNOWMAN - THE BOY",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/drifters-girl-breakdown.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:03Z",
+  "title": "DRIFTERS GIRL BREAKDOWN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/im-every-woman.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:06Z",
+  "title": "I'M EVERY WOMAN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/dob-casting.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:09Z",
+  "title": "DOB Casting",
+  "sha256": "8f830a1d59bed5e1e6812ffb0aaffff310f99e5fe8a00edca203ef90e5d29a6e",
+  "file": "8f830a1d59bed5e1.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/aida-thanks.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:10Z",
+  "title": "Aida Thanks",
+  "sha256": "b8c85b643952ba009577fec4414019c48fe66e3f6bac27324bbdf1b6f673ad95",
+  "file": "b8c85b643952ba00.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/thriller-live.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:12Z",
+  "title": "THRILLER LIVE",
+  "sha256": "f88ad5109c5d22fcede3508ac8a1129a5ef17ce7288d0e0d2fa043fce2c01a99",
+  "file": "f88ad5109c5d22fc.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/aida-paris.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:15Z",
+  "title": "AIDA PARIS",
+  "sha256": "8127b5ff47d2e2e76488bc42d69eeefa2b4b853bd3012fb88674038045b673f7",
+  "file": "8127b5ff47d2e2e7.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/antr.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:16Z",
+  "title": "A NIGHT TO REMEMBER",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/janis.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:18Z",
+  "title": "JANIS JOPLIN",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/holland-america.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:21Z",
+  "title": "HOLLAND AMERCIA",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/our-shows.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:24Z",
+  "title": "OUR SHOWS",
+  "sha256": "47eefb8fb7cdcbdd8935a771743dc27489e43cac754f275e8fe932bdf9d46b8c",
+  "file": "47eefb8fb7cdcbdd.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/index.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:25Z",
+  "title": "HOME",
+  "sha256": "47896e499347fed12449968c93b1a1f8e55a4b804b0922615c9eb91ca2dd8db2",
+  "file": "47896e499347fed1.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/thrilleraudition.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:27Z",
+  "title": "THRILLER AUDITION NOTICE",
+  "sha256": "ca0190d1cf4e9118b9bfa53bbcf6c7ebe6b2344ce7891f2d5272f8ecdea6313a",
+  "file": "ca0190d1cf4e9118.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/thriller-kids.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:31Z",
+  "title": "THRILLER KIDS",
+  "sha256": "2add334144a0b4dde8d1951a92f835acc99cfb3addf86d1797e198f14c13b031",
+  "file": "2add334144a0b4dd.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/cyfi.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:53:32Z",
+  "title": "CAN YOU FEEL IT",
+  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
+  "file": "a185a99420065389.txt"
  }
 ]

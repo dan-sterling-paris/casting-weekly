@@ -9,7 +9,7 @@
    "read": [
     "/press/"
    ],
-   "max_pages": 14,
+   "max_pages": 200,
    "aliases": [
     "Crossroads Live"
    ],
@@ -27,7 +27,7 @@
    "read": [
     "/"
    ],
-   "max_pages": 6
+   "max_pages": 200
   },
   {
    "id": "the-choir-of-man",

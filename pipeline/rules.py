@@ -30,7 +30,7 @@ def producer_sentence(names):
 
 CAPS_TITLE = re.compile(r"\b([A-Z0-9][A-Z0-9'’&!:,.\-]*(?: [A-Z0-9'’&!:,.\-]+)+|[A-Z][A-Z'’&!\-]{3,})\b")
 CAPS_STOP = {"UK", "USA", "CEO", "OBE", "MBE", "CBE", "BBC", "ITV", "NEW", "TOUR", "THE", "AND", "LIVE"}  # general words only
-OF_TITLE = re.compile(r"production of (?:the )?(?:musical |hit musical |classic )?(?P<t>(?:[A-Z][\w'’&!:\-]*)(?: (?:of|the|and|in|a|to|on|[A-Z][\w'’&!:\-]*))*)")
+OF_TITLE = re.compile(r"(?:production|season) of (?:the )?(?:musical |hit musical |classic )?(?P<t>(?:[A-Z][\w'’&!:\-]*)(?: (?:of|the|and|in|a|to|on|\+|&|[A-Z][\w'’&!:\-]*))*)")
 
 
 def sentences(text):
@@ -77,7 +77,8 @@ def production(text, producer_names, ignore_in_titles=()):
         # words in capitals followed by a capitalised word ("ARDA Studio") are a name, not a title
         caps = [(c.group(1).strip(" ,.:"), c.end()) for c in CAPS_TITLE.finditer(sent)]
         caps = [c for c, end in caps if c.upper() == c and c not in stop and not all(w in stop for w in c.split())
-                and not re.match(r" [A-Z][a-z]", sent[end:end + 3])]
+                and not re.match(r" [A-Z][a-z]", sent[end:end + 3])
+                and not re.match(r" and (?:the )?\w*produc", sent[end:end + 20], re.I)]  # "X and producers ..." = an organisation
         if caps:
             return ("P1", max(caps, key=len), sent)
         return ("P0", None, sent)
