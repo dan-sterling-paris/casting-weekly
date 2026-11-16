@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casting Weekly: industry graph (test)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;600&display=swap">
+<style>
+:root{--bg:#fff;--panel:#F5F5F2;--ink:#121317;--muted:#53565F;--line:#D5D7DC;--hi:#FFD43B;--link:#1846C7;
+  --person:#121317;--prod:#1846C7;--cd:#C2410C;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#111215;--panel:#1B1D22;--ink:#ECEDEF;--muted:#A5A9B3;--line:#33363E;--link:#93AEFF;--person:#ECEDEF;--prod:#93AEFF;--cd:#FB923C;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}
+.bar{background:var(--hi);color:#121317;font-size:13px;font-weight:600;text-align:center;padding:6px 12px}
+header{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
+h1{font:800 22px Archivo,sans-serif;margin:0;letter-spacing:-.01em}
+.stats{color:var(--muted);font-size:14px}
+input{font:inherit;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);min-width:0;flex:1 1 200px;max-width:320px}
+.wrap{display:flex;flex-wrap:wrap;min-height:calc(100vh - 110px)}
+#graph{flex:999 1 560px;min-height:520px;position:relative}
+#graph svg{width:100%;height:100%;display:block;position:absolute;inset:0}
+aside{flex:1 1 320px;border-left:1px solid var(--line);padding:16px;overflow:auto;max-height:calc(100vh - 110px)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-bottom:12px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+h2{font:800 20px Archivo,sans-serif;margin:4px 0 8px}
+.edge{padding:10px 0;border-top:1px solid var(--line)}
+.edge b{display:block}.edge .ev{font-size:13px;color:var(--muted);background:var(--panel);padding:6px 8px;border-radius:6px;margin-top:4px}
+.edge a{font-size:13px;color:var(--link);overflow-wrap:anywhere}
+text{font:11px Inter,sans-serif;fill:var(--ink);pointer-events:none}
+.hint{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="bar">Test: built by pattern rules only (no AI) from ~130 public theatre pages saved on 16 Nov 2026. Every line is a sentence on a source page.</div>
+<header><h1>Industry graph</h1><span class="stats" id="stats"></span><input id="q" type="search" placeholder="Find a person or production" aria-label="Find a person or production"></header>
+<div class="wrap">
+  <div id="graph"></div>
+  <aside id="side">
+    <div class="legend"><span><i style="background:var(--cd)"></i>Casting director</span><span><i style="background:var(--person)"></i>Other person</span><span><i style="background:var(--prod)"></i>Production</span></div>
+    <p class="hint">Click a dot to see every credit behind it, with the sentence it came from and a link to the page. Drag to move, scroll to zoom.</p>
+  </aside>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+const E = JSON.parse(document.getElementById("data").textContent).edges;
+const nodes = new Map(), links = [];
+function node(id, kind, label){ if(!nodes.has(id)) nodes.set(id,{id,kind,label,edges:[]}); return nodes.get(id); }
+for(const e of E){
+  const p = node("p:"+e.person, e.role === "Casting director" ? "cd" : "person", e.person);
+  if(e.role === "Casting director") p.kind = "cd";
+  const pr = node("r:"+e.production+"|"+e.venue, "prod", e.production);
+  p.edges.push(e); pr.edges.push(e); links.push({source:p.id, target:pr.id, e});
+}
+const N = [...nodes.values()];
+document.getElementById("stats").textContent = E.length + " credits · " + N.filter(n=>n.kind!=="prod").length + " people · " + N.filter(n=>n.kind==="prod").length + " productions";
+const el = document.getElementById("graph"), W = el.clientWidth, H = el.clientHeight;
+const svg = d3.select(el).append("svg").attr("viewBox",[0,0,W,H]);
+const g = svg.append("g");
+svg.call(d3.zoom().scaleExtent([.2,5]).on("zoom", ev => g.attr("transform", ev.transform)));
+const color = n => n.kind==="cd" ? "var(--cd)" : n.kind==="prod" ? "var(--prod)" : "var(--person)";
+const link = g.append("g").attr("stroke","var(--line)").selectAll("line").data(links).join("line").attr("stroke-width",1.4);
+const nd = g.append("g").selectAll("circle").data(N).join("circle")
+  .attr("r", n => 4 + Math.min(n.edges.length,8)).attr("fill", color).attr("stroke","var(--bg)").attr("stroke-width",1.5).style("cursor","pointer")
+  .on("click", (ev,n) => show(n)).call(d3.drag().on("start",(ev,d)=>{if(!ev.active)sim.alphaTarget(.3).restart();d.fx=d.x;d.fy=d.y}).on("drag",(ev,d)=>{d.fx=ev.x;d.fy=ev.y}).on("end",(ev,d)=>{if(!ev.active)sim.alphaTarget(0);d.fx=null;d.fy=null}));
+const lab = g.append("g").selectAll("text").data(N.filter(n=>n.kind!=="prod"||n.edges.length>1)).join("text").text(n=>n.label).attr("dx",9).attr("dy",4);
+const sim = d3.forceSimulation(N).force("link", d3.forceLink(links).id(d=>d.id).distance(40)).force("charge", d3.forceManyBody().strength(-60)).force("center", d3.forceCenter(W/2,H/2)).force("x",d3.forceX(W/2).strength(.04)).force("y",d3.forceY(H/2).strength(.04))
+  .on("tick", () => { link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y); nd.attr("cx",d=>d.x).attr("cy",d=>d.y); lab.attr("x",d=>d.x).attr("y",d=>d.y); });
+function show(n){
+  nd.attr("stroke", d => d===n ? "var(--hi)" : "var(--bg)").attr("stroke-width", d => d===n ? 4 : 1.5);
+  const side = document.getElementById("side"); side.querySelectorAll(".dyn").forEach(x=>x.remove());
+  const box = document.createElement("div"); box.className = "dyn";
+  const h = document.createElement("h2"); h.textContent = n.label; box.append(h);
+  const sub = document.createElement("p"); sub.className = "hint"; sub.textContent = (n.kind==="prod" ? "Production" : n.kind==="cd" ? "Casting director" : "Person") + " · " + n.edges.length + " credit" + (n.edges.length===1?"":"s"); box.append(sub);
+  for(const e of n.edges){
+    const d = document.createElement("div"); d.className = "edge";
+    const b = document.createElement("b"); b.textContent = n.kind==="prod" ? e.person + " — " + e.role : e.role + " — " + e.production; d.append(b);
+    const ev = document.createElement("div"); ev.className = "ev"; ev.textContent = "“" + e.evidence + "”"; d.append(ev);
+    const a = document.createElement("a"); a.href = e.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = e.url; d.append(a);
+    box.append(d);
+  }
+  side.append(box);
+}
+document.getElementById("q").addEventListener("input", ev => {
+  const t = ev.target.value.toLowerCase().trim(); const hit = t ? N.find(n => n.label.toLowerCase().includes(t)) : null;
+  nd.attr("opacity", d => !t || d.label.toLowerCase().includes(t) ? 1 : .15); if(hit) show(hit);
+});
+</script>
+</body>
+</html>
