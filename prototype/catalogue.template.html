@@ -197,7 +197,7 @@ function prodCard(p){
       h("h3",{text:p.title}),
       h("span",{class:"meta", text: (p.venue ? p.venue + " · " : "") + range(p)}),
       people.length ? h("span",{class:"meta", text: people.join(" · ")}) : null,
-      h("div",{class:"chips"}, p.cast ? h("span",{class:"chip cast",text:"Cast announced"}) : h("span",{class:"chip",text:"Cast not listed yet"}))
+      p.cast ? h("div",{class:"chips"}, h("span",{class:"chip cast",text:"Cast announced"})) : null
     ));
 }
 function sectionHead(title, note){ return h("div",{class:"section-head"}, h("h2",{text:title}), note ? h("p",{text:note}) : null); }
@@ -237,7 +237,7 @@ function ComingUp(){
   function draw(){
     const t = st.q.toLowerCase().trim();
     const res = upcoming(P).filter(p =>
-      (!st.month || p.first.startsWith(st.month)) && (!st.region || p.region===st.region) && (!st.theatre || p.theatreId===st.theatre) && (!st.nocast || !p.cast) &&
+      (!st.month || p.first.startsWith(st.month)) && (!st.region || p.region===st.region) && (!st.theatre || p.theatreId===st.theatre) &&
       (!t || [p.title,p.theatre,p.city,p.venue,p.director,p.writer,p.castingDirector,p.producer].join(" ").toLowerCase().includes(t)));
     count.textContent = res.length === 1 ? "1 production" : res.length + " productions";
     list.replaceChildren(...(res.length ? res.map(prodCard) : [h("div",{class:"empty",text:"Nothing matches those filters. Try fewer filters or another search."})]));
@@ -250,8 +250,7 @@ function ComingUp(){
       h("label",{for:"cu-q"}, "Search", q),
       sel("cu-month","Opening in", months.map(m=>[m, MONTHS_LONG[+m.slice(5)-1] + " " + m.slice(0,4)]), "month"),
       sel("cu-region","Region", REGIONS.filter(r=>P.some(p=>p.region===r)).map(r=>[r,r]), "region"),
-      sel("cu-theatre","Theatre", theatresWith.map(t=>[t.id,t.name]), "theatre"),
-      h("label",{class:"check", for:"cu-nocast"}, nc, "Cast not listed yet")),
+      sel("cu-theatre","Theatre", theatresWith.map(t=>[t.id,t.name]), "theatre")),
     count, list
   ];
 }
@@ -273,7 +272,7 @@ function Production(id){
         h("span",{class:"eyebrow", text: p.theatre + " · " + p.city}),
         h("h1",{text:p.title, style:"margin-top:6px"}),
         h("p",{class:"lede", text: range(p)}),
-        h("div",{class:"chips"}, p.cast ? h("span",{class:"chip cast",text:"Cast announced"}) : h("span",{class:"chip",text:"Cast not listed yet"})),
+        p.cast ? h("div",{class:"chips"}, h("span",{class:"chip cast",text:"Cast announced"})) : null,
         h("dl",{class:"facts"}, p.facts.map(f => h("div",{class:"fact"},
           h("dt",{text:f.label}), h("dd",{text:f.display}),
           h("details",{}, h("summary",{text:"Where this came from"}), h("blockquote",{text:"“" + f.evidence + "”"}))))),
