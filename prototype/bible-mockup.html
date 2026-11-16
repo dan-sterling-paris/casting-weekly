@@ -107,7 +107,7 @@ footer.site p{margin:0;max-width:62ch}
 </style>
 </head>
 <body>
-<div class="mock">Mockup for preview. Every name, theatre, credit and source here is fictional.</div>
+<div class="mock">Design mockup. All sample data has been removed; real data will come only from the no-AI pipeline.</div>
 <header class="site"><div class="wrap">
   <a class="logo" href="#home">Casting Weekly</a>
   <nav class="main" aria-label="Main">
@@ -130,67 +130,14 @@ footer.site p{margin:0;max-width:62ch}
 "use strict";
 /* ---------------- fictional data ---------------- */
 const CHECKED = "16 Nov 2026";
-const TH = {
-  northgate:{name:"Northgate Playhouse", city:"Leeds", region:"Yorkshire", kind:"Producing theatre", ad:"Ruth Ashdown-Kessler", ga:"Holds general auditions for regional actors twice a year", url:"northgate-playhouse.example"},
-  riverside:{name:"Riverside Rep", city:"Bristol", region:"South West", kind:"Producing theatre", ad:"Felix Amberley-Noon", ga:"No general auditions; casting through agents", url:"riverside-rep.example"},
-  foundry:{name:"The Foundry Theatre", city:"Glasgow", region:"Scotland", kind:"Producing theatre", ad:"Morag Ellisande", ga:"Part of a rotating open casting workshop with other Scottish theatres", url:"foundry-theatre.example"},
-  saltmarsh:{name:"Saltmarsh Arts Centre", city:"Hull", region:"Yorkshire", kind:"Producing and receiving venue", ad:"Kwame Hollis-Varga", ga:"Open call for local actors each spring", url:"saltmarsh-arts.example"},
-  kingsway:{name:"Kingsway Productions", city:"London", region:"London", kind:"Commercial producer", ad:"(producer) Lydia Strand-Okafor", ga:"Casting through agents only", url:"kingsway-productions.example"},
-  harbour:{name:"Harbour Lights Touring", city:"Plymouth", region:"South West", kind:"Touring and young people's theatre", ad:"Dev Prakash-Marlow", ga:"Annual open call for actor-musicians", url:"harbour-lights.example"}
-};
-const CD = {
-  fenwick:{name:"Marguerite Fenwick-Oduya", company:"Fenwick Casting", base:"Leeds", work:["Plays","Musicals","New writing"], subs:"Accepts submissions through agents. Self-submissions welcome for regional general auditions only.", url:"fenwickcasting.example", since:2009},
-  quarrender:{name:"Tobias Quarrender", company:"Quarrender Casting", base:"London", work:["Musicals","West End","Tours"], subs:"Agent submissions only.", url:"quarrendercasting.example", since:2004},
-  halloway:{name:"Priya Halloway-Stone", company:"Halloway-Stone Casting", base:"Glasgow", work:["Plays","Classical","Screen"], subs:"Agent submissions; open to letters from Scottish-based actors twice a year (January and July).", url:"hallowaystone.example", since:2012},
-  morrow:{name:"Declan Morrow-Ibe", company:"Morrow-Ibe Casting", base:"Bristol", work:["Plays","Young audiences","Actor-musicians"], subs:"Agent submissions; self-submissions for actor-musician calls when advertised.", url:"morrowibe.example", since:2016},
-  lindqvist:{name:"Saskia Lindqvist-Hart", company:"Lindqvist-Hart Casting", base:"Manchester", work:["New writing","Plays","Panto"], subs:"Agent submissions; general submissions from northern actors in March.", url:"lindqvisthart.example", since:2018}
-};
-const DIR = {
-  ashdown:{name:"Ruth Ashdown-Kessler", role:"Artistic Director, Northgate Playhouse"},
-  amberley:{name:"Felix Amberley-Noon", role:"Artistic Director, Riverside Rep"},
-  ellisande:{name:"Morag Ellisande", role:"Artistic Director, The Foundry Theatre"},
-  okonjo:{name:"Ines Okonjo-Raft", role:"Freelance director"},
-  pemberley:{name:"Callum Pemberley-Shaw", role:"Freelance director and choreographer"},
-  hollis:{name:"Kwame Hollis-Varga", role:"Artistic Director, Saltmarsh Arts Centre"}
-};
-const AG = [
-  {name:"Lantern Artists", city:"London", note:"Represents actors and actor-musicians. Accepts new client enquiries by email (as stated on their site).", open:true},
-  {name:"Brightwater Personal Management", city:"Manchester", note:"Co-operative agency. Opens to new members twice a year.", open:true},
-  {name:"Sixth Row Talent", city:"Glasgow", note:"Theatre and screen. Not taking new clients at present.", open:false},
-  {name:"Westway Creative Agency", city:"London", note:"Musical theatre specialists. Enquiries through an online form.", open:true}
-];
+const TH = {};
+const CD = {};
+const DIR = {};
+const AG = [];
 /* credits: [year, production, theatreId, cdId, directorId, kind] */
-const CREDITS = [
-  [2026,"Hedda Gabler","northgate","fenwick","ashdown","Play"],
-  [2026,"The Lantern Field (new play)","northgate","fenwick","okonjo","New writing"],
-  [2025,"Twelfth Night","northgate","fenwick","ashdown","Classical"],
-  [2025,"Peter Pan (pantomime)","saltmarsh","lindqvist","hollis","Panto"],
-  [2026,"Coldwater Lane (new play)","saltmarsh","lindqvist","hollis","New writing"],
-  [2024,"A Doll's House","riverside","morrow","amberley","Play"],
-  [2025,"The Snow Queen","harbour","morrow","okonjo","Young audiences"],
-  [2026,"Treasure Island (actor-musician)","riverside","morrow","amberley","Actor-musicians"],
-  [2026,"Sweet Ruin (musical)","kingsway","quarrender","pemberley","Musical"],
-  [2025,"Bright Lights, Big Tour (musical)","kingsway","quarrender","pemberley","Musical"],
-  [2024,"The Seagull","foundry","halloway","ellisande","Classical"],
-  [2025,"Macbeth","foundry","halloway","ellisande","Classical"],
-  [2026,"North Wind (new play)","foundry","halloway","okonjo","New writing"],
-  [2024,"Oliver Twist","northgate","fenwick","pemberley","Musical"],
-  [2026,"Robin Hood (pantomime)","northgate","lindqvist","hollis","Panto"]
-];
-const FEED = [
-  ["2 days ago","fenwick","Marguerite Fenwick-Oduya is credited as casting director on The Lantern Field at Northgate Playhouse."],
-  ["3 days ago","northgate","Northgate Playhouse announced its spring 2027 season: four productions, two of them new plays."],
-  ["5 days ago","harbour","Harbour Lights Touring opened its annual open call for actor-musicians. Closes 15 Jan 2027."],
-  ["1 week ago","halloway","Priya Halloway-Stone's website now says she is open to letters from Scottish-based actors in January."],
-  ["1 week ago","saltmarsh","Saltmarsh Arts Centre listed a new artistic team page."]
-];
-const RES = [
-  {cat:"Unions and rates", items:[["Performers' union","Membership, contract advice, legal help and minimum rates for most theatre work."],["Rates explained","Minimum weekly salaries under each theatre agreement, with the date each applies from."],["Holiday pay and subsistence","What you're owed on tour and how it's calculated."]]},
-  {cat:"Contracts", items:[["Which contract is this?","The main theatre agreements in plain words: subsidised, commercial, West End, independent."],["Before you sign","The clauses to check: exclusivity, buyouts, cancellation, billing."],["Red flags","Pay-to-audition, unpaid 'profit share' that never pays, requests for money up front."]]},
-  {cat:"Funding and bursaries", items:[["Hardship funds","Charities that help performers in financial difficulty."],["Training bursaries","Grants towards classes, voice and movement work."],["Project funding","Public funding for making your own work."]]},
-  {cat:"Training and development", items:[["Free industry workshops","Theatres' own artist development programmes."],["Self-tape guide","Formats and specs casting directors ask for."],["Getting an agent","How agencies take on clients, and what a fair commission is."]]},
-  {cat:"Wellbeing and legal", items:[["Mental health support","Confidential helplines for people working in the arts."],["Safe workplaces","Reporting bullying and harassment, and your rights."],["Tax and accounts","Self-employment basics for performers."]]}
-];
+const CREDITS = [];
+const FEED = [];
+const RES = [];
 
 /* ---------------- following (kept in this browser only) ---------------- */
 let FOLLOW = new Set();
@@ -257,24 +204,7 @@ function graph(center, links){
 function count(arr){ const m = new Map(); arr.forEach(k => m.set(k, (m.get(k)||0)+1)); return [...m.entries()].sort((a,b)=>b[1]-a[1]); }
 
 /* ---------------- ask ---------------- */
-const QA = {
-  "Who casts for Northgate Playhouse?": {
-    p:"Northgate Playhouse has used two casting directors in the last three years:",
-    li:[["Marguerite Fenwick-Oduya","#cd-fenwick"," cast 4 of its 5 productions, including Hedda Gabler (2026) and Twelfth Night (2025).",1],["Saskia Lindqvist-Hart","#cd-lindqvist"," cast its 2026 pantomime, Robin Hood.",2]],
-    after:"The theatre holds general auditions for regional actors twice a year.", srcs:["northgate-playhouse.example/productions","northgate-playhouse.example/get-involved"]},
-  "Which casting directors work on actor-musician shows in the South West?": {
-    p:"One casting director matches:",
-    li:[["Declan Morrow-Ibe","#cd-morrow"," cast Treasure Island (actor-musician) at Riverside Rep in 2026 and The Snow Queen for Harbour Lights Touring in 2025. His site says he takes self-submissions for actor-musician calls when they're advertised.",1]],
-    after:"Harbour Lights Touring also has an annual open call for actor-musicians, open now until 15 Jan 2027.", srcs:["riverside-rep.example/treasure-island","morowibe.example/submissions","harbour-lights.example/open-call"]},
-  "Who does Ines Okonjo-Raft usually cast with?": {
-    p:"Ines Okonjo-Raft has directed three productions in the last three years, each with a different casting director:",
-    li:[["Marguerite Fenwick-Oduya","#cd-fenwick"," for The Lantern Field at Northgate Playhouse (2026).",1],["Declan Morrow-Ibe","#cd-morrow"," for The Snow Queen with Harbour Lights Touring (2025).",2],["Priya Halloway-Stone","#cd-halloway"," for North Wind at The Foundry Theatre (2026).",3]],
-    after:"There's no regular pairing yet; each theatre's usual casting director was used.", srcs:["northgate-playhouse.example/the-lantern-field","harbour-lights.example/the-snow-queen","foundry-theatre.example/north-wind"]},
-  "Which agencies are open to new clients?": {
-    p:"Three agencies in the bible say on their own sites that they're open to new clients:",
-    li:[["Lantern Artists (London)","#agencies"," by email.",1],["Brightwater Personal Management (Manchester)","#agencies"," a co-operative that opens twice a year.",2],["Westway Creative Agency (London)","#agencies"," musical theatre, through an online form.",3]],
-    after:"", srcs:["lanternartists.example/join","brightwater-pm.example/membership","westway-creative.example/contact"]}
-};
+const QA = {};
 function Ask(q){
   const a = QA[q];
   if(a){
