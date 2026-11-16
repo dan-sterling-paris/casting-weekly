@@ -14,7 +14,8 @@ import re
 from collections import defaultdict
 from common import CACHE, OUT, ROOT, seeds
 from link import confirm, norm, norm_work
-from rules import agent_cv, credits, production
+from common import host
+from rules import LAYOUTS, credits, production
 
 pages = [p for p in json.loads((OUT / "pages.json").read_text()) if p.get("status") == 200]
 sources = {s["id"]: s for s in json.loads((OUT / "sources.json").read_text())}
@@ -61,7 +62,7 @@ def identity(name, title, source_kind):
 for p in sorted(pages, key=lambda x: x["url"]):
     s, t, prov = seed[p["seed"]], text_of[p["url"]], prov_of[p["url"]]
     if s["kind"] == "producer":
-        pr = production(t)
+        pr = production(t, s.get("aliases", [s["name"]]), s.get("ignore_in_titles", []))
         if not pr:
             coverage["no_production"].append(p["url"]); continue
         rid, title, sent = pr
@@ -92,7 +93,11 @@ for p in sorted(pages, key=lambda x: x["url"]):
     s = seed[p["seed"]]
     if s["kind"] != "person-site":
         continue
-    for b in agent_cv(text_of[p["url"]]):
+    layout = LAYOUTS.get(host(p["url"]))
+    if not layout:
+        continue
+    layout_rule, layout_fn = layout
+    for b in layout_fn(text_of[p["url"]]):
         pid = "prod:" + norm_work(b["title"])
         if pid not in wanted:
             continue
@@ -100,7 +105,7 @@ for p in sorted(pages, key=lambda x: x["url"]):
         prod = node(pid, "production", label)
         person = node("person:" + norm(s["person"]), "person", s["person"])
         role = "Casting director" if "casting" in b["role"].lower() else b["role"]
-        common = {"rule": "A1", "sentence": b["evidence"], "year": b["year"], "venue": b["venue"], **prov_of[p["url"]]}
+        common = {"rule": layout_rule, "sentence": b["evidence"], "year": b["year"], "venue": b["venue"], **prov_of[p["url"]]}
         add_edge({"source": person, "target": prod, "type": "credit", "role": role, "role_as_stated": b["role"],
                   "identity": "source is their own agent's page", "identity_evidence": None, **common})
         add_edge({"source": org_node(b["venue"]), "target": prod, "type": "staged at", **common})
@@ -143,7 +148,9 @@ L += ["", "## Step 2. Fetch (fetch.py)", ""]
 for sid in seed:
     ps = [p for p in pages if p["seed"] == sid]
     L.append("- %s: %d page(s): %s" % (seed[sid]["name"], len(ps), ", ".join(sorted({p["url"] for p in ps}))[:400]))
-L += ["", "Note: burlesquethemusical.com redirects to burlesqueonstage.com; that site's own robots.txt was checked before reading it.", ""]
+for r in [m for m in json.loads((OUT / "pages.json").read_text()) if "redirect_from" in m]:
+    L.append("- Redirect: %s went to %s; that site's robots.txt (HTTP %s) %s our agent." % (r["redirect_from"], r["redirect_to"], r["new_site_robots"], "allows" if r["new_site_allows_us"] else "does not allow"))
+L += [""]
 
 examples = [e for e in edges if e["type"] == "credit" and e["identity"] != "name match only"]
 for i, e in enumerate(examples, 1):

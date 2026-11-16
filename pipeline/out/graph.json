@@ -1,17 +1,20 @@
 {
  "coverage": {
-  "no_credits": [
-   "https://www.xroadslive.com/press/9-to-5-to-partner-with-dolly-partons-imagination-library"
-  ],
+  "no_credits": [],
   "no_production": [
-   "https://www.xroadslive.com/press/2021-uk-tour-of-multi-award-winning-chicago-announced",
-   "https://www.xroadslive.com/press/andrew-lloyd-webbers-smash-hit-west-end-amp-broadway-musical-to-embark-on-uk-tour-2021",
-   "https://www.xroadslive.com/press/andy-nyman-and-jenna-russel-join-the-cast-of-hello-dolly",
-   "https://www.xroadslive.com/press/annie-anita-dobson",
-   "https://www.xroadslive.com/press/annie-announced-uk",
-   "https://www.xroadslive.com/press/back-to-the-future-opens-to-electrifying-reviews-in-sydney",
    "https://www.xroadslive.com/press/beetlejuice-its-showtime-london",
-   "https://www.xroadslive.com/press/ben-platt-watched-magic-mike-live-with-allison-janney-and-kristen-bell-and-it-was-very-satisfying"
+   "https://www.xroadslive.com/press/christmas-comes-early-at-the-crossroads-pantomimes",
+   "https://www.xroadslive.com/press/dead-special-beetlejuice-opens-in-the-west-end",
+   "https://www.xroadslive.com/press/everybody-say-yeah-kinky-boots-is-returning-to-chinanbsp",
+   "https://www.xroadslive.com/press/full-west-end-cast-announced-for-beetlejuice",
+   "https://www.xroadslive.com/press/hamilton-announces-casting-for-korean-premiere",
+   "https://www.xroadslive.com/press/jesus-christ-superstar-rocks-the-philippines",
+   "https://www.xroadslive.com/press/just-in-time-nominated-for-6-tony-awards",
+   "https://www.xroadslive.com/press/magic-mike-live-international-reveals-casting-and-theatre-transformation-plans",
+   "https://www.xroadslive.com/press/silence-of-the-lambs-makes-thrilling-world-stage-premiere-in-leicester",
+   "https://www.xroadslive.com/press/solt-uk-theatre-conference-2026",
+   "https://www.xroadslive.com/press/the-wiz-announces-company-for-new-na-tour",
+   "https://www.xroadslive.com/press/us-theatre-awards-season-the-lost-boys-titanique-and-beaches-all-nominated"
   ],
   "official_site_no_credits": [
    "https://thechoirofman.com",
@@ -19,121 +22,18 @@
    "https://www.burlesqueonstage.com/cast",
    "https://www.burlesqueonstage.com/faqs",
    "https://www.burlesqueonstage.com/media-gallery",
-   "https://www.burlesqueonstage.com/privacy"
+   "https://www.burlesqueonstage.com/sign-up"
   ],
   "title_unreadable": [
    {
-    "sentence": "In 2020 she played in the widely acclaimed A German Life, a one-woman play by Christopher Hampton, produced by Crossroads Live and directed by Neil Armfield for his Adelaide Festival.",
-    "url": "https://www.xroadslive.com/press/agatha-christies-breathtaking-masterpiece-and-then-there-were-none-to-tour-to-melbourne-and-sydney"
-   },
-   {
-    "sentence": "The ever-popular Broadway musical Annie will light up Sydney’s Capitol Theatre from March next year in an exciting new production directed by Karen Johnson Mortimer and produced by John Frost for Crossroads Live.",
-    "url": "https://www.xroadslive.com/press/annie-returns-to-australia"
-   },
-   {
-    "sentence": "The musical is produced by Crossroads Live North America and Broadway Asia, under the patronage of the Secretariat for Social Affairs and Culture of the Government of the Macao SAR, organised by the Cultural Affairs Bureau (IC, from the Portuguese acronym) and will perform 12 performances from 2 – 14 August at the Macao Cultural Centre Grand Auditorium as part of the 1st Macao International Children’s Arts Festival.",
-    "url": "https://www.xroadslive.com/press/annie-the-musical-takes-part-in-the-first-macao-international-childrens-arts-festival"
+    "sentence": "Delicious reviews across the board for the 10th Anniversary tour of Waitress the Musical, produced by Barry and Fran Weissler and David Ian for Crossroads Live.",
+    "url": "https://www.xroadslive.com/press/waitress-proof-that-a-touring-production-has-the-power-to-outshine-the-original"
    }
   ]
  },
  "edges": [
   {
-   "fetched_at": "2026-11-16T23:09:42Z",
-   "rule": "P1",
-   "sentence": "Producers John Frost for Crossroads Live Australia and Suzanne Jones are delighted to announce that 9 TO 5 THE MUSICAL is partnering with Dolly Parton’s Imagination Library Australia to bring the joy of reading to children in need across Australia.",
-   "sha256": "55a8e7e7f47bbcd84b1fad192e580edf91c388633604fefb1993d296eb1e50dd",
-   "source": "org:crossroads-live",
-   "target": "prod:9 to 5",
-   "type": "produces",
-   "url": "https://www.xroadslive.com/press/9-to-5-to-partner-with-dolly-partons-imagination-library"
-  },
-  {
-   "fetched_at": "2026-11-16T23:09:58Z",
-   "rule": "P1",
-   "sentence": "Michael Harrison and David Ian for Crossroads Live are delighted to announce that their smash hit production of the musical ANNIE will embark on a UK and Ireland tour opening at New Wimbledon Theatre on Saturday 23 May 2026.",
-   "sha256": "07bb73c544f9e186ab4fb441f46c4c9bd254ce131a7e1276d8737ef13c9ea9bc",
-   "source": "org:crossroads-live",
-   "target": "prod:annie",
-   "type": "produces",
-   "url": "https://www.xroadslive.com/press/annie-to-tour-the-uk-and-ireland-throughout-2026"
-  },
-  {
-   "fetched_at": "2026-11-16T23:09:58Z",
-   "identity": "name match only",
-   "identity_evidence": null,
-   "role": "Writer",
-   "rule": "C6",
-   "sentence": "ANNIE has Music by Charles Strouse, Lyrics by Martin Charnin and a Book by Thomas Meehan.",
-   "sha256": "07bb73c544f9e186ab4fb441f46c4c9bd254ce131a7e1276d8737ef13c9ea9bc",
-   "source": "person:thomas meehan",
-   "target": "prod:annie",
-   "type": "credit",
-   "url": "https://www.xroadslive.com/press/annie-to-tour-the-uk-and-ireland-throughout-2026"
-  },
-  {
-   "fetched_at": "2026-11-16T23:09:58Z",
-   "identity": "name match only",
-   "identity_evidence": null,
-   "role": "Choreographer",
-   "rule": "C5",
-   "sentence": "It is directed by Curve’s Artistic Director Nikolai Foster with set and costume design by Colin Richmond, choreography by Nick Winston, lighting by Ben Cracknell and sound design by Richard Brooker.",
-   "sha256": "07bb73c544f9e186ab4fb441f46c4c9bd254ce131a7e1276d8737ef13c9ea9bc",
-   "source": "person:nick winston",
-   "target": "prod:annie",
-   "type": "credit",
-   "url": "https://www.xroadslive.com/press/annie-to-tour-the-uk-and-ireland-throughout-2026"
-  },
-  {
-   "fetched_at": "2026-11-16T23:09:38Z",
-   "rule": "P1",
-   "sentence": "David Ian for Crossroads Live is delighted to announce a new production of the most fantasmagorical musical of all time, CHITTY CHITTY BANG BANG, opening at Mayflower Theatre, Southampton on 30 April 2024 where it will play until 12 May 2024 ahead of a UK tour.",
-   "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
-   "source": "org:crossroads-live",
-   "target": "prod:chitty chitty bang bang",
-   "type": "produces",
-   "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
-  },
-  {
-   "fetched_at": "2026-11-16T23:09:38Z",
-   "identity": "confirmed by own site",
-   "identity_evidence": "West End productions include: Thriller Live, The Knowledge, Annie (children’s casting), Kinky Boots (children’s casting), Close to You, Sinatra, American Idiot, Dusty, The Bodyguard (children’s casting), Show Boat (children’s casting), In the Bar of a Tokyo Hotel, Priscilla Queen of the Desert, Grease, Flashdance, Piaf, The Snowman, Respect La Diva, The King and I, The Harder They Come, Showboat, Dancing in the Streets, The Rat Pack Live from Las Vegas, Chitty Chitty Bang Bang, Saturday Night Fever, Fame, Peter Pan, The Pirates of Penzance, Mum’s the Word, Daisy Pulls It Off, Napoleon, Madame Melville, Hedwig and the Angry Inch, La Cava, Smokey Joe's Café, The Rocky Horror Show, Soul Train, Rent, Always, Steaming, Ain't Misbehavin', Disgracefully Yours.",
-   "role": "Casting director",
-   "rule": "C1",
-   "sentence": "This new production will be directed by Thom Southerland (Titanic, Parade), choreographed by Karen Bruce (BBC's Strictly Come Dancing, The Bodyguard) with Set and Costume design by Morgan Large (Newsies, Joseph and the Technicolour Dreamcoat), Orchestrations and Musical Supervision by George Dyer (The Wizard of Oz, Annie, Billy Elliot)and casting by Debbie O'Brien.",
-   "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
-   "source": "person:debbie o'brien",
-   "target": "prod:chitty chitty bang bang",
-   "type": "credit",
-   "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
-  },
-  {
-   "fetched_at": "2026-11-16T23:09:38Z",
-   "identity": "name match only",
-   "identity_evidence": null,
-   "role": "Director",
-   "rule": "C3",
-   "sentence": "This new production will be directed by Thom Southerland (Titanic, Parade), choreographed by Karen Bruce (BBC's Strictly Come Dancing, The Bodyguard) with Set and Costume design by Morgan Large (Newsies, Joseph and the Technicolour Dreamcoat), Orchestrations and Musical Supervision by George Dyer (The Wizard of Oz, Annie, Billy Elliot)and casting by Debbie O'Brien.",
-   "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
-   "source": "person:thom southerland",
-   "target": "prod:chitty chitty bang bang",
-   "type": "credit",
-   "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
-  },
-  {
-   "fetched_at": "2026-11-16T23:09:38Z",
-   "identity": "name match only",
-   "identity_evidence": null,
-   "role": "Choreographer",
-   "rule": "C5",
-   "sentence": "This new production will be directed by Thom Southerland (Titanic, Parade), choreographed by Karen Bruce (BBC's Strictly Come Dancing, The Bodyguard) with Set and Costume design by Morgan Large (Newsies, Joseph and the Technicolour Dreamcoat), Orchestrations and Musical Supervision by George Dyer (The Wizard of Oz, Annie, Billy Elliot)and casting by Debbie O'Brien.",
-   "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
-   "source": "person:karen bruce",
-   "target": "prod:chitty chitty bang bang",
-   "type": "credit",
-   "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
-  },
-  {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "source is their own agent's page",
    "identity_evidence": null,
    "role": "Casting director",
@@ -149,7 +49,7 @@
    "year": "2026"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "rule": "A1",
    "sentence": "BURLESQUE THE MUSICAL / 2026 / UK Tour / Casting Director / Dir. Robin Antin & Racky Plews",
    "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
@@ -161,7 +61,7 @@
    "year": "2026"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -176,7 +76,7 @@
    "year": "2026"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -191,7 +91,7 @@
    "year": "2026"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "source is their own agent's page",
    "identity_evidence": null,
    "role": "Casting director",
@@ -207,7 +107,7 @@
    "year": "2025"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "rule": "A1",
    "sentence": "BURLESQUE / 2025 / Savoy Theatre / Casting Director / Dir. Todrick Hall",
    "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
@@ -219,7 +119,7 @@
    "year": "2025"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -234,7 +134,7 @@
    "year": "2025"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "source is their own agent's page",
    "identity_evidence": null,
    "role": "Casting director",
@@ -250,7 +150,7 @@
    "year": "2024"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "rule": "A1",
    "sentence": "BURLESQUE / 2024 / Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment / Casting Director / Dir. Nick Winston",
    "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
@@ -262,7 +162,7 @@
    "year": "2024"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -277,7 +177,7 @@
    "year": "2024"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "source is their own agent's page",
    "identity_evidence": null,
    "role": "Casting director",
@@ -293,7 +193,7 @@
    "year": "2022"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "rule": "A1",
    "sentence": "CHOIR OF MAN / 2022 / Arts Theatre / Co-Casting Director / Dir. Nic Doodson",
    "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
@@ -305,7 +205,7 @@
    "year": "2022"
   },
   {
-   "fetched_at": "2026-11-16T23:16:01Z",
+   "fetched_at": "2026-11-16T23:42:27Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -328,11 +228,6 @@
    "label": "Arts Theatre"
   },
   {
-   "id": "org:crossroads-live",
-   "kind": "organisation",
-   "label": "Crossroads Live"
-  },
-  {
    "id": "org:manchester-opera-house-theatre-royal-glasgow-adama-entertainment",
    "kind": "organisation",
    "label": "Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment"
@@ -348,19 +243,9 @@
    "label": "UK Tour"
   },
   {
-   "id": "person:debbie o'brien",
-   "kind": "person",
-   "label": "Debbie O'Brien"
-  },
-  {
    "id": "person:harry blumenau",
    "kind": "person",
    "label": "Harry Blumenau"
-  },
-  {
-   "id": "person:karen bruce",
-   "kind": "person",
-   "label": "Karen Bruce"
   },
   {
    "id": "person:nic doodson",
@@ -383,39 +268,14 @@
    "label": "Robin Antin"
   },
   {
-   "id": "person:thom southerland",
-   "kind": "person",
-   "label": "Thom Southerland"
-  },
-  {
-   "id": "person:thomas meehan",
-   "kind": "person",
-   "label": "Thomas Meehan"
-  },
-  {
    "id": "person:todrick hall",
    "kind": "person",
    "label": "Todrick Hall"
   },
   {
-   "id": "prod:9 to 5",
-   "kind": "production",
-   "label": "9 TO 5 THE MUSICAL"
-  },
-  {
-   "id": "prod:annie",
-   "kind": "production",
-   "label": "ANNIE"
-  },
-  {
    "id": "prod:burlesque",
    "kind": "production",
    "label": "Burlesque The Musical"
-  },
-  {
-   "id": "prod:chitty chitty bang bang",
-   "kind": "production",
-   "label": "CHITTY CHITTY BANG BANG"
   },
   {
    "id": "prod:choir of man",

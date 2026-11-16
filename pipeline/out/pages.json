@@ -1,249 +1,256 @@
 [
  {
   "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024",
+  "url": "https://www.xroadslive.com/press/hamilton-announces-casting-for-korean-premiere",
   "status": 200,
-  "fetched_at": "2026-11-16T23:09:38Z",
-  "title": "The most fantasmagorical musical of all time is back for a UK tour in 2024 — Crossroads Live",
-  "sha256": "b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a",
-  "file": "b5b9d26e3a70f637.txt"
+  "fetched_at": "2026-11-16T23:40:39Z",
+  "title": "Hamilton announces casting for Korean Premiere — Crossroads Live",
+  "sha256": "ffd0daf61c702f26013da5ba526727ec3e2db70d086fba8a45c4e4284e1f49f5",
+  "file": "ffd0daf61c702f26.txt"
  },
  {
   "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/2021-uk-tour-of-multi-award-winning-chicago-announced",
+  "url": "https://www.xroadslive.com/press/everybody-say-yeah-kinky-boots-is-returning-to-chinanbsp",
   "status": 200,
-  "fetched_at": "2026-11-16T23:09:40Z",
-  "title": "2021 UK Tour of multi-award winning Chicago announced — Crossroads Live",
-  "sha256": "b26f6f93453d656ed3bfd7690619bf844af203bd07b0d3b72f329b5cc7ff0ef3",
-  "file": "b26f6f93453d656e.txt"
+  "fetched_at": "2026-11-16T23:40:41Z",
+  "title": "Everybody say YEAH! Kinky Boots is returning to China!  — Crossroads Live",
+  "sha256": "230c06ae35cc85feb3cfbbe38d7c5b1079bfa68082add7924a1f2ed0657434a9",
+  "file": "230c06ae35cc85fe.txt"
  },
  {
   "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/9-to-5-to-partner-with-dolly-partons-imagination-library",
+  "url": "https://www.xroadslive.com/press/christmas-comes-early-at-the-crossroads-pantomimes",
   "status": 200,
-  "fetched_at": "2026-11-16T23:09:42Z",
-  "title": "9 to 5 to Partner With Dolly Parton's Imagination Library — Crossroads Live",
-  "sha256": "55a8e7e7f47bbcd84b1fad192e580edf91c388633604fefb1993d296eb1e50dd",
-  "file": "55a8e7e7f47bbcd8.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/agatha-christies-breathtaking-masterpiece-and-then-there-were-none-to-tour-to-melbourne-and-sydney",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:09:44Z",
-  "title": "Agatha Christie’s breath-taking masterpiece And Then There Were None to tour to Melbourne and Sydney — Crossroads Live",
-  "sha256": "3263febfb5477ca8469e7188a616fe3ed34729ca9ab57dc938d806148b4b5a04",
-  "file": "3263febfb5477ca8.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/andrew-lloyd-webbers-smash-hit-west-end-amp-broadway-musical-to-embark-on-uk-tour-2021",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:09:46Z",
-  "title": "Andrew Lloyd Webber’s Smash Hit West End & Broadway Musical To Embark on Uk Tour, 2021 — Crossroads Live",
-  "sha256": "d16129e5bc3b264c67a50eeaa39ce48749a17ee9bf29d1930365d1c8366b0bed",
-  "file": "d16129e5bc3b264c.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/andy-nyman-and-jenna-russel-join-the-cast-of-hello-dolly",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:09:48Z",
-  "title": "Andy Nyman and Jenna Russel join the cast of Hello, Dolly! — Crossroads Live",
-  "sha256": "ae0a1e53087076912576bb11b59dcbe003c886f40d8b19fd333e77f686c13b27",
-  "file": "ae0a1e5308707691.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/annie-anita-dobson",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:09:50Z",
-  "title": "Anita Dobson and Craig Revel Horwood to Star as ‘Miss Hannigan’ — Crossroads Live",
-  "sha256": "8da5f6592b4a4318d6df91d2ed8617888e21a7fb90aab5e57854aa1026e19c6b",
-  "file": "8da5f6592b4a4318.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/annie-announced-uk",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:09:52Z",
-  "title": "Dates Announced for the Uk Tour of Annie — Crossroads Live",
-  "sha256": "9eeda4ce75859a1b09a3cb64b701134a0847fe2a5bc01758c106d214124218be",
-  "file": "9eeda4ce75859a1b.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/annie-returns-to-australia",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:09:54Z",
-  "title": "Annie Returns To Australia — Crossroads Live",
-  "sha256": "c6a600f7d461072f777152c6de753049ec903d42ead07507df2b8b9f4f0f6824",
-  "file": "c6a600f7d461072f.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/annie-the-musical-takes-part-in-the-first-macao-international-childrens-arts-festival",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:09:56Z",
-  "title": "Annie the Musical takes part in the first Macao International Children’s Arts Festival — Crossroads Live",
-  "sha256": "c59591741711a00d6feee503987002aae7c3ce6968f768fde884eb5b30923d90",
-  "file": "c59591741711a00d.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/annie-to-tour-the-uk-and-ireland-throughout-2026",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:09:58Z",
-  "title": "Annie to tour the UK and Ireland throughout 2026 — Crossroads Live",
-  "sha256": "07bb73c544f9e186ab4fb441f46c4c9bd254ce131a7e1276d8737ef13c9ea9bc",
-  "file": "07bb73c544f9e186.txt"
- },
- {
-  "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/back-to-the-future-opens-to-electrifying-reviews-in-sydney",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:10:00Z",
-  "title": "Back To The Future opens to electrifying reviews in Sydney — Crossroads Live",
-  "sha256": "900db5aa846b396bceed8209b18aa21b77212aee49af4db9d3fb8f547d027832",
-  "file": "900db5aa846b396b.txt"
+  "fetched_at": "2026-11-16T23:40:43Z",
+  "title": "Christmas Comes Early at the Crossroads Pantomimes Summer Party — Crossroads Live",
+  "sha256": "ffe3c3fd19fd41b311f25a9600c9d657c59cb071916e05a1f202c818f3f99b2e",
+  "file": "ffe3c3fd19fd41b3.txt"
  },
  {
   "seed": "crossroads-live",
   "url": "https://www.xroadslive.com/press/beetlejuice-its-showtime-london",
   "status": 200,
-  "fetched_at": "2026-11-16T23:10:02Z",
+  "fetched_at": "2026-11-16T23:40:45Z",
   "title": "It’s Showtime, London — Crossroads Live",
   "sha256": "0df493b2a4e097877be9efd32144b9d32eb7023582e55d39f6814dfb37edf6c1",
   "file": "0df493b2a4e09787.txt"
  },
  {
   "seed": "crossroads-live",
-  "url": "https://www.xroadslive.com/press/ben-platt-watched-magic-mike-live-with-allison-janney-and-kristen-bell-and-it-was-very-satisfying",
+  "url": "https://www.xroadslive.com/press/the-wiz-announces-company-for-new-na-tour",
   "status": 200,
-  "fetched_at": "2026-11-16T23:10:04Z",
-  "title": "Ben Platt Watched ‘Magic Mike Live’ With Allison Janney And Kristen Bell And It Was ‘Very Satisfying’ — Crossroads Live",
-  "sha256": "95eac7b273d21c1aa7d0d40834f696ab20855b6eb359626fc31f2dd58f0d6974",
-  "file": "95eac7b273d21c1a.txt"
+  "fetched_at": "2026-11-16T23:40:47Z",
+  "title": "The Wiz announces company for new North American tour. — Crossroads Live",
+  "sha256": "f21985b53dce325d1e07e8c266f7a9eff9b934dc9a0b281740732db4de45bb1d",
+  "file": "f21985b53dce325d.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/us-theatre-awards-season-the-lost-boys-titanique-and-beaches-all-nominated",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:40:49Z",
+  "title": "US Theatre Awards Season: The Lost Boys, Titanique and Beaches all nominated — Crossroads Live",
+  "sha256": "d921c1d5954441ca7b18e6dd565960129a34a2a1db7a3ce27bec3dcdd840fc27",
+  "file": "d921c1d5954441ca.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/just-in-time-nominated-for-6-tony-awards",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:40:51Z",
+  "title": "Just In Time nominated for 6 Tony Awards — Crossroads Live",
+  "sha256": "3134774cd1f49f917dd5c8ba37c59680ae82ad4a884e7430c4fea5c1011ee89f",
+  "file": "3134774cd1f49f91.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/silence-of-the-lambs-makes-thrilling-world-stage-premiere-in-leicester",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:40:54Z",
+  "title": "The Silence of the Lambs makes thrilling world stage premiere in Leicester — Crossroads Live",
+  "sha256": "446cfb669b91c289ecee2157c022c11847bdb47f5131b300007b721c450b3829",
+  "file": "446cfb669b91c289.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/magic-mike-live-international-reveals-casting-and-theatre-transformation-plans",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:40:55Z",
+  "title": "Magic Mike Live International reveals casting and theatre transformation plans. — Crossroads Live",
+  "sha256": "9c8f351a01825040ad778e75e052b04a3b3ee3f772581319e44fa0ffeb7eb843",
+  "file": "9c8f351a01825040.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/solt-uk-theatre-conference-2026",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:40:57Z",
+  "title": "Society of London Theatre & UK Theatre Conference 2026 — Crossroads Live",
+  "sha256": "6f8c6a02f981807b2fce3dbe1f7424b0db84bc9e4f0c19e53e17169f8b6fe62e",
+  "file": "6f8c6a02f981807b.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/dead-special-beetlejuice-opens-in-the-west-end",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:40:59Z",
+  "title": "Dead Special - Beetlejuice opens in the West End! — Crossroads Live",
+  "sha256": "e416ec8e014f1c11f9c2992126e0511050576f44fef82b7c7c874b83ef208d35",
+  "file": "e416ec8e014f1c11.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/waitress-proof-that-a-touring-production-has-the-power-to-outshine-the-original",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:41:01Z",
+  "title": "Waitress ‘Proof that a touring production has the power to outshine the original’ — Crossroads Live",
+  "sha256": "f47a6b4b0eef761b9ce332b9c579422df9407cdc68f9650d32e859437193d1ad",
+  "file": "f47a6b4b0eef761b.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/jesus-christ-superstar-rocks-the-philippines",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:41:03Z",
+  "title": "Jesus Christ Superstar Rocks The Philippines! — Crossroads Live",
+  "sha256": "a2045690f39d89247b4d093575cdac400fe8d2a0191372c94c9f5dd6c31c56ce",
+  "file": "a2045690f39d8924.txt"
+ },
+ {
+  "seed": "crossroads-live",
+  "url": "https://www.xroadslive.com/press/full-west-end-cast-announced-for-beetlejuice",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:41:05Z",
+  "title": "Full West End cast announced for Beetlejuice — Crossroads Live",
+  "sha256": "ef7f3c6dd7784654ce62abbb79b78c2db59b3fd706461ff74dbf284e2876b4f8",
+  "file": "ef7f3c6dd7784654.txt"
  },
  {
   "seed": "debbie-obrien-casting",
   "url": "https://www.debbieobrien.net/debbie-obrien.html",
   "status": 200,
-  "fetched_at": "2026-11-16T23:10:08Z",
+  "fetched_at": "2026-11-16T23:41:10Z",
   "title": "Debbie O'Brien",
   "sha256": "0bdfa3354992842c88e0ab26c275354da00b0c51c999eba4a29ae5b7a49d5317",
   "file": "0bdfa3354992842c.txt"
  },
  {
   "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/aida-paris.html",
+  "url": "https://www.debbieobrien.net/ncl-june.html",
   "status": 200,
-  "fetched_at": "2026-11-16T23:10:11Z",
-  "title": "AIDA PARIS",
-  "sha256": "8127b5ff47d2e2e76488bc42d69eeefa2b4b853bd3012fb88674038045b673f7",
-  "file": "8127b5ff47d2e2e7.txt"
+  "fetched_at": "2026-11-16T23:41:12Z",
+  "title": "BURN THE FLOOR",
+  "sha256": "f72311f3cdaf2362a9ba6f302c9f1daceabbabef9ffd64b07fd19d89e49f8174",
+  "file": "f72311f3cdaf2362.txt"
  },
  {
   "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/aida-thanks.html",
+  "url": "https://www.debbieobrien.net/fabulist.html",
   "status": 200,
-  "fetched_at": "2026-11-16T23:10:13Z",
-  "title": "Aida Thanks",
-  "sha256": "b8c85b643952ba009577fec4414019c48fe66e3f6bac27324bbdf1b6f673ad95",
-  "file": "b8c85b643952ba00.txt"
- },
- {
-  "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/aida.html",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:10:15Z",
-  "title": "AIDA CRUISES",
+  "fetched_at": "2026-11-16T23:41:14Z",
+  "title": "THE FABULIST",
   "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
   "file": "a185a99420065389.txt"
  },
  {
   "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/antr.html",
+  "url": "https://www.debbieobrien.net/bodyguard.html",
   "status": 200,
-  "fetched_at": "2026-11-16T23:10:17Z",
-  "title": "A NIGHT TO REMEMBER",
+  "fetched_at": "2026-11-16T23:41:16Z",
+  "title": "BODYGUARD BREAKDOWN",
   "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
   "file": "a185a99420065389.txt"
  },
  {
   "seed": "debbie-obrien-casting",
-  "url": "https://www.debbieobrien.net/archive-lnd.html",
+  "url": "https://www.debbieobrien.net/cc.html",
   "status": 200,
-  "fetched_at": "2026-11-16T23:10:18Z",
-  "title": "LOVE NEVER DIES BREAKDOWN",
-  "sha256": "a185a99420065389db93ce2c53421915f333055585fc470fb98315df10bf8142",
-  "file": "a185a99420065389.txt"
+  "fetched_at": "2026-11-16T23:41:18Z",
+  "title": "CC",
+  "sha256": "7eb9b39104acfd01ffe9c74583bd648a4e3cffd6c39a179d94ddba0971fa4132",
+  "file": "7eb9b39104acfd01.txt"
+ },
+ {
+  "seed": "debbie-obrien-casting",
+  "url": "https://www.debbieobrien.net/ptp-foh.html",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:41:20Z",
+  "title": "PTP Audience Managers",
+  "sha256": "854e9b9639fda8f1f38bf37d077c21471e06f97b3bad60f4b8f995d2a65f0c7d",
+  "file": "854e9b9639fda8f1.txt"
  },
  {
   "seed": "the-choir-of-man",
   "url": "https://thechoirofman.com",
   "status": 200,
-  "fetched_at": "2026-11-16T23:15:21Z",
+  "fetched_at": "2026-11-16T23:41:22Z",
   "title": "The Choir of Man | Official Tickets Website",
   "sha256": "4bb700f559c793b99a231807fc04f98a7230aa858bc327e9e6f009cd36c3498a",
   "file": "4bb700f559c793b9.txt"
  },
  {
   "seed": "burlesque-the-musical",
+  "redirect_from": "https://www.burlesquethemusical.com/",
+  "redirect_to": "https://www.burlesqueonstage.com/",
+  "new_site_robots": 200,
+  "new_site_allows_us": true
+ },
+ {
+  "seed": "burlesque-the-musical",
   "url": "https://www.burlesqueonstage.com/",
   "status": 200,
-  "fetched_at": "2026-11-16T23:15:29Z",
+  "fetched_at": "2026-11-16T23:41:29Z",
   "title": "Burlesque The Musical",
   "sha256": "5f6253d724f871ed0c4e4e10a666ecb7cd3e41b3a0be24ca6ff4eae791807022",
   "file": "5f6253d724f871ed.txt"
  },
  {
   "seed": "burlesque-the-musical",
+  "url": "https://www.burlesqueonstage.com/creative",
+  "status": 404,
+  "fetched_at": "2026-11-16T23:41:31Z"
+ },
+ {
+  "seed": "burlesque-the-musical",
   "url": "https://www.burlesqueonstage.com/cast",
   "status": 200,
-  "fetched_at": "2026-11-16T23:15:31Z",
+  "fetched_at": "2026-11-16T23:41:33Z",
   "title": "Cast | Burlesque the Musical",
   "sha256": "37ba4f2ff252a9716a5a1d8cf8cc3dad68af071db042c4a0e3f5aa9b0ccb0e8c",
   "file": "37ba4f2ff252a971.txt"
  },
  {
   "seed": "burlesque-the-musical",
-  "url": "https://www.burlesqueonstage.com/creative",
-  "status": 404,
-  "fetched_at": "2026-11-16T23:15:33Z"
- },
- {
-  "seed": "burlesque-the-musical",
-  "url": "https://www.burlesqueonstage.com/faqs",
-  "status": 200,
-  "fetched_at": "2026-11-16T23:15:35Z",
-  "title": "Burlesque FAQs",
-  "sha256": "8fa5f08988b0e9dddb67ce1d6f8cf6b47f27f4e24d5710910fb2764ee530dbe8",
-  "file": "8fa5f08988b0e9dd.txt"
- },
- {
-  "seed": "burlesque-the-musical",
   "url": "https://www.burlesqueonstage.com/media-gallery",
   "status": 200,
-  "fetched_at": "2026-11-16T23:15:37Z",
+  "fetched_at": "2026-11-16T23:41:35Z",
   "title": "Gallery | Burlesque the Musical",
   "sha256": "29c42df6f3ffa94eeed732ef34b711086db52289ae4e28c50fb52fd5f6388fbe",
   "file": "29c42df6f3ffa94e.txt"
  },
  {
   "seed": "burlesque-the-musical",
-  "url": "https://www.burlesqueonstage.com/privacy",
+  "url": "https://www.burlesqueonstage.com/sign-up",
   "status": 200,
-  "fetched_at": "2026-11-16T23:15:39Z",
-  "title": "Privacy",
-  "sha256": "72fd162128fa825712f059a108729e212b77c0c249c729a621c94be716f5dd96",
-  "file": "72fd162128fa8257.txt"
+  "fetched_at": "2026-11-16T23:41:37Z",
+  "title": "Sign Up | Burlesque the Musical",
+  "sha256": "f5a64a05df2f95209fab802919d3f21b53fa19a1c6a52672486d6ac9f9b2e9aa",
+  "file": "f5a64a05df2f9520.txt"
+ },
+ {
+  "seed": "burlesque-the-musical",
+  "url": "https://www.burlesqueonstage.com/faqs",
+  "status": 200,
+  "fetched_at": "2026-11-16T23:41:39Z",
+  "title": "Burlesque FAQs",
+  "sha256": "8fa5f08988b0e9dddb67ce1d6f8cf6b47f27f4e24d5710910fb2764ee530dbe8",
+  "file": "8fa5f08988b0e9dd.txt"
  },
  {
   "seed": "harry-blumenau-agent",
   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
   "status": 200,
-  "fetched_at": "2026-11-16T23:16:01Z",
+  "fetched_at": "2026-11-16T23:42:27Z",
   "title": "Harry Blumenau CDG CSA - United Agents",
   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
   "file": "01dcb8b5445f6dbb.txt"

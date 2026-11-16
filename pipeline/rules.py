@@ -17,10 +17,19 @@ CREDIT_RULES = [
 QUAL_BEFORE = re.compile(QUALIFIERS + r"\s*(?:&\s*\w+\s*)?$", re.I)
 NOT_A_NAME = re.compile(r"'s\b|’s\b|\b(Director|Artistic|Associate|Producer|Chief|Executive|Theatre|Productions?|Live|Company|Ltd|Limited|Group|Entertainment|Award|Awards|Tour|Musical|Season|West End|Broadway|London|UK)\b")
 
-PRODUCER_SENTENCE = re.compile(r"Crossroads Live[^.]{0,120}\b(announce|announces|announced|presents|present|produc|co-produc)|"
-                               r"\b(produced|presented|co-produced) by [^.]{0,80}Crossroads Live|for Crossroads Live", re.I)
+PRODUCER_VERBS = r"(announce|announces|announced|presents|present|produc|co-produc)"
+
+
+def producer_sentence(names):
+    """Build the producer-sentence pattern from the producer names a person entered in seeds.json."""
+    alt = "|".join(re.escape(n) for n in names)
+    # the verb must sit next to the producer's name, without crossing ';' (credit lists use ';' between roles)
+    return re.compile(r"(?:%s)(?: (?:is|are))?(?: (?:delighted|thrilled|pleased|proud|excited))?(?: to)? \b%s|"
+                      r"\b(?:produced|presented|co-produced) by (?:(?!\bby\b)[^.;]){0,60}(?:%s)|\bfor (?:%s)\b" % (alt, PRODUCER_VERBS, alt, alt), re.I)
+
+
 CAPS_TITLE = re.compile(r"\b([A-Z0-9][A-Z0-9'’&!:,.\-]*(?: [A-Z0-9'’&!:,.\-]+)+|[A-Z][A-Z'’&!\-]{3,})\b")
-CAPS_STOP = {"UK", "USA", "CEO", "OBE", "MBE", "CBE", "BBC", "ITV", "NEW", "TOUR", "THE", "AND", "LIVE", "CROSSROADS", "DAVID", "IAN"}
+CAPS_STOP = {"UK", "USA", "CEO", "OBE", "MBE", "CBE", "BBC", "ITV", "NEW", "TOUR", "THE", "AND", "LIVE"}  # general words only
 OF_TITLE = re.compile(r"production of (?:the )?(?:musical |hit musical |classic )?(?P<t>(?:[A-Z][\w'’&!:\-]*)(?: (?:of|the|and|in|a|to|on|[A-Z][\w'’&!:\-]*))*)")
 
 
@@ -53,25 +62,29 @@ def credits(text):
     return found
 
 
-def production(text):
-    """Return (rule_id, title, sentence) for the production Crossroads Live announces, or None.
-    Only the first producer sentence is used; a page naming several shows yields its first, and the
-    coverage report lists pages where the title couldn't be read."""
+def production(text, producer_names, ignore_in_titles=()):
+    """Return (rule_id, title, sentence) for the production the producer announces, or None.
+    producer_names and ignore_in_titles come from the producer's seed (entered by a person).
+    Only the first producer sentence is used; pages where the title couldn't be read are listed in coverage."""
+    rx = producer_sentence(producer_names)
+    stop = CAPS_STOP | {w.upper() for x in list(producer_names) + list(ignore_in_titles) for w in x.split()}
     for sent in sentences(text):
-        if not PRODUCER_SENTENCE.search(sent):
+        if not rx.search(sent):
             continue
-        caps = [c.strip(" ,.:") for c in CAPS_TITLE.findall(sent)]
-        caps = [c for c in caps if c.upper() == c and c not in CAPS_STOP and not all(w in CAPS_STOP for w in c.split())]
-        if caps:
-            return ("P1", max(caps, key=len), sent)
         m = OF_TITLE.search(sent)
         if m:
             return ("P2", m.group("t").strip(), sent)
+        # words in capitals followed by a capitalised word ("ARDA Studio") are a name, not a title
+        caps = [(c.group(1).strip(" ,.:"), c.end()) for c in CAPS_TITLE.finditer(sent)]
+        caps = [c for c, end in caps if c.upper() == c and c not in stop and not all(w in stop for w in c.split())
+                and not re.match(r" [A-Z][a-z]", sent[end:end + 3])]
+        if caps:
+            return ("P1", max(caps, key=len), sent)
         return ("P0", None, sent)
     return None
 
 
-# ---- A1: agency CV layout (United Agents uses it for every client) ----
+# ---- A1: an agency CV layout (one agency uses it for every client; see LAYOUTS) ----
 #   TITLE IN CAPITALS / year or year range / venue or company / role / "Dir. Name & Name"
 YEAR_LINE = re.compile(r"^(19|20)\d\d(\s*[–-]\s*(19|20)\d\d)?$")
 CV_ROLE = re.compile(r"Casting Director|Director|Writer|Choreographer|Producer", re.I)
@@ -90,3 +103,9 @@ def agent_cv(text):
         out.append({"title": title, "year": year, "venue": venue, "role": role, "directors": directors,
                     "evidence": " / ".join([title, year, venue, role, dirl])})
     return out
+
+
+# Layout rules are chosen by site. Each entry is (rule ID, function); add a line here for each new layout.
+LAYOUTS = {
+    "unitedagents.co.uk": ("A1", agent_cv),
+}

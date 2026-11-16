@@ -27,7 +27,7 @@ def confirm(title, own_site_text):
 
 
 def norm_work(title):
-    """One key per show: 'The Choir of Man' == 'CHOIR OF MAN'; 'Burlesque The Musical' == 'BURLESQUE'."""
+    """One key per show: 'The X' == 'X'; 'Y The Musical' == 'Y'. Case and punctuation ignored."""
     t = norm_title(title)
     t = re.sub(r"^the ", "", t)
     t = re.sub(r" (the )?musical$", "", t)

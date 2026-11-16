@@ -17,29 +17,46 @@ for s in seeds():
     rp, st, _ = robots(base)
     if not rp:
         print("blocked", s["id"]); continue
-    urls, _ = read_sitemaps(base, rp)
+    if s.get("pages"):
+        # the seed names exact pages (chosen by a person): read those, robots.txt still applies
+        urls = [(u, "") for u in s["pages"]]
+    else:
+        urls, _ = read_sitemaps(base, rp)
     if not urls and rp.can_fetch(UA, base):
         # no sitemap: take the links on the home page (same site only), in page order
         code, body, final = get(base)
         if host(final) != host(base):
             # the seed redirects to another site: that site's robots.txt decides from here on
             print("  %s redirects to %s; checking its robots.txt" % (base, final))
+            redirect = {"seed": s["id"], "redirect_from": base, "redirect_to": final}
             base = "%s://%s/" % (urlparse(final).scheme, urlparse(final).netloc)
             rp, st, _ = robots(base)
-            if not rp or not rp.can_fetch(UA, base):
+            redirect["new_site_robots"] = st
+            redirect["new_site_allows_us"] = bool(rp and rp.can_fetch(UA, base))
+            manifest.append(redirect)
+            if not redirect["new_site_allows_us"]:
                 print("  blocked by the new site's robots.txt"); continue
         links = re.findall(r'href=["\']([^"\'#]+)', body.decode("utf-8", "replace")) if code == 200 else []
         urls = [(base, "")] + [(urljoin(base, h), "") for h in links]
-    wanted = sorted({u for u, _ in urls if host(u) == host(base) and any((urlparse(u).path or "/").startswith(p) for p in s["read"])
-                     and urlparse(u).path.rstrip("/") not in [p.rstrip("/") for p in s["read"] if p != "/"]})
-    must = [u for u in s.get("must_include", []) if u in wanted or True]
-    wanted = (must + [u for u in wanted if u not in must])[: s.get("max_pages", len(wanted))]
+    # sitemap order, newest first where the sitemap gives a date; no pages are picked by hand
+    seen, ordered = set(), []
+    for u, lm in sorted(urls, key=lambda x: x[1], reverse=True):
+        if u in seen:
+            continue
+        seen.add(u)
+        path = urlparse(u).path or "/"
+        is_index = s.get("skip_section_index") and path.rstrip("/") in [p.rstrip("/") for p in s["read"]]
+        if host(u) == host(base) and any(path.startswith(p) for p in s["read"]) and not is_index:
+            ordered.append(u)
+    wanted = ordered[: s.get("max_pages", len(ordered))]
     got = 0
     for u in wanted:
         if not rp.can_fetch(UA, u):
             manifest.append({"seed": s["id"], "url": u, "status": "disallowed by robots.txt"}); continue
         code, body, final = get(u)
         rec = {"seed": s["id"], "url": final, "status": code, "fetched_at": now()}
+        if final.rstrip("/") != u.rstrip("/"):
+            rec["requested"] = u
         if code == 200:
             title, text = html_to_text(body)
             h = sha(text)
