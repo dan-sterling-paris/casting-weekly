@@ -1,0 +1,1208 @@
+{
+ "date": "2026-11-16",
+ "ua": "CastingWeeklyBot/0.2 (+https://castingweekly.com/bot; office@castingweekly.com)",
+ "sites": [
+  {
+   "id": "leeds-playhouse",
+   "name": "Leeds Playhouse",
+   "base": "https://www.leedsplayhouse.org.uk/",
+   "pages": [
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/son-of-a-bitch/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Son of a Bitch - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-523c3daf62.txt",
+     "sha256": "523c3daf626e3db23d55f95372d1544a3efcde5b8bb4dfc3988ac8e0c97e716c",
+     "chars": 2702
+    },
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/romeo-and-juliet-3/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Romeo and Juliet - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-bb488e2be4.txt",
+     "sha256": "bb488e2be46faa137233eb3f4e721edec4384d4bc98477a70fbe896cecc2e5f5",
+     "chars": 3669
+    },
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/a-simply-beastly-murder/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "A Simply Beastly Murder - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-fdc6ad01a8.txt",
+     "sha256": "fdc6ad01a8ef0c2ac759e399ef8e3470394786e9f0271b030308e518c3453c83",
+     "chars": 2809
+    },
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "Dr Seuss's How The Grinch Stole Christmas! The Musical - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-7608541562.txt",
+     "sha256": "7608541562c6395a01d7291c774104fbe9bf9ed799632d6b4eabe91a7e94f582",
+     "chars": 6956
+    },
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/grimeboy/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "Grimeboy - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-43219ab393.txt",
+     "sha256": "43219ab3939de1f588b126e4642364b08bdc21520af685de7763e89526e69506",
+     "chars": 2520
+    },
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/reviving-her/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "REVIVING HER - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-98c9610677.txt",
+     "sha256": "98c9610677d7d3ee0afd9437685ba0d3a42d364a6e0a56bf563ed402077aeb3b",
+     "chars": 2817
+    },
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/rpm/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "RPM - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-4f9e000b43.txt",
+     "sha256": "4f9e000b43ec7f10a7d4dd0cb97aa51bf9b08ddcc48b730958d61fdd307f613b",
+     "chars": 2514
+    },
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/wedding-fayre/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "Wedding Fayre - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-c00cab5c57.txt",
+     "sha256": "c00cab5c57010eb86602408f6ff07a7ab6077a9fd9957b9a24de78897de5eca4",
+     "chars": 3052
+    },
+    {
+     "url": "https://www.leedsplayhouse.org.uk/event/hansel-gretel-and-the-witch/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "Hansel & Gretel and the Witch - Leeds Playhouse",
+     "cache": "catalogue/cache/2026-11-16/leeds-playhouse-c5e5095418.txt",
+     "sha256": "c5e5095418c94687952ee89c3500f94fe3f2a3adb7cf83f7814eb2a8bd61f7fd",
+     "chars": 3063
+    }
+   ],
+   "robots": "none",
+   "sitemaps_read": 10,
+   "sitemap_urls": 763
+  },
+  {
+   "id": "sheffield-theatres",
+   "name": "Sheffield Theatres",
+   "base": "https://www.sheffieldtheatres.co.uk/",
+   "pages": [
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/before-i-go-to-sleep",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Before I Go To Sleep | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-f251db7143.txt",
+     "sha256": "f251db714368d4d791be9e51e07a4eeeadb67ec72c8b87a8293ce04705801ad0",
+     "chars": 1672
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/silence-of-the-lambs",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "The Silence of the Lambs | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-d06209afaf.txt",
+     "sha256": "d06209afafce593093a1fe540377edb732fbddbe26572b2f7514d91575417604",
+     "chars": 1882
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/bones-in-the-desert",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Bones In The Desert | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-c5e8841c16.txt",
+     "sha256": "c5e8841c162a5e106b05f02e6e48e06560c8f7432e35ca9321b37c1b871634e7",
+     "chars": 1672
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/cinderella-2026",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Cinderella | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-501d43dbb4.txt",
+     "sha256": "501d43dbb40c53daf5f848a23b099dc58a57e0ed88c67f9ab24e634551d22010",
+     "chars": 2658
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/the-lady-in-the-bay-window",
+     "status": 404,
+     "lastmod": "2026-11-15"
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/mean-girls-2026",
+     "status": 404,
+     "lastmod": "2026-11-15"
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/pre-show-dinner-2026",
+     "status": 200,
+     "lastmod": "2026-11-15",
+     "title": "Pre Show Dining | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-84c582d916.txt",
+     "sha256": "84c582d916845bc6b1220a3d6e289e7f17f10a7ffb2ce2f048da78cd2f8826bb",
+     "chars": 1964
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/a-celebration-of-five-decades-of-snooker",
+     "status": 404,
+     "lastmod": "2026-11-13"
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/events/table-top-shakespeare",
+     "status": 404,
+     "lastmod": "2026-11-13"
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/news/major-funding-announced-for-the-national-theatre-nationwide-partnership",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Major funding announced for the National Theatre Nationwide partnership | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-f165e6437e.txt",
+     "sha256": "f165e6437e7cfcf665e1560e58eb662d83b8225c45268a5601396868f2d4f978",
+     "chars": 2186
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/news/whatsonstage-awards-2027",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "WhatsOnStage Awards 2027 | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-72b269be0c.txt",
+     "sha256": "72b269be0cfbf8f08d9a094f2b65606c01fb38cef151d2281bc3473c1258d155",
+     "chars": 1671
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/news/cast-announced-for-singin-in-the-rain",
+     "status": 200,
+     "lastmod": "2026-09-29",
+     "title": "Cast announced for Singin' in the Rain | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-71bda3d069.txt",
+     "sha256": "71bda3d069ac46207bc0952379448873fc63df8fce09070ee71f191c1a982f44",
+     "chars": 4303
+    },
+    {
+     "url": "https://www.sheffieldtheatres.co.uk/news/rita-simons-completes-the-cast-of-cinderella",
+     "status": 200,
+     "lastmod": "2026-09-24",
+     "title": "Rita Simons completes the cast of Cinderella | Sheffield Theatres",
+     "cache": "catalogue/cache/2026-11-16/sheffield-theatres-9fa0b9d6b5.txt",
+     "sha256": "9fa0b9d6b5b23c799a6a22c259d8821ff1df2328caa85c3247aaf6ec7ed740b0",
+     "chars": 1986
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 1,
+   "sitemap_urls": 1763
+  },
+  {
+   "id": "royal-exchange",
+   "name": "Royal Exchange Theatre",
+   "base": "https://www.royalexchange.co.uk/",
+   "pages": [
+    {
+     "url": "https://www.royalexchange.co.uk/event/a-little-night-music/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "A Little Night Music - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-bcbfa25f7f.txt",
+     "sha256": "bcbfa25f7f9c33559b01b68fdcb9fe66b44cc91511010419928d72aa168e4117",
+     "chars": 5967
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/event/festive-sharing-board/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Festive Sharing Board - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-2322193f14.txt",
+     "sha256": "2322193f14ca713b4eec25971201af7a26ed84b7a14893cdb7fec2126e1eee7d",
+     "chars": 4432
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/event/from-fragments-to-fiction/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "From Fragments to Fiction - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-018ba929e5.txt",
+     "sha256": "018ba929e54698ed7c2e977a96aa3c540b36a73c0548681d7b101aa2b3f9ec08",
+     "chars": 1250
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/event/evening-conversations/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Evening Conversations - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-8abd5e6243.txt",
+     "sha256": "8abd5e62438282aa634b297bbd9e3020d9be3912a626ed99c7aee75de0b7c2b2",
+     "chars": 2818
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/event/anansi-and-the-lost-sun/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Anansi and the Lost Sun - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-6edf88d605.txt",
+     "sha256": "6edf88d60578e0b9dc1a11f7e7accb8c933e614c4bab1d53538873d4a2814a66",
+     "chars": 1608
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/event/katie-and-the-bad-sign/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Katie and the Bad Sign - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-485bf57049.txt",
+     "sha256": "485bf5704996c5236b3b392749f76d1708a1c9582752f3767e062311035311fd",
+     "chars": 1366
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/event/writing-inspired-by-place/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Writing Inspired by Place - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-72c320c0dd.txt",
+     "sha256": "72c320c0dd21443af11b2d77cbfbb11ec07c4b31806f0149409882ae5170b9bd",
+     "chars": 1499
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/event/family-pride-day/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Family Pride Day - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-07657c768e.txt",
+     "sha256": "07657c768e4ad9bd5fb915790099be7e058e85d9ef3b3cff3e510335414aeb7f",
+     "chars": 1357
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/event/violet-blonde-and-bennettiscoming/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Violet Blonde and Bennettiscoming - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-3031ca8852.txt",
+     "sha256": "3031ca88524b673871fed6d500ae95862101d5df32490dfb2ed3a3647b3322cb",
+     "chars": 2140
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/news/full-cast-announced-for-king-lear-at-the-royal-exchange-theatre/",
+     "status": 200,
+     "lastmod": "2026-07-28",
+     "title": "Full cast announced for King Lear at the Royal Exchange Theatre - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-2e25a47f38.txt",
+     "sha256": "2e25a47f38e99afde17fbcf75ab84b3b2fc023f8a3771bca4fbb82802ca017cf",
+     "chars": 4501
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/news/royal-exchange-theatre-announces-rachel-quinney-as-new-director-of-producing/",
+     "status": 200,
+     "lastmod": "2026-06-16",
+     "title": "ROYAL EXCHANGE THEATRE ANNOUNCES RACHEL QUINNEY AS NEW DIRECTOR OF PRODUCING - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-913b6cb59e.txt",
+     "sha256": "913b6cb59e266f422811c54a8a61faab0822483d58c31344be4e84f6c5b78c32",
+     "chars": 2777
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/news/dog-casting-callout/",
+     "status": 200,
+     "lastmod": "2026-01-27",
+     "title": "Dog Casting Callout - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-2b5a75387f.txt",
+     "sha256": "2b5a75387f0ec25a900358c7899d10142667ff240d353598a97501da90126025",
+     "chars": 2499
+    },
+    {
+     "url": "https://www.royalexchange.co.uk/news/star-cast-announced-for-musical-extravaganza-singin-in-the-rain/",
+     "status": 200,
+     "lastmod": "2025-09-02",
+     "title": "Star Cast Announced for Musical Extravaganza SINGIN\u2019 IN THE RAIN - Royal Exchange Theatre",
+     "cache": "catalogue/cache/2026-11-16/royal-exchange-a98ee3244e.txt",
+     "sha256": "a98ee3244e03cec3f08b2e88dbe325a2677dc3642d08bc7f014f09615414c979",
+     "chars": 3482
+    }
+   ],
+   "robots": "none",
+   "sitemaps_read": 10,
+   "sitemap_urls": 534
+  },
+  {
+   "id": "bristol-old-vic",
+   "name": "Bristol Old Vic",
+   "base": "https://bristololdvic.org.uk/",
+   "pages": [
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/young-company-autumn-term-2026-early-years",
+     "status": 200,
+     "lastmod": "2026-11-07",
+     "title": "Young Company Autumn Term 2026: Early Years (3\u20135s) | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-741b9aeeb7.txt",
+     "sha256": "741b9aeeb74287f96d2ab9028572b99652eba19b568e3a57b513e6b7dacef3c5",
+     "chars": 360
+    },
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/young-company-autumn-term-2026-ages-25-30",
+     "status": 200,
+     "lastmod": "2026-11-03",
+     "title": "Autumn Term 2026: 25-30, Mon 8\u201310pm | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-4a044c1f37.txt",
+     "sha256": "4a044c1f379653ae3c85bfe141e257e62bf78ae7b79b4b2d23dbe15c5d922df1",
+     "chars": 361
+    },
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/long-days-journey-into-night",
+     "status": 200,
+     "lastmod": "2026-11-02",
+     "title": "Long Day's Journey into Night | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-3dbb03d0aa.txt",
+     "sha256": "3dbb03d0aa9f7b8b20b8bff3f764479839555f6af0ff117bee25399e9c393019",
+     "chars": 421
+    },
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/young-company-taster-sessions-ages-4-6",
+     "status": 200,
+     "lastmod": "2026-11-02",
+     "title": "Family Day - Young Company Taster Sessions (Ages 4\u2026 | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-60e9b33af8.txt",
+     "sha256": "60e9b33af83ff31667c90027c59ab2c9559685caaa34bfbddbd29c3f413a7e8a",
+     "chars": 350
+    },
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/young-company-taster-sessions-ages-7-10",
+     "status": 200,
+     "lastmod": "2026-11-02",
+     "title": "Family Day - Young Company Taster Sessions (Ages 7\u2026 | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-fb08a884f6.txt",
+     "sha256": "fb08a884f624fa07ee6cffeaec148c9b387a94893e09d5b408dfac2141712575",
+     "chars": 351
+    },
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/young-company-autumn-term-2026-years-3-4",
+     "status": 200,
+     "lastmod": "2026-11-02",
+     "title": "Autumn Term 2026: Years 3\u20134, Sat 10:30\u201311:30am | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-19b3086b4b.txt",
+     "sha256": "19b3086b4b17b5d9335b74139f47f946bd498ce59d25df387b79b6beef9db7b9",
+     "chars": 372
+    },
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/young-company-autumn-term-2026-years-7-8-5-7pm",
+     "status": 200,
+     "lastmod": "2026-11-02",
+     "title": "Autumn Term 2026: Years 7\u20138, Sat 5\u20137pm | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-b30f25f257.txt",
+     "sha256": "b30f25f257ad70457b04135b99bcbb496c80a22c6e580b8a21243ca8fbf6a98b",
+     "chars": 364
+    },
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/young-company-autumn-term-2026-years-7-8-3-5pm",
+     "status": 200,
+     "lastmod": "2026-11-02",
+     "title": "Autumn Term 2026: Years 7\u20138, Sat 3\u20135pm | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-2fbf240ba5.txt",
+     "sha256": "2fbf240ba56caeb317074e20034f3c280afb24d2ed4a14a0279ebb9dcd43d341",
+     "chars": 364
+    },
+    {
+     "url": "https://bristololdvic.org.uk/whats-on/young-company-autumn-term-2026-year-6",
+     "status": 200,
+     "lastmod": "2026-11-02",
+     "title": "Autumn Term 2026: Year 6, Sat 1\u20132:30pm | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailmailfacebookinstagramace-logo",
+     "cache": "catalogue/cache/2026-11-16/bristol-old-vic-394e77462f.txt",
+     "sha256": "394e77462fcbdea46d9f609197aa7ceb0e361472109b07e5ceeaf1b17e963622",
+     "chars": 334
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 10,
+   "sitemap_urls": 311
+  },
+  {
+   "id": "nottingham-playhouse",
+   "name": "Nottingham Playhouse",
+   "base": "https://nottinghamplayhouse.co.uk/",
+   "pages": [
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/in-person-co-working/",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Amplify Co-Working Sessions - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-4a289e8417.txt",
+     "sha256": "4a289e8417bdcd76e346248971898a8be2ae22e11961e64e08d4ceb59a732057",
+     "chars": 3963
+    },
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/writing-your-identity/",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Writing Your Identity - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-7122676681.txt",
+     "sha256": "712267668113c90561095866a95c3beea0523dc721b91d51293d904676e8b628",
+     "chars": 3180
+    },
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/panto-lounge-experience-2/",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Aladdin Lounge Experience - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-1e9387ca5a.txt",
+     "sha256": "1e9387ca5a237d6a6008cde7fc3e3271b37d85134f2140ba441b4feb0cddc57e",
+     "chars": 8761
+    },
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/in-the-air-tonight/",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "In The Air Tonight - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-d11a4e38f7.txt",
+     "sha256": "d11a4e38f785453009dc1128ea01721417bfccd893a55393024eb05266086371",
+     "chars": 3494
+    },
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/aladdin-on-demand-2/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Aladdin - On Demand - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-b96e0c8caa.txt",
+     "sha256": "b96e0c8caabb7139af5ecfaacdbe37a7e6d0bfc38592029c4ae56152168fbc68",
+     "chars": 3520
+    },
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/romeo-juliet/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Romeo & Juliet - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-4c12fd3aa9.txt",
+     "sha256": "4c12fd3aa9b81df90f39ece941387b94ba6846ecc5898a8177d08f2a6ba5f868",
+     "chars": 8343
+    },
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/my-name-is-rachel-corrie/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "My Name Is Rachel Corrie - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-e9a58392d1.txt",
+     "sha256": "e9a58392d14180688d79d9446e59072d2bc4353bb4da3fa6b3bfa8a2a758ac10",
+     "chars": 4448
+    },
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/fences/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "August Wilson\u2019s Fences - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-9126902a7d.txt",
+     "sha256": "9126902a7db327ca5081504c692423238ee874e6daea686047ea55d418433af2",
+     "chars": 17401
+    },
+    {
+     "url": "https://nottinghamplayhouse.co.uk/events/aladdin-on-demand-for-schools-and-groups/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "Aladdin - On Demand for Schools and Groups - Nottingham Playhouse",
+     "cache": "catalogue/cache/2026-11-16/nottingham-playhouse-63dbe8696a.txt",
+     "sha256": "63dbe8696afc2183d74eecb0948aebc29807daabc99e6b2dd92ab375f636f8ba",
+     "chars": 4009
+    }
+   ],
+   "robots": "none",
+   "sitemaps_read": 10,
+   "sitemap_urls": 1333
+  },
+  {
+   "id": "lyceum",
+   "name": "Royal Lyceum Theatre Edinburgh",
+   "base": "https://lyceum.org.uk/",
+   "pages": [
+    {
+     "url": "https://lyceum.org.uk/events/lyt-seniors-14-19s-spring-term-2027",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Lyceum Youth Theatre Seniors (14-19s) Spring Term 2027 | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-7c7244b538.txt",
+     "sha256": "7c7244b538c1e12e8e5fc2aa86ff23a85973fa992067548d075608b32bff3eb0",
+     "chars": 1537
+    },
+    {
+     "url": "https://lyceum.org.uk/events/lyt-play-5-7s-spring-term-2027",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Lyceum Youth Theatre Play (5-7s) Spring Term 2027 | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-3007e604de.txt",
+     "sha256": "3007e604deb9ab4173bf2f7df772bfdfc8c03f64c8e4523318ba9c2d6bddb839",
+     "chars": 1089
+    },
+    {
+     "url": "https://lyceum.org.uk/events/lyt-minis-8-10s-spring-term-2027",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Lyceum Youth Theatre Minis (8-10s) Spring Term 2027 | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-c33e6d75e9.txt",
+     "sha256": "c33e6d75e91d7163823f6fb15e938356a829d3564b3a1d852a9406caf8f9abfc",
+     "chars": 1060
+    },
+    {
+     "url": "https://lyceum.org.uk/events/lyt-juniors-11-13s-spring-term-2027",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Lyceum Youth Theatre Juniors (11-13s) Spring Term 2027 | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-7b025b85a7.txt",
+     "sha256": "7b025b85a756c1b1c1d9049bde84bbbd6ae643caf9e203447fe4bf0a01cc525f",
+     "chars": 1195
+    },
+    {
+     "url": "https://lyceum.org.uk/events/zog-the-flying-doctors-2027",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Zog and The Flying Doctors | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-c464bc26df.txt",
+     "sha256": "c464bc26dfc6124fc97dda568b2feee1736f6a7c1ab3d797ddd7dc6911c3f8d6",
+     "chars": 2128
+    },
+    {
+     "url": "https://lyceum.org.uk/events/mother-courage-her-children",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Mother Courage and her Children | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-c982423871.txt",
+     "sha256": "c982423871b67b82a704fe62ea0c648bdba6e5db775dfd438189001a3b7e1290",
+     "chars": 1404
+    },
+    {
+     "url": "https://lyceum.org.uk/events/romeo-juliet-2027-schools",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Romeo & Juliet - schools performances | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-f24f21ea42.txt",
+     "sha256": "f24f21ea42d028590abef293d0472dce1006169fd32db3ab2cbb810a27591ca3",
+     "chars": 1602
+    },
+    {
+     "url": "https://lyceum.org.uk/events/a-christmas-carol-2026-27-schools",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "A Christmas Carol - schools performances | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-1adda8dfc1.txt",
+     "sha256": "1adda8dfc1e4eb3d679052ac5ac969e1771738f40e38a1353a0c3d3586f7040b",
+     "chars": 2044
+    },
+    {
+     "url": "https://lyceum.org.uk/events/christopher-macarthur-boyd-howling-at-the-moon",
+     "status": 200,
+     "lastmod": "2026-11-15",
+     "title": "Christopher Macarthur-Boyd: Howling at the Moon | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-20d8b203e9.txt",
+     "sha256": "20d8b203e9900be6e1452ad4a908c1c3acad0ad9370e3c35a668b74a0722fd15",
+     "chars": 1545
+    },
+    {
+     "url": "https://lyceum.org.uk/news/eve-nicol-announced-as-trainee-artistic-director-at-the-royal-lyceum-theatre-edinburgh",
+     "status": 200,
+     "lastmod": "2026-07-30",
+     "title": "Eve Nicol announced as new Trainee Artistic Director | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-60322d75c7.txt",
+     "sha256": "60322d75c7d8e438fd0e153537e7d3c95f0a0d8bd20fbec69b2f3fc980500ca5",
+     "chars": 3697
+    },
+    {
+     "url": "https://lyceum.org.uk/news/the-lyceum-is-the-next-host-of-scottish-casting-network",
+     "status": 200,
+     "lastmod": "2026-05-11",
+     "title": "The Lyceum is the next host of Scottish Casting Network | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-dcf24c2f9b.txt",
+     "sha256": "dcf24c2f9b0e0da20a4669e16bee695c5aa6f0e9044ed496fb29df20fdcf7fb1",
+     "chars": 2014
+    },
+    {
+     "url": "https://lyceum.org.uk/news/james_brining_announced_as_new_artistic_director",
+     "status": 200,
+     "lastmod": "2024-10-15",
+     "title": "James Brining announced as The Lyceum's new Artistic Director | Lyceum",
+     "cache": "catalogue/cache/2026-11-16/lyceum-1b0c8cdd9c.txt",
+     "sha256": "1b0c8cdd9c032d5f6ccff0cf16099b25fb2acc3cfd2c7f47f02b6433d5715de1",
+     "chars": 7551
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 1,
+   "sitemap_urls": 316
+  },
+  {
+   "id": "northern-stage",
+   "name": "Northern Stage",
+   "base": "https://northernstage.co.uk/",
+   "pages": [
+    {
+     "url": "https://northernstage.co.uk/whats-on/little-creators-7-9-year-olds/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Little Creators: 7-9 year olds | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-ecaab1ce94.txt",
+     "sha256": "ecaab1ce94dae296ee436349fccad9d35e9d6d06db974f20ce1d6b61bf2f9d26",
+     "chars": 3957
+    },
+    {
+     "url": "https://northernstage.co.uk/whats-on/little-creators-10-12-year-olds/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Little Creators: 10-12 year olds | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-7624b8feb4.txt",
+     "sha256": "7624b8feb4de8aeb49ec38d27d384d86aee2972c9eb6c4396c1f6306519095fe",
+     "chars": 3962
+    },
+    {
+     "url": "https://northernstage.co.uk/whats-on/pierre-novellie/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Pierre Novellie: Okay, One More Then Bedtime\u00a0 | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-0adb5f54fb.txt",
+     "sha256": "0adb5f54fba3a4cebb2543688cf69804656e2aa6307ea4681ae19c70620f8cd9",
+     "chars": 3683
+    },
+    {
+     "url": "https://northernstage.co.uk/whats-on/the-christmas-sorting-office/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "The Christmas Sorting Office | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-9717e747ab.txt",
+     "sha256": "9717e747ab68fb989c2f02202d72fdf5937c3f0a83c2d3a0422fe4fd91f9d9cd",
+     "chars": 10013
+    },
+    {
+     "url": "https://northernstage.co.uk/whats-on/touch-tour/",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Touch Tour | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-5324427442.txt",
+     "sha256": "532442744296669c2fcd588435b00b7d7a441f34a43766f5e146cc483562233e",
+     "chars": 1619
+    },
+    {
+     "url": "https://northernstage.co.uk/whats-on/the-story-of-the-bayeux-tapestry/",
+     "status": 200,
+     "lastmod": "2026-11-10",
+     "title": "The Story of the Bayeux Tapestry: Unravelling the Norman Conquest | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-660e4667a9.txt",
+     "sha256": "660e4667a9eba1841c92f75ae7dec973808c8a373584db74fa4e79c672591641",
+     "chars": 5011
+    },
+    {
+     "url": "https://northernstage.co.uk/whats-on/what-wood-victoria-do/",
+     "status": 200,
+     "lastmod": "2026-11-10",
+     "title": "What Wood Victoria Do? | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-ece5d5c617.txt",
+     "sha256": "ece5d5c6178a85fa8873040362ce2d02c29c59286a705715f6281597b250318f",
+     "chars": 4363
+    },
+    {
+     "url": "https://northernstage.co.uk/whats-on/dry-bits/",
+     "status": 200,
+     "lastmod": "2026-11-10",
+     "title": "Dry Bits | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-0ae31a32b1.txt",
+     "sha256": "0ae31a32b10c87f606167270e9caf0b2aacd7118ab19e203aee81335ca11bf51",
+     "chars": 3854
+    },
+    {
+     "url": "https://northernstage.co.uk/whats-on/pride-and-prejudice-but-funny/",
+     "status": 200,
+     "lastmod": "2026-11-10",
+     "title": "Pride and Prejudice... But Funny | Northern Stage",
+     "cache": "catalogue/cache/2026-11-16/northern-stage-85290e3bdc.txt",
+     "sha256": "85290e3bdc1d4870ffd6962ccaa7707c69e70f3df2fd2feb8d3721aca1eeea42",
+     "chars": 4011
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 9,
+   "sitemap_urls": 842
+  },
+  {
+   "id": "everyman-playhouse",
+   "name": "Liverpool Everyman & Playhouse",
+   "base": "https://www.everymanplayhouse.com/",
+   "pages": [
+    {
+     "url": "https://everymanplayhouse.com/event/the-rock-n-roll-panto-2027-hansel-gretel/",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "The Rock \u2018n\u2019 Roll Panto 2027: Hansel and Gretel - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-e4fa039317.txt",
+     "sha256": "e4fa039317c598bf36f5230f4c3808f4b42a7ce2911fc77b27d9a390a49422e1",
+     "chars": 6213
+    },
+    {
+     "url": "https://everymanplayhouse.com/event/chloe-petts-call-me-by-my-surname/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Chloe Petts: Call Me By My Surname - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-84ed69985d.txt",
+     "sha256": "84ed69985d7e1fa8e2d86424106b4a041edbc466f3c2fa75b0436c548b3dd9f3",
+     "chars": 1956
+    },
+    {
+     "url": "https://everymanplayhouse.com/event/john-kearns-tilting-at-windmills/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "John Kearns: Tilting at Windmills - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-0dacb99bb0.txt",
+     "sha256": "0dacb99bb0d0b6cdb94a6c85cd0cb96fdcd75f293626d46903b2fad24999d54d",
+     "chars": 1908
+    },
+    {
+     "url": "https://everymanplayhouse.com/event/yep-age-is-revolting/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "YEP: Age is Revolting - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-b8e5536a44.txt",
+     "sha256": "b8e5536a449ffa7c08aba998667b7b4f8a53ec30db16f327c1110fb79b49b58e",
+     "chars": 1703
+    },
+    {
+     "url": "https://everymanplayhouse.com/event/mog-the-forgetful-cat/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Mog the Forgetful Cat - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-59a6a91aba.txt",
+     "sha256": "59a6a91abaa8f81864ccb865054b38f5b46a2ba8850f52257b42ceaa18382522",
+     "chars": 1939
+    },
+    {
+     "url": "https://everymanplayhouse.com/event/constellations/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Constellations - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-9ee094c620.txt",
+     "sha256": "9ee094c6208bb9e493cc3f1cdf80c59129e1b4321914114875e7a463f460b702",
+     "chars": 3973
+    },
+    {
+     "url": "https://everymanplayhouse.com/event/daniel-kitson-thrum-extra-date/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Daniel Kitson: Thrum - extra date - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-f0107667f4.txt",
+     "sha256": "f0107667f411658f156c58e41cf19cbd34acbf95a43e584f2300cf01d6eecf2c",
+     "chars": 2170
+    },
+    {
+     "url": "https://everymanplayhouse.com/event/ed-byrne-no-dramas/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Ed Byrne: No Dramas - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-2ecd0eed81.txt",
+     "sha256": "2ecd0eed816bd7c67b812c6eff061828eb7ef34c87708eda83293b42cdb1ce3f",
+     "chars": 1547
+    },
+    {
+     "url": "https://everymanplayhouse.com/event/mark-thomas-40-in-stand-up-years/",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Mark Thomas: 40 in Stand-Up Years - Liverpool Everyman & Playhouse Theatres",
+     "cache": "catalogue/cache/2026-11-16/everyman-playhouse-8b570ffc49.txt",
+     "sha256": "8b570ffc49f885be61db47c2d5fe26b624cdf14e226f7644abf053421c76b968",
+     "chars": 2830
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 10,
+   "sitemap_urls": 437
+  },
+  {
+   "id": "new-vic",
+   "name": "New Vic Theatre",
+   "base": "https://www.newvictheatre.org.uk/",
+   "pages": [
+    {
+     "url": "https://www.newvictheatre.org.uk/productions/the-borrowers-2/",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "The Borrowers. - New Vic TheatreThe Borrowers. - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-cc57455132.txt",
+     "sha256": "cc57455132656fb96b637ec8e988fd1e6023fca640cd1f6f8ebdb8f85d21b03c",
+     "chars": 9864
+    },
+    {
+     "url": "https://www.newvictheatre.org.uk/productions/the-manfreds-get-your-kicks-on-tour-26/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "The Manfreds: Get Your Kicks On Tour \u201926 - New Vic TheatreThe Manfreds: Get Your Kicks On Tour \u201926 - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-141f249b7a.txt",
+     "sha256": "141f249b7a1d00a51d98017081a5038df22a3bce0f1c0044b5d933b7e8affafa",
+     "chars": 4953
+    },
+    {
+     "url": "https://www.newvictheatre.org.uk/productions/the-albion-christmas-band-4/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "The Albion Christmas Band - New Vic TheatreThe Albion Christmas Band - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-725dc5043b.txt",
+     "sha256": "725dc5043bc3dd3ad4376fe25aac9da79e0c40ab66503079d7261187d084da85",
+     "chars": 5809
+    },
+    {
+     "url": "https://www.newvictheatre.org.uk/productions/the-froncysyllte-male-voice-choir-6/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "The Froncysyllte Male Voice Choir - New Vic TheatreThe Froncysyllte Male Voice Choir - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-9672087e0f.txt",
+     "sha256": "9672087e0fe7e685aadfd9c305fdaae5c2c17f5952e2ebcf8bddfd6f420e0220",
+     "chars": 5766
+    },
+    {
+     "url": "https://www.newvictheatre.org.uk/productions/the-blockheads-2/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "The Blockheads - New Vic TheatreThe Blockheads - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-318feeb5c8.txt",
+     "sha256": "318feeb5c8acce2934983aab92ed707ea12cf50d96750a090101f7df88197154",
+     "chars": 4630
+    },
+    {
+     "url": "https://www.newvictheatre.org.uk/productions/xuefei-yang/",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "Xuefei Yang - New Vic TheatreXuefei Yang - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-af597178be.txt",
+     "sha256": "af597178be73ddb9ec45cd14c9057803125f785fc5c1d86fa62109dab05f49a4",
+     "chars": 5333
+    },
+    {
+     "url": "https://www.newvictheatre.org.uk/whats-on/exhibitions/",
+     "status": 200,
+     "lastmod": "2026-11-09",
+     "title": "Exhibitions - New Vic TheatreExhibitions - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-e04f01bafb.txt",
+     "sha256": "e04f01bafb0a6125655ddefdd9d54df11a20417bb73ec627f95a33ecc9409766",
+     "chars": 4104
+    },
+    {
+     "url": "https://www.newvictheatre.org.uk/productions/the-39-steps-3/",
+     "status": 200,
+     "lastmod": "2026-11-03",
+     "title": "The 39 Steps - New Vic TheatreThe 39 Steps - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-86f0c3d91e.txt",
+     "sha256": "86f0c3d91e48e7a979b3b4112edb26272a29b5ffa63e78acc2230c09f343b201",
+     "chars": 6612
+    },
+    {
+     "url": "https://www.newvictheatre.org.uk/productions/folk/",
+     "status": 200,
+     "lastmod": "2026-11-03",
+     "title": "Folk - New Vic TheatreFolk - New Vic Theatre",
+     "cache": "catalogue/cache/2026-11-16/new-vic-11d3afc9c8.txt",
+     "sha256": "11d3afc9c86fedf58083e35ff4fb95281dd8c566634e7c18d008fd7a376dded2",
+     "chars": 6081
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 5,
+   "sitemap_urls": 1229
+  },
+  {
+   "id": "octagon",
+   "name": "Octagon Theatre Bolton",
+   "base": "https://octagonbolton.co.uk/",
+   "pages": [
+    {
+     "url": "https://octagonbolton.co.uk/events/a-celebration-of-barry-white",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Let The Music Play - A Celebration of Barry White | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-7c458e6dd0.txt",
+     "sha256": "7c458e6dd05525f4fa909420c644fa4337147d0d632eaafea3ebef867cd83dcd",
+     "chars": 798
+    },
+    {
+     "url": "https://octagonbolton.co.uk/events/family-saturdays-ages-3-5",
+     "status": 200,
+     "lastmod": "2026-11-14",
+     "title": "Family Saturdays: Ages 3-5 | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-8e7ecd1094.txt",
+     "sha256": "8e7ecd109404178c1d94161580b838b7102f4cf6385574bd5e9fb1bf624ec512",
+     "chars": 2347
+    },
+    {
+     "url": "https://octagonbolton.co.uk/events/family-saturdays-ages-5-7",
+     "status": 200,
+     "lastmod": "2026-11-14",
+     "title": "Family Saturdays: Ages 5-7 | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-86e3616647.txt",
+     "sha256": "86e36166478fd2a4506ff5118e6b4055922cbc49146ac806d47613a4c010f1b2",
+     "chars": 2453
+    },
+    {
+     "url": "https://octagonbolton.co.uk/events/cinderella-a-fairytale",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Cinderella: A Fairytale | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-56bd7601d8.txt",
+     "sha256": "56bd7601d809d90f387e5a284efbd7002a11dbc94978cff985c3413190e03fab",
+     "chars": 8091
+    },
+    {
+     "url": "https://octagonbolton.co.uk/events/bridges-company-wednesday",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Bridges Company Wednesday | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-0153d4160b.txt",
+     "sha256": "0153d4160b809fd0be408abbb228d5191dc3e87263ebc319e54e14bf5476a8d9",
+     "chars": 1281
+    },
+    {
+     "url": "https://octagonbolton.co.uk/events/bridges-company-thursday",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Bridges Company Thursday | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-c7f509e131.txt",
+     "sha256": "c7f509e131d05eaa4e4ead9d3db894c13cf0904ab6f2f3e277c9868d4e0a5dec",
+     "chars": 1308
+    },
+    {
+     "url": "https://octagonbolton.co.uk/events/social-theatre",
+     "status": 200,
+     "lastmod": "2026-11-11",
+     "title": "Social Theatre | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-18188caa3d.txt",
+     "sha256": "18188caa3db1dbefc90da38d9f44ef6834c8328952c58138827a49f84bac8c19",
+     "chars": 2378
+    },
+    {
+     "url": "https://octagonbolton.co.uk/events/put-big-light-on-2026",
+     "status": 200,
+     "lastmod": "2026-11-05",
+     "title": "Put Big Light On 2026 | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-9eb03ccd07.txt",
+     "sha256": "9eb03ccd07a211bcce1775864254376b1cca1b3dd2725147006aea1d6083bfb1",
+     "chars": 2220
+    },
+    {
+     "url": "https://octagonbolton.co.uk/events/light-festival-family-storytelling-performance",
+     "status": 200,
+     "lastmod": "2026-11-05",
+     "title": "The Lost Treasure: Family Storytelling Performance | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-d9b19afdef.txt",
+     "sha256": "d9b19afdefc72af26b416615d1e264d4bd3afbaa0c9c90e91823f6656ee847be",
+     "chars": 2165
+    },
+    {
+     "url": "https://octagonbolton.co.uk/news/the-trials-adult-cast-open-call",
+     "status": 200,
+     "lastmod": "2026-10-19",
+     "title": "The Octagon is searching for talented adult actors, to take centre stage in a powerful new production | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-84f2d8f4e0.txt",
+     "sha256": "84f2d8f4e0469a535898569a95fa4868037481dc781cae14a7b0f1f42cee4f5c",
+     "chars": 4046
+    },
+    {
+     "url": "https://octagonbolton.co.uk/news/full-cast-and-creatives-announced-for-pride-prejudice",
+     "status": 200,
+     "lastmod": "2026-10-19",
+     "title": "Full cast and creatives announced for Pride & Prejudice | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-4fe92f1ee7.txt",
+     "sha256": "4fe92f1ee74347eca601a54aeee17447e0f80c2b4f7d78046dad9934776436a0",
+     "chars": 3871
+    },
+    {
+     "url": "https://octagonbolton.co.uk/news/the-39-steps-full-cast-announcement",
+     "status": 200,
+     "lastmod": "2026-10-19",
+     "title": "The 39 Steps Full Cast Announcement | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-5eae9010bb.txt",
+     "sha256": "5eae9010bb41525e214beec1257e82dd6fd21b4df9dc6b577665844a359ccb59",
+     "chars": 4463
+    },
+    {
+     "url": "https://octagonbolton.co.uk/news/new-south-asian-arts-programme-announced-for-2025",
+     "status": 200,
+     "lastmod": "2026-10-19",
+     "title": "New South Asian arts programme announced for 2025 | Octagon Bolton",
+     "cache": "catalogue/cache/2026-11-16/octagon-7721ede131.txt",
+     "sha256": "7721ede131cb6b0388ad1a5d23838bc848ac7a007135d6b94643d873bc6291a2",
+     "chars": 2862
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 1,
+   "sitemap_urls": 1032
+  },
+  {
+   "id": "sjt",
+   "name": "Stephen Joseph Theatre",
+   "base": "https://www.sjt.uk.com/",
+   "pages": [
+    {
+     "url": "https://sjt.uk.com/events/doctor-who-the-satan-pit-12a",
+     "status": 200,
+     "lastmod": "2026-11-16",
+     "title": "Doctor Who: The Satan Pit (12A) | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-d59fcd187c.txt",
+     "sha256": "d59fcd187cb03df3f090e7067eec520420b115ea6a6ceb327b774e467408d08b",
+     "chars": 5197
+    },
+    {
+     "url": "https://sjt.uk.com/events/the-christmas-special-haus-of-games-with-the-isolation-creations",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "The Christmas Special: Haus of Games with The Isolation Creations | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-4067f63f8d.txt",
+     "sha256": "4067f63f8d18032be511672a08c93b95d08b5c21a931eca2a3d6f5a774e1c08d",
+     "chars": 6078
+    },
+    {
+     "url": "https://sjt.uk.com/events/paddy-young-will-sir-be-laughing-alone",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Paddy Young: Will Sir Be Laughing Alone? | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-7995c732de.txt",
+     "sha256": "7995c732de8547a4301403e46285015cb485e4b72781d29db8a1c5502f7fdb75",
+     "chars": 5729
+    },
+    {
+     "url": "https://sjt.uk.com/events/ebenezer-12a",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Ebenezer (12A) | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-7aa28388aa.txt",
+     "sha256": "7aa28388aa145dd70edc1375b836e5deeb3766f066efc3e23199d4b9dde52bc1",
+     "chars": 5158
+    },
+    {
+     "url": "https://sjt.uk.com/events/scrooge-1951-u",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Scrooge (1951, U) | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-131e661f28.txt",
+     "sha256": "131e661f28b9871353228807552921372e92c0ccab66bd11254d5c2130eccd52",
+     "chars": 4766
+    },
+    {
+     "url": "https://sjt.uk.com/events/merry-christmas-aubrey-flint-pg",
+     "status": 200,
+     "lastmod": "2026-11-13",
+     "title": "Merry Christmas Aubrey Flint (PG) | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-0b406a74bc.txt",
+     "sha256": "0b406a74bcf28f2d95966fa784b9785a3d504f53368c620dce7a649c3276dd51",
+     "chars": 5747
+    },
+    {
+     "url": "https://sjt.uk.com/events/its-a-wonderful-life-1946-u",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "It's a Wonderful Life - 80th Anniversary Re-Issue (1946, U) | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-7ea320c132.txt",
+     "sha256": "7ea320c132568b1470f63cb1004e10f53d3fe172f2d75602e42ebcfdf13f8ebd",
+     "chars": 4840
+    },
+    {
+     "url": "https://sjt.uk.com/events/home-alone-1990-pg",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "Home Alone (1990, PG) | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-0cbc7a1ff1.txt",
+     "sha256": "0cbc7a1ff1058dea67995786b99b25fac318c022b4d799f6af6e7245cf440f4a",
+     "chars": 4773
+    },
+    {
+     "url": "https://sjt.uk.com/events/its-a-wonderful-us",
+     "status": 200,
+     "lastmod": "2026-11-12",
+     "title": "It's A Wonderful Us | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-27226c2bbf.txt",
+     "sha256": "27226c2bbfbb33d982875e9eaba44c9eef8edb27f435c78c150ecfb7b42b07dc",
+     "chars": 6044
+    },
+    {
+     "url": "https://sjt.uk.com/news/2027-whats-next",
+     "status": 200,
+     "lastmod": "2026-10-28",
+     "title": "2027: What's Next? | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-c7b4180981.txt",
+     "sha256": "c7b41809815fde06c4435a47b8d99b6e74e14639bc2b09ca6ae3ba33c9b365fc",
+     "chars": 5736
+    },
+    {
+     "url": "https://sjt.uk.com/news/new-2027-touring-shows",
+     "status": 200,
+     "lastmod": "2026-10-02",
+     "title": "New Touring Shows for 2027! | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-8d04585712.txt",
+     "sha256": "8d04585712ed35ef7b77e07d2ab03aaa240226e2ee43fc66ac33f5d3368d9504",
+     "chars": 3185
+    },
+    {
+     "url": "https://sjt.uk.com/news/john-godbers-the-highwayman-meet-the-cast",
+     "status": 200,
+     "lastmod": "2026-09-09",
+     "title": "John Godber's The Highwayman: Meet the cast! | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-658b843609.txt",
+     "sha256": "658b8436099725d9d56f5910d54e4c906a62f4f05e27a33856498b1175b5da91",
+     "chars": 7197
+    },
+    {
+     "url": "https://sjt.uk.com/news/royal-ballet-and-opera-cinema-season-26-27",
+     "status": 200,
+     "lastmod": "2026-06-08",
+     "title": "Royal Ballet and Opera: Cinema Season 26 - 27 | Stephen Joseph Theatre",
+     "cache": "catalogue/cache/2026-11-16/sjt-ba89e2aaa2.txt",
+     "sha256": "ba89e2aaa288bb4d165ca557fab35ad14421cb9947b29da0258bf2a17b1b46c0",
+     "chars": 3379
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 1,
+   "sitemap_urls": 270
+  },
+  {
+   "id": "hull-truck",
+   "name": "Hull Truck Theatre",
+   "base": "https://www.hulltruck.co.uk/",
+   "pages": [
+    {
+     "url": "https://www.hulltruck.co.uk/news/a-brand-new-season-of-new-writing-awaits-at-hull-truck-theatre-in-2027/",
+     "status": 200,
+     "lastmod": "2026-11-10",
+     "title": "A brand-new season of new writing awaits at  Hull Truck Theatre in 2027 | HullTruckTheatre",
+     "cache": "catalogue/cache/2026-11-16/hull-truck-3a121f16f7.txt",
+     "sha256": "3a121f16f7d1c8ec45bcaa56ec813529a2e45f6b8ea832a85d981f90d4c16e20",
+     "chars": 11874
+    },
+    {
+     "url": "https://www.hulltruck.co.uk/news/cast-announcement-for-the-wind-in-the-willows-at-hull-truck-theatre-proudly-supported-by-hull-trains/",
+     "status": 200,
+     "lastmod": "2026-10-13",
+     "title": "Cast Announcement for  The Wind in The Willows at Hull Truck Theatre (Proudly Supported by Hull Trains)   | HullTruckTheatre",
+     "cache": "catalogue/cache/2026-11-16/hull-truck-597e0683b6.txt",
+     "sha256": "597e0683b633e28810438e6900afffcf434f04e5a56468f003671b48064fa27d",
+     "chars": 8010
+    },
+    {
+     "url": "https://www.hulltruck.co.uk/news/iconic-hull-nightclub-inspires-new-drama-spiders-coming-to-hull-truck-theatre-in-january-2027/",
+     "status": 200,
+     "lastmod": "2026-10-01",
+     "title": "Iconic Hull Nightclub Inspires New Drama, SPIDERS - Coming to Hull Truck Theatre in January 2027 | HullTruckTheatre",
+     "cache": "catalogue/cache/2026-11-16/hull-truck-4f91b84d9d.txt",
+     "sha256": "4f91b84d9d397a9e915aa1978dc7b7d9df58ccd8677eb357e4da10eead0bb870",
+     "chars": 5577
+    },
+    {
+     "url": "https://www.hulltruck.co.uk/news/cast-announced-for-hitchcock-inspired-hit-the-39-steps-a-co-production-presented-by-hull-truck-theatre-and-derby-theatre/",
+     "status": 200,
+     "lastmod": "2026-07-15",
+     "title": "Cast announced for  Hitchcock-inspired hit, The 39 Steps - A co-production presented by Hull Truck Theatre and Derby Theatre.  | HullTruckTheatre",
+     "cache": "catalogue/cache/2026-11-16/hull-truck-056c6f7f95.txt",
+     "sha256": "056c6f7f9519dd09ff404305426c4c99f5ad2b8a0e7924d3dc665a59572583e1",
+     "chars": 5453
+    }
+   ],
+   "robots": "found",
+   "sitemaps_read": 1,
+   "sitemap_urls": 242
+  }
+ ]
+}
