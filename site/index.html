@@ -313,13 +313,80 @@ body[data-view="home"] .page{gap:72px;padding-block:20px 80px}
 .foot .legend span{display:inline-flex;align-items:center;gap:8px}
 .foot .legend i{width:8px;height:8px;border-radius:50%}
 body[data-view="net"] .foot{display:none}
+
+/* phone: one-row header, stacked tables, more room */
+.m-btn{display:none;align-items:center;justify-content:center;gap:6px;height:40px;min-width:40px;padding:0 12px;background:var(--panel);border:1px solid var(--line2);border-radius:8px;font:500 14px var(--sans);cursor:pointer;color:var(--text)}
+.m-btn svg{stroke:var(--text)}
+.m-cancel{display:none}
+@media (max-width:640px){
+  body{font-size:15px;line-height:1.6}
+  .top-in{flex-wrap:nowrap;gap:10px;min-height:56px;padding-block:0;position:relative}
+  body:not([data-view="home"]) .m-btn{display:inline-flex}
+  .m-search{margin-left:auto}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line2);box-shadow:var(--shadow);
+    padding:8px max(16px,env(safe-area-inset-right,0px)) 12px max(16px,env(safe-area-inset-left,0px));overflow:visible;z-index:30}
+  body.menu-open:not([data-view="home"]) .nav{display:flex}
+  .nav a{display:flex;align-items:center;min-height:48px;padding:0 12px;font-size:16px;border-radius:8px}
+  .nav a[aria-current="page"]{box-shadow:inset 3px 0 0 var(--accent)}
+  .cmd{display:none;position:absolute;inset:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));width:auto;margin:0;z-index:31;align-items:center;gap:8px}
+  body.search-open:not([data-view="home"]) .cmd{display:flex}
+  .cmd input{height:40px;font-size:16px;flex:1}
+  .cmd kbd{display:none}
+  .cmd svg{left:12px}
+  .m-cancel{display:inline-flex;height:40px;align-items:center;padding:0 12px;background:none;border:1px solid var(--line2);border-radius:8px;color:var(--dim);cursor:pointer}
+  .sugg{top:calc(100% + 8px)}
+  .sugg a{min-height:48px}
+
+  .page{gap:36px;padding-block:24px 64px}
+  body[data-view="home"] .page{gap:56px}
+  .ph h1{font-size:26px}
+  .ph{gap:14px}
+  .ph .btn{width:100%;justify-content:center;min-height:44px}
+  .card{padding:18px 16px;gap:16px}
+  .cred{padding:16px;gap:10px}
+  .ev{font-size:13.5px;line-height:1.65}
+  .chips,.assoc{gap:8px}
+  .assoc a{display:inline-flex;align-items:center;min-height:36px}
+  .kpi b{font-size:26px}
+  .stats{grid-template-columns:minmax(0,1fr)}
+  .stats div{display:flex;justify-content:space-between;align-items:baseline;border-right:0;border-bottom:1px solid var(--line);padding:12px 16px}
+  .stats div:last-child{border-bottom:0}
+  .cols>.creds{order:2}
+
+  .filters{flex-direction:column;align-items:stretch;gap:12px}
+  .seg{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+  .seg::-webkit-scrollbar{display:none}
+  .seg button{flex:none;min-height:44px;white-space:nowrap}
+  .filters input[type="search"]{width:100%;min-height:44px;font-size:16px}
+  .check{min-height:44px}
+  .count{margin-left:0}
+
+  .tbl,.card .tbl{border:0;background:none;overflow:visible;margin:0;border-radius:0}
+  .tbl table,.tbl tbody,.tbl td{display:block;width:100%}
+  .tbl thead{display:none}
+  .tbl tbody{display:flex;flex-direction:column;gap:12px}
+  .tbl tr{display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .card .tbl tr{background:var(--panel2)}
+  .tbl td,tbody tr:hover td{padding:0;border:0;background:none;text-align:left}
+  .tbl td.num{font-family:var(--sans);text-align:left}
+  .tbl td:first-child{font-size:16px;font-weight:500}
+  .tbl td:not(:first-child)::before{content:attr(data-label);display:block;font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:4px}
+  .tbl td .sub{display:inline;margin-left:6px}
+  .empty{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+
+  .queue .q-x{display:none}
+  .queue .q-n{display:list-item}
+  .lp-cds li{padding:16px;gap:10px}
+  .node-label{font-size:12px}
+}
+.queue .q-n{display:none;border-style:solid;color:var(--faint)}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.sdot{animation:none}}
 </style>
 
 <header class="top">
   <div class="top-in gut">
     <a class="brand" href="#home"><b>Casting Weekly<span>.</span></b></a>
-    <nav class="nav" aria-label="Sections">
+    <nav class="nav" id="nav" aria-label="Sections">
       <a href="#overview">Overview</a>
       <a href="#network">Network</a>
       <a href="#casting-directors">Casting directors</a>
@@ -334,11 +401,14 @@ body[data-view="net"] .foot{display:none}
       <a class="lp-l" href="#about">Data standard</a>
       <a class="btn primary" href="#network">Explore the network →</a>
     </div>
+    <button type="button" class="m-btn m-search" id="mSearch" aria-label="Search" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    <button type="button" class="m-btn m-menu" id="mMenu" aria-expanded="false" aria-controls="nav">Menu</button>
     <div class="cmd">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" autocomplete="off" placeholder="Search people or productions" aria-label="Search people or productions" aria-controls="sugg">
       <kbd>/</kbd>
       <div class="sugg" id="sugg" role="listbox" hidden></div>
+      <button type="button" class="m-cancel" id="mCancel">Cancel</button>
     </div>
   </div>
 </header>
@@ -455,7 +525,7 @@ function table(cols, rows, empty){
   if(!rows.length) return h("div", {class:"tbl"}, h("p", {class:"empty"}, empty || "Nothing to show."));
   return h("div", {class:"tbl"}, h("table", null,
     h("thead", null, h("tr", null, cols.map(c => h("th", {class: c.endsWith("#") ? "num" : null}, c.replace(/#$/, ""))))),
-    h("tbody", null, rows.map(r => h("tr", null, r.map((c, i) => h("td", {class: cols[i].endsWith("#") ? "num" : null}, c)))))));
+    h("tbody", null, rows.map(r => h("tr", null, r.map((c, i) => h("td", {class: cols[i].endsWith("#") ? "num" : null, "data-label": cols[i].replace(/#$/, "")}, c)))))));
 }
 function creditCard(c, ctx){
   const r = prods.get(c.production), p = people.get(c.person);
@@ -473,6 +543,8 @@ function seg(options, current, onPick){
     h("button", {type:"button", "aria-pressed": String(value === current), onclick: () => onPick(value)}, label, n != null ? h("small", null, n) : null)));
 }
 
+const queueList = list => h("ul", {class:"queue"}, list.map((q, i) => h("li", {class: i >= 6 ? "q-x" : null}, q)),
+  list.length > 6 ? h("li", {class:"q-n"}, "and " + (list.length - 6) + " more") : null);
 /* ---------- views ---------- */
 const VIEWS = {};
 
@@ -502,7 +574,7 @@ VIEWS.overview = () => {
     h("div", {class:"cols wide-left"},
       card("Latest productions", table(["Production", "Venue", "Casting"], latest.map(r => [showLink(r), venueName(r.venue), castCell(r)])), h("a", {class:"more", href:"#productions"}, "All productions →")),
       card("Awaiting credits", RAW.queue.length
-        ? [h("p", {class:"muted", style:"margin:0"}, plural(RAW.queue.length, "production") + " queued for research. They appear here once their credits are confirmed."), h("ul", {class:"queue"}, RAW.queue.map(q => h("li", null, q)))]
+        ? [h("p", {class:"muted", style:"margin:0"}, plural(RAW.queue.length, "production") + " queued for research. They appear here once their credits are confirmed."), queueList(RAW.queue)]
         : h("p", {class:"muted", style:"margin:0"}, "Nothing queued.")))
   ];
 };
@@ -754,7 +826,7 @@ VIEWS.home = () => {
       h("div", {class:"lp-cov"},
         ["London", "Touring", "Regional"].map(t => h("div", {class:"lp-tile"}, h("b", null, n(t)), h("span", null, t))),
         h("div", {class:"lp-next"}, h("p", {class:"lbl"}, "Coming next · " + RAW.queue.length),
-          RAW.queue.length ? h("ul", {class:"queue"}, RAW.queue.map(q => h("li", null, q))) : h("p", {class:"muted", style:"margin:0"}, "Nothing queued.")))),
+          RAW.queue.length ? queueList(RAW.queue) : h("p", {class:"muted", style:"margin:0"}, "Nothing queued.")))),
     h("section", {class:"lp-sec", id:"lp-how"},
       h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "How it works"), h("h2", null, "A credit goes live only when its source says so")),
       h("div", {class:"lp-how"},
@@ -789,6 +861,7 @@ function route(){
   document.querySelectorAll(".nav a").forEach(a => a.getAttribute("href") === "#" + nav ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
   const isNet = key === "network";
   netEl.hidden = !isNet; page.hidden = isNet;
+  closeMenus();
   if(isNet) Net.show();
   else { page.replaceChildren(...[].concat(render()).filter(Boolean)); window.scrollTo(0, 0); }
 }
@@ -1003,7 +1076,9 @@ Net.init = function(){
       .attr("stroke-width", n => n === selected ? 3 : (n.kind === "prod" || n.kind === "theatre") ? 1.6 : 0);
     L.style("display", l => show(l.source) && show(l.target) ? null : "none").style("opacity", l => !f || (f.has(l.source.id) && f.has(l.target.id)) ? 1 : .05);
     const few = f && f.size <= 45;
-    T.style("display", n => show(n) && (n.hub || (few && f.has(n.id))) ? null : "none").style("opacity", n => !f || f.has(n.id) ? 1 : .25);
+    let lab = null;   // on a phone: the selection and its 12 best-connected neighbours only
+    if(selected && isPhone()) lab = new Set([selected.id, ...[...selected.nbrs].map(id => nodes.get(id)).filter(show).sort((a, b) => deg(b) - deg(a)).slice(0, 12).map(n => n.id)]);
+    T.style("display", n => show(n) && (lab ? lab.has(n.id) || (n.hub && f.has(n.id)) : n.hub || (few && f.has(n.id))) ? null : "none").style("opacity", n => !f || f.has(n.id) ? 1 : .25);
   }
   function fit(dur = 700){
     const vis = N.filter(n => visible[n.kind] && n.x != null); if(!vis.length || !W()) return;
@@ -1073,6 +1148,13 @@ Net.init = function(){
   layout("cd");
 };
 
+const mMenu = document.getElementById("mMenu"), mSearch = document.getElementById("mSearch");
+function closeMenus(){ document.body.classList.remove("menu-open", "search-open"); mMenu.setAttribute("aria-expanded", "false"); mSearch.setAttribute("aria-expanded", "false"); }
+mMenu.addEventListener("click", e => { e.stopPropagation(); const open = !document.body.classList.contains("menu-open"); closeMenus(); if(open){ document.body.classList.add("menu-open"); mMenu.setAttribute("aria-expanded", "true"); } });
+mSearch.addEventListener("click", e => { e.stopPropagation(); closeMenus(); document.body.classList.add("search-open"); mSearch.setAttribute("aria-expanded", "true"); q.focus(); });
+document.getElementById("mCancel").addEventListener("click", () => { q.value = ""; sugg.hidden = true; closeMenus(); mSearch.focus(); });
+document.addEventListener("click", e => { if(document.body.classList.contains("menu-open") && !e.target.closest(".top")) closeMenus(); });
+addEventListener("keydown", e => { if(e.key === "Escape" && (document.body.classList.contains("menu-open") || document.body.classList.contains("search-open"))) closeMenus(); });
 const topBar = document.querySelector(".top");
 const setHdr = () => document.documentElement.style.setProperty("--hdr-h", topBar.offsetHeight + "px");
 new ResizeObserver(setHdr).observe(topBar); setHdr();
