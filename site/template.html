@@ -143,10 +143,11 @@ td .sub{display:block;font-size:12px;color:var(--faint)}
 .cred-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
 .role{font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
 .role.cd{color:var(--cd)}
-.ev{margin:0;font:12.5px/1.6 var(--mono);color:var(--dim);background:var(--bg);border:1px solid var(--line);border-left:2px solid var(--accent);border-radius:4px;padding:8px 11px;overflow-wrap:anywhere}
-.prov{display:flex;flex-wrap:wrap;gap:4px 14px;font:11.5px var(--mono);color:var(--faint)}
-.prov a{color:var(--prod);text-decoration:none;overflow-wrap:anywhere}
-.prov a:hover{text-decoration:underline}
+.prov{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font:11.5px var(--mono);color:var(--faint)}
+.src{display:inline-flex;align-items:center;gap:6px;max-width:100%;padding:3px 10px;border:1px solid var(--line2);border-radius:999px;background:var(--prod-soft);color:var(--prod);font:500 11.5px var(--mono);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.src:hover{border-color:var(--prod)}
+.src svg{flex:none}
+@media (pointer:coarse){.src{min-height:32px;padding:4px 12px}}
 .note{border:1px solid var(--warn);background:var(--warn-soft);border-radius:8px;padding:12px 14px;color:var(--text)}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line2);border-radius:6px;padding:7px 12px;text-decoration:none;font-weight:500;cursor:pointer;white-space:nowrap}
 .btn:hover{border-color:var(--accent)}
@@ -344,7 +345,6 @@ body[data-view="net"] .foot{display:none}
   .ph .btn{width:100%;justify-content:center;min-height:44px}
   .card{padding:18px 16px;gap:16px}
   .cred{padding:16px;gap:10px}
-  .ev{font-size:13.5px;line-height:1.65}
   .chips,.assoc{gap:8px}
   .assoc a{display:inline-flex;align-items:center;min-height:36px}
   .kpi b{font-size:26px}
@@ -527,6 +527,11 @@ function table(cols, rows, empty){
     h("thead", null, h("tr", null, cols.map(c => h("th", {class: c.endsWith("#") ? "num" : null}, c.replace(/#$/, ""))))),
     h("tbody", null, rows.map(r => h("tr", null, r.map((c, i) => h("td", {class: cols[i].endsWith("#") ? "num" : null, "data-label": cols[i].replace(/#$/, "")}, c)))))));
 }
+const LINK_ICON = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14 21 3"/><path d="M15 3h6v6"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>';
+function srcPill(url){
+  const a = h("a", {class:"src", href:url, target:"_blank", rel:"noopener", title:"Open the source: " + url});
+  a.innerHTML = LINK_ICON; a.append(domain(url)); return a;
+}
 function creditCard(c, ctx){
   const r = prods.get(c.production), p = people.get(c.person);
   return h("article", {class:"cred"},
@@ -534,8 +539,7 @@ function creditCard(c, ctx){
       h("span", {class:"role" + (c.role === "Casting director" ? " cd" : "")}, c.role),
       ctx === "person" ? showLink(r) : personLink(p),
       ctx === "person" ? h("span", {class:"muted"}, venueName(r.venue)) : null),
-    h("blockquote", {class:"ev"}, "“" + c.evidence + "”"),
-    h("div", {class:"prov"}, h("a", {href:c.url, target:"_blank", rel:"noopener"}, domain(c.url) + " ↗"),
+    h("div", {class:"prov"}, srcPill(c.url),
       c.credited_as ? h("span", null, "Credited as " + c.credited_as) : null));
 }
 function seg(options, current, onPick){
@@ -679,7 +683,7 @@ VIEWS["data-quality"] = () => {
     card("Credits held back", [h("p", {class:"muted", style:"margin:0"}, "Suggested credits that their cited source did not confirm. They stay off the site until a source does."),
       table(["Production", "Role", "Name", "Reason", "Sources"], unc.map(u => [u.show, u.role, u.name || h("span", {class:"muted"}, "—"),
         h("span", {class:"pill warn"}, REASON[u.reason] || u.reason),
-        h("span", {class:"list-inline"}, (u.urls || []).map(x => h("a", {class:"lnk", href:x, target:"_blank", rel:"noopener", style:"color:var(--prod)"}, domain(x) + " ↗")))]), "Nothing held back.")],
+        h("span", {class:"list-inline"}, (u.urls || []).map(srcPill))]), "Nothing held back.")],
       h("span", {class:"pill" + (unc.length ? " warn" : " ok")}, unc.length)),
     h("div", {class:"cols"},
       card("Spellings merged", [h("p", {class:"muted", style:"margin:0"}, "Names judged to be one person, shown under the spelling with the most credits. Each credit keeps the spelling its source used."),
@@ -700,7 +704,7 @@ VIEWS.about = () => [
         h("li", null, "A credit is published only when the cited page names that person in that role for that production. Anything less is held back and listed on Data quality."),
         h("li", null, "Different spellings of one person's name are matched and shown under one name. The original spelling stays on each credit.")),
       h("h2", {class:"sec"}, "Reading a credit"),
-      h("p", null, "Each credit quotes the sentence or credit line it comes from, with a link to the page. Productions of the same show at different venues, or on different tours, are kept separate, because each has its own team."),
+      h("p", null, "Each credit links to the public page it comes from. Productions of the same show at different venues, or on different tours, are kept separate, because each has its own team."),
       h("p", null, "A casting director marked “Not stated” means no source read so far names one. It does not mean the production has none.")),
     card("Network key", h("ul", {class:"legend"},
       h("li", null, h("span", {class:"dot", style:"background:var(--cd)"}), h("span", null, h("b", null, "Casting director"), h("br"), h("span", {class:"muted"}, "Large circles when centred, sized by productions"))),
@@ -785,12 +789,11 @@ function heroCredit(c){
   return h("article", {class:"cred"},
     h("div", {class:"cred-h"}, h("span", {class:"role cd"}, "Casting director"), personLink(p)),
     h("div", {class:"cred-h"}, showLink(r), h("span", {class:"muted"}, venueName(r.venue))),
-    h("blockquote", {class:"ev"}, "“" + c.evidence + "”"),
-    h("div", {class:"prov"}, h("a", {href:c.url, target:"_blank", rel:"noopener"}, domain(c.url) + " ↗")));
+    h("div", {class:"prov"}, srcPill(c.url)));
 }
 VIEWS.home = () => {
   const n = t => PRODS.filter(r => r.type === t).length;
-  // three different casting directors on three different productions and pages, short quotes first
+  // three different casting directors on three different productions and pages
   const hero = [], usedProd = new Set(), usedUrl = new Set();
   for(const p of CDS){
     if(hero.length === 3) break;
@@ -815,7 +818,7 @@ VIEWS.home = () => {
       h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "What you can do"), h("h2", null, "The working relationships behind every production, in one place")),
       h("div", {class:"lp-feats"},
         feat("var(--cd)", "See who works with whom", "Follow a casting director to the directors, writers and venues they keep returning to. Reorder the network to ask the question you have.", "#network", "Open the network →"),
-        feat("var(--prod)", "Check any credit at source", "Every name links to the sentence or credit line that names them, on the show's site, the venue's page or the trade press.", "#productions", "Browse productions →"),
+        feat("var(--prod)", "Check any credit at source", "Every name links to the public page that credits them: the show's site, the venue's page or the trade press.", "#productions", "Browse productions →"),
         feat("var(--warn)", "Know what isn't stated", `${plural(NOCD.length, "production")} on file ${NOCD.length === 1 ? "has" : "have"} no casting credit in the sources yet. Gaps are shown, never filled in.`, "#data-quality", "See data quality →"))),
     h("section", {class:"lp-sec"},
       h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "Right now"), h("h2", null, "Most active casting directors"), h("p", null, "Ranked by productions on file.")),
@@ -1103,7 +1106,7 @@ Net.init = function(){
     D.replaceChildren();
     if(!selected){
       D.append(h("div", {class:"d-empty"}, h("p", {class:"lbl"}, "Quick view"), h("h2", null, "Select anyone in the network"),
-        h("p", null, "See who they worked with, on what, and where. Every connection quotes the public page it comes from."),
+        h("p", null, "See who they worked with, on what, and where. Every connection links to the public page it comes from."),
         h("p", null, "Start with a casting director on the left, or press / to search.")));
       return;
     }
