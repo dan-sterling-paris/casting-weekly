@@ -159,5 +159,47 @@
   "final": "https://www.whatsonstage.com/news/national-theatre-announces-the-jungle-books-full-company_1731628/",
   "title": "National Theatre announces The Jungle Book’s full company",
   "file": "e8925507bea5f490.txt"
+ },
+ "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:40:43Z",
+  "final": "https://www.broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813",
+  "title": "New Cast Will Join HADESTOWN in London This Month | BroadwayWorld",
+  "file": "36451c609a244675.txt"
+ },
+ "https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:40:47Z",
+  "final": "https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628/",
+  "title": "Hadestown reveals new West End casting",
+  "file": "ba0105e61e4339e0.txt"
+ },
+ "https://www.westend.com/shows/the-lion-king/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:40:49Z",
+  "final": "https://www.westend.com/shows/the-lion-king/",
+  "title": "The Lion King Tickets | Lyceum Theatre | WestEnd.com",
+  "file": "add3d6aad69bf1cc.txt"
+ },
+ "https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:40:52Z",
+  "final": "https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg",
+  "title": "Pippa Ailion CDG, Natalie Gallacher CDG | The Lion King UK",
+  "file": "45d499cd34423b9a.txt"
+ },
+ "https://www.thelionking.co.uk/london/cast-and-creatives": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:40:54Z",
+  "final": "https://www.thelionking.co.uk/cast-and-creatives",
+  "title": "The Lion King London | Cast, Creative, Crew & Orchestra",
+  "file": "9a9fdcfeba66ddd9.txt"
+ },
+ "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:40:54Z",
+  "final": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/",
+  "title": "Cabaret announces new casting for autumn 2026",
+  "file": "2f12b3fcb996e6fc.txt"
  }
 }

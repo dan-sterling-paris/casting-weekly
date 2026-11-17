@@ -708,5 +708,175 @@
   "evidence": "This world premiere is directed by Indhu Rubasingham, with Olivier winning actor Hiran Abeysekera as Mowgli and innovative puppetry by Lume: Nick Barnes and Finn Caldwell.",
   "rule": "K",
   "lookup_file": "2026-11-17-6.json"
+ },
+ {
+  "person": "Jacob Sparrow",
+  "role": "Casting director",
+  "production": "Hadestown (Lyric Theatre)",
+  "venue": "Lyric Theatre, London",
+  "url": "https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628",
+  "evidence": "Casting for the London production is by Jacob Sparrow.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Rachel Chavkin",
+  "role": "Director",
+  "production": "Hadestown (Lyric Theatre)",
+  "venue": "Lyric Theatre, London",
+  "url": "https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628",
+  "evidence": "The Tony Award-winning musical, which follows two interwoven tales of fraught love in a re-imagined Greek world, is penned by Anaïs Mitchell and directed by Rachel Chavkin.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Anaïs Mitchell",
+  "role": "Composer",
+  "production": "Hadestown (Lyric Theatre)",
+  "venue": "Lyric Theatre, London",
+  "url": "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813",
+  "evidence": "Hadestown features music, lyrics, and book by acclaimed Grammy®-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell, who originated Hadestown as an indie theatre project and acclaimed album.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Anaïs Mitchell",
+  "role": "Lyricist",
+  "production": "Hadestown (Lyric Theatre)",
+  "venue": "Lyric Theatre, London",
+  "url": "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813",
+  "evidence": "Hadestown features music, lyrics, and book by acclaimed Grammy®-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell, who originated Hadestown as an indie theatre project and acclaimed album.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Anaïs Mitchell",
+  "role": "Writer",
+  "production": "Hadestown (Lyric Theatre)",
+  "venue": "Lyric Theatre, London",
+  "url": "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813",
+  "evidence": "Hadestown features music, lyrics, and book by acclaimed Grammy®-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell, who originated Hadestown as an indie theatre project and acclaimed album.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Pippa Ailion",
+  "role": "Casting director",
+  "production": "The Lion King (Lyceum Theatre)",
+  "venue": "Lyceum Theatre, London",
+  "url": "https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg",
+  "evidence": "Pippa Ailion CDG, Natalie Gallacher CDG / London Casting",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Natalie Gallacher",
+  "role": "Casting director",
+  "production": "The Lion King (Lyceum Theatre)",
+  "venue": "Lyceum Theatre, London",
+  "url": "https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg",
+  "evidence": "Pippa Ailion CDG, Natalie Gallacher CDG / London Casting",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Julie Taymor",
+  "role": "Director",
+  "production": "The Lion King (Lyceum Theatre)",
+  "venue": "Lyceum Theatre, London",
+  "url": "https://www.westend.com/shows/the-lion-king/",
+  "evidence": "Julie Taymor / Director",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Roger Allers",
+  "role": "Writer",
+  "production": "The Lion King (Lyceum Theatre)",
+  "venue": "Lyceum Theatre, London",
+  "url": "https://www.thelionking.co.uk/london/cast-and-creatives",
+  "evidence": "Roger Allers / Book",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Irene Mecchi",
+  "role": "Writer",
+  "production": "The Lion King (Lyceum Theatre)",
+  "venue": "Lyceum Theatre, London",
+  "url": "https://www.thelionking.co.uk/london/cast-and-creatives",
+  "evidence": "Book / Irene Mecchi",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Elton John",
+  "role": "Composer",
+  "production": "The Lion King (Lyceum Theatre)",
+  "venue": "Lyceum Theatre, London",
+  "url": "https://www.thelionking.co.uk/london/cast-and-creatives",
+  "evidence": "Elton John / Music",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Tim Rice",
+  "role": "Lyricist",
+  "production": "The Lion King (Lyceum Theatre)",
+  "venue": "Lyceum Theatre, London",
+  "url": "https://www.thelionking.co.uk/london/cast-and-creatives",
+  "evidence": "Tim Rice / Lyrics",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Stuart Burt",
+  "role": "Casting director",
+  "production": "Cabaret (Kit Kat Club)",
+  "venue": "Kit Kat Club, London",
+  "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/",
+  "evidence": "…yte, musical direction by Ben van Tienen, lighting design by Isabella Byrd, sound design by Nick Lidster, wigs and hair design by Sam Cox, make-up design by Guy Common, casting by Stuart Burt, original associate direction and prologue direction by Jordan Fein, and prologue composition by Angus MacRae.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Rebecca Frecknall",
+  "role": "Director",
+  "production": "Cabaret (Kit Kat Club)",
+  "venue": "Kit Kat Club, London",
+  "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/",
+  "evidence": "The production is directed by Rebecca Frecknall, with set and costume design by Tom Scutt, choreography by Julia Cheng, musical supervision by Jennifer Whyte, musical direction by Ben van Tienen, lighting design by Isabella Byr…",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "John Kander",
+  "role": "Composer",
+  "production": "Cabaret (Kit Kat Club)",
+  "venue": "Kit Kat Club, London",
+  "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/",
+  "evidence": "Featuring music by John Kander, lyrics by Fred Ebb and a book by Joe Masteroff, Cabaret is based on the play by John Van Druten and stories by Christopher Isherwood.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Fred Ebb",
+  "role": "Lyricist",
+  "production": "Cabaret (Kit Kat Club)",
+  "venue": "Kit Kat Club, London",
+  "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/",
+  "evidence": "Featuring music by John Kander, lyrics by Fred Ebb and a book by Joe Masteroff, Cabaret is based on the play by John Van Druten and stories by Christopher Isherwood.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Joe Masteroff",
+  "role": "Writer",
+  "production": "Cabaret (Kit Kat Club)",
+  "venue": "Kit Kat Club, London",
+  "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/",
+  "evidence": "Featuring music by John Kander, lyrics by Fred Ebb and a book by Joe Masteroff, Cabaret is based on the play by John Van Druten and stories by Christopher Isherwood.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-7.json"
  }
 ]

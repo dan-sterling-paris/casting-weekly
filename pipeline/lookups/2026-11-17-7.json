@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Hadestown",
+    "Venue": "Lyric Theatre, London",
+    "Casting Director": "Jacob Sparrow",
+    "Director": "Rachel Chavkin",
+    "Writer": "Music: Anaïs Mitchell; Lyrics: Anaïs Mitchell; Book: Anaïs Mitchell",
+    "Sources": {
+      "Venue": ["https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813", "https://theatreweekly.com/dylan-wood-and-madeline-charlemagne-lead-the-new-cast-of-hadestown-in-london", "https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628"],
+      "Casting Director": ["https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628", "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813", "https://theatreweekly.com/dylan-wood-and-madeline-charlemagne-lead-the-new-cast-of-hadestown-in-london"],
+      "Director": ["https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628", "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813", "https://theatreweekly.com/dylan-wood-and-madeline-charlemagne-lead-the-new-cast-of-hadestown-in-london"],
+      "Writer": ["https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813", "https://theatreweekly.com/dylan-wood-and-madeline-charlemagne-lead-the-new-cast-of-hadestown-in-london", "https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628"]
+    }
+  },
+  {
+    "Production Name": "The Lion King",
+    "Venue": "Lyceum Theatre, London",
+    "Casting Director": "Pippa Ailion; Natalie Gallacher",
+    "Director": "Julie Taymor",
+    "Writer": "Book: Roger Allers and Irene Mecchi; Music: Elton John; Lyrics: Tim Rice",
+    "Sources": {
+      "Venue": ["https://www.westend.com/shows/the-lion-king/", "https://www.whatsonstage.com/news/the-lion-king-welcomes-a-former-simba-back-to-the-west-end_1709908"],
+      "Casting Director": ["https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg", "https://www.westend.com/shows/the-lion-king/"],
+      "Director": ["https://www.thelionking.co.uk/london/cast-and-creatives", "https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg", "https://www.westend.com/shows/the-lion-king/", "https://www.whatsonstage.com/news/the-lion-king-welcomes-a-former-simba-back-to-the-west-end_1709908"],
+      "Writer": ["https://www.thelionking.co.uk/london/cast-and-creatives", "https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg", "https://www.whatsonstage.com/news/the-lion-king-welcomes-a-former-simba-back-to-the-west-end_1709908"]
+    }
+  },
+  {
+    "Production Name": "Cabaret",
+    "Venue": "Kit Kat Club, London",
+    "Casting Director": "Stuart Burt",
+    "Director": "Rebecca Frecknall",
+    "Writer": "Music: John Kander; Lyrics: Fred Ebb; Book: Joe Masteroff",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "https://www.broadwayworld.com/article/Matt-Willis-and-Katie-Hall-Will-Lead-CABARET-AT-THE-KIT-KAT-CLUB-in-London-20251210"],
+      "Casting Director": ["https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "https://www.broadwayworld.com/article/Jamie-MuscatoandJoy-Woods-Will-Lead-CABARET-AT-THE-KIT-KAT-CLUB-in-London-20260410", "https://www.broadwayworld.com/article/Matt-Willis-and-Katie-Hall-Will-Lead-CABARET-AT-THE-KIT-KAT-CLUB-in-London-20251210", "https://www.whatsonstage.com/news/cabaret-announces-new-west-end-stars-for-summer-2026_1717455"],
+      "Director": ["https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "https://www.broadwayworld.com/article/Jamie-MuscatoandJoy-Woods-Will-Lead-CABARET-AT-THE-KIT-KAT-CLUB-in-London-20260410", "https://www.broadwayworld.com/article/Matt-Willis-and-Katie-Hall-Will-Lead-CABARET-AT-THE-KIT-KAT-CLUB-in-London-20251210", "https://www.whatsonstage.com/news/cabaret-announces-new-west-end-stars-for-summer-2026_1717455"],
+      "Writer": ["https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "https://www.broadwayworld.com/article/Jamie-MuscatoandJoy-Woods-Will-Lead-CABARET-AT-THE-KIT-KAT-CLUB-in-London-20260410", "https://www.broadwayworld.com/article/Matt-Willis-and-Katie-Hall-Will-Lead-CABARET-AT-THE-KIT-KAT-CLUB-in-London-20251210", "https://www.whatsonstage.com/news/cabaret-announces-new-west-end-stars-for-summer-2026_1717455"]
+    }
+  }
+]

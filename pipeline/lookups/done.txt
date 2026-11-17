@@ -12,3 +12,6 @@ Les Miserables, London  →  2026-11-17-3.json
 To Sir With Love, UK Tour  →  2026-11-17-4.json
 Sunset Boulevard, Bolton Octagon  →  2026-11-17-5.json
 The Jungle Book, National Theatre London  →  2026-11-17-6.json
+Hadestown, London  →  2026-11-17-7.json
+Lion King, London  →  2026-11-17-7.json
+Cabaret, London  →  2026-11-17-7.json
