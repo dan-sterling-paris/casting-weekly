@@ -13,7 +13,7 @@ import re
 from collections import defaultdict
 from urllib.parse import urlparse
 from common import CACHE, OUT, ROOT, UA, get, html_to_text, key, now, robots, sha
-from rules import sentences
+from rules import QUALIFIERS, sentences
 
 LOOKUPS = ROOT / "lookups"
 PAGES = OUT / "lookup_pages.json"
@@ -23,7 +23,7 @@ WRITER_PART = {"book": "Writer", "music": "Composer", "lyrics": "Lyricist", "mus
 
 # the role must be stated next to the name: in the same sentence, or on the line just before or after it
 ROLE_WORD = {"Casting director": r"casting", "Director": r"direct", "Writer": r"writ|book|creat|playwright|adapt|monologue|script",
-             "Composer": r"music|compos|score", "Lyricist": r"lyric"}
+             "Composer": r"music(?!al)|compos|score", "Lyricist": r"lyric"}
 
 
 def around(sentence, name, width=180):
@@ -37,17 +37,32 @@ def around(sentence, name, width=180):
     return ("…" if a else "") + sentence[a:b] + ("…" if b < len(sentence) else "")
 
 
+LABEL_WORDS = re.compile(r"\b(casting|castings|director|directed|direction|music|lyrics|book|written|writer|bookwriter|composer|"
+                         r"lyricist|original|adaptation|adapted|creative|team|by|and|uk)\b", re.I)
+
+
+def is_label(line, role):
+    """A line that only names a role, e.g. "Director -", "Music & Lyrics by", "UK Casting" (not "Associate Director")."""
+    if len(line) >= 60 or not re.search(r"\b(?:%s)" % ROLE_WORD[role], line, re.I):
+        return False
+    if role in ("Director", "Casting director") and re.search(r"\b%s" % QUALIFIERS, line):
+        return False
+    rest = LABEL_WORDS.sub(" ", line)
+    return not re.search(r"[A-Z][a-z'’-]+\s+[A-Z][a-z]", rest)   # no other person's name on the label line
+
+
 def role_evidence(text, name, role):
+    """Prefer a credit label line next to the name ("Director -" / "Joe Mantello"); otherwise a sentence with both."""
     rx = re.compile(r"\b(?:%s)" % ROLE_WORD[role], re.I)
+    lines = [x.strip() for x in text.split("\n")]
+    for i, line in enumerate(lines):
+        if contains(line, name) and len(line) < 80:   # a short label/name line
+            for j in (i - 1, i + 1):
+                if 0 <= j < len(lines) and is_label(lines[j], role):
+                    return " / ".join([lines[j], line] if j < i else [line, lines[j]])
     for s in sentences(text):
         if contains(s, name) and rx.search(s):
             return s
-    lines = [x.strip() for x in text.split("\n")]
-    for i, line in enumerate(lines):
-        if contains(line, name) and len(line) < 80:   # a short label/name line, e.g. "Director -" then "Joe Mantello"
-            near = [lines[j] for j in (i - 1, i + 1) if 0 <= j < len(lines)]
-            if any(rx.search(x) and len(x) < 60 for x in near):
-                return " / ".join([lines[i - 1], line] if i and rx.search(lines[i - 1]) else [line, lines[i + 1]])
     return None
 
 

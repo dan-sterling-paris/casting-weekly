@@ -110,5 +110,19 @@
   "final": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
   "title": "Phantom of the Opera confirms 40th anniversary West End cast",
   "file": "e37630dc20dd4469.txt"
+ },
+ "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:19:17Z",
+  "final": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+  "title": "Les Misérables announces new West End cast for summer 2026",
+  "file": "89ce3a4d2d68a8d6.txt"
+ },
+ "https://london.lesmis.com/cast-creative/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:19:20Z",
+  "final": "https://london.lesmis.com/cast-creative/",
+  "title": "Cast & Creative | Les Misérables London | Official Website",
+  "file": "5d801b05074c87e8.txt"
  }
 }

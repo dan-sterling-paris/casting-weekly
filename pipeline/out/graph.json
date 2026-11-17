@@ -191,7 +191,7 @@
    "year": null
   },
   {
-   "evidence": "Wicked is written by Winnie Holzman and this production is directed by Joe Mantello.",
+   "evidence": "Director - / Joe Mantello",
    "person": "Joe Mantello",
    "production": "Wicked (Apollo Victoria Theatre)",
    "role": "Director",
@@ -201,7 +201,7 @@
    "year": null
   },
   {
-   "evidence": "Wicked is written by Winnie Holzman and this production is directed by Joe Mantello.",
+   "evidence": "Book by - / Winnie Holzman",
    "person": "Winnie Holzman",
    "production": "Wicked (Apollo Victoria Theatre)",
    "role": "Writer",
@@ -371,7 +371,7 @@
    "year": null
   },
   {
-   "evidence": "Best Book of a Musical: Jeff Whitty won.",
+   "evidence": "Jeff Whitty / Bookwriter",
    "person": "Jeff Whitty",
    "production": "Avenue Q (Golden Theatre)",
    "role": "Writer",
@@ -468,6 +468,96 @@
    "rule": "K",
    "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
    "venue": "His Majesty's Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "The production is directed by James Powell and Laurence Connor, designed by Matt Kinley inspired by the paintings of Victor Hugo with costumes by Andreane Neofitou, Christine Rowland and Paul Wills, lighting by Paule Const…",
+   "person": "James Powell",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Director",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+   "venue": "Sondheim Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "The production is directed by James Powell and Laurence Connor, designed by Matt Kinley inspired by the paintings of Victor Hugo with costumes by Andreane Neofitou, Christine Rowland and Paul Wills, lighting by Paule Constable, sound by Mick …",
+   "person": "Laurence Connor",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Director",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+   "venue": "Sondheim Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "Written by Alain Boublil and Claude-Michel Schönberg, the show is based on the novel by Victor Hugo.",
+   "person": "Alain Boublil",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Writer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+   "venue": "Sondheim Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "Written by Alain Boublil and Claude-Michel Schönberg, the show is based on the novel by Victor Hugo.",
+   "person": "Claude-Michel Schönberg",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Writer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+   "venue": "Sondheim Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "Book & Music / Claude-Michel Schönberg",
+   "person": "Claude-Michel Schönberg",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Composer",
+   "rule": "K",
+   "url": "https://london.lesmis.com/cast-creative/",
+   "venue": "Sondheim Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "It has music by Schönberg, lyrics by Herbert Kretzmer and original French text by Boublil and Jean-Marc Natel, additional material by James Fenton and adaptation by Trevor Nunn and John Caird.",
+   "person": "Herbert Kretzmer",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Lyricist",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+   "venue": "Sondheim Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "It has music by Schönberg, lyrics by Herbert Kretzmer and original French text by Boublil and Jean-Marc Natel, additional material by James Fenton and adaptation by Trevor Nunn and John Caird.",
+   "person": "Jean-Marc Natel",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Writer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+   "venue": "Sondheim Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "It has music by Schönberg, lyrics by Herbert Kretzmer and original French text by Boublil and Jean-Marc Natel, additional material by James Fenton and adaptation by Trevor Nunn and John Caird.",
+   "person": "Trevor Nunn",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Writer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+   "venue": "Sondheim Theatre, London",
+   "year": null
+  },
+  {
+   "evidence": "It has music by Schönberg, lyrics by Herbert Kretzmer and original French text by Boublil and Jean-Marc Natel, additional material by James Fenton and adaptation by Trevor Nunn and John Caird.",
+   "person": "John Caird",
+   "production": "Les Misérables (Sondheim Theatre)",
+   "role": "Writer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
+   "venue": "Sondheim Theatre, London",
    "year": null
   }
  ],
