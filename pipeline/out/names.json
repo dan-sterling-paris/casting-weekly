@@ -1,6 +1,6 @@
 {
  "aliases": {
-  "Grindrod Burton Casting": "Grindrod Burton",
+  "Grindrod Burton": "Grindrod Burton Casting",
   "Natalia Gallacher": "Natalie Gallacher",
   "Pippa Ailion Casting": "Pippa Ailion"
  },
@@ -14,13 +14,13 @@
   {
    "a": "Grindrod Burton",
    "b": "Grindrod Burton Casting",
-   "p": 0.998,
-   "shown_as": "Grindrod Burton"
+   "p": 0.9981,
+   "shown_as": "Grindrod Burton Casting"
   },
   {
    "a": "Pippa Ailion",
    "b": "Pippa Ailion Casting",
-   "p": 0.998,
+   "p": 0.9981,
    "shown_as": "Pippa Ailion"
   }
  ],

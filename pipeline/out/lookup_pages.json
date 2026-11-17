@@ -484,5 +484,54 @@
   "final": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/",
   "title": "Dr Seuss's How The Grinch Stole Christmas! The Musical - Leeds Playhouse",
   "file": "7608541562c6395a.txt"
+ },
+ "https://theatreweekly.com/singin-in-the-rain-to-play-christmas-season-at-sheffield-theatres/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T17:19:07Z",
+  "final": "https://theatreweekly.com/singin-in-the-rain-to-play-christmas-season-at-sheffield-theatres/",
+  "title": "Singin’ in the Rain to play Christmas season at Sheffield Theatres - Theatre Weekly",
+  "file": "25f39a361f991a62.txt"
+ },
+ "https://www.westendbestfriend.co.uk/news/singin-in-the-rain-christmas-season-sheffield-theatres-uk-tour": {
+  "status": 200,
+  "fetched_at": "2026-11-17T17:19:10Z",
+  "final": "https://www.westendbestfriend.co.uk/news/singin-in-the-rain-christmas-season-sheffield-theatres-uk-tour",
+  "title": "SINGIN' IN THE RAIN to play Christmas season at Sheffield Theatres prior to UK tour | West End Best Friend",
+  "file": "3e299fe94b502b95.txt"
+ },
+ "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T17:19:12Z",
+  "final": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/",
+  "title": "Singin’ in the Rain tour announces full company including Karen Hauer, Natalie Anderson and more",
+  "file": "6d0e222e7caeb3fe.txt"
+ },
+ "https://www.whatsonstage.com/news/full-cast-for-a-christmas-carol-at-the-lowry-confirmed_1735666/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T17:19:14Z",
+  "final": "https://www.whatsonstage.com/news/full-cast-for-a-christmas-carol-at-the-lowry-confirmed_1735666/",
+  "title": "Full cast for A Christmas Carol at the Lowry confirmed",
+  "file": "99f5105c3525bf49.txt"
+ },
+ "https://www.whatsonstage.com/news/scrooge-casting-for-salford-run-of-old-vics-a-christmas-carol-revealed_1731979/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T17:19:17Z",
+  "final": "https://www.whatsonstage.com/news/scrooge-casting-for-salford-run-of-old-vics-a-christmas-carol-revealed_1731979/",
+  "title": "Scrooge casting for Salford run of Old Vic’s A Christmas Carol revealed",
+  "file": "5b4a8660bb8ece7c.txt"
+ },
+ "https://www.curveonline.co.uk/news/stage-adaptation-of-daisy-and-the-trouble-with-christmas-announced-as-festive-family-show/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T17:19:20Z",
+  "final": "https://www.curveonline.co.uk/news/stage-adaptation-of-daisy-and-the-trouble-with-christmas-announced-as-festive-family-show/",
+  "title": "Stage adaptation of DAISY AND THE TROUBLE WITH CHRISTMAS announced as festive family show - Curve Theatre, Leicester",
+  "file": "d55e1506a8a979fd.txt"
+ },
+ "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T17:19:37Z",
+  "final": "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/",
+  "title": "Daisy and the Trouble with Christmas - Curve Theatre, Leicester",
+  "file": "3eb11cfcc06a9b16.txt"
  }
 }

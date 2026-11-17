@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Singin' in the Rain",
+    "Venue": "Crucible, Sheffield",
+    "Casting Director": "Olivia Laydon; Jill Green Casting",
+    "Director": "Jonathan Church",
+    "Writer": "Book: Betty Comden; Book: Adolph Green; Songs: Nacio Herb Brown; Songs: Arthur Freed",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/singin-in-the-rain-to-play-christmas-season-at-sheffield-theatres/", "https://www.westendbestfriend.co.uk/news/singin-in-the-rain-christmas-season-sheffield-theatres-uk-tour", "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/"],
+      "Casting Director": ["https://www.westendbestfriend.co.uk/news/singin-in-the-rain-christmas-season-sheffield-theatres-uk-tour", "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/"],
+      "Director": ["https://theatreweekly.com/singin-in-the-rain-to-play-christmas-season-at-sheffield-theatres/", "https://www.westendbestfriend.co.uk/news/singin-in-the-rain-christmas-season-sheffield-theatres-uk-tour", "https://theatreweekly.com/rehearsal-photos-released-for-singin-in-the-rain-ahead-of-sheffield-christmas-run/"],
+      "Writer": ["https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/"]
+    }
+  },
+  {
+    "Production Name": "A Christmas Carol",
+    "Venue": "Lowry, Salford",
+    "Casting Director": "Grindrod Burton Casting",
+    "Director": "Matthew Warchus",
+    "Writer": "Adapted by Jack Thorne",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/full-cast-for-a-christmas-carol-at-the-lowry-confirmed_1735666/", "https://theatreweekly.com/full-cast-announced-for-the-old-vics-a-christmas-carol-at-lowry/", "https://www.broadwayworld.com/article/The-Old-Vics-Hit-A-CHRISTMAS-CAROL-Will-Premiere-at-Lowry-Salford-20260331"],
+      "Casting Director": ["https://www.whatsonstage.com/news/scrooge-casting-for-salford-run-of-old-vics-a-christmas-carol-revealed_1731979/", "https://www.whatsonstage.com/news/full-cast-for-a-christmas-carol-at-the-lowry-confirmed_1735666/", "https://theatreweekly.com/full-cast-announced-for-the-old-vics-a-christmas-carol-at-lowry/"],
+      "Director": ["https://www.whatsonstage.com/news/full-cast-for-a-christmas-carol-at-the-lowry-confirmed_1735666/", "https://theatreweekly.com/full-cast-announced-for-the-old-vics-a-christmas-carol-at-lowry/", "https://www.broadwayworld.com/article/The-Old-Vics-Hit-A-CHRISTMAS-CAROL-Will-Premiere-at-Lowry-Salford-20260331"],
+      "Writer": ["https://www.whatsonstage.com/news/full-cast-for-a-christmas-carol-at-the-lowry-confirmed_1735666/", "https://theatreweekly.com/full-cast-announced-for-the-old-vics-a-christmas-carol-at-lowry/", "https://www.whatsonstage.com/news/scrooge-casting-for-salford-run-of-old-vics-a-christmas-carol-revealed_1731979/"]
+    }
+  },
+  {
+    "Production Name": "Daisy and the Trouble with Christmas",
+    "Venue": "Studio Theatre, Curve, Leicester",
+    "Casting Director": "Unknown",
+    "Director": "Hannah Stone; Ria Ashcroft",
+    "Writer": "Adapted by Sarah Middleton from the book by Kes Gray; Music: Darren Clark; Lyrics: Darren Clark",
+    "Sources": {
+      "Venue": ["https://www.curveonline.co.uk/news/stage-adaptation-of-daisy-and-the-trouble-with-christmas-announced-as-festive-family-show/", "https://theatreweekly.com/world-premiere-of-daisy-and-the-trouble-with-christmas-announced-at-curve/", "https://www.broadwayworld.com/uk-regional/article/DAISY-AND-THE-TROUBLE-WITH-CHRISTMAS-To-Be-Presented-By-Curve-Theatre-20260610"],
+      "Casting Director": [],
+      "Director": ["https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/", "https://www.curveonline.co.uk/news/stage-adaptation-of-daisy-and-the-trouble-with-christmas-announced-as-festive-family-show/", "https://theatreweekly.com/world-premiere-of-daisy-and-the-trouble-with-christmas-announced-at-curve/"],
+      "Writer": ["https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/", "https://www.curveonline.co.uk/news/stage-adaptation-of-daisy-and-the-trouble-with-christmas-announced-as-festive-family-show/", "https://www.haworthagency.co.uk/news/sarah-middletons-adaptation-of-daisy-and-the-trouble-with-christmas-announced"]
+    }
+  }
+]

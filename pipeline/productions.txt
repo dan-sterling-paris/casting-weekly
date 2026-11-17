@@ -1,8 +1,5 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-Singin' in the Rain, 2026 Sheffield Crucible
-A Christmas Carol, 2026 The Lowry Salford
-Daisy and the Trouble with Christmas, 2026 Curve Leicester
 Puss in Boots, 2026 Stephen Joseph Theatre Scarborough
 My Fair Lady, 2026 Chichester Festival Theatre

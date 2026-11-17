@@ -33,3 +33,6 @@ Sister Act, 2027 UK Tour  →  2026-11-17-12.json
 Hairspray, 2027 UK Tour  →  2026-11-17-13.json
 Grease, 2027 UK Tour  →  2026-11-17-13.json
 How the Grinch Stole Christmas, 2026 Leeds Playhouse  →  2026-11-17-13.json
+Singin' in the Rain, 2026 Sheffield Crucible  →  2026-11-17-14.json
+A Christmas Carol, 2026 The Lowry Salford  →  2026-11-17-14.json
+Daisy and the Trouble with Christmas, 2026 Curve Leicester  →  2026-11-17-14.json
