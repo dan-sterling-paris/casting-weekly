@@ -1,0 +1,21 @@
+{
+ "aliases": {
+  "Natalia Gallacher": "Natalie Gallacher",
+  "Pippa Ailion Casting": "Pippa Ailion"
+ },
+ "merged": [
+  {
+   "a": "Natalia Gallacher",
+   "b": "Natalie Gallacher",
+   "p": 1.0,
+   "shown_as": "Natalie Gallacher"
+  },
+  {
+   "a": "Pippa Ailion",
+   "b": "Pippa Ailion Casting",
+   "p": 0.9986,
+   "shown_as": "Pippa Ailion"
+  }
+ ],
+ "review": []
+}

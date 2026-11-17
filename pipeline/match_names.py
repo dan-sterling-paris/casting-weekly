@@ -16,7 +16,8 @@ Pairs scoring at least AUTO are merged on the graph under the spelling with the 
 Pairs between REVIEW and AUTO are only listed. pipeline/name_rules.txt overrides both.
 
 Reads pipeline/out/lookup_credits.json and pipeline/name_rules.txt.
-Writes pipeline/out/name_aliases.json (used by extract.py) and pipeline/out/NAME_MATCHES.md.
+Writes pipeline/out/names.json: the aliases extract.py applies, plus the merged and for-review pairs that the
+site's Data quality page lists.
 """
 import json
 import logging
@@ -161,17 +162,11 @@ for members in clusters.values():
         if n != canon:
             aliases[n] = canon
 
-(OUT / "name_aliases.json").write_text(json.dumps(aliases, indent=1, ensure_ascii=False, sort_keys=True))
-md = ["# Names that may be the same person", "",
-      "Scored by Splink (`pipeline/match_names.py`). Merged pairs are shown on the graph under one spelling; "
-      "each credit still quotes the spelling its source used. To change a decision, add a line to "
-      "`pipeline/name_rules.txt`.", "", "## Merged (match probability %.0f%% or more)" % (AUTO * 100), ""]
-md += ["- %s / %s → shown as **%s** · %.1f%%" % (a, b, aliases.get(a, a) if a in aliases else aliases.get(b, b), p * 100)
-       for a, b, p in merged] or ["- none"]
-md += ["", "## Merged by name_rules.txt", ""] + (["- %s → **%s**" % (a, b) for a, b in same.items()] or ["- none"])
-md += ["", "## For review (%.0f–%.0f%%), not merged" % (REVIEW * 100, AUTO * 100), ""]
-md += ["- %s / %s · %.1f%% · to merge: `same: %s = %s` · to dismiss: `different: %s | %s`" % (a, b, p * 100, a, b, a, b)
-       for a, b, p in review] or ["- none"]
-(OUT / "NAME_MATCHES.md").write_text("\n".join(md) + "\n")
+canon = lambda a, b: aliases.get(a) or aliases.get(b) or b
+names_out = {"aliases": aliases,
+             "merged": [{"a": a, "b": b, "shown_as": canon(a, b), "p": round(p, 4)} for a, b, p in merged] +
+                       [{"a": a, "b": b, "shown_as": canon(a, b), "p": None} for a, b in same.items()],
+             "review": [{"a": a, "b": b, "p": round(p, 4)} for a, b, p in review]}
+(OUT / "names.json").write_text(json.dumps(names_out, indent=1, ensure_ascii=False, sort_keys=True))
 print("names %d · merged %d · for review %d · %s" % (len(names), len(aliases), len(review),
       "; ".join("%s → %s" % kv for kv in sorted(aliases.items())) or "no merges"))

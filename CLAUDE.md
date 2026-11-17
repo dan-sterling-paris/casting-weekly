@@ -14,12 +14,13 @@ scheduled "Casting Weekly lookup" message arrives:
    This moves them from the queue to `pipeline/lookups/done.txt`.
 5. Run `pip install -q -r pipeline/requirements.txt` (Splink; once per container), then
    `python3 pipeline/check_lookups.py && python3 pipeline/match_names.py && python3 pipeline/extract.py`.
-   `match_names.py` uses Splink to merge spellings of one person (e.g. "Natalia"/"Natalie Gallacher") and lists
-   near-misses in `pipeline/out/NAME_MATCHES.md`. Dan's `pipeline/name_rules.txt` (`same:` / `different:`) overrides it.
+   `check_lookups.py` keeps only credits their cited page confirms (the rest go to `pipeline/out/unconfirmed.json`);
+   `match_names.py` uses Splink to merge spellings of one person (`pipeline/out/names.json`; Dan's
+   `pipeline/name_rules.txt` with `same:` / `different:` lines overrides it); `extract.py` builds `site/index.html`.
 6. Commit and push to `claude/adoring-babbage-p2ckfa`. If the push is rejected, `git pull --no-edit` and push again. Never force-push.
-7. Publish: copy `prototype/industry-intel.html` to the scratchpad as `network-proto.html` with the
-   `<!doctype>…<head>` wrapper and `</body></html>` stripped, and publish it with the Artifact tool to
-   https://claude.ai/artifact/VeDkFx2Y9h3ykZVb2c8quL (same URL; read it first if this conversation hasn't published it).
+7. Publish `site/index.html` with the Artifact tool to https://claude.ai/artifact/VeDkFx2Y9h3ykZVb2c8quL
+   (same URL; read it first if this conversation hasn't published it). The site's own text must not mention
+   crawling, scraping or AI.
 8. On a scheduled run, send one PushNotification (under 200 characters): shows looked up, credits kept/rejected,
    casting director(s) found or "casting not stated", any credit resting on a single page, and any new name merge or review.
 

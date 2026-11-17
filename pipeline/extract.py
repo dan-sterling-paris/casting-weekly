@@ -1,9 +1,10 @@
-"""Build the network page from the checked lookup credits. No fetching, no AI.
+"""Build the Casting Weekly site from the confirmed credits.
 
   python3 pipeline/extract.py
 
-Reads pipeline/out/lookup_credits.json (written by check_lookups.py) and pipeline/out/name_aliases.json (written by
-match_names.py: other spellings of the same person) and writes prototype/industry-intel.html.
+Reads pipeline/out/lookup_credits.json (check_lookups.py), pipeline/out/unconfirmed.json (check_lookups.py),
+pipeline/out/names.json (match_names.py: other spellings of the same person) and the queue in
+pipeline/productions.txt. Writes site/index.html from site/template.html.
 """
 import json
 import re
@@ -11,6 +12,12 @@ from collections import defaultdict
 from common import OUT, ROOT, key, now
 
 SMALL = {"a", "an", "and", "at", "by", "for", "in", "of", "on", "or", "the", "to", "with"}
+SITE = ROOT.parent / "site"
+
+
+def load(name, default):
+    f = OUT / name
+    return json.loads(f.read_text()) if f.exists() else default
 
 
 def title_case(t):
@@ -29,38 +36,47 @@ def title_case(t):
     return " ".join(out)
 
 
+def batch_order(name):
+    """2026-11-17-10.json sorts after 2026-11-17-9.json."""
+    m = re.match(r"(.*)-(\d+)\.json$", name or "")
+    return (m.group(1), int(m.group(2))) if m else (name or "", 0)
+
+
+names = load("names.json", {})
+ALIASES = names.get("aliases", {})
+credits = load("lookup_credits.json", [])
+batches = {f: i + 1 for i, f in enumerate(sorted({c.get("lookup_file") for c in credits}, key=batch_order))}
+
 edges, shows, people, seen = [], {}, {}, set()
-
-
-aliases_file = OUT / "name_aliases.json"
-ALIASES = json.loads(aliases_file.read_text()) if aliases_file.exists() else {}
-
-
-def add(person, role, show, org, rule, evidence, url, year=None):
-    credited = person.replace("’", "'")
-    person = people.setdefault(key(ALIASES.get(person, person)), ALIASES.get(person, person).replace("’", "'"))
-    k = (key(person), role, key(show), year)
+for c in credits:
+    credited = c["person"].replace("’", "'")
+    real = ALIASES.get(c["person"], c["person"])
+    person = people.setdefault(key(real), real.replace("’", "'"))
+    label, venue = c["production"], c["venue"]
+    suffix = " (%s)" % venue.split(",")[0]
+    show = label[: -len(suffix)] if venue != "Venue not stated" and label.endswith(suffix) else label
+    k = (key(person), c["role"], key(label))
     if k in seen:
-        return
+        continue
     seen.add(k)
-    shows.setdefault(key(show), title_case(show))
-    edges.append({"person": person, "role": role, "production": shows[key(show)], "venue": org, "url": url,
-                  "evidence": evidence, "rule": rule, "year": year,
+    shows.setdefault(key(label), (title_case(label), title_case(show)))
+    edges.append({"person": person, "role": c["role"], "production": shows[key(label)][0], "show": shows[key(label)][1],
+                  "venue": venue, "url": c["url"], "evidence": c["evidence"], "batch": batches.get(c.get("lookup_file"), 0),
                   "credited_as": credited if key(credited) != key(person) else None})
 
+done = {key(x.split("→")[0]) for x in (ROOT / "lookups" / "done.txt").read_text().splitlines()
+        if x.strip() and not x.startswith("#")} if (ROOT / "lookups" / "done.txt").exists() else set()
+queue = [x.strip() for x in (ROOT / "productions.txt").read_text().splitlines()
+         if x.strip() and not x.strip().startswith("#") and key(x) not in done]
 
-lookup_file = OUT / "lookup_credits.json"
-for c in json.loads(lookup_file.read_text()) if lookup_file.exists() else []:
-    add(c["person"], c["role"], c["production"], c["venue"], "K", c["evidence"], c["url"])
-
-orgs = {e["venue"]: e["venue"] for e in edges}
-data = json.dumps({"edges": edges, "theatres": orgs, "swept": now()[:10]}, ensure_ascii=False, sort_keys=True).replace("</", "<\\/")
-tpl = (ROOT.parent / "prototype/industry-intel.template.html").read_text()
-(ROOT.parent / "prototype/industry-intel.html").write_text(tpl.replace("__DATA__", data))
+data = {"edges": edges, "unconfirmed": load("unconfirmed.json", []), "queue": queue, "updated": now()[:10],
+        "names": {"merged": names.get("merged", []), "review": names.get("review", [])}}
+blob = json.dumps(data, ensure_ascii=False, sort_keys=True).replace("</", "<\\/")
+(SITE / "index.html").write_text((SITE / "template.html").read_text().replace("__DATA__", blob))
 
 cd = defaultdict(int)
 for e in edges:
     if e["role"] == "Casting director":
         cd[e["person"]] += 1
-print("credits %d · shows %d · people %d · casting directors: %s" % (
-    len(edges), len(shows), len(people), dict(sorted(cd.items(), key=lambda x: -x[1]))))
+print("credits %d · shows %d · people %d · queued %d · casting directors: %s" % (
+    len(edges), len(shows), len(people), len(queue), dict(sorted(cd.items(), key=lambda x: -x[1]))))

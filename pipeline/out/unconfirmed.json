@@ -1,0 +1,79 @@
+[
+ {
+  "show": "The Choir of Man",
+  "role": "Director",
+  "name": "Nic Doodson",
+  "reason": "role_missing",
+  "urls": [
+   "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
+   "https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/"
+  ]
+ },
+ {
+  "show": "Mamma Mia!",
+  "role": "Casting director",
+  "name": "Stephen Crockett",
+  "reason": "role_missing",
+  "urls": [
+   "https://mamma-mia.com/london/production-team"
+  ]
+ },
+ {
+  "show": "The Phantom of the Opera",
+  "role": "Writer",
+  "name": "Andrew Lloyd Webber",
+  "reason": "role_missing",
+  "urls": [
+   "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
+   "https://www.whatsonstage.com/news/phantom-of-the-opera-announces-new-west-end-cast-following-40th-anniversary-celebrations_1736734/"
+  ]
+ },
+ {
+  "show": "Sunset Boulevard",
+  "role": "Composer",
+  "name": "Andrew Lloyd Webber",
+  "reason": "role_missing",
+  "urls": [
+   "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/"
+  ]
+ },
+ {
+  "show": "The Jungle Book",
+  "role": "Writer",
+  "name": "Anupama Chandrasekhar from Rudyard Kipling's The Jungle Book",
+  "reason": "not_on_page",
+  "urls": [
+   "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914",
+   "https://www.whatsonstage.com/news/national-theatre-announces-the-jungle-books-full-company_1731628/"
+  ]
+ },
+ {
+  "show": "Moulin Rouge! The Musical",
+  "role": "Lyricist",
+  "name": "Justin Levine",
+  "reason": "unavailable",
+  "urls": [
+   "https://moulinrougemusical.co.uk/creative/",
+   "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/",
+   "https://www.global-creatures.com/news/moulin-rouge-the-musical-london-cast/"
+  ]
+ },
+ {
+  "show": "The Book of Mormon",
+  "role": "Director",
+  "name": "Trey Parker",
+  "reason": "role_missing",
+  "urls": [
+   "https://officiallondontheatre.com/show/the-book-of-mormon/"
+  ]
+ },
+ {
+  "show": "The Book of Mormon",
+  "role": "Director",
+  "name": "Casey Nicholaw",
+  "reason": "role_missing",
+  "urls": [
+   "https://officiallondontheatre.com/show/the-book-of-mormon/"
+  ]
+ }
+]

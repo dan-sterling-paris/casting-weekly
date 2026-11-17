@@ -6,7 +6,8 @@ text contains both the person's name and the production's name. Everything else 
 
   python3 pipeline/check_lookups.py        then        python3 pipeline/extract.py
 
-Writes pipeline/out/lookup_credits.json (kept) and pipeline/out/LOOKUP_REJECTED.md (not kept).
+Writes pipeline/out/lookup_credits.json (kept) and pipeline/out/unconfirmed.json (not kept, with the reason; shown on
+the site's Data quality page).
 """
 import json
 import re
@@ -129,7 +130,14 @@ def people(field, value):
     return out
 
 
-kept, rejected, seen = [], defaultdict(list), set()
+kept, rejected, seen, unconfirmed = [], defaultdict(list), set(), []
+
+
+def code(why):
+    w = why.lower()
+    return ("conflicting" if w.startswith("sources disagree") else "no_source" if w.startswith("no source") else
+            "not_on_page" if w.startswith("name not on") else "show_missing" if "the show isn't" in w else
+            "role_missing" if "next to the role" in w else "unavailable")
 files = sorted(LOOKUPS.glob("*.json")) if LOOKUPS.exists() else []
 for f in files:
     for rec in json.loads(f.read_text()):
@@ -152,9 +160,11 @@ for f in files:
                 continue
             if value.lower() == "conflicting":
                 rejected["Sources disagree (the skill said Conflicting)"].append("%s · %s · %s" % (show, field, ", ".join(src.get(field, []))))
+                unconfirmed.append({"show": show, "role": field, "name": "", "reason": "conflicting", "urls": src.get(field, [])})
                 continue
             if not src.get(field):
                 rejected["No source given"].append("%s · %s: %s" % (show, field, value))
+                unconfirmed.append({"show": show, "role": field, "name": value, "reason": "no_source", "urls": []})
                 continue
             for role, name in people(field, value):
                 why = "name not on any cited page"
@@ -181,14 +191,11 @@ for f in files:
                     break
                 if why:
                     rejected[why[0].upper() + why[1:]].append("%s · %s: %s · %s" % (show, role, name, ", ".join(src[field])))
+                    unconfirmed.append({"show": show, "role": role, "name": name, "reason": code(why), "urls": src[field]})
 
 PAGES.write_text(json.dumps(pages, indent=1, ensure_ascii=False))
 (OUT / "lookup_credits.json").write_text(json.dumps(kept, indent=1, ensure_ascii=False))
-md = ["# Lookup answers not used", "", "Found by the production-credits-lookup skill, but the check script could not confirm them "
-      "on the cited page, so they are not in the network.", ""]
-for why, rows in rejected.items():
-    md += ["## %s (%d)" % (why, len(rows)), ""] + ["- " + r for r in rows] + [""]
-(OUT / "LOOKUP_REJECTED.md").write_text("\n".join(md))
+(OUT / "unconfirmed.json").write_text(json.dumps(unconfirmed, indent=1, ensure_ascii=False))
 print("lookup files %d · kept %d · not used %d" % (len(files), len(kept), sum(len(v) for v in rejected.values())))
 for why, rows in rejected.items():
     print("  %s: %d" % (why, len(rows)))
