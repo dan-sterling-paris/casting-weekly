@@ -9,3 +9,4 @@ Avenue Q, 2026 London  →  2026-11-17-2.json
 Avenue Q, 2003 Broadway  →  2026-11-17-2.json
 Phantom of the Opera, 2026 London  →  2026-11-17-2.json
 Les Miserables, London  →  2026-11-17-3.json
+To Sir With Love, UK Tour  →  2026-11-17-4.json

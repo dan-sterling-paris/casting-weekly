@@ -559,6 +559,76 @@
    "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/",
    "venue": "Sondheim Theatre, London",
    "year": null
+  },
+  {
+   "evidence": "Sheldon Epps directs, with choreography by Kieran Donovan, orchestrations by Joseph Joubert, set and costume design by Andy Walmsley, video design by Aaron Rhyne, sound design by Paul Smith, dramaturgy by Shereen Jasmin Phillips, production management by Phil McCandlish and casting by Debbie O’Brien.",
+   "person": "Debbie O'Brien",
+   "production": "To Sir, With Love (UK tour)",
+   "role": "Casting director",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
+   "venue": "UK tour",
+   "year": null
+  },
+  {
+   "evidence": "Sheldon Epps directs, with choreography by Kieran Donovan, orchestrations by Joseph Joubert, set and costume design by Andy Walmsley, video design by Aaron Rhyne, sound design by Paul Smith, dramaturgy by Shereen Jasmin Phillips, production management by Phil McCandlish and casting by Debbie O’Brien.",
+   "person": "Sheldon Epps",
+   "production": "To Sir, With Love (UK tour)",
+   "role": "Director",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
+   "venue": "UK tour",
+   "year": null
+  },
+  {
+   "evidence": "The book is by Kris Lythgoe.",
+   "person": "Kris Lythgoe",
+   "production": "To Sir, With Love (UK tour)",
+   "role": "Writer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
+   "venue": "UK tour",
+   "year": null
+  },
+  {
+   "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.",
+   "person": "John Farrar",
+   "production": "To Sir, With Love (UK tour)",
+   "role": "Composer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
+   "venue": "UK tour",
+   "year": null
+  },
+  {
+   "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.",
+   "person": "Kara DioGuardi",
+   "production": "To Sir, With Love (UK tour)",
+   "role": "Composer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
+   "venue": "UK tour",
+   "year": null
+  },
+  {
+   "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.",
+   "person": "John Farrar",
+   "production": "To Sir, With Love (UK tour)",
+   "role": "Lyricist",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
+   "venue": "UK tour",
+   "year": null
+  },
+  {
+   "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.",
+   "person": "Kara DioGuardi",
+   "production": "To Sir, With Love (UK tour)",
+   "role": "Lyricist",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
+   "venue": "UK tour",
+   "year": null
   }
  ],
  "method": "scrape -> text -> patterns S, L, B; no AI; plus K: skill lookups checked on the page by script",

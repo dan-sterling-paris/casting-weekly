@@ -124,5 +124,12 @@
   "final": "https://london.lesmis.com/cast-creative/",
   "title": "Cast & Creative | Les Misérables London | Official Website",
   "file": "5d801b05074c87e8.txt"
+ },
+ "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T12:20:30Z",
+  "final": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
+  "title": "To Sir, With Love musical to tour – with initial casting confirmed",
+  "file": "cf1616e4b550fffa.txt"
  }
 }
