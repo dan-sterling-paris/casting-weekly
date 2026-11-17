@@ -247,6 +247,7 @@ G.each(function(n){
   }
   else g.append("circle").attr("r",size(n)).attr("fill", KIND[n.kind].color).attr("opacity",.8);
 });
+G.append("title").text(n => n.label);   // hover any dot to see its name
 G.call(d3.drag().on("start",(ev,d)=>{ if(!ev.active) sim.alphaTarget(.25).restart(); d.fx=d.x; d.fy=d.y; })
   .on("drag",(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on("end",(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
 const T = root.append("g").selectAll("text").data(N).join("text").attr("class", n => "node-label" + (n.kind==="prod" ? " prod" : "") + (n.kind==="cd" ? " cd" : "")).attr("dy", n => n.kind === "theatre" ? size(n) + 18 : n.kind === "cd" ? size(n) + 26 : -size(n) - 8).attr("text-anchor","middle").text(n => n.label.length > 34 ? n.label.slice(0,32) + "…" : n.label);
@@ -287,7 +288,8 @@ function paint(){
   G.select(".core,rect,circle:not(.core)").filter(function(){ return !this.getAttribute("stroke-dasharray"); })
    .attr("stroke-width", n => n === selected ? 3 : (n.kind==="prod"||n.kind==="theatre") ? 1.6 : 0).attr("stroke", n => n === selected ? "#fff" : (n.kind==="prod" ? "var(--cyan)" : n.kind==="theatre" ? "var(--violet)" : null));
   L.style("display", l => show(l.source) && show(l.target) ? null : "none").style("opacity", l => !f || (f.has(l.source.id) && f.has(l.target.id)) ? 1 : .05);
-  T.style("display", n => show(n) && (n.kind === "cd" || n.kind === "prod" || (f && f.has(n.id))) ? null : "none")
+  const few = f && f.size <= 45;   // name the neighbourhood only when it is small enough to read
+  T.style("display", n => show(n) && (n.kind === "cd" || (few && f.has(n.id))) ? null : "none")
    .style("opacity", n => !f || f.has(n.id) ? 1 : .25);
 }
 function fit(dur=700){

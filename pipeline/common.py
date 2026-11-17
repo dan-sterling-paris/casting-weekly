@@ -15,7 +15,7 @@ from crawl import UA, get, html_to_text, read_sitemaps  # noqa: E402,F401
 TERMS_RE = re.compile(r"terms|conditions|legal|website-use|terms-of-use|disclaimer", re.I)
 CLAUSE_RE = re.compile(r"scrap|crawl|robot|spider|automated|data.?mining|harvest|extract|systematic|reproduc|republish|database", re.I)
 
-CACHE = ROOT / "cache"
+CACHE = ROOT / "pages"   # saved page text, kept in the repo so patterns can be re-run without fetching
 OUT = ROOT / "out"
 AI_AGENTS = ["ClaudeBot", "anthropic-ai", "GPTBot", "CCBot", "Google-Extended", "Bytespider", "PerplexityBot", "Applebot-Extended"]
 
