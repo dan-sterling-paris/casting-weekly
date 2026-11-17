@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Hairspray",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Grindrod Burton",
+    "Director": "Brenda Edwards; Paul Kerryson",
+    "Writer": "Music: Marc Shaiman; Lyrics: Scott Wittman; Lyrics: Marc Shaiman; Book: Mark O'Donnell; Book: Thomas Meehan",
+    "Sources": {
+      "Venue": ["https://www.broadwayworld.com/article/HAIRSPRAY-Will-Embark-on-a-New-UK-and-Ireland-Tour-in-2027-20260703", "https://theatreweekly.com/hairspray-to-return-for-major-uk-and-ireland-tour-in-2027/", "https://www.londonboxoffice.co.uk/news/post/hairspray-is-returning-for-uk-ireland-tour"],
+      "Casting Director": ["https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "https://www.whatsonstage.com/news/hairspray-musical-to-tour-in-2027-with-initial-casting-confirmed_1726664/", "https://www.broadwayworld.com/article/HAIRSPRAY-Will-Embark-on-a-New-UK-and-Ireland-Tour-in-2027-20260703", "https://theatreweekly.com/hairspray-to-return-for-major-uk-and-ireland-tour-in-2027/"],
+      "Director": ["https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "https://www.whatsonstage.com/news/hairspray-musical-to-tour-in-2027-with-initial-casting-confirmed_1726664/", "https://theatreweekly.com/hairspray-to-return-for-major-uk-and-ireland-tour-in-2027/"],
+      "Writer": ["https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "https://www.whatsonstage.com/news/hairspray-musical-to-tour-in-2027-with-initial-casting-confirmed_1726664/", "https://www.londonboxoffice.co.uk/news/post/hairspray-is-returning-for-uk-ireland-tour"]
+    }
+  },
+  {
+    "Production Name": "Grease The Musical",
+    "Venue": "UK tour",
+    "Casting Director": "David Grindrod CDG",
+    "Director": "Nikolai Foster",
+    "Writer": "Book: Jim Jacobs; Book: Warren Casey; Music: Jim Jacobs; Music: Warren Casey; Lyrics: Jim Jacobs; Lyrics: Warren Casey",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "https://www.broadwayworld.com/article/GREASE-THE-MUSICAL-Will-Embark-on-New-UK-Tour-in-2027-20260430", "https://www.westendbestfriend.co.uk/news/grease-the-musical-new-uk-tour-april-27"],
+      "Casting Director": ["https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "https://theatreweekly.com/grease-the-musical-confirms-debbie-mcgee-will-join-2027-uk-and-ireland-tour/", "https://www.broadwayworld.com/article/GREASE-THE-MUSICAL-Will-Embark-on-New-UK-Tour-in-2027-20260430", "https://westendwilma.com/grease-musical-uk-ireland-tour/"],
+      "Director": ["https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "https://theatreweekly.com/grease-the-musical-confirms-debbie-mcgee-will-join-2027-uk-and-ireland-tour/", "https://www.broadwayworld.com/article/GREASE-THE-MUSICAL-Will-Embark-on-New-UK-Tour-in-2027-20260430", "https://theatre-news.com/news/UK/126428/Grease-is-the-word-Hit-musical-announces-major-2027-UK-tour"],
+      "Writer": ["https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "https://www.broadwayworld.com/article/GREASE-THE-MUSICAL-Will-Embark-on-New-UK-Tour-in-2027-20260430", "https://theatreweekly.com/grease-the-musical-confirms-debbie-mcgee-will-join-2027-uk-and-ireland-tour/"]
+    }
+  },
+  {
+    "Production Name": "How the Grinch Stole Christmas!",
+    "Venue": "Quarry Theatre, Leeds Playhouse, Leeds",
+    "Casting Director": "Annelie Powell CDG",
+    "Director": "Tom Wright",
+    "Writer": "Book: Timothy Mason; Lyrics: Timothy Mason; Music: Mel Marvin",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/full-company-for-how-the-grinch-stole-christmas-revival-announced_1731830/", "https://www.whatsonstage.com/news/joel-montague-to-star-in-how-the-grinch-stole-christmas-revival_1729829/", "https://www.broadwayworld.com/uk-regional/article/HOW-THE-GRINCH-STOLE-CHRISTMAS-Comes-to-Leeds-Playhouse-This-Holiday-Season-20260127"],
+      "Casting Director": ["https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "https://www.whatsonstage.com/news/full-company-for-how-the-grinch-stole-christmas-revival-announced_1731830/"],
+      "Director": ["https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "https://www.whatsonstage.com/news/full-company-for-how-the-grinch-stole-christmas-revival-announced_1731830/", "https://www.broadwayworld.com/uk-regional/article/HOW-THE-GRINCH-STOLE-CHRISTMAS-Comes-to-Leeds-Playhouse-This-Holiday-Season-20260127"],
+      "Writer": ["https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "https://www.whatsonstage.com/news/full-company-for-how-the-grinch-stole-christmas-revival-announced_1731830/", "https://www.whatsonstage.com/news/how-the-grinch-stole-christmas-the-musical-to-be-revived-by-leeds-playhouse_1710052"]
+    }
+  }
+]

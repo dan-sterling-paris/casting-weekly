@@ -30,3 +30,6 @@ Billy Elliot, UK Tour  →  2026-11-17-11.json
 Jesus Christ Superstar, 2027 UK Tour  →  2026-11-17-12.json
 Pretty Woman, 2027 UK Tour  →  2026-11-17-12.json
 Sister Act, 2027 UK Tour  →  2026-11-17-12.json
+Hairspray, 2027 UK Tour  →  2026-11-17-13.json
+Grease, 2027 UK Tour  →  2026-11-17-13.json
+How the Grinch Stole Christmas, 2026 Leeds Playhouse  →  2026-11-17-13.json

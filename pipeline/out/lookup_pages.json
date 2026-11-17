@@ -449,5 +449,40 @@
   "final": "https://www.londonboxoffice.co.uk/news/post/sister-act-to-embark-on-tour-with-initial-casting-announced",
   "title": "SISTER ACT to embark on UK and Ireland tour with initial casting announced - West End Theatre News and Reviews",
   "file": "bf3ec0643705699d.txt"
+ },
+ "https://www.broadwayworld.com/article/HAIRSPRAY-Will-Embark-on-a-New-UK-and-Ireland-Tour-in-2027-20260703": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:38:27Z",
+  "final": "https://www.broadwayworld.com/westend/article/HAIRSPRAY-Will-Embark-on-a-New-UK-and-Ireland-Tour-in-2027-20260703",
+  "title": "HAIRSPRAY Will Embark on a New UK and Ireland Tour in 2027 | BroadwayWorld",
+  "file": "8bcc22fa0ce6da47.txt"
+ },
+ "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:38:29Z",
+  "final": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/",
+  "title": "Hairspray confirms new tour dates and cast – with open call for roles",
+  "file": "9fb352778bf12d9e.txt"
+ },
+ "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:38:34Z",
+  "final": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/",
+  "title": "Grease The Musical to return for major new UK tour opening in Plymouth - Theatre Weekly",
+  "file": "92b7e73c5d02df85.txt"
+ },
+ "https://www.whatsonstage.com/news/full-company-for-how-the-grinch-stole-christmas-revival-announced_1731830/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:38:36Z",
+  "final": "https://www.whatsonstage.com/news/full-company-for-how-the-grinch-stole-christmas-revival-announced_1731830/",
+  "title": "Full company for How The Grinch Stole Christmas! revival announced",
+  "file": "ad3d89dc08e0d64e.txt"
+ },
+ "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:38:38Z",
+  "final": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/",
+  "title": "Dr Seuss's How The Grinch Stole Christmas! The Musical - Leeds Playhouse",
+  "file": "7608541562c6395a.txt"
  }
 }
