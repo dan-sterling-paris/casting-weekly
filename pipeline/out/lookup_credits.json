@@ -1,1 +1,242 @@
-[]
+[
+ {
+  "person": "Debbie O'Brien",
+  "role": "Casting director",
+  "production": "The Choir of Man",
+  "venue": "Arts at Marble Arch, London",
+  "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
+  "evidence": "The Choir of Man is created by Doodson and Kay and directed by Doodson, with musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by Freddie Huddleston, monologues by Ben Norris, scenic design by Oli Townsend, lighting design by Richard Dinnen, costume design and co-scenic design by Verity Sadler, sound design by Sten Severson and casting by",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Nic Doodson",
+  "role": "Writer",
+  "production": "The Choir of Man",
+  "venue": "Arts at Marble Arch, London",
+  "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
+  "evidence": "Created by Nic Doodson and Andrew Kay, the show is set inside an on-stage pub called The Jungle.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Andrew Kay",
+  "role": "Writer",
+  "production": "The Choir of Man",
+  "venue": "Arts at Marble Arch, London",
+  "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
+  "evidence": "Created by Nic Doodson and Andrew Kay, the show is set inside an on-stage pub called The Jungle.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Ben Norris",
+  "role": "Writer",
+  "production": "The Choir of Man",
+  "venue": "Arts at Marble Arch, London",
+  "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
+  "evidence": "The Choir of Man is created by Doodson and Kay and directed by Doodson, with musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by Freddie Huddleston, monologues by Ben Norris, scenic design by Oli Townsend, lighting design by Richard Dinnen, costume design and co-scenic design by Verity Sadler, sound design by Sten Severson and casting by",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Nic Doodson",
+  "role": "Director",
+  "production": "The Choir of Man",
+  "venue": "Arts Theatre, London",
+  "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end",
+  "evidence": "Creator, director and producer Nic Doodson said: “The Arts Theatre has been our London home for nearly four years, and it’s bittersweet to enter these final months.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Harry Blumenau",
+  "role": "Casting director",
+  "production": "Beetlejuice the Musical",
+  "venue": "Prince Edward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
+  "evidence": "Casting is by Harry Blumenau.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Alex Timbers",
+  "role": "Director",
+  "production": "Beetlejuice the Musical",
+  "venue": "Prince Edward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
+  "evidence": "The West End production will be directed by Alex Timbers, with choreography by Connor Gallagher.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Scott Brown",
+  "role": "Writer",
+  "production": "Beetlejuice the Musical",
+  "venue": "Prince Edward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
+  "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Anthony King",
+  "role": "Writer",
+  "production": "Beetlejuice the Musical",
+  "venue": "Prince Edward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
+  "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Eddie Perfect",
+  "role": "Composer",
+  "production": "Beetlejuice the Musical",
+  "venue": "Prince Edward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
+  "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Eddie Perfect",
+  "role": "Lyricist",
+  "production": "Beetlejuice the Musical",
+  "venue": "Prince Edward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
+  "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Harry Blumenau",
+  "role": "Casting director",
+  "production": "Burlesque the Musical",
+  "venue": "UK tour",
+  "url": "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical",
+  "evidence": "Written by Steven Antin, the production is directed by Racky Plews, with choreography by Robin Antin and Aaron Renfree, orchestrations and arrangements by Tom Curran, musical supervision by Adam Langston, musical direction by Rob Wicks, set design by Sara Perks, lighting by Joshie Harriette, costumes by Marco Marco, sound by Ben Harrison, video design by Duncan McLean, wigs design by Marco Marco a",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Racky Plews",
+  "role": "Director",
+  "production": "Burlesque the Musical",
+  "venue": "UK tour",
+  "url": "https://www.bradford-theatres.co.uk/news/lead-cast-and-creative-team-announced-for-the-first-uk-tour-production-of-the-spectacular",
+  "evidence": "With a creative team led by Producer, Writer & Creative Director Steven Antin, it is directed by Racky Plews (I‘m Every Woman The Chaka Khan Musical, Green Day’s American Idiot) with choreography by Robin Antin (creator of The Pussycat Dolls).",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Steven Antin",
+  "role": "Writer",
+  "production": "Burlesque the Musical",
+  "venue": "UK tour",
+  "url": "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical",
+  "evidence": "Written by Steven Antin, the production is directed by Racky Plews, with choreography by Robin Antin and Aaron Renfree, orchestrations and arrangements by Tom Curran, musical supervision by Adam Langston, musical direction by Rob Wicks, set design by Sara Perks, lighting by Joshie Harriette, costumes by Marco Marco, sound by Ben Harrison, video design by Duncan McLean, wigs design by Marco Marco a",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Jim Arnold",
+  "role": "Casting director",
+  "production": "Wicked",
+  "venue": "Apollo Victoria Theatre, London",
+  "url": "https://officiallondontheatre.com/show/wicked-73606/",
+  "evidence": "UK Casting - / Jim Arnold CDG",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Joe Mantello",
+  "role": "Director",
+  "production": "Wicked",
+  "venue": "Apollo Victoria Theatre, London",
+  "url": "https://officiallondontheatre.com/show/wicked-73606/",
+  "evidence": "Wicked is written by Winnie Holzman and this production is directed by Joe Mantello.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Winnie Holzman",
+  "role": "Writer",
+  "production": "Wicked",
+  "venue": "Apollo Victoria Theatre, London",
+  "url": "https://officiallondontheatre.com/show/wicked-73606/",
+  "evidence": "Wicked is written by Winnie Holzman and this production is directed by Joe Mantello.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Stephen Schwartz",
+  "role": "Composer",
+  "production": "Wicked",
+  "venue": "Apollo Victoria Theatre, London",
+  "url": "https://officiallondontheatre.com/show/wicked-73606/",
+  "evidence": "Music & Lyrics by - / Stephen Schwartz",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Stephen Schwartz",
+  "role": "Lyricist",
+  "production": "Wicked",
+  "venue": "Apollo Victoria Theatre, London",
+  "url": "https://officiallondontheatre.com/show/wicked-73606/",
+  "evidence": "Music & Lyrics by - / Stephen Schwartz",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Natalie Gallacher",
+  "role": "Casting director",
+  "production": "Paddington The Musical",
+  "venue": "Savoy Theatre, London",
+  "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
+  "evidence": "The creative team working with Sheppard includes Matt Brind as musical supervisor, orchestrator and arranger, Ellen Kane as choreographer, Tom Pye as scenic designer, Gabriella Slade as costume designer, Neil Austin as lighting designer, Gareth Owen as sound designer, Ash J Woodward as video designer and animator, Campbell Young Associates as hair, wig and make-up designers, Majid Adin for illustr",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Luke Sheppard",
+  "role": "Director",
+  "production": "Paddington The Musical",
+  "venue": "Savoy Theatre, London",
+  "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
+  "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Jessica Swale",
+  "role": "Writer",
+  "production": "Paddington The Musical",
+  "venue": "Savoy Theatre, London",
+  "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
+  "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Tom Fletcher",
+  "role": "Composer",
+  "production": "Paddington The Musical",
+  "venue": "Savoy Theatre, London",
+  "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
+  "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Tom Fletcher",
+  "role": "Lyricist",
+  "production": "Paddington The Musical",
+  "venue": "Savoy Theatre, London",
+  "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
+  "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ }
+]

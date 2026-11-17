@@ -1,1 +1,65 @@
-{}
+{
+ "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:57:51Z",
+  "final": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
+  "title": "The Choir of Man announces cast for London return",
+  "file": "8f8fa106e12d1a6b.txt"
+ },
+ "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:57:54Z",
+  "final": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end",
+  "title": "THE CHOIR OF MAN announces new casting for final months in West End | West End Best Friend",
+  "file": "253ea3ce385622d2.txt"
+ },
+ "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:57:55Z",
+  "final": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469/",
+  "title": "Beetlejuice announces complete West End casting",
+  "file": "7ad551991ac5a3ab.txt"
+ },
+ "https://www.whatsonstage.com/news/burlesque-musical-tour-announces-final-casting_1726268/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:57:56Z",
+  "final": "https://www.whatsonstage.com/news/burlesque-musical-tour-announces-final-casting_1726268/",
+  "title": "Burlesque musical tour announces final casting",
+  "file": "16c44001efed1ada.txt"
+ },
+ "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:57:57Z",
+  "final": "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical",
+  "title": "Lead cast and creative team announced for first UK tour production of BURLESQUE THE MUSICAL | West End Best Friend",
+  "file": "d27c0b1af848946b.txt"
+ },
+ "https://www.bradford-theatres.co.uk/news/lead-cast-and-creative-team-announced-for-the-first-uk-tour-production-of-the-spectacular": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:57:59Z",
+  "final": "https://www.bradford-theatres.co.uk/news/lead-cast-and-creative-team-announced-for-the-first-uk-tour-production-of-the-spectacular",
+  "title": "Lead cast and creative team announced for the first UK tour production of the spectacular Burlesque the Musical based on the hit movie | Bradford Theatres",
+  "file": "0b24ac5e9d383f0e.txt"
+ },
+ "https://officiallondontheatre.com/show/wicked-73606/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:58:01Z",
+  "final": "https://officiallondontheatre.com/show/wicked-73606/",
+  "title": "Wicked Tickets | Apollo Victoria Theatre | Musical TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketPlay IconShowReelAll ImagesLocationChevron DownAccess InfoTickCalendarClockGenre MaskAge InfoNoticePhoneEmail",
+  "file": "62bbe176757aee7f.txt"
+ },
+ "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:58:03Z",
+  "final": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550/",
+  "title": "Paddington The Musical announces principal West End cast",
+  "file": "718c2ceebd8232d8.txt"
+ },
+ "https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T09:58:27Z",
+  "final": "https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/",
+  "title": "The Choir of Man to return to London in time for Christmas",
+  "file": "b39c2c4385dd7317.txt"
+ }
+}

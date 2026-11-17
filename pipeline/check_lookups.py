@@ -21,6 +21,25 @@ SKIP = {"", "unknown"}
 WRITER_PART = {"book": "Writer", "music": "Composer", "lyrics": "Lyricist", "music and lyrics": "Composer",
                "music & lyrics": "Composer", "adapted by": "Writer", "written by": "Writer", "playwright": "Writer"}
 
+# the role must be stated next to the name: in the same sentence, or on the line just before or after it
+ROLE_WORD = {"Casting director": r"casting", "Director": r"direct", "Writer": r"writ|book|creat|playwright|adapt|monologue|script",
+             "Composer": r"music|compos|score", "Lyricist": r"lyric"}
+
+
+def role_evidence(text, name, role):
+    rx = re.compile(r"\b(?:%s)" % ROLE_WORD[role], re.I)
+    for s in sentences(text):
+        if contains(s, name) and rx.search(s):
+            return s
+    lines = [x.strip() for x in text.split("\n")]
+    for i, line in enumerate(lines):
+        if contains(line, name) and len(line) < 80:   # a short label/name line, e.g. "Director -" then "Joe Mantello"
+            near = [lines[j] for j in (i - 1, i + 1) if 0 <= j < len(lines)]
+            if any(rx.search(x) and len(x) < 60 for x in near):
+                return " / ".join([lines[i - 1], line] if i and rx.search(lines[i - 1]) else [line, lines[i + 1]])
+    return None
+
+
 pages = json.loads(PAGES.read_text()) if PAGES.exists() else {}
 rules_for = {}
 
@@ -109,7 +128,10 @@ for f in files:
                     if not contains(text, show) and not contains(urlparse(url).path.replace("-", " "), show):
                         why = "name is on the page, but the show isn't"
                         continue
-                    ev = next((s for s in sentences(text) if contains(s, name)), name)
+                    ev = role_evidence(text, name, role)
+                    if not ev:
+                        why = "name is on the page, but not next to the role (%s)" % role.lower()
+                        continue
                     k = (key(name), role, key(show))
                     if k not in seen:
                         seen.add(k)
