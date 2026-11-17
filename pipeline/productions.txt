@@ -2,3 +2,6 @@
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
 Hadestown, London
+Lion King, London
+Cabaret, London
+Moulin Rouge, London
