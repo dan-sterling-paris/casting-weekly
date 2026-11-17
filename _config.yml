@@ -1,0 +1,6 @@
+# castingweekly.com (GitHub Pages): serve the holding page, proto.html and site/index.html only.
+exclude:
+  - pipeline
+  - CLAUDE.md
+  - site/template.html
+  - site/artifact.html

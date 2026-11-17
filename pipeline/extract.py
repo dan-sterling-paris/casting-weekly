@@ -4,7 +4,8 @@
 
 Reads pipeline/out/lookup_credits.json (check_lookups.py), pipeline/out/names.json (match_names.py: other spellings
 of the same person), the queue in pipeline/productions.txt and the "remove:" lines in pipeline/name_rules.txt
-(granted takedowns). Writes site/index.html from site/template.html.
+(granted takedowns). Writes, from site/template.html, site/artifact.html (published as the Claude artifact) and
+site/index.html (the standalone page served at castingweekly.com/site/).
 """
 import json
 import re
@@ -82,9 +83,24 @@ done = {key(x.split("→")[0]) for x in (ROOT / "lookups" / "done.txt").read_tex
 queue = [x.strip() for x in (ROOT / "productions.txt").read_text().splitlines()
          if x.strip() and not x.strip().startswith("#") and key(x) not in done]
 
-data = {"edges": edges, "queue": queue, "updated": now()[:10]}
-blob = json.dumps(data, ensure_ascii=False, sort_keys=True).replace("</", "<\\/")
-(SITE / "index.html").write_text((SITE / "template.html").read_text().replace("__DATA__", blob))
+tpl = (SITE / "template.html").read_text()
+
+
+def build(host):
+    data = {"edges": edges, "queue": queue, "updated": now()[:10], "host": host}
+    return tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False, sort_keys=True).replace("</", "<\\/"))
+
+
+# the Claude artifact: page content only (the artifact adds its own document wrapper)
+(SITE / "artifact.html").write_text(build("artifact"))
+# castingweekly.com/site/: a complete standalone document, kept out of search results like proto.html
+head, body = build("web").replace('<meta name="claude:viewport-fit-sides" content="cover">\n', "").split("</style>", 1)
+(SITE / "index.html").write_text(
+    '<!doctype html>\n<html lang="en-GB">\n<head>\n<meta charset="utf-8">\n'
+    '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
+    '<meta name="robots" content="noindex, nofollow">\n<meta name="theme-color" content="#07090c">\n'
+    '<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>\n'
+    + head + "</style>\n</head>\n<body>" + body + "\n</body>\n</html>\n")
 
 cd = defaultdict(int)
 for e in edges:

@@ -55,6 +55,7 @@ a{color:inherit}
 }
 
 /* pages */
+.page>*{min-width:0}
 .page{max-width:1180px;margin:0 auto;padding-block:28px 72px;display:flex;flex-direction:column;gap:28px}
 .ph{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 20px;justify-content:space-between}
 .ph h1{font:600 28px/1.12 var(--sans);letter-spacing:-.03em;margin:0;text-wrap:balance}
@@ -353,7 +354,8 @@ body[data-view="net"] .foot{display:none}
   .stats div:last-child{border-bottom:0}
   .cols>.creds{order:2}
 
-  .filters{flex-direction:column;align-items:stretch;gap:12px}
+  .filters{flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:12px;min-width:0;max-width:100%}
+  .seg{min-width:0}
   .seg{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
   .seg::-webkit-scrollbar{display:none}
   .seg button{flex:none;min-height:44px;white-space:nowrap}
@@ -781,8 +783,11 @@ VIEWS.privacy = () => legal("Privacy policy", "What personal information Casting
   ["Your rights", P("If you're named on the site you can ask us to tell you what we hold, correct it, remove it, restrict how we use it, or object to our using it. Use the ", h("a", {href:"#takedown"}, "corrections and takedowns page"), " or email us. We will reply within one month."),
     P("If you're unhappy with how we handle your information you can complain to the Information Commissioner's Office at ico.org.uk.")],
   ["Requests you send us", P("If you send a correction or takedown request we keep what you give us (your name, email address, the request and, when you send it through the site while signed in, an account identifier) so we can deal with it and keep a record. We keep requests for up to two years after we close them.")],
-  ["Visiting the site", P("The site is hosted by Anthropic PBC on claude.ai, which processes technical information such as your IP address to serve the page, under its own privacy policy. We do not set our own cookies or use analytics. Your browser stores one preference on your device: the order you choose for the network's rows.")],
-  ["Sharing", P("We do not sell personal information or share it with anyone except our hosting provider, or where the law requires it.")],
+  ["Visiting the site", P(RAW.host === "web"
+      ? "The site is hosted by GitHub, Inc. on GitHub Pages, which processes technical information such as your IP address to serve the page, under its own privacy policy."
+      : "This copy of the site is hosted by Anthropic PBC on claude.ai, which processes technical information such as your IP address to serve the page, under its own privacy policy."),
+    P("Fonts load from Google Fonts and one code library loads from jsDelivr; both receive your IP address when your browser fetches them. We do not set our own cookies or use analytics. Your browser stores one preference on your device: the order you choose for the network's rows.")],
+  ["Sharing", P("We do not sell personal information or share it with anyone except the hosting, font and code-library providers named above, or where the law requires it.")],
   ["Changes", P("We will update this policy if what we do changes. The date at the top shows when it last changed.")]
 ]);
 
