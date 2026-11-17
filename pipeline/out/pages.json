@@ -1928,5 +1928,365 @@
   "title": "Jill Trevellick CDG - United Agents",
   "sha256": "a1ac8edd3807d84d6528ab99c834eda1a4f38f8d6ab18c7348d4ff8ae8ae3abe",
   "file": "a1ac8edd3807d84d.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/son-of-a-bitch/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:04:50Z",
+  "title": "Son of a Bitch - Leeds Playhouse",
+  "sha256": "523c3daf626e3db23d55f95372d1544a3efcde5b8bb4dfc3988ac8e0c97e716c",
+  "file": "523c3daf626e3db2.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/leeds-playhouse-youth-theatre-wrapped/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:04:51Z",
+  "title": "Leeds Playhouse Youth Theatre Wrapped - Leeds Playhouse",
+  "sha256": "b80e29bd854ae271da382ad2427b5318f1b0565854b0946bb87a9cd6f0ad0df9",
+  "file": "b80e29bd854ae271.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/romeo-and-juliet-3/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:04:54Z",
+  "title": "Romeo and Juliet - Leeds Playhouse",
+  "sha256": "bb488e2be46faa137233eb3f4e721edec4384d4bc98477a70fbe896cecc2e5f5",
+  "file": "bb488e2be46faa13.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/a-simply-beastly-murder/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:04:56Z",
+  "title": "A Simply Beastly Murder - Leeds Playhouse",
+  "sha256": "fdc6ad01a8ef0c2ac759e399ef8e3470394786e9f0271b030308e518c3453c83",
+  "file": "fdc6ad01a8ef0c2a.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:04:57Z",
+  "title": "Dr Seuss's How The Grinch Stole Christmas! The Musical - Leeds Playhouse",
+  "sha256": "7608541562c6395a01d7291c774104fbe9bf9ed799632d6b4eabe91a7e94f582",
+  "file": "7608541562c6395a.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/grimeboy/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:00Z",
+  "title": "Grimeboy - Leeds Playhouse",
+  "sha256": "43219ab3939de1f588b126e4642364b08bdc21520af685de7763e89526e69506",
+  "file": "43219ab3939de1f5.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/reviving-her/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:01Z",
+  "title": "REVIVING HER - Leeds Playhouse",
+  "sha256": "98c9610677d7d3ee0afd9437685ba0d3a42d364a6e0a56bf563ed402077aeb3b",
+  "file": "98c9610677d7d3ee.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/rpm/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:03Z",
+  "title": "RPM - Leeds Playhouse",
+  "sha256": "4f9e000b43ec7f10a7d4dd0cb97aa51bf9b08ddcc48b730958d61fdd307f613b",
+  "file": "4f9e000b43ec7f10.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/wedding-fayre/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:10Z",
+  "title": "Wedding Fayre - Leeds Playhouse",
+  "sha256": "c00cab5c57010eb86602408f6ff07a7ab6077a9fd9957b9a24de78897de5eca4",
+  "file": "c00cab5c57010eb8.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/hansel-gretel-and-the-witch/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:12Z",
+  "title": "Hansel & Gretel and the Witch - Leeds Playhouse",
+  "sha256": "c5e5095418c94687952ee89c3500f94fe3f2a3adb7cf83f7814eb2a8bd61f7fd",
+  "file": "c5e5095418c94687.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/sincerely-the-breakfast-club/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:14Z",
+  "title": "Sincerely, The Breakfast Club - Leeds Playhouse",
+  "sha256": "7330adac29b8cb689bf3c26c51daf315c4f364f7990911dda7b040e4adc34990",
+  "file": "7330adac29b8cb68.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/managed-approach/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:16Z",
+  "title": "Managed Approach - Leeds Playhouse",
+  "sha256": "572f03a270a4dc524f4b378bbc1b6fca7967efa7a2fb3575687a1a5c276955f2",
+  "file": "572f03a270a4dc52.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/from-england-with-love/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:18Z",
+  "title": "From England with Love - Leeds Playhouse",
+  "sha256": "adc4c0cf0717e280e93260304eb1561ebb9cfc8b575606805826d2e464cf119c",
+  "file": "adc4c0cf0717e280.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/a-thousand-splendid-suns-2/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:20Z",
+  "title": "A Thousand Splendid Suns - Leeds Playhouse",
+  "sha256": "a965500bcbef82a9df38d2252db2212830e60064cda2a10e7d4e647c63d74d4d",
+  "file": "a965500bcbef82a9.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/verve-triple-bill-3/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:24Z",
+  "title": "VERVE | Triple Bill - Leeds Playhouse",
+  "sha256": "a1d874dc48047ce28b78d1f4cfc7c1dcb2964e2333708923abf51024e6cbb42d",
+  "file": "a1d874dc48047ce2.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/dog-man-the-musical/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:26Z",
+  "title": "Dog Man The Musical - Leeds Playhouse",
+  "sha256": "c9c8c8eb4bb42deb13bb0325bf89ec276837d7eb1058d2c2651c2611a32dd7fc",
+  "file": "c9c8c8eb4bb42deb.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/housemates/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:28Z",
+  "title": "Housemates - Leeds Playhouse",
+  "sha256": "69215c64c9f148343c7dc35e2ea56e77882c59d5576dd6639acb4c63f7d9f7f8",
+  "file": "69215c64c9f14834.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/until-i-find-you/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:30Z",
+  "title": "Until I Find You - Leeds Playhouse",
+  "sha256": "c5d31d68df7ab842b49bbf539bafaa29bff26e32858d241fbccd44fdbefb6ed7",
+  "file": "c5d31d68df7ab842.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/deepest-fears-ghost-stories/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:32Z",
+  "title": "DEEPEST FEARS: GHOST STORIES - Leeds Playhouse",
+  "sha256": "d2e95f56b6e4331bb6a1ef80a1f7de8c97ee77ddac16edf1c96f0b0ea801a0ea",
+  "file": "d2e95f56b6e4331b.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/the-turn-of-the-screw/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:35Z",
+  "title": "The Turn of the Screw - Leeds Playhouse",
+  "sha256": "83b75eb118aea9d843d3fe4e915f11f528a70fc3a20f3df36b65664216524347",
+  "file": "83b75eb118aea9d8.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/evita-too/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:36Z",
+  "title": "EVITA TOO - Leeds Playhouse",
+  "sha256": "df1f5fbd80dbccbd7086786484dab094790df09123cda23fde0fe5202538c9c2",
+  "file": "df1f5fbd80dbccbd.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/mary-mary/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:39Z",
+  "title": "MARY MARY - Leeds Playhouse",
+  "sha256": "aea4a581d557784912b6a9da00d7b9557d817b8c216bd0e2a4f643cb16e71273",
+  "file": "aea4a581d5577849.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/beyond-the-sea/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:41Z",
+  "title": "Beyond The Sea - Leeds Playhouse",
+  "sha256": "cfd39d89f184cd49ce90ae60dd01ac7735e9c651e282ea51aadbff2ccc21b020",
+  "file": "cfd39d89f184cd49.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/the-entertainers/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:43Z",
+  "title": "The Entertainers - Leeds Playhouse",
+  "sha256": "3b9d5dd847036e2e7cafcd3ecb1aef46411065873c70f734620c79b28eb13008",
+  "file": "3b9d5dd847036e2e.txt"
+ },
+ {
+  "seed": "leeds-playhouse",
+  "url": "https://www.leedsplayhouse.org.uk/event/ballet-black-unbound/",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:45Z",
+  "title": "Ballet Black: UNBOUND - Leeds Playhouse",
+  "sha256": "e58950679b336b39774719421b700827c9b4db68f63b560a2711fd9367fbfd62",
+  "file": "e58950679b336b39.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/lyt-seniors-14-19s-spring-term-2027",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:51Z",
+  "title": "Lyceum Youth Theatre Seniors (14-19s) Spring Term 2027 | Lyceum",
+  "sha256": "7c7244b538c1e12e8e5fc2aa86ff23a85973fa992067548d075608b32bff3eb0",
+  "file": "7c7244b538c1e12e.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/lyt-play-5-7s-spring-term-2027",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:53Z",
+  "title": "Lyceum Youth Theatre Play (5-7s) Spring Term 2027 | Lyceum",
+  "sha256": "3007e604deb9ab4173bf2f7df772bfdfc8c03f64c8e4523318ba9c2d6bddb839",
+  "file": "3007e604deb9ab41.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/lyt-minis-8-10s-spring-term-2027",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:55Z",
+  "title": "Lyceum Youth Theatre Minis (8-10s) Spring Term 2027 | Lyceum",
+  "sha256": "c33e6d75e91d7163823f6fb15e938356a829d3564b3a1d852a9406caf8f9abfc",
+  "file": "c33e6d75e91d7163.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/lyt-juniors-11-13s-spring-term-2027",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:56Z",
+  "title": "Lyceum Youth Theatre Juniors (11-13s) Spring Term 2027 | Lyceum",
+  "sha256": "7b025b85a756c1b1c1d9049bde84bbbd6ae643caf9e203447fe4bf0a01cc525f",
+  "file": "7b025b85a756c1b1.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/zog-the-flying-doctors-2027",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:05:57Z",
+  "title": "Zog and The Flying Doctors | Lyceum",
+  "sha256": "c464bc26dfc6124fc97dda568b2feee1736f6a7c1ab3d797ddd7dc6911c3f8d6",
+  "file": "c464bc26dfc6124f.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/mother-courage-her-children",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:03Z",
+  "title": "Mother Courage and her Children | Lyceum",
+  "sha256": "c982423871b67b82a704fe62ea0c648bdba6e5db775dfd438189001a3b7e1290",
+  "file": "c982423871b67b82.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/romeo-juliet-2027-schools",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:05Z",
+  "title": "Romeo & Juliet - schools performances | Lyceum",
+  "sha256": "f24f21ea42d028590abef293d0472dce1006169fd32db3ab2cbb810a27591ca3",
+  "file": "f24f21ea42d02859.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/a-christmas-carol-2026-27-schools",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:05Z",
+  "title": "A Christmas Carol - schools performances | Lyceum",
+  "sha256": "1adda8dfc1e4eb3d679052ac5ac969e1771738f40e38a1353a0c3d3586f7040b",
+  "file": "1adda8dfc1e4eb3d.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/christopher-macarthur-boyd-howling-at-the-moon",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:09Z",
+  "title": "Christopher Macarthur-Boyd: Howling at the Moon | Lyceum",
+  "sha256": "20d8b203e9900be6e1452ad4a908c1c3acad0ad9370e3c35a668b74a0722fd15",
+  "file": "20d8b203e9900be6.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/the-haunting-of-hill-house",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:11Z",
+  "title": "The Haunting of Hill House | Lyceum",
+  "sha256": "597861beab6d3b26fbaace4e6ae8a9cc90eafae169323be5b412517aba682baa",
+  "file": "597861beab6d3b26.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/romeo-juliet-2027",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:11Z",
+  "title": "Romeo & Juliet | Lyceum",
+  "sha256": "23a96f97004c35d54913485f1a5609b9519ece913483cdef095587447e647809",
+  "file": "23a96f97004c35d5.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/the-trick-is-to-keep-breathing",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:16Z",
+  "title": "The Trick is to Keep Breathing | Lyceum",
+  "sha256": "d0037c6ef8ecfdf9aee2eb1521c6d465edf1f5a1f808699ea91fbc4d5f112dea",
+  "file": "d0037c6ef8ecfdf9.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/a-christmas-carol",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:17Z",
+  "title": "A Christmas Carol | Lyceum",
+  "sha256": "a4f1dba8809997085fb5486ee39c66b6a9e07ca28058501352107e92e4c2b1b3",
+  "file": "a4f1dba880999708.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/a-christmas-carol-secret-seats",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:18Z",
+  "title": "A Christmas Carol - SECRET SEATS | Lyceum",
+  "sha256": "f0d3b4d6009374c2b9f5113a02286d702d951ac8a3209e4fe6f561ac55673d91",
+  "file": "f0d3b4d6009374c2.txt"
+ },
+ {
+  "seed": "royal-lyceum",
+  "url": "https://lyceum.org.uk/events/strangers-on-a-train-2027",
+  "status": 200,
+  "fetched_at": "2026-11-17T09:06:22Z",
+  "title": "Strangers on a Train | Lyceum",
+  "sha256": "630ab23d4485c7a624aba641af5efc646e727f759517c90a632d6a2e27afd30d",
+  "file": "630ab23d4485c7a6.txt"
  }
 ]

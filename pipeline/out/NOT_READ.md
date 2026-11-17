@@ -2,8 +2,19 @@
 
 These pages were fetched but nothing on them matched a pattern. Nothing was guessed.
 
-## No credits in a pattern we read (153)
+## No credits in a pattern we read (189)
 
+- https://lyceum.org.uk/events/a-christmas-carol-2026-27-schools
+- https://lyceum.org.uk/events/a-christmas-carol-secret-seats
+- https://lyceum.org.uk/events/christopher-macarthur-boyd-howling-at-the-moon
+- https://lyceum.org.uk/events/lyt-juniors-11-13s-spring-term-2027
+- https://lyceum.org.uk/events/lyt-minis-8-10s-spring-term-2027
+- https://lyceum.org.uk/events/lyt-play-5-7s-spring-term-2027
+- https://lyceum.org.uk/events/lyt-seniors-14-19s-spring-term-2027
+- https://lyceum.org.uk/events/mother-courage-her-children
+- https://lyceum.org.uk/events/romeo-juliet-2027-schools
+- https://lyceum.org.uk/events/strangers-on-a-train-2027
+- https://lyceum.org.uk/events/zog-the-flying-doctors-2027
 - https://thechoirofman.com
 - https://www.burlesqueonstage.com/
 - https://www.burlesqueonstage.com/cast
@@ -55,6 +66,26 @@ These pages were fetched but nothing on them matched a pattern. Nothing was gues
 - https://www.debbieobrien.net/thriller-live.html
 - https://www.debbieobrien.net/thrilleraudition.html
 - https://www.debbieobrien.net/whitney-tina.html
+- https://www.leedsplayhouse.org.uk/event/a-simply-beastly-murder/
+- https://www.leedsplayhouse.org.uk/event/ballet-black-unbound/
+- https://www.leedsplayhouse.org.uk/event/beyond-the-sea/
+- https://www.leedsplayhouse.org.uk/event/deepest-fears-ghost-stories/
+- https://www.leedsplayhouse.org.uk/event/dog-man-the-musical/
+- https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/
+- https://www.leedsplayhouse.org.uk/event/evita-too/
+- https://www.leedsplayhouse.org.uk/event/from-england-with-love/
+- https://www.leedsplayhouse.org.uk/event/grimeboy/
+- https://www.leedsplayhouse.org.uk/event/hansel-gretel-and-the-witch/
+- https://www.leedsplayhouse.org.uk/event/leeds-playhouse-youth-theatre-wrapped/
+- https://www.leedsplayhouse.org.uk/event/managed-approach/
+- https://www.leedsplayhouse.org.uk/event/mary-mary/
+- https://www.leedsplayhouse.org.uk/event/reviving-her/
+- https://www.leedsplayhouse.org.uk/event/romeo-and-juliet-3/
+- https://www.leedsplayhouse.org.uk/event/rpm/
+- https://www.leedsplayhouse.org.uk/event/son-of-a-bitch/
+- https://www.leedsplayhouse.org.uk/event/the-entertainers/
+- https://www.leedsplayhouse.org.uk/event/until-i-find-you/
+- https://www.leedsplayhouse.org.uk/event/verve-triple-bill-3/
 - https://www.unitedagents.co.uk/jill-trevellick-cdg/
 - https://www.unitedagents.co.uk/kate-dowd-cdg/
 - https://www.unitedagents.co.uk/louise-kiely-cdg/
@@ -65,6 +96,7 @@ These pages were fetched but nothing on them matched a pattern. Nothing was gues
 - https://www.xroadslive.com/press/annie-the-musical-takes-part-in-the-first-macao-international-childrens-arts-festival
 - https://www.xroadslive.com/press/back-to-the-future-opens-to-electrifying-reviews-in-sydney
 - https://www.xroadslive.com/press/ben-platt-watched-magic-mike-live-with-allison-janney-and-kristen-bell-and-it-was-very-satisfying
+- https://www.xroadslive.com/press/bodyguard-alexandra-burke-returns
 - https://www.xroadslive.com/press/broadways-smash-hit-musical-is-coming-to-the-savoy-theatre-london-from-june-2024
 - https://www.xroadslive.com/press/caroline-oconnor-and-eddie-perfect-will-lead-9-to-5-the-musical-in-sydney
 - https://www.xroadslive.com/press/cast-changes-bodyguard
@@ -77,6 +109,7 @@ These pages were fetched but nothing on them matched a pattern. Nothing was gues
 - https://www.xroadslive.com/press/cats-returns-to-its-original-australian-home-after-40-yearslet-the-memory-live-again
 - https://www.xroadslive.com/press/celebrating-2023-with-thestage100
 - https://www.xroadslive.com/press/celebrating-our-world-beating-theatre-on-world-theatre-day
+- https://www.xroadslive.com/press/chelsea-halfpenny-will-succeed-lucie-jones-in-uk-and-ireland-tour-of-waitress
 - https://www.xroadslive.com/press/chicago-paints-the-town-red-in-china
 - https://www.xroadslive.com/press/christmas-comes-early-at-the-crossroads-pantomimes
 - https://www.xroadslive.com/press/crossroads-live-acquires-qdos-pantomimes
@@ -153,17 +186,56 @@ These pages were fetched but nothing on them matched a pattern. Nothing was gues
 - https://www.xroadslive.com/press/the-award-wining-triumphant-story-now-on-tour
 - https://www.xroadslive.com/press/the-olivier-awards-nominations-are-announced
 - https://www.xroadslive.com/press/the-phantom-of-the-opera-makes-its-debut-in-india
+- https://www.xroadslive.com/press/the-sharpest-slickest-show-on-the-block-returns-to-australia
 - https://www.xroadslive.com/press/the-stage-debut-awards
+- https://www.xroadslive.com/press/tickets-now-on-sale-as-the-sizzling-star-studded-cast-announced-for-the-sharpest-slickest-show-on-the-block
 - https://www.xroadslive.com/press/us-theatre-awards-season-the-lost-boys-titanique-and-beaches-all-nominated
 - https://www.xroadslive.com/press/waitress-to-premiere-in-australia-in-2026
 - https://www.xroadslive.com/press/were-delighted-to-appear-in-the-top-10-of-the-stage-100-as-a-new-entry-for-the-new-year
+- https://www.xroadslive.com/press/world-premiere-announced-for-my-best-friends-wedding-at-ogunquit-playhouse
 
-## Label/name lines in both orders (skipped) (13)
+## Credits found, but the page doesn't say which show (32)
+
+- https://lyceum.org.uk/events/romeo-juliet-2027
+- https://www.debbieobrien.net/debbie-obrien.html
+- https://www.leedsplayhouse.org.uk/event/a-thousand-splendid-suns-2/
+- https://www.unitedagents.co.uk/catriona-dickie-cdg/
+- https://www.unitedagents.co.uk/stuart-burt-cdg-csa/
+- https://www.xroadslive.com/press/andrew-lloyd-webbers-smash-hit-west-end-amp-broadway-musical-to-embark-on-uk-tour-2021
+- https://www.xroadslive.com/press/beetlejuice-its-showtime-london
+- https://www.xroadslive.com/press/beverley-knight-drifters-girl
+- https://www.xroadslive.com/press/calling-all-talented-young-musicians-across-the-country
+- https://www.xroadslive.com/press/celebrating-4-years-magic-mike-london
+- https://www.xroadslive.com/press/celebrating-one-year-of-crossroads-live-scholarships-at-mountview
+- https://www.xroadslive.com/press/cluedo-announces-australian-premiere-for-2026
+- https://www.xroadslive.com/press/comedy-legends-french-amp-saunders-reunite-for-cinderella-at-london-palladium
+- https://www.xroadslive.com/press/complete-2022-chicago-tour-cast-revealed-with-sheila-ferguson-as-mama-morton
+- https://www.xroadslive.com/press/elf-the-musical-opens-on-broadway-to-sparklejollytwinklejingley-reviews
+- https://www.xroadslive.com/press/everybody-say-yeah-kinky-boots-is-returning-to-chinanbsp
+- https://www.xroadslive.com/press/final-cast-members-announced
+- https://www.xroadslive.com/press/full-west-end-cast-announced-for-beetlejuice
+- https://www.xroadslive.com/press/jason-donovan-stars-in-the-50th-anniversary-tour-of-the-rocky-horror-show-in-sydney
+- https://www.xroadslive.com/press/lead-cast-members-announced-for-australias-rodgers-hammersteins-cinderella
+- https://www.xroadslive.com/press/magic-mike-live-in-london-extends-booking-period-through-1-january-2023
+- https://www.xroadslive.com/press/mml-channing-tatums
+- https://www.xroadslive.com/press/one-month-today-until-our-first-spectacular-pantomime-of-the-season-beauty-and-the-beast-begins-at-kings-theatre-glasgow
+- https://www.xroadslive.com/press/school-of-rock-confirms-dates-for-first-uk-and-ireland-tour
+- https://www.xroadslive.com/press/spring-forward-gearing-up-for-our-new-broadway-openings
+- https://www.xroadslive.com/press/tag/Kinky+Boots
+- https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024
+- https://www.xroadslive.com/press/the-spellbinding-sequel-to-the-phantom-of-the-opera
+- https://www.xroadslive.com/press/the-wiz-announces-company-for-new-na-tour
+- https://www.xroadslive.com/press/waitress-proof-that-a-touring-production-has-the-power-to-outshine-the-original
+- https://www.xroadslive.com/press/wellbeing-specialist-role
+- https://www.xroadslive.com/press/world-premiere-sotl-announced-2026
+
+## Label/name lines in both orders (skipped) (14)
 
 - https://www.debbieobrien.net/contact.html
 - https://www.debbieobrien.net/dob-casting.html
 - https://www.debbieobrien.net/ncl-june.html
 - https://www.debbieobrien.net/our-team.html
+- https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/
 - https://www.unitedagents.co.uk/catriona-dickie-cdg/
 - https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/
 - https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/
@@ -173,28 +245,3 @@ These pages were fetched but nothing on them matched a pattern. Nothing was gues
 - https://www.unitedagents.co.uk/matthew-dewsbury-cdg/
 - https://www.unitedagents.co.uk/maya-kvetny-csa/
 - https://www.unitedagents.co.uk/stuart-burt-cdg-csa/
-
-## Credits found, but the page doesn't say which show (22)
-
-- https://www.unitedagents.co.uk/stuart-burt-cdg-csa/
-- https://www.xroadslive.com/press/andrew-lloyd-webbers-smash-hit-west-end-amp-broadway-musical-to-embark-on-uk-tour-2021
-- https://www.xroadslive.com/press/beetlejuice-its-showtime-london
-- https://www.xroadslive.com/press/beverley-knight-drifters-girl
-- https://www.xroadslive.com/press/bodyguard-alexandra-burke-returns
-- https://www.xroadslive.com/press/calling-all-talented-young-musicians-across-the-country
-- https://www.xroadslive.com/press/celebrating-4-years-magic-mike-london
-- https://www.xroadslive.com/press/celebrating-one-year-of-crossroads-live-scholarships-at-mountview
-- https://www.xroadslive.com/press/cluedo-announces-australian-premiere-for-2026
-- https://www.xroadslive.com/press/elf-the-musical-opens-on-broadway-to-sparklejollytwinklejingley-reviews
-- https://www.xroadslive.com/press/everybody-say-yeah-kinky-boots-is-returning-to-chinanbsp
-- https://www.xroadslive.com/press/jason-donovan-stars-in-the-50th-anniversary-tour-of-the-rocky-horror-show-in-sydney
-- https://www.xroadslive.com/press/lead-cast-members-announced-for-australias-rodgers-hammersteins-cinderella
-- https://www.xroadslive.com/press/magic-mike-live-in-london-extends-booking-period-through-1-january-2023
-- https://www.xroadslive.com/press/one-month-today-until-our-first-spectacular-pantomime-of-the-season-beauty-and-the-beast-begins-at-kings-theatre-glasgow
-- https://www.xroadslive.com/press/school-of-rock-confirms-dates-for-first-uk-and-ireland-tour
-- https://www.xroadslive.com/press/spring-forward-gearing-up-for-our-new-broadway-openings
-- https://www.xroadslive.com/press/tag/Kinky+Boots
-- https://www.xroadslive.com/press/the-wiz-announces-company-for-new-na-tour
-- https://www.xroadslive.com/press/waitress-proof-that-a-touring-production-has-the-power-to-outshine-the-original
-- https://www.xroadslive.com/press/wellbeing-specialist-role
-- https://www.xroadslive.com/press/world-premiere-sotl-announced-2026

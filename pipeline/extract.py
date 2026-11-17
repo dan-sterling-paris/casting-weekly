@@ -76,7 +76,8 @@ for p in sorted(pages, key=lambda x: x["url"]):
     lab, status = label_pairs(text)
     found += [c for c in lab if (c[1], c[2].lower()) not in {(r, n.lower()) for _, r, n, _ in found}]
     if found:
-        show, why = show_of_page(text, [site])
+        # a person's CV page (it has credit blocks) is about the person, so its heading is never a show
+        show, why = show_of_page(text, [site], "" if blocks else p.get("title", ""), p["url"])
         if not show:
             not_read["Credits found, but the page doesn't say which show"].append(p["url"])
         else:

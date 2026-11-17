@@ -1,6 +1,6 @@
 # Source checks
 
-Run 2026-11-17T08:38:51Z with agent `CastingWeeklyBot/0.2 (+https://castingweekly.com/bot; office@castingweekly.com)`. A person must read each site's terms before anything is published.
+Run 2026-11-17T09:04:25Z with agent `CastingWeeklyBot/0.2 (+https://castingweekly.com/bot; office@castingweekly.com)`. A person must read each site's terms before anything is published.
 
 ## Crossroads Live
 
@@ -34,5 +34,26 @@ Run 2026-11-17T08:38:51Z with agent `CastingWeeklyBot/0.2 (+https://castingweekl
 
 - robots.txt: HTTP 200; our agent allowed: **yes**
 - Paths we read: `/harry-blumenau-cdg-csa/` allowed
+- AI crawlers this site blocks: none listed
+- Terms page: not found in sitemap
+
+## United Agents casting directors
+
+- robots.txt: HTTP 200; our agent allowed: **yes**
+- Paths we read: `/` allowed
+- AI crawlers this site blocks: none listed
+- Terms page: not found in sitemap
+
+## Leeds Playhouse
+
+- robots.txt: HTTP 404; our agent allowed: **yes**
+- Paths we read: `/event/` allowed
+- AI crawlers this site blocks: none listed
+- Terms page: https://www.leedsplayhouse.org.uk/terms-conditions/
+
+## Royal Lyceum Theatre Edinburgh
+
+- robots.txt: HTTP 200; our agent allowed: **yes**
+- Paths we read: `/events/` allowed
 - AI crawlers this site blocks: none listed
 - Terms page: not found in sitemap

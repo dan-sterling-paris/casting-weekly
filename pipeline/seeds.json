@@ -80,6 +80,26 @@
    ],
    "credits_since": 2024,
    "max_pages": 10
+  },
+  {
+   "id": "leeds-playhouse",
+   "name": "Leeds Playhouse",
+   "kind": "theatre",
+   "url": "https://www.leedsplayhouse.org.uk",
+   "read": [
+    "/event/"
+   ],
+   "max_pages": 25
+  },
+  {
+   "id": "royal-lyceum",
+   "name": "Royal Lyceum Theatre Edinburgh",
+   "kind": "theatre",
+   "url": "https://lyceum.org.uk",
+   "read": [
+    "/events/"
+   ],
+   "max_pages": 15
   }
  ]
 }

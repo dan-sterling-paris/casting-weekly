@@ -18,8 +18,12 @@ NOT_A_NAME = re.compile(r"'s\b|’s\b|\b(Director|Artistic|Associate|Producer|Ch
 VENUE_WORDS = re.compile(r"\b(Playhouse|Palace|Theatre|Theater|Hall|House|Centre|Center|Coliseum|Studios?|Arena|Pavilion|Opera|Arts|Rep|Lyceum|Festival|Tour|Productions?)\b")
 
 
+VERB_TAIL = re.compile(r"(\s+(Directed|Written|Choreographed|Produced|Designed|Composed|Starring|With))+$")
+
+
 def split_names(s):
-    return [re.sub(r"(\s+(CDG|CSA))+$", "", n.strip()) for n in re.split(r",| and | & ", s) if n.strip()]
+    names = [VERB_TAIL.sub("", re.sub(r"(\s+(CDG|CSA))+$", "", n.strip())) for n in re.split(r",| and | & ", s) if n.strip()]
+    return [n for n in names if len(n.split()) >= 2]
 
 
 def sentences(text):
@@ -45,6 +49,8 @@ SENTENCE = [
 def pattern_s(text):
     found = []
     for sent in sentences(text):
+        if re.search(r"\bbased on\b|\b(the|original) (film|movie)\b", sent, re.I):
+            continue   # about the source material, not this production
         for role, rx in SENTENCE:
             for m in rx.finditer(sent):
                 if QUAL_BEFORE.search(sent[:m.start()]):
@@ -95,14 +101,28 @@ def label_pairs(text):
         cur.append(i)
     if len(cur) >= 2:
         runs.append(cur)
-    if not runs:
+    # Direction is decided once per page, only by clear evidence: a role line with a name on one side and
+    # something else on the other. All such lines must agree; with no evidence, or evidence both ways,
+    # nothing is taken from the page (missing is better than wrong).
+    votes = set()
+    for i, (k, _) in enumerate(kinds):
+        if k not in ("role", "other"):
+            continue
+        prev_name = i > 0 and kinds[i - 1][0] == "name"
+        next_name = i + 1 < len(kinds) and kinds[i + 1][0] == "name"
+        if prev_name and not next_name:
+            votes.add("name-first")
+        elif next_name and not prev_name:
+            votes.add("role-first")
+    if not votes:
         return [], "none"
-    orient = {"role-first" if kinds[r[0]][0] != "name" else "name-first" for r in runs}
-    if len(orient) > 1:
+    if len(votes) > 1:
         return [], "mixed"
-    role_first = orient.pop() == "role-first"
+    role_first = votes.pop() == "role-first"
     out = []
     for r in runs:
+        if (kinds[r[0]][0] == "name") == role_first:   # line the pairs up from the right first line
+            r = r[1:]
         for a, b in zip(r[0::2], r[1::2]):
             lab, nm = (a, b) if role_first else (b, a)
             if kinds[lab][0] == "role" and kinds[nm][0] == "name":
@@ -162,19 +182,39 @@ CAPS_STOP = {"UK", "USA", "CEO", "OBE", "MBE", "CBE", "BBC", "ITV", "NEW", "TOUR
 ANNOUNCE = re.compile(r"\b(announce|announces|announced|presents|present|produc|co-produc)", re.I)
 
 
-def show_of_page(text, owner_names=()):
-    """The show a page announces: 'production of X' / 'season of X', or a title IN CAPITALS in an
-    announcing sentence. The site owner's own name is never taken as a title. None if neither is found."""
+NEWSY = re.compile(r"\b(announce[sd]?|announcing|cast|casting|tickets?|opens?|returns?|joins?|news|on sale|tour|premiere|extends?|celebrates?)\b", re.I)
+
+
+def _words(s):
+    return set(re.findall(r"[a-z0-9]+", s.lower().replace("’", "'"))) - {"the", "a", "an", "of", "and", "musical"}
+
+
+def show_of_page(text, owner_names=(), page_title="", page_url=""):
+    """The show a page is about.
+    1. A show named in an announcing sentence ('production of X', 'season of X', or a title IN CAPITALS)
+       whose words also appear in the page's own address or title; shows that only appear elsewhere on
+       the page (for example in a cast member's biography) are ignored.
+    2. Otherwise the page's own short heading, when it is a line on the page and not a news headline.
+    None if neither fits, and the page's credits are left unread."""
     stop = CAPS_STOP | {w.upper() for n in owner_names for w in n.split()}
+    where = _words(page_url.replace("-", " ").replace("/", " ") + " " + page_title)
     for sent in sentences(text):
         if not ANNOUNCE.search(sent):
             continue
-        m = OF_TITLE.search(sent)
-        if m:
-            return m.group("t").strip(), sent
+        cands = [m.group("t").strip() for m in OF_TITLE.finditer(sent)]
         caps = [(c.group(1).strip(" ,.:"), c.end()) for c in CAPS_TITLE.finditer(sent)]
-        caps = [c for c, end in caps if c.upper() == c and c not in stop and not all(w in stop for w in c.split())
-                and not re.match(r" [A-Z][a-z]", sent[end:end + 3]) and not re.match(r" and (?:the )?\w*produc", sent[end:end + 20], re.I)]
-        if caps:
-            return max(caps, key=len), sent
+        cands += [c for c, end in caps if c.upper() == c and any(len(w) >= 3 and w.isalpha() and w not in stop for w in re.findall(r"[A-Z']+", c)) and c not in stop
+                  and not all(w in stop for w in c.split()) and not re.match(r" [A-Z][a-z]", sent[end:end + 3])
+                  and not re.match(r" and (?:the )?\w*produc", sent[end:end + 20], re.I)]
+        for c in cands:
+            w = _words(c)
+            if w and w <= where:
+                return c, sent
+    heading = re.split(r" [-|–—] ", page_title)[0].strip()
+    lines = {l.strip() for l in text.split("\n")}
+    slug = re.sub(r"[^a-z0-9]+", " ", page_url.rstrip("/").rsplit("/", 1)[-1].lower()).strip()
+    if heading and heading in lines and _words(heading) and _words(heading) == _words(slug) \
+            and len(heading.split()) <= 6 and not NEWSY.search(heading) and not re.search(r"\b(CDG|CSA)\b|[!?]", heading) \
+            and not re.search(r"\b(confirms?|reveals?|revealed|extends?|gearing|calling|celebrating|final|complete|full)\b", heading, re.I):
+        return heading, heading   # a show page: its address is the show's name
     return None, None
