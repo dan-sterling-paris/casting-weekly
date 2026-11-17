@@ -68,7 +68,8 @@ button,input{font:inherit;color:inherit}
 .zoom{position:absolute;right:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;z-index:2}
 .zoom button{width:30px;height:30px;background:var(--panel);border:1px solid var(--line2);border-radius:5px;cursor:pointer;font:14px var(--mono)}
 .node-label{font:500 11px var(--mono);fill:var(--text);paint-order:stroke;stroke:var(--bg);stroke-width:3px;pointer-events:none}
-.node-label.prod{fill:var(--cyan)}
+.node-label.prod{fill:var(--cyan);font-size:10.5px}
+.node-label.cd{fill:var(--amber);font:600 14px var(--sans);stroke-width:4px}
 /* dossier */
 .d-empty{padding:28px 22px;color:var(--dim)}
 .d-empty h2{font:600 15px var(--sans);color:var(--text);margin:0 0 8px}
@@ -178,6 +179,7 @@ for(const e of E){
   if(!links.some(l => l.source === pr.id && l.target === th.id)){ links.push({source:pr.id, target:th.id, kind:"venue"}); pr.nbrs.add(th.id); th.nbrs.add(pr.id); }
 }
 const N = [...nodes.values()];
+for(const n of N){ if(n.kind === "prod") n.cds = [...n.nbrs].map(i=>nodes.get(i)).filter(x=>x.kind==="cd"); }
 N.forEach((n,i) => n.ref = ({cd:"CD",person:"PR",prod:"PD",theatre:"TH"})[n.kind] + "-" + String(1000 + i));
 function associates(n){
   if(n.kind === "prod") return [...n.nbrs].map(id=>nodes.get(id)).filter(x=>x.kind!=="theatre");
@@ -201,10 +203,10 @@ document.getElementById("status").innerHTML = "";
 });
 
 /* ---- filters ---- */
-const visible = {cd:true, person:true, prod:true, theatre:true};
+const visible = {cd:true, person:false, prod:true, theatre:false};  // casting directors first; other creatives and venues on request
 const tg = document.getElementById("toggles");
 for(const k of ["cd","person","prod","theatre"]){
-  const b = document.createElement("button"); b.className = "tg"; b.type = "button"; b.setAttribute("aria-pressed","true");
+  const b = document.createElement("button"); b.className = "tg"; b.type = "button"; b.setAttribute("aria-pressed", String(visible[k]));
   const sw = document.createElement("i"); sw.className = "sw" + (k==="prod" ? " sq" : ""); sw.style.background = KIND[k].color;
   b.append(sw, ({cd:"Casting directors",person:"Creatives",prod:"Productions",theatre:"Producers & companies"})[k], Object.assign(document.createElement("small"), {textContent: count(k)}));
   b.addEventListener("click", () => { visible[k] = !visible[k]; b.setAttribute("aria-pressed", visible[k]); paint(); });
@@ -231,7 +233,7 @@ svg.call(zoom).on("dblclick.zoom", null);
 const L = root.append("g").selectAll("line").data(links).join("line")
   .attr("stroke", d => d.kind === "venue" ? "rgba(169,155,255,.18)" : d.role === "Casting director" ? "rgba(245,184,61,.35)" : "rgba(201,211,223,.16)")
   .attr("stroke-width", d => d.kind === "venue" ? 1 : 1.3).attr("stroke-dasharray", d => d.kind === "venue" ? "3 4" : null);
-const size = n => n.kind === "theatre" ? 9 : n.kind === "prod" ? 5.5 : 4 + Math.min(n.credits.length, 6) * 1.1;
+const size = n => n.kind === "cd" ? 16 + Math.min(n.credits.length, 8) * 2.5 : n.kind === "prod" ? 7 : n.kind === "theatre" ? 6 : 3.5;
 const G = root.append("g").selectAll("g").data(N).join("g").attr("class","n").style("cursor","pointer")
   .attr("tabindex", 0).attr("role","button").attr("aria-label", n => KIND[n.kind].label + ": " + n.label)
   .on("click", (ev,n) => select(n)).on("keydown", (ev,n) => { if(ev.key === "Enter") select(n); });
@@ -239,21 +241,42 @@ G.each(function(n){
   const g = d3.select(this);
   if(n.kind === "prod") g.append("rect").attr("x",-size(n)).attr("y",-size(n)).attr("width",size(n)*2).attr("height",size(n)*2).attr("transform","rotate(45)").attr("fill","var(--bg)").attr("stroke","var(--cyan)").attr("stroke-width",1.6);
   else if(n.kind === "theatre") g.append("circle").attr("r",size(n)).attr("fill","rgba(169,155,255,.12)").attr("stroke","var(--violet)").attr("stroke-width",1.6);
-  else g.append("circle").attr("r",size(n)).attr("fill", KIND[n.kind].color).attr("filter", n.kind === "cd" ? "url(#glow)" : null);
+  else if(n.kind === "cd"){
+    g.append("circle").attr("r", size(n) + 9).attr("fill","none").attr("stroke","rgba(245,184,61,.25)").attr("stroke-width",1).attr("stroke-dasharray","2 4");
+    g.append("circle").attr("class","core").attr("r",size(n)).attr("fill","var(--amber)").attr("filter","url(#glow)");
+    g.append("text").attr("text-anchor","middle").attr("dy","0.35em").attr("style","font:600 12px var(--mono);fill:#121317;pointer-events:none").text(n.label.split(/\s+/).map(w=>w[0]).join("").slice(0,3).toUpperCase());
+  }
+  else g.append("circle").attr("r",size(n)).attr("fill", KIND[n.kind].color).attr("opacity",.8);
 });
 G.call(d3.drag().on("start",(ev,d)=>{ if(!ev.active) sim.alphaTarget(.25).restart(); d.fx=d.x; d.fy=d.y; })
   .on("drag",(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on("end",(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
-const T = root.append("g").selectAll("text").data(N).join("text").attr("class", n => "node-label" + (n.kind==="prod" ? " prod" : "")).attr("dy", n => n.kind === "theatre" ? size(n) + 18 : -size(n) - 6).attr("text-anchor","middle").text(n => n.label.length > 34 ? n.label.slice(0,32) + "…" : n.label);
+const T = root.append("g").selectAll("text").data(N).join("text").attr("class", n => "node-label" + (n.kind==="prod" ? " prod" : "") + (n.kind==="cd" ? " cd" : "")).attr("dy", n => n.kind === "theatre" ? size(n) + 18 : n.kind === "cd" ? size(n) + 26 : -size(n) - 8).attr("text-anchor","middle").text(n => n.label.length > 34 ? n.label.slice(0,32) + "…" : n.label);
 
+const CDS = N.filter(n=>n.kind==="cd").sort((a,b)=>b.credits.length-a.credits.length || a.label.localeCompare(b.label));
+const R_IN = CDS.length > 1 ? 150 : 0, R_OUT = 400;
+CDS.forEach((c,i) => { const a = -Math.PI/2 + i*2*Math.PI/CDS.length; c.tx = R_IN*Math.cos(a); c.ty = R_IN*Math.sin(a); });
+const UNCAST = N.filter(n=>n.kind==="prod" && !n.cds.length);
+UNCAST.forEach((p,i) => { const a = -Math.PI/2 + (i+.5)*2*Math.PI/UNCAST.length; p.tx = R_OUT*Math.cos(a); p.ty = R_OUT*Math.sin(a); });
+for(const p of N.filter(n=>n.kind==="prod" && n.cds.length)){
+  const mx = d3.mean(p.cds, c=>c.tx), my = d3.mean(p.cds, c=>c.ty), d = Math.hypot(mx,my) || 1;
+  p.tx = mx + (CDS.length > 1 ? mx/d : 0) * 110; p.ty = my + (CDS.length > 1 ? my/d : 1) * 110;
+}
+N.forEach(n => { if(n.tx != null){ n.x = n.tx + (Math.random()-.5)*20; n.y = n.ty + (Math.random()-.5)*20; } });
+const pull = n => n.kind === "cd" ? .9 : n.kind === "prod" ? (n.cds.length ? .12 : .5) : 0;
 const sim = d3.forceSimulation(N)
-  .force("link", d3.forceLink(links).id(d=>d.id).distance(l => l.kind === "venue" ? 70 : 46).strength(.7))
-  .force("charge", d3.forceManyBody().strength(n => n.kind === "theatre" ? -260 : -90))
-  .force("collide", d3.forceCollide(n => size(n) + 6))
-  .force("x", d3.forceX(() => W()/2).strength(.035)).force("y", d3.forceY(() => H()/2).strength(.045))
+  .force("link", d3.forceLink(links).id(d=>d.id).distance(l => l.kind === "venue" ? 60 : l.role === "Casting director" ? 95 : 38).strength(l => l.role === "Casting director" ? .25 : .6))
+  .force("charge", d3.forceManyBody().strength(n => n.kind === "cd" ? -500 : n.kind === "prod" ? -160 : -40))
+  .force("collide", d3.forceCollide(n => size(n) + (n.kind === "cd" ? 22 : 10)))
+  .force("x", d3.forceX(n => n.tx ?? 0).strength(pull)).force("y", d3.forceY(n => n.ty ?? 0).strength(pull))
   .on("tick", () => {
     L.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
     G.attr("transform", d => `translate(${d.x},${d.y})`); T.attr("x",d=>d.x).attr("y",d=>d.y);
   });
+if(UNCAST.length){
+  const ring = root.insert("g", ":first-child").attr("pointer-events","none");
+  ring.append("circle").attr("r", R_OUT).attr("fill","none").attr("stroke","rgba(255,255,255,.07)").attr("stroke-dasharray","3 6");
+  ring.append("text").attr("y", -R_OUT - 14).attr("text-anchor","middle").attr("style","font:500 11px var(--mono);letter-spacing:.14em;fill:var(--faint)").text("CASTING DIRECTOR NOT STATED ON THE SOURCES READ");
+}
 sim.on("end", () => { if(!selected) fit(); });
 
 let selected = null;
@@ -262,9 +285,11 @@ function paint(){
   const f = selected ? focusSet(selected) : null;
   const show = n => visible[n.kind];
   G.style("display", n => show(n) ? null : "none").style("opacity", n => !f || f.has(n.id) ? 1 : .1);
-  G.select("circle,rect").attr("stroke-width", n => n === selected ? 3 : (n.kind==="prod"||n.kind==="theatre") ? 1.6 : 0).attr("stroke", n => n === selected ? "#fff" : (n.kind==="prod" ? "var(--cyan)" : n.kind==="theatre" ? "var(--violet)" : null));
+  G.select(".core,rect,circle:not(.core)").filter(function(){ return !this.getAttribute("stroke-dasharray"); })
+   .attr("stroke-width", n => n === selected ? 3 : (n.kind==="prod"||n.kind==="theatre") ? 1.6 : 0).attr("stroke", n => n === selected ? "#fff" : (n.kind==="prod" ? "var(--cyan)" : n.kind==="theatre" ? "var(--violet)" : null));
   L.style("display", l => show(l.source) && show(l.target) ? null : "none").style("opacity", l => !f || (f.has(l.source.id) && f.has(l.target.id)) ? 1 : .05);
-  T.style("display", n => show(n) && ((f && f.has(n.id)) || (!f && (n.kind==="cd" || n.kind==="theatre"))) ? null : "none");
+  T.style("display", n => show(n) && (n.kind === "cd" || n.kind === "prod" || (f && f.has(n.id))) ? null : "none")
+   .style("opacity", n => !f || f.has(n.id) ? 1 : .25);
 }
 function fit(dur=700){
   const vis = N.filter(n => visible[n.kind] && n.x != null); if(!vis.length) return;
@@ -301,7 +326,8 @@ function renderDossier(){
   chips.append(el("span","chip ok","Source-quoted")); head.append(chips); D.append(head);
 
   const prods = n.kind === "theatre" ? n.credits : [...new Set([...n.nbrs].map(i=>nodes.get(i)).filter(x=>x.kind==="prod"))];
-  const assoc = n.kind === "theatre" ? [] : associates(n);
+  const rank = q => q.kind === "cd" ? 0 : q.credits.some(c => c.role === "Director") ? 1 : 2;
+  const assoc = n.kind === "theatre" ? [] : associates(n).sort((a,b) => rank(a) - rank(b) || (b._shared||0) - (a._shared||0));
   const theatres = n.kind === "prod" ? [n.theatre] : [...new Set(prods.map(p=>p.theatre).filter(Boolean))];
   const st = el("div","d-stats");
   [[n.kind==="prod" ? n.credits.length : n.kind==="theatre" ? prods.length : n.credits.length, n.kind==="theatre" ? "Productions" : "Credits"],
@@ -310,10 +336,15 @@ function renderDossier(){
   D.append(st);
 
   if(assoc.length){
-    const s = el("div","d-sec"); s.append(el("p","lbl", n.kind === "prod" ? "Credited people" : "Known associates · worked together"));
+    const s = el("div","d-sec"); s.append(el("p","lbl", n.kind === "prod" ? "Credited people" : n.kind === "cd" ? "Worked with · directors first" : "Known associates · worked together"));
     const a = el("div","assoc");
     assoc.slice(0,24).forEach(q => { const b = el("button"); b.type = "button"; b.style.borderColor = q.kind==="cd" ? "rgba(245,184,61,.45)" : ""; b.append(q.label); if(q._shared > 1) b.append(el("small",null,"×"+q._shared)); b.onclick = () => select(q, true); a.append(b); });
-    s.append(a); D.append(s);
+    s.append(a);
+    if(n.kind === "cd"){
+      const orgs = [...new Set(prods.map(p=>p.theatre).filter(Boolean))];
+      if(orgs.length){ s.append(el("p","lbl","Producers & venues")); const o = el("div","assoc"); orgs.forEach(t => o.append(el("span","chip violet",t))); s.append(o); }
+    }
+    D.append(s);
   }
   const conf = n.credits.find(c => c.identity === "confirmed by own site");
   if(conf && n.kind !== "prod" && n.kind !== "theatre"){
@@ -324,12 +355,18 @@ function renderDossier(){
     const ex = at < 0 ? full : (at > 80 ? "…" : "") + full.slice(Math.max(0, at - 80), at + conf.production.length + 60) + (at + conf.production.length + 60 < full.length ? "…" : "");
     idb.append(el("div","ev", "“" + ex + "”"), el("div","prov", "debbieobrien.net · own credits list · rule ID1 (same title on own site)")); D.append(idb);
   }
+  if(n.kind === "prod" && !n.cds.length){
+    const nb = el("div","d-sec"); nb.append(el("p","lbl","Casting director"));
+    nb.append(el("p",null,"Casting director not stated on the sources read. It will appear here only when a source names them."));
+    D.append(nb);
+  }
   if(n.kind === "prod" && n.credits[0] && n.credits[0].producerEvidence){
     const pb = el("div","d-sec"); pb.append(el("p","lbl","Producer · rule " + n.credits[0].producerRule));
     pb.append(el("div","ev", "“" + n.credits[0].producerEvidence + "”")); D.append(pb);
   }
   const s = el("div","d-sec"); s.append(el("p","lbl", n.kind === "theatre" ? "Productions on file" : "Evidence"));
-  const list = n.kind === "theatre" ? prods.flatMap(p => p.credits) : n.credits;
+  const list = (n.kind === "theatre" ? prods.flatMap(p => p.credits) : n.credits).slice()
+    .sort((a,b) => n.kind === "cd" ? a.production.localeCompare(b.production) || String(b.year||"").localeCompare(String(a.year||"")) : 0);
   list.forEach(c => {
     const box = el("div","cred");
     box.append(el("div","r" + (c.role === "Casting director" ? "" : " other"), (c.roleAsStated || c.role) + (c.year ? " · " + c.year : "")));
@@ -370,7 +407,7 @@ addEventListener("resize", () => fit(0));
 
 paint(); renderDossier();
 const first = N.filter(n=>n.kind==="cd").sort((a,b)=>b.credits.length-a.credits.length)[0];
-setTimeout(() => { fit(); }, 900);
+setTimeout(() => { fit(); if(CDS[0]) select(CDS[0]); }, 1400);
 })();
 </script>
 </body>
