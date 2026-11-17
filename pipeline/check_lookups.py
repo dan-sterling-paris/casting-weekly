@@ -19,11 +19,22 @@ LOOKUPS = ROOT / "lookups"
 PAGES = OUT / "lookup_pages.json"
 SKIP = {"", "unknown"}
 WRITER_PART = {"book": "Writer", "music": "Composer", "lyrics": "Lyricist", "music and lyrics": "Composer",
-               "music & lyrics": "Composer", "adapted by": "Writer", "written by": "Writer", "playwright": "Writer"}
+               "music & lyrics": "Composer", "additional lyrics": "Lyricist", "adapted by": "Writer", "written by": "Writer", "playwright": "Writer"}
 
 # the role must be stated next to the name: in the same sentence, or on the line just before or after it
 ROLE_WORD = {"Casting director": r"casting", "Director": r"direct", "Writer": r"writ|book|creat|playwright|adapt|monologue|script",
              "Composer": r"music|compos|score", "Lyricist": r"lyric"}
+
+
+def around(sentence, name, width=180):
+    """A long sentence is shortened to the part around the name, so the quote always shows it."""
+    if len(sentence) <= 2 * width:
+        return sentence
+    m = re.search(r"[\W_]+".join(re.escape(w) for w in re.findall(r"[A-Za-z0-9]+", name)), sentence, re.I)
+    if not m:
+        return sentence[:2 * width] + "…"
+    a, b = max(0, m.start() - width), min(len(sentence), m.end() + width)
+    return ("…" if a else "") + sentence[a:b] + ("…" if b < len(sentence) else "")
 
 
 def role_evidence(text, name, role):
@@ -106,6 +117,8 @@ for f in files:
                 if text and contains(text, v.split(",")[0]) and contains(text, show):
                     venue = v
                     break
+        # one node per production: the same show at another venue is a different production with its own team
+        label = "%s (%s)" % (show, venue.split(",")[0]) if venue != "Venue not stated" else show
         for field in ("Casting Director", "Director", "Writer"):
             value = (rec.get(field) or "").strip()
             if value.lower() in SKIP:
@@ -132,11 +145,11 @@ for f in files:
                     if not ev:
                         why = "name is on the page, but not next to the role (%s)" % role.lower()
                         continue
-                    k = (key(name), role, key(show))
+                    k = (key(name), role, key(label))
                     if k not in seen:
                         seen.add(k)
-                        kept.append({"person": name, "role": role, "production": show, "venue": venue, "url": url,
-                                     "evidence": ev[:400], "rule": "K", "lookup_file": f.name})
+                        kept.append({"person": name, "role": role, "production": label, "venue": venue, "url": url,
+                                     "evidence": around(ev, name), "rule": "K", "lookup_file": f.name})
                     why = None
                     break
                 if why:

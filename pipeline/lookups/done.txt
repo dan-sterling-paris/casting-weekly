@@ -5,3 +5,6 @@ Beetlejuice, London  →  2026-11-17-1.json
 Burlesque, UK Tour  →  2026-11-17-1.json
 Wicked, London  →  2026-11-17-1.json
 Paddington, London  →  2026-11-17-1.json
+Avenue Q, 2026 London  →  2026-11-17-2.json
+Avenue Q, 2003 Broadway  →  2026-11-17-2.json
+Phantom of the Opera, 2026 London  →  2026-11-17-2.json

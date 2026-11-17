@@ -2,17 +2,17 @@
  {
   "person": "Debbie O'Brien",
   "role": "Casting director",
-  "production": "The Choir of Man",
+  "production": "The Choir of Man (Arts at Marble Arch)",
   "venue": "Arts at Marble Arch, London",
   "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
-  "evidence": "The Choir of Man is created by Doodson and Kay and directed by Doodson, with musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by Freddie Huddleston, monologues by Ben Norris, scenic design by Oli Townsend, lighting design by Richard Dinnen, costume design and co-scenic design by Verity Sadler, sound design by Sten Severson and casting by",
+  "evidence": "…by Ben Norris, scenic design by Oli Townsend, lighting design by Richard Dinnen, costume design and co-scenic design by Verity Sadler, sound design by Sten Severson and casting by Debbie O’Brien.",
   "rule": "K",
   "lookup_file": "2026-11-17-1.json"
  },
  {
   "person": "Nic Doodson",
   "role": "Writer",
-  "production": "The Choir of Man",
+  "production": "The Choir of Man (Arts at Marble Arch)",
   "venue": "Arts at Marble Arch, London",
   "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
   "evidence": "Created by Nic Doodson and Andrew Kay, the show is set inside an on-stage pub called The Jungle.",
@@ -22,7 +22,7 @@
  {
   "person": "Andrew Kay",
   "role": "Writer",
-  "production": "The Choir of Man",
+  "production": "The Choir of Man (Arts at Marble Arch)",
   "venue": "Arts at Marble Arch, London",
   "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
   "evidence": "Created by Nic Doodson and Andrew Kay, the show is set inside an on-stage pub called The Jungle.",
@@ -32,17 +32,27 @@
  {
   "person": "Ben Norris",
   "role": "Writer",
-  "production": "The Choir of Man",
+  "production": "The Choir of Man (Arts at Marble Arch)",
   "venue": "Arts at Marble Arch, London",
   "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/",
-  "evidence": "The Choir of Man is created by Doodson and Kay and directed by Doodson, with musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by Freddie Huddleston, monologues by Ben Norris, scenic design by Oli Townsend, lighting design by Richard Dinnen, costume design and co-scenic design by Verity Sadler, sound design by Sten Severson and casting by",
+  "evidence": "…ay and directed by Doodson, with musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by Freddie Huddleston, monologues by Ben Norris, scenic design by Oli Townsend, lighting design by Richard Dinnen, costume design and co-scenic design by Verity Sadler, sound design by Sten Severson and casting by Debbie O’Brie…",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Debbie O'Brien",
+  "role": "Casting director",
+  "production": "The Choir of Man (Arts Theatre)",
+  "venue": "Arts Theatre, London",
+  "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end",
+  "evidence": "…and choreography by Freddie Huddleston, set design by Oli Townsend, lighting by Richard Dinnen, costumes and co-set design by Verity Sadler, sound by Sten Severson, and casting by Debbie O’Brien.",
   "rule": "K",
   "lookup_file": "2026-11-17-1.json"
  },
  {
   "person": "Nic Doodson",
   "role": "Director",
-  "production": "The Choir of Man",
+  "production": "The Choir of Man (Arts Theatre)",
   "venue": "Arts Theatre, London",
   "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end",
   "evidence": "Creator, director and producer Nic Doodson said: “The Arts Theatre has been our London home for nearly four years, and it’s bittersweet to enter these final months.",
@@ -50,9 +60,39 @@
   "lookup_file": "2026-11-17-1.json"
  },
  {
+  "person": "Nic Doodson",
+  "role": "Writer",
+  "production": "The Choir of Man (Arts Theatre)",
+  "venue": "Arts Theatre, London",
+  "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end",
+  "evidence": "Creator, director and producer Nic Doodson said: “The Arts Theatre has been our London home for nearly four years, and it’s bittersweet to enter these final months.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Andrew Kay",
+  "role": "Writer",
+  "production": "The Choir of Man (Arts Theatre)",
+  "venue": "Arts Theatre, London",
+  "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end",
+  "evidence": "The Choir of Man is created by Nic Doodson and Andrew Kay, with direction by Nic Doodson, monologues written by Ben Norris, musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by …",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Ben Norris",
+  "role": "Writer",
+  "production": "The Choir of Man (Arts Theatre)",
+  "venue": "Arts Theatre, London",
+  "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end",
+  "evidence": "The Choir of Man is created by Nic Doodson and Andrew Kay, with direction by Nic Doodson, monologues written by Ben Norris, musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by Freddie Huddleston, set design by Oli Townsend, lighting by Richa…",
+  "rule": "K",
+  "lookup_file": "2026-11-17-1.json"
+ },
+ {
   "person": "Harry Blumenau",
   "role": "Casting director",
-  "production": "Beetlejuice the Musical",
+  "production": "Beetlejuice the Musical (Prince Edward Theatre)",
   "venue": "Prince Edward Theatre, London",
   "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
   "evidence": "Casting is by Harry Blumenau.",
@@ -62,7 +102,7 @@
  {
   "person": "Alex Timbers",
   "role": "Director",
-  "production": "Beetlejuice the Musical",
+  "production": "Beetlejuice the Musical (Prince Edward Theatre)",
   "venue": "Prince Edward Theatre, London",
   "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
   "evidence": "The West End production will be directed by Alex Timbers, with choreography by Connor Gallagher.",
@@ -72,7 +112,7 @@
  {
   "person": "Scott Brown",
   "role": "Writer",
-  "production": "Beetlejuice the Musical",
+  "production": "Beetlejuice the Musical (Prince Edward Theatre)",
   "venue": "Prince Edward Theatre, London",
   "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
   "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.",
@@ -82,7 +122,7 @@
  {
   "person": "Anthony King",
   "role": "Writer",
-  "production": "Beetlejuice the Musical",
+  "production": "Beetlejuice the Musical (Prince Edward Theatre)",
   "venue": "Prince Edward Theatre, London",
   "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
   "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.",
@@ -92,7 +132,7 @@
  {
   "person": "Eddie Perfect",
   "role": "Composer",
-  "production": "Beetlejuice the Musical",
+  "production": "Beetlejuice the Musical (Prince Edward Theatre)",
   "venue": "Prince Edward Theatre, London",
   "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
   "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.",
@@ -102,7 +142,7 @@
  {
   "person": "Eddie Perfect",
   "role": "Lyricist",
-  "production": "Beetlejuice the Musical",
+  "production": "Beetlejuice the Musical (Prince Edward Theatre)",
   "venue": "Prince Edward Theatre, London",
   "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469",
   "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.",
@@ -112,17 +152,17 @@
  {
   "person": "Harry Blumenau",
   "role": "Casting director",
-  "production": "Burlesque the Musical",
+  "production": "Burlesque the Musical (UK tour)",
   "venue": "UK tour",
   "url": "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical",
-  "evidence": "Written by Steven Antin, the production is directed by Racky Plews, with choreography by Robin Antin and Aaron Renfree, orchestrations and arrangements by Tom Curran, musical supervision by Adam Langston, musical direction by Rob Wicks, set design by Sara Perks, lighting by Joshie Harriette, costumes by Marco Marco, sound by Ben Harrison, video design by Duncan McLean, wigs design by Marco Marco a",
+  "evidence": "…tumes by Marco Marco, sound by Ben Harrison, video design by Duncan McLean, wigs design by Marco Marco and Jess & Jo for JJ Wigs, make-up design by Dominic Skinner, and casting by Harry Blumenau CDG CSA.",
   "rule": "K",
   "lookup_file": "2026-11-17-1.json"
  },
  {
   "person": "Racky Plews",
   "role": "Director",
-  "production": "Burlesque the Musical",
+  "production": "Burlesque the Musical (UK tour)",
   "venue": "UK tour",
   "url": "https://www.bradford-theatres.co.uk/news/lead-cast-and-creative-team-announced-for-the-first-uk-tour-production-of-the-spectacular",
   "evidence": "With a creative team led by Producer, Writer & Creative Director Steven Antin, it is directed by Racky Plews (I‘m Every Woman The Chaka Khan Musical, Green Day’s American Idiot) with choreography by Robin Antin (creator of The Pussycat Dolls).",
@@ -132,17 +172,17 @@
  {
   "person": "Steven Antin",
   "role": "Writer",
-  "production": "Burlesque the Musical",
+  "production": "Burlesque the Musical (UK tour)",
   "venue": "UK tour",
   "url": "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical",
-  "evidence": "Written by Steven Antin, the production is directed by Racky Plews, with choreography by Robin Antin and Aaron Renfree, orchestrations and arrangements by Tom Curran, musical supervision by Adam Langston, musical direction by Rob Wicks, set design by Sara Perks, lighting by Joshie Harriette, costumes by Marco Marco, sound by Ben Harrison, video design by Duncan McLean, wigs design by Marco Marco a",
+  "evidence": "Written by Steven Antin, the production is directed by Racky Plews, with choreography by Robin Antin and Aaron Renfree, orchestrations and arrangements by Tom Curran, musical supervision by Adam Langston…",
   "rule": "K",
   "lookup_file": "2026-11-17-1.json"
  },
  {
   "person": "Jim Arnold",
   "role": "Casting director",
-  "production": "Wicked",
+  "production": "Wicked (Apollo Victoria Theatre)",
   "venue": "Apollo Victoria Theatre, London",
   "url": "https://officiallondontheatre.com/show/wicked-73606/",
   "evidence": "UK Casting - / Jim Arnold CDG",
@@ -152,7 +192,7 @@
  {
   "person": "Joe Mantello",
   "role": "Director",
-  "production": "Wicked",
+  "production": "Wicked (Apollo Victoria Theatre)",
   "venue": "Apollo Victoria Theatre, London",
   "url": "https://officiallondontheatre.com/show/wicked-73606/",
   "evidence": "Wicked is written by Winnie Holzman and this production is directed by Joe Mantello.",
@@ -162,7 +202,7 @@
  {
   "person": "Winnie Holzman",
   "role": "Writer",
-  "production": "Wicked",
+  "production": "Wicked (Apollo Victoria Theatre)",
   "venue": "Apollo Victoria Theatre, London",
   "url": "https://officiallondontheatre.com/show/wicked-73606/",
   "evidence": "Wicked is written by Winnie Holzman and this production is directed by Joe Mantello.",
@@ -172,7 +212,7 @@
  {
   "person": "Stephen Schwartz",
   "role": "Composer",
-  "production": "Wicked",
+  "production": "Wicked (Apollo Victoria Theatre)",
   "venue": "Apollo Victoria Theatre, London",
   "url": "https://officiallondontheatre.com/show/wicked-73606/",
   "evidence": "Music & Lyrics by - / Stephen Schwartz",
@@ -182,7 +222,7 @@
  {
   "person": "Stephen Schwartz",
   "role": "Lyricist",
-  "production": "Wicked",
+  "production": "Wicked (Apollo Victoria Theatre)",
   "venue": "Apollo Victoria Theatre, London",
   "url": "https://officiallondontheatre.com/show/wicked-73606/",
   "evidence": "Music & Lyrics by - / Stephen Schwartz",
@@ -192,17 +232,17 @@
  {
   "person": "Natalie Gallacher",
   "role": "Casting director",
-  "production": "Paddington The Musical",
+  "production": "Paddington The Musical (Savoy Theatre)",
   "venue": "Savoy Theatre, London",
   "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
-  "evidence": "The creative team working with Sheppard includes Matt Brind as musical supervisor, orchestrator and arranger, Ellen Kane as choreographer, Tom Pye as scenic designer, Gabriella Slade as costume designer, Neil Austin as lighting designer, Gareth Owen as sound designer, Ash J Woodward as video designer and animator, Campbell Young Associates as hair, wig and make-up designers, Majid Adin for illustr",
+  "evidence": "…eo designer and animator, Campbell Young Associates as hair, wig and make-up designers, Majid Adin for illustration and additional animation, Laura Bangay as musical director, and Natalie Gallacher for Pippa Ailion and Natalie Gallacher Casting as casting director.",
   "rule": "K",
   "lookup_file": "2026-11-17-1.json"
  },
  {
   "person": "Luke Sheppard",
   "role": "Director",
-  "production": "Paddington The Musical",
+  "production": "Paddington The Musical (Savoy Theatre)",
   "venue": "Savoy Theatre, London",
   "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
   "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.",
@@ -212,7 +252,7 @@
  {
   "person": "Jessica Swale",
   "role": "Writer",
-  "production": "Paddington The Musical",
+  "production": "Paddington The Musical (Savoy Theatre)",
   "venue": "Savoy Theatre, London",
   "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
   "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.",
@@ -222,7 +262,7 @@
  {
   "person": "Tom Fletcher",
   "role": "Composer",
-  "production": "Paddington The Musical",
+  "production": "Paddington The Musical (Savoy Theatre)",
   "venue": "Savoy Theatre, London",
   "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
   "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.",
@@ -232,11 +272,201 @@
  {
   "person": "Tom Fletcher",
   "role": "Lyricist",
-  "production": "Paddington The Musical",
+  "production": "Paddington The Musical (Savoy Theatre)",
   "venue": "Savoy Theatre, London",
   "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550",
   "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.",
   "rule": "K",
   "lookup_file": "2026-11-17-1.json"
+ },
+ {
+  "person": "Pearson Casting",
+  "role": "Casting director",
+  "production": "Avenue Q (Shaftesbury Theatre)",
+  "venue": "Shaftesbury Theatre, London",
+  "url": "https://www.londonboxoffice.co.uk/news/post/Full-Cast-and-Creative-Team-Announced-for-AVENUE-Q",
+  "evidence": "The new UK creative team will feature choreography by Ebony Molina, costume design by Jean Chan, lighting design by Tim Lutkin, sound design by Paul Groothuis, video design by Nina Dunn for Pixellux, puppetry coaching by Iestyn Evans and Andy Heath for Talk to the Hand Puppets and casting by Pearson Casting CDG.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Jason Moore",
+  "role": "Director",
+  "production": "Avenue Q (Shaftesbury Theatre)",
+  "venue": "Shaftesbury Theatre, London",
+  "url": "https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193",
+  "evidence": "The revival will once again be directed by Jason Moore, with puppet design by Rick Lyon, orchestrations and arrangements by Stephen Oremus and set design by Anna Louizos.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Jeff Whitty",
+  "role": "Writer",
+  "production": "Avenue Q (Shaftesbury Theatre)",
+  "venue": "Shaftesbury Theatre, London",
+  "url": "https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193",
+  "evidence": "Written by Robert Lopez and Jeff Marx, with a book by Jeff Whitty, Avenue Q follows Princeton, a recent college graduate who moves into a rundown New York apartment block and learns life lessons from his eccentric neighbours.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Robert Lopez",
+  "role": "Composer",
+  "production": "Avenue Q (Shaftesbury Theatre)",
+  "venue": "Shaftesbury Theatre, London",
+  "url": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128",
+  "evidence": "The anniversary production is directed by the original award-winning Broadway director Jason Moore, has music & lyrics by Robert Lopez and Jeff Marx and book by Jeff Whitty, music orchestrations and arrangements by Stephen Oremus original Broadway puppets, conceived and designed by Rick Lyon and set design by Anna Louizos.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Jeff Marx",
+  "role": "Composer",
+  "production": "Avenue Q (Shaftesbury Theatre)",
+  "venue": "Shaftesbury Theatre, London",
+  "url": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128",
+  "evidence": "The anniversary production is directed by the original award-winning Broadway director Jason Moore, has music & lyrics by Robert Lopez and Jeff Marx and book by Jeff Whitty, music orchestrations and arrangements by Stephen Oremus original Broadway puppets, conceived and designed by Rick Lyon and set design by Anna Louizos.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Robert Lopez",
+  "role": "Lyricist",
+  "production": "Avenue Q (Shaftesbury Theatre)",
+  "venue": "Shaftesbury Theatre, London",
+  "url": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128",
+  "evidence": "The anniversary production is directed by the original award-winning Broadway director Jason Moore, has music & lyrics by Robert Lopez and Jeff Marx and book by Jeff Whitty, music orchestrations and arrangements by Stephen Oremus original Broadway puppets, conceived and designed by Rick Lyon and set design by Anna Louizos.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Jeff Marx",
+  "role": "Lyricist",
+  "production": "Avenue Q (Shaftesbury Theatre)",
+  "venue": "Shaftesbury Theatre, London",
+  "url": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128",
+  "evidence": "The anniversary production is directed by the original award-winning Broadway director Jason Moore, has music & lyrics by Robert Lopez and Jeff Marx and book by Jeff Whitty, music orchestrations and arrangements by Stephen Oremus original Broadway puppets, conceived and designed by Rick Lyon and set design by Anna Louizos.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Cindy Tolan",
+  "role": "Casting director",
+  "production": "Avenue Q (Golden Theatre)",
+  "venue": "Golden Theatre, New York",
+  "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321",
+  "evidence": "Cindy Tolan / Casting",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Jason Moore",
+  "role": "Director",
+  "production": "Avenue Q (Golden Theatre)",
+  "venue": "Golden Theatre, New York",
+  "url": "https://playbill.com/article/look-back-at-avenue-q-on-broadway",
+  "evidence": "Directed by Jason Moore with choreography by Ken Roberson, Avenue Q featured set design by Anna Louizos, costume design by Mirena Rada, lighting design by Howell Binkley, sound design by Acme Sound Partners, animation design by Lopez, and puppet conception and design by Rick Lyon with stage management by.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Jeff Whitty",
+  "role": "Writer",
+  "production": "Avenue Q (Golden Theatre)",
+  "venue": "Golden Theatre, New York",
+  "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321",
+  "evidence": "Best Book of a Musical: Jeff Whitty won.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Robert Lopez",
+  "role": "Composer",
+  "production": "Avenue Q (Golden Theatre)",
+  "venue": "Golden Theatre, New York",
+  "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321",
+  "evidence": "Best Original Score (Music and/or Lyrics) Written for the Theatre: Robert Lopez won.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Jeff Marx",
+  "role": "Composer",
+  "production": "Avenue Q (Golden Theatre)",
+  "venue": "Golden Theatre, New York",
+  "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321",
+  "evidence": "Jeff Marx is an American composer and lyricist best known for co-creating the musical Avenue Q, which won the Tony Award for Best Musical in 2004.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Robert Lopez",
+  "role": "Lyricist",
+  "production": "Avenue Q (Golden Theatre)",
+  "venue": "Golden Theatre, New York",
+  "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321",
+  "evidence": "Best Original Score (Music and/or Lyrics) Written for the Theatre: Robert Lopez won.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Jeff Marx",
+  "role": "Lyricist",
+  "production": "Avenue Q (Golden Theatre)",
+  "venue": "Golden Theatre, New York",
+  "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321",
+  "evidence": "Jeff Marx is an American composer and lyricist best known for co-creating the musical Avenue Q, which won the Tony Award for Best Musical in 2004.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Seth Sklar-Heyn",
+  "role": "Director",
+  "production": "The Phantom of the Opera (His Majesty's Theatre)",
+  "venue": "His Majesty's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
+  "evidence": "Originally directed by Harold Prince, this production is directed by Seth Sklar-Heyn.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Andrew Lloyd Webber",
+  "role": "Composer",
+  "production": "The Phantom of the Opera (His Majesty's Theatre)",
+  "venue": "His Majesty's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
+  "evidence": "The score by Andrew Lloyd Webber includes “The Music of the Night”, “All I Ask of You”, “Wishing You Were Somehow Here Again”, “Masquerade” and the title song.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Charles Hart",
+  "role": "Lyricist",
+  "production": "The Phantom of the Opera (His Majesty's Theatre)",
+  "venue": "His Majesty's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
+  "evidence": "The production is produced by Cameron Mackintosh, with music by Lloyd Webber, lyrics by Charles Hart and additional lyrics by Richard Stilgoe, and a book by Stilgoe and Lloyd Webber.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Richard Stilgoe",
+  "role": "Lyricist",
+  "production": "The Phantom of the Opera (His Majesty's Theatre)",
+  "venue": "His Majesty's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
+  "evidence": "The production is produced by Cameron Mackintosh, with music by Lloyd Webber, lyrics by Charles Hart and additional lyrics by Richard Stilgoe, and a book by Stilgoe and Lloyd Webber.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
+ },
+ {
+  "person": "Richard Stilgoe",
+  "role": "Writer",
+  "production": "The Phantom of the Opera (His Majesty's Theatre)",
+  "venue": "His Majesty's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
+  "evidence": "The production is produced by Cameron Mackintosh, with music by Lloyd Webber, lyrics by Charles Hart and additional lyrics by Richard Stilgoe, and a book by Stilgoe and Lloyd Webber.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-2.json"
  }
 ]

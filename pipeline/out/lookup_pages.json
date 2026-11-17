@@ -61,5 +61,54 @@
   "final": "https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/",
   "title": "The Choir of Man to return to London in time for Christmas",
   "file": "b39c2c4385dd7317.txt"
+ },
+ "https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:02:31Z",
+  "final": "https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193/",
+  "title": "Exclusive: Avenue Q announces West End cast and creative team",
+  "file": "517e65438d075228.txt"
+ },
+ "https://www.londonboxoffice.co.uk/news/post/Full-Cast-and-Creative-Team-Announced-for-AVENUE-Q": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:02:33Z",
+  "final": "https://www.londonboxoffice.co.uk/news/post/Full-Cast-and-Creative-Team-Announced-for-AVENUE-Q",
+  "title": "Full Cast and Creative Team Announced for AVENUE Q - West End Theatre News and Reviews",
+  "file": "f1002f2aba11efa6.txt"
+ },
+ "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:02:35Z",
+  "final": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128",
+  "title": "Cast and Creative Team Set For AVENUE Q West End Return | BroadwayWorld",
+  "file": "c0682e457fc5ce0a.txt"
+ },
+ "https://playbill.com/article/look-back-at-avenue-q-on-broadway": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:02:38Z",
+  "final": "https://playbill.com/article/look-back-at-avenue-q-on-broadway",
+  "title": "Look Back at Avenue Q on Broadway | Playbill",
+  "file": "07846a683cc6b323.txt"
+ },
+ "https://www.broadwayworld.com/shows/creative.php?showid=3321": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:02:38Z",
+  "final": "https://www.broadwayworld.com/shows/creative.php?showid=3321",
+  "title": "Avenue Q - 2003 Broadway - Creative Team | BroadwayWorld",
+  "file": "12464e9292851056.txt"
+ },
+ "https://www.whatsonstage.com/news/phantom-of-the-opera-announces-new-west-end-cast-following-40th-anniversary-celebrations_1736734/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:02:38Z",
+  "final": "https://www.whatsonstage.com/news/phantom-of-the-opera-announces-new-west-end-cast-following-40th-anniversary-celebrations_1736734/",
+  "title": "Phantom of the Opera announces new West End cast following 40th anniversary celebrations",
+  "file": "34a9bb6fdc95d10d.txt"
+ },
+ "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T11:02:40Z",
+  "final": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/",
+  "title": "Phantom of the Opera confirms 40th anniversary West End cast",
+  "file": "e37630dc20dd4469.txt"
  }
 }
