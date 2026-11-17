@@ -21,3 +21,6 @@ Chicago, UK Tour  →  2026-11-17-8.json
 One Day The Musical, Garrick Theatre London  →  2026-11-17-9.json
 Pride The Musical, Bridge Theatre London  →  2026-11-17-9.json
 The Book of Mormon, London  →  2026-11-17-9.json
+Mamma Mia!, London  →  2026-11-17-10.json
+Oliver!, London  →  2026-11-17-10.json
+The Lives of Others, London  →  2026-11-17-10.json

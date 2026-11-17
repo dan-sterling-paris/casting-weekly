@@ -8,6 +8,10 @@ Found by the production-credits-lookup skill, but the check script could not con
 - The Book of Mormon · Director: Trey Parker · https://officiallondontheatre.com/show/the-book-of-mormon/
 - The Book of Mormon · Director: Casey Nicholaw · https://officiallondontheatre.com/show/the-book-of-mormon/
 
+## Name is on the page, but not next to the role (casting director) (1)
+
+- Mamma Mia! · Casting director: Stephen Crockett · https://mamma-mia.com/london/production-team
+
 ## Name is on the page, but not next to the role (writer) (1)
 
 - The Phantom of the Opera · Writer: Andrew Lloyd Webber · https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/, https://www.whatsonstage.com/news/phantom-of-the-opera-announces-new-west-end-cast-following-40th-anniversary-celebrations_1736734/

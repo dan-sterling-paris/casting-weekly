@@ -280,6 +280,166 @@
   "lookup_file": "2026-11-17-1.json"
  },
  {
+  "person": "David Grindrod",
+  "role": "Casting director",
+  "production": "Mamma Mia! (Novello Theatre)",
+  "venue": "Novello Theatre, London",
+  "url": "https://mamma-mia.com/london/production-team",
+  "evidence": "Casting Consultant / David Grindrod CDG",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Phyllida Lloyd",
+  "role": "Director",
+  "production": "Mamma Mia! (Novello Theatre)",
+  "venue": "Novello Theatre, London",
+  "url": "https://mamma-mia.com/london/creative",
+  "evidence": "Phyllida Lloyd / Director",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Catherine Johnson",
+  "role": "Writer",
+  "production": "Mamma Mia! (Novello Theatre)",
+  "venue": "Novello Theatre, London",
+  "url": "https://mamma-mia.com/london/creative",
+  "evidence": "Catherine Johnson / Book",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Benny Andersson",
+  "role": "Composer",
+  "production": "Mamma Mia! (Novello Theatre)",
+  "venue": "Novello Theatre, London",
+  "url": "https://mamma-mia.com/london/creative",
+  "evidence": "Benny Andersson / Music and Lyrics",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Björn Ulvaeus",
+  "role": "Composer",
+  "production": "Mamma Mia! (Novello Theatre)",
+  "venue": "Novello Theatre, London",
+  "url": "https://mamma-mia.com/london/creative",
+  "evidence": "Music and Lyrics / Björn Ulvaeus",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Benny Andersson",
+  "role": "Lyricist",
+  "production": "Mamma Mia! (Novello Theatre)",
+  "venue": "Novello Theatre, London",
+  "url": "https://mamma-mia.com/london/creative",
+  "evidence": "Benny Andersson / Music and Lyrics",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Björn Ulvaeus",
+  "role": "Lyricist",
+  "production": "Mamma Mia! (Novello Theatre)",
+  "venue": "Novello Theatre, London",
+  "url": "https://mamma-mia.com/london/creative",
+  "evidence": "Music and Lyrics / Björn Ulvaeus",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Felicity French",
+  "role": "Casting director",
+  "production": "Oliver! (Gielgud Theatre)",
+  "venue": "Gielgud Theatre, London",
+  "url": "https://www.whatsonstage.com/news/oliver-extends-west-end-run-and-confirms-initial-london-casting_1640635",
+  "evidence": "…orge Reeve, with original orchestrations by William David Brohn, orchestral adaptation by Stephen Metcalfe, choreographic associates Etta Murfitt and Sam Archer, casting directors Felicity French and Paul Wooller and children’s casting director Verity Naughton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Paul Wooller",
+  "role": "Casting director",
+  "production": "Oliver! (Gielgud Theatre)",
+  "venue": "Gielgud Theatre, London",
+  "url": "https://www.whatsonstage.com/news/oliver-extends-west-end-run-and-confirms-initial-london-casting_1640635",
+  "evidence": "…ginal orchestrations by William David Brohn, orchestral adaptation by Stephen Metcalfe, choreographic associates Etta Murfitt and Sam Archer, casting directors Felicity French and Paul Wooller and children’s casting director Verity Naughton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Matthew Bourne",
+  "role": "Director",
+  "production": "Oliver! (Gielgud Theatre)",
+  "venue": "Gielgud Theatre, London",
+  "url": "https://officiallondontheatre.com/show/oliver/",
+  "evidence": "Director & Choreographer - / Matthew Bourne",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Lionel Bart",
+  "role": "Writer",
+  "production": "Oliver! (Gielgud Theatre)",
+  "venue": "Gielgud Theatre, London",
+  "url": "https://officiallondontheatre.com/show/oliver/",
+  "evidence": "Book, Music & Lyrics - / Lionel Bart",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Lionel Bart",
+  "role": "Composer",
+  "production": "Oliver! (Gielgud Theatre)",
+  "venue": "Gielgud Theatre, London",
+  "url": "https://officiallondontheatre.com/show/oliver/",
+  "evidence": "Book, Music & Lyrics - / Lionel Bart",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Lionel Bart",
+  "role": "Lyricist",
+  "production": "Oliver! (Gielgud Theatre)",
+  "venue": "Gielgud Theatre, London",
+  "url": "https://officiallondontheatre.com/show/oliver/",
+  "evidence": "Book, Music & Lyrics - / Lionel Bart",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Julia Horan",
+  "role": "Casting director",
+  "production": "The Lives of Others (Adelphi Theatre)",
+  "venue": "Adelphi Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-lives-of-others-111473908/",
+  "evidence": "Casting Director - / Julia Horan",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Robert Icke",
+  "role": "Director",
+  "production": "The Lives of Others (Adelphi Theatre)",
+  "venue": "Adelphi Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-lives-of-others-111473908/",
+  "evidence": "Adaptor & Director - / Robert Icke",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
+  "person": "Robert Icke",
+  "role": "Writer",
+  "production": "The Lives of Others (Adelphi Theatre)",
+  "venue": "Adelphi Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-lives-of-others-111473908/",
+  "evidence": "Adaptor & Director - / Robert Icke",
+  "rule": "K",
+  "lookup_file": "2026-11-17-10.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Avenue Q (Shaftesbury Theatre)",

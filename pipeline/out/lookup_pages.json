@@ -302,5 +302,47 @@
   "final": "https://officiallondontheatre.com/show/the-book-of-mormon-157833/",
   "title": "The Book Of Mormon Tickets | Prince of Wales Theatre | Comedy TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketAll ImagesLocationChevron DownAccess InfoTickCalendarClockGenre MaskAge InfoNoticePlay IconPhoneEmail",
   "file": "e0ee32aac6762490.txt"
+ },
+ "https://officiallondontheatre.com/show/mamma-mia/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T14:01:24Z",
+  "final": "https://officiallondontheatre.com/show/mamma-mia-148257/",
+  "title": "Mamma Mia! Tickets | Novello Theatre | Musical TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketPlay IconShowReelAll ImagesLocationChevron DownAccess InfoTickCalendarClockGenre MaskAge InfoNoticePhoneEmail",
+  "file": "07de873c82fdbde3.txt"
+ },
+ "https://mamma-mia.com/london/production-team": {
+  "status": 200,
+  "fetched_at": "2026-11-17T14:01:27Z",
+  "final": "https://mamma-mia.com/london/production-team",
+  "title": "MAMMA MIA! London Production Team",
+  "file": "1c0150ab8a1da2b1.txt"
+ },
+ "https://mamma-mia.com/london/creative": {
+  "status": 200,
+  "fetched_at": "2026-11-17T14:01:29Z",
+  "final": "https://mamma-mia.com/london/creative",
+  "title": "MAMMA MIA! London Creative Team",
+  "file": "62afbc780f01b935.txt"
+ },
+ "https://officiallondontheatre.com/show/oliver/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T14:01:30Z",
+  "final": "https://officiallondontheatre.com/show/oliver-111446304/",
+  "title": "Oliver! Tickets | Gielgud Theatre | Musical TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketPlay IconShowReelAll ImagesLocationChevron DownTickCalendarClockGenre MaskAge InfoNotice",
+  "file": "93d84adbd2ff5ac5.txt"
+ },
+ "https://www.whatsonstage.com/news/oliver-extends-west-end-run-and-confirms-initial-london-casting_1640635": {
+  "status": 200,
+  "fetched_at": "2026-11-17T14:01:33Z",
+  "final": "https://www.whatsonstage.com/news/oliver-extends-west-end-run-and-confirms-initial-london-casting_1640635/",
+  "title": "Oliver! extends West End run and confirms initial London casting",
+  "file": "48e6083a2f8959a8.txt"
+ },
+ "https://officiallondontheatre.com/show/the-lives-of-others-111473908/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T14:01:34Z",
+  "final": "https://officiallondontheatre.com/show/the-lives-of-others-111473908/",
+  "title": "The Lives Of Others Tickets | Adelphi Theatre | Plays TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketLocationChevron DownTickCalendarClockGenre MaskAge InfoNotice",
+  "file": "edc445302362e192.txt"
  }
 }
