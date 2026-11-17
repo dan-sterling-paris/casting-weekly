@@ -1,6 +1,6 @@
 # Source checks
 
-Run 2026-11-16T23:40:35Z with agent `CastingWeeklyBot/0.2 (+https://castingweekly.com/bot; office@castingweekly.com)`. A person must read each site's terms before anything is published.
+Run 2026-11-17T08:38:51Z with agent `CastingWeeklyBot/0.2 (+https://castingweekly.com/bot; office@castingweekly.com)`. A person must read each site's terms before anything is published.
 
 ## Crossroads Live
 

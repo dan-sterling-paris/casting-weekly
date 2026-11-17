@@ -20,7 +20,7 @@
 ## Example 1: Debbie O'Brien, casting director on CHITTY CHITTY BANG BANG
 
 **Page:** https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024  
-**Fetched:** 2026-11-16T23:47:57Z · **SHA-256:** `b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a`
+**Fetched:** 2026-11-17T08:40:41Z · **SHA-256:** `b5b9d26e3a70f6373182eeff48544289df36bb0fabb0169fe4dcb36685b0814a`
 
 **Rule C1 matched (credit):**
 
@@ -35,7 +35,7 @@
 ## Example 2: Harry Blumenau, casting director on Burlesque The Musical
 
 **Page:** https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/  
-**Fetched:** 2026-11-16T23:42:27Z · **SHA-256:** `01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce`
+**Fetched:** 2026-11-17T08:45:54Z · **SHA-256:** `01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce`
 
 **Rule A1 matched (staged at):**
 
@@ -54,7 +54,7 @@
 ## Example 3: Harry Blumenau, casting director on Burlesque The Musical
 
 **Page:** https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/  
-**Fetched:** 2026-11-16T23:42:27Z · **SHA-256:** `01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce`
+**Fetched:** 2026-11-17T08:45:54Z · **SHA-256:** `01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce`
 
 **Rule A1 matched (staged at):**
 
@@ -73,7 +73,7 @@
 ## Example 4: Harry Blumenau, casting director on Burlesque The Musical
 
 **Page:** https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/  
-**Fetched:** 2026-11-16T23:42:27Z · **SHA-256:** `01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce`
+**Fetched:** 2026-11-17T08:45:54Z · **SHA-256:** `01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce`
 
 **Rule A1 matched (staged at):**
 
@@ -92,7 +92,7 @@
 ## Example 5: Harry Blumenau, co-casting director on The Choir of Man
 
 **Page:** https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/  
-**Fetched:** 2026-11-16T23:42:27Z · **SHA-256:** `01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce`
+**Fetched:** 2026-11-17T08:45:54Z · **SHA-256:** `01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce`
 
 **Rule A1 matched (staged at):**
 
