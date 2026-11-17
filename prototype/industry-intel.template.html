@@ -202,7 +202,7 @@ document.getElementById("status").innerHTML = "";
 });
 
 /* ---- filters ---- */
-const visible = {cd:true, person:false, prod:true, theatre:false};  // casting directors first; other creatives and venues on request
+const visible = {cd:true, person:false, prod:true, theatre:true};  // casting directors first; other creatives and venues on request
 const tg = document.getElementById("toggles");
 for(const k of ["cd","person","prod","theatre"]){
   const b = document.createElement("button"); b.className = "tg"; b.type = "button"; b.setAttribute("aria-pressed", String(visible[k]));

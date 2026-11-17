@@ -1,5 +1,5 @@
 {
- "note": "Seeds are entered by a person, never chosen by AI. Each is a site the pipeline may read if its robots.txt allows. max_pages caps each site; pages are taken in sitemap order, newest first, never picked by hand. aliases are the names a producer uses for itself; ignore_in_titles are names that must never be read as a show title. pages names exact pages to read when a person chose a single page as the seed.",
+ "note": "Seeds are entered by a person, never chosen by AI. Each is a site the pipeline may read if its robots.txt allows. max_pages caps each site; pages are taken in sitemap order, newest first, never picked by hand. aliases are the names a producer uses for itself; ignore_in_titles are names that must never be read as a show title. pages names exact pages to read when a person chose a single page as the seed. A person-directory seed finds profile pages in the site's own sitemaps by url_match; the person's name comes from the page title.",
  "seeds": [
   {
    "id": "crossroads-live",
@@ -64,6 +64,22 @@
    "pages": [
     "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/"
    ]
+  },
+  {
+   "id": "united-agents-casting-directors",
+   "name": "United Agents casting directors",
+   "kind": "person-directory",
+   "url": "https://www.unitedagents.co.uk",
+   "read": [
+    "/"
+   ],
+   "sitemap_match": "client-sitemap",
+   "url_match": "-(cdg|csa)(-|/|$)",
+   "name_from_title_strip": [
+    " - United Agents"
+   ],
+   "credits_since": 2024,
+   "max_pages": 10
   }
  ]
 }

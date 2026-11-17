@@ -467,7 +467,7 @@
    "url": "https://www.xroadslive.com/press/the-most-fantasmagorical-musical-of-all-time-is-back-for-a-uk-tour-in-2024"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "source is their own agent's page",
    "identity_evidence": null,
    "role": "Casting director",
@@ -483,7 +483,7 @@
    "year": "2026"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "rule": "A1",
    "sentence": "BURLESQUE THE MUSICAL / 2026 / UK Tour / Casting Director / Dir. Robin Antin & Racky Plews",
    "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
@@ -495,7 +495,7 @@
    "year": "2026"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -510,7 +510,7 @@
    "year": "2026"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -525,7 +525,7 @@
    "year": "2026"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "source is their own agent's page",
    "identity_evidence": null,
    "role": "Casting director",
@@ -541,7 +541,7 @@
    "year": "2025"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "rule": "A1",
    "sentence": "BURLESQUE / 2025 / Savoy Theatre / Casting Director / Dir. Todrick Hall",
    "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
@@ -553,7 +553,7 @@
    "year": "2025"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -568,7 +568,7 @@
    "year": "2025"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "source is their own agent's page",
    "identity_evidence": null,
    "role": "Casting director",
@@ -584,7 +584,7 @@
    "year": "2024"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "rule": "A1",
    "sentence": "BURLESQUE / 2024 / Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment / Casting Director / Dir. Nick Winston",
    "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
@@ -596,7 +596,7 @@
    "year": "2024"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -611,7 +611,7 @@
    "year": "2024"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "source is their own agent's page",
    "identity_evidence": null,
    "role": "Casting director",
@@ -627,7 +627,7 @@
    "year": "2022"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "rule": "A1",
    "sentence": "CHOIR OF MAN / 2022 / Arts Theatre / Co-Casting Director / Dir. Nic Doodson",
    "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
@@ -639,7 +639,7 @@
    "year": "2022"
   },
   {
-   "fetched_at": "2026-11-17T08:45:54Z",
+   "fetched_at": "2026-11-17T08:51:19Z",
    "identity": "name match only",
    "identity_evidence": null,
    "role": "Director",
@@ -652,14 +652,1604 @@
    "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
    "venue": "Arts Theatre",
    "year": "2022"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "MILLION DOLLAR QUARTET / 2027 / UK Tour / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:million dollar quartet",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "MILLION DOLLAR QUARTET / 2027 / UK Tour / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:uk-tour",
+   "target": "prod:million dollar quartet",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "MILLION DOLLAR QUARTET / 2027 / UK Tour / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:jonathan o'boyle",
+   "target": "prod:million dollar quartet",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "IN PIECES / 2027 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:in pieces",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "IN PIECES / 2027 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:the-other-palace",
+   "target": "prod:in pieces",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "IN PIECES / 2027 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:martha geelan",
+   "target": "prod:in pieces",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "THE RADIUM GIRLS / 2027 / Southwark Playhouse / Casting Director / Dir. Marissa Jaret Winokur",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:radium girls",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "THE RADIUM GIRLS / 2027 / Southwark Playhouse / Casting Director / Dir. Marissa Jaret Winokur",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:southwark-playhouse",
+   "target": "prod:radium girls",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "THE RADIUM GIRLS / 2027 / Southwark Playhouse / Casting Director / Dir. Marissa Jaret Winokur",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:marissa jaret winokur",
+   "target": "prod:radium girls",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "LEGALLY BLONDE / 2027 / London Coliseum / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:legally blonde",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Coliseum",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "LEGALLY BLONDE / 2027 / London Coliseum / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:london-coliseum",
+   "target": "prod:legally blonde",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Coliseum",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "LEGALLY BLONDE / 2027 / London Coliseum / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nikolai foster",
+   "target": "prod:legally blonde",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Coliseum",
+   "year": "2027"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "NERO / 2026 / Southwark Playhouse / Casting Director / Dir. Lindsay Posner",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:nero",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "NERO / 2026 / Southwark Playhouse / Casting Director / Dir. Lindsay Posner",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:southwark-playhouse",
+   "target": "prod:nero",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "NERO / 2026 / Southwark Playhouse / Casting Director / Dir. Lindsay Posner",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:lindsay posner",
+   "target": "prod:nero",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "MILLION DOLLAR QUARTET / 2026 / Arts at Marble Arch/Barn Theatre / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:million dollar quartet",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Arts at Marble Arch/Barn Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "MILLION DOLLAR QUARTET / 2026 / Arts at Marble Arch/Barn Theatre / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:arts-at-marble-arch-barn-theatre",
+   "target": "prod:million dollar quartet",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Arts at Marble Arch/Barn Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "MILLION DOLLAR QUARTET / 2026 / Arts at Marble Arch/Barn Theatre / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:jonathan o'boyle",
+   "target": "prod:million dollar quartet",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Arts at Marble Arch/Barn Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "DIRTY DANCING / 2026 / UK Tour / Casting Director / Dir. Frederico Bellone",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:dirty dancing",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "DIRTY DANCING / 2026 / UK Tour / Casting Director / Dir. Frederico Bellone",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:uk-tour",
+   "target": "prod:dirty dancing",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "DIRTY DANCING / 2026 / UK Tour / Casting Director / Dir. Frederico Bellone",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:frederico bellone",
+   "target": "prod:dirty dancing",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "THE SILENCE OF THE LAMBS / 2026 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:silence of the lambs",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "THE SILENCE OF THE LAMBS / 2026 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:leicester-curve-uk-tour",
+   "target": "prod:silence of the lambs",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "THE SILENCE OF THE LAMBS / 2026 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nikolai foster",
+   "target": "prod:silence of the lambs",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "HEATED RIVALRY: THE UNAUTHORIZED MUSICAL PARODY / 2026 / Udderbelly/Underbelly Boulevard / Casting Director / Dir. Alan Kliffer",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:heated rivalry the unauthorized musical parody",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Udderbelly/Underbelly Boulevard",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "HEATED RIVALRY: THE UNAUTHORIZED MUSICAL PARODY / 2026 / Udderbelly/Underbelly Boulevard / Casting Director / Dir. Alan Kliffer",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:udderbelly-underbelly-boulevard",
+   "target": "prod:heated rivalry the unauthorized musical parody",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Udderbelly/Underbelly Boulevard",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "HEATED RIVALRY: THE UNAUTHORIZED MUSICAL PARODY / 2026 / Udderbelly/Underbelly Boulevard / Casting Director / Dir. Alan Kliffer",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:alan kliffer",
+   "target": "prod:heated rivalry the unauthorized musical parody",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Udderbelly/Underbelly Boulevard",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "HERE COMES J. EDGAR! / 2026 / King's Head Theatre / Casting Director / Dir. Josh Seymour",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:here comes j edgar",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "King's Head Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "HERE COMES J. EDGAR! / 2026 / King's Head Theatre / Casting Director / Dir. Josh Seymour",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:king-s-head-theatre",
+   "target": "prod:here comes j edgar",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "King's Head Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "HERE COMES J. EDGAR! / 2026 / King's Head Theatre / Casting Director / Dir. Josh Seymour",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:josh seymour",
+   "target": "prod:here comes j edgar",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "King's Head Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "BEETLEJUICE THE MUSICAL / 2026 / Prince Edward Theatre / Casting Director / Dir. Alex Timbers",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:beetlejuice",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Prince Edward Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "BEETLEJUICE THE MUSICAL / 2026 / Prince Edward Theatre / Casting Director / Dir. Alex Timbers",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:prince-edward-theatre",
+   "target": "prod:beetlejuice",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Prince Edward Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BEETLEJUICE THE MUSICAL / 2026 / Prince Edward Theatre / Casting Director / Dir. Alex Timbers",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:alex timbers",
+   "target": "prod:beetlejuice",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Prince Edward Theatre",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "PUBLIC: THE MUSICAL / 2026 / Leicester Curve / Casting Director / Dir. Hannah Sands",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:public",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "PUBLIC: THE MUSICAL / 2026 / Leicester Curve / Casting Director / Dir. Hannah Sands",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:leicester-curve",
+   "target": "prod:public",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "PUBLIC: THE MUSICAL / 2026 / Leicester Curve / Casting Director / Dir. Hannah Sands",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:hannah sands",
+   "target": "prod:public",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "BANK OF DAVE / 2026 / Lowry Theatre/Leicester Curve / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:bank of dave",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Lowry Theatre/Leicester Curve",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "BANK OF DAVE / 2026 / Lowry Theatre/Leicester Curve / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:lowry-theatre-leicester-curve",
+   "target": "prod:bank of dave",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Lowry Theatre/Leicester Curve",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BANK OF DAVE / 2026 / Lowry Theatre/Leicester Curve / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nikolai foster",
+   "target": "prod:bank of dave",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Lowry Theatre/Leicester Curve",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "KINKY BOOTS / 2026 / London Coliseum / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:kinky boots",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Coliseum",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "KINKY BOOTS / 2026 / London Coliseum / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:london-coliseum",
+   "target": "prod:kinky boots",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Coliseum",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "KINKY BOOTS / 2026 / London Coliseum / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nikolai foster",
+   "target": "prod:kinky boots",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Coliseum",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "IN PIECES: IN CONCERT / 2026 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:in pieces in concert",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "IN PIECES: IN CONCERT / 2026 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:the-other-palace",
+   "target": "prod:in pieces in concert",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "IN PIECES: IN CONCERT / 2026 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:martha geelan",
+   "target": "prod:in pieces in concert",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "LEGALLY BLONDE / 2026 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:legally blonde",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "LEGALLY BLONDE / 2026 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:leicester-curve-uk-tour",
+   "target": "prod:legally blonde",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "LEGALLY BLONDE / 2026 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nikolai foster",
+   "target": "prod:legally blonde",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "ROCK & ROLL MAN / 2026 / Salisbury Playhouse / Casting Director / Dir. Randal Myler",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:rock roll man",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Salisbury Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "ROCK & ROLL MAN / 2026 / Salisbury Playhouse / Casting Director / Dir. Randal Myler",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:salisbury-playhouse",
+   "target": "prod:rock roll man",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Salisbury Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "ROCK & ROLL MAN / 2026 / Salisbury Playhouse / Casting Director / Dir. Randal Myler",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:randal myler",
+   "target": "prod:rock roll man",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Salisbury Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "BEAUTIFUL LITTLE FOOL / 2026 / Southwark Playhouse / Casting Director / Dir. Michael Greif",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:beautiful little fool",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "BEAUTIFUL LITTLE FOOL / 2026 / Southwark Playhouse / Casting Director / Dir. Michael Greif",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:southwark-playhouse",
+   "target": "prod:beautiful little fool",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BEAUTIFUL LITTLE FOOL / 2026 / Southwark Playhouse / Casting Director / Dir. Michael Greif",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:michael greif",
+   "target": "prod:beautiful little fool",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2026"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "RIDE THE CYCLONE / 2025 / Southwark Playhouse / Casting Director / Dir. Lizzi Gee",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:ride the cyclone",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "RIDE THE CYCLONE / 2025 / Southwark Playhouse / Casting Director / Dir. Lizzi Gee",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:southwark-playhouse",
+   "target": "prod:ride the cyclone",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "RIDE THE CYCLONE / 2025 / Southwark Playhouse / Casting Director / Dir. Lizzi Gee",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:lizzi gee",
+   "target": "prod:ride the cyclone",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "MIDNIGHT / 2025 / Sadlers Wells: East / Casting Director / Dir. Todrick Hall",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:midnight",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Sadlers Wells: East",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "MIDNIGHT / 2025 / Sadlers Wells: East / Casting Director / Dir. Todrick Hall",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:sadlers-wells-east",
+   "target": "prod:midnight",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Sadlers Wells: East",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "MIDNIGHT / 2025 / Sadlers Wells: East / Casting Director / Dir. Todrick Hall",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:todrick hall",
+   "target": "prod:midnight",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Sadlers Wells: East",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "FANNY / 2025 / King's Head Theatre / Casting Director / Dir. Katie-Anne McDonough",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:fanny",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "King's Head Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "FANNY / 2025 / King's Head Theatre / Casting Director / Dir. Katie-Anne McDonough",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:king-s-head-theatre",
+   "target": "prod:fanny",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "King's Head Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "FANNY / 2025 / King's Head Theatre / Casting Director / Dir. Katie-Anne McDonough",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:katie-anne mcdonough",
+   "target": "prod:fanny",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "King's Head Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "THE LAST FIVE YEARS / 2025 / Barn Theatre/Reading Rep / Casting Director / Dir. Hal Chambers",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:last five years",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Barn Theatre/Reading Rep",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "THE LAST FIVE YEARS / 2025 / Barn Theatre/Reading Rep / Casting Director / Dir. Hal Chambers",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:barn-theatre-reading-rep",
+   "target": "prod:last five years",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Barn Theatre/Reading Rep",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "THE LAST FIVE YEARS / 2025 / Barn Theatre/Reading Rep / Casting Director / Dir. Hal Chambers",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:hal chambers",
+   "target": "prod:last five years",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Barn Theatre/Reading Rep",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Children’s’ Casting Director",
+   "rule": "A1",
+   "sentence": "EVITA / 2025 / London Palladium / Children’s’ Casting Director / Dir. Jamie Lloyd",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:evita",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Palladium",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "EVITA / 2025 / London Palladium / Children’s’ Casting Director / Dir. Jamie Lloyd",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:london-palladium",
+   "target": "prod:evita",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Palladium",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "EVITA / 2025 / London Palladium / Children’s’ Casting Director / Dir. Jamie Lloyd",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:jamie lloyd",
+   "target": "prod:evita",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "London Palladium",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "THE HUNCHBACK OF NOTRE DAME / 2025 / Prince Edward Theatre / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:hunchback of notre dame",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Prince Edward Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "THE HUNCHBACK OF NOTRE DAME / 2025 / Prince Edward Theatre / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:prince-edward-theatre",
+   "target": "prod:hunchback of notre dame",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Prince Edward Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "THE HUNCHBACK OF NOTRE DAME / 2025 / Prince Edward Theatre / Casting Director / Dir. Jonathan O’Boyle",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:jonathan o'boyle",
+   "target": "prod:hunchback of notre dame",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Prince Edward Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "GLORIOUS! / 2025 / Hope Mill Theatre / Casting Director / Dir. Kirk Jameson",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:glorious",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Hope Mill Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "GLORIOUS! / 2025 / Hope Mill Theatre / Casting Director / Dir. Kirk Jameson",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:hope-mill-theatre",
+   "target": "prod:glorious",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Hope Mill Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "GLORIOUS! / 2025 / Hope Mill Theatre / Casting Director / Dir. Kirk Jameson",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:kirk jameson",
+   "target": "prod:glorious",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Hope Mill Theatre",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "KINKY BOOTS / 2025 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:kinky boots",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "KINKY BOOTS / 2025 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:leicester-curve-uk-tour",
+   "target": "prod:kinky boots",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "KINKY BOOTS / 2025 / Leicester Curve/UK Tour / Casting Director / Dir. Nikolai Foster",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nikolai foster",
+   "target": "prod:kinky boots",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "SCISSORHANDZ / 2025 / Southwark Playhouse / Casting Director / Dir. Bradley Bredeweg",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:scissorhandz",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "SCISSORHANDZ / 2025 / Southwark Playhouse / Casting Director / Dir. Bradley Bredeweg",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:southwark-playhouse",
+   "target": "prod:scissorhandz",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "SCISSORHANDZ / 2025 / Southwark Playhouse / Casting Director / Dir. Bradley Bredeweg",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:bradley bredeweg",
+   "target": "prod:scissorhandz",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Southwark Playhouse",
+   "year": "2025"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "JACK AND THE BEANSTALK / 2024 / Charing Cross Theatre / Casting Director / Dir. Andrew Beckett",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:jack and the beanstalk",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Charing Cross Theatre",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "JACK AND THE BEANSTALK / 2024 / Charing Cross Theatre / Casting Director / Dir. Andrew Beckett",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:charing-cross-theatre",
+   "target": "prod:jack and the beanstalk",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Charing Cross Theatre",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "JACK AND THE BEANSTALK / 2024 / Charing Cross Theatre / Casting Director / Dir. Andrew Beckett",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:andrew beckett",
+   "target": "prod:jack and the beanstalk",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Charing Cross Theatre",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "WHY AM I SO SINGLE? / 2024 / Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions / Casting Director / Dir. Lucy Moss & Ellen Kane",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:why am i so single",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "WHY AM I SO SINGLE? / 2024 / Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions / Casting Director / Dir. Lucy Moss & Ellen Kane",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:garrick-theatre-kenny-wax-ltd-ameena-hamid-productions",
+   "target": "prod:why am i so single",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "WHY AM I SO SINGLE? / 2024 / Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions / Casting Director / Dir. Lucy Moss & Ellen Kane",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:lucy moss",
+   "target": "prod:why am i so single",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "WHY AM I SO SINGLE? / 2024 / Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions / Casting Director / Dir. Lucy Moss & Ellen Kane",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:ellen kane",
+   "target": "prod:why am i so single",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "WINGHAVEN PARK / 2024 / Thomas Hopkins Productions / Casting Director / Dir. Gabriel Barre",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:winghaven park",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Thomas Hopkins Productions",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "WINGHAVEN PARK / 2024 / Thomas Hopkins Productions / Casting Director / Dir. Gabriel Barre",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:thomas-hopkins-productions",
+   "target": "prod:winghaven park",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Thomas Hopkins Productions",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "WINGHAVEN PARK / 2024 / Thomas Hopkins Productions / Casting Director / Dir. Gabriel Barre",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:gabriel barre",
+   "target": "prod:winghaven park",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Thomas Hopkins Productions",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "YOUR LIE IN APRIL / 2024 / Harold Pinter Theatre/Carter Dixon McGill / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:your lie in april",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Harold Pinter Theatre/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "YOUR LIE IN APRIL / 2024 / Harold Pinter Theatre/Carter Dixon McGill / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:harold-pinter-theatre-carter-dixon-mcgill",
+   "target": "prod:your lie in april",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Harold Pinter Theatre/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "YOUR LIE IN APRIL / 2024 / Harold Pinter Theatre/Carter Dixon McGill / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nick winston",
+   "target": "prod:your lie in april",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Harold Pinter Theatre/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "BLIPPI: THE WONDERFUL WORLD TOUR / 2024 / Harold Pinter Theatre/Carter Dixon McGill / Casting Director / Dir. Simon Greiff",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:blippi the wonderful world tour",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Harold Pinter Theatre/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "BLIPPI: THE WONDERFUL WORLD TOUR / 2024 / Harold Pinter Theatre/Carter Dixon McGill / Casting Director / Dir. Simon Greiff",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:harold-pinter-theatre-carter-dixon-mcgill",
+   "target": "prod:blippi the wonderful world tour",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Harold Pinter Theatre/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BLIPPI: THE WONDERFUL WORLD TOUR / 2024 / Harold Pinter Theatre/Carter Dixon McGill / Casting Director / Dir. Simon Greiff",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:simon greiff",
+   "target": "prod:blippi the wonderful world tour",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Harold Pinter Theatre/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "BABIES / 2024 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:babies",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "BABIES / 2024 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:the-other-palace",
+   "target": "prod:babies",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "BABIES / 2024 / The Other Palace / Casting Director / Dir. Martha Geelan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:martha geelan",
+   "target": "prod:babies",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "The Other Palace",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "FANNY / 2024 / Watermill Theatre / Casting Director / Dir. Katie-Ann McDonough",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:fanny",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Watermill Theatre",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "FANNY / 2024 / Watermill Theatre / Casting Director / Dir. Katie-Ann McDonough",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:watermill-theatre",
+   "target": "prod:fanny",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Watermill Theatre",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "FANNY / 2024 / Watermill Theatre / Casting Director / Dir. Katie-Ann McDonough",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:katie-ann mcdonough",
+   "target": "prod:fanny",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Watermill Theatre",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "YOUR LIE IN APRIL / 2024 / Theatre Royal Drury Lane/Carter Dixon McGill / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:theatre-royal-drury-lane-carter-dixon-mcgill",
+   "target": "prod:your lie in april",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Theatre Royal Drury Lane/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Revival Casting Director",
+   "rule": "A1",
+   "sentence": "MY BEAUTIFUL LAUNDRETTE / 2024 / Leicester Curve/UK Tour / Revival Casting Director / Dir. Nicole Behan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:my beautiful laundrette",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "MY BEAUTIFUL LAUNDRETTE / 2024 / Leicester Curve/UK Tour / Revival Casting Director / Dir. Nicole Behan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:leicester-curve-uk-tour",
+   "target": "prod:my beautiful laundrette",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "MY BEAUTIFUL LAUNDRETTE / 2024 / Leicester Curve/UK Tour / Revival Casting Director / Dir. Nicole Behan",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nicole behan",
+   "target": "prod:my beautiful laundrette",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Leicester Curve/UK Tour",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "source is their own agent's page",
+   "identity_evidence": null,
+   "role": "Casting director",
+   "role_as_stated": "Casting Director",
+   "rule": "A1",
+   "sentence": "WILD ABOUT YOU / 2024 / Theatre Royal Drury Lane/Carter Dixon McGill / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:harry blumenau",
+   "target": "prod:wild about you",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Theatre Royal Drury Lane/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "rule": "A1",
+   "sentence": "WILD ABOUT YOU / 2024 / Theatre Royal Drury Lane/Carter Dixon McGill / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "org:theatre-royal-drury-lane-carter-dixon-mcgill",
+   "target": "prod:wild about you",
+   "type": "staged at",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Theatre Royal Drury Lane/Carter Dixon McGill",
+   "year": "2024"
+  },
+  {
+   "fetched_at": "2026-11-17T08:51:19Z",
+   "identity": "name match only",
+   "identity_evidence": null,
+   "role": "Director",
+   "rule": "A1",
+   "sentence": "WILD ABOUT YOU / 2024 / Theatre Royal Drury Lane/Carter Dixon McGill / Casting Director / Dir. Nick Winston",
+   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+   "source": "person:nick winston",
+   "target": "prod:wild about you",
+   "type": "credit",
+   "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+   "venue": "Theatre Royal Drury Lane/Carter Dixon McGill",
+   "year": "2024"
   }
  ],
  "method": "pattern rules, no AI",
  "nodes": [
   {
+   "id": "org:arts-at-marble-arch-barn-theatre",
+   "kind": "organisation",
+   "label": "Arts at Marble Arch/Barn Theatre"
+  },
+  {
    "id": "org:arts-theatre",
    "kind": "organisation",
    "label": "Arts Theatre"
+  },
+  {
+   "id": "org:barn-theatre-reading-rep",
+   "kind": "organisation",
+   "label": "Barn Theatre/Reading Rep"
+  },
+  {
+   "id": "org:charing-cross-theatre",
+   "kind": "organisation",
+   "label": "Charing Cross Theatre"
   },
   {
    "id": "org:crossroads-live",
@@ -667,9 +2257,69 @@
    "label": "Crossroads Live"
   },
   {
+   "id": "org:garrick-theatre-kenny-wax-ltd-ameena-hamid-productions",
+   "kind": "organisation",
+   "label": "Garrick Theatre/Kenny Wax Ltd/Ameena Hamid Productions"
+  },
+  {
+   "id": "org:harold-pinter-theatre-carter-dixon-mcgill",
+   "kind": "organisation",
+   "label": "Harold Pinter Theatre/Carter Dixon McGill"
+  },
+  {
+   "id": "org:hope-mill-theatre",
+   "kind": "organisation",
+   "label": "Hope Mill Theatre"
+  },
+  {
+   "id": "org:king-s-head-theatre",
+   "kind": "organisation",
+   "label": "King's Head Theatre"
+  },
+  {
+   "id": "org:leicester-curve",
+   "kind": "organisation",
+   "label": "Leicester Curve"
+  },
+  {
+   "id": "org:leicester-curve-uk-tour",
+   "kind": "organisation",
+   "label": "Leicester Curve/UK Tour"
+  },
+  {
+   "id": "org:london-coliseum",
+   "kind": "organisation",
+   "label": "London Coliseum"
+  },
+  {
+   "id": "org:london-palladium",
+   "kind": "organisation",
+   "label": "London Palladium"
+  },
+  {
+   "id": "org:lowry-theatre-leicester-curve",
+   "kind": "organisation",
+   "label": "Lowry Theatre/Leicester Curve"
+  },
+  {
    "id": "org:manchester-opera-house-theatre-royal-glasgow-adama-entertainment",
    "kind": "organisation",
    "label": "Manchester Opera House/Theatre Royal Glasgow/Adama Entertainment"
+  },
+  {
+   "id": "org:prince-edward-theatre",
+   "kind": "organisation",
+   "label": "Prince Edward Theatre"
+  },
+  {
+   "id": "org:sadlers-wells-east",
+   "kind": "organisation",
+   "label": "Sadlers Wells: East"
+  },
+  {
+   "id": "org:salisbury-playhouse",
+   "kind": "organisation",
+   "label": "Salisbury Playhouse"
   },
   {
    "id": "org:savoy-theatre",
@@ -677,14 +2327,64 @@
    "label": "Savoy Theatre"
   },
   {
+   "id": "org:southwark-playhouse",
+   "kind": "organisation",
+   "label": "Southwark Playhouse"
+  },
+  {
+   "id": "org:the-other-palace",
+   "kind": "organisation",
+   "label": "The Other Palace"
+  },
+  {
+   "id": "org:theatre-royal-drury-lane-carter-dixon-mcgill",
+   "kind": "organisation",
+   "label": "Theatre Royal Drury Lane/Carter Dixon McGill"
+  },
+  {
+   "id": "org:thomas-hopkins-productions",
+   "kind": "organisation",
+   "label": "Thomas Hopkins Productions"
+  },
+  {
+   "id": "org:udderbelly-underbelly-boulevard",
+   "kind": "organisation",
+   "label": "Udderbelly/Underbelly Boulevard"
+  },
+  {
    "id": "org:uk-tour",
    "kind": "organisation",
    "label": "UK Tour"
   },
   {
+   "id": "org:watermill-theatre",
+   "kind": "organisation",
+   "label": "Watermill Theatre"
+  },
+  {
+   "id": "person:alan kliffer",
+   "kind": "person",
+   "label": "Alan Kliffer"
+  },
+  {
+   "id": "person:alex timbers",
+   "kind": "person",
+   "label": "Alex Timbers"
+  },
+  {
+   "id": "person:andrew beckett",
+   "kind": "person",
+   "label": "Andrew Beckett"
+  },
+  {
    "id": "person:bob gale",
    "kind": "person",
    "label": "Bob Gale"
+  },
+  {
+   "id": "person:bradley bredeweg",
+   "kind": "person",
+   "label": "Bradley Bredeweg"
   },
   {
    "id": "person:chris bailey",
@@ -702,9 +2402,39 @@
    "label": "Douglas Carter Beane"
   },
   {
+   "id": "person:ellen kane",
+   "kind": "person",
+   "label": "Ellen Kane"
+  },
+  {
+   "id": "person:frederico bellone",
+   "kind": "person",
+   "label": "Frederico Bellone"
+  },
+  {
+   "id": "person:gabriel barre",
+   "kind": "person",
+   "label": "Gabriel Barre"
+  },
+  {
+   "id": "person:hal chambers",
+   "kind": "person",
+   "label": "Hal Chambers"
+  },
+  {
+   "id": "person:hannah sands",
+   "kind": "person",
+   "label": "Hannah Sands"
+  },
+  {
    "id": "person:harry blumenau",
    "kind": "person",
    "label": "Harry Blumenau"
+  },
+  {
+   "id": "person:jamie lloyd",
+   "kind": "person",
+   "label": "Jamie Lloyd"
   },
   {
    "id": "person:joe mantello",
@@ -712,9 +2442,64 @@
    "label": "Joe Mantello"
   },
   {
+   "id": "person:jonathan o'boyle",
+   "kind": "person",
+   "label": "Jonathan O’Boyle"
+  },
+  {
+   "id": "person:josh seymour",
+   "kind": "person",
+   "label": "Josh Seymour"
+  },
+  {
    "id": "person:karen bruce",
    "kind": "person",
    "label": "Karen Bruce"
+  },
+  {
+   "id": "person:katie-ann mcdonough",
+   "kind": "person",
+   "label": "Katie-Ann McDonough"
+  },
+  {
+   "id": "person:katie-anne mcdonough",
+   "kind": "person",
+   "label": "Katie-Anne McDonough"
+  },
+  {
+   "id": "person:kirk jameson",
+   "kind": "person",
+   "label": "Kirk Jameson"
+  },
+  {
+   "id": "person:lindsay posner",
+   "kind": "person",
+   "label": "Lindsay Posner"
+  },
+  {
+   "id": "person:lizzi gee",
+   "kind": "person",
+   "label": "Lizzi Gee"
+  },
+  {
+   "id": "person:lucy moss",
+   "kind": "person",
+   "label": "Lucy Moss"
+  },
+  {
+   "id": "person:marissa jaret winokur",
+   "kind": "person",
+   "label": "Marissa Jaret Winokur"
+  },
+  {
+   "id": "person:martha geelan",
+   "kind": "person",
+   "label": "Martha Geelan"
+  },
+  {
+   "id": "person:michael greif",
+   "kind": "person",
+   "label": "Michael Greif"
   },
   {
    "id": "person:nic doodson",
@@ -727,6 +2512,11 @@
    "label": "Nick Winston"
   },
   {
+   "id": "person:nicole behan",
+   "kind": "person",
+   "label": "Nicole Behan"
+  },
+  {
    "id": "person:nikolai foster",
    "kind": "person",
    "label": "Nikolai Foster"
@@ -737,9 +2527,19 @@
    "label": "Racky Plews"
   },
   {
+   "id": "person:randal myler",
+   "kind": "person",
+   "label": "Randal Myler"
+  },
+  {
    "id": "person:robin antin",
    "kind": "person",
    "label": "Robin Antin"
+  },
+  {
+   "id": "person:simon greiff",
+   "kind": "person",
+   "label": "Simon Greiff"
   },
   {
    "id": "person:thom southerland",
@@ -777,9 +2577,34 @@
    "label": "ANNIE"
   },
   {
+   "id": "prod:babies",
+   "kind": "production",
+   "label": "Babies"
+  },
+  {
    "id": "prod:back to the future",
    "kind": "production",
    "label": "BACK TO THE FUTURE"
+  },
+  {
+   "id": "prod:bank of dave",
+   "kind": "production",
+   "label": "Bank Of Dave"
+  },
+  {
+   "id": "prod:beautiful little fool",
+   "kind": "production",
+   "label": "Beautiful Little Fool"
+  },
+  {
+   "id": "prod:beetlejuice",
+   "kind": "production",
+   "label": "Beetlejuice The Musical"
+  },
+  {
+   "id": "prod:blippi the wonderful world tour",
+   "kind": "production",
+   "label": "Blippi: The Wonderful World Tour"
   },
   {
    "id": "prod:burlesque",
@@ -807,9 +2632,114 @@
    "label": "The Choir of Man"
   },
   {
+   "id": "prod:dirty dancing",
+   "kind": "production",
+   "label": "Dirty Dancing"
+  },
+  {
+   "id": "prod:evita",
+   "kind": "production",
+   "label": "Evita"
+  },
+  {
+   "id": "prod:fanny",
+   "kind": "production",
+   "label": "Fanny"
+  },
+  {
+   "id": "prod:glorious",
+   "kind": "production",
+   "label": "Glorious!"
+  },
+  {
+   "id": "prod:heated rivalry the unauthorized musical parody",
+   "kind": "production",
+   "label": "Heated Rivalry: The Unauthorized Musical Parody"
+  },
+  {
+   "id": "prod:here comes j edgar",
+   "kind": "production",
+   "label": "Here Comes J. Edgar!"
+  },
+  {
+   "id": "prod:hunchback of notre dame",
+   "kind": "production",
+   "label": "The Hunchback Of Notre Dame"
+  },
+  {
+   "id": "prod:in pieces",
+   "kind": "production",
+   "label": "In Pieces"
+  },
+  {
+   "id": "prod:in pieces in concert",
+   "kind": "production",
+   "label": "In Pieces: In Concert"
+  },
+  {
+   "id": "prod:jack and the beanstalk",
+   "kind": "production",
+   "label": "Jack And The Beanstalk"
+  },
+  {
+   "id": "prod:kinky boots",
+   "kind": "production",
+   "label": "Kinky Boots"
+  },
+  {
+   "id": "prod:last five years",
+   "kind": "production",
+   "label": "The Last Five Years"
+  },
+  {
+   "id": "prod:legally blonde",
+   "kind": "production",
+   "label": "Legally Blonde"
+  },
+  {
    "id": "prod:mean girls",
    "kind": "production",
    "label": "MEAN GIRLS"
+  },
+  {
+   "id": "prod:midnight",
+   "kind": "production",
+   "label": "Midnight"
+  },
+  {
+   "id": "prod:million dollar quartet",
+   "kind": "production",
+   "label": "Million Dollar Quartet"
+  },
+  {
+   "id": "prod:my beautiful laundrette",
+   "kind": "production",
+   "label": "My Beautiful Laundrette"
+  },
+  {
+   "id": "prod:nero",
+   "kind": "production",
+   "label": "Nero"
+  },
+  {
+   "id": "prod:public",
+   "kind": "production",
+   "label": "Public: The Musical"
+  },
+  {
+   "id": "prod:radium girls",
+   "kind": "production",
+   "label": "The Radium Girls"
+  },
+  {
+   "id": "prod:ride the cyclone",
+   "kind": "production",
+   "label": "Ride The Cyclone"
+  },
+  {
+   "id": "prod:rock roll man",
+   "kind": "production",
+   "label": "Rock & Roll Man"
   },
   {
    "id": "prod:rodgers hammerstein s cinderella",
@@ -817,9 +2747,39 @@
    "label": "Rodgers + Hammerstein's Cinderella"
   },
   {
+   "id": "prod:scissorhandz",
+   "kind": "production",
+   "label": "Scissorhandz"
+  },
+  {
+   "id": "prod:silence of the lambs",
+   "kind": "production",
+   "label": "The Silence Of The Lambs"
+  },
+  {
+   "id": "prod:why am i so single",
+   "kind": "production",
+   "label": "Why Am I So Single?"
+  },
+  {
    "id": "prod:wicked",
    "kind": "production",
    "label": "WICKED"
+  },
+  {
+   "id": "prod:wild about you",
+   "kind": "production",
+   "label": "Wild About You"
+  },
+  {
+   "id": "prod:winghaven park",
+   "kind": "production",
+   "label": "Winghaven Park"
+  },
+  {
+   "id": "prod:your lie in april",
+   "kind": "production",
+   "label": "Your Lie In April"
   }
  ],
  "seeds": [
@@ -827,6 +2787,7 @@
   "debbie-obrien-casting",
   "the-choir-of-man",
   "burlesque-the-musical",
-  "harry-blumenau-agent"
+  "harry-blumenau-agent",
+  "united-agents-casting-directors"
  ]
 }

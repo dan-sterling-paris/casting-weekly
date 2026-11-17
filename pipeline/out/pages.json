@@ -1856,5 +1856,77 @@
   "title": "Harry Blumenau CDG CSA - United Agents",
   "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
   "file": "01dcb8b5445f6dbb.txt"
+ },
+ {
+  "seed": "united-agents-casting-directors",
+  "url": "https://www.unitedagents.co.uk/stuart-burt-cdg-csa/",
+  "status": 200,
+  "fetched_at": "2026-11-17T08:51:17Z",
+  "title": "Stuart Burt CDG CSA - United Agents",
+  "sha256": "947acc4c2ac1496fac4ed5031752d54cbb9a1fd990b0b36b2d2d402a24be8344",
+  "file": "947acc4c2ac1496f.txt"
+ },
+ {
+  "seed": "united-agents-casting-directors",
+  "url": "https://www.unitedagents.co.uk/harry-blumenau-cdg-csa/",
+  "status": 200,
+  "fetched_at": "2026-11-17T08:51:19Z",
+  "title": "Harry Blumenau CDG CSA - United Agents",
+  "sha256": "01dcb8b5445f6dbb30d17bc165c50addae4a924e9651fe115f132fc4d68eecce",
+  "file": "01dcb8b5445f6dbb.txt"
+ },
+ {
+  "seed": "united-agents-casting-directors",
+  "url": "https://www.unitedagents.co.uk/maya-kvetny-csa/",
+  "status": 200,
+  "fetched_at": "2026-11-17T08:51:21Z",
+  "title": "Maya Kvetny CSA - United Agents",
+  "sha256": "6c9eb9387502a71f27c2af40d2ee6434dfddde4d39cf9d3b636a89bfa4508cb4",
+  "file": "6c9eb9387502a71f.txt"
+ },
+ {
+  "seed": "united-agents-casting-directors",
+  "url": "https://www.unitedagents.co.uk/catriona-dickie-cdg/",
+  "status": 200,
+  "fetched_at": "2026-11-17T08:51:23Z",
+  "title": "Catriona Dickie CDG - United Agents",
+  "sha256": "a8e620ef95a31d9cfbac9763c0176a4bb58e8e0ba3e2ee043078a59e90d0b606",
+  "file": "a8e620ef95a31d9c.txt"
+ },
+ {
+  "seed": "united-agents-casting-directors",
+  "url": "https://www.unitedagents.co.uk/kate-dowd-cdg/",
+  "status": 200,
+  "fetched_at": "2026-11-17T08:51:25Z",
+  "title": "Kate Dowd CDG - United Agents",
+  "sha256": "2e6e6838e217070ef0cec29023d8028dc35a6c67489449a5d36500de86f337f2",
+  "file": "2e6e6838e217070e.txt"
+ },
+ {
+  "seed": "united-agents-casting-directors",
+  "url": "https://www.unitedagents.co.uk/matthew-dewsbury-cdg/",
+  "status": 200,
+  "fetched_at": "2026-11-17T08:51:27Z",
+  "title": "Matthew Dewsbury CDG - United Agents",
+  "sha256": "dde2fdb3f0f78df1a16dfcd81d80a56f028425dd0da0302d1ede1735be5d9eb4",
+  "file": "dde2fdb3f0f78df1.txt"
+ },
+ {
+  "seed": "united-agents-casting-directors",
+  "url": "https://www.unitedagents.co.uk/louise-kiely-cdg/",
+  "status": 200,
+  "fetched_at": "2026-11-17T08:51:29Z",
+  "title": "Louise Kiely CDG - United Agents",
+  "sha256": "34d10a35bd9572141d802de933d33adf8a3ebd48babb488bcaf8a0b10b95f0ef",
+  "file": "34d10a35bd957214.txt"
+ },
+ {
+  "seed": "united-agents-casting-directors",
+  "url": "https://www.unitedagents.co.uk/jill-trevellick-cdg/",
+  "status": 200,
+  "fetched_at": "2026-11-17T08:51:32Z",
+  "title": "Jill Trevellick CDG - United Agents",
+  "sha256": "a1ac8edd3807d84d6528ab99c834eda1a4f38f8d6ab18c7348d4ff8ae8ae3abe",
+  "file": "a1ac8edd3807d84d.txt"
  }
 ]

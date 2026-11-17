@@ -99,21 +99,35 @@ for p in sorted(pages, key=lambda x: x["url"]):
 
 # agent pages: only credits for shows already in the network or named in a seed (the shows a person chose)
 wanted = {n["id"] for n in nodes.values() if n["kind"] == "production"} | {"prod:" + norm_work(s["production"]) for s in seeds() if s.get("production")}
+def person_name(s, p):
+    if s.get("person"):
+        return s["person"]
+    t = p.get("title", "")
+    for cut in s.get("name_from_title_strip", []):
+        t = t.split(cut)[0]
+    return re.sub(r"(\s+(CDG|CSA))+$", "", t.strip())
+
+
 for p in sorted(pages, key=lambda x: x["url"]):
     s = seed[p["seed"]]
-    if s["kind"] != "person-site":
+    if s["kind"] not in ("person-site", "person-directory"):
         continue
+    since = s.get("credits_since")
     layout = LAYOUTS.get(host(p["url"]))
     if not layout:
         continue
     layout_rule, layout_fn = layout
     for b in layout_fn(text_of[p["url"]]):
         pid = "prod:" + norm_work(b["title"])
-        if pid not in wanted:
+        if since:
+            if int(b["year"][:4]) < since:
+                continue
+        elif pid not in wanted:
             continue
         label = next((x["production"] for x in seeds() if x.get("production") and "prod:" + norm_work(x["production"]) == pid), b["title"].title())
         prod = node(pid, "production", label)
-        person = node("person:" + norm(s["person"]), "person", s["person"])
+        pname = person_name(s, p)
+        person = node("person:" + norm(pname), "person", pname)
         role = "Casting director" if "casting" in b["role"].lower() else b["role"]
         common = {"rule": layout_rule, "sentence": b["evidence"], "year": b["year"], "venue": b["venue"], **prov_of[p["url"]]}
         add_edge({"source": person, "target": prod, "type": "credit", "role": role, "role_as_stated": b["role"],

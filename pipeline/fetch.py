@@ -1,12 +1,15 @@
 """Step 2. Fetch every allowed page under each seed's read paths, found from the site's own sitemap.
 Saves page text to pipeline/cache/ and a manifest (URL, time, hash) to pipeline/out/pages.json. No AI involved."""
 import json
+import os
 import re
 import sys
+import time
 from urllib.parse import urljoin, urlparse
 from common import CACHE, OUT, UA, get, host, html_to_text, now, read_sitemaps, robots, seeds, sha
 
 CACHE.mkdir(exist_ok=True)
+START, BUDGET = time.time(), float(os.environ.get("BUDGET_SECONDS", "0"))  # 0 = no time limit
 ONLY = sys.argv[1].split(",") if len(sys.argv) > 1 else None
 old = json.loads((OUT / "pages.json").read_text()) if (ONLY and (OUT / "pages.json").exists()) else []
 manifest = [m for m in old if m["seed"] not in (ONLY or [])]
@@ -20,6 +23,15 @@ for s in seeds():
     if s.get("pages"):
         # the seed names exact pages (chosen by a person): read those, robots.txt still applies
         urls = [(u, "") for u in s["pages"]]
+    elif s.get("sitemap_match"):
+        # read only the sitemap files whose address matches the seed's pattern (e.g. client lists)
+        urls = []
+        for sm in (rp.site_maps() or [base.rstrip("/") + "/sitemap.xml"]):
+            code, body, _ = get(sm)
+            for child in re.findall(r"<loc>\s*([^<\s]+)", body.decode("utf-8", "replace")) if code == 200 else []:
+                if re.search(s["sitemap_match"], child) and rp.can_fetch(UA, child):
+                    c2, b2, _ = get(child)
+                    urls += [(u, "") for u in re.findall(r"<loc>\s*([^<\s]+)", b2.decode("utf-8", "replace"))] if c2 == 200 else []
     else:
         urls, _ = read_sitemaps(base, rp)
     if not urls and rp.can_fetch(UA, base):
@@ -46,11 +58,15 @@ for s in seeds():
         seen.add(u)
         path = urlparse(u).path or "/"
         is_index = s.get("skip_section_index") and path.rstrip("/") in [p.rstrip("/") for p in s["read"]]
+        if s.get("url_match") and not re.search(s["url_match"], u):
+            continue
         if host(u) == host(base) and any(path.startswith(p) for p in s["read"]) and not is_index:
             ordered.append(u)
     wanted = ordered[: s.get("max_pages", len(ordered))]
     got = 0
     for u in wanted:
+        if BUDGET and time.time() - START > BUDGET:
+            print("  time budget reached; stopping"); break
         if not rp.can_fetch(UA, u):
             manifest.append({"seed": s["id"], "url": u, "status": "disallowed by robots.txt"}); continue
         code, body, final = get(u)
