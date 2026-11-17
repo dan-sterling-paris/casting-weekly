@@ -2,9 +2,9 @@
 
   python3 pipeline/extract.py
 
-Reads pipeline/out/lookup_credits.json (check_lookups.py), pipeline/out/unconfirmed.json (check_lookups.py),
-pipeline/out/names.json (match_names.py: other spellings of the same person) and the queue in
-pipeline/productions.txt. Writes site/index.html from site/template.html.
+Reads pipeline/out/lookup_credits.json (check_lookups.py), pipeline/out/names.json (match_names.py: other spellings
+of the same person), the queue in pipeline/productions.txt and the "remove:" lines in pipeline/name_rules.txt
+(granted takedowns). Writes site/index.html from site/template.html.
 """
 import json
 import re
@@ -47,7 +47,16 @@ ALIASES = names.get("aliases", {})
 credits = load("lookup_credits.json", [])
 batches = {f: i + 1 for i, f in enumerate(sorted({c.get("lookup_file") for c in credits}, key=batch_order))}
 
-edges, shows, people, seen = [], {}, {}, set()
+# granted takedowns: "remove: Name" drops a person, "remove: Name | Show" drops one credit
+REMOVE_PERSON, REMOVE_CREDIT = set(), set()
+rules = ROOT / "name_rules.txt"
+for line in rules.read_text().splitlines() if rules.exists() else []:
+    line = line.split("#", 1)[0].strip()
+    if line.lower().startswith("remove:"):
+        who, _, show = (x.strip() for x in line[7:].partition("|"))
+        (REMOVE_CREDIT.add((key(who), key(show))) if show else REMOVE_PERSON.add(key(who)))
+
+edges, shows, people, seen, removed = [], {}, {}, set(), 0
 for c in credits:
     credited = c["person"].replace("’", "'")
     real = ALIASES.get(c["person"], c["person"])
@@ -55,6 +64,10 @@ for c in credits:
     label, venue = c["production"], c["venue"]
     suffix = " (%s)" % venue.split(",")[0]
     show = label[: -len(suffix)] if venue != "Venue not stated" and label.endswith(suffix) else label
+    if key(person) in REMOVE_PERSON or key(credited) in REMOVE_PERSON or \
+            (key(person), key(show)) in REMOVE_CREDIT or (key(person), key(label)) in REMOVE_CREDIT:
+        removed += 1
+        continue
     k = (key(person), c["role"], key(label))
     if k in seen:
         continue
@@ -69,8 +82,7 @@ done = {key(x.split("→")[0]) for x in (ROOT / "lookups" / "done.txt").read_tex
 queue = [x.strip() for x in (ROOT / "productions.txt").read_text().splitlines()
          if x.strip() and not x.strip().startswith("#") and key(x) not in done]
 
-data = {"edges": edges, "unconfirmed": load("unconfirmed.json", []), "queue": queue, "updated": now()[:10],
-        "names": {"merged": names.get("merged", []), "review": names.get("review", [])}}
+data = {"edges": edges, "queue": queue, "updated": now()[:10]}
 blob = json.dumps(data, ensure_ascii=False, sort_keys=True).replace("</", "<\\/")
 (SITE / "index.html").write_text((SITE / "template.html").read_text().replace("__DATA__", blob))
 
@@ -78,5 +90,5 @@ cd = defaultdict(int)
 for e in edges:
     if e["role"] == "Casting director":
         cd[e["person"]] += 1
-print("credits %d · shows %d · people %d · queued %d · casting directors: %s" % (
-    len(edges), len(shows), len(people), len(queue), dict(sorted(cd.items(), key=lambda x: -x[1]))))
+print("credits %d · shows %d · people %d · queued %d · removed by request %d · casting directors: %s" % (
+    len(edges), len(shows), len(people), len(queue), removed, dict(sorted(cd.items(), key=lambda x: -x[1]))))

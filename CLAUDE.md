@@ -24,4 +24,11 @@ scheduled "Casting Weekly lookup" message arrives:
 8. On a scheduled run, send one PushNotification (under 200 characters): shows looked up, credits kept/rejected,
    casting director(s) found or "casting not stated", any credit resting on a single page, and any new name merge or review.
 
+## Corrections and takedowns
+
+The site's takedown page stores requests from signed-in visitors in the artifact's database (collection `takedowns`,
+one document per sender with a `requests` subcollection); others email privacy@castingweekly.com. When Dan grants one,
+add `remove: <name>` or `remove: <name> | <show>` to `pipeline/name_rules.txt`, run `python3 pipeline/extract.py`,
+commit, push and republish. The person or credit stays off the site on every later run.
+
 Never research a line already in `done.txt`. To redo a show, Dan deletes its line from `done.txt` and adds it to the queue.

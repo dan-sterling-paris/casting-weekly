@@ -3,3 +3,5 @@
 #
 #   same: <spelling to replace> = <spelling to show>      always merge these two names
 #   different: <name> | <name>                            never merge these two names
+#   remove: <name>                                        granted takedown: drop the person from the site
+#   remove: <name> | <show>                               granted takedown: drop one credit

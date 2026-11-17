@@ -380,6 +380,38 @@ body[data-view="net"] .foot{display:none}
   .node-label{font-size:12px}
 }
 .queue .q-n{display:none;border-style:solid;color:var(--faint)}
+.foot{flex-direction:column;align-items:stretch}
+.foot-note{margin:0;text-transform:none;letter-spacing:0;font:400 13px/1.5 var(--sans);color:var(--dim);max-width:80ch}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+.foot-links a{color:var(--dim);text-decoration:none}.foot-links a:hover{color:var(--accent)}
+.foot-links span{margin-left:auto}
+.disc{border:1px solid var(--line2);border-left:3px solid var(--warn);border-radius:10px;background:var(--panel);padding:16px 18px;display:flex;flex-direction:column;gap:8px;max-width:80ch}
+.disc p{margin:0;color:var(--dim)}
+.disc .disc-h{color:var(--text);font-weight:600}
+.disc a{color:var(--accent)}
+.disc.compact{max-width:none}
+.report{margin:-14px 0 0;color:var(--dim);font-size:14px}
+.report a{color:var(--accent);text-decoration:none}.report a:hover{text-decoration:underline}
+.legal{display:flex;flex-direction:column;gap:26px;max-width:72ch}
+.legal section{display:flex;flex-direction:column;gap:10px}
+.legal p,.legal ul{margin:0;color:var(--dim)}
+.legal ul{padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.legal b,.legal a{color:var(--text)}
+.td-form{display:flex;flex-direction:column;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px;border:0;margin:0;padding:0;min-width:0}
+.field label,.field legend{font-weight:500}
+.field legend{margin-bottom:6px;padding:0}
+.field input,.field select,.field textarea,.td-copy{background:var(--bg);border:1px solid var(--line2);border-radius:8px;padding:10px 12px;font-size:15px;width:100%;min-width:0}
+.field textarea,.td-copy{resize:vertical;font-family:var(--sans)}
+.field .hint{margin:0;font-size:12.5px;color:var(--faint)}
+.radio{display:flex;align-items:center;gap:10px;min-height:36px;cursor:pointer;font-weight:400}
+.radio input{accent-color:var(--accent);width:auto}
+.form-err{margin:0;color:var(--warn)}
+.td-result:empty{display:none}
+.note.ok{border-color:var(--ok);background:var(--ok-soft)}
+.addr-line{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0}
+.addr{font:500 14px var(--mono);color:var(--text);background:var(--bg);border:1px solid var(--line2);border-radius:6px;padding:6px 10px;user-select:all;overflow-wrap:anywhere}
+.btn.small{padding:5px 10px;font-size:13px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.sdot{animation:none}}
 </style>
 
@@ -392,7 +424,6 @@ body[data-view="net"] .foot{display:none}
       <a href="#casting-directors">Casting directors</a>
       <a href="#productions">Productions</a>
       <a href="#people">People</a>
-      <a href="#data-quality">Data quality</a>
       <a href="#about">About</a>
     </nav>
     <div class="lp-actions">
@@ -421,7 +452,11 @@ body[data-view="net"] .foot{display:none}
     <span><i style="background:var(--person)"></i>Creatives</span>
     <span><i style="background:var(--venue)"></i>Venues &amp; tours</span>
   </div>
-  <div>&copy; 2026 Casting Weekly</div>
+  <p class="foot-note">Our best attempt from public sources. Credits may be incomplete, out of date or wrong: check the linked source before you rely on one.</p>
+  <nav class="foot-links" aria-label="Legal">
+    <a href="#about">About</a><a href="#terms">Terms</a><a href="#privacy">Privacy</a><a href="#takedown">Corrections &amp; takedowns</a>
+    <span>&copy; 2026 Casting Weekly</span>
+  </nav>
 </footer>
 
 <section id="net" class="net" aria-label="Network" hidden>
@@ -557,7 +592,6 @@ VIEWS.overview = () => {
   const top = CDS.slice(0, 8), max = top[0] ? top[0].prods.size : 1;
   const latestBatch = Math.max(0, ...PRODS.map(r => r.batch));
   const latest = PRODS.filter(r => r.batch >= latestBatch - 1).sort((a, b) => b.batch - a.batch || a.show.localeCompare(b.show)).slice(0, 6);
-  const unc = RAW.unconfirmed.length, rev = RAW.names.review.length, merged = RAW.names.merged.length;
   return [
     head("Overview", "Casting directors and the creative teams they work with across the West End, UK tours and regional theatre. Every credit links to the public page that states it.",
       h("span", {class:"stamp"}, "Updated " + fmtDate(RAW.updated))),
@@ -570,11 +604,10 @@ VIEWS.overview = () => {
       card("Most active casting directors",
         h("ol", {class:"bars"}, top.map(p => h("li", null, personLink(p), h("span", {class:"bar", "aria-hidden":"true"}, h("i", {style:`width:${p.prods.size / max * 100}%`})), h("b", null, p.prods.size)))),
         h("a", {class:"more", href:"#casting-directors"}, "All casting directors →")),
-      card("Needs attention", h("ul", {class:"att"},
-        h("li", null, h("span", {class:"n" + (NOCD.length ? " warn" : " ok")}, NOCD.length), h("p", null, (NOCD.length === 1 ? "Production" : "Productions") + " with no casting credit yet", h("br"), h("small", null, NOCD.slice(0, 4).map(r => r.show).join(", ") + (NOCD.length > 4 ? "…" : "")))),
-        h("li", null, h("span", {class:"n" + (unc ? " warn" : " ok")}, unc), h("p", null, (unc === 1 ? "Credit" : "Credits") + " held back because the source didn't confirm " + (unc === 1 ? "it" : "them"), h("br"), h("small", null, "Listed with the reason on Data quality"))),
-        h("li", null, h("span", {class:"n" + (rev ? " warn" : " ok")}, rev), h("p", null, (rev === 1 ? "Possible duplicate name" : "Possible duplicate names") + " to review", h("br"), h("small", null, plural(merged, "spelling") + " already merged")))),
-        h("a", {class:"more", href:"#data-quality"}, "Open data quality →"))),
+      card("Not yet stated", [h("ul", {class:"att"},
+        h("li", null, h("span", {class:"n" + (NOCD.length ? " warn" : " ok")}, NOCD.length), h("p", null, (NOCD.length === 1 ? "Production" : "Productions") + " with no casting credit in the sources yet", h("br"), h("small", null, NOCD.slice(0, 4).map(r => r.show).join(", ") + (NOCD.length > 4 ? "…" : ""))))),
+        disclaimer(true)],
+        h("a", {class:"more", href:"#productions"}, "See productions →"))),
     h("div", {class:"cols wide-left"},
       card("Latest productions", table(["Production", "Venue", "Casting"], latest.map(r => [showLink(r), venueName(r.venue), castCell(r)])), h("a", {class:"more", href:"#productions"}, "All productions →")),
       card("Awaiting credits", RAW.queue.length
@@ -651,6 +684,7 @@ function personView(p){
     head(p.name, roles.join(" · "), h("button", {type:"button", class:"btn", onclick: () => openInNetwork("p:" + p.hash)}, "Show in network →"),
       h("a", {href: p.kind === "cd" ? "#casting-directors" : "#people"}, p.kind === "cd" ? "Casting directors" : "People")),
     p.aka.size ? h("p", {class:"muted", style:"margin:-14px 0 0"}, "Also credited as " + [...p.aka].join(", ") + ".") : null,
+    h("p", {class:"report"}, "Is this you, and is something wrong? ", h("a", {href:"#takedown", onclick: e => { e.preventDefault(); askTakedown(p.name); }}, "Request a correction or removal →")),
     h("div", {class:"stats"}, [[p.prods.size, "Productions"], [coll.length, "Collaborators"], [vens.size, "Venues & tours"]].map(([v, l]) => h("div", null, h("b", null, v), h("span", null, l)))),
     h("div", {class:"cols wide-left"},
       h("section", {class:"creds", "aria-label":"Credits"}, h("p", {class:"lbl"}, "Credits · " + creds.length), creds.map(c => creditCard(c, "person"))),
@@ -663,6 +697,7 @@ function showView(r){
   return [
     head(r.show, null, h("button", {type:"button", class:"btn", onclick: () => openInNetwork("r:" + r.hash)}, "Show in network →"), h("a", {href:"#productions"}, "Productions")),
     h("div", {class:"chips", style:"margin-top:-14px"}, h("span", {class:"pill venue"}, venueName(r.venue)), h("span", {class:"pill"}, r.type), h("span", {class:"pill"}, plural(r.urls.size, "source"))),
+    h("p", {class:"report"}, "Something wrong here? ", h("a", {href:"#takedown", onclick: e => { e.preventDefault(); askTakedown(r.show + " (" + venueName(r.venue) + ")"); }}, "Request a correction →")),
     !r.team["Casting director"].length ? h("p", {class:"note"}, "No casting director is credited for this production in the sources so far. It will appear here once a source names them.") : null,
     h("div", {class:"cols wide-left"},
       h("section", {class:"creds", "aria-label":"Evidence"}, h("p", {class:"lbl"}, "Evidence · " + r.credits.length), r.credits.slice().sort((a, b) => ROLES.indexOf(a.role) - ROLES.indexOf(b.role)).map(c => creditCard(c, "show"))),
@@ -672,40 +707,43 @@ function showView(r){
   ];
 }
 
-const REASON = {not_on_page:"Name not found on the cited source", show_missing:"Source doesn't name this production",
-  role_missing:"Source names them, but not in this role", unavailable:"Source page unavailable", no_source:"No source given", conflicting:"Sources disagree"};
-VIEWS["data-quality"] = () => {
-  const unc = RAW.unconfirmed.slice().sort((a, b) => a.show.localeCompare(b.show));
-  return [
-    head("Data quality", "What is missing or held back, and how names were matched. A credit only goes live when its source names the person in that role for that production."),
-    card("Productions with no casting credit", table(["Production", "Venue", "Director"], NOCD.map(r => [showLink(r), venueName(r.venue), joinLinks(r.team.Director) || h("span", {class:"muted"}, "—")]), "Every production has a casting credit."),
-      h("span", {class:"pill" + (NOCD.length ? " warn" : " ok")}, NOCD.length + " of " + PRODS.length)),
-    card("Credits held back", [h("p", {class:"muted", style:"margin:0"}, "Suggested credits that their cited source did not confirm. They stay off the site until a source does."),
-      table(["Production", "Role", "Name", "Reason", "Sources"], unc.map(u => [u.show, u.role, u.name || h("span", {class:"muted"}, "—"),
-        h("span", {class:"pill warn"}, REASON[u.reason] || u.reason),
-        h("span", {class:"list-inline"}, (u.urls || []).map(srcPill))]), "Nothing held back.")],
-      h("span", {class:"pill" + (unc.length ? " warn" : " ok")}, unc.length)),
-    h("div", {class:"cols"},
-      card("Spellings merged", [h("p", {class:"muted", style:"margin:0"}, "Names judged to be one person, shown under the spelling with the most credits. Each credit keeps the spelling its source used."),
-        table(["Spellings", "Shown as", "Match#"], RAW.names.merged.map(m => [m.a + " / " + m.b, people.get(m.shown_as) ? personLink(people.get(m.shown_as)) : m.shown_as, m.p == null ? "Rule" : (m.p * 100).toFixed(1) + "%"]), "No spellings merged.")]),
-      card("Possible duplicates to review", [h("p", {class:"muted", style:"margin:0"}, "Close matches that were not merged. Add a rule to the name rules file to merge or separate them."),
-        table(["Names", "Match#"], RAW.names.review.map(m => [m.a + " / " + m.b, (m.p * 100).toFixed(1) + "%"]), "No close matches waiting.")]))
-  ];
-};
+function disclaimer(compact){
+  return h("aside", {class:"disc" + (compact ? " compact" : "")},
+    h("p", {class:"disc-h"}, "Our best attempt, not the final word"),
+    h("p", null, "Casting Weekly is compiled from public sources: show and venue websites, producers' announcements and the trade press. We publish a credit only when its source states it, but sources can be wrong, change after we read them, or leave people out."),
+    compact ? null : h("p", null, "Treat every credit as our best attempt. Check the linked source before you rely on it, and ", h("a", {href:"#takedown"}, "tell us if something is wrong"), "."));
+}
+const CONTACT = "privacy@castingweekly.com";
+function contactLine(){
+  const code = h("code", {class:"addr"}, CONTACT);
+  const btn = h("button", {type:"button", class:"btn small", onclick: async () => {
+    try { await navigator.clipboard.writeText(CONTACT); btn.textContent = "Copied"; }
+    catch(e){ const r = document.createRange(); r.selectNodeContents(code); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); btn.textContent = "Selected: press copy"; }
+  }}, "Copy address");
+  return h("p", {class:"addr-line"}, code, btn);
+}
+function legal(title, sub, sections){
+  return [head(title, sub, h("span", {class:"stamp"}, "Last updated 17 Nov 2026")),
+    h("div", {class:"legal"}, sections.map(([hd, ...body]) => h("section", null, h("h2", {class:"sec"}, hd), body)))];
+}
+const P = (...k) => h("p", null, ...k), UL = items => h("ul", null, items.map(x => h("li", null, x)));
 
 VIEWS.about = () => [
   head("About", "Casting Weekly maps who casts what in UK theatre, and who they work with."),
+  disclaimer(false),
   h("div", {class:"cols wide-left"},
     h("section", {class:"prose"},
       h("h2", {class:"sec"}, "How a credit gets here"),
       h("ol", {class:"steps"},
         h("li", null, "A production is added to the research queue by title and venue or tour."),
         h("li", null, "Its casting director, director and writers are found in public sources: the show's own site, the venue's page, producers' announcements and the trade press."),
-        h("li", null, "A credit is published only when the cited page names that person in that role for that production. Anything less is held back and listed on Data quality."),
+        h("li", null, "A credit is published only when the cited page names that person in that role for that production. Anything less is left out."),
         h("li", null, "Different spellings of one person's name are matched and shown under one name. The original spelling stays on each credit.")),
       h("h2", {class:"sec"}, "Reading a credit"),
-      h("p", null, "Each credit links to the public page it comes from. Productions of the same show at different venues, or on different tours, are kept separate, because each has its own team."),
-      h("p", null, "A casting director marked “Not stated” means no source read so far names one. It does not mean the production has none.")),
+      P("Each credit links to the public page it comes from. Productions of the same show at different venues, or on different tours, are kept separate, because each has its own team."),
+      P("A casting director marked “Not stated” means no source read so far names one. It does not mean the production has none."),
+      h("h2", {class:"sec"}, "Corrections and removal"),
+      P("If you're named here and something is wrong, or you'd rather not be listed, ", h("a", {href:"#takedown"}, "send a correction or takedown request"), ". See also our ", h("a", {href:"#terms"}, "terms"), " and ", h("a", {href:"#privacy"}, "privacy policy"), ".")),
     card("Network key", h("ul", {class:"legend"},
       h("li", null, h("span", {class:"dot", style:"background:var(--cd)"}), h("span", null, h("b", null, "Casting director"), h("br"), h("span", {class:"muted"}, "Large circles when centred, sized by productions"))),
       h("li", null, h("span", {class:"dot", style:"background:var(--person)"}), h("span", null, h("b", null, "Creative"), h("br"), h("span", {class:"muted"}, "Director, writer, composer or lyricist"))),
@@ -713,6 +751,120 @@ VIEWS.about = () => [
       h("li", null, h("span", {class:"dot", style:"background:var(--venue)"}), h("span", null, h("b", null, "Venue or tour"), h("br"), h("span", {class:"muted"}, "Where the production plays")))))),
   h("p", {class:"stamp"}, "Data updated " + fmtDate(RAW.updated) + " · " + plural(SOURCES.size, "public source"))
 ];
+
+VIEWS.terms = () => legal("Terms of use", "The rules for using Casting Weekly. By using the site you agree to them.", [
+  ["Who we are", P("Casting Weekly (“we”, “us”) runs this site. You can contact us at ", h("b", null, CONTACT), ".")],
+  ["What the site is", P("Casting Weekly is a reference of professional credits in UK theatre: who cast, directed and wrote which productions, and where. It is compiled from publicly available sources, and every credit links to the page it comes from.")],
+  ["Our best attempt, not a guarantee",
+    P("We take care to publish a credit only when its source states it, but we cannot promise the information is complete, accurate or current. Sources can contain mistakes, change after we read them, or leave people out, and we can make mistakes too."),
+    P("The site is provided “as is” for general information. It is not professional advice. Check the linked source, or the production itself, before you rely on a credit for anything that matters, such as a submission, a contract or a public statement.")],
+  ["Using the site", UL([
+    "Use it for your own professional research and reference.",
+    "Don't copy or republish the site's content in bulk, or build a competing database from it, without our written permission.",
+    "Don't use it to harass, discriminate against or contact people in ways they haven't invited.",
+    "Don't try to break, overload or get around how the site works."])],
+  ["Content and links", P("The way the site is designed and organised belongs to us. The credits themselves are facts reported by others; the pages we link to belong to their owners, and we are not responsible for their content or availability.")],
+  ["Corrections and takedowns", P("If you're named here and think something is wrong, or you want a credit or your profile removed, use the ", h("a", {href:"#takedown"}, "corrections and takedowns page"), ". We review every request.")],
+  ["Our liability", P("To the extent the law allows, we are not liable for any loss arising from your use of, or reliance on, the site or the sources it links to. Nothing in these terms limits liability that cannot be limited by law, including for death or personal injury caused by negligence, or for fraud.")],
+  ["Changes", P("We may update these terms. The date at the top shows when they last changed. Continuing to use the site after a change means you accept the updated terms.")],
+  ["Law", P("These terms are governed by the law of England and Wales, and the courts of England and Wales have jurisdiction.")]
+]);
+
+VIEWS.privacy = () => legal("Privacy policy", "What personal information Casting Weekly holds, why, and the choices you have.", [
+  ["Who we are", P("Casting Weekly is the controller of the personal information described here. Contact us about privacy at ", h("b", null, CONTACT), ".")],
+  ["People named on the site",
+    P("The site lists people who work in theatre, such as casting directors, directors, writers, composers and lyricists. For each person we hold only:"),
+    UL(["their name as credited, and other spellings sources have used", "their professional role on each production", "the production, venue or tour", "a link to the public page that states the credit"]),
+    P("We take this from publicly available sources: production and venue websites, producers' announcements and the trade press. We do not collect contact details, photographs or private information about the people listed.")],
+  ["Why we hold it", P("We rely on legitimate interests (UK GDPR Article 6(1)(f)): providing the theatre industry with a reference of professional credits that have already been made public. We limit what we hold to professional credits, link every credit to its source, and remove information when asked where the balance favours the person named.")],
+  ["How long we keep it", P("We keep a credit while it is useful as a reference. We remove or correct it when its source changes, when it turns out to be wrong, or when we accept a request to remove it.")],
+  ["Your rights", P("If you're named on the site you can ask us to tell you what we hold, correct it, remove it, restrict how we use it, or object to our using it. Use the ", h("a", {href:"#takedown"}, "corrections and takedowns page"), " or email us. We will reply within one month."),
+    P("If you're unhappy with how we handle your information you can complain to the Information Commissioner's Office at ico.org.uk.")],
+  ["Requests you send us", P("If you send a correction or takedown request we keep what you give us (your name, email address, the request and, when you send it through the site while signed in, an account identifier) so we can deal with it and keep a record. We keep requests for up to two years after we close them.")],
+  ["Visiting the site", P("The site is hosted by Anthropic PBC on claude.ai, which processes technical information such as your IP address to serve the page, under its own privacy policy. We do not set our own cookies or use analytics. Your browser stores one preference on your device: the order you choose for the network's rows.")],
+  ["Sharing", P("We do not sell personal information or share it with anyone except our hosting provider, or where the law requires it.")],
+  ["Changes", P("We will update this policy if what we do changes. The date at the top shows when it last changed.")]
+]);
+
+let pendingTakedown = "";
+function askTakedown(subject){ pendingTakedown = subject; location.hash = "takedown"; }
+VIEWS.takedown = () => {
+  const subject = pendingTakedown; pendingTakedown = "";
+  const field = (label, id, control, hint) => h("div", {class:"field"}, h("label", {for:id}, label), control, hint ? h("p", {class:"hint"}, hint) : null);
+  const names = h("datalist", {id:"td-list"}, [...PEOPLE.map(p => p.name), ...PRODS.map(r => r.show + " (" + venueName(r.venue) + ")")].map(v => h("option", {value:v})));
+  const form = h("form", {class:"td-form", novalidate:true},
+    field("Your name", "td-name", h("input", {id:"td-name", name:"name", required:true, autocomplete:"name"})),
+    field("Your email", "td-email", h("input", {id:"td-email", name:"email", type:"email", required:true, autocomplete:"email"}), "We'll only use it to reply to this request."),
+    field("You are", "td-who", h("select", {id:"td-who", name:"who"}, ["The person named", "Their agent or representative", "Someone else"].map(v => h("option", null, v)))),
+    h("fieldset", {class:"field"}, h("legend", null, "What would you like us to do?"),
+      ["Correct a credit", "Remove a credit", "Remove my profile"].map((v, i) => h("label", {class:"radio"}, h("input", {type:"radio", name:"action", value:v, checked: i === 0}), v))),
+    field("Which person or production?", "td-subject", h("input", {id:"td-subject", name:"subject", list:"td-list", value:subject, required:true}), "Start typing a name or a show."),
+    field("Details", "td-details", h("textarea", {id:"td-details", name:"details", rows:5}), "What's wrong, and what it should say. A link to a source helps."),
+    h("label", {class:"check"}, h("input", {type:"checkbox", id:"td-ok", name:"ok", required:true}), "The information I've given is accurate."),
+    h("p", {class:"form-err", role:"alert", hidden:true}),
+    h("button", {type:"submit", class:"btn primary big"}, "Send request"), names);
+  const result = h("div", {class:"td-result", "aria-live":"polite"});
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const err = form.querySelector(".form-err"), d = Object.fromEntries(new FormData(form));
+    const missing = !(d.name || "").trim() ? "your name" : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test((d.email || "").trim()) ? "a valid email address" : !(d.subject || "").trim() ? "which person or production" : !d.ok ? "your confirmation that the information is accurate" : "";
+    if(missing){ err.textContent = "Please add " + missing + "."; err.hidden = false; return; }
+    err.hidden = true;
+    const btn = form.querySelector("button[type=submit]"); btn.disabled = true; btn.textContent = "Sending…";
+    const rec = {name:d.name.trim(), email:d.email.trim(), who:d.who, action:d.action, subject:d.subject.trim(), details:(d.details || "").trim(), sentAt:new Date().toISOString()};
+    let saved = false;
+    try {
+      const c = window.claude;
+      const db = c && c.use ? await c.use("db") : null, user = c && c.use ? await c.use("user") : null, uid = user ? await user.id() : null;
+      if(db && uid){
+        const mine = db.doc("takedowns/" + uid);
+        await mine.set({lastSentAt: rec.sentAt});
+        await mine.collection("requests").add(rec);
+        saved = true;
+      }
+    } catch(e2) { saved = false; }
+    btn.disabled = false; btn.textContent = "Send request";
+    if(saved){
+      form.reset(); result.replaceChildren(h("div", {class:"note ok"}, h("b", null, "Request received. "), "We'll reply to " + rec.email + " within one month."));
+    } else {
+      const body = `Request: ${rec.action}\nAbout: ${rec.subject}\nFrom: ${rec.name} (${rec.who})\nReply to: ${rec.email}\n\n${rec.details}`;
+      const box = h("textarea", {readonly:true, rows:7, class:"td-copy", "aria-label":"Your request"}); box.value = body;
+      const copy = h("button", {type:"button", class:"btn"}, "Copy request");
+      copy.onclick = async () => { try { await navigator.clipboard.writeText(body); copy.textContent = "Copied"; } catch(e3){ box.select(); copy.textContent = "Selected: press copy"; } };
+      result.replaceChildren(h("div", {class:"note"},
+        h("p", {style:"margin:0 0 10px"}, h("b", null, "One more step. "), "This page can't send it for you here. Email your request to us and we'll reply within one month."),
+        contactLine(), box,
+        h("p", {class:"addr-line"}, copy, h("a", {class:"btn", href:"mailto:" + CONTACT + "?subject=" + encodeURIComponent(rec.action + ": " + rec.subject) + "&body=" + encodeURIComponent(body)}, "Open in email app"))));
+    }
+    result.scrollIntoView({block:"nearest"});
+  });
+  const inbox = h("div");
+  (async () => {   // the owner sees requests sent through the site
+    try {
+      const c = window.claude; if(!c || !c.use) return;
+      const user = await c.use("user"); if(!user || !(await user.isOwner())) return;
+      const db = await c.use("db"); if(!db) return;
+      const senders = await db.collection("takedowns").get(), rows = [];
+      for(const d of senders.docs){ const rq = await db.doc("takedowns/" + d.id).collection("requests").get(); rq.docs.forEach(x => rows.push(x.data())); }
+      rows.sort((a, b) => String(b.sentAt).localeCompare(String(a.sentAt)));
+      inbox.replaceChildren(card("Requests received · only you see this", table(["Sent", "Request", "About", "From", "Details"],
+        rows.map(r => [fmtDate(String(r.sentAt).slice(0, 10)), r.action, r.subject, h("span", null, r.name, h("span", {class:"sub"}, r.email + " · " + r.who)), r.details || "—"]), "No requests yet.")));
+    } catch(e){}
+  })();
+  return [
+    head("Corrections and takedowns", "If you're named on Casting Weekly, you can ask us to correct a credit, remove a credit or remove your profile."),
+    h("div", {class:"cols wide-left"},
+      card("Send a request", [form, result]),
+      h("div", {style:"display:flex;flex-direction:column;gap:20px;min-width:0"},
+        card("What happens next", h("ol", {class:"steps"},
+          h("li", null, "We check the request against the credit and its source."),
+          h("li", null, "We reply within one month, and sooner where we can."),
+          h("li", null, "If we remove a credit or a profile, we also stop it coming back when the site is updated."))),
+        card("Prefer email?", [h("p", {class:"muted", style:"margin:0"}, "Write to us with your name, the person or production, and what you'd like changed."), contactLine()]),
+        disclaimer(true))),
+    inbox
+  ];
+};
 
 /* ---------- landing ---------- */
 // the holding page's drifting network, drawn behind the hero with real names from the data
@@ -814,12 +966,13 @@ VIEWS.home = () => {
     h("section", {class:"lp-figs", "aria-label":"Coverage today"},
       [[PRODS.length, "Productions"], [CDS.length, "Casting directors"], [PEOPLE.length - CDS.length, "Creatives"], [RAW.edges.length, "Sourced credits"], [SOURCES.size, "Public sources"]]
         .map(([v, l]) => h("div", null, h("b", null, v), h("span", null, l)))),
+    disclaimer(false),
     h("section", {class:"lp-sec"},
       h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "What you can do"), h("h2", null, "The working relationships behind every production, in one place")),
       h("div", {class:"lp-feats"},
         feat("var(--cd)", "See who works with whom", "Follow a casting director to the directors, writers and venues they keep returning to. Reorder the network to ask the question you have.", "#network", "Open the network →"),
         feat("var(--prod)", "Check any credit at source", "Every name links to the public page that credits them: the show's site, the venue's page or the trade press.", "#productions", "Browse productions →"),
-        feat("var(--warn)", "Know what isn't stated", `${plural(NOCD.length, "production")} on file ${NOCD.length === 1 ? "has" : "have"} no casting credit in the sources yet. Gaps are shown, never filled in.`, "#data-quality", "See data quality →"))),
+        feat("var(--warn)", "Know what isn't stated", `${plural(NOCD.length, "production")} on file ${NOCD.length === 1 ? "has" : "have"} no casting credit in the sources yet. Gaps are shown, never filled in.`, "#productions", "See productions →"))),
     h("section", {class:"lp-sec"},
       h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "Right now"), h("h2", null, "Most active casting directors"), h("p", null, "Ranked by productions on file.")),
       h("ol", {class:"lp-cds"}, CDS.slice(0, 5).map(p => h("li", null, personLink(p), h("span", {class:"n"}, plural(p.prods.size, "production")),
@@ -836,10 +989,10 @@ VIEWS.home = () => {
         h("ol", {class:"steps"},
           h("li", null, "A production is added by title and venue or tour."),
           h("li", null, "Its casting director, director and writers are found in public sources: the show's own site, the venue, producers' announcements and the trade press."),
-          h("li", null, "A credit is published only when the cited page names that person in that role for that production. Anything less is held back and listed."),
+          h("li", null, "A credit is published only when the cited page names that person in that role for that production. Anything less is left out."),
           h("li", null, "Different spellings of one person's name are matched, so each person has one profile. The original spelling stays on every credit.")),
-        card("Read the standard", [h("p", {class:"muted", style:"margin:0"}, "The About page explains how productions are kept separate and what “Not stated” means. Data quality lists everything held back, with the reason."),
-          h("span", {class:"list-inline", style:"gap:4px 18px"}, h("a", {class:"more", href:"#about"}, "About →"), h("a", {class:"more", href:"#data-quality"}, "Data quality →"))]))),
+        card("Named here?", [h("p", {class:"muted", style:"margin:0"}, "If a credit about you is wrong, or you'd rather not be listed, tell us and we'll review it within one month."),
+          h("span", {class:"list-inline", style:"gap:4px 18px"}, h("a", {class:"more", href:"#takedown"}, "Corrections & takedowns →"), h("a", {class:"more", href:"#privacy"}, "Privacy →"), h("a", {class:"more", href:"#terms"}, "Terms →"))]))),
     h("section", {class:"lp-band"},
       h("div", null, h("h2", null, "See the network for yourself."), h("p", null, "Updated " + fmtDate(RAW.updated) + " · " + plural(RAW.edges.length, "sourced credit"))),
       h("div", {class:"lp-ctas", style:"margin:0"}, h("a", {class:"btn primary big", href:"#network"}, "Explore the network →"), h("a", {class:"btn big", href:"#overview"}, "Open the overview")))
