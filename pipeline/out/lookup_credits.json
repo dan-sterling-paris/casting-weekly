@@ -678,5 +678,35 @@
   "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
   "rule": "K",
   "lookup_file": "2026-11-17-5.json"
+ },
+ {
+  "person": "Bryony Jarvis-Taylor",
+  "role": "Casting director",
+  "production": "The Jungle Book (Olivier Theatre)",
+  "venue": "Olivier Theatre, National Theatre, London",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914",
+  "evidence": "…ll, movement director Finn Caldwell, composer Fernando Velázquez, lighting designer Oliver Fenwick, video designer Ash J Woodward, sound designer Benjamin Grant, casting directors Bryony Jarvis-Taylor CDG and Martin Poile CDG, dialect coach Shereen Ibrahim, voice coach Cathleen McCarron, associate director John Young, associate set designer Ruth Hall, associate Costume Designer…",
+  "rule": "K",
+  "lookup_file": "2026-11-17-6.json"
+ },
+ {
+  "person": "Martin Poile",
+  "role": "Casting director",
+  "production": "The Jungle Book (Olivier Theatre)",
+  "venue": "Olivier Theatre, National Theatre, London",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914",
+  "evidence": "…ldwell, composer Fernando Velázquez, lighting designer Oliver Fenwick, video designer Ash J Woodward, sound designer Benjamin Grant, casting directors Bryony Jarvis-Taylor CDG and Martin Poile CDG, dialect coach Shereen Ibrahim, voice coach Cathleen McCarron, associate director John Young, associate set designer Ruth Hall, associate Costume Designer Jasmine Araujo, asso…",
+  "rule": "K",
+  "lookup_file": "2026-11-17-6.json"
+ },
+ {
+  "person": "Indhu Rubasingham",
+  "role": "Director",
+  "production": "The Jungle Book (Olivier Theatre)",
+  "venue": "Olivier Theatre, National Theatre, London",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914",
+  "evidence": "This world premiere is directed by Indhu Rubasingham, with Olivier winning actor Hiran Abeysekera as Mowgli and innovative puppetry by Lume: Nick Barnes and Finn Caldwell.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-6.json"
  }
 ]

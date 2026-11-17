@@ -145,5 +145,19 @@
   "final": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
   "title": "Sunset Boulevard revival to tour next spring",
   "file": "b02af8182a3a854e.txt"
+ },
+ "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:37:19Z",
+  "final": "https://www.broadwayworld.com/westend/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914",
+  "title": "Full Cast Set For THE JUNGLE BOOK at the National Theatre | BroadwayWorld",
+  "file": "31c2ef00e8afcca2.txt"
+ },
+ "https://www.whatsonstage.com/news/national-theatre-announces-the-jungle-books-full-company_1731628/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:37:22Z",
+  "final": "https://www.whatsonstage.com/news/national-theatre-announces-the-jungle-books-full-company_1731628/",
+  "title": "National Theatre announces The Jungle Book’s full company",
+  "file": "e8925507bea5f490.txt"
  }
 }

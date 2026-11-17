@@ -13,3 +13,7 @@ Found by the production-credits-lookup skill, but the check script could not con
 ## Name is on the page, but not next to the role (composer) (1)
 
 - Sunset Boulevard · Composer: Andrew Lloyd Webber · https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/
+
+## Name not on any cited page (1)
+
+- The Jungle Book · Writer: Anupama Chandrasekhar from Rudyard Kipling's The Jungle Book · https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914, https://www.whatsonstage.com/news/national-theatre-announces-the-jungle-books-full-company_1731628/
