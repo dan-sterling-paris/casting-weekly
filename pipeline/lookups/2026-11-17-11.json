@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Cloud 9",
+    "Venue": "Lyttelton Theatre, National Theatre, London",
+    "Casting Director": "Naomi Downham",
+    "Director": "Dominic Cooke",
+    "Writer": "Written by Caryl Churchill",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/full-cast-set-for-cloud-9-at-the-national-theatre_1731915/", "https://theatreweekly.com/full-cast-announced-for-caryl-churchills-cloud-9-at-the-national-theatre/", "https://www.broadwayworld.com/article/Cast-Set-For-CLOUD-9-at-National-Theatre-20260917"],
+      "Casting Director": ["https://www.whatsonstage.com/news/full-cast-set-for-cloud-9-at-the-national-theatre_1731915/", "https://www.broadwayworld.com/article/Cast-Set-For-CLOUD-9-at-National-Theatre-20260917", "https://theatreweekly.com/full-cast-announced-for-caryl-churchills-cloud-9-at-the-national-theatre/"],
+      "Director": ["https://theatreweekly.com/full-cast-announced-for-caryl-churchills-cloud-9-at-the-national-theatre/", "https://www.whatsonstage.com/news/full-cast-set-for-cloud-9-at-the-national-theatre_1731915/", "https://www.londontheatre.co.uk/theatre-news/news/full-cast-announced-for-cloud-9-at-the-national-theatre"],
+      "Writer": ["https://www.londontheatre.co.uk/theatre-news/news/full-cast-announced-for-cloud-9-at-the-national-theatre"]
+    }
+  },
+  {
+    "Production Name": "Cats",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Will Burton",
+    "Director": "Drew McOnie",
+    "Writer": "Music: Andrew Lloyd Webber",
+    "Sources": {
+      "Venue": ["https://www.broadwayworld.com/article/First-Cast-Set-For-CATS-UK-and-Ireland-Tour-20260804", "https://theatreweekly.com/first-casting-announced-for-major-uk-and-ireland-tour-of-andrew-lloyd-webbers-cats/", "https://theatreroyal.com/press/news/cats-castingannouncement/"],
+      "Casting Director": ["https://theatreroyal.com/press/news/cats-castingannouncement/", "https://www.broadwayworld.com/article/First-Cast-Set-For-CATS-UK-and-Ireland-Tour-20260804", "https://norwichtheatre.org/first-tour-casting-announced-for-the-brand-new-production-of-cats/", "https://theatreweekly.com/first-casting-announced-for-major-uk-and-ireland-tour-of-andrew-lloyd-webbers-cats/"],
+      "Director": ["https://theatreroyal.com/press/news/cats-castingannouncement/", "https://www.broadwayworld.com/article/First-Cast-Set-For-CATS-UK-and-Ireland-Tour-20260804", "https://norwichtheatre.org/first-tour-casting-announced-for-the-brand-new-production-of-cats/", "https://theatreweekly.com/first-casting-announced-for-major-uk-and-ireland-tour-of-andrew-lloyd-webbers-cats/"],
+      "Writer": ["https://theatreroyal.com/press/news/cats-castingannouncement/", "https://theatreweekly.com/first-casting-announced-for-major-uk-and-ireland-tour-of-andrew-lloyd-webbers-cats/", "https://norwichtheatre.org/first-tour-casting-announced-for-the-brand-new-production-of-cats/"]
+    }
+  },
+  {
+    "Production Name": "Billy Elliot the Musical",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Pippa Ailion CDG; Natalie Gallacher CDG",
+    "Director": "Stephen Daldry",
+    "Writer": "Book: Lee Hall; Lyrics: Lee Hall; Music: Elton John",
+    "Sources": {
+      "Venue": ["https://www.bradford-theatres.co.uk/news/casting-announced-for-the-uk-and-ireland-tour-and-limited-west-end-season-of-the-original", "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-uk-ireland-tour-of-billy-elliot-the-musical"],
+      "Casting Director": ["https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/", "https://www.broadwayworld.com/article/BILLY-ELLIOT-THE-MUSICAL-Will-Return-For-A-National-Tour-and-Limited-West-End-Season-20260211", "https://www.bradford-theatres.co.uk/news/casting-announced-for-the-uk-and-ireland-tour-and-limited-west-end-season-of-the-original"],
+      "Director": ["https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/", "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-uk-ireland-tour-of-billy-elliot-the-musical"],
+      "Writer": ["https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/", "https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/"]
+    }
+  }
+]

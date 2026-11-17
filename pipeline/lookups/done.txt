@@ -1,0 +1,40 @@
+# Shows already looked up, copied exactly from productions.txt, with the file that holds the answer.
+# Delete a line to have that show researched again.
+The Choir of Man, London  →  2026-11-17-1.json
+Beetlejuice, London  →  2026-11-17-1.json
+Burlesque, UK Tour  →  2026-11-17-1.json
+Wicked, London  →  2026-11-17-1.json
+Paddington, London  →  2026-11-17-1.json
+Avenue Q, 2026 London  →  2026-11-17-2.json
+Avenue Q, 2003 Broadway  →  2026-11-17-2.json
+Phantom of the Opera, 2026 London  →  2026-11-17-2.json
+Les Miserables, London  →  2026-11-17-3.json
+To Sir With Love, UK Tour  →  2026-11-17-4.json
+Sunset Boulevard, Bolton Octagon  →  2026-11-17-5.json
+The Jungle Book, National Theatre London  →  2026-11-17-6.json
+Hadestown, London  →  2026-11-17-7.json
+Lion King, London  →  2026-11-17-7.json
+Cabaret, London  →  2026-11-17-7.json
+Moulin Rouge, London  →  2026-11-17-8.json
+Hamilton, London  →  2026-11-17-8.json
+Chicago, UK Tour  →  2026-11-17-8.json
+One Day The Musical, Garrick Theatre London  →  2026-11-17-9.json
+Pride The Musical, Bridge Theatre London  →  2026-11-17-9.json
+The Book of Mormon, London  →  2026-11-17-9.json
+Mamma Mia!, London  →  2026-11-17-10.json
+Oliver!, London  →  2026-11-17-10.json
+The Lives of Others, London  →  2026-11-17-10.json
+Cloud 9, 2026 National Theatre London  →  2026-11-17-11.json
+Cats, 2026 UK Tour  →  2026-11-17-11.json
+Billy Elliot, UK Tour  →  2026-11-17-11.json
+Jesus Christ Superstar, 2027 UK Tour  →  2026-11-17-12.json
+Pretty Woman, 2027 UK Tour  →  2026-11-17-12.json
+Sister Act, 2027 UK Tour  →  2026-11-17-12.json
+Hairspray, 2027 UK Tour  →  2026-11-17-13.json
+Grease, 2027 UK Tour  →  2026-11-17-13.json
+How the Grinch Stole Christmas, 2026 Leeds Playhouse  →  2026-11-17-13.json
+Singin' in the Rain, 2026 Sheffield Crucible  →  2026-11-17-14.json
+A Christmas Carol, 2026 The Lowry Salford  →  2026-11-17-14.json
+Daisy and the Trouble with Christmas, 2026 Curve Leicester  →  2026-11-17-14.json
+Puss in Boots, 2026 Stephen Joseph Theatre Scarborough  →  2026-11-17-15.json
+My Fair Lady, 2026 Chichester Festival Theatre  →  2026-11-17-15.json

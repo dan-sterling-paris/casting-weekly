@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Jesus Christ Superstar",
+    "Venue": "UK tour",
+    "Casting Director": "Grindrod Burton Casting",
+    "Director": "Tim Sheader",
+    "Writer": "Music: Andrew Lloyd Webber; Lyrics: Tim Rice",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/", "https://theatreweekly.com/sam-ryder-to-star-in-jesus-christ-superstar-uk-tour-launching-in-manchester/", "https://www.broadwayworld.com/article/JESUS-CHRIST-SUPERSTAR-Will-Embark-on-UK-Tour-Starring-Sam-Ryder-20260622"],
+      "Casting Director": ["https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/", "https://www.broadwayworld.com/article/JESUS-CHRIST-SUPERSTAR-Will-Embark-on-UK-Tour-Starring-Sam-Ryder-20260622", "https://www.destinationmiltonkeynes.co.uk/blog/milton-keynes-theatre-to-welcome-sam-ryder-in-jesus-christ-superstar/"],
+      "Director": ["https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/", "https://theatreweekly.com/sam-ryder-to-star-in-jesus-christ-superstar-uk-tour-launching-in-manchester/", "https://www.broadwayworld.com/article/JESUS-CHRIST-SUPERSTAR-Will-Embark-on-UK-Tour-Starring-Sam-Ryder-20260622", "https://westendwilma.com/?p=69476"],
+      "Writer": ["https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/", "https://westendwilma.com/?p=69476"]
+    }
+  },
+  {
+    "Production Name": "Pretty Woman: The Musical",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Jerry Mitchell",
+    "Writer": "Book: Garry Marshall; Book: J.F. Lawton; Music: Bryan Adams; Music: Jim Vallance",
+    "Sources": {
+      "Venue": ["https://www.broadwayworld.com/article/Cast-Set-For-PRETTY-WOMAN-THE-MUSICAL-UK-Tour-20261020", "https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/", "https://www.broadwayworld.com/article/PRETTY-WOMAN-THE-MUSICAL-Will-Embark-on-New-UK-Tour-In-2027-20260511"],
+      "Casting Director": [],
+      "Director": ["https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/", "https://www.londonboxoffice.co.uk/news/post/casting-announced-for-pretty-woman-the-musical", "https://www.broadwayworld.com/article/Cast-Set-For-PRETTY-WOMAN-THE-MUSICAL-UK-Tour-20261020"],
+      "Writer": ["https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/", "https://www.londonboxoffice.co.uk/news/post/casting-announced-for-pretty-woman-the-musical", "https://www.broadwayworld.com/article/Cast-Set-For-PRETTY-WOMAN-THE-MUSICAL-UK-Tour-20261020"]
+    }
+  },
+  {
+    "Production Name": "Sister Act",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Pearson Casting",
+    "Director": "Bill Buckhurst",
+    "Writer": "Music: Alan Menken; Lyrics: Glenn Slater; Book: Bill Steinkellner; Book: Cheri Steinkellner; Additional book: Douglas Carter Beane",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/sister-act-the-musical-announces-major-uk-and-ireland-tour-starring-craig-revel-horwood-paul-chuckle-and-zoe-birkett/", "https://www.londonboxoffice.co.uk/news/post/sister-act-to-embark-on-tour-with-initial-casting-announced", "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "https://www.whatsonstage.com/news/initial-cast-for-sister-act-tour-confirmed_1735485/", "https://theatreweekly.com/sister-act-the-musical-announces-major-uk-and-ireland-tour-starring-craig-revel-horwood-paul-chuckle-and-zoe-birkett/"],
+      "Director": ["https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "https://theatreweekly.com/sister-act-the-musical-announces-major-uk-and-ireland-tour-starring-craig-revel-horwood-paul-chuckle-and-zoe-birkett/", "https://www.londonboxoffice.co.uk/news/post/sister-act-to-embark-on-tour-with-initial-casting-announced"],
+      "Writer": ["https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "https://theatreweekly.com/sister-act-the-musical-announces-major-uk-and-ireland-tour-starring-craig-revel-horwood-paul-chuckle-and-zoe-birkett/", "https://www.londonboxoffice.co.uk/news/post/sister-act-to-embark-on-tour-with-initial-casting-announced"]
+    }
+  }
+]

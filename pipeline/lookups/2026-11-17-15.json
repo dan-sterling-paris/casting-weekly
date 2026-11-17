@@ -1,0 +1,28 @@
+[
+  {
+    "Production Name": "Puss in Boots",
+    "Venue": "Stephen Joseph Theatre, Scarborough",
+    "Casting Director": "Unknown",
+    "Director": "Paul Robinson",
+    "Writer": "Adapted by Nick Lane",
+    "Sources": {
+      "Venue": ["https://sjt.uk.com/events/puss-in-boots", "https://www.broadwayworld.com/uk-regional/article/PUSS-IN-BOOTS-and-Five-More-Christmas-Shows-Will-Come-to-Stephen-Joseph-Theatre-20260515"],
+      "Casting Director": [],
+      "Director": ["https://sjt.uk.com/events/puss-in-boots"],
+      "Writer": ["https://sjt.uk.com/events/puss-in-boots"]
+    }
+  },
+  {
+    "Production Name": "My Fair Lady",
+    "Venue": "Festival Theatre, Chichester",
+    "Casting Director": "Stuart Burt CDG",
+    "Director": "Rachel Kavanaugh",
+    "Writer": "Book: Alan Jay Lerner; Lyrics: Alan Jay Lerner; Music: Frederick Loewe",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "https://www.whatsonstage.com/news/my-fair-lady-to-be-revived-in-chichester_1712060"],
+      "Casting Director": ["https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "https://theatreweekly.com/full-cast-announced-for-my-fair-lady-at-chichester-festival-theatre/", "https://sussexlocal.net/news-articles/my-fair-lady-cast-chichester-festival-theatre/"],
+      "Director": ["https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "https://theatreweekly.com/full-cast-announced-for-my-fair-lady-at-chichester-festival-theatre/", "https://www.whatsonstage.com/news/my-fair-lady-to-be-revived-in-chichester_1712060"],
+      "Writer": ["https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "https://www.whatsonstage.com/news/my-fair-lady-to-be-revived-in-chichester_1712060"]
+    }
+  }
+]

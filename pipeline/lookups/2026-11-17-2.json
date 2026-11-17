@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Avenue Q",
+    "Venue": "Shaftesbury Theatre, London",
+    "Casting Director": "Pearson Casting CDG",
+    "Director": "Jason Moore",
+    "Writer": "Book: Jeff Whitty; Music: Robert Lopez and Jeff Marx; Lyrics: Robert Lopez and Jeff Marx",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193", "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128"],
+      "Casting Director": ["https://www.londonboxoffice.co.uk/news/post/Full-Cast-and-Creative-Team-Announced-for-AVENUE-Q", "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128", "https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193"],
+      "Director": ["https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193", "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128"],
+      "Writer": ["https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193", "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128"]
+    }
+  },
+  {
+    "Production Name": "Avenue Q",
+    "Venue": "Golden Theatre, New York",
+    "Casting Director": "Cindy Tolan",
+    "Director": "Jason Moore",
+    "Writer": "Book: Jeff Whitty; Music: Robert Lopez and Jeff Marx; Lyrics: Robert Lopez and Jeff Marx",
+    "Sources": {
+      "Venue": ["https://playbill.com/article/look-back-at-avenue-q-on-broadway"],
+      "Casting Director": ["https://www.broadwayworld.com/shows/creative.php?showid=3321"],
+      "Director": ["https://playbill.com/article/look-back-at-avenue-q-on-broadway", "https://www.broadwayworld.com/shows/creative.php?showid=3321"],
+      "Writer": ["https://www.broadwayworld.com/shows/creative.php?showid=3321", "https://playbill.com/article/look-back-at-avenue-q-on-broadway"]
+    }
+  },
+  {
+    "Production Name": "The Phantom of the Opera",
+    "Venue": "His Majesty's Theatre, London",
+    "Casting Director": "Unknown",
+    "Director": "Seth Sklar-Heyn",
+    "Writer": "Music: Andrew Lloyd Webber; Lyrics: Charles Hart; Additional lyrics: Richard Stilgoe; Book: Richard Stilgoe and Andrew Lloyd Webber",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/phantom-of-the-opera-announces-new-west-end-cast-following-40th-anniversary-celebrations_1736734/", "https://www.phantomoftheopera.com/london/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/", "https://www.whatsonstage.com/news/phantom-of-the-opera-announces-new-west-end-cast-following-40th-anniversary-celebrations_1736734/"],
+      "Writer": ["https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/", "https://www.whatsonstage.com/news/phantom-of-the-opera-announces-new-west-end-cast-following-40th-anniversary-celebrations_1736734/"]
+    }
+  }
+]

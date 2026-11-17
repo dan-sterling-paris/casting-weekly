@@ -1,0 +1,7 @@
+# Name rules: Splink (pipeline/match_names.py) suggests which names are the same person; these lines decide.
+# Typed by Dan. One rule per line. Results are in pipeline/out/NAME_MATCHES.md.
+#
+#   same: <spelling to replace> = <spelling to show>      always merge these two names
+#   different: <name> | <name>                            never merge these two names
+#   remove: <name>                                        granted takedown: drop the person from the site
+#   remove: <name> | <show>                               granted takedown: drop one credit

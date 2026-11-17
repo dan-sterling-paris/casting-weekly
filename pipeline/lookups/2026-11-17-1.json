@@ -1,0 +1,80 @@
+[
+  {
+    "Production Name": "The Choir of Man",
+    "Venue": "Arts at Marble Arch, London",
+    "Casting Director": "Debbie O'Brien",
+    "Director": "Nic Doodson",
+    "Writer": "Created by: Nic Doodson and Andrew Kay; Monologues: Ben Norris",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/", "https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/", "https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/"],
+      "Director": ["https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/", "https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/"],
+      "Writer": ["https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/", "https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/"]
+    }
+  },
+  {
+    "Production Name": "The Choir of Man",
+    "Venue": "Arts Theatre, London",
+    "Casting Director": "Debbie O'Brien",
+    "Director": "Nic Doodson",
+    "Writer": "Created by: Nic Doodson and Andrew Kay; Monologues: Ben Norris",
+    "Sources": {
+      "Venue": ["https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end"],
+      "Casting Director": ["https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end"],
+      "Director": ["https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end"],
+      "Writer": ["https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end"]
+    }
+  },
+  {
+    "Production Name": "Beetlejuice the Musical",
+    "Venue": "Prince Edward Theatre, London",
+    "Casting Director": "Harry Blumenau",
+    "Director": "Alex Timbers",
+    "Writer": "Book: Scott Brown and Anthony King; Music: Eddie Perfect; Lyrics: Eddie Perfect",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-beetlejuice-the-musical"],
+      "Casting Director": ["https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "https://www.whatsonstage.com/news/beetlejuice-gives-west-end-casting-update_1727736/"],
+      "Director": ["https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-beetlejuice-the-musical"],
+      "Writer": ["https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "https://www.whatsonstage.com/news/beetlejuice-gives-west-end-casting-update_1727736/"]
+    }
+  },
+  {
+    "Production Name": "Burlesque the Musical",
+    "Venue": "UK tour",
+    "Casting Director": "Harry Blumenau CDG CSA",
+    "Director": "Racky Plews",
+    "Writer": "Steven Antin",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/burlesque-musical-tour-announces-final-casting_1726268/", "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical"],
+      "Casting Director": ["https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical", "https://www.whatsonstage.com/news/burlesque-musical-tour-announces-final-casting_1726268/"],
+      "Director": ["https://www.bradford-theatres.co.uk/news/lead-cast-and-creative-team-announced-for-the-first-uk-tour-production-of-the-spectacular", "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical", "https://www.whatsonstage.com/news/burlesque-musical-tour-announces-final-casting_1726268/"],
+      "Writer": ["https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical", "https://www.whatsonstage.com/news/burlesque-musical-tour-announces-final-casting_1726268/"]
+    }
+  },
+  {
+    "Production Name": "Wicked",
+    "Venue": "Apollo Victoria Theatre, London",
+    "Casting Director": "Jim Arnold CDG",
+    "Director": "Joe Mantello",
+    "Writer": "Book: Winnie Holzman; Music: Stephen Schwartz; Lyrics: Stephen Schwartz",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/wicked-73606/", "https://www.wickedthemusical.co.uk/"],
+      "Casting Director": ["https://officiallondontheatre.com/show/wicked-73606/", "https://www.wickedthemusical.co.uk/cast-creative/"],
+      "Director": ["https://officiallondontheatre.com/show/wicked-73606/", "https://www.wickedthemusical.co.uk/cast-creative/"],
+      "Writer": ["https://officiallondontheatre.com/show/wicked-73606/", "https://www.wickedthemusical.co.uk/cast-creative/"]
+    }
+  },
+  {
+    "Production Name": "Paddington The Musical",
+    "Venue": "Savoy Theatre, London",
+    "Casting Director": "Natalie Gallacher",
+    "Director": "Luke Sheppard",
+    "Writer": "Book: Jessica Swale; Music: Tom Fletcher; Lyrics: Tom Fletcher",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "https://www.paddingtonthemusical.com/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "https://www.whatsonstage.com/news/paddington-the-musical-announces-new-company-for-second-year_1733566/"],
+      "Director": ["https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "https://www.whatsonstage.com/news/paddington-the-musical-announces-new-company-for-second-year_1733566/"],
+      "Writer": ["https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "https://www.whatsonstage.com/news/paddington-the-musical-announces-new-company-for-second-year_1733566/"]
+    }
+  }
+]

@@ -1,0 +1,1337 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#07090c">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Casting Weekly</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a sticky console bar (brand, sections, search) over one view at a time. The network view fills the
+   screen as a three-pane console (on a phone: full-screen graph, controls drawer, bottom sheet); every other view
+   is a 1180px column. Look: the castingweekly.com holding page, one dark theme by choice. */
+:root{
+  --bg:#07090c; --bg2:#0a0d12; --panel:#0d1117; --panel2:#121821; --line:#1a212b; --line2:#27313d;
+  --text:#eef1f4; --dim:#8a94a0; --faint:#5d6773;
+  --accent:#5eead4; --accent-soft:rgba(94,234,212,.12);
+  --cd:#a78bfa; --cd-soft:rgba(167,139,250,.14);
+  --person:#cfcae6; --prod:#5eead4; --prod-soft:rgba(94,234,212,.11); --venue:#eef1f4; --venue-soft:rgba(238,241,244,.08);
+  --ok:#86efac; --ok-soft:rgba(134,239,172,.12); --warn:#fdba74; --warn-soft:rgba(253,186,116,.12);
+  --l-cd:rgba(167,139,250,.4); --l-venue:rgba(238,241,244,.2); --l-credit:rgba(150,170,190,.22); --grid:rgba(39,49,61,.4);
+  --on-accent:#07090c; --shadow:0 20px 50px rgba(0,0,0,.6);
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace; --sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif; --display:Inter,system-ui,sans-serif;
+  --hdr:56px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg2)}
+button,input,select{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg2);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;gap:18px;min-height:var(--hdr)}
+.brand{display:flex;align-items:baseline;gap:9px;white-space:nowrap;text-decoration:none}
+.brand b{font:600 16px var(--sans);letter-spacing:.02em}
+.brand b span{color:var(--accent)}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;min-width:0}
+.nav::-webkit-scrollbar{display:none}
+.nav a{padding:6px 10px;border-radius:6px;color:var(--dim);text-decoration:none;font-weight:500;white-space:nowrap}
+.nav a:hover{color:var(--text)}
+.nav a[aria-current="page"]{color:var(--text);background:var(--panel2);box-shadow:inset 0 -2px 0 var(--accent)}
+.cmd{position:relative;margin-left:auto;width:min(300px,100%)}
+.cmd input{width:100%;background:var(--panel);border:1px solid var(--line2);border-radius:6px;padding:7px 34px 7px 32px;font:13px var(--mono)}
+.cmd input::placeholder{color:var(--faint)}
+.cmd svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);stroke:var(--dim)}
+.cmd kbd{position:absolute;right:8px;top:50%;transform:translateY(-50%);font:11px var(--mono);color:var(--faint);border:1px solid var(--line2);border-radius:4px;padding:0 5px}
+.sugg{position:absolute;left:0;right:0;top:calc(100% + 6px);background:var(--panel);border:1px solid var(--line2);border-radius:8px;overflow:hidden;z-index:40;box-shadow:var(--shadow)}
+.sugg a{display:flex;gap:10px;align-items:center;padding:9px 12px;text-decoration:none}
+.sugg a[aria-selected="true"],.sugg a:hover{background:var(--panel2)}
+.sugg small{margin-left:auto;font:11px var(--mono);color:var(--faint);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+@media (max-width:900px){
+  .top-in{flex-wrap:wrap;gap:8px 14px;padding-block:8px}
+  .cmd{width:auto;flex:1;min-width:160px}
+  .nav{order:3;width:100%}
+}
+
+/* pages */
+.page>*{min-width:0}
+.page{max-width:1180px;margin:0 auto;padding-block:28px 72px;display:flex;flex-direction:column;gap:28px}
+.ph{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 20px;justify-content:space-between}
+.ph h1{font:600 28px/1.12 var(--sans);letter-spacing:-.03em;margin:0;text-wrap:balance}
+.ph p{margin:6px 0 0;color:var(--dim);max-width:68ch}
+.crumb{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 8px}
+.crumb a{color:var(--faint);text-decoration:none}.crumb a:hover{color:var(--text)}
+.stamp{font:11px var(--mono);letter-spacing:.1em;color:var(--faint);text-transform:uppercase;white-space:nowrap}
+.lbl{font:500 10.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin:0}
+h2.sec{font:600 15px var(--sans);margin:0}
+.muted{color:var(--dim)}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.cols.wide-left{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
+@media (max-width:860px){.cols,.cols.wide-left{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.card-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.more{font:500 12px var(--mono);color:var(--prod);text-decoration:none;letter-spacing:.04em}
+.more:hover{text-decoration:underline}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:860px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.kpi b{font:500 30px/1.1 var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.kpi .k-l{font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.kpi .k-s{font-size:12.5px;color:var(--faint);margin-top:6px}
+.kpi.cd b{color:var(--cd)}.kpi.prod b{color:var(--prod)}
+.bars{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.bars li{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) 26px;gap:12px;align-items:center}
+.bars .bar{height:8px;border-radius:2px;background:var(--panel2);overflow:hidden}
+.bars .bar i{display:block;height:100%;background:var(--cd);border-radius:2px}
+.bars b{font:600 13px var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.att{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.att li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+.att li:last-child{border-bottom:0}
+.att .n{font:600 18px/1.2 var(--mono);min-width:30px;font-variant-numeric:tabular-nums}
+.att .n.warn{color:var(--warn)}.att .n.ok{color:var(--ok)}
+.att p{margin:0}.att small{color:var(--faint)}
+.queue{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.queue li{font-size:12.5px;padding:3px 8px;border:1px dashed var(--line2);border-radius:4px;color:var(--dim)}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.card .tbl{border:0;border-radius:0;background:none;margin:0 -20px -18px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint);text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel2);white-space:nowrap}
+td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--panel2)}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+td .sub{display:block;font-size:12px;color:var(--faint)}
+.lnk{text-decoration:none;font-weight:500}
+.lnk:hover{text-decoration:underline}
+.lnk.cd{color:var(--cd)}
+.list-inline{display:flex;flex-wrap:wrap;gap:2px 10px}
+.empty{padding:28px;text-align:center;color:var(--dim)}
+
+/* chips, pills, filters */
+.pill{display:inline-block;font:500 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:3px;border:1px solid var(--line2);color:var(--dim);white-space:nowrap}
+.pill.warn{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
+.pill.ok{color:var(--ok);border-color:var(--ok);background:var(--ok-soft)}
+.pill.cd{color:var(--cd);border-color:var(--cd);background:var(--cd-soft)}
+.pill.prod{color:var(--prod);border-color:var(--prod);background:var(--prod-soft)}
+.pill.venue{color:var(--venue);border-color:var(--venue);background:var(--venue-soft)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg button{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:5px 10px;cursor:pointer;font-size:13px;color:var(--dim)}
+.seg button[aria-pressed="true"]{color:var(--text);border-color:var(--accent);background:var(--accent-soft)}
+.seg button small{font:11px var(--mono);color:var(--faint);margin-left:6px}
+.filters input[type="search"]{background:var(--panel);border:1px solid var(--line2);border-radius:6px;padding:6px 10px;min-width:0;width:220px;max-width:100%}
+.check{display:flex;gap:8px;align-items:center;color:var(--dim);font-size:13px;cursor:pointer}
+.check input{accent-color:var(--accent)}
+.count{font:12px var(--mono);color:var(--faint);margin-left:auto}
+
+/* profile */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.stats div{padding:12px 16px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font:600 22px var(--mono);font-variant-numeric:tabular-nums}
+.stats span{font:10.5px var(--mono);letter-spacing:.12em;color:var(--faint);text-transform:uppercase}
+.assoc{display:flex;flex-wrap:wrap;gap:6px}
+.assoc a{background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:4px 9px;text-decoration:none;font-size:13px}
+.assoc a:hover{border-color:var(--line2)}
+.assoc a.cd{border-color:var(--cd);color:var(--cd)}
+.assoc small{font:11px var(--mono);color:var(--faint);margin-left:4px}
+.creds{display:flex;flex-direction:column;gap:10px}
+.cred{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.cred-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.role{font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.role.cd{color:var(--cd)}
+.prov{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font:11.5px var(--mono);color:var(--faint)}
+.src{display:inline-flex;align-items:center;gap:6px;max-width:100%;padding:3px 10px;border:1px solid var(--line2);border-radius:999px;background:var(--prod-soft);color:var(--prod);font:500 11.5px var(--mono);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.src:hover{border-color:var(--prod)}
+.src svg{flex:none}
+@media (pointer:coarse){.src{min-height:32px;padding:4px 12px}}
+.note{border:1px solid var(--warn);background:var(--warn-soft);border-radius:8px;padding:12px 14px;color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line2);border-radius:6px;padding:7px 12px;text-decoration:none;font-weight:500;cursor:pointer;white-space:nowrap}
+.btn:hover{border-color:var(--accent)}
+.prose{max-width:68ch;display:flex;flex-direction:column;gap:14px}
+.prose p{margin:0}
+.steps{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px}
+.steps li::marker{font:500 13px var(--mono);color:var(--accent)}
+.legend{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px}
+@media (max-width:600px){.legend{grid-template-columns:minmax(0,1fr)}}
+.legend li{display:flex;gap:10px;align-items:baseline}
+
+/* network console */
+.net{display:grid;grid-template-columns:264px minmax(0,1fr) 360px;position:relative;height:calc(100vh - var(--hdr-h,56px) - env(safe-area-inset-top,0px));height:calc(100dvh - var(--hdr-h,56px) - env(safe-area-inset-top,0px))}
+.rail{border-right:1px solid var(--line);background:var(--bg2);overflow:auto;padding:16px 14px;display:flex;flex-direction:column;gap:10px}
+.rail .lbl{margin-top:8px}
+.toggles{display:flex;flex-direction:column;gap:6px}
+.tg{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px 10px;cursor:pointer;text-align:left;min-width:0}
+.tg[aria-pressed="false"]{opacity:.45}
+.tg .sw{width:10px;height:10px;border-radius:50%;flex:none}
+.tg .sq{border-radius:2px;transform:rotate(45deg)}
+.tg small{margin-left:auto;font:11px var(--mono);color:var(--dim)}
+.chain{gap:0}
+.chain .row{display:flex;align-items:stretch;gap:6px;position:relative;padding-bottom:12px}
+.chain .row:last-child{padding-bottom:0}
+.chain .row:not(:last-child)::after{content:"";position:absolute;left:44px;bottom:1px;height:10px;border-left:1px dashed var(--line2)}
+.chain .tg{flex:1}
+.grip{width:26px;flex:none;display:grid;place-items:center;background:none;border:1px solid var(--line);border-radius:6px;color:var(--faint);cursor:grab;touch-action:none;font:14px var(--mono)}
+.grip:hover{color:var(--text);border-color:var(--line2)}
+.row.dragging{opacity:.6}
+.hint{font:11px/1.45 var(--mono);color:var(--faint);margin:0}
+.index{display:flex;flex-direction:column}
+.index button{display:flex;gap:8px;align-items:center;background:none;border:0;border-bottom:1px solid var(--line);padding:7px 2px;text-align:left;cursor:pointer}
+.index button:hover{color:var(--cd)}
+.status{display:flex;align-items:center;gap:8px;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);white-space:nowrap}
+.sdot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent);animation:blink 2s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+@media (max-width:760px){.lp-actions .status{display:none}}
+.index small{margin-left:auto;font:11px var(--mono);color:var(--faint)}
+.stage{position:relative;overflow:hidden;background:
+  radial-gradient(ellipse 70% 60% at 50% 45%, rgba(94,234,212,.04), transparent 70%),
+  linear-gradient(var(--grid) 1px, transparent 1px) 0 0/48px 48px,
+  linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0/48px 48px, var(--bg)}
+.stage svg{position:absolute;inset:0;width:100%;height:100%}
+.stage svg g:focus{outline:none}
+.stage svg g:focus-visible .core{stroke:var(--accent);stroke-width:3px}
+.hud{position:absolute;left:14px;top:12px;font:11px var(--mono);letter-spacing:.1em;color:var(--faint);pointer-events:none;z-index:2;text-transform:uppercase}
+.zoom{position:absolute;right:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;z-index:2}
+.zoom button{width:30px;height:30px;background:var(--panel);border:1px solid var(--line2);border-radius:5px;cursor:pointer;font:14px var(--mono)}
+.ctl-btn,.rail-close,.sheet-bar{display:none}
+.ctl-btn{position:absolute;left:12px;top:12px;z-index:3;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:8px 12px;font:500 13px var(--sans);cursor:pointer}
+.ctl-btn i{width:8px;height:8px;border-radius:50%;background:var(--cd);box-shadow:0 0 8px var(--cd)}
+.rail-close{align-self:flex-end;background:none;border:1px solid var(--line2);border-radius:6px;padding:4px 10px;cursor:pointer;color:var(--dim)}
+@media (pointer:coarse){.zoom button{width:42px;height:42px;font-size:18px}.tg,.index button{min-height:44px}.grip{width:40px}}
+.node-label{font:500 11px var(--mono);fill:var(--text);paint-order:stroke;stroke:var(--bg);stroke-width:3px;pointer-events:none}
+.node-label.prod{fill:var(--prod);font-size:10.5px}
+.node-label.hub{font:600 13px var(--sans);stroke-width:4px}
+line.l-cd{stroke:var(--l-cd)} line.l-venue{stroke:var(--l-venue);stroke-dasharray:3 4} line.l-credit{stroke:var(--l-credit)}
+.ring-text{font:500 11px var(--mono);letter-spacing:.14em;fill:var(--faint)}
+.dossier{border-left:1px solid var(--line);background:var(--bg2);overflow:auto}
+.d-empty{padding:26px 22px;color:var(--dim);display:flex;flex-direction:column;gap:10px}
+.d-empty h2{font:600 15px var(--sans);color:var(--text);margin:0}
+.d-empty p{margin:0}
+.d-head{padding:20px 22px 16px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.d-head h2{font:600 22px/1.15 var(--sans);letter-spacing:-.01em;margin:0}
+.d-sec{padding:16px 22px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.d-sec .cred{background:var(--panel)}
+@media (max-width:1100px){
+  .net{grid-template-columns:minmax(0,1fr) 330px}
+  .rail{display:none;position:absolute;left:0;top:0;bottom:0;z-index:28;width:min(320px,88vw);box-shadow:var(--shadow);border-right:1px solid var(--line2)}
+  .net.rail-open .rail{display:flex}
+  .ctl-btn,.rail-close{display:inline-flex}
+  .hud{left:auto;right:14px;text-align:right}
+}
+@media (max-width:760px){
+  body[data-view="net"]{overflow:hidden}
+  .net{display:block}
+  .stage{position:absolute;inset:0}
+  .hud{display:none}
+  .zoom{bottom:calc(12px + env(safe-area-inset-bottom,0px));right:max(12px,env(safe-area-inset-right,0px))}
+  .net.has-sel .zoom{display:none}
+  .dossier{position:fixed;left:0;right:0;bottom:0;z-index:27;max-height:48dvh;border-left:0;border-top:1px solid var(--line2);border-radius:16px 16px 0 0;box-shadow:var(--shadow);
+    transform:translateY(110%);transition:transform .22s ease,max-height .22s ease;padding-bottom:env(safe-area-inset-bottom,0px);overscroll-behavior:contain}
+  .net.has-sel .dossier{transform:none}
+  .net.sheet-full .dossier{max-height:88dvh}
+  .sheet-bar{display:flex;position:sticky;top:0;z-index:1;align-items:center;gap:8px;padding:8px 12px;background:var(--bg2);border-bottom:1px solid var(--line)}
+  .sheet-grip{flex:1;display:grid;place-items:center;height:28px;background:none;border:0;cursor:pointer}
+  .sheet-grip span{width:44px;height:4px;border-radius:2px;background:var(--line2)}
+  .sheet-x{background:none;border:1px solid var(--line2);border-radius:6px;padding:4px 10px;color:var(--dim);cursor:pointer}
+  .d-head{padding-top:14px}
+}
+@media (prefers-reduced-motion:reduce){.dossier{transition:none}}
+
+/* landing (home) */
+.lp-actions{display:none;margin-left:auto;gap:18px;align-items:center}
+.lp-actions a.lp-l{color:var(--dim);text-decoration:none;font-weight:500;white-space:nowrap}
+.lp-actions a.lp-l:hover{color:var(--text)}
+body[data-view="home"] .nav,body[data-view="home"] .cmd{display:none}
+body[data-view="home"] .lp-actions{display:flex}
+body[data-view="home"] .page{gap:72px;padding-block:20px 80px}
+@media (max-width:600px){.lp-actions a.lp-l{display:none}}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{filter:brightness(1.08);border-color:var(--accent)}
+.btn.big{padding:11px 18px;font-size:15px}
+.lp-eyebrow{font:400 12.5px var(--mono);letter-spacing:.06em;color:var(--accent);margin:0}
+.lp-eyebrow::before{content:"// "}
+.lp-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center;padding-top:28px}
+.lp-hero h1{font:600 clamp(2.4rem,5.6vw,4.4rem)/1.02 var(--sans);letter-spacing:-.035em;margin:18px 0 22px;text-wrap:balance}
+.lp-hero h1 .soft{color:var(--dim)}
+.lp-lede{font-size:17px;line-height:1.6;color:var(--dim);max-width:52ch;margin:0}
+.lp-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.lp-stack{display:flex;flex-direction:column;gap:12px;min-width:0}
+.lp-stack .cred{box-shadow:var(--shadow)}
+.lp-stack .cred:nth-child(2){margin-inline-start:28px}
+.lp-stack .cred:nth-child(3){margin-inline-start:56px}
+.lp-figs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-block:1px solid var(--line)}
+.lp-figs div{padding:20px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:2px;min-width:0}
+.lp-figs div:last-child{border-right:0}
+.lp-figs b{font:500 34px/1.1 var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.lp-figs span{font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.lp-sec{display:flex;flex-direction:column;gap:22px;scroll-margin-top:calc(var(--hdr) + 24px)}
+.lp-sec-h{display:flex;flex-direction:column;gap:10px;max-width:68ch}
+.lp-sec-h h2{font:600 clamp(24px,3vw,34px)/1.1 var(--sans);letter-spacing:-.03em;margin:0;text-wrap:balance}
+.lp-sec-h p{margin:0;color:var(--dim)}
+.lp-feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.lp-feat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.lp-feat h3{font:600 16px var(--sans);margin:0}
+.lp-feat p{margin:0;color:var(--dim)}
+.lp-feat .more{margin-top:auto}
+.lp-cds{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.lp-cds li{display:grid;grid-template-columns:minmax(0,220px) 110px minmax(0,1fr);gap:16px;align-items:baseline;padding:14px 18px;border-bottom:1px solid var(--line)}
+.lp-cds li:last-child{border-bottom:0}
+.lp-cds .n{font:12px var(--mono);color:var(--faint);font-variant-numeric:tabular-nums}
+.lp-cov{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+.lp-cov .lp-next{grid-column:1/-1}
+.lp-cds .pill{text-transform:none;letter-spacing:0;font:500 12px var(--sans);padding:2px 8px}
+.lp-tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:4px}
+.lp-tile b{font:500 30px/1.1 var(--mono);font-variant-numeric:tabular-nums}
+.lp-tile span{font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.lp-next{border:1px dashed var(--line2);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.lp-how{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:start}
+.lp-band{border:1px solid var(--accent);background:var(--accent-soft);border-radius:12px;padding:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px}
+.lp-band h2{font:600 clamp(22px,2.6vw,30px)/1.15 var(--sans);letter-spacing:-.03em;margin:0}
+.lp-band p{margin:6px 0 0;color:var(--dim)}
+@media (max-width:860px){
+  .lp-hero,.lp-how{grid-template-columns:minmax(0,1fr);gap:32px}
+  .lp-feats{grid-template-columns:minmax(0,1fr)}
+  .lp-figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lp-figs div{border-bottom:1px solid var(--line)}
+  .lp-figs div:nth-child(2n){border-right:0}
+  .lp-figs div:last-child{grid-column:1/-1;border-bottom:0}
+  .lp-cds li{grid-template-columns:minmax(0,1fr) auto}
+  .lp-cds li .chips{grid-column:1/-1}
+}
+@media (max-width:600px){
+  .lp-stack .cred:nth-child(n){margin-inline-start:0}
+  .lp-stack .cred:nth-child(3){display:none}
+}
+.lp-hero{position:relative;isolation:isolate}
+.lp-hero>canvas{position:absolute;inset:-28px -16px -8px;width:calc(100% + 32px);height:calc(100% + 36px);z-index:-2;display:block}
+.lp-hero>.veil{position:absolute;inset:-28px -16px -8px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 70% at 25% 50%, rgba(7,9,12,.94) 0%, rgba(7,9,12,.6) 55%, rgba(7,9,12,.15) 100%)}
+@media (max-width:860px){.lp-hero>.veil{background:radial-gradient(ellipse 120% 60% at 50% 35%, rgba(7,9,12,.92) 0%, rgba(7,9,12,.55) 60%, rgba(7,9,12,.2) 100%)}}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center;border-top:1px solid var(--line);padding-block:20px calc(20px + env(safe-area-inset-bottom,0px));font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.foot .legend{display:flex;flex-wrap:wrap;gap:8px 20px}
+.foot .legend span{display:inline-flex;align-items:center;gap:8px}
+.foot .legend i{width:8px;height:8px;border-radius:50%}
+body[data-view="net"] .foot{display:none}
+
+/* phone: one-row header, stacked tables, more room */
+.m-btn{display:none;align-items:center;justify-content:center;gap:6px;height:40px;min-width:40px;padding:0 12px;background:var(--panel);border:1px solid var(--line2);border-radius:8px;font:500 14px var(--sans);cursor:pointer;color:var(--text)}
+.m-btn svg{stroke:var(--text)}
+.m-cancel{display:none}
+@media (max-width:640px){
+  body{font-size:15px;line-height:1.6}
+  .top-in{flex-wrap:nowrap;gap:10px;min-height:56px;padding-block:0;position:relative}
+  body:not([data-view="home"]) .m-btn{display:inline-flex}
+  .m-search{margin-left:auto}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line2);box-shadow:var(--shadow);
+    padding:8px max(16px,env(safe-area-inset-right,0px)) 12px max(16px,env(safe-area-inset-left,0px));overflow:visible;z-index:30}
+  body.menu-open:not([data-view="home"]) .nav{display:flex}
+  .nav a{display:flex;align-items:center;min-height:48px;padding:0 12px;font-size:16px;border-radius:8px}
+  .nav a[aria-current="page"]{box-shadow:inset 3px 0 0 var(--accent)}
+  .cmd{display:none;position:absolute;inset:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));width:auto;margin:0;z-index:31;align-items:center;gap:8px}
+  body.search-open:not([data-view="home"]) .cmd{display:flex}
+  .cmd input{height:40px;font-size:16px;flex:1}
+  .cmd kbd{display:none}
+  .cmd svg{left:12px}
+  .m-cancel{display:inline-flex;height:40px;align-items:center;padding:0 12px;background:none;border:1px solid var(--line2);border-radius:8px;color:var(--dim);cursor:pointer}
+  .sugg{top:calc(100% + 8px)}
+  .sugg a{min-height:48px}
+
+  .page{gap:36px;padding-block:24px 64px}
+  body[data-view="home"] .page{gap:56px}
+  .ph h1{font-size:26px}
+  .ph{gap:14px}
+  .ph .btn{width:100%;justify-content:center;min-height:44px}
+  .card{padding:18px 16px;gap:16px}
+  .cred{padding:16px;gap:10px}
+  .chips,.assoc{gap:8px}
+  .assoc a{display:inline-flex;align-items:center;min-height:36px}
+  .kpi b{font-size:26px}
+  .stats{grid-template-columns:minmax(0,1fr)}
+  .stats div{display:flex;justify-content:space-between;align-items:baseline;border-right:0;border-bottom:1px solid var(--line);padding:12px 16px}
+  .stats div:last-child{border-bottom:0}
+  .cols>.creds{order:2}
+
+  .filters{flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:12px;min-width:0;max-width:100%}
+  .seg{min-width:0}
+  .seg{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+  .seg::-webkit-scrollbar{display:none}
+  .seg button{flex:none;min-height:44px;white-space:nowrap}
+  .filters input[type="search"]{width:100%;min-height:44px;font-size:16px}
+  .check{min-height:44px}
+  .count{margin-left:0}
+
+  .tbl,.card .tbl{border:0;background:none;overflow:visible;margin:0;border-radius:0}
+  .tbl table,.tbl tbody,.tbl td{display:block;width:100%}
+  .tbl thead{display:none}
+  .tbl tbody{display:flex;flex-direction:column;gap:12px}
+  .tbl tr{display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .card .tbl tr{background:var(--panel2)}
+  .tbl td,tbody tr:hover td{padding:0;border:0;background:none;text-align:left}
+  .tbl td.num{font-family:var(--sans);text-align:left}
+  .tbl td:first-child{font-size:16px;font-weight:500}
+  .tbl td:not(:first-child)::before{content:attr(data-label);display:block;font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:4px}
+  .tbl td .sub{display:inline;margin-left:6px}
+  .empty{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+
+  .queue .q-x{display:none}
+  .queue .q-n{display:list-item}
+  .lp-cds li{padding:16px;gap:10px}
+  .node-label{font-size:12px}
+}
+.queue .q-n{display:none;border-style:solid;color:var(--faint)}
+.foot{flex-direction:column;align-items:stretch}
+.foot-note{margin:0;text-transform:none;letter-spacing:0;font:400 13px/1.5 var(--sans);color:var(--dim);max-width:80ch}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+.foot-links a{color:var(--dim);text-decoration:none}.foot-links a:hover{color:var(--accent)}
+.foot-links span{margin-left:auto}
+.disc{border:1px solid var(--line2);border-left:3px solid var(--warn);border-radius:10px;background:var(--panel);padding:16px 18px;display:flex;flex-direction:column;gap:8px;max-width:80ch}
+.disc p{margin:0;color:var(--dim)}
+.disc .disc-h{color:var(--text);font-weight:600}
+.disc a{color:var(--accent)}
+.disc.compact{max-width:none}
+.report{margin:-14px 0 0;color:var(--dim);font-size:14px}
+.report a{color:var(--accent);text-decoration:none}.report a:hover{text-decoration:underline}
+.legal{display:flex;flex-direction:column;gap:26px;max-width:72ch}
+.legal section{display:flex;flex-direction:column;gap:10px}
+.legal p,.legal ul{margin:0;color:var(--dim)}
+.legal ul{padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.legal b,.legal a{color:var(--text)}
+.td-form{display:flex;flex-direction:column;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px;border:0;margin:0;padding:0;min-width:0}
+.field label,.field legend{font-weight:500}
+.field legend{margin-bottom:6px;padding:0}
+.field input,.field select,.field textarea,.td-copy{background:var(--bg);border:1px solid var(--line2);border-radius:8px;padding:10px 12px;font-size:15px;width:100%;min-width:0}
+.field textarea,.td-copy{resize:vertical;font-family:var(--sans)}
+.field .hint{margin:0;font-size:12.5px;color:var(--faint)}
+.radio{display:flex;align-items:center;gap:10px;min-height:36px;cursor:pointer;font-weight:400}
+.radio input{accent-color:var(--accent);width:auto}
+.form-err{margin:0;color:var(--warn)}
+.td-result:empty{display:none}
+.note.ok{border-color:var(--ok);background:var(--ok-soft)}
+.addr-line{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0}
+.addr{font:500 14px var(--mono);color:var(--text);background:var(--bg);border:1px solid var(--line2);border-radius:6px;padding:6px 10px;user-select:all;overflow-wrap:anywhere}
+.btn.small{padding:5px 10px;font-size:13px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.sdot{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in gut">
+    <a class="brand" href="#home"><b>Casting Weekly<span>.</span></b></a>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#overview">Overview</a>
+      <a href="#network">Network</a>
+      <a href="#casting-directors">Casting directors</a>
+      <a href="#productions">Productions</a>
+      <a href="#people">People</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="lp-actions">
+      <span class="status"><span class="sdot"></span><span id="lp-updated"></span></span>
+      <a class="lp-l" href="#home" id="lp-how-link">How it works</a>
+      <a class="lp-l" href="#about">Data standard</a>
+      <a class="btn primary" href="#network">Explore the network →</a>
+    </div>
+    <button type="button" class="m-btn m-search" id="mSearch" aria-label="Search" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    <button type="button" class="m-btn m-menu" id="mMenu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <div class="cmd">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="Search people or productions" aria-label="Search people or productions" aria-controls="sugg">
+      <kbd>/</kbd>
+      <div class="sugg" id="sugg" role="listbox" hidden></div>
+      <button type="button" class="m-cancel" id="mCancel">Cancel</button>
+    </div>
+  </div>
+</header>
+
+<main id="page" class="page gut"></main>
+<footer class="foot gut" id="foot">
+  <div class="legend" aria-label="Colour key">
+    <span><i style="background:var(--prod)"></i>Productions</span>
+    <span><i style="background:var(--cd)"></i>Casting directors</span>
+    <span><i style="background:var(--person)"></i>Creatives</span>
+    <span><i style="background:var(--venue)"></i>Venues &amp; tours</span>
+  </div>
+  <p class="foot-note">Our best attempt from public sources. Credits may be incomplete, out of date or wrong: check the linked source before you rely on one.</p>
+  <nav class="foot-links" aria-label="Legal">
+    <a href="#about">About</a><a href="#terms">Terms</a><a href="#privacy">Privacy</a><a href="#takedown">Corrections &amp; takedowns</a>
+    <span>&copy; 2026 Casting Weekly</span>
+  </nav>
+</footer>
+
+<section id="net" class="net" aria-label="Network" hidden>
+  <aside class="rail" id="rail" aria-label="Network controls">
+    <button type="button" class="rail-close" id="railClose">Close</button>
+    <p class="lbl">Centre on</p>
+    <div class="toggles" id="centre" role="group" aria-label="Centre the network on"></div>
+    <p class="lbl">Show · linked top to bottom</p>
+    <p class="hint">Each row links to the next through shared productions. Drag ⠿ to reorder.</p>
+    <div class="toggles chain" id="toggles"></div>
+    <p class="lbl">Casting directors</p>
+    <div class="index" id="cdindex"></div>
+  </aside>
+  <div class="stage" id="stage">
+    <div class="hud">Click a node to open its file · drag · scroll to zoom</div>
+    <button type="button" class="ctl-btn" id="ctlBtn" aria-controls="rail" aria-expanded="false"><i></i>Controls</button>
+    <div class="zoom"><button id="zin" type="button" aria-label="Zoom in">+</button><button id="zout" type="button" aria-label="Zoom out">−</button><button id="zfit" type="button" aria-label="Fit to screen">⤢</button></div>
+  </div>
+  <aside class="dossier" id="dossier" aria-label="Quick view" aria-live="polite"></aside>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<script type="application/json" id="data">{"edges": [{"batch": 1, "credited_as": null, "evidence": "…by Ben Norris, scenic design by Oli Townsend, lighting design by Richard Dinnen, costume design and co-scenic design by Verity Sadler, sound design by Sten Severson and casting by Debbie O’Brien.", "person": "Debbie O'Brien", "production": "The Choir of Man (Arts at Marble Arch)", "role": "Casting director", "show": "The Choir of Man", "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/", "venue": "Arts at Marble Arch, London"}, {"batch": 1, "credited_as": null, "evidence": "Created by Nic Doodson and Andrew Kay, the show is set inside an on-stage pub called The Jungle.", "person": "Nic Doodson", "production": "The Choir of Man (Arts at Marble Arch)", "role": "Writer", "show": "The Choir of Man", "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/", "venue": "Arts at Marble Arch, London"}, {"batch": 1, "credited_as": null, "evidence": "Created by Nic Doodson and Andrew Kay, the show is set inside an on-stage pub called The Jungle.", "person": "Andrew Kay", "production": "The Choir of Man (Arts at Marble Arch)", "role": "Writer", "show": "The Choir of Man", "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/", "venue": "Arts at Marble Arch, London"}, {"batch": 1, "credited_as": null, "evidence": "…ay and directed by Doodson, with musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by Freddie Huddleston, monologues by Ben Norris, scenic design by Oli Townsend, lighting design by Richard Dinnen, costume design and co-scenic design by Verity Sadler, sound design by Sten Severson and casting by Debbie O’Brie…", "person": "Ben Norris", "production": "The Choir of Man (Arts at Marble Arch)", "role": "Writer", "show": "The Choir of Man", "url": "https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/", "venue": "Arts at Marble Arch, London"}, {"batch": 1, "credited_as": null, "evidence": "…and choreography by Freddie Huddleston, set design by Oli Townsend, lighting by Richard Dinnen, costumes and co-set design by Verity Sadler, sound by Sten Severson, and casting by Debbie O’Brien.", "person": "Debbie O'Brien", "production": "The Choir of Man (Arts Theatre)", "role": "Casting director", "show": "The Choir of Man", "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end", "venue": "Arts Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "Creator, director and producer Nic Doodson said: “The Arts Theatre has been our London home for nearly four years, and it’s bittersweet to enter these final months.", "person": "Nic Doodson", "production": "The Choir of Man (Arts Theatre)", "role": "Director", "show": "The Choir of Man", "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end", "venue": "Arts Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "Creator, director and producer Nic Doodson said: “The Arts Theatre has been our London home for nearly four years, and it’s bittersweet to enter these final months.", "person": "Nic Doodson", "production": "The Choir of Man (Arts Theatre)", "role": "Writer", "show": "The Choir of Man", "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end", "venue": "Arts Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The Choir of Man is created by Nic Doodson and Andrew Kay, with direction by Nic Doodson, monologues written by Ben Norris, musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by …", "person": "Andrew Kay", "production": "The Choir of Man (Arts Theatre)", "role": "Writer", "show": "The Choir of Man", "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end", "venue": "Arts Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The Choir of Man is created by Nic Doodson and Andrew Kay, with direction by Nic Doodson, monologues written by Ben Norris, musical supervision, vocal arrangements and orchestrations by Jack Blume, movement direction and choreography by Freddie Huddleston, set design by Oli Townsend, lighting by Richa…", "person": "Ben Norris", "production": "The Choir of Man (Arts Theatre)", "role": "Writer", "show": "The Choir of Man", "url": "https://www.westendbestfriend.co.uk/news/the-choir-of-man-new-casting-final-months-west-end", "venue": "Arts Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "Casting is by Harry Blumenau.", "person": "Harry Blumenau", "production": "Beetlejuice the Musical (Prince Edward Theatre)", "role": "Casting director", "show": "Beetlejuice the Musical", "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "venue": "Prince Edward Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The West End production will be directed by Alex Timbers, with choreography by Connor Gallagher.", "person": "Alex Timbers", "production": "Beetlejuice the Musical (Prince Edward Theatre)", "role": "Director", "show": "Beetlejuice the Musical", "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "venue": "Prince Edward Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.", "person": "Scott Brown", "production": "Beetlejuice the Musical (Prince Edward Theatre)", "role": "Writer", "show": "Beetlejuice the Musical", "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "venue": "Prince Edward Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.", "person": "Anthony King", "production": "Beetlejuice the Musical (Prince Edward Theatre)", "role": "Writer", "show": "Beetlejuice the Musical", "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "venue": "Prince Edward Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.", "person": "Eddie Perfect", "production": "Beetlejuice the Musical (Prince Edward Theatre)", "role": "Composer", "show": "Beetlejuice the Musical", "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "venue": "Prince Edward Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The musical features a book by Scott Brown and Anthony King, with music and lyrics by Eddie Perfect.", "person": "Eddie Perfect", "production": "Beetlejuice the Musical (Prince Edward Theatre)", "role": "Lyricist", "show": "Beetlejuice the Musical", "url": "https://www.whatsonstage.com/news/beetlejuice-announces-complete-west-end-casting_1717469", "venue": "Prince Edward Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "…tumes by Marco Marco, sound by Ben Harrison, video design by Duncan McLean, wigs design by Marco Marco and Jess & Jo for JJ Wigs, make-up design by Dominic Skinner, and casting by Harry Blumenau CDG CSA.", "person": "Harry Blumenau", "production": "Burlesque the Musical (UK tour)", "role": "Casting director", "show": "Burlesque the Musical", "url": "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical", "venue": "UK tour"}, {"batch": 1, "credited_as": null, "evidence": "With a creative team led by Producer, Writer & Creative Director Steven Antin, it is directed by Racky Plews (I‘m Every Woman The Chaka Khan Musical, Green Day’s American Idiot) with choreography by Robin Antin (creator of The Pussycat Dolls).", "person": "Racky Plews", "production": "Burlesque the Musical (UK tour)", "role": "Director", "show": "Burlesque the Musical", "url": "https://www.bradford-theatres.co.uk/news/lead-cast-and-creative-team-announced-for-the-first-uk-tour-production-of-the-spectacular", "venue": "UK tour"}, {"batch": 1, "credited_as": null, "evidence": "Written by Steven Antin, the production is directed by Racky Plews, with choreography by Robin Antin and Aaron Renfree, orchestrations and arrangements by Tom Curran, musical supervision by Adam Langston…", "person": "Steven Antin", "production": "Burlesque the Musical (UK tour)", "role": "Writer", "show": "Burlesque the Musical", "url": "https://www.westendbestfriend.co.uk/news/lead-cast-creative-team-first-uk-tour-burlesque-musical", "venue": "UK tour"}, {"batch": 1, "credited_as": null, "evidence": "UK Casting - / Jim Arnold CDG", "person": "Jim Arnold", "production": "Wicked (Apollo Victoria Theatre)", "role": "Casting director", "show": "Wicked", "url": "https://officiallondontheatre.com/show/wicked-73606/", "venue": "Apollo Victoria Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "Director - / Joe Mantello", "person": "Joe Mantello", "production": "Wicked (Apollo Victoria Theatre)", "role": "Director", "show": "Wicked", "url": "https://officiallondontheatre.com/show/wicked-73606/", "venue": "Apollo Victoria Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "Book by - / Winnie Holzman", "person": "Winnie Holzman", "production": "Wicked (Apollo Victoria Theatre)", "role": "Writer", "show": "Wicked", "url": "https://officiallondontheatre.com/show/wicked-73606/", "venue": "Apollo Victoria Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "Music & Lyrics by - / Stephen Schwartz", "person": "Stephen Schwartz", "production": "Wicked (Apollo Victoria Theatre)", "role": "Composer", "show": "Wicked", "url": "https://officiallondontheatre.com/show/wicked-73606/", "venue": "Apollo Victoria Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "Music & Lyrics by - / Stephen Schwartz", "person": "Stephen Schwartz", "production": "Wicked (Apollo Victoria Theatre)", "role": "Lyricist", "show": "Wicked", "url": "https://officiallondontheatre.com/show/wicked-73606/", "venue": "Apollo Victoria Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "…eo designer and animator, Campbell Young Associates as hair, wig and make-up designers, Majid Adin for illustration and additional animation, Laura Bangay as musical director, and Natalie Gallacher for Pippa Ailion and Natalie Gallacher Casting as casting director.", "person": "Natalie Gallacher", "production": "Paddington The Musical (Savoy Theatre)", "role": "Casting director", "show": "Paddington The Musical", "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "venue": "Savoy Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.", "person": "Luke Sheppard", "production": "Paddington The Musical (Savoy Theatre)", "role": "Director", "show": "Paddington The Musical", "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "venue": "Savoy Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.", "person": "Jessica Swale", "production": "Paddington The Musical (Savoy Theatre)", "role": "Writer", "show": "Paddington The Musical", "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "venue": "Savoy Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.", "person": "Tom Fletcher", "production": "Paddington The Musical (Savoy Theatre)", "role": "Composer", "show": "Paddington The Musical", "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "venue": "Savoy Theatre, London"}, {"batch": 1, "credited_as": null, "evidence": "The production, adapted from Michael Bond’s books and the hit films, features music and lyrics by Tom Fletcher, a book by Jessica Swale and direction by Luke Sheppard.", "person": "Tom Fletcher", "production": "Paddington The Musical (Savoy Theatre)", "role": "Lyricist", "show": "Paddington The Musical", "url": "https://www.whatsonstage.com/news/paddington-the-musical-announces-principal-west-end-cast_1691550", "venue": "Savoy Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Casting Consultant / David Grindrod CDG", "person": "David Grindrod", "production": "Mamma Mia! (Novello Theatre)", "role": "Casting director", "show": "Mamma Mia!", "url": "https://mamma-mia.com/london/production-team", "venue": "Novello Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Phyllida Lloyd / Director", "person": "Phyllida Lloyd", "production": "Mamma Mia! (Novello Theatre)", "role": "Director", "show": "Mamma Mia!", "url": "https://mamma-mia.com/london/creative", "venue": "Novello Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Catherine Johnson / Book", "person": "Catherine Johnson", "production": "Mamma Mia! (Novello Theatre)", "role": "Writer", "show": "Mamma Mia!", "url": "https://mamma-mia.com/london/creative", "venue": "Novello Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Benny Andersson / Music and Lyrics", "person": "Benny Andersson", "production": "Mamma Mia! (Novello Theatre)", "role": "Composer", "show": "Mamma Mia!", "url": "https://mamma-mia.com/london/creative", "venue": "Novello Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Music and Lyrics / Björn Ulvaeus", "person": "Björn Ulvaeus", "production": "Mamma Mia! (Novello Theatre)", "role": "Composer", "show": "Mamma Mia!", "url": "https://mamma-mia.com/london/creative", "venue": "Novello Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Benny Andersson / Music and Lyrics", "person": "Benny Andersson", "production": "Mamma Mia! (Novello Theatre)", "role": "Lyricist", "show": "Mamma Mia!", "url": "https://mamma-mia.com/london/creative", "venue": "Novello Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Music and Lyrics / Björn Ulvaeus", "person": "Björn Ulvaeus", "production": "Mamma Mia! (Novello Theatre)", "role": "Lyricist", "show": "Mamma Mia!", "url": "https://mamma-mia.com/london/creative", "venue": "Novello Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "…orge Reeve, with original orchestrations by William David Brohn, orchestral adaptation by Stephen Metcalfe, choreographic associates Etta Murfitt and Sam Archer, casting directors Felicity French and Paul Wooller and children’s casting director Verity Naughton.", "person": "Felicity French", "production": "Oliver! (Gielgud Theatre)", "role": "Casting director", "show": "Oliver!", "url": "https://www.whatsonstage.com/news/oliver-extends-west-end-run-and-confirms-initial-london-casting_1640635", "venue": "Gielgud Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "…ginal orchestrations by William David Brohn, orchestral adaptation by Stephen Metcalfe, choreographic associates Etta Murfitt and Sam Archer, casting directors Felicity French and Paul Wooller and children’s casting director Verity Naughton.", "person": "Paul Wooller", "production": "Oliver! (Gielgud Theatre)", "role": "Casting director", "show": "Oliver!", "url": "https://www.whatsonstage.com/news/oliver-extends-west-end-run-and-confirms-initial-london-casting_1640635", "venue": "Gielgud Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Director & Choreographer - / Matthew Bourne", "person": "Matthew Bourne", "production": "Oliver! (Gielgud Theatre)", "role": "Director", "show": "Oliver!", "url": "https://officiallondontheatre.com/show/oliver/", "venue": "Gielgud Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Book, Music & Lyrics - / Lionel Bart", "person": "Lionel Bart", "production": "Oliver! (Gielgud Theatre)", "role": "Writer", "show": "Oliver!", "url": "https://officiallondontheatre.com/show/oliver/", "venue": "Gielgud Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Book, Music & Lyrics - / Lionel Bart", "person": "Lionel Bart", "production": "Oliver! (Gielgud Theatre)", "role": "Composer", "show": "Oliver!", "url": "https://officiallondontheatre.com/show/oliver/", "venue": "Gielgud Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Book, Music & Lyrics - / Lionel Bart", "person": "Lionel Bart", "production": "Oliver! (Gielgud Theatre)", "role": "Lyricist", "show": "Oliver!", "url": "https://officiallondontheatre.com/show/oliver/", "venue": "Gielgud Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Casting Director - / Julia Horan", "person": "Julia Horan", "production": "The Lives of Others (Adelphi Theatre)", "role": "Casting director", "show": "The Lives of Others", "url": "https://officiallondontheatre.com/show/the-lives-of-others-111473908/", "venue": "Adelphi Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Adaptor & Director - / Robert Icke", "person": "Robert Icke", "production": "The Lives of Others (Adelphi Theatre)", "role": "Director", "show": "The Lives of Others", "url": "https://officiallondontheatre.com/show/the-lives-of-others-111473908/", "venue": "Adelphi Theatre, London"}, {"batch": 10, "credited_as": null, "evidence": "Adaptor & Director - / Robert Icke", "person": "Robert Icke", "production": "The Lives of Others (Adelphi Theatre)", "role": "Writer", "show": "The Lives of Others", "url": "https://officiallondontheatre.com/show/the-lives-of-others-111473908/", "venue": "Adelphi Theatre, London"}, {"batch": 11, "credited_as": null, "evidence": "… Buether, costume designer Samuel Wyer, lighting designer Jessica Hung Han Yun, sound designer Donato Wharton, composer Andy Roberts, music director Josh Sneesby, casting director Naomi Downham, dialect coach Penny Dyer, voice coach Shereen Ibrahim, associate set designer Luke Smith and staff director Max Harrison.", "person": "Naomi Downham", "production": "Cloud 9 (Lyttelton Theatre)", "role": "Casting director", "show": "Cloud 9", "url": "https://www.whatsonstage.com/news/full-cast-set-for-cloud-9-at-the-national-theatre_1731915/", "venue": "Lyttelton Theatre, National Theatre, London"}, {"batch": 11, "credited_as": null, "evidence": "Charlotte Ritchie, Rebecca Humphries and Sam Troughton join a new production of Churchill’s landmark play, directed by Dominic Cooke", "person": "Dominic Cooke", "production": "Cloud 9 (Lyttelton Theatre)", "role": "Director", "show": "Cloud 9", "url": "https://theatreweekly.com/full-cast-announced-for-caryl-churchills-cloud-9-at-the-national-theatre/", "venue": "Lyttelton Theatre, National Theatre, London"}, {"batch": 11, "credited_as": null, "evidence": "Cloud 9 was written by Caryl Churchill.", "person": "Caryl Churchill", "production": "Cloud 9 (Lyttelton Theatre)", "role": "Writer", "show": "Cloud 9", "url": "https://www.londontheatre.co.uk/theatre-news/news/full-cast-announced-for-cloud-9-at-the-national-theatre", "venue": "Lyttelton Theatre, National Theatre, London"}, {"batch": 11, "credited_as": null, "evidence": "Joining Drew McOnie on the creative team are Sami Fendall, Set, Costume and Wigs Designer; Jessica Hung Han Yun, Lighting Designer; Adam Fisher, Sound Designer; Guy Common, Makeup Designer; Ingrid Mackinnon, Intimacy Director; Kev McCurdy, Fight Director; Will Burton, Casting Director and Alex Parker, Musical Supervisor.", "person": "Will Burton", "production": "Cats (UK and Ireland tour)", "role": "Casting director", "show": "Cats", "url": "https://theatreroyal.com/press/news/cats-castingannouncement/", "venue": "UK and Ireland tour"}, {"batch": 11, "credited_as": null, "evidence": "The tour is directed and choreographed by Regent’s Park Open Air Theatre Artistic Director, Drew McOnie and follows a record-breaking summer season now playing at the venue until 19 September 2026.", "person": "Drew McOnie", "production": "Cats (UK and Ireland tour)", "role": "Director", "show": "Cats", "url": "https://theatreroyal.com/press/news/cats-castingannouncement/", "venue": "UK and Ireland tour"}, {"batch": 11, "credited_as": null, "evidence": "With music by Andrew Lloyd Webber and based on Old Possum’s Book of Practical Cats by T.S.", "person": "Andrew Lloyd Webber", "production": "Cats (UK and Ireland tour)", "role": "Composer", "show": "Cats", "url": "https://theatreroyal.com/press/news/cats-castingannouncement/", "venue": "UK and Ireland tour"}, {"batch": 11, "credited_as": null, "evidence": "Adult casting is by Pippa Ailion and Natalie Gallacher and children’s casting is by Nick Hockaday for Jessica Ronane Casting.", "person": "Pippa Ailion", "production": "Billy Elliot the Musical (UK and Ireland tour)", "role": "Casting director", "show": "Billy Elliot the Musical", "url": "https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/", "venue": "UK and Ireland tour"}, {"batch": 11, "credited_as": null, "evidence": "Adult casting is by Pippa Ailion and Natalie Gallacher and children’s casting is by Nick Hockaday for Jessica Ronane Casting.", "person": "Natalie Gallacher", "production": "Billy Elliot the Musical (UK and Ireland tour)", "role": "Casting director", "show": "Billy Elliot the Musical", "url": "https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/", "venue": "UK and Ireland tour"}, {"batch": 11, "credited_as": null, "evidence": "On the creative team are writer Lee Hall (book and lyrics), director Stephen Daldry and choreographer, Peter Darling, joined by Elton John who composed the show’s score.", "person": "Stephen Daldry", "production": "Billy Elliot the Musical (UK and Ireland tour)", "role": "Director", "show": "Billy Elliot the Musical", "url": "https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/", "venue": "UK and Ireland tour"}, {"batch": 11, "credited_as": null, "evidence": "Featuring music by Elton John, book and lyrics by Lee Hall, direction by Stephen Daldry and choreography by Peter Darling, the production reunites the creative team behind the celebrated stage adaptation.", "person": "Lee Hall", "production": "Billy Elliot the Musical (UK and Ireland tour)", "role": "Writer", "show": "Billy Elliot the Musical", "url": "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/", "venue": "UK and Ireland tour"}, {"batch": 11, "credited_as": null, "evidence": "Featuring music by Elton John, book and lyrics by Lee Hall, direction by Stephen Daldry and choreography by Peter Darling, the production reunites the creative team behind the celebrated stage adaptation.", "person": "Lee Hall", "production": "Billy Elliot the Musical (UK and Ireland tour)", "role": "Lyricist", "show": "Billy Elliot the Musical", "url": "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/", "venue": "UK and Ireland tour"}, {"batch": 11, "credited_as": null, "evidence": "Featuring music by Elton John, book and lyrics by Lee Hall, direction by Stephen Daldry and choreography by Peter Darling, the production reunites the creative team behind the celebrated stage adaptation.", "person": "Elton John", "production": "Billy Elliot the Musical (UK and Ireland tour)", "role": "Composer", "show": "Billy Elliot the Musical", "url": "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/", "venue": "UK and Ireland tour"}, {"batch": 12, "credited_as": null, "evidence": "The creative team also includes musical supervisor Tom Deering, lighting designer Lee Curran, sound designer Adam Fisher, wigs, hair and makeup designers Sam Cox and Maria Johal, fight director Kate Waters and casting directors Grindrod Burton Casting.", "person": "Grindrod Burton Casting", "production": "Jesus Christ Superstar (UK tour)", "role": "Casting director", "show": "Jesus Christ Superstar", "url": "https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/", "venue": "UK tour"}, {"batch": 12, "credited_as": null, "evidence": "Directed by Tim Sheader, with choreography by Drew McOnie and design by Tom Scutt, the staging reunites the creative team behind the 2016 Regent’s Park Open Air Theatre production.", "person": "Tim Sheader", "production": "Jesus Christ Superstar (UK tour)", "role": "Director", "show": "Jesus Christ Superstar", "url": "https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/", "venue": "UK tour"}, {"batch": 12, "credited_as": null, "evidence": "The production, featuring music by Andrew Lloyd Webber and lyrics by Tim Rice, will begin performances at the Palace Theatre, Manchester from 11 February 2027 before visiting venues across the UK and Ireland.", "person": "Andrew Lloyd Webber", "production": "Jesus Christ Superstar (UK tour)", "role": "Composer", "show": "Jesus Christ Superstar", "url": "https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/", "venue": "UK tour"}, {"batch": 12, "credited_as": null, "evidence": "The production, featuring music by Andrew Lloyd Webber and lyrics by Tim Rice, will begin performances at the Palace Theatre, Manchester from 11 February 2027 before visiting venues across the UK and Ireland.", "person": "Tim Rice", "production": "Jesus Christ Superstar (UK tour)", "role": "Lyricist", "show": "Jesus Christ Superstar", "url": "https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/", "venue": "UK tour"}, {"batch": 12, "credited_as": null, "evidence": "The production is directed and choreographed by two-time Tony Award winner Jerry Mitchell, with direction for the UK tour recreated by Dominic Shaw.", "person": "Jerry Mitchell", "production": "Pretty Woman: The Musical (UK tour)", "role": "Director", "show": "Pretty Woman: The Musical", "url": "https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/", "venue": "UK tour"}, {"batch": 12, "credited_as": null, "evidence": "Based on the iconic romantic comedy film, Pretty Woman: The Musical features an original score by Bryan Adams and Jim Vallance, with a book by the film’s director Garry Marshall and screenwriter J.F.", "person": "Garry Marshall", "production": "Pretty Woman: The Musical (UK tour)", "role": "Writer", "show": "Pretty Woman: The Musical", "url": "https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/", "venue": "UK tour"}, {"batch": 12, "credited_as": null, "evidence": "Based on the iconic romantic comedy film, Pretty Woman: The Musical features an original score by Bryan Adams and Jim Vallance, with a book by the film’s director Garry Marshall and screenwriter J.F.", "person": "Bryan Adams", "production": "Pretty Woman: The Musical (UK tour)", "role": "Composer", "show": "Pretty Woman: The Musical", "url": "https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/", "venue": "UK tour"}, {"batch": 12, "credited_as": null, "evidence": "Based on the iconic romantic comedy film, Pretty Woman: The Musical features an original score by Bryan Adams and Jim Vallance, with a book by the film’s director Garry Marshall and screenwriter J.F.", "person": "Jim Vallance", "production": "Pretty Woman: The Musical (UK tour)", "role": "Composer", "show": "Pretty Woman: The Musical", "url": "https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/", "venue": "UK tour"}, {"batch": 12, "credited_as": null, "evidence": "Casting is by Pearson Casting.", "person": "Pearson Casting", "production": "Sister Act (UK and Ireland tour)", "role": "Casting director", "show": "Sister Act", "url": "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "venue": "UK and Ireland tour"}, {"batch": 12, "credited_as": null, "evidence": "The production is directed by Bill Buckhurst, with choreography by Alistair David, set and costume design by Morgan Large, lighting design by Tim Mitchell, sound design by Tom Marshall, musical supervision by Stephen Brooker and and wigs, hair and make up design by Sam Cox.", "person": "Bill Buckhurst", "production": "Sister Act (UK and Ireland tour)", "role": "Director", "show": "Sister Act", "url": "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "venue": "UK and Ireland tour"}, {"batch": 12, "credited_as": null, "evidence": "The musical features music by Alan Menken, lyrics by Glenn Slater and a book by Bill and Cheri Steinkellner, with additional book material by Douglas Carter Beane.", "person": "Alan Menken", "production": "Sister Act (UK and Ireland tour)", "role": "Composer", "show": "Sister Act", "url": "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "venue": "UK and Ireland tour"}, {"batch": 12, "credited_as": null, "evidence": "The musical features music by Alan Menken, lyrics by Glenn Slater and a book by Bill and Cheri Steinkellner, with additional book material by Douglas Carter Beane.", "person": "Glenn Slater", "production": "Sister Act (UK and Ireland tour)", "role": "Lyricist", "show": "Sister Act", "url": "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "venue": "UK and Ireland tour"}, {"batch": 12, "credited_as": null, "evidence": "The musical features music by Alan Menken, lyrics by Glenn Slater and a book by Bill and Cheri Steinkellner, with additional book material by Douglas Carter Beane.", "person": "Cheri Steinkellner", "production": "Sister Act (UK and Ireland tour)", "role": "Writer", "show": "Sister Act", "url": "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "venue": "UK and Ireland tour"}, {"batch": 12, "credited_as": null, "evidence": "The musical features music by Alan Menken, lyrics by Glenn Slater and a book by Bill and Cheri Steinkellner, with additional book material by Douglas Carter Beane.", "person": "Douglas Carter Beane", "production": "Sister Act (UK and Ireland tour)", "role": "Writer", "show": "Sister Act", "url": "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": "Grindrod Burton", "evidence": "The production will feature set and costume design by Takis, lighting design by Philip Gladwell, sound design by Ben Harrison, musical supervision and arrangements by Ben Atkinson, musical direction by Richard Atkinson, casting by Grindrod Burton.", "person": "Grindrod Burton Casting", "production": "Hairspray (UK and Ireland tour)", "role": "Casting director", "show": "Hairspray", "url": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": null, "evidence": "This will mark the second outing for the production directed by Brenda Edwards and Paul Kerryson, with choreography by Drew McOnie.", "person": "Brenda Edwards", "production": "Hairspray (UK and Ireland tour)", "role": "Director", "show": "Hairspray", "url": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": null, "evidence": "This will mark the second outing for the production directed by Brenda Edwards and Paul Kerryson, with choreography by Drew McOnie.", "person": "Paul Kerryson", "production": "Hairspray (UK and Ireland tour)", "role": "Director", "show": "Hairspray", "url": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": null, "evidence": "Hairspray is based on the 1988 film of the same name and features music by Marc Shaiman, lyrics by Scott Wittman and Shaiman, and book by Mark O’Donnell and Thomas Meehan.", "person": "Marc Shaiman", "production": "Hairspray (UK and Ireland tour)", "role": "Composer", "show": "Hairspray", "url": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": null, "evidence": "Hairspray is based on the 1988 film of the same name and features music by Marc Shaiman, lyrics by Scott Wittman and Shaiman, and book by Mark O’Donnell and Thomas Meehan.", "person": "Scott Wittman", "production": "Hairspray (UK and Ireland tour)", "role": "Lyricist", "show": "Hairspray", "url": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": null, "evidence": "Hairspray is based on the 1988 film of the same name and features music by Marc Shaiman, lyrics by Scott Wittman and Shaiman, and book by Mark O’Donnell and Thomas Meehan.", "person": "Marc Shaiman", "production": "Hairspray (UK and Ireland tour)", "role": "Lyricist", "show": "Hairspray", "url": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": null, "evidence": "Hairspray is based on the 1988 film of the same name and features music by Marc Shaiman, lyrics by Scott Wittman and Shaiman, and book by Mark O’Donnell and Thomas Meehan.", "person": "Mark O'Donnell", "production": "Hairspray (UK and Ireland tour)", "role": "Writer", "show": "Hairspray", "url": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": null, "evidence": "Hairspray is based on the 1988 film of the same name and features music by Marc Shaiman, lyrics by Scott Wittman and Shaiman, and book by Mark O’Donnell and Thomas Meehan.", "person": "Thomas Meehan", "production": "Hairspray (UK and Ireland tour)", "role": "Writer", "show": "Hairspray", "url": "https://www.whatsonstage.com/news/hairspray-confirms-new-tour-dates-and-cast-with-open-call-for-roles_1735466/", "venue": "UK and Ireland tour"}, {"batch": 13, "credited_as": null, "evidence": "Design is by Colin Richmond, with orchestrations and musical supervision by Sarah Travis, lighting design by Ben Cracknell, sound design by Tom Marshall and Richard Brooker, and casting by David Grindrod CDG.", "person": "David Grindrod", "production": "Grease The Musical (UK tour)", "role": "Casting director", "show": "Grease The Musical", "url": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "venue": "UK tour"}, {"batch": 13, "credited_as": null, "evidence": "Beloved musical classic launches 2027 tour at Theatre Royal Plymouth with Nikolai Foster directing", "person": "Nikolai Foster", "production": "Grease The Musical (UK tour)", "role": "Director", "show": "Grease The Musical", "url": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "venue": "UK tour"}, {"batch": 13, "credited_as": null, "evidence": "The production is directed by Curve’s Artistic Director Nikolai Foster, with choreography by Arlene Phillips, and book, music and lyrics by Jim Jacobs and Warren Casey.", "person": "Jim Jacobs", "production": "Grease The Musical (UK tour)", "role": "Writer", "show": "Grease The Musical", "url": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "venue": "UK tour"}, {"batch": 13, "credited_as": null, "evidence": "The production is directed by Curve’s Artistic Director Nikolai Foster, with choreography by Arlene Phillips, and book, music and lyrics by Jim Jacobs and Warren Casey.", "person": "Warren Casey", "production": "Grease The Musical (UK tour)", "role": "Writer", "show": "Grease The Musical", "url": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "venue": "UK tour"}, {"batch": 13, "credited_as": null, "evidence": "The production is directed by Curve’s Artistic Director Nikolai Foster, with choreography by Arlene Phillips, and book, music and lyrics by Jim Jacobs and Warren Casey.", "person": "Jim Jacobs", "production": "Grease The Musical (UK tour)", "role": "Composer", "show": "Grease The Musical", "url": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "venue": "UK tour"}, {"batch": 13, "credited_as": null, "evidence": "The production is directed by Curve’s Artistic Director Nikolai Foster, with choreography by Arlene Phillips, and book, music and lyrics by Jim Jacobs and Warren Casey.", "person": "Warren Casey", "production": "Grease The Musical (UK tour)", "role": "Composer", "show": "Grease The Musical", "url": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "venue": "UK tour"}, {"batch": 13, "credited_as": null, "evidence": "The production is directed by Curve’s Artistic Director Nikolai Foster, with choreography by Arlene Phillips, and book, music and lyrics by Jim Jacobs and Warren Casey.", "person": "Jim Jacobs", "production": "Grease The Musical (UK tour)", "role": "Lyricist", "show": "Grease The Musical", "url": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "venue": "UK tour"}, {"batch": 13, "credited_as": null, "evidence": "The production is directed by Curve’s Artistic Director Nikolai Foster, with choreography by Arlene Phillips, and book, music and lyrics by Jim Jacobs and Warren Casey.", "person": "Warren Casey", "production": "Grease The Musical (UK tour)", "role": "Lyricist", "show": "Grease The Musical", "url": "https://theatreweekly.com/grease-the-musical-to-return-for-major-new-uk-tour-opening-in-plymouth/", "venue": "UK tour"}, {"batch": 13, "credited_as": null, "evidence": "Annelie Powell CDG / Adult Casting Director", "person": "Annelie Powell", "production": "How the Grinch Stole Christmas! (Quarry Theatre)", "role": "Casting director", "show": "How the Grinch Stole Christmas!", "url": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "venue": "Quarry Theatre, Leeds Playhouse, Leeds"}, {"batch": 13, "credited_as": null, "evidence": "Tom Wright / Director", "person": "Tom Wright", "production": "How the Grinch Stole Christmas! (Quarry Theatre)", "role": "Director", "show": "How the Grinch Stole Christmas!", "url": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "venue": "Quarry Theatre, Leeds Playhouse, Leeds"}, {"batch": 13, "credited_as": null, "evidence": "Timothy Mason / Book and lyrics", "person": "Timothy Mason", "production": "How the Grinch Stole Christmas! (Quarry Theatre)", "role": "Writer", "show": "How the Grinch Stole Christmas!", "url": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "venue": "Quarry Theatre, Leeds Playhouse, Leeds"}, {"batch": 13, "credited_as": null, "evidence": "Timothy Mason / Book and lyrics", "person": "Timothy Mason", "production": "How the Grinch Stole Christmas! (Quarry Theatre)", "role": "Lyricist", "show": "How the Grinch Stole Christmas!", "url": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "venue": "Quarry Theatre, Leeds Playhouse, Leeds"}, {"batch": 13, "credited_as": null, "evidence": "Mel Marvin / Music", "person": "Mel Marvin", "production": "How the Grinch Stole Christmas! (Quarry Theatre)", "role": "Composer", "show": "How the Grinch Stole Christmas!", "url": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/", "venue": "Quarry Theatre, Leeds Playhouse, Leeds"}, {"batch": 14, "credited_as": null, "evidence": "…Mitchell, sound by Gareth Owen, video design by Ian Galloway, musical supervision by Robert Scott, orchestrations by Larry Blank, fight direction by Malcolm Ranson, and casting by Olivia Laydon for Jill Green Casting.", "person": "Olivia Laydon", "production": "Singin' in the Rain (Crucible)", "role": "Casting director", "show": "Singin' in the Rain", "url": "https://www.westendbestfriend.co.uk/news/singin-in-the-rain-christmas-season-sheffield-theatres-uk-tour", "venue": "Crucible, Sheffield"}, {"batch": 14, "credited_as": null, "evidence": "… Gareth Owen, video design by Ian Galloway, musical supervision by Robert Scott, orchestrations by Larry Blank, fight direction by Malcolm Ranson, and casting by Olivia Laydon for Jill Green Casting.", "person": "Jill Green Casting", "production": "Singin' in the Rain (Crucible)", "role": "Casting director", "show": "Singin' in the Rain", "url": "https://www.westendbestfriend.co.uk/news/singin-in-the-rain-christmas-season-sheffield-theatres-uk-tour", "venue": "Crucible, Sheffield"}, {"batch": 14, "credited_as": null, "evidence": "Presented by Sheffield Theatres in association with Jonathan Church Theatre Productions, the much-loved musical returns to the venue where director Jonathan Church began his career.", "person": "Jonathan Church", "production": "Singin' in the Rain (Crucible)", "role": "Director", "show": "Singin' in the Rain", "url": "https://theatreweekly.com/singin-in-the-rain-to-play-christmas-season-at-sheffield-theatres/", "venue": "Crucible, Sheffield"}, {"batch": 14, "credited_as": null, "evidence": "The musical has a book by Betty Comden and Adolph Green, with songs by Nacio Herb Brown and Arthur Freed.", "person": "Betty Comden", "production": "Singin' in the Rain (Crucible)", "role": "Writer", "show": "Singin' in the Rain", "url": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/", "venue": "Crucible, Sheffield"}, {"batch": 14, "credited_as": null, "evidence": "The musical has a book by Betty Comden and Adolph Green, with songs by Nacio Herb Brown and Arthur Freed.", "person": "Adolph Green", "production": "Singin' in the Rain (Crucible)", "role": "Writer", "show": "Singin' in the Rain", "url": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/", "venue": "Crucible, Sheffield"}, {"batch": 14, "credited_as": null, "evidence": "The musical has a book by Betty Comden and Adolph Green, with songs by Nacio Herb Brown and Arthur Freed.", "person": "Nacio Herb Brown", "production": "Singin' in the Rain (Crucible)", "role": "Writer", "show": "Singin' in the Rain", "url": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/", "venue": "Crucible, Sheffield"}, {"batch": 14, "credited_as": null, "evidence": "The musical has a book by Betty Comden and Adolph Green, with songs by Nacio Herb Brown and Arthur Freed.", "person": "Arthur Freed", "production": "Singin' in the Rain (Crucible)", "role": "Writer", "show": "Singin' in the Rain", "url": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/", "venue": "Crucible, Sheffield"}, {"batch": 14, "credited_as": null, "evidence": "The creative team comprises set and costume designer Rob Howell, composer and arranger Christopher Nightingale, lighting designer Hugh Vanstone, sound designer Simon Baker, casting director Grindrod Burton Casting and movement director Lizzi Gee.", "person": "Grindrod Burton Casting", "production": "A Christmas Carol (Lowry)", "role": "Casting director", "show": "A Christmas Carol", "url": "https://www.whatsonstage.com/news/scrooge-casting-for-salford-run-of-old-vics-a-christmas-carol-revealed_1731979/", "venue": "Lowry, Salford"}, {"batch": 14, "credited_as": null, "evidence": "Directed by the Old Vic’s artistic director Matthew Warchus and adapted by Jack Thorne, the production will be staged on UK shores outside London for the first time since its premiere in 2017.", "person": "Matthew Warchus", "production": "A Christmas Carol (Lowry)", "role": "Director", "show": "A Christmas Carol", "url": "https://www.whatsonstage.com/news/full-cast-for-a-christmas-carol-at-the-lowry-confirmed_1735666/", "venue": "Lowry, Salford"}, {"batch": 14, "credited_as": null, "evidence": "Jack Thorne’s adaptation of the Charles Dickens classic has its first UK staging outside of London", "person": "Jack Thorne", "production": "A Christmas Carol (Lowry)", "role": "Writer", "show": "A Christmas Carol", "url": "https://www.whatsonstage.com/news/full-cast-for-a-christmas-carol-at-the-lowry-confirmed_1735666/", "venue": "Lowry, Salford"}, {"batch": 14, "credited_as": null, "evidence": "Co-directed by Hannah Stone and Ria Ashcroft", "person": "Hannah Stone", "production": "Daisy and the Trouble with Christmas (Studio Theatre)", "role": "Director", "show": "Daisy and the Trouble with Christmas", "url": "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/", "venue": "Studio Theatre, Curve, Leicester"}, {"batch": 14, "credited_as": null, "evidence": "Co-directed by Hannah Stone and Ria Ashcroft", "person": "Ria Ashcroft", "production": "Daisy and the Trouble with Christmas (Studio Theatre)", "role": "Director", "show": "Daisy and the Trouble with Christmas", "url": "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/", "venue": "Studio Theatre, Curve, Leicester"}, {"batch": 14, "credited_as": null, "evidence": "Adapted for the stage by Sarah Middleton", "person": "Sarah Middleton", "production": "Daisy and the Trouble with Christmas (Studio Theatre)", "role": "Writer", "show": "Daisy and the Trouble with Christmas", "url": "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/", "venue": "Studio Theatre, Curve, Leicester"}, {"batch": 14, "credited_as": null, "evidence": "New music and lyrics by Darren Clark", "person": "Darren Clark", "production": "Daisy and the Trouble with Christmas (Studio Theatre)", "role": "Composer", "show": "Daisy and the Trouble with Christmas", "url": "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/", "venue": "Studio Theatre, Curve, Leicester"}, {"batch": 14, "credited_as": null, "evidence": "New music and lyrics by Darren Clark", "person": "Darren Clark", "production": "Daisy and the Trouble with Christmas (Studio Theatre)", "role": "Lyricist", "show": "Daisy and the Trouble with Christmas", "url": "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/", "venue": "Studio Theatre, Curve, Leicester"}, {"batch": 15, "credited_as": null, "evidence": "Director - Paul Robinson", "person": "Paul Robinson", "production": "Puss in Boots (Stephen Joseph Theatre)", "role": "Director", "show": "Puss in Boots", "url": "https://sjt.uk.com/events/puss-in-boots", "venue": "Stephen Joseph Theatre, Scarborough"}, {"batch": 15, "credited_as": null, "evidence": "Adapted by Nick Lane", "person": "Nick Lane", "production": "Puss in Boots (Stephen Joseph Theatre)", "role": "Writer", "show": "Puss in Boots", "url": "https://sjt.uk.com/events/puss-in-boots", "venue": "Stephen Joseph Theatre, Scarborough"}, {"batch": 15, "credited_as": null, "evidence": "The creative team for My Fair Lady includes set and costume designer Peter McKintosh, choreographer Stephen Mear, musical supervisor Stephen Ridley, musical director Cat Beveridge, lighting designer Howard Harrison, sound designer Ian Dickinson for Autograph Sound and casting director Stuart Burt CDG.", "person": "Stuart Burt", "production": "My Fair Lady (Festival Theatre)", "role": "Casting director", "show": "My Fair Lady", "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "venue": "Festival Theatre, Chichester"}, {"batch": 15, "credited_as": null, "evidence": "Directed by Rachel Kavanaugh, the production marks the first time the musical has been staged at the venue.", "person": "Rachel Kavanaugh", "production": "My Fair Lady (Festival Theatre)", "role": "Director", "show": "My Fair Lady", "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "venue": "Festival Theatre, Chichester"}, {"batch": 15, "credited_as": null, "evidence": "Based on George Bernard Shaw’s 1913 play Pygmalion, about the tale of a flower seller who is coached to “improve” her social standing, the musical features a book and lyrics by Alan Jay Lerner and music by Frederick Loewe.", "person": "Alan Jay Lerner", "production": "My Fair Lady (Festival Theatre)", "role": "Writer", "show": "My Fair Lady", "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "venue": "Festival Theatre, Chichester"}, {"batch": 15, "credited_as": null, "evidence": "Based on George Bernard Shaw’s 1913 play Pygmalion, about the tale of a flower seller who is coached to “improve” her social standing, the musical features a book and lyrics by Alan Jay Lerner and music by Frederick Loewe.", "person": "Alan Jay Lerner", "production": "My Fair Lady (Festival Theatre)", "role": "Lyricist", "show": "My Fair Lady", "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "venue": "Festival Theatre, Chichester"}, {"batch": 15, "credited_as": null, "evidence": "Based on George Bernard Shaw’s 1913 play Pygmalion, about the tale of a flower seller who is coached to “improve” her social standing, the musical features a book and lyrics by Alan Jay Lerner and music by Frederick Loewe.", "person": "Frederick Loewe", "production": "My Fair Lady (Festival Theatre)", "role": "Composer", "show": "My Fair Lady", "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/", "venue": "Festival Theatre, Chichester"}, {"batch": 2, "credited_as": null, "evidence": "The new UK creative team will feature choreography by Ebony Molina, costume design by Jean Chan, lighting design by Tim Lutkin, sound design by Paul Groothuis, video design by Nina Dunn for Pixellux, puppetry coaching by Iestyn Evans and Andy Heath for Talk to the Hand Puppets and casting by Pearson Casting CDG.", "person": "Pearson Casting", "production": "Avenue Q (Shaftesbury Theatre)", "role": "Casting director", "show": "Avenue Q", "url": "https://www.londonboxoffice.co.uk/news/post/Full-Cast-and-Creative-Team-Announced-for-AVENUE-Q", "venue": "Shaftesbury Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The revival will once again be directed by Jason Moore, with puppet design by Rick Lyon, orchestrations and arrangements by Stephen Oremus and set design by Anna Louizos.", "person": "Jason Moore", "production": "Avenue Q (Shaftesbury Theatre)", "role": "Director", "show": "Avenue Q", "url": "https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193", "venue": "Shaftesbury Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "Written by Robert Lopez and Jeff Marx, with a book by Jeff Whitty, Avenue Q follows Princeton, a recent college graduate who moves into a rundown New York apartment block and learns life lessons from his eccentric neighbours.", "person": "Jeff Whitty", "production": "Avenue Q (Shaftesbury Theatre)", "role": "Writer", "show": "Avenue Q", "url": "https://www.whatsonstage.com/news/exclusive-avenue-q-announces-west-end-cast-and-creative-team_1710193", "venue": "Shaftesbury Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The anniversary production is directed by the original award-winning Broadway director Jason Moore, has music & lyrics by Robert Lopez and Jeff Marx and book by Jeff Whitty, music orchestrations and arrangements by Stephen Oremus original Broadway puppets, conceived and designed by Rick Lyon and set design by Anna Louizos.", "person": "Robert Lopez", "production": "Avenue Q (Shaftesbury Theatre)", "role": "Composer", "show": "Avenue Q", "url": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128", "venue": "Shaftesbury Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The anniversary production is directed by the original award-winning Broadway director Jason Moore, has music & lyrics by Robert Lopez and Jeff Marx and book by Jeff Whitty, music orchestrations and arrangements by Stephen Oremus original Broadway puppets, conceived and designed by Rick Lyon and set design by Anna Louizos.", "person": "Jeff Marx", "production": "Avenue Q (Shaftesbury Theatre)", "role": "Composer", "show": "Avenue Q", "url": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128", "venue": "Shaftesbury Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The anniversary production is directed by the original award-winning Broadway director Jason Moore, has music & lyrics by Robert Lopez and Jeff Marx and book by Jeff Whitty, music orchestrations and arrangements by Stephen Oremus original Broadway puppets, conceived and designed by Rick Lyon and set design by Anna Louizos.", "person": "Robert Lopez", "production": "Avenue Q (Shaftesbury Theatre)", "role": "Lyricist", "show": "Avenue Q", "url": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128", "venue": "Shaftesbury Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The anniversary production is directed by the original award-winning Broadway director Jason Moore, has music & lyrics by Robert Lopez and Jeff Marx and book by Jeff Whitty, music orchestrations and arrangements by Stephen Oremus original Broadway puppets, conceived and designed by Rick Lyon and set design by Anna Louizos.", "person": "Jeff Marx", "production": "Avenue Q (Shaftesbury Theatre)", "role": "Lyricist", "show": "Avenue Q", "url": "https://www.broadwayworld.com/westend/article/Cast-and-Creative-Team-Set-For-AVENUE-Q-West-End-Return-20260128", "venue": "Shaftesbury Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "Cindy Tolan / Casting", "person": "Cindy Tolan", "production": "Avenue Q (Golden Theatre)", "role": "Casting director", "show": "Avenue Q", "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321", "venue": "Golden Theatre, New York"}, {"batch": 2, "credited_as": null, "evidence": "Directed by Jason Moore with choreography by Ken Roberson, Avenue Q featured set design by Anna Louizos, costume design by Mirena Rada, lighting design by Howell Binkley, sound design by Acme Sound Partners, animation design by Lopez, and puppet conception and design by Rick Lyon with stage management by.", "person": "Jason Moore", "production": "Avenue Q (Golden Theatre)", "role": "Director", "show": "Avenue Q", "url": "https://playbill.com/article/look-back-at-avenue-q-on-broadway", "venue": "Golden Theatre, New York"}, {"batch": 2, "credited_as": null, "evidence": "Jeff Whitty / Bookwriter", "person": "Jeff Whitty", "production": "Avenue Q (Golden Theatre)", "role": "Writer", "show": "Avenue Q", "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321", "venue": "Golden Theatre, New York"}, {"batch": 2, "credited_as": null, "evidence": "Best Original Score (Music and/or Lyrics) Written for the Theatre: Robert Lopez won.", "person": "Robert Lopez", "production": "Avenue Q (Golden Theatre)", "role": "Composer", "show": "Avenue Q", "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321", "venue": "Golden Theatre, New York"}, {"batch": 2, "credited_as": null, "evidence": "Jeff Marx is an American composer and lyricist best known for co-creating the musical Avenue Q, which won the Tony Award for Best Musical in 2004.", "person": "Jeff Marx", "production": "Avenue Q (Golden Theatre)", "role": "Composer", "show": "Avenue Q", "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321", "venue": "Golden Theatre, New York"}, {"batch": 2, "credited_as": null, "evidence": "Best Original Score (Music and/or Lyrics) Written for the Theatre: Robert Lopez won.", "person": "Robert Lopez", "production": "Avenue Q (Golden Theatre)", "role": "Lyricist", "show": "Avenue Q", "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321", "venue": "Golden Theatre, New York"}, {"batch": 2, "credited_as": null, "evidence": "Jeff Marx is an American composer and lyricist best known for co-creating the musical Avenue Q, which won the Tony Award for Best Musical in 2004.", "person": "Jeff Marx", "production": "Avenue Q (Golden Theatre)", "role": "Lyricist", "show": "Avenue Q", "url": "https://www.broadwayworld.com/shows/creative.php?showid=3321", "venue": "Golden Theatre, New York"}, {"batch": 2, "credited_as": null, "evidence": "Originally directed by Harold Prince, this production is directed by Seth Sklar-Heyn.", "person": "Seth Sklar-Heyn", "production": "The Phantom of the Opera (His Majesty's Theatre)", "role": "Director", "show": "The Phantom of the Opera", "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/", "venue": "His Majesty's Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The score by Andrew Lloyd Webber includes “The Music of the Night”, “All I Ask of You”, “Wishing You Were Somehow Here Again”, “Masquerade” and the title song.", "person": "Andrew Lloyd Webber", "production": "The Phantom of the Opera (His Majesty's Theatre)", "role": "Composer", "show": "The Phantom of the Opera", "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/", "venue": "His Majesty's Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The production is produced by Cameron Mackintosh, with music by Lloyd Webber, lyrics by Charles Hart and additional lyrics by Richard Stilgoe, and a book by Stilgoe and Lloyd Webber.", "person": "Charles Hart", "production": "The Phantom of the Opera (His Majesty's Theatre)", "role": "Lyricist", "show": "The Phantom of the Opera", "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/", "venue": "His Majesty's Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The production is produced by Cameron Mackintosh, with music by Lloyd Webber, lyrics by Charles Hart and additional lyrics by Richard Stilgoe, and a book by Stilgoe and Lloyd Webber.", "person": "Richard Stilgoe", "production": "The Phantom of the Opera (His Majesty's Theatre)", "role": "Lyricist", "show": "The Phantom of the Opera", "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/", "venue": "His Majesty's Theatre, London"}, {"batch": 2, "credited_as": null, "evidence": "The production is produced by Cameron Mackintosh, with music by Lloyd Webber, lyrics by Charles Hart and additional lyrics by Richard Stilgoe, and a book by Stilgoe and Lloyd Webber.", "person": "Richard Stilgoe", "production": "The Phantom of the Opera (His Majesty's Theatre)", "role": "Writer", "show": "The Phantom of the Opera", "url": "https://www.whatsonstage.com/news/phantom-of-the-opera-confirms-40th-anniversary-west-end-cast_1726405/", "venue": "His Majesty's Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "The production is directed by James Powell and Laurence Connor, designed by Matt Kinley inspired by the paintings of Victor Hugo with costumes by Andreane Neofitou, Christine Rowland and Paul Wills, lighting by Paule Const…", "person": "James Powell", "production": "Les Misérables (Sondheim Theatre)", "role": "Director", "show": "Les Misérables", "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/", "venue": "Sondheim Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "The production is directed by James Powell and Laurence Connor, designed by Matt Kinley inspired by the paintings of Victor Hugo with costumes by Andreane Neofitou, Christine Rowland and Paul Wills, lighting by Paule Constable, sound by Mick …", "person": "Laurence Connor", "production": "Les Misérables (Sondheim Theatre)", "role": "Director", "show": "Les Misérables", "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/", "venue": "Sondheim Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "Written by Alain Boublil and Claude-Michel Schönberg, the show is based on the novel by Victor Hugo.", "person": "Alain Boublil", "production": "Les Misérables (Sondheim Theatre)", "role": "Writer", "show": "Les Misérables", "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/", "venue": "Sondheim Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "Written by Alain Boublil and Claude-Michel Schönberg, the show is based on the novel by Victor Hugo.", "person": "Claude-Michel Schönberg", "production": "Les Misérables (Sondheim Theatre)", "role": "Writer", "show": "Les Misérables", "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/", "venue": "Sondheim Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "Book & Music / Claude-Michel Schönberg", "person": "Claude-Michel Schönberg", "production": "Les Misérables (Sondheim Theatre)", "role": "Composer", "show": "Les Misérables", "url": "https://london.lesmis.com/cast-creative/", "venue": "Sondheim Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "It has music by Schönberg, lyrics by Herbert Kretzmer and original French text by Boublil and Jean-Marc Natel, additional material by James Fenton and adaptation by Trevor Nunn and John Caird.", "person": "Herbert Kretzmer", "production": "Les Misérables (Sondheim Theatre)", "role": "Lyricist", "show": "Les Misérables", "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/", "venue": "Sondheim Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "It has music by Schönberg, lyrics by Herbert Kretzmer and original French text by Boublil and Jean-Marc Natel, additional material by James Fenton and adaptation by Trevor Nunn and John Caird.", "person": "Jean-Marc Natel", "production": "Les Misérables (Sondheim Theatre)", "role": "Writer", "show": "Les Misérables", "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/", "venue": "Sondheim Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "It has music by Schönberg, lyrics by Herbert Kretzmer and original French text by Boublil and Jean-Marc Natel, additional material by James Fenton and adaptation by Trevor Nunn and John Caird.", "person": "Trevor Nunn", "production": "Les Misérables (Sondheim Theatre)", "role": "Writer", "show": "Les Misérables", "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/", "venue": "Sondheim Theatre, London"}, {"batch": 3, "credited_as": null, "evidence": "It has music by Schönberg, lyrics by Herbert Kretzmer and original French text by Boublil and Jean-Marc Natel, additional material by James Fenton and adaptation by Trevor Nunn and John Caird.", "person": "John Caird", "production": "Les Misérables (Sondheim Theatre)", "role": "Writer", "show": "Les Misérables", "url": "https://www.whatsonstage.com/news/les-miserables-announces-new-west-end-cast-for-summer-2026_1724255/", "venue": "Sondheim Theatre, London"}, {"batch": 4, "credited_as": null, "evidence": "Sheldon Epps directs, with choreography by Kieran Donovan, orchestrations by Joseph Joubert, set and costume design by Andy Walmsley, video design by Aaron Rhyne, sound design by Paul Smith, dramaturgy by Shereen Jasmin Phillips, production management by Phil McCandlish and casting by Debbie O’Brien.", "person": "Debbie O'Brien", "production": "To Sir, With Love (UK tour)", "role": "Casting director", "show": "To Sir, With Love", "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/", "venue": "UK tour"}, {"batch": 4, "credited_as": null, "evidence": "Sheldon Epps directs, with choreography by Kieran Donovan, orchestrations by Joseph Joubert, set and costume design by Andy Walmsley, video design by Aaron Rhyne, sound design by Paul Smith, dramaturgy by Shereen Jasmin Phillips, production management by Phil McCandlish and casting by Debbie O’Brien.", "person": "Sheldon Epps", "production": "To Sir, With Love (UK tour)", "role": "Director", "show": "To Sir, With Love", "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/", "venue": "UK tour"}, {"batch": 4, "credited_as": null, "evidence": "The book is by Kris Lythgoe.", "person": "Kris Lythgoe", "production": "To Sir, With Love (UK tour)", "role": "Writer", "show": "To Sir, With Love", "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/", "venue": "UK tour"}, {"batch": 4, "credited_as": null, "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.", "person": "John Farrar", "production": "To Sir, With Love (UK tour)", "role": "Composer", "show": "To Sir, With Love", "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/", "venue": "UK tour"}, {"batch": 4, "credited_as": null, "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.", "person": "Kara DioGuardi", "production": "To Sir, With Love (UK tour)", "role": "Composer", "show": "To Sir, With Love", "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/", "venue": "UK tour"}, {"batch": 4, "credited_as": null, "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.", "person": "John Farrar", "production": "To Sir, With Love (UK tour)", "role": "Lyricist", "show": "To Sir, With Love", "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/", "venue": "UK tour"}, {"batch": 4, "credited_as": null, "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.", "person": "Kara DioGuardi", "production": "To Sir, With Love (UK tour)", "role": "Lyricist", "show": "To Sir, With Love", "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/", "venue": "UK tour"}, {"batch": 5, "credited_as": null, "evidence": "Artistic director Lotte Wakeham directs a new production of Andrew Lloyd Webber’s Sunset Boulevard, performed by a company of actor-musicians.", "person": "Lotte Wakeham", "production": "Sunset Boulevard (Octagon Theatre Bolton)", "role": "Director", "show": "Sunset Boulevard", "url": "https://www.whatsonstage.com/news/bolton-octagon-announces-60th-anniversary-season-with-sunset-boulevard-educating-rita-and-more_1732868/", "venue": "Octagon Theatre Bolton"}, {"batch": 5, "credited_as": null, "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.", "person": "Don Black", "production": "Sunset Boulevard (Octagon Theatre Bolton)", "role": "Writer", "show": "Sunset Boulevard", "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/", "venue": "Octagon Theatre Bolton"}, {"batch": 5, "credited_as": null, "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.", "person": "Christopher Hampton", "production": "Sunset Boulevard (Octagon Theatre Bolton)", "role": "Writer", "show": "Sunset Boulevard", "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/", "venue": "Octagon Theatre Bolton"}, {"batch": 5, "credited_as": null, "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.", "person": "Don Black", "production": "Sunset Boulevard (Octagon Theatre Bolton)", "role": "Lyricist", "show": "Sunset Boulevard", "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/", "venue": "Octagon Theatre Bolton"}, {"batch": 5, "credited_as": null, "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.", "person": "Christopher Hampton", "production": "Sunset Boulevard (Octagon Theatre Bolton)", "role": "Lyricist", "show": "Sunset Boulevard", "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/", "venue": "Octagon Theatre Bolton"}, {"batch": 6, "credited_as": null, "evidence": "…ll, movement director Finn Caldwell, composer Fernando Velázquez, lighting designer Oliver Fenwick, video designer Ash J Woodward, sound designer Benjamin Grant, casting directors Bryony Jarvis-Taylor CDG and Martin Poile CDG, dialect coach Shereen Ibrahim, voice coach Cathleen McCarron, associate director John Young, associate set designer Ruth Hall, associate Costume Designer…", "person": "Bryony Jarvis-Taylor", "production": "The Jungle Book (Olivier Theatre)", "role": "Casting director", "show": "The Jungle Book", "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914", "venue": "Olivier Theatre, National Theatre, London"}, {"batch": 6, "credited_as": null, "evidence": "…ldwell, composer Fernando Velázquez, lighting designer Oliver Fenwick, video designer Ash J Woodward, sound designer Benjamin Grant, casting directors Bryony Jarvis-Taylor CDG and Martin Poile CDG, dialect coach Shereen Ibrahim, voice coach Cathleen McCarron, associate director John Young, associate set designer Ruth Hall, associate Costume Designer Jasmine Araujo, asso…", "person": "Martin Poile", "production": "The Jungle Book (Olivier Theatre)", "role": "Casting director", "show": "The Jungle Book", "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914", "venue": "Olivier Theatre, National Theatre, London"}, {"batch": 6, "credited_as": null, "evidence": "This world premiere is directed by Indhu Rubasingham, with Olivier winning actor Hiran Abeysekera as Mowgli and innovative puppetry by Lume: Nick Barnes and Finn Caldwell.", "person": "Indhu Rubasingham", "production": "The Jungle Book (Olivier Theatre)", "role": "Director", "show": "The Jungle Book", "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914", "venue": "Olivier Theatre, National Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Casting for the London production is by Jacob Sparrow.", "person": "Jacob Sparrow", "production": "Hadestown (Lyric Theatre)", "role": "Casting director", "show": "Hadestown", "url": "https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628", "venue": "Lyric Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "The Tony Award-winning musical, which follows two interwoven tales of fraught love in a re-imagined Greek world, is penned by Anaïs Mitchell and directed by Rachel Chavkin.", "person": "Rachel Chavkin", "production": "Hadestown (Lyric Theatre)", "role": "Director", "show": "Hadestown", "url": "https://www.whatsonstage.com/news/hadestown-reveals-new-west-end-casting_1635628", "venue": "Lyric Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Hadestown features music, lyrics, and book by acclaimed Grammy®-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell, who originated Hadestown as an indie theatre project and acclaimed album.", "person": "Anaïs Mitchell", "production": "Hadestown (Lyric Theatre)", "role": "Composer", "show": "Hadestown", "url": "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813", "venue": "Lyric Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Hadestown features music, lyrics, and book by acclaimed Grammy®-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell, who originated Hadestown as an indie theatre project and acclaimed album.", "person": "Anaïs Mitchell", "production": "Hadestown (Lyric Theatre)", "role": "Lyricist", "show": "Hadestown", "url": "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813", "venue": "Lyric Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Hadestown features music, lyrics, and book by acclaimed Grammy®-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell, who originated Hadestown as an indie theatre project and acclaimed album.", "person": "Anaïs Mitchell", "production": "Hadestown (Lyric Theatre)", "role": "Writer", "show": "Hadestown", "url": "https://broadwayworld.com/westend/article/New-Cast-Will-Join-HADESTOWN-in-London-This-Month-20240813", "venue": "Lyric Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Pippa Ailion CDG, Natalie Gallacher CDG / London Casting", "person": "Pippa Ailion", "production": "The Lion King (Lyceum Theatre)", "role": "Casting director", "show": "The Lion King", "url": "https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg", "venue": "Lyceum Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Pippa Ailion CDG, Natalie Gallacher CDG / London Casting", "person": "Natalie Gallacher", "production": "The Lion King (Lyceum Theatre)", "role": "Casting director", "show": "The Lion King", "url": "https://www.thelionking.co.uk/pippa-ailion-cdg-natalie-gallacher-cdg", "venue": "Lyceum Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Julie Taymor / Director", "person": "Julie Taymor", "production": "The Lion King (Lyceum Theatre)", "role": "Director", "show": "The Lion King", "url": "https://www.westend.com/shows/the-lion-king/", "venue": "Lyceum Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Roger Allers / Book", "person": "Roger Allers", "production": "The Lion King (Lyceum Theatre)", "role": "Writer", "show": "The Lion King", "url": "https://www.thelionking.co.uk/london/cast-and-creatives", "venue": "Lyceum Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Book / Irene Mecchi", "person": "Irene Mecchi", "production": "The Lion King (Lyceum Theatre)", "role": "Writer", "show": "The Lion King", "url": "https://www.thelionking.co.uk/london/cast-and-creatives", "venue": "Lyceum Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Elton John / Music", "person": "Elton John", "production": "The Lion King (Lyceum Theatre)", "role": "Composer", "show": "The Lion King", "url": "https://www.thelionking.co.uk/london/cast-and-creatives", "venue": "Lyceum Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "Tim Rice / Lyrics", "person": "Tim Rice", "production": "The Lion King (Lyceum Theatre)", "role": "Lyricist", "show": "The Lion King", "url": "https://www.thelionking.co.uk/london/cast-and-creatives", "venue": "Lyceum Theatre, London"}, {"batch": 7, "credited_as": null, "evidence": "…yte, musical direction by Ben van Tienen, lighting design by Isabella Byrd, sound design by Nick Lidster, wigs and hair design by Sam Cox, make-up design by Guy Common, casting by Stuart Burt, original associate direction and prologue direction by Jordan Fein, and prologue composition by Angus MacRae.", "person": "Stuart Burt", "production": "Cabaret (Kit Kat Club)", "role": "Casting director", "show": "Cabaret", "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "venue": "Kit Kat Club, London"}, {"batch": 7, "credited_as": null, "evidence": "The production is directed by Rebecca Frecknall, with set and costume design by Tom Scutt, choreography by Julia Cheng, musical supervision by Jennifer Whyte, musical direction by Ben van Tienen, lighting design by Isabella Byr…", "person": "Rebecca Frecknall", "production": "Cabaret (Kit Kat Club)", "role": "Director", "show": "Cabaret", "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "venue": "Kit Kat Club, London"}, {"batch": 7, "credited_as": null, "evidence": "Featuring music by John Kander, lyrics by Fred Ebb and a book by Joe Masteroff, Cabaret is based on the play by John Van Druten and stories by Christopher Isherwood.", "person": "John Kander", "production": "Cabaret (Kit Kat Club)", "role": "Composer", "show": "Cabaret", "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "venue": "Kit Kat Club, London"}, {"batch": 7, "credited_as": null, "evidence": "Featuring music by John Kander, lyrics by Fred Ebb and a book by Joe Masteroff, Cabaret is based on the play by John Van Druten and stories by Christopher Isherwood.", "person": "Fred Ebb", "production": "Cabaret (Kit Kat Club)", "role": "Lyricist", "show": "Cabaret", "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "venue": "Kit Kat Club, London"}, {"batch": 7, "credited_as": null, "evidence": "Featuring music by John Kander, lyrics by Fred Ebb and a book by Joe Masteroff, Cabaret is based on the play by John Van Druten and stories by Christopher Isherwood.", "person": "Joe Masteroff", "production": "Cabaret (Kit Kat Club)", "role": "Writer", "show": "Cabaret", "url": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/", "venue": "Kit Kat Club, London"}, {"batch": 8, "credited_as": null, "evidence": "Casting by - / Pippa Ailion CDG and Natalie Gallacher CDG", "person": "Pippa Ailion", "production": "Moulin Rouge! The Musical (Piccadilly Theatre)", "role": "Casting director", "show": "Moulin Rouge! The Musical", "url": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/", "venue": "Piccadilly Theatre, London"}, {"batch": 8, "credited_as": null, "evidence": "Casting by - / Pippa Ailion CDG and Natalie Gallacher CDG", "person": "Natalie Gallacher", "production": "Moulin Rouge! The Musical (Piccadilly Theatre)", "role": "Casting director", "show": "Moulin Rouge! The Musical", "url": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/", "venue": "Piccadilly Theatre, London"}, {"batch": 8, "credited_as": null, "evidence": "Director - / Alex Timbers", "person": "Alex Timbers", "production": "Moulin Rouge! The Musical (Piccadilly Theatre)", "role": "Director", "show": "Moulin Rouge! The Musical", "url": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/", "venue": "Piccadilly Theatre, London"}, {"batch": 8, "credited_as": null, "evidence": "Book by - / John Logan", "person": "John Logan", "production": "Moulin Rouge! The Musical (Piccadilly Theatre)", "role": "Writer", "show": "Moulin Rouge! The Musical", "url": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/", "venue": "Piccadilly Theatre, London"}, {"batch": 8, "credited_as": null, "evidence": "Hamilton has book, music and lyrics by Lin-Manuel Miranda, is directed by Thomas Kail, with choreography by Andy Blankenbuehler, musical supervision and orchestrations by Alex Lacamoire and is based on Ron Chernow's biography of Alexander Hamilton.", "person": "Thomas Kail", "production": "Hamilton (Victoria Palace Theatre)", "role": "Director", "show": "Hamilton", "url": "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428", "venue": "Victoria Palace Theatre, London"}, {"batch": 8, "credited_as": null, "evidence": "Hamilton has book, music and lyrics by Lin-Manuel Miranda, is directed by Thomas Kail, with choreography by Andy Blankenbuehler, musical supervision and orchestrations by Alex Lacamoire and is based on Ron Chernow's biography of Alexander Hamilton.", "person": "Lin-Manuel Miranda", "production": "Hamilton (Victoria Palace Theatre)", "role": "Writer", "show": "Hamilton", "url": "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428", "venue": "Victoria Palace Theatre, London"}, {"batch": 8, "credited_as": null, "evidence": "Hamilton has book, music and lyrics by Lin-Manuel Miranda, is directed by Thomas Kail, with choreography by Andy Blankenbuehler, musical supervision and orchestrations by Alex Lacamoire and is based on Ron Chernow's biography of Alexander Hamilton.", "person": "Lin-Manuel Miranda", "production": "Hamilton (Victoria Palace Theatre)", "role": "Composer", "show": "Hamilton", "url": "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428", "venue": "Victoria Palace Theatre, London"}, {"batch": 8, "credited_as": null, "evidence": "Hamilton has book, music and lyrics by Lin-Manuel Miranda, is directed by Thomas Kail, with choreography by Andy Blankenbuehler, musical supervision and orchestrations by Alex Lacamoire and is based on Ron Chernow's biography of Alexander Hamilton.", "person": "Lin-Manuel Miranda", "production": "Hamilton (Victoria Palace Theatre)", "role": "Lyricist", "show": "Hamilton", "url": "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428", "venue": "Victoria Palace Theatre, London"}, {"batch": 8, "credited_as": null, "evidence": "Based on the play by Maurine Dallas Watkins, the musical has a book by Fred Ebb and Bob Fosse, music by Kander and lyrics by Ebb.", "person": "Fred Ebb", "production": "Chicago", "role": "Writer", "show": "Chicago", "url": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/", "venue": "Venue not stated"}, {"batch": 8, "credited_as": null, "evidence": "Based on the play by Maurine Dallas Watkins, the musical has a book by Fred Ebb and Bob Fosse, music by Kander and lyrics by Ebb.", "person": "Bob Fosse", "production": "Chicago", "role": "Writer", "show": "Chicago", "url": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/", "venue": "Venue not stated"}, {"batch": 8, "credited_as": null, "evidence": "Chicago features a score by John Kander and Fred Ebb, with songs including “Razzle Dazzle”, “Cell Block Tango” and “All That Jazz”.", "person": "John Kander", "production": "Chicago", "role": "Composer", "show": "Chicago", "url": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/", "venue": "Venue not stated"}, {"batch": 8, "credited_as": null, "evidence": "Based on the play by Maurine Dallas Watkins, the musical has a book by Fred Ebb and Bob Fosse, music by Kander and lyrics by Ebb.", "person": "Fred Ebb", "production": "Chicago", "role": "Lyricist", "show": "Chicago", "url": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/", "venue": "Venue not stated"}, {"batch": 9, "credited_as": null, "evidence": "Stuart Burt CDG / Casting Director", "person": "Stuart Burt", "production": "One Day The Musical (Garrick Theatre)", "role": "Casting director", "show": "One Day The Musical", "url": "https://thegarricktheatre.co.uk/tickets/one-day-the-musical/", "venue": "Garrick Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Max Webster / Director", "person": "Max Webster", "production": "One Day The Musical (Garrick Theatre)", "role": "Director", "show": "One Day The Musical", "url": "https://thegarricktheatre.co.uk/tickets/one-day-the-musical/", "venue": "Garrick Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "David Greig / Book", "person": "David Greig", "production": "One Day The Musical (Garrick Theatre)", "role": "Writer", "show": "One Day The Musical", "url": "https://www.westend.com/shows/one-day-the-musical/", "venue": "Garrick Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Abner Ramirez / Music & Lyrics", "person": "Abner Ramirez", "production": "One Day The Musical (Garrick Theatre)", "role": "Composer", "show": "One Day The Musical", "url": "https://www.westend.com/shows/one-day-the-musical/", "venue": "Garrick Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Music & Lyrics / Amanda Ramirez", "person": "Amanda Ramirez", "production": "One Day The Musical (Garrick Theatre)", "role": "Composer", "show": "One Day The Musical", "url": "https://www.westend.com/shows/one-day-the-musical/", "venue": "Garrick Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Abner Ramirez / Music & Lyrics", "person": "Abner Ramirez", "production": "One Day The Musical (Garrick Theatre)", "role": "Lyricist", "show": "One Day The Musical", "url": "https://www.westend.com/shows/one-day-the-musical/", "venue": "Garrick Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Music & Lyrics / Amanda Ramirez", "person": "Amanda Ramirez", "production": "One Day The Musical (Garrick Theatre)", "role": "Lyricist", "show": "One Day The Musical", "url": "https://www.westend.com/shows/one-day-the-musical/", "venue": "Garrick Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "…nal orchestrations Josh Cohen and DJ Walde, lighting designer Hugh Vanstone, sound designer Bobby Aitken, hair, wig & make-up design Campbell Young Associates and casting director David Grindrod CDG CSA.", "person": "David Grindrod", "production": "Pride (Bridge Theatre)", "role": "Casting director", "show": "Pride", "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "venue": "Bridge Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.", "person": "Matthew Warchus", "production": "Pride (Bridge Theatre)", "role": "Director", "show": "Pride", "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "venue": "Bridge Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.", "person": "Stephen Beresford", "production": "Pride (Bridge Theatre)", "role": "Writer", "show": "Pride", "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "venue": "Bridge Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.", "person": "Stephen Beresford", "production": "Pride (Bridge Theatre)", "role": "Lyricist", "show": "Pride", "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "venue": "Bridge Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.", "person": "Christopher Nightingale", "production": "Pride (Bridge Theatre)", "role": "Composer", "show": "Pride", "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "venue": "Bridge Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.", "person": "Josh Cohen", "production": "Pride (Bridge Theatre)", "role": "Composer", "show": "Pride", "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "venue": "Bridge Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.", "person": "DJ Walde", "production": "Pride (Bridge Theatre)", "role": "Composer", "show": "Pride", "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "venue": "Bridge Theatre, London"}, {"batch": 9, "credited_as": "Natalia Gallacher", "evidence": "UK Casting - / Natalia Gallacher for Pippa Ailion Casting", "person": "Natalie Gallacher", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Casting director", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": "Pippa Ailion Casting", "evidence": "UK Casting - / Natalia Gallacher for Pippa Ailion Casting", "person": "Pippa Ailion", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Casting director", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Co-Director, Book, Music and Lyrics - / Trey Parker", "person": "Trey Parker", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Writer", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone", "person": "Robert Lopez", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Writer", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone", "person": "Matt Stone", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Writer", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Co-Director, Book, Music and Lyrics - / Trey Parker", "person": "Trey Parker", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Composer", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone", "person": "Robert Lopez", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Composer", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone", "person": "Matt Stone", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Composer", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Co-Director, Book, Music and Lyrics - / Trey Parker", "person": "Trey Parker", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Lyricist", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone", "person": "Robert Lopez", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Lyricist", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}, {"batch": 9, "credited_as": null, "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone", "person": "Matt Stone", "production": "The Book of Mormon (Prince of Wales Theatre)", "role": "Lyricist", "show": "The Book of Mormon", "url": "https://officiallondontheatre.com/show/the-book-of-mormon/", "venue": "Prince of Wales Theatre, London"}], "host": "web", "queue": [], "updated": "2026-11-17"}</script>
+<script>
+(function(){
+"use strict";
+const RAW = JSON.parse(document.getElementById("data").textContent);
+
+/* ---------- helpers ---------- */
+function h(tag, attrs, ...kids){
+  const e = document.createElement(tag);
+  if(attrs) for(const [k, v] of Object.entries(attrs)){
+    if(v == null || v === false) continue;
+    if(k === "class") e.className = v; else if(k === "text") e.textContent = v;
+    else if(k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v === true ? "" : v);
+  }
+  for(const c of kids.flat(Infinity)){ if(c == null || c === false) continue; e.append(c.nodeType ? c : String(c)); }
+  return e;
+}
+const slug = s => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+const fmtDate = d => new Date(d + "T12:00:00Z").toLocaleDateString("en-GB", {day:"numeric", month:"short", year:"numeric"});
+const domain = u => u.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
+const plural = (n, one, many) => n + " " + (n === 1 ? one : (many || one + "s"));
+const ROLES = ["Casting director", "Director", "Writer", "Composer", "Lyricist"];
+const ROLE_PL = {"Casting director":"Casting directors", Director:"Directors", Writer:"Writers", Composer:"Composers", Lyricist:"Lyricists"};
+const TYPES = ["London", "Touring", "Regional", "International", "Not stated"];
+function venueType(v){
+  if(!v || /not stated/i.test(v)) return "Not stated";
+  if(/tour/i.test(v)) return "Touring";
+  if(/london/i.test(v)) return "London";
+  if(/new york|broadway/i.test(v)) return "International";
+  return "Regional";
+}
+const venueName = v => /not stated/i.test(v) ? "Venue not stated" : v;
+
+/* ---------- model ---------- */
+const people = new Map(), prods = new Map(), venues = new Map(), used = new Set();
+const uniq = s => { let k = s, i = 2; while(used.has(k)) k = s + "-" + i++; used.add(k); return k; };
+for(const e of RAW.edges){
+  let p = people.get(e.person);
+  if(!p){ p = {name:e.person, kind:"person", credits:[], roles:new Set(), aka:new Set(), prods:new Set()}; people.set(e.person, p); }
+  let r = prods.get(e.production);
+  if(!r){ r = {label:e.production, show:e.show, venue:e.venue, type:venueType(e.venue), credits:[], urls:new Set(), batch:0}; prods.set(e.production, r); }
+  let v = venues.get(e.venue);
+  if(!v){ v = {name:e.venue, prods:new Set()}; venues.set(e.venue, v); }
+  p.credits.push(e); p.roles.add(e.role); p.prods.add(r); if(e.credited_as) p.aka.add(e.credited_as);
+  if(e.role === "Casting director") p.kind = "cd";
+  r.credits.push(e); r.urls.add(e.url); r.batch = Math.max(r.batch, e.batch || 0); v.prods.add(r);
+}
+const PEOPLE = [...people.values()].sort((a, b) => a.name.localeCompare(b.name));
+const PRODS = [...prods.values()].sort((a, b) => a.show.localeCompare(b.show) || a.venue.localeCompare(b.venue));
+PEOPLE.forEach(p => p.hash = uniq("person-" + slug(p.name)));
+PRODS.forEach(r => {
+  r.hash = uniq("show-" + slug(r.label));
+  r.team = {}; for(const role of ROLES) r.team[role] = [...new Set(r.credits.filter(c => c.role === role).map(c => c.person))].map(n => people.get(n));
+});
+const CDS = PEOPLE.filter(p => p.kind === "cd").sort((a, b) => b.prods.size - a.prods.size || a.name.localeCompare(b.name));
+const NOCD = PRODS.filter(r => !r.team["Casting director"].length);
+const SOURCES = new Set(RAW.edges.map(e => e.url));
+const rank = q => q.kind === "cd" ? 0 : q.roles.has("Director") ? 1 : 2;
+function collaborators(p){
+  const m = new Map();
+  for(const r of p.prods) for(const c of r.credits){ const q = people.get(c.person); if(q !== p){ if(!m.has(q)) m.set(q, new Set()); m.get(q).add(r); } }
+  return [...m.entries()].map(([q, s]) => ({p:q, n:s.size})).sort((a, b) => rank(a.p) - rank(b.p) || b.n - a.n || a.p.name.localeCompare(b.p.name));
+}
+const byHash = new Map([...PEOPLE.map(p => [p.hash, p]), ...PRODS.map(r => [r.hash, r])]);
+
+/* ---------- shared pieces ---------- */
+const personLink = p => h("a", {class:"lnk" + (p.kind === "cd" ? " cd" : ""), href:"#" + p.hash}, p.name);
+const showLink = r => h("a", {class:"lnk", href:"#" + r.hash}, r.show);
+const joinLinks = list => list.length ? h("span", {class:"list-inline"}, list.map(personLink)) : null;
+const castCell = r => r.team["Casting director"].length ? joinLinks(r.team["Casting director"]) : h("span", {class:"pill warn"}, "Not stated");
+const writersOf = r => [...new Set(["Writer", "Composer", "Lyricist"].flatMap(k => r.team[k]))];
+function head(title, sub, aside, crumb){
+  return h("header", {class:"ph"}, h("div", null, crumb ? h("p", {class:"crumb"}, crumb) : null, h("h1", null, title), sub ? h("p", null, sub) : null), aside || null);
+}
+function card(title, body, more){
+  return h("section", {class:"card"}, h("div", {class:"card-h"}, h("h2", {class:"sec"}, title), more || null), body);
+}
+function table(cols, rows, empty){
+  if(!rows.length) return h("div", {class:"tbl"}, h("p", {class:"empty"}, empty || "Nothing to show."));
+  return h("div", {class:"tbl"}, h("table", null,
+    h("thead", null, h("tr", null, cols.map(c => h("th", {class: c.endsWith("#") ? "num" : null}, c.replace(/#$/, ""))))),
+    h("tbody", null, rows.map(r => h("tr", null, r.map((c, i) => h("td", {class: cols[i].endsWith("#") ? "num" : null, "data-label": cols[i].replace(/#$/, "")}, c)))))));
+}
+const LINK_ICON = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14 21 3"/><path d="M15 3h6v6"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>';
+function srcPill(url){
+  const a = h("a", {class:"src", href:url, target:"_blank", rel:"noopener", title:"Open the source: " + url});
+  a.innerHTML = LINK_ICON; a.append(domain(url)); return a;
+}
+function creditCard(c, ctx){
+  const r = prods.get(c.production), p = people.get(c.person);
+  return h("article", {class:"cred"},
+    h("div", {class:"cred-h"},
+      h("span", {class:"role" + (c.role === "Casting director" ? " cd" : "")}, c.role),
+      ctx === "person" ? showLink(r) : personLink(p),
+      ctx === "person" ? h("span", {class:"muted"}, venueName(r.venue)) : null),
+    h("div", {class:"prov"}, srcPill(c.url),
+      c.credited_as ? h("span", null, "Credited as " + c.credited_as) : null));
+}
+function seg(options, current, onPick){
+  return h("div", {class:"seg", role:"group"}, options.map(([value, label, n]) =>
+    h("button", {type:"button", "aria-pressed": String(value === current), onclick: () => onPick(value)}, label, n != null ? h("small", null, n) : null)));
+}
+
+const queueList = list => h("ul", {class:"queue"}, list.map((q, i) => h("li", {class: i >= 6 ? "q-x" : null}, q)),
+  list.length > 6 ? h("li", {class:"q-n"}, "and " + (list.length - 6) + " more") : null);
+/* ---------- views ---------- */
+const VIEWS = {};
+
+VIEWS.overview = () => {
+  const n = t => PRODS.filter(r => r.type === t).length;
+  const top = CDS.slice(0, 8), max = top[0] ? top[0].prods.size : 1;
+  const latestBatch = Math.max(0, ...PRODS.map(r => r.batch));
+  const latest = PRODS.filter(r => r.batch >= latestBatch - 1).sort((a, b) => b.batch - a.batch || a.show.localeCompare(b.show)).slice(0, 6);
+  return [
+    head("Overview", "Casting directors and the creative teams they work with across the West End, UK tours and regional theatre. Every credit links to the public page that states it.",
+      h("span", {class:"stamp"}, "Updated " + fmtDate(RAW.updated))),
+    h("section", {class:"kpis", "aria-label":"Totals"},
+      h("div", {class:"kpi prod"}, h("b", null, PRODS.length), h("span", {class:"k-l"}, "Productions"), h("span", {class:"k-s"}, `${n("London")} London · ${n("Touring")} touring · ${n("Regional")} regional`)),
+      h("div", {class:"kpi cd"}, h("b", null, CDS.length), h("span", {class:"k-l"}, "Casting directors"), h("span", {class:"k-s"}, `Credited on ${PRODS.length - NOCD.length} of ${PRODS.length} productions`)),
+      h("div", {class:"kpi"}, h("b", null, PEOPLE.length - CDS.length), h("span", {class:"k-l"}, "Creatives"), h("span", {class:"k-s"}, "Directors, writers, composers, lyricists")),
+      h("div", {class:"kpi"}, h("b", null, RAW.edges.length), h("span", {class:"k-l"}, "Sourced credits"), h("span", {class:"k-s"}, `From ${SOURCES.size} public pages`))),
+    h("div", {class:"cols wide-left"},
+      card("Most active casting directors",
+        h("ol", {class:"bars"}, top.map(p => h("li", null, personLink(p), h("span", {class:"bar", "aria-hidden":"true"}, h("i", {style:`width:${p.prods.size / max * 100}%`})), h("b", null, p.prods.size)))),
+        h("a", {class:"more", href:"#casting-directors"}, "All casting directors →")),
+      card("Not yet stated", [h("ul", {class:"att"},
+        h("li", null, h("span", {class:"n" + (NOCD.length ? " warn" : " ok")}, NOCD.length), h("p", null, (NOCD.length === 1 ? "Production" : "Productions") + " with no casting credit in the sources yet", h("br"), h("small", null, NOCD.slice(0, 4).map(r => r.show).join(", ") + (NOCD.length > 4 ? "…" : ""))))),
+        disclaimer(true)],
+        h("a", {class:"more", href:"#productions"}, "See productions →"))),
+    h("div", {class:"cols wide-left"},
+      card("Latest productions", table(["Production", "Venue", "Casting"], latest.map(r => [showLink(r), venueName(r.venue), castCell(r)])), h("a", {class:"more", href:"#productions"}, "All productions →")),
+      card("Awaiting credits", RAW.queue.length
+        ? [h("p", {class:"muted", style:"margin:0"}, plural(RAW.queue.length, "production") + " queued for research. They appear here once their credits are confirmed."), queueList(RAW.queue)]
+        : h("p", {class:"muted", style:"margin:0"}, "Nothing queued.")))
+  ];
+};
+
+VIEWS["casting-directors"] = () => [
+  head("Casting directors", `${CDS.length} casting directors credited across ${PRODS.length - NOCD.length} productions, busiest first.`),
+  table(["Casting director", "Productions#", "Credits", "Directors worked with"], CDS.map(p => {
+    const dirs = collaborators(p).filter(x => x.p.roles.has("Director")).map(x => x.p);
+    return [personLink(p), p.prods.size,
+      h("span", null, [...p.prods].sort((a, b) => a.show.localeCompare(b.show)).map((r, i) => [i ? h("br") : null, showLink(r), " ", h("span", {class:"muted"}, "· " + venueName(r.venue))])),
+      joinLinks(dirs) || h("span", {class:"muted"}, "—")];
+  }))
+];
+
+const prodState = {type:"All", missing:false, q:""};
+VIEWS.productions = () => {
+  const wrap = h("div", {style:"display:contents"});
+  const results = h("div");
+  const counts = Object.fromEntries(TYPES.map(t => [t, PRODS.filter(r => r.type === t).length]));
+  function draw(){
+    const q = prodState.q.toLowerCase();
+    const rows = PRODS.filter(r => (prodState.type === "All" || r.type === prodState.type) && (!prodState.missing || !r.team["Casting director"].length)
+      && (!q || (r.show + " " + r.venue + " " + r.credits.map(c => c.person).join(" ")).toLowerCase().includes(q)));
+    results.replaceChildren(
+      table(["Production", "Venue", "Casting", "Director", "Writers", "Sources#"], rows.map(r => [
+        showLink(r), h("span", null, venueName(r.venue), h("span", {class:"sub"}, r.type)), castCell(r),
+        joinLinks(r.team.Director) || h("span", {class:"muted"}, "—"), joinLinks(writersOf(r)) || h("span", {class:"muted"}, "—"), r.urls.size]),
+        "No productions match these filters."));
+    controls.querySelector(".count").textContent = plural(rows.length, "production");
+  }
+  const controls = h("div", {class:"filters"},
+    seg([["All", "All", PRODS.length], ...TYPES.filter(t => counts[t]).map(t => [t, t, counts[t]])], prodState.type, v => { prodState.type = v; rebuildSeg(); draw(); }),
+    h("label", {class:"check"}, h("input", {type:"checkbox", id:"f-missing", checked: prodState.missing, onchange: e => { prodState.missing = e.target.checked; draw(); }}), "No casting credit"),
+    h("input", {type:"search", id:"f-prod", placeholder:"Filter by title, venue or name", value: prodState.q, "aria-label":"Filter productions", oninput: e => { prodState.q = e.target.value; draw(); }}),
+    h("span", {class:"count"}));
+  function rebuildSeg(){ controls.firstChild.replaceWith(seg([["All", "All", PRODS.length], ...TYPES.filter(t => counts[t]).map(t => [t, t, counts[t]])], prodState.type, v => { prodState.type = v; rebuildSeg(); draw(); })); }
+  wrap.append(head("Productions", "Every production on file with its creative team. Casting that no source states is marked."), controls, results);
+  draw();
+  return wrap;
+};
+
+const peopleState = {role:"All", q:""};
+VIEWS.people = () => {
+  const wrap = h("div", {style:"display:contents"}), results = h("div");
+  const roleCount = r => PEOPLE.filter(p => p.roles.has(r)).length;
+  const segFor = () => seg([["All", "Everyone", PEOPLE.length], ...ROLES.map(r => [r, ROLE_PL[r], roleCount(r)])], peopleState.role, v => { peopleState.role = v; controls.firstChild.replaceWith(segFor()); draw(); });
+  function draw(){
+    const q = peopleState.q.toLowerCase();
+    const rows = PEOPLE.filter(p => (peopleState.role === "All" || p.roles.has(peopleState.role)) && (!q || (p.name + " " + [...p.aka].join(" ")).toLowerCase().includes(q)));
+    results.replaceChildren(table(["Name", "Roles", "Productions", "Also credited as"], rows.map(p => [
+      personLink(p), h("span", {class:"chips"}, ROLES.filter(r => p.roles.has(r)).map(r => h("span", {class:"pill" + (r === "Casting director" ? " cd" : "")}, r))),
+      h("span", null, [...p.prods].map((r, i) => [i ? ", " : null, showLink(r)])),
+      p.aka.size ? [...p.aka].join(", ") : h("span", {class:"muted"}, "—")]), "No one matches these filters."));
+    controls.querySelector(".count").textContent = plural(rows.length, "person", "people");
+  }
+  const controls = h("div", {class:"filters"}, segFor(),
+    h("input", {type:"search", id:"f-people", placeholder:"Filter by name", value: peopleState.q, "aria-label":"Filter people", oninput: e => { peopleState.q = e.target.value; draw(); }}),
+    h("span", {class:"count"}));
+  wrap.append(head("People", "Everyone credited on a production on file, with every spelling their sources used."), controls, results);
+  draw();
+  return wrap;
+};
+
+function personView(p){
+  const coll = collaborators(p);
+  const roles = ROLES.filter(r => p.roles.has(r));
+  const creds = p.credits.slice().sort((a, b) => ROLES.indexOf(a.role) - ROLES.indexOf(b.role) || a.production.localeCompare(b.production));
+  const vens = new Set([...p.prods].map(r => r.venue));
+  return [
+    head(p.name, roles.join(" · "), h("button", {type:"button", class:"btn", onclick: () => openInNetwork("p:" + p.hash)}, "Show in network →"),
+      h("a", {href: p.kind === "cd" ? "#casting-directors" : "#people"}, p.kind === "cd" ? "Casting directors" : "People")),
+    p.aka.size ? h("p", {class:"muted", style:"margin:-14px 0 0"}, "Also credited as " + [...p.aka].join(", ") + ".") : null,
+    h("p", {class:"report"}, "Is this you, and is something wrong? ", h("a", {href:"#takedown", onclick: e => { e.preventDefault(); askTakedown(p.name); }}, "Request a correction or removal →")),
+    h("div", {class:"stats"}, [[p.prods.size, "Productions"], [coll.length, "Collaborators"], [vens.size, "Venues & tours"]].map(([v, l]) => h("div", null, h("b", null, v), h("span", null, l)))),
+    h("div", {class:"cols wide-left"},
+      h("section", {class:"creds", "aria-label":"Credits"}, h("p", {class:"lbl"}, "Credits · " + creds.length), creds.map(c => creditCard(c, "person"))),
+      card("Worked with", coll.length ? h("div", {class:"assoc"}, coll.map(x => h("a", {href:"#" + x.p.hash, class: x.p.kind === "cd" ? "cd" : null}, x.p.name, x.n > 1 ? h("small", null, "×" + x.n) : null))) : h("p", {class:"muted", style:"margin:0"}, "No collaborators on file yet.")))
+  ];
+}
+
+function showView(r){
+  const others = PRODS.filter(x => x !== r && x.show === r.show);
+  return [
+    head(r.show, null, h("button", {type:"button", class:"btn", onclick: () => openInNetwork("r:" + r.hash)}, "Show in network →"), h("a", {href:"#productions"}, "Productions")),
+    h("div", {class:"chips", style:"margin-top:-14px"}, h("span", {class:"pill venue"}, venueName(r.venue)), h("span", {class:"pill"}, r.type), h("span", {class:"pill"}, plural(r.urls.size, "source"))),
+    h("p", {class:"report"}, "Something wrong here? ", h("a", {href:"#takedown", onclick: e => { e.preventDefault(); askTakedown(r.show + " (" + venueName(r.venue) + ")"); }}, "Request a correction →")),
+    !r.team["Casting director"].length ? h("p", {class:"note"}, "No casting director is credited for this production in the sources so far. It will appear here once a source names them.") : null,
+    h("div", {class:"cols wide-left"},
+      h("section", {class:"creds", "aria-label":"Evidence"}, h("p", {class:"lbl"}, "Evidence · " + r.credits.length), r.credits.slice().sort((a, b) => ROLES.indexOf(a.role) - ROLES.indexOf(b.role)).map(c => creditCard(c, "show"))),
+      h("div", {style:"display:flex;flex-direction:column;gap:20px;min-width:0"},
+        card("Creative team", table(["Role", "Name"], ROLES.map(role => [role, joinLinks(r.team[role]) || (role === "Casting director" ? h("span", {class:"pill warn"}, "Not stated") : h("span", {class:"muted"}, "—"))]))),
+        others.length ? card("Other productions of this show", h("ul", {class:"att"}, others.map(o => h("li", null, h("p", null, showLink(o), h("br"), h("small", null, venueName(o.venue))))))) : null))
+  ];
+}
+
+function disclaimer(compact){
+  return h("aside", {class:"disc" + (compact ? " compact" : "")},
+    h("p", {class:"disc-h"}, "Our best attempt, not the final word"),
+    h("p", null, "Casting Weekly is compiled from public sources: show and venue websites, producers' announcements and the trade press. We publish a credit only when its source states it, but sources can be wrong, change after we read them, or leave people out."),
+    compact ? null : h("p", null, "Treat every credit as our best attempt. Check the linked source before you rely on it, and ", h("a", {href:"#takedown"}, "tell us if something is wrong"), "."));
+}
+const CONTACT = "privacy@castingweekly.com";
+function contactLine(){
+  const code = h("code", {class:"addr"}, CONTACT);
+  const btn = h("button", {type:"button", class:"btn small", onclick: async () => {
+    try { await navigator.clipboard.writeText(CONTACT); btn.textContent = "Copied"; }
+    catch(e){ const r = document.createRange(); r.selectNodeContents(code); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); btn.textContent = "Selected: press copy"; }
+  }}, "Copy address");
+  return h("p", {class:"addr-line"}, code, btn);
+}
+function legal(title, sub, sections){
+  return [head(title, sub, h("span", {class:"stamp"}, "Last updated 17 Nov 2026")),
+    h("div", {class:"legal"}, sections.map(([hd, ...body]) => h("section", null, h("h2", {class:"sec"}, hd), body)))];
+}
+const P = (...k) => h("p", null, ...k), UL = items => h("ul", null, items.map(x => h("li", null, x)));
+
+VIEWS.about = () => [
+  head("About", "Casting Weekly maps who casts what in UK theatre, and who they work with."),
+  disclaimer(false),
+  h("div", {class:"cols wide-left"},
+    h("section", {class:"prose"},
+      h("h2", {class:"sec"}, "How a credit gets here"),
+      h("ol", {class:"steps"},
+        h("li", null, "A production is added to the research queue by title and venue or tour."),
+        h("li", null, "Its casting director, director and writers are found in public sources: the show's own site, the venue's page, producers' announcements and the trade press."),
+        h("li", null, "A credit is published only when the cited page names that person in that role for that production. Anything less is left out."),
+        h("li", null, "Different spellings of one person's name are matched and shown under one name. The original spelling stays on each credit.")),
+      h("h2", {class:"sec"}, "Reading a credit"),
+      P("Each credit links to the public page it comes from. Productions of the same show at different venues, or on different tours, are kept separate, because each has its own team."),
+      P("A casting director marked “Not stated” means no source read so far names one. It does not mean the production has none."),
+      h("h2", {class:"sec"}, "Corrections and removal"),
+      P("If you're named here and something is wrong, or you'd rather not be listed, ", h("a", {href:"#takedown"}, "send a correction or takedown request"), ". See also our ", h("a", {href:"#terms"}, "terms"), " and ", h("a", {href:"#privacy"}, "privacy policy"), ".")),
+    card("Network key", h("ul", {class:"legend"},
+      h("li", null, h("span", {class:"dot", style:"background:var(--cd)"}), h("span", null, h("b", null, "Casting director"), h("br"), h("span", {class:"muted"}, "Large circles when centred, sized by productions"))),
+      h("li", null, h("span", {class:"dot", style:"background:var(--person)"}), h("span", null, h("b", null, "Creative"), h("br"), h("span", {class:"muted"}, "Director, writer, composer or lyricist"))),
+      h("li", null, h("span", {class:"dot", style:"background:var(--prod);border-radius:2px;transform:rotate(45deg)"}), h("span", null, h("b", null, "Production"), h("br"), h("span", {class:"muted"}, "One run at one venue, or one tour"))),
+      h("li", null, h("span", {class:"dot", style:"background:var(--venue)"}), h("span", null, h("b", null, "Venue or tour"), h("br"), h("span", {class:"muted"}, "Where the production plays")))))),
+  h("p", {class:"stamp"}, "Data updated " + fmtDate(RAW.updated) + " · " + plural(SOURCES.size, "public source"))
+];
+
+VIEWS.terms = () => legal("Terms of use", "The rules for using Casting Weekly. By using the site you agree to them.", [
+  ["Who we are", P("Casting Weekly (“we”, “us”) runs this site. You can contact us at ", h("b", null, CONTACT), ".")],
+  ["What the site is", P("Casting Weekly is a reference of professional credits in UK theatre: who cast, directed and wrote which productions, and where. It is compiled from publicly available sources, and every credit links to the page it comes from.")],
+  ["Our best attempt, not a guarantee",
+    P("We take care to publish a credit only when its source states it, but we cannot promise the information is complete, accurate or current. Sources can contain mistakes, change after we read them, or leave people out, and we can make mistakes too."),
+    P("The site is provided “as is” for general information. It is not professional advice. Check the linked source, or the production itself, before you rely on a credit for anything that matters, such as a submission, a contract or a public statement.")],
+  ["Using the site", UL([
+    "Use it for your own professional research and reference.",
+    "Don't copy or republish the site's content in bulk, or build a competing database from it, without our written permission.",
+    "Don't use it to harass, discriminate against or contact people in ways they haven't invited.",
+    "Don't try to break, overload or get around how the site works."])],
+  ["Content and links", P("The way the site is designed and organised belongs to us. The credits themselves are facts reported by others; the pages we link to belong to their owners, and we are not responsible for their content or availability.")],
+  ["Corrections and takedowns", P("If you're named here and think something is wrong, or you want a credit or your profile removed, use the ", h("a", {href:"#takedown"}, "corrections and takedowns page"), ". We review every request.")],
+  ["Our liability", P("To the extent the law allows, we are not liable for any loss arising from your use of, or reliance on, the site or the sources it links to. Nothing in these terms limits liability that cannot be limited by law, including for death or personal injury caused by negligence, or for fraud.")],
+  ["Changes", P("We may update these terms. The date at the top shows when they last changed. Continuing to use the site after a change means you accept the updated terms.")],
+  ["Law", P("These terms are governed by the law of England and Wales, and the courts of England and Wales have jurisdiction.")]
+]);
+
+VIEWS.privacy = () => legal("Privacy policy", "What personal information Casting Weekly holds, why, and the choices you have.", [
+  ["Who we are", P("Casting Weekly is the controller of the personal information described here. Contact us about privacy at ", h("b", null, CONTACT), ".")],
+  ["People named on the site",
+    P("The site lists people who work in theatre, such as casting directors, directors, writers, composers and lyricists. For each person we hold only:"),
+    UL(["their name as credited, and other spellings sources have used", "their professional role on each production", "the production, venue or tour", "a link to the public page that states the credit"]),
+    P("We take this from publicly available sources: production and venue websites, producers' announcements and the trade press. We do not collect contact details, photographs or private information about the people listed.")],
+  ["Why we hold it", P("We rely on legitimate interests (UK GDPR Article 6(1)(f)): providing the theatre industry with a reference of professional credits that have already been made public. We limit what we hold to professional credits, link every credit to its source, and remove information when asked where the balance favours the person named.")],
+  ["How long we keep it", P("We keep a credit while it is useful as a reference. We remove or correct it when its source changes, when it turns out to be wrong, or when we accept a request to remove it.")],
+  ["Your rights", P("If you're named on the site you can ask us to tell you what we hold, correct it, remove it, restrict how we use it, or object to our using it. Use the ", h("a", {href:"#takedown"}, "corrections and takedowns page"), " or email us. We will reply within one month."),
+    P("If you're unhappy with how we handle your information you can complain to the Information Commissioner's Office at ico.org.uk.")],
+  ["Requests you send us", P("If you send a correction or takedown request we keep what you give us (your name, email address, the request and, when you send it through the site while signed in, an account identifier) so we can deal with it and keep a record. We keep requests for up to two years after we close them.")],
+  ["Visiting the site", P(RAW.host === "web"
+      ? "The site is hosted by GitHub, Inc. on GitHub Pages, which processes technical information such as your IP address to serve the page, under its own privacy policy."
+      : "This copy of the site is hosted by Anthropic PBC on claude.ai, which processes technical information such as your IP address to serve the page, under its own privacy policy."),
+    P("Fonts load from Google Fonts and one code library loads from jsDelivr; both receive your IP address when your browser fetches them. We do not set our own cookies or use analytics. Your browser stores one preference on your device: the order you choose for the network's rows.")],
+  ["Sharing", P("We do not sell personal information or share it with anyone except the hosting, font and code-library providers named above, or where the law requires it.")],
+  ["Changes", P("We will update this policy if what we do changes. The date at the top shows when it last changed.")]
+]);
+
+let pendingTakedown = "";
+function askTakedown(subject){ pendingTakedown = subject; location.hash = "takedown"; }
+VIEWS.takedown = () => {
+  const subject = pendingTakedown; pendingTakedown = "";
+  const field = (label, id, control, hint) => h("div", {class:"field"}, h("label", {for:id}, label), control, hint ? h("p", {class:"hint"}, hint) : null);
+  const names = h("datalist", {id:"td-list"}, [...PEOPLE.map(p => p.name), ...PRODS.map(r => r.show + " (" + venueName(r.venue) + ")")].map(v => h("option", {value:v})));
+  const form = h("form", {class:"td-form", novalidate:true},
+    field("Your name", "td-name", h("input", {id:"td-name", name:"name", required:true, autocomplete:"name"})),
+    field("Your email", "td-email", h("input", {id:"td-email", name:"email", type:"email", required:true, autocomplete:"email"}), "We'll only use it to reply to this request."),
+    field("You are", "td-who", h("select", {id:"td-who", name:"who"}, ["The person named", "Their agent or representative", "Someone else"].map(v => h("option", null, v)))),
+    h("fieldset", {class:"field"}, h("legend", null, "What would you like us to do?"),
+      ["Correct a credit", "Remove a credit", "Remove my profile"].map((v, i) => h("label", {class:"radio"}, h("input", {type:"radio", name:"action", value:v, checked: i === 0}), v))),
+    field("Which person or production?", "td-subject", h("input", {id:"td-subject", name:"subject", list:"td-list", value:subject, required:true}), "Start typing a name or a show."),
+    field("Details", "td-details", h("textarea", {id:"td-details", name:"details", rows:5}), "What's wrong, and what it should say. A link to a source helps."),
+    h("label", {class:"check"}, h("input", {type:"checkbox", id:"td-ok", name:"ok", required:true}), "The information I've given is accurate."),
+    h("p", {class:"form-err", role:"alert", hidden:true}),
+    h("button", {type:"submit", class:"btn primary big"}, "Send request"), names);
+  const result = h("div", {class:"td-result", "aria-live":"polite"});
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const err = form.querySelector(".form-err"), d = Object.fromEntries(new FormData(form));
+    const missing = !(d.name || "").trim() ? "your name" : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test((d.email || "").trim()) ? "a valid email address" : !(d.subject || "").trim() ? "which person or production" : !d.ok ? "your confirmation that the information is accurate" : "";
+    if(missing){ err.textContent = "Please add " + missing + "."; err.hidden = false; return; }
+    err.hidden = true;
+    const btn = form.querySelector("button[type=submit]"); btn.disabled = true; btn.textContent = "Sending…";
+    const rec = {name:d.name.trim(), email:d.email.trim(), who:d.who, action:d.action, subject:d.subject.trim(), details:(d.details || "").trim(), sentAt:new Date().toISOString()};
+    let saved = false;
+    try {
+      const c = window.claude;
+      const db = c && c.use ? await c.use("db") : null, user = c && c.use ? await c.use("user") : null, uid = user ? await user.id() : null;
+      if(db && uid){
+        const mine = db.doc("takedowns/" + uid);
+        await mine.set({lastSentAt: rec.sentAt});
+        await mine.collection("requests").add(rec);
+        saved = true;
+      }
+    } catch(e2) { saved = false; }
+    btn.disabled = false; btn.textContent = "Send request";
+    if(saved){
+      form.reset(); result.replaceChildren(h("div", {class:"note ok"}, h("b", null, "Request received. "), "We'll reply to " + rec.email + " within one month."));
+    } else {
+      const body = `Request: ${rec.action}\nAbout: ${rec.subject}\nFrom: ${rec.name} (${rec.who})\nReply to: ${rec.email}\n\n${rec.details}`;
+      const box = h("textarea", {readonly:true, rows:7, class:"td-copy", "aria-label":"Your request"}); box.value = body;
+      const copy = h("button", {type:"button", class:"btn"}, "Copy request");
+      copy.onclick = async () => { try { await navigator.clipboard.writeText(body); copy.textContent = "Copied"; } catch(e3){ box.select(); copy.textContent = "Selected: press copy"; } };
+      result.replaceChildren(h("div", {class:"note"},
+        h("p", {style:"margin:0 0 10px"}, h("b", null, "One more step. "), "This page can't send it for you here. Email your request to us and we'll reply within one month."),
+        contactLine(), box,
+        h("p", {class:"addr-line"}, copy, h("a", {class:"btn", href:"mailto:" + CONTACT + "?subject=" + encodeURIComponent(rec.action + ": " + rec.subject) + "&body=" + encodeURIComponent(body)}, "Open in email app"))));
+    }
+    result.scrollIntoView({block:"nearest"});
+  });
+  const inbox = h("div");
+  (async () => {   // the owner sees requests sent through the site
+    try {
+      const c = window.claude; if(!c || !c.use) return;
+      const user = await c.use("user"); if(!user || !(await user.isOwner())) return;
+      const db = await c.use("db"); if(!db) return;
+      const senders = await db.collection("takedowns").get(), rows = [];
+      for(const d of senders.docs){ const rq = await db.doc("takedowns/" + d.id).collection("requests").get(); rq.docs.forEach(x => rows.push(x.data())); }
+      rows.sort((a, b) => String(b.sentAt).localeCompare(String(a.sentAt)));
+      inbox.replaceChildren(card("Requests received · only you see this", table(["Sent", "Request", "About", "From", "Details"],
+        rows.map(r => [fmtDate(String(r.sentAt).slice(0, 10)), r.action, r.subject, h("span", null, r.name, h("span", {class:"sub"}, r.email + " · " + r.who)), r.details || "—"]), "No requests yet.")));
+    } catch(e){}
+  })();
+  return [
+    head("Corrections and takedowns", "If you're named on Casting Weekly, you can ask us to correct a credit, remove a credit or remove your profile."),
+    h("div", {class:"cols wide-left"},
+      card("Send a request", [form, result]),
+      h("div", {style:"display:flex;flex-direction:column;gap:20px;min-width:0"},
+        card("What happens next", h("ol", {class:"steps"},
+          h("li", null, "We check the request against the credit and its source."),
+          h("li", null, "We reply within one month, and sooner where we can."),
+          h("li", null, "If we remove a credit or a profile, we also stop it coming back when the site is updated."))),
+        card("Prefer email?", [h("p", {class:"muted", style:"margin:0"}, "Write to us with your name, the person or production, and what you'd like changed."), contactLine()]),
+        disclaimer(true))),
+    inbox
+  ];
+};
+
+/* ---------- landing ---------- */
+// the holding page's drifting network, drawn behind the hero with real names from the data
+function heroNet(section){
+  const c = h("canvas", {"aria-hidden":"true"}), veil = h("div", {class:"veil", "aria-hidden":"true"});
+  section.prepend(c, veil);
+  const x = c.getContext("2d"), reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const COL = ["94,234,212", "167,139,250", "238,241,244"];   // productions, people, venues
+  const LABELS = [PRODS.slice().sort((a, b) => b.credits.length - a.credits.length).slice(0, 10).map(r => r.show),
+                  CDS.slice(0, 10).map(p => p.name), [...new Set(PRODS.map(r => venueName(r.venue).split(",")[0]))].slice(0, 8)];
+  let W = 0, H = 0, nodes = [], edges = [], pulses = [], mouse = {x:-9999, y:-9999}, raf = 0;
+  function build(){
+    const dpr = Math.min(devicePixelRatio || 1, 2), r = c.getBoundingClientRect();
+    W = r.width; H = r.height; if(!W || !H) return;
+    c.width = W * dpr; c.height = H * dpr; x.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const n = Math.max(30, Math.min(90, Math.round(W * H / 9000))), used = [0, 0, 0];
+    nodes = [];
+    for(let i = 0; i < n; i++){
+      const t = Math.random() < .42 ? 1 : (Math.random() < .6 ? 0 : 2), hub = Math.random() < .16 && used[t] < LABELS[t].length;
+      nodes.push({x:Math.random() * W, y:Math.random() * H, vx:(Math.random() - .5) * .16, vy:(Math.random() - .5) * .16, t, hub,
+                  r: hub ? 3.4 : 1.6 + Math.random() * 1.2, label: hub ? LABELS[t][used[t]++] : null, glow:0});
+    }
+    edges = []; const seen = new Set();
+    nodes.forEach((a, i) => nodes.map((b, j) => ({j, d:(a.x - b.x) ** 2 + (a.y - b.y) ** 2})).filter(o => o.j !== i)
+      .sort((p, q) => p.d - q.d).slice(0, a.hub ? 5 : 2)
+      .forEach(o => { const k = i < o.j ? i + "-" + o.j : o.j + "-" + i; if(!seen.has(k)){ seen.add(k); edges.push([i, o.j]); } }));
+  }
+  function pulse(){ if(!edges.length) return; const e = edges[Math.floor(Math.random() * edges.length)], f = Math.random() < .5;
+    pulses.push({a: f ? e[1] : e[0], b: f ? e[0] : e[1], p:0, s:.006 + Math.random() * .01, hops:2 + Math.floor(Math.random() * 3)}); }
+  function step(){
+    if(!c.isConnected){ cancelAnimationFrame(raf); return; }
+    x.clearRect(0, 0, W, H);
+    for(const n of nodes){
+      if(!reduce){ n.x += n.vx; n.y += n.vy; }
+      if(n.x < -20) n.x = W + 20; if(n.x > W + 20) n.x = -20; if(n.y < -20) n.y = H + 20; if(n.y > H + 20) n.y = -20;
+      const md = Math.hypot(n.x - mouse.x, n.y - mouse.y); n.glow = Math.max(n.glow * .94, md < 140 ? 1 - md / 140 : 0);
+    }
+    for(const [i, j] of edges){
+      const a = nodes[i], b = nodes[j], d = Math.hypot(a.x - b.x, a.y - b.y); if(d > 300) continue;
+      const g = Math.max(a.glow, b.glow);
+      x.strokeStyle = `rgba(150,170,190,${(1 - d / 300) * (.22 + g * .5)})`; x.lineWidth = .7 + g;
+      x.beginPath(); x.moveTo(a.x, a.y); x.lineTo(b.x, b.y); x.stroke();
+    }
+    for(let k = pulses.length - 1; k >= 0; k--){
+      const q = pulses[k], a = nodes[q.a], b = nodes[q.b]; q.p += q.s;
+      const px = a.x + (b.x - a.x) * q.p, py = a.y + (b.y - a.y) * q.p;
+      x.fillStyle = `rgba(${COL[b.t]},.95)`; x.shadowColor = `rgba(${COL[b.t]},1)`; x.shadowBlur = 12;
+      x.beginPath(); x.arc(px, py, 1.8, 0, 7); x.fill(); x.shadowBlur = 0;
+      if(q.p >= 1){
+        b.glow = Math.max(b.glow, .9);
+        const next = edges.filter(e => e.includes(q.b) && !e.includes(q.a));
+        if(q.hops > 0 && next.length){ const e = next[Math.floor(Math.random() * next.length)]; q.a = q.b; q.b = e[0] === q.b ? e[1] : e[0]; q.p = 0; q.hops--; }
+        else pulses.splice(k, 1);
+      }
+    }
+    x.font = '500 10px "JetBrains Mono", monospace';
+    for(const n of nodes){
+      const col = COL[n.t];
+      if(n.hub){ x.strokeStyle = `rgba(${col},${.25 + n.glow * .5})`; x.lineWidth = 1; x.beginPath(); x.arc(n.x, n.y, n.r + 4 + n.glow * 3, 0, 7); x.stroke(); }
+      x.fillStyle = `rgba(${col},${.55 + n.glow * .45})`; x.beginPath(); x.arc(n.x, n.y, n.r + n.glow * 1.5, 0, 7); x.fill();
+      if(n.label){ x.fillStyle = `rgba(${col},${.42 + n.glow * .5})`; x.fillText(n.label.toUpperCase(), n.x + n.r + 9, n.y + 3.5); }
+    }
+    if(!reduce && Math.random() < .05 && pulses.length < 12) pulse();
+    if(!reduce) raf = requestAnimationFrame(step);
+  }
+  section.addEventListener("pointermove", e => { const r = c.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+  section.addEventListener("pointerleave", () => { mouse.x = mouse.y = -9999; });
+  new ResizeObserver(() => { build(); if(reduce) step(); }).observe(section);
+  requestAnimationFrame(() => { build(); for(let i = 0; i < 6; i++) pulse(); step(); });
+  return section;
+}
+function heroCredit(c){
+  const r = prods.get(c.production), p = people.get(c.person);
+  return h("article", {class:"cred"},
+    h("div", {class:"cred-h"}, h("span", {class:"role cd"}, "Casting director"), personLink(p)),
+    h("div", {class:"cred-h"}, showLink(r), h("span", {class:"muted"}, venueName(r.venue))),
+    h("div", {class:"prov"}, srcPill(c.url)));
+}
+VIEWS.home = () => {
+  const n = t => PRODS.filter(r => r.type === t).length;
+  // three different casting directors on three different productions and pages
+  const hero = [], usedProd = new Set(), usedUrl = new Set();
+  for(const p of CDS){
+    if(hero.length === 3) break;
+    const c = p.credits.filter(c => c.role === "Casting director" && !usedProd.has(c.production) && !usedUrl.has(c.url))
+      .sort((a, b) => (a.evidence.length > 160) - (b.evidence.length > 160) || a.evidence.length - b.evidence.length)[0];
+    if(c){ hero.push(c); usedProd.add(c.production); usedUrl.add(c.url); }
+  }
+  const feat = (color, title, text, href, label) => h("article", {class:"lp-feat"},
+    h("span", {class:"dot", style:"background:" + color}), h("h3", null, title), h("p", null, text), h("a", {class:"more", href}, label));
+  return [
+    heroNet(h("section", {class:"lp-hero"},
+      h("div", null,
+        h("p", {class:"lp-eyebrow"}, "West End · UK tours · Regional"),
+        h("h1", null, "Who casts what,", h("br"), h("span", {class:"soft"}, "and who they cast it with.")),
+        h("p", {class:"lp-lede"}, "Casting Weekly maps the casting directors behind UK productions and the directors, writers and composers they work alongside. Every credit is traced to the public page that states it."),
+        h("div", {class:"lp-ctas"}, h("a", {class:"btn primary big", href:"#network"}, "Explore the network →"), h("a", {class:"btn big", href:"#productions"}, "Browse productions"))),
+      h("div", {class:"lp-stack", "aria-label":"Example credits"}, hero.map(heroCredit)))),
+    h("section", {class:"lp-figs", "aria-label":"Coverage today"},
+      [[PRODS.length, "Productions"], [CDS.length, "Casting directors"], [PEOPLE.length - CDS.length, "Creatives"], [RAW.edges.length, "Sourced credits"], [SOURCES.size, "Public sources"]]
+        .map(([v, l]) => h("div", null, h("b", null, v), h("span", null, l)))),
+    disclaimer(false),
+    h("section", {class:"lp-sec"},
+      h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "What you can do"), h("h2", null, "The working relationships behind every production, in one place")),
+      h("div", {class:"lp-feats"},
+        feat("var(--cd)", "See who works with whom", "Follow a casting director to the directors, writers and venues they keep returning to. Reorder the network to ask the question you have.", "#network", "Open the network →"),
+        feat("var(--prod)", "Check any credit at source", "Every name links to the public page that credits them: the show's site, the venue's page or the trade press.", "#productions", "Browse productions →"),
+        feat("var(--warn)", "Know what isn't stated", `${plural(NOCD.length, "production")} on file ${NOCD.length === 1 ? "has" : "have"} no casting credit in the sources yet. Gaps are shown, never filled in.`, "#productions", "See productions →"))),
+    h("section", {class:"lp-sec"},
+      h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "Right now"), h("h2", null, "Most active casting directors"), h("p", null, "Ranked by productions on file.")),
+      h("ol", {class:"lp-cds"}, CDS.slice(0, 5).map(p => h("li", null, personLink(p), h("span", {class:"n"}, plural(p.prods.size, "production")),
+        h("span", {class:"chips"}, [...p.prods].sort((a, b) => a.show.localeCompare(b.show)).map(r => h("a", {class:"pill prod", href:"#" + r.hash, style:"text-decoration:none"}, r.show))))))),
+    h("section", {class:"lp-sec"},
+      h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "Coverage"), h("h2", null, "From the West End to the regions")),
+      h("div", {class:"lp-cov"},
+        ["London", "Touring", "Regional"].map(t => h("div", {class:"lp-tile"}, h("b", null, n(t)), h("span", null, t))),
+        h("div", {class:"lp-next"}, h("p", {class:"lbl"}, "Coming next · " + RAW.queue.length),
+          RAW.queue.length ? queueList(RAW.queue) : h("p", {class:"muted", style:"margin:0"}, "Nothing queued.")))),
+    h("section", {class:"lp-sec", id:"lp-how"},
+      h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "How it works"), h("h2", null, "A credit goes live only when its source says so")),
+      h("div", {class:"lp-how"},
+        h("ol", {class:"steps"},
+          h("li", null, "A production is added by title and venue or tour."),
+          h("li", null, "Its casting director, director and writers are found in public sources: the show's own site, the venue, producers' announcements and the trade press."),
+          h("li", null, "A credit is published only when the cited page names that person in that role for that production. Anything less is left out."),
+          h("li", null, "Different spellings of one person's name are matched, so each person has one profile. The original spelling stays on every credit.")),
+        card("Named here?", [h("p", {class:"muted", style:"margin:0"}, "If a credit about you is wrong, or you'd rather not be listed, tell us and we'll review it within one month."),
+          h("span", {class:"list-inline", style:"gap:4px 18px"}, h("a", {class:"more", href:"#takedown"}, "Corrections & takedowns →"), h("a", {class:"more", href:"#privacy"}, "Privacy →"), h("a", {class:"more", href:"#terms"}, "Terms →"))]))),
+    h("section", {class:"lp-band"},
+      h("div", null, h("h2", null, "See the network for yourself."), h("p", null, "Updated " + fmtDate(RAW.updated) + " · " + plural(RAW.edges.length, "sourced credit"))),
+      h("div", {class:"lp-ctas", style:"margin:0"}, h("a", {class:"btn primary big", href:"#network"}, "Explore the network →"), h("a", {class:"btn big", href:"#overview"}, "Open the overview")))
+  ];
+};
+
+const notFound = () => [head("Page not found", "That link doesn't match a person or production on file."), h("p", null, h("a", {class:"btn", href:"#overview"}, "Go to overview"))];
+
+/* ---------- routing ---------- */
+const page = document.getElementById("page"), netEl = document.getElementById("net");
+function route(){
+  const key = decodeURIComponent(location.hash.slice(1)) || "home";
+  document.body.dataset.view = key === "home" ? "home" : key === "network" ? "net" : "app";
+  let render = VIEWS[key], nav = key;
+  if(!render && byHash.has(key)){
+    const x = byHash.get(key);
+    if(key.startsWith("person-")){ render = () => personView(x); nav = x.kind === "cd" ? "casting-directors" : "people"; }
+    else { render = () => showView(x); nav = "productions"; }
+  }
+  if(key === "network") render = null;
+  else if(!render){ render = notFound; nav = ""; }
+  document.querySelectorAll(".nav a").forEach(a => a.getAttribute("href") === "#" + nav ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
+  const isNet = key === "network";
+  netEl.hidden = !isNet; page.hidden = isNet;
+  closeMenus();
+  if(isNet) Net.show();
+  else { page.replaceChildren(...[].concat(render()).filter(Boolean)); window.scrollTo(0, 0); }
+}
+addEventListener("hashchange", route);
+document.getElementById("lp-how-link").addEventListener("click", e => {
+  const t = document.getElementById("lp-how"); if(!t) return; e.preventDefault();
+  t.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+});
+
+/* ---------- search ---------- */
+const q = document.getElementById("q"), sugg = document.getElementById("sugg"); let active = 0, hits = [];
+const SEARCH = [...PEOPLE.map(p => ({label:p.name, extra:[...p.aka].join(" "), kind:p.kind === "cd" ? "Casting director" : "Creative", color:p.kind === "cd" ? "var(--cd)" : "var(--person)", hash:p.hash, w:p.kind === "cd" ? 0 : 1})),
+  ...PRODS.map(r => ({label:r.show, extra:r.venue, kind:venueName(r.venue).split(",")[0], color:"var(--prod)", hash:r.hash, w:2}))];
+function runSearch(){
+  const t = q.value.toLowerCase().trim();
+  hits = t ? SEARCH.filter(s => (s.label + " " + s.extra).toLowerCase().includes(t)).sort((a, b) => a.w - b.w || a.label.localeCompare(b.label)).slice(0, 8) : [];
+  sugg.replaceChildren(...hits.map((s, i) => h("a", {href:"#" + s.hash, role:"option", "aria-selected": String(i === 0), onmousedown: e => e.preventDefault(), onclick: () => { q.value = ""; sugg.hidden = true; }},
+    h("span", {class:"dot", style:"background:" + s.color}), s.label, h("small", null, s.kind))));
+  sugg.hidden = !hits.length; active = 0;
+}
+q.addEventListener("input", runSearch);
+q.addEventListener("keydown", e => {
+  if(e.key === "ArrowDown" || e.key === "ArrowUp"){ e.preventDefault(); active = (active + (e.key === "ArrowDown" ? 1 : -1) + hits.length) % Math.max(hits.length, 1); [...sugg.children].forEach((b, i) => b.setAttribute("aria-selected", String(i === active))); }
+  if(e.key === "Enter" && hits[active]){ location.hash = hits[active].hash; q.value = ""; sugg.hidden = true; q.blur(); }
+  if(e.key === "Escape"){ q.value = ""; runSearch(); q.blur(); }
+});
+q.addEventListener("blur", () => setTimeout(() => { sugg.hidden = true; }, 150));
+addEventListener("keydown", e => { if(e.key === "/" && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)){ e.preventDefault(); q.focus(); } });
+
+/* ---------- network ---------- */
+let pending = null;
+function openInNetwork(id){ pending = id; if(location.hash === "#network") Net.show(); else location.hash = "network"; }
+const Net = {started:false};
+Net.show = function(){
+  if(!Net.started){ Net.started = true; Net.init(); }
+  requestAnimationFrame(() => { if(pending){ Net.select(pending); pending = null; } else Net.fit(0); });
+};
+const COARSE = matchMedia("(pointer: coarse)").matches;
+const isPhone = () => matchMedia("(max-width: 760px)").matches;
+Net.init = function(){
+  const KIND = {cd:{label:"Casting director", color:"var(--cd)", pill:"cd"}, person:{label:"Creative", color:"var(--person)", pill:""},
+                prod:{label:"Production", color:"var(--prod)", pill:"prod"}, theatre:{label:"Venue or tour", color:"var(--venue)", pill:"venue"}};
+  const ROW_NAME = {cd:"Casting directors", person:"Creatives", prod:"Productions", theatre:"Venues & tours"};
+  const nodes = new Map();
+  const node = (id, kind, label, ref) => { let n = nodes.get(id); if(!n){ n = {id, kind, label, ref, nbrs:new Set(), prods:new Set()}; nodes.set(id, n); } return n; };
+  for(const r of PRODS){
+    const pn = node("r:" + r.hash, "prod", r.show, r); pn.prods.add(pn.id);
+    const tn = node("t:" + r.venue, "theatre", venueName(r.venue), venues.get(r.venue)); tn.prods.add(pn.id);
+    pn.nbrs.add(tn.id); tn.nbrs.add(pn.id);
+    pn.members = {cd:[], person:[], theatre:[tn], prod:[pn]};
+    for(const p of new Set(r.credits.map(c => people.get(c.person)))){
+      const n = node("p:" + p.hash, p.kind, p.name, p); n.prods.add(pn.id); n.nbrs.add(pn.id); pn.nbrs.add(n.id); pn.members[p.kind].push(n);
+    }
+  }
+  const N = [...nodes.values()], PN = N.filter(n => n.kind === "prod");
+  const count = k => N.filter(n => n.kind === k).length;
+  const shares = (a, b) => { for(const id of a.prods) if(b.prods.has(id)) return true; return false; };
+  const deg = n => n.kind === "prod" ? n.nbrs.size - 1 : n.prods.size;
+
+  /* rail */
+  const visible = {cd:true, person:true, prod:true, theatre:true};
+  let ORDER = ["cd", "person", "prod", "theatre"];
+  try { const o = JSON.parse(localStorage.getItem("cw-chain") || "null"); if(Array.isArray(o) && o.length === 4 && ORDER.every(k => o.includes(k))) ORDER = o; } catch(e) {}
+  const tg = document.getElementById("toggles"), toggleBtn = {}, rowEl = {};
+  for(const k of ORDER){
+    const sw = h("i", {class:"sw" + (k === "prod" ? " sq" : ""), style:"background:" + KIND[k].color});
+    const b = h("button", {type:"button", class:"tg", "aria-pressed":"true", onclick: () => { visible[k] = !visible[k]; b.setAttribute("aria-pressed", String(visible[k])); rewire(); }}, sw, ROW_NAME[k], h("small", null, count(k)));
+    const grip = h("button", {type:"button", class:"grip", "aria-label":"Move " + ROW_NAME[k] + " in the chain (arrow keys)"}, "⠿");
+    const row = h("div", {class:"row", "data-k":k}, grip, b);
+    grip.addEventListener("keydown", e => {
+      if(e.key !== "ArrowUp" && e.key !== "ArrowDown") return; e.preventDefault();
+      const sib = e.key === "ArrowUp" ? row.previousElementSibling : row.nextElementSibling; if(!sib) return;
+      e.key === "ArrowUp" ? tg.insertBefore(row, sib) : tg.insertBefore(sib, row); grip.focus(); commitOrder();
+    });
+    grip.addEventListener("pointerdown", e => {
+      e.preventDefault(); row.classList.add("dragging");
+      const move = ev => { const rows = [...tg.children].filter(r => r !== row); const after = rows.find(r => { const bb = r.getBoundingClientRect(); return ev.clientY < bb.top + bb.height / 2; }); after ? tg.insertBefore(row, after) : tg.append(row); };
+      const up = () => { removeEventListener("pointermove", move); removeEventListener("pointerup", up); removeEventListener("pointercancel", up); row.classList.remove("dragging"); commitOrder(); };
+      addEventListener("pointermove", move); addEventListener("pointerup", up); addEventListener("pointercancel", up);
+    });
+    tg.append(row); toggleBtn[k] = b; rowEl[k] = row;
+  }
+  function commitOrder(){
+    const o = [...tg.children].map(r => r.dataset.k); if(o.join() === ORDER.join()) return;
+    ORDER = o; try { localStorage.setItem("cw-chain", JSON.stringify(ORDER)); } catch(e) {}
+    rewire();
+  }
+  const centreBox = document.getElementById("centre"), centreBtn = {};
+  for(const k of ["cd", "prod", "theatre", "person"]){
+    const b = h("button", {type:"button", class:"tg", "aria-pressed": String(k === "cd"), onclick: () => layout(k)}, h("i", {class:"sw" + (k === "prod" ? " sq" : ""), style:"background:" + KIND[k].color}), ROW_NAME[k]);
+    centreBox.append(b); centreBtn[k] = b;
+  }
+  const idx = document.getElementById("cdindex");
+  N.filter(n => n.kind === "cd").sort((a, b) => b.prods.size - a.prods.size || a.label.localeCompare(b.label))
+    .forEach(n => idx.append(h("button", {type:"button", onclick: () => { select(n, true); if(matchMedia("(max-width: 1100px)").matches) closeRail(); }}, n.label, h("small", null, n.prods.size))));
+
+  if(COARSE) document.querySelector(".hud").textContent = "Tap a node to open its file · pinch to zoom";
+  /* drawing */
+  const stage = document.getElementById("stage");
+  const W = () => stage.clientWidth, H = () => stage.clientHeight;
+  const svg = d3.select(stage).append("svg").attr("role", "img").attr("aria-label", "Network of casting directors, creatives, productions and venues");
+  const glow = svg.append("defs").append("filter").attr("id", "glow").attr("x", "-50%").attr("y", "-50%").attr("width", "200%").attr("height", "200%");
+  glow.append("feGaussianBlur").attr("stdDeviation", "3").attr("result", "b");
+  const fm = glow.append("feMerge"); fm.append("feMergeNode").attr("in", "b"); fm.append("feMergeNode").attr("in", "SourceGraphic");
+  const root = svg.append("g");
+  const zoom = d3.zoom().scaleExtent([.25, 4]).on("zoom", ev => root.attr("transform", ev.transform));
+  svg.call(zoom).on("dblclick.zoom", null);
+  const ring = root.append("g").attr("pointer-events", "none");
+  const ringCircle = ring.append("circle").style("fill", "none").style("stroke", "var(--line2)").attr("stroke-dasharray", "3 6");
+  const ringText = ring.append("text").attr("text-anchor", "middle").attr("class", "ring-text");
+  const linkG = root.append("g");
+  let L = linkG.selectAll("line"), shown = [];
+  const HUB_MAX = {cd:40, prod:12, theatre:12, person:12};
+  const RING_TEXT = {cd:"NO CASTING DIRECTOR STATED", prod:"NOT LINKED TO A LEADING PRODUCTION", theatre:"NOT LINKED TO A LEADING VENUE", person:"NOT LINKED TO A LEADING CREATIVE"};
+  let HUBS = [];
+  const size = n => n.hub ? 16 + Math.min(deg(n), 8) * 2.5 : n.kind === "prod" ? 7 : n.kind === "theatre" ? 6 : n.kind === "cd" ? 6 : 3.5;
+  const G = root.append("g").selectAll("g").data(N).join("g").style("cursor", "pointer")
+    .attr("tabindex", 0).attr("role", "button").attr("aria-label", n => KIND[n.kind].label + ": " + n.label)
+    .on("click", (ev, n) => select(n, isPhone())).on("keydown", (ev, n) => { if(ev.key === "Enter") select(n, isPhone()); });
+  G.call(d3.drag().on("start", (ev, d) => { if(!ev.active) sim.alphaTarget(.25).restart(); d.fx = d.x; d.fy = d.y; })
+    .on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on("end", (ev, d) => { if(!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+  const T = root.append("g").selectAll("text").data(N).join("text").attr("text-anchor", "middle").text(n => n.label.length > 34 ? n.label.slice(0, 32) + "…" : n.label);
+
+  function chainLinks(){
+    const rows = ORDER.filter(k => visible[k]), out = new Map();
+    for(let i = 0; i + 1 < rows.length; i++){
+      const A = rows[i], B = rows[i + 1];
+      for(const p of PN) for(const a of p.members[A]) for(const b of p.members[B]){
+        if(a === b) continue;
+        const id = a.id + "|" + b.id; let l = out.get(id);
+        if(!l) out.set(id, l = {key:id, source:a.id, target:b.id, n:0, kind: A === "theatre" || B === "theatre" ? "venue" : A === "cd" || B === "cd" ? "cd" : "credit"});
+        l.n++;
+      }
+    }
+    return [...out.values()];
+  }
+  function joinEdges(){
+    for(const k of ORDER) rowEl[k].style.opacity = visible[k] ? "" : ".55";
+    shown = chainLinks();
+    L = linkG.selectAll("line").data(shown, d => d.key).join("line").attr("class", d => "l-" + d.kind)
+      .attr("stroke-width", d => (d.kind === "venue" ? 1 : 1.3) + Math.min(d.n - 1, 3) * .6);
+    sim.force("link").links(shown);
+  }
+  function draw(){
+    G.selectAll("*").remove();
+    G.each(function(n){
+      const g = d3.select(this);
+      g.append("circle").attr("class", "hit").attr("r", COARSE ? Math.max(size(n) + 8, 18) : size(n) + 4).style("fill", "transparent");
+      if(n.hub){
+        g.append("circle").attr("r", size(n) + 9).style("fill", "none").style("stroke", KIND[n.kind].color).attr("stroke-opacity", .35).attr("stroke-dasharray", "2 4");
+        g.append("circle").attr("class", "core").attr("r", size(n)).style("fill", KIND[n.kind].color).attr("filter", "url(#glow)");
+        g.append("text").attr("text-anchor", "middle").attr("dy", "0.35em").attr("style", "font:600 12px var(--mono);fill:var(--on-accent);pointer-events:none")
+          .text(n.label.split(/\s+/).filter(w => /^[A-Za-z]/.test(w)).map(w => w[0]).join("").slice(0, 3).toUpperCase());
+      }
+      else if(n.kind === "prod") g.append("rect").attr("class", "core").attr("x", -size(n)).attr("y", -size(n)).attr("width", size(n) * 2).attr("height", size(n) * 2).attr("transform", "rotate(45)").style("fill", "var(--bg)").style("stroke", "var(--prod)").attr("stroke-width", 1.6);
+      else if(n.kind === "theatre") g.append("circle").attr("class", "core").attr("r", size(n)).style("fill", "var(--venue-soft)").style("stroke", "var(--venue)").attr("stroke-width", 1.6);
+      else g.append("circle").attr("class", "core").attr("r", size(n)).style("fill", KIND[n.kind].color).attr("opacity", .9);
+    });
+    G.append("title").text(n => n.kind === "prod" ? n.label + " · " + venueName(n.ref.venue) : n.label);
+    T.attr("class", n => "node-label" + (n.hub ? " hub" : n.kind === "prod" ? " prod" : "")).style("fill", n => n.hub ? KIND[n.kind].color : null)
+     .attr("dy", n => n.hub ? size(n) + 26 : n.kind === "theatre" ? size(n) + 18 : -size(n) - 8);
+  }
+  const pull = n => n.hub ? .9 : n.loose ? .5 : n.tx != null ? .12 : 0;
+  const sim = d3.forceSimulation(N)
+    .force("link", d3.forceLink([]).id(d => d.id)).force("charge", d3.forceManyBody()).force("collide", d3.forceCollide())
+    .force("x", d3.forceX(n => n.tx ?? 0)).force("y", d3.forceY(n => n.ty ?? 0))
+    .on("tick", () => {
+      L.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+      G.attr("transform", d => `translate(${d.x},${d.y})`); T.attr("x", d => d.x).attr("y", d => d.y);
+    });
+  function forces(){
+    sim.force("link").distance(l => (l.source.hub || l.target.hub) ? 95 : l.kind === "venue" ? 60 : 38).strength(l => (l.source.hub || l.target.hub) ? .25 : .6);
+    sim.force("charge").strength(n => n.hub ? -500 : n.kind === "prod" ? -160 : -40);
+    sim.force("collide").radius(n => size(n) + (n.hub ? 22 : 10));
+    sim.force("x").x(n => n.tx ?? 0).strength(pull); sim.force("y").y(n => n.ty ?? 0).strength(pull);
+  }
+  function layout(kind){
+    visible[kind] = true; toggleBtn[kind].setAttribute("aria-pressed", "true");
+    for(const k in centreBtn) centreBtn[k].setAttribute("aria-pressed", String(k === kind));
+    N.forEach(n => { n.hub = false; n.loose = false; n.tx = n.ty = null; });
+    HUBS = N.filter(n => n.kind === kind && !/not stated/i.test(n.label)).sort((a, b) => deg(b) - deg(a) || a.label.localeCompare(b.label)).slice(0, HUB_MAX[kind]);
+    HUBS.forEach(x => x.hub = true);
+    const R_IN = HUBS.length > 1 ? Math.max(150, HUBS.length * 16) : 0, R_RING = R_IN + 260;
+    HUBS.forEach((x, i) => { const a = -Math.PI / 2 + i * 2 * Math.PI / HUBS.length; x.tx = R_IN * Math.cos(a); x.ty = R_IN * Math.sin(a); });
+    const loose = [];
+    for(const n of N){
+      if(n.hub) continue;
+      const hs = HUBS.filter(x => shares(x, n));
+      if(hs.length){
+        const mx = d3.mean(hs, x => x.tx), my = d3.mean(hs, x => x.ty), d = Math.hypot(mx, my) || 1;
+        n.tx = mx + (HUBS.length > 1 ? mx / d : 0) * 110; n.ty = my + (HUBS.length > 1 ? my / d : 1) * 110;
+      } else if(n.kind === "prod" || n.kind === kind){ n.loose = true; loose.push(n); }
+    }
+    loose.forEach((p, i) => { const a = -Math.PI / 2 + (i + .5) * 2 * Math.PI / loose.length; p.tx = R_RING * Math.cos(a); p.ty = R_RING * Math.sin(a); });
+    N.forEach(n => { if(n.tx != null){ n.x = n.tx + (Math.random() - .5) * 20; n.y = n.ty + (Math.random() - .5) * 20; } });
+    ring.style("display", loose.length ? null : "none");
+    ringCircle.attr("r", R_RING); ringText.attr("y", -R_RING - 14).text(RING_TEXT[kind]);
+    joinEdges(); draw(); forces();
+    deselect();
+    sim.alpha(1).restart();
+    setTimeout(() => { if(!selected) fit(); }, 1400);
+  }
+  function rewire(){ joinEdges(); paint(); forces(); sim.alpha(.6).restart(); }
+  sim.on("end", () => { if(!selected) fit(); });
+
+  let selected = null;
+  function focusSet(n){ const s = new Set([n.id]); n.nbrs.forEach(id => s.add(id)); if(n.kind !== "prod") n.nbrs.forEach(id => nodes.get(id).nbrs.forEach(x => s.add(x))); return s; }
+  function paint(){
+    const f = selected ? focusSet(selected) : null, show = n => visible[n.kind];
+    G.style("display", n => show(n) ? null : "none").style("opacity", n => !f || f.has(n.id) ? 1 : .1);
+    G.select(".core").style("stroke", n => n === selected ? "var(--text)" : n.kind === "prod" ? "var(--prod)" : n.kind === "theatre" ? "var(--venue)" : null)
+      .attr("stroke-width", n => n === selected ? 3 : (n.kind === "prod" || n.kind === "theatre") ? 1.6 : 0);
+    L.style("display", l => show(l.source) && show(l.target) ? null : "none").style("opacity", l => !f || (f.has(l.source.id) && f.has(l.target.id)) ? 1 : .05);
+    const few = f && f.size <= 45;
+    let lab = null;   // on a phone: the selection and its 12 best-connected neighbours only
+    if(selected && isPhone()) lab = new Set([selected.id, ...[...selected.nbrs].map(id => nodes.get(id)).filter(show).sort((a, b) => deg(b) - deg(a)).slice(0, 12).map(n => n.id)]);
+    T.style("display", n => show(n) && (lab ? lab.has(n.id) || (n.hub && f.has(n.id)) : n.hub || (few && f.has(n.id))) ? null : "none").style("opacity", n => !f || f.has(n.id) ? 1 : .25);
+  }
+  function fit(dur = 700){
+    const vis = N.filter(n => visible[n.kind] && n.x != null); if(!vis.length || !W()) return;
+    const xs = vis.map(n => n.x), ys = vis.map(n => n.y), pad = 70;
+    const x0 = Math.min(...xs) - pad, x1 = Math.max(...xs) + pad, y0 = Math.min(...ys) - pad, y1 = Math.max(...ys) + pad;
+    const k = Math.min(2, .95 * Math.min(W() / (x1 - x0), H() / (y1 - y0)));
+    svg.transition().duration(dur).call(zoom.transform, d3.zoomIdentity.translate(W() / 2 - k * (x0 + x1) / 2, H() / 2 - k * (y0 + y1) / 2).scale(k));
+  }
+  function centreOn(n){
+    const k = Math.max(1.3, d3.zoomTransform(svg.node()).k);
+    const cy = isPhone() ? (H() - Math.min(D.offsetHeight || H() * .48, H() * .48)) / 2 : H() / 2;   // keep it above the bottom sheet
+    svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity.translate(W() / 2 - k * n.x, cy - k * n.y).scale(k));
+  }
+  document.getElementById("zin").onclick = () => svg.transition().call(zoom.scaleBy, 1.3);
+  document.getElementById("zout").onclick = () => svg.transition().call(zoom.scaleBy, 1 / 1.3);
+  document.getElementById("zfit").onclick = () => { deselect(); fit(); };
+  svg.on("click", ev => { if(ev.target === svg.node()){ deselect(); closeRail(); } });
+
+  /* quick view */
+  const D = document.getElementById("dossier");
+  function renderDossier(){
+    D.replaceChildren();
+    if(!selected){
+      D.append(h("div", {class:"d-empty"}, h("p", {class:"lbl"}, "Quick view"), h("h2", null, "Select anyone in the network"),
+        h("p", null, "See who they worked with, on what, and where. Every connection links to the public page it comes from."),
+        h("p", null, "Start with a casting director on the left, or press / to search.")));
+      return;
+    }
+    D.append(h("div", {class:"sheet-bar"},
+      h("button", {type:"button", class:"sheet-grip", "aria-label":"Expand or shrink", onclick: () => netEl.classList.toggle("sheet-full")}, h("span")),
+      h("button", {type:"button", class:"sheet-x", onclick: deselect}, "Close")));
+    const n = selected, ref = n.ref, k = KIND[n.kind];
+    const headEl = h("div", {class:"d-head"}, h("div", {class:"chips"}, h("span", {class:"pill " + k.pill}, k.label)), h("h2", null, n.label));
+    if(n.kind === "theatre"){
+      D.append(headEl, h("div", {class:"d-sec"}, h("p", {class:"lbl"}, "Productions · " + ref.prods.size),
+        h("ul", {class:"att"}, [...ref.prods].map(r => h("li", null, h("p", null, showLink(r), h("br"), h("small", null, r.team["Casting director"].length ? "Casting: " + r.team["Casting director"].map(p => p.name).join(", ") : "Casting not stated")))))));
+      return;
+    }
+    headEl.append(h("a", {class:"btn", href:"#" + ref.hash}, n.kind === "prod" ? "Open production →" : "Open full profile →"));
+    D.append(headEl);
+    if(n.kind === "prod"){
+      D.append(h("div", {class:"d-sec"}, h("p", {class:"lbl"}, venueName(ref.venue)),
+        table(["Role", "Name"], ROLES.map(role => [role, joinLinks(ref.team[role]) || (role === "Casting director" ? h("span", {class:"pill warn"}, "Not stated") : h("span", {class:"muted"}, "—"))]))));
+      return;
+    }
+    const coll = collaborators(ref);
+    D.append(h("div", {class:"d-sec"}, h("p", {class:"lbl"}, ROLES.filter(r => ref.roles.has(r)).join(" · ")),
+      h("div", {class:"assoc"}, coll.slice(0, 18).map(x => h("a", {href:"#" + x.p.hash, class: x.p.kind === "cd" ? "cd" : null}, x.p.name, x.n > 1 ? h("small", null, "×" + x.n) : null)))));
+    D.append(h("div", {class:"d-sec"}, h("p", {class:"lbl"}, "Evidence · " + ref.credits.length), ref.credits.map(c => creditCard(c, "person"))));
+  }
+  function select(n, centre){
+    if(typeof n === "string") n = nodes.get(n); if(!n) return;
+    selected = n; paint(); renderDossier(); netEl.classList.add("has-sel"); netEl.classList.remove("sheet-full");
+    if(isPhone()) closeRail();
+    if(centre !== false) requestAnimationFrame(() => centreOn(n)); D.scrollTop = 0;
+  }
+  function deselect(){ selected = null; paint(); renderDossier(); netEl.classList.remove("has-sel", "sheet-full"); }
+  const ctlBtn = document.getElementById("ctlBtn");
+  function openRail(){ netEl.classList.add("rail-open"); ctlBtn.setAttribute("aria-expanded", "true"); }
+  function closeRail(){ netEl.classList.remove("rail-open"); ctlBtn.setAttribute("aria-expanded", "false"); }
+  ctlBtn.addEventListener("click", () => netEl.classList.contains("rail-open") ? closeRail() : openRail());
+  document.getElementById("railClose").addEventListener("click", () => { closeRail(); ctlBtn.focus(); });
+  addEventListener("keydown", e => { if(e.key === "Escape" && !netEl.hidden){ if(netEl.classList.contains("rail-open")) closeRail(); else if(selected) deselect(); } });
+  Net.select = id => select(id, true);
+  Net.fit = fit;
+  addEventListener("resize", () => { if(!netEl.hidden) fit(0); });
+  layout("cd");
+};
+
+const mMenu = document.getElementById("mMenu"), mSearch = document.getElementById("mSearch");
+function closeMenus(){ document.body.classList.remove("menu-open", "search-open"); mMenu.setAttribute("aria-expanded", "false"); mSearch.setAttribute("aria-expanded", "false"); }
+mMenu.addEventListener("click", e => { e.stopPropagation(); const open = !document.body.classList.contains("menu-open"); closeMenus(); if(open){ document.body.classList.add("menu-open"); mMenu.setAttribute("aria-expanded", "true"); } });
+mSearch.addEventListener("click", e => { e.stopPropagation(); closeMenus(); document.body.classList.add("search-open"); mSearch.setAttribute("aria-expanded", "true"); q.focus(); });
+document.getElementById("mCancel").addEventListener("click", () => { q.value = ""; sugg.hidden = true; closeMenus(); mSearch.focus(); });
+document.addEventListener("click", e => { if(document.body.classList.contains("menu-open") && !e.target.closest(".top")) closeMenus(); });
+addEventListener("keydown", e => { if(e.key === "Escape" && (document.body.classList.contains("menu-open") || document.body.classList.contains("search-open"))) closeMenus(); });
+const topBar = document.querySelector(".top");
+const setHdr = () => document.documentElement.style.setProperty("--hdr-h", topBar.offsetHeight + "px");
+new ResizeObserver(setHdr).observe(topBar); setHdr();
+document.getElementById("lp-updated").textContent = "Updated " + fmtDate(RAW.updated);
+route();
+})();
+</script>
+
+</body>
+</html>

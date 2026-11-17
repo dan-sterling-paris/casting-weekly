@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Mamma Mia!",
+    "Venue": "Novello Theatre, London",
+    "Casting Director": "David Grindrod CDG; Stephen Crockett CDG",
+    "Director": "Phyllida Lloyd",
+    "Writer": "Book: Catherine Johnson; Music: Benny Andersson; Music: Björn Ulvaeus; Lyrics: Benny Andersson; Lyrics: Björn Ulvaeus",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/mamma-mia/", "https://mamma-mia.com/news/2026/09/mamma-mia-at-the-novello-theatre-announces-new-west-end-cast-and-extends-booking-through-to-2-october-2027", "https://www.broadwayworld.com/article/MAMMA-MIA-Reveals-New-Cast-and-Extends-Booking-20260901"],
+      "Casting Director": ["https://mamma-mia.com/london/production-team"],
+      "Director": ["https://mamma-mia.com/london/creative", "https://officiallondontheatre.com/show/mamma-mia/", "https://www.whatsonstage.com/news/mamma-mia-announces-new-west-end-company-as-it-extends-run_1730419/", "https://www.broadwayworld.com/article/MAMMA-MIA-Reveals-New-Cast-and-Extends-Booking-20260901"],
+      "Writer": ["https://mamma-mia.com/london/creative", "https://www.whatsonstage.com/news/mamma-mia-announces-new-west-end-company-as-it-extends-run_1730419/", "https://www.broadwayworld.com/article/MAMMA-MIA-Reveals-New-Cast-and-Extends-Booking-20260901"]
+    }
+  },
+  {
+    "Production Name": "Oliver!",
+    "Venue": "Gielgud Theatre, London",
+    "Casting Director": "Felicity French; Paul Wooller",
+    "Director": "Matthew Bourne",
+    "Writer": "Book: Lionel Bart; Music: Lionel Bart; Lyrics: Lionel Bart",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/oliver/", "https://www.broadwayworld.com/article/Full-Cast-Set-For-Second-Year-of-OLIVER-in-the-West-End-20260115", "https://www.oliverthemusical.com/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/oliver-extends-west-end-run-and-confirms-initial-london-casting_1640635"],
+      "Director": ["https://officiallondontheatre.com/show/oliver/", "https://www.oliverthemusical.com/", "https://www.broadwayworld.com/article/Full-Cast-Set-For-Second-Year-of-OLIVER-in-the-West-End-20260115", "https://www.whatsonstage.com/news/matt-lucas-to-join-the-west-end-cast-of-oliver-for-a-limited-run_1727436/"],
+      "Writer": ["https://officiallondontheatre.com/show/oliver/"]
+    }
+  },
+  {
+    "Production Name": "The Lives of Others",
+    "Venue": "Adelphi Theatre, London",
+    "Casting Director": "Julia Horan",
+    "Director": "Robert Icke",
+    "Writer": "Adapted by Robert Icke from the film by Florian Henckel von Donnersmarck",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/the-lives-of-others-111473908/", "https://www.whatsonstage.com/news/full-cast-joining-keira-knightley-luke-thompson-and-stephen-dillane-in-the-lives-of-others-in-the-west-end-confirmed_1731641/", "https://theatreweekly.com/keira-knightley-stephen-dillane-and-luke-thompson-joined-by-full-cast-for-robert-ickes-the-lives-of-others/"],
+      "Casting Director": ["https://officiallondontheatre.com/show/the-lives-of-others-111473908/", "https://www.whatsonstage.com/news/full-cast-joining-keira-knightley-luke-thompson-and-stephen-dillane-in-the-lives-of-others-in-the-west-end-confirmed_1731641/", "https://theatreweekly.com/keira-knightley-stephen-dillane-and-luke-thompson-joined-by-full-cast-for-robert-ickes-the-lives-of-others/", "https://playbill.com/article/keira-knightley-stephen-dillane-luke-thompson-will-star-in-the-lives-of-others-in-london"],
+      "Director": ["https://officiallondontheatre.com/show/the-lives-of-others-111473908/", "https://www.whatsonstage.com/news/full-cast-joining-keira-knightley-luke-thompson-and-stephen-dillane-in-the-lives-of-others-in-the-west-end-confirmed_1731641/", "https://www.londonboxoffice.co.uk/news/post/cast-announced-for-the-lives-of-others"],
+      "Writer": ["https://officiallondontheatre.com/show/the-lives-of-others-111473908/", "https://playbill.com/article/keira-knightley-stephen-dillane-luke-thompson-will-star-in-the-lives-of-others-in-london", "https://theatreweekly.com/keira-knightley-stephen-dillane-and-luke-thompson-joined-by-full-cast-for-robert-ickes-the-lives-of-others/"]
+    }
+  }
+]
