@@ -29,3 +29,12 @@ sentence that announces, presents or produces. If neither is there, the credits 
 
 2–4 capitalised words; "and" / "&" join several names; CDG / CSA are dropped. Words like Theatre,
 Productions, Playhouse, Hall, Tour are never treated as a person.
+
+## K: checked lookup (uses Claude to find, a script to check)
+
+Dan types production names into `pipeline/productions.txt`. The `production-credits-lookup` skill (Claude)
+searches the web and saves its answer, unchanged, in `pipeline/lookups/`. Then `check_lookups.py`, which uses
+no AI, opens each cited page itself (robots.txt obeyed) and keeps a credit only if that page's text contains
+both the person's name and the show's name. "Unknown" adds nothing. "Conflicting" and anything not found on
+the page are listed in `out/LOOKUP_REJECTED.md`. In the network these credits are labelled
+"found by Claude lookup · name checked on page by script", never "no AI".

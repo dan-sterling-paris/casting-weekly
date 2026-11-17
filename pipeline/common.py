@@ -10,6 +10,7 @@ from urllib.parse import urljoin, urlparse
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent / "catalogue"))
 import re  # noqa: E402
+import unicodedata  # noqa: E402
 from crawl import UA, get, html_to_text, read_sitemaps  # noqa: E402,F401
 
 TERMS_RE = re.compile(r"terms|conditions|legal|website-use|terms-of-use|disclaimer", re.I)
@@ -45,3 +46,10 @@ def sha(text):
 
 def host(url):
     return urlparse(url).netloc.replace("www.", "")
+
+
+def key(s):
+    """Compare names and titles ignoring case, punctuation, curly apostrophes, a leading "The" and a trailing "the musical"."""
+    s = unicodedata.normalize("NFKC", s).replace("\u2019", "'").casefold()
+    s = re.sub(r"[^a-z0-9]+", " ", s).strip()
+    return re.sub(r"^the |( the)? musical$", "", s).strip()

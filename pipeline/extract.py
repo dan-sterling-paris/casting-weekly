@@ -6,16 +6,9 @@ Writes pipeline/out/graph.json, pipeline/out/NOT_READ.md and prototype/industry-
 """
 import json
 import re
-import unicodedata
 from collections import defaultdict
-from common import CACHE, OUT, ROOT, seeds
+from common import CACHE, OUT, ROOT, key, seeds
 from rules import label_pairs, pattern_b, pattern_s, show_of_page
-
-
-def key(s):
-    s = unicodedata.normalize("NFKC", s).replace("’", "'").casefold()
-    s = re.sub(r"[^a-z0-9]+", " ", s).strip()
-    return re.sub(r"^the |( the)? musical$", "", s).strip()
 
 
 SMALL = {"a", "an", "and", "at", "by", "for", "in", "of", "on", "or", "the", "to", "with"}
@@ -88,8 +81,16 @@ for p in sorted(pages, key=lambda x: x["url"]):
     if status == "mixed":
         not_read["Label/name lines in both orders (skipped)"].append(p["url"])
 
+# K: credits found by the production-credits-lookup skill and confirmed on the cited page by check_lookups.py
+lookup_file = OUT / "lookup_credits.json"
+lookups = json.loads(lookup_file.read_text()) if lookup_file.exists() else []
+before = len(edges)
+for c in lookups:
+    add(c["person"], c["role"], c["production"], c["venue"], "K", c["evidence"], c["url"])
+from_lookups = len(edges) - before
+
 swept = max(p["fetched_at"] for p in pages)[:10]
-graph = {"method": "scrape -> text -> patterns S, L, B; no AI", "edges": edges, "not_read": not_read}
+graph = {"method": "scrape -> text -> patterns S, L, B; no AI" + ("; plus K: skill lookups checked on the page by script" if from_lookups else ""), "edges": edges, "not_read": not_read}
 (OUT / "graph.json").write_text(json.dumps(graph, indent=1, ensure_ascii=False, sort_keys=True))
 md = ["# Pages not read", "", "These pages were fetched but nothing on them matched a pattern. Nothing was guessed.", ""]
 for why, urls in not_read.items():
@@ -107,4 +108,5 @@ for e in edges:
         cd[e["person"]] += 1
 print("pages %d · credits %d · shows %d · people %d · casting directors: %s" % (
     len(pages), len(edges), len(shows), len({key(e["person"]) for e in edges}), dict(sorted(cd.items(), key=lambda x: -x[1]))))
+print("from checked lookups (K): %d" % from_lookups)
 print("not read:", {k: len(v) for k, v in not_read.items()})

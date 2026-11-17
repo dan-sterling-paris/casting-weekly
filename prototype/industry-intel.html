@@ -146,7 +146,7 @@ button,input{font:inherit;color:inherit}
   </aside>
 
   <main class="stage" id="stage" aria-label="Network graph">
-    <div class="hud"><b>LIVE NETWORK · NO AI</b> · CLICK A NODE TO OPEN ITS FILE · DRAG · SCROLL TO ZOOM</div>
+    <div class="hud"><b id="hudMethod">LIVE NETWORK · NO AI</b> · CLICK A NODE TO OPEN ITS FILE · DRAG · SCROLL TO ZOOM</div>
     <label class="centre-pick">Centre on <select id="centreSel"><option value="cd">Casting directors</option><option value="prod">Productions</option><option value="theatre">Producers &amp; venues</option><option value="person">Creatives</option></select></label>
     <div class="zoom"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zfit" aria-label="Fit to screen">⤢</button></div>
   </main>
@@ -162,6 +162,8 @@ button,input{font:inherit;color:inherit}
 (function(){
 "use strict";
 const RAW = JSON.parse(document.getElementById("data").textContent);
+const HAS_K = RAW.edges.some(e => e.rule === "K");   // any credits from checked lookups (not pattern-only)
+if(HAS_K) document.getElementById("hudMethod").textContent = "LIVE NETWORK · PATTERNS + CHECKED LOOKUPS";
 const E = RAW.edges, TNAME = RAW.theatres;
 const KIND = {cd:{label:"Casting director", color:"var(--amber)", chip:"amber"}, person:{label:"Creative", color:"var(--person)", chip:""}, prod:{label:"Production", color:"var(--cyan)", chip:"cyan"}, theatre:{label:"Producer / company", color:"var(--violet)", chip:"violet"}};
 
@@ -202,7 +204,7 @@ document.getElementById("m-links").textContent = E.length;
 document.getElementById("swept").textContent = RAW.swept;
 const sources = new Set(E.map(e=>e.url)).size;
 document.getElementById("status").innerHTML = "";
-[["SOURCE PAGES", sources], ["ORGANISATIONS", count("theatre")], ["METHOD", "PATTERN RULES · NO AI"], ["EVERY LINK", "QUOTED FROM ITS SOURCE"], ["LAST SWEEP", RAW.swept]].forEach(([k,v]) => {
+[["SOURCE PAGES", sources], ["ORGANISATIONS", count("theatre")], ["METHOD", HAS_K ? "PATTERN RULES + CHECKED LOOKUPS" : "PATTERN RULES · NO AI"], ["EVERY LINK", "QUOTED FROM ITS SOURCE"], ["LAST SWEEP", RAW.swept]].forEach(([k,v]) => {
   const s = document.createElement("span"); s.innerHTML = ""; s.append(k + " ", Object.assign(document.createElement("b"), {textContent: v})); document.getElementById("status").append(s);
 });
 
@@ -420,7 +422,9 @@ function renderDossier(){
     box.append(h4, el("div","ev","“" + c.evidence + "”"));
     const pv = el("div","prov"); const a = el("a",null,c.url.replace(/^https?:\/\/(www\.)?/,"")); a.href = c.url; a.target = "_blank"; a.rel = "noopener";
     pv.append(a, el("span","v","✓ on page · " + RAW.swept));
-    if(c.rule) pv.append(el("span",null,"RULE " + c.rule + " · NO AI"), el("span",null,"PAGE HASH " + c.sha));
+    if(c.rule === "K") pv.append(el("span",null,"FOUND BY CLAUDE LOOKUP · NAME CHECKED ON PAGE BY SCRIPT"));
+    else if(c.rule) pv.append(el("span",null,"RULE " + c.rule + " · NO AI"));
+    if(c.sha) pv.append(el("span",null,"PAGE HASH " + c.sha));
     box.append(pv); s.append(box);
   });
   D.append(s);
