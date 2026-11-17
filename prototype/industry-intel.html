@@ -320,7 +320,7 @@ function layout(kind){
   sim.force("x").x(n => n.tx ?? 0).strength(pull); sim.force("y").y(n => n.ty ?? 0).strength(pull);
   selected = null; paint(); renderDossier();
   sim.alpha(1).restart();
-  setTimeout(() => { fit(); if(HUBS[0]) select(HUBS[0]); }, 1400);
+  setTimeout(fit, 1400);   // open on the whole network, nothing selected
 }
 sim.on("end", () => { if(!selected) fit(); });
 
