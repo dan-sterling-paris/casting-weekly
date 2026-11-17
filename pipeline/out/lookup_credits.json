@@ -1060,6 +1060,76 @@
   "lookup_file": "2026-11-17-14.json"
  },
  {
+  "person": "Paul Robinson",
+  "role": "Director",
+  "production": "Puss in Boots (Stephen Joseph Theatre)",
+  "venue": "Stephen Joseph Theatre, Scarborough",
+  "url": "https://sjt.uk.com/events/puss-in-boots",
+  "evidence": "Director - Paul Robinson",
+  "rule": "K",
+  "lookup_file": "2026-11-17-15.json"
+ },
+ {
+  "person": "Nick Lane",
+  "role": "Writer",
+  "production": "Puss in Boots (Stephen Joseph Theatre)",
+  "venue": "Stephen Joseph Theatre, Scarborough",
+  "url": "https://sjt.uk.com/events/puss-in-boots",
+  "evidence": "Adapted by Nick Lane",
+  "rule": "K",
+  "lookup_file": "2026-11-17-15.json"
+ },
+ {
+  "person": "Stuart Burt",
+  "role": "Casting director",
+  "production": "My Fair Lady (Festival Theatre)",
+  "venue": "Festival Theatre, Chichester",
+  "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/",
+  "evidence": "The creative team for My Fair Lady includes set and costume designer Peter McKintosh, choreographer Stephen Mear, musical supervisor Stephen Ridley, musical director Cat Beveridge, lighting designer Howard Harrison, sound designer Ian Dickinson for Autograph Sound and casting director Stuart Burt CDG.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-15.json"
+ },
+ {
+  "person": "Rachel Kavanaugh",
+  "role": "Director",
+  "production": "My Fair Lady (Festival Theatre)",
+  "venue": "Festival Theatre, Chichester",
+  "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/",
+  "evidence": "Directed by Rachel Kavanaugh, the production marks the first time the musical has been staged at the venue.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-15.json"
+ },
+ {
+  "person": "Alan Jay Lerner",
+  "role": "Writer",
+  "production": "My Fair Lady (Festival Theatre)",
+  "venue": "Festival Theatre, Chichester",
+  "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/",
+  "evidence": "Based on George Bernard Shaw’s 1913 play Pygmalion, about the tale of a flower seller who is coached to “improve” her social standing, the musical features a book and lyrics by Alan Jay Lerner and music by Frederick Loewe.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-15.json"
+ },
+ {
+  "person": "Alan Jay Lerner",
+  "role": "Lyricist",
+  "production": "My Fair Lady (Festival Theatre)",
+  "venue": "Festival Theatre, Chichester",
+  "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/",
+  "evidence": "Based on George Bernard Shaw’s 1913 play Pygmalion, about the tale of a flower seller who is coached to “improve” her social standing, the musical features a book and lyrics by Alan Jay Lerner and music by Frederick Loewe.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-15.json"
+ },
+ {
+  "person": "Frederick Loewe",
+  "role": "Composer",
+  "production": "My Fair Lady (Festival Theatre)",
+  "venue": "Festival Theatre, Chichester",
+  "url": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/",
+  "evidence": "Based on George Bernard Shaw’s 1913 play Pygmalion, about the tale of a flower seller who is coached to “improve” her social standing, the musical features a book and lyrics by Alan Jay Lerner and music by Frederick Loewe.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-15.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Avenue Q (Shaftesbury Theatre)",

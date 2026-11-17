@@ -36,3 +36,5 @@ How the Grinch Stole Christmas, 2026 Leeds Playhouse  →  2026-11-17-13.json
 Singin' in the Rain, 2026 Sheffield Crucible  →  2026-11-17-14.json
 A Christmas Carol, 2026 The Lowry Salford  →  2026-11-17-14.json
 Daisy and the Trouble with Christmas, 2026 Curve Leicester  →  2026-11-17-14.json
+Puss in Boots, 2026 Stephen Joseph Theatre Scarborough  →  2026-11-17-15.json
+My Fair Lady, 2026 Chichester Festival Theatre  →  2026-11-17-15.json

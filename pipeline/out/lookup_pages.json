@@ -533,5 +533,19 @@
   "final": "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/",
   "title": "Daisy and the Trouble with Christmas - Curve Theatre, Leicester",
   "file": "3eb11cfcc06a9b16.txt"
+ },
+ "https://sjt.uk.com/events/puss-in-boots": {
+  "status": 200,
+  "fetched_at": "2026-11-17T19:39:06Z",
+  "final": "https://sjt.uk.com/events/puss-in-boots",
+  "title": "Puss in Boots | Stephen Joseph Theatre",
+  "file": "60eae1713b73225b.txt"
+ },
+ "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T19:39:09Z",
+  "final": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/",
+  "title": "Cast for My Fair Lady at Chichester Festival Theatre announced",
+  "file": "cc90a4e33adf12bd.txt"
  }
 }
