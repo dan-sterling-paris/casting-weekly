@@ -7,7 +7,7 @@ Writes pipeline/out/graph.json, pipeline/out/NOT_READ.md and prototype/industry-
 import json
 import re
 from collections import defaultdict
-from common import CACHE, OUT, ROOT, key, seeds
+from common import CACHE, OUT, ROOT, key, now, seeds
 from rules import label_pairs, pattern_b, pattern_s, show_of_page
 
 
@@ -89,7 +89,7 @@ for c in lookups:
     add(c["person"], c["role"], c["production"], c["venue"], "K", c["evidence"], c["url"])
 from_lookups = len(edges) - before
 
-swept = max(p["fetched_at"] for p in pages)[:10]
+swept = max([p["fetched_at"] for p in pages] + [now()])[:10]
 graph = {"method": "scrape -> text -> patterns S, L, B; no AI" + ("; plus K: skill lookups checked on the page by script" if from_lookups else ""), "edges": edges, "not_read": not_read}
 (OUT / "graph.json").write_text(json.dumps(graph, indent=1, ensure_ascii=False, sort_keys=True))
 md = ["# Pages not read", "", "These pages were fetched but nothing on them matched a pattern. Nothing was guessed.", ""]
