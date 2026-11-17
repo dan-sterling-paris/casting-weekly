@@ -12,12 +12,15 @@ scheduled "Casting Weekly lookup" message arrives:
 3. Run the `production-credits-lookup` skill on those lines. Save its JSON unchanged as `pipeline/lookups/<YYYY-MM-DD>-<n>.json`.
 4. Run `python3 pipeline/todo.py done <that json file name> "<line>" ...` with the lines exactly as printed.
    This moves them from the queue to `pipeline/lookups/done.txt`.
-5. Run `python3 pipeline/check_lookups.py && python3 pipeline/extract.py`.
+5. Run `pip install -q -r pipeline/requirements.txt` (Splink; once per container), then
+   `python3 pipeline/check_lookups.py && python3 pipeline/match_names.py && python3 pipeline/extract.py`.
+   `match_names.py` uses Splink to merge spellings of one person (e.g. "Natalia"/"Natalie Gallacher") and lists
+   near-misses in `pipeline/out/NAME_MATCHES.md`. Dan's `pipeline/name_rules.txt` (`same:` / `different:`) overrides it.
 6. Commit and push to `claude/adoring-babbage-p2ckfa`. If the push is rejected, `git pull --no-edit` and push again. Never force-push.
 7. Publish: copy `prototype/industry-intel.html` to the scratchpad as `network-proto.html` with the
    `<!doctype>…<head>` wrapper and `</body></html>` stripped, and publish it with the Artifact tool to
    https://claude.ai/artifact/VeDkFx2Y9h3ykZVb2c8quL (same URL; read it first if this conversation hasn't published it).
 8. On a scheduled run, send one PushNotification (under 200 characters): shows looked up, credits kept/rejected,
-   casting director(s) found or "casting not stated", and any credit resting on a single page.
+   casting director(s) found or "casting not stated", any credit resting on a single page, and any new name merge or review.
 
 Never research a line already in `done.txt`. To redo a show, Dan deletes its line from `done.txt` and adds it to the queue.

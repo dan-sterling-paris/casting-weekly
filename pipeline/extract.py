@@ -2,7 +2,8 @@
 
   python3 pipeline/extract.py
 
-Reads pipeline/out/lookup_credits.json (written by check_lookups.py) and writes prototype/industry-intel.html.
+Reads pipeline/out/lookup_credits.json (written by check_lookups.py) and pipeline/out/name_aliases.json (written by
+match_names.py: other spellings of the same person) and writes prototype/industry-intel.html.
 """
 import json
 import re
@@ -31,15 +32,21 @@ def title_case(t):
 edges, shows, people, seen = [], {}, {}, set()
 
 
+aliases_file = OUT / "name_aliases.json"
+ALIASES = json.loads(aliases_file.read_text()) if aliases_file.exists() else {}
+
+
 def add(person, role, show, org, rule, evidence, url, year=None):
-    person = people.setdefault(key(person), person.replace("’", "'"))
+    credited = person.replace("’", "'")
+    person = people.setdefault(key(ALIASES.get(person, person)), ALIASES.get(person, person).replace("’", "'"))
     k = (key(person), role, key(show), year)
     if k in seen:
         return
     seen.add(k)
     shows.setdefault(key(show), title_case(show))
     edges.append({"person": person, "role": role, "production": shows[key(show)], "venue": org, "url": url,
-                  "evidence": evidence, "rule": rule, "year": year})
+                  "evidence": evidence, "rule": rule, "year": year,
+                  "credited_as": credited if key(credited) != key(person) else None})
 
 
 lookup_file = OUT / "lookup_credits.json"
