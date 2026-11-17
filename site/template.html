@@ -224,12 +224,77 @@ line.l-cd{stroke:var(--l-cd)} line.l-venue{stroke:var(--l-venue);stroke-dasharra
   .stage{height:62vh;min-height:340px}
   .dossier{border-left:0;border-top:1px solid var(--line)}
 }
+
+/* landing (home) */
+.lp-actions{display:none;margin-left:auto;gap:18px;align-items:center}
+.lp-actions a.lp-l{color:var(--dim);text-decoration:none;font-weight:500;white-space:nowrap}
+.lp-actions a.lp-l:hover{color:var(--text)}
+body[data-view="home"] .nav,body[data-view="home"] .cmd{display:none}
+body[data-view="home"] .lp-actions{display:flex}
+body[data-view="home"] .page{gap:72px;padding-block:20px 80px}
+@media (max-width:600px){.lp-actions a.lp-l{display:none}}
+.btn.primary{background:var(--amber);border-color:var(--amber);color:var(--on-accent)}
+.btn.primary:hover{filter:brightness(1.08);border-color:var(--amber)}
+.btn.big{padding:11px 18px;font-size:15px}
+.lp-eyebrow{font:500 11px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin:0}
+.lp-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center;padding-top:28px}
+.lp-hero h1{font:800 clamp(36px,5.4vw,62px)/1.02 var(--display);letter-spacing:-.025em;margin:16px 0 20px;text-wrap:balance}
+.lp-hero h1 em{font-style:normal;color:var(--amber)}
+.lp-lede{font-size:17px;line-height:1.6;color:var(--dim);max-width:52ch;margin:0}
+.lp-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.lp-stack{display:flex;flex-direction:column;gap:12px;min-width:0}
+.lp-stack .cred{box-shadow:var(--shadow)}
+.lp-stack .cred:nth-child(2){margin-inline-start:28px}
+.lp-stack .cred:nth-child(3){margin-inline-start:56px}
+.lp-figs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-block:1px solid var(--line)}
+.lp-figs div{padding:20px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:2px;min-width:0}
+.lp-figs div:last-child{border-right:0}
+.lp-figs b{font:600 34px/1.1 var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.lp-figs span{font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.lp-sec{display:flex;flex-direction:column;gap:22px;scroll-margin-top:calc(var(--hdr) + 24px)}
+.lp-sec-h{display:flex;flex-direction:column;gap:10px;max-width:68ch}
+.lp-sec-h h2{font:800 clamp(24px,3vw,32px)/1.1 var(--display);letter-spacing:-.015em;margin:0;text-wrap:balance}
+.lp-sec-h p{margin:0;color:var(--dim)}
+.lp-feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.lp-feat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.lp-feat h3{font:600 16px var(--sans);margin:0}
+.lp-feat p{margin:0;color:var(--dim)}
+.lp-feat .more{margin-top:auto}
+.lp-cds{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.lp-cds li{display:grid;grid-template-columns:minmax(0,220px) 110px minmax(0,1fr);gap:16px;align-items:baseline;padding:14px 18px;border-bottom:1px solid var(--line)}
+.lp-cds li:last-child{border-bottom:0}
+.lp-cds .n{font:12px var(--mono);color:var(--faint);font-variant-numeric:tabular-nums}
+.lp-cov{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+.lp-cov .lp-next{grid-column:1/-1}
+.lp-cds .pill{text-transform:none;letter-spacing:0;font:500 12px var(--sans);padding:2px 8px}
+.lp-tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:4px}
+.lp-tile b{font:600 30px/1.1 var(--mono);font-variant-numeric:tabular-nums}
+.lp-tile span{font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.lp-next{border:1px dashed var(--line2);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.lp-how{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:start}
+.lp-band{border:1px solid var(--amber);background:var(--amber-soft);border-radius:12px;padding:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px}
+.lp-band h2{font:800 clamp(22px,2.6vw,28px)/1.15 var(--display);letter-spacing:-.015em;margin:0}
+.lp-band p{margin:6px 0 0;color:var(--dim)}
+@media (max-width:860px){
+  .lp-hero,.lp-how{grid-template-columns:minmax(0,1fr);gap:32px}
+  .lp-feats{grid-template-columns:minmax(0,1fr)}
+  .lp-figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lp-figs div{border-bottom:1px solid var(--line)}
+  .lp-figs div:nth-child(2n){border-right:0}
+  .lp-figs div:last-child{grid-column:1/-1;border-bottom:0}
+  .lp-cds li{grid-template-columns:minmax(0,1fr) auto}
+  .lp-cds li .chips{grid-column:1/-1}
+}
+@media (max-width:600px){
+  .lp-stack .cred:nth-child(n){margin-inline-start:0}
+  .lp-stack .cred:nth-child(3){display:none}
+}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 
 <header class="top">
   <div class="top-in gut">
-    <a class="brand" href="#overview"><b>Casting Weekly</b><span>INDUSTRY</span></a>
+    <a class="brand" href="#home"><b>Casting Weekly</b><span>INDUSTRY</span></a>
     <nav class="nav" aria-label="Sections">
       <a href="#overview">Overview</a>
       <a href="#network">Network</a>
@@ -239,6 +304,11 @@ line.l-cd{stroke:var(--l-cd)} line.l-venue{stroke:var(--l-venue);stroke-dasharra
       <a href="#data-quality">Data quality</a>
       <a href="#about">About</a>
     </nav>
+    <div class="lp-actions">
+      <a class="lp-l" href="#home" id="lp-how-link">How it works</a>
+      <a class="lp-l" href="#about">Data standard</a>
+      <a class="btn primary" href="#network">Explore the network →</a>
+    </div>
     <div class="cmd">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" autocomplete="off" placeholder="Search people or productions" aria-label="Search people or productions" aria-controls="sugg">
@@ -533,12 +603,77 @@ VIEWS.about = () => [
   h("p", {class:"stamp"}, "Data updated " + fmtDate(RAW.updated) + " · " + plural(SOURCES.size, "public source"))
 ];
 
+/* ---------- landing ---------- */
+function heroCredit(c){
+  const r = prods.get(c.production), p = people.get(c.person);
+  return h("article", {class:"cred"},
+    h("div", {class:"cred-h"}, h("span", {class:"role cd"}, "Casting director"), personLink(p)),
+    h("div", {class:"cred-h"}, showLink(r), h("span", {class:"muted"}, venueName(r.venue))),
+    h("blockquote", {class:"ev"}, "“" + c.evidence + "”"),
+    h("div", {class:"prov"}, h("a", {href:c.url, target:"_blank", rel:"noopener"}, domain(c.url) + " ↗")));
+}
+VIEWS.home = () => {
+  const n = t => PRODS.filter(r => r.type === t).length;
+  // three different casting directors on three different productions and pages, short quotes first
+  const hero = [], usedProd = new Set(), usedUrl = new Set();
+  for(const p of CDS){
+    if(hero.length === 3) break;
+    const c = p.credits.filter(c => c.role === "Casting director" && !usedProd.has(c.production) && !usedUrl.has(c.url))
+      .sort((a, b) => (a.evidence.length > 160) - (b.evidence.length > 160) || a.evidence.length - b.evidence.length)[0];
+    if(c){ hero.push(c); usedProd.add(c.production); usedUrl.add(c.url); }
+  }
+  const feat = (color, title, text, href, label) => h("article", {class:"lp-feat"},
+    h("span", {class:"dot", style:"background:" + color}), h("h3", null, title), h("p", null, text), h("a", {class:"more", href}, label));
+  return [
+    h("section", {class:"lp-hero"},
+      h("div", null,
+        h("p", {class:"lp-eyebrow"}, "West End · UK tours · Regional"),
+        h("h1", null, "Who casts what, and ", h("em", null, "who they cast it with.")),
+        h("p", {class:"lp-lede"}, "Casting Weekly maps the casting directors behind UK productions and the directors, writers and composers they work alongside. Every credit is traced to the public page that states it."),
+        h("div", {class:"lp-ctas"}, h("a", {class:"btn primary big", href:"#network"}, "Explore the network →"), h("a", {class:"btn big", href:"#productions"}, "Browse productions"))),
+      h("div", {class:"lp-stack", "aria-label":"Example credits"}, hero.map(heroCredit))),
+    h("section", {class:"lp-figs", "aria-label":"Coverage today"},
+      [[PRODS.length, "Productions"], [CDS.length, "Casting directors"], [PEOPLE.length - CDS.length, "Creatives"], [RAW.edges.length, "Sourced credits"], [SOURCES.size, "Public sources"]]
+        .map(([v, l]) => h("div", null, h("b", null, v), h("span", null, l)))),
+    h("section", {class:"lp-sec"},
+      h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "What you can do"), h("h2", null, "The working relationships behind every production, in one place")),
+      h("div", {class:"lp-feats"},
+        feat("var(--amber)", "See who works with whom", "Follow a casting director to the directors, writers and venues they keep returning to. Reorder the network to ask the question you have.", "#network", "Open the network →"),
+        feat("var(--cyan)", "Check any credit at source", "Every name links to the sentence or credit line that names them, on the show's site, the venue's page or the trade press.", "#productions", "Browse productions →"),
+        feat("var(--warn)", "Know what isn't stated", `${plural(NOCD.length, "production")} on file ${NOCD.length === 1 ? "has" : "have"} no casting credit in the sources yet. Gaps are shown, never filled in.`, "#data-quality", "See data quality →"))),
+    h("section", {class:"lp-sec"},
+      h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "Right now"), h("h2", null, "Most active casting directors"), h("p", null, "Ranked by productions on file.")),
+      h("ol", {class:"lp-cds"}, CDS.slice(0, 5).map(p => h("li", null, personLink(p), h("span", {class:"n"}, plural(p.prods.size, "production")),
+        h("span", {class:"chips"}, [...p.prods].sort((a, b) => a.show.localeCompare(b.show)).map(r => h("a", {class:"pill prod", href:"#" + r.hash, style:"text-decoration:none"}, r.show))))))),
+    h("section", {class:"lp-sec"},
+      h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "Coverage"), h("h2", null, "From the West End to the regions")),
+      h("div", {class:"lp-cov"},
+        ["London", "Touring", "Regional"].map(t => h("div", {class:"lp-tile"}, h("b", null, n(t)), h("span", null, t))),
+        h("div", {class:"lp-next"}, h("p", {class:"lbl"}, "Coming next · " + RAW.queue.length),
+          RAW.queue.length ? h("ul", {class:"queue"}, RAW.queue.map(q => h("li", null, q))) : h("p", {class:"muted", style:"margin:0"}, "Nothing queued.")))),
+    h("section", {class:"lp-sec", id:"lp-how"},
+      h("div", {class:"lp-sec-h"}, h("p", {class:"lp-eyebrow"}, "How it works"), h("h2", null, "A credit goes live only when its source says so")),
+      h("div", {class:"lp-how"},
+        h("ol", {class:"steps"},
+          h("li", null, "A production is added by title and venue or tour."),
+          h("li", null, "Its casting director, director and writers are found in public sources: the show's own site, the venue, producers' announcements and the trade press."),
+          h("li", null, "A credit is published only when the cited page names that person in that role for that production. Anything less is held back and listed."),
+          h("li", null, "Different spellings of one person's name are matched, so each person has one profile. The original spelling stays on every credit.")),
+        card("Read the standard", [h("p", {class:"muted", style:"margin:0"}, "The About page explains how productions are kept separate and what “Not stated” means. Data quality lists everything held back, with the reason."),
+          h("span", {class:"list-inline", style:"gap:4px 18px"}, h("a", {class:"more", href:"#about"}, "About →"), h("a", {class:"more", href:"#data-quality"}, "Data quality →"))]))),
+    h("section", {class:"lp-band"},
+      h("div", null, h("h2", null, "See the network for yourself."), h("p", null, "Updated " + fmtDate(RAW.updated) + " · " + plural(RAW.edges.length, "sourced credit"))),
+      h("div", {class:"lp-ctas", style:"margin:0"}, h("a", {class:"btn primary big", href:"#network"}, "Explore the network →"), h("a", {class:"btn big", href:"#overview"}, "Open the overview")))
+  ];
+};
+
 const notFound = () => [head("Page not found", "That link doesn't match a person or production on file."), h("p", null, h("a", {class:"btn", href:"#overview"}, "Go to overview"))];
 
 /* ---------- routing ---------- */
 const page = document.getElementById("page"), netEl = document.getElementById("net");
 function route(){
-  const key = decodeURIComponent(location.hash.slice(1)) || "overview";
+  const key = decodeURIComponent(location.hash.slice(1)) || "home";
+  document.body.dataset.view = key === "home" ? "home" : "app";
   let render = VIEWS[key], nav = key;
   if(!render && byHash.has(key)){
     const x = byHash.get(key);
@@ -554,6 +689,10 @@ function route(){
   else { page.replaceChildren(...[].concat(render()).filter(Boolean)); window.scrollTo(0, 0); }
 }
 addEventListener("hashchange", route);
+document.getElementById("lp-how-link").addEventListener("click", e => {
+  const t = document.getElementById("lp-how"); if(!t) return; e.preventDefault();
+  t.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+});
 
 /* ---------- search ---------- */
 const q = document.getElementById("q"), sugg = document.getElementById("sugg"); let active = 0, hits = [];
