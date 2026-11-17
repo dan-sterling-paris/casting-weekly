@@ -38,3 +38,7 @@ no AI, opens each cited page itself (robots.txt obeyed) and keeps a credit only 
 both the person's name and the show's name. "Unknown" adds nothing. "Conflicting" and anything not found on
 the page are listed in `out/LOOKUP_REJECTED.md`. In the network these credits are labelled
 "found by Claude lookup · name checked on page by script", never "no AI".
+
+Each show is researched once. `python3 pipeline/todo.py` lists the lines in `productions.txt` that aren't in
+`lookups/done.txt` yet; only those are looked up. Cited pages are cached in `out/lookup_pages.json`, so
+re-running the check makes no web requests for pages already read.

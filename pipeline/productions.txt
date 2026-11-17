@@ -1,5 +1,6 @@
 # Productions for the production-credits-lookup skill, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
+# Each line is looked up once. Done lines are listed in lookups/done.txt; delete one there to redo it.
 The Choir of Man, London
 Beetlejuice, London
 Burlesque, UK Tour

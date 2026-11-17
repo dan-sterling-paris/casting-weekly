@@ -1,0 +1,7 @@
+# Shows already looked up, copied exactly from productions.txt, with the file that holds the answer.
+# Delete a line to have that show researched again.
+The Choir of Man, London  →  2026-11-17-1.json
+Beetlejuice, London  →  2026-11-17-1.json
+Burlesque, UK Tour  →  2026-11-17-1.json
+Wicked, London  →  2026-11-17-1.json
+Paddington, London  →  2026-11-17-1.json
