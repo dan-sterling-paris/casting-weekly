@@ -39,6 +39,7 @@ both the person's name and the show's name. "Unknown" adds nothing. "Conflicting
 the page are listed in `out/LOOKUP_REJECTED.md`. In the network these credits are labelled
 "found by Claude lookup · name checked on page by script", never "no AI".
 
-Each show is researched once. `python3 pipeline/todo.py` lists the lines in `productions.txt` that aren't in
-`lookups/done.txt` yet; only those are looked up. Cited pages are cached in `out/lookup_pages.json`, so
-re-running the check makes no web requests for pages already read.
+Each show is researched once. `productions.txt` is a queue: after a show is looked up, its line moves to
+`lookups/done.txt`, so an empty queue means nothing is waiting. A show already in `done.txt` is removed from the
+queue if added again. Cited pages are cached in `out/lookup_pages.json`, so re-running the check makes no web
+requests for pages already read.
