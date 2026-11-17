@@ -24,3 +24,6 @@ The Book of Mormon, London  →  2026-11-17-9.json
 Mamma Mia!, London  →  2026-11-17-10.json
 Oliver!, London  →  2026-11-17-10.json
 The Lives of Others, London  →  2026-11-17-10.json
+Cloud 9, 2026 National Theatre London  →  2026-11-17-11.json
+Cats, 2026 UK Tour  →  2026-11-17-11.json
+Billy Elliot, UK Tour  →  2026-11-17-11.json

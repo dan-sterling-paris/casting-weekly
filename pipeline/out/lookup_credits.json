@@ -440,6 +440,126 @@
   "lookup_file": "2026-11-17-10.json"
  },
  {
+  "person": "Naomi Downham",
+  "role": "Casting director",
+  "production": "Cloud 9 (Lyttelton Theatre)",
+  "venue": "Lyttelton Theatre, National Theatre, London",
+  "url": "https://www.whatsonstage.com/news/full-cast-set-for-cloud-9-at-the-national-theatre_1731915/",
+  "evidence": "… Buether, costume designer Samuel Wyer, lighting designer Jessica Hung Han Yun, sound designer Donato Wharton, composer Andy Roberts, music director Josh Sneesby, casting director Naomi Downham, dialect coach Penny Dyer, voice coach Shereen Ibrahim, associate set designer Luke Smith and staff director Max Harrison.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Dominic Cooke",
+  "role": "Director",
+  "production": "Cloud 9 (Lyttelton Theatre)",
+  "venue": "Lyttelton Theatre, National Theatre, London",
+  "url": "https://theatreweekly.com/full-cast-announced-for-caryl-churchills-cloud-9-at-the-national-theatre/",
+  "evidence": "Charlotte Ritchie, Rebecca Humphries and Sam Troughton join a new production of Churchill’s landmark play, directed by Dominic Cooke",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Caryl Churchill",
+  "role": "Writer",
+  "production": "Cloud 9 (Lyttelton Theatre)",
+  "venue": "Lyttelton Theatre, National Theatre, London",
+  "url": "https://www.londontheatre.co.uk/theatre-news/news/full-cast-announced-for-cloud-9-at-the-national-theatre",
+  "evidence": "Cloud 9 was written by Caryl Churchill.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Will Burton",
+  "role": "Casting director",
+  "production": "Cats (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreroyal.com/press/news/cats-castingannouncement/",
+  "evidence": "Joining Drew McOnie on the creative team are Sami Fendall, Set, Costume and Wigs Designer; Jessica Hung Han Yun, Lighting Designer; Adam Fisher, Sound Designer; Guy Common, Makeup Designer; Ingrid Mackinnon, Intimacy Director; Kev McCurdy, Fight Director; Will Burton, Casting Director and Alex Parker, Musical Supervisor.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Drew McOnie",
+  "role": "Director",
+  "production": "Cats (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreroyal.com/press/news/cats-castingannouncement/",
+  "evidence": "The tour is directed and choreographed by Regent’s Park Open Air Theatre Artistic Director, Drew McOnie and follows a record-breaking summer season now playing at the venue until 19 September 2026.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Andrew Lloyd Webber",
+  "role": "Composer",
+  "production": "Cats (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreroyal.com/press/news/cats-castingannouncement/",
+  "evidence": "With music by Andrew Lloyd Webber and based on Old Possum’s Book of Practical Cats by T.S.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Pippa Ailion",
+  "role": "Casting director",
+  "production": "Billy Elliot the Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/",
+  "evidence": "Adult casting is by Pippa Ailion and Natalie Gallacher and children’s casting is by Nick Hockaday for Jessica Ronane Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Natalie Gallacher",
+  "role": "Casting director",
+  "production": "Billy Elliot the Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/",
+  "evidence": "Adult casting is by Pippa Ailion and Natalie Gallacher and children’s casting is by Nick Hockaday for Jessica Ronane Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Stephen Daldry",
+  "role": "Director",
+  "production": "Billy Elliot the Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/billy-elliot-revival-announces-full-casting_1731101/",
+  "evidence": "On the creative team are writer Lee Hall (book and lyrics), director Stephen Daldry and choreographer, Peter Darling, joined by Elton John who composed the show’s score.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Lee Hall",
+  "role": "Writer",
+  "production": "Billy Elliot the Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/",
+  "evidence": "Featuring music by Elton John, book and lyrics by Lee Hall, direction by Stephen Daldry and choreography by Peter Darling, the production reunites the creative team behind the celebrated stage adaptation.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Lee Hall",
+  "role": "Lyricist",
+  "production": "Billy Elliot the Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/",
+  "evidence": "Featuring music by Elton John, book and lyrics by Lee Hall, direction by Stephen Daldry and choreography by Peter Darling, the production reunites the creative team behind the celebrated stage adaptation.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
+  "person": "Elton John",
+  "role": "Composer",
+  "production": "Billy Elliot the Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/",
+  "evidence": "Featuring music by Elton John, book and lyrics by Lee Hall, direction by Stephen Daldry and choreography by Peter Darling, the production reunites the creative team behind the celebrated stage adaptation.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-11.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Avenue Q (Shaftesbury Theatre)",
