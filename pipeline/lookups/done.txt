@@ -18,3 +18,6 @@ Cabaret, London  →  2026-11-17-7.json
 Moulin Rouge, London  →  2026-11-17-8.json
 Hamilton, London  →  2026-11-17-8.json
 Chicago, UK Tour  →  2026-11-17-8.json
+One Day The Musical, Garrick Theatre London  →  2026-11-17-9.json
+Pride The Musical, Bridge Theatre London  →  2026-11-17-9.json
+The Book of Mormon, London  →  2026-11-17-9.json

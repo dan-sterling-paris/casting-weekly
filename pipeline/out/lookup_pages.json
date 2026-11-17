@@ -267,5 +267,40 @@
   "final": "https://www.westendbestfriend.co.uk/news/burton-day-sinitta-chicago-uk-ireland-tour",
   "title": "Dan Burton, Darren Day and Sinitta to join CHICAGO UK and Ireland tour | West End Best Friend",
   "file": "0f3812021133b46f.txt"
+ },
+ "https://thegarricktheatre.co.uk/tickets/one-day-the-musical/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:56:54Z",
+  "final": "https://thegarricktheatre.co.uk/tickets/one-day-the-musical/",
+  "title": "One Day - The Musical | Garrick Theatre, London | Nimax Theatressharefacebooktwitteryoutubeinstagramfacebooktwitteryoutubeinstagramchevron-leftchevron-rightgroupangle-leftangle-rightticketchildhourglass-1calendar-alt",
+  "file": "3b4d57764aceccc6.txt"
+ },
+ "https://www.westend.com/shows/one-day-the-musical/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:56:56Z",
+  "final": "https://www.westend.com/shows/one-day-the-musical/",
+  "title": "One Day The Musical Tickets | Garrick Theatre | WestEnd.com",
+  "file": "da0b593e7abc1c9a.txt"
+ },
+ "https://bridgetheatre.co.uk/en-GB/event/musical/pride-tickets": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:56:59Z",
+  "final": "https://www.bridgetheatre.co.uk/en-GB/event/musical/pride-tickets",
+  "title": "Pride musical tickets | Bridge Theatre, London  | Bridge TheatreInstagram IconFacebook IconYoutube IconTiktok Icon",
+  "file": "b594da19976c9fe5.txt"
+ },
+ "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:57:02Z",
+  "final": "https://www.broadwayworld.com/westend/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825",
+  "title": "PRIDE Musical to Transfer to The Bridge Theatre | BroadwayWorld",
+  "file": "6d758d033bb9919d.txt"
+ },
+ "https://officiallondontheatre.com/show/the-book-of-mormon/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:57:05Z",
+  "final": "https://officiallondontheatre.com/show/the-book-of-mormon-157833/",
+  "title": "The Book Of Mormon Tickets | Prince of Wales Theatre | Comedy TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketAll ImagesLocationChevron DownAccess InfoTickCalendarClockGenre MaskAge InfoNoticePlay IconPhoneEmail",
+  "file": "e0ee32aac6762490.txt"
  }
 }

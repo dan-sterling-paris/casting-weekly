@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "One Day The Musical",
+    "Venue": "Garrick Theatre, London",
+    "Casting Director": "Stuart Burt CDG",
+    "Director": "Max Webster",
+    "Writer": "Book: David Greig; Music: Abner Ramirez; Music: Amanda Ramirez; Lyrics: Abner Ramirez; Lyrics: Amanda Ramirez",
+    "Sources": {
+      "Venue": ["https://thegarricktheatre.co.uk/tickets/one-day-the-musical/", "https://www.whatsonstage.com/news/one-day-musical-announces-complete-west-end-cast_1734502/", "https://www.westend.com/shows/one-day-the-musical/"],
+      "Casting Director": ["https://thegarricktheatre.co.uk/tickets/one-day-the-musical/", "https://www.whatsonstage.com/news/one-day-musical-announces-complete-west-end-cast_1734502/"],
+      "Director": ["https://thegarricktheatre.co.uk/tickets/one-day-the-musical/", "https://www.whatsonstage.com/news/one-day-musical-announces-complete-west-end-cast_1734502/", "https://www.westend.com/shows/one-day-the-musical/", "https://theatreweekly.com/one-day-the-musical-confirms-full-west-end-cast-and-releases-first-teaser-featuring-jamie-muscato/"],
+      "Writer": ["https://www.westend.com/shows/one-day-the-musical/", "https://thegarricktheatre.co.uk/tickets/one-day-the-musical/", "https://theatreweekly.com/one-day-the-musical-confirms-full-west-end-cast-and-releases-first-teaser-featuring-jamie-muscato/"]
+    }
+  },
+  {
+    "Production Name": "Pride",
+    "Venue": "Bridge Theatre, London",
+    "Casting Director": "David Grindrod CDG CSA",
+    "Director": "Matthew Warchus",
+    "Writer": "Book: Stephen Beresford; Lyrics: Stephen Beresford; Music: Christopher Nightingale; Music: Josh Cohen; Music: DJ Walde",
+    "Sources": {
+      "Venue": ["https://bridgetheatre.co.uk/en-GB/event/musical/pride-tickets", "https://theatreweekly.com/full-cast-announced-for-pride-the-musical-ahead-of-bridge-theatre-opening/", "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825"],
+      "Casting Director": ["https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "https://theatreweekly.com/full-cast-announced-for-pride-the-musical-ahead-of-bridge-theatre-opening/", "https://www.whatsonstage.com/news/pride-musical-announces-full-bridge-theatre-company_1735013/"],
+      "Director": ["https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "https://www.whatsonstage.com/news/pride-musical-announces-full-bridge-theatre-company_1735013/", "https://theatreweekly.com/full-cast-announced-for-pride-the-musical-ahead-of-bridge-theatre-opening/"],
+      "Writer": ["https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825", "https://www.whatsonstage.com/news/pride-musical-announces-full-bridge-theatre-company_1735013/"]
+    }
+  },
+  {
+    "Production Name": "The Book of Mormon",
+    "Venue": "Prince of Wales Theatre, London",
+    "Casting Director": "Natalia Gallacher; Pippa Ailion Casting",
+    "Director": "Trey Parker; Casey Nicholaw",
+    "Writer": "Book: Trey Parker; Book: Robert Lopez; Book: Matt Stone; Music: Trey Parker; Music: Robert Lopez; Music: Matt Stone; Lyrics: Trey Parker; Lyrics: Robert Lopez; Lyrics: Matt Stone",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/the-book-of-mormon/"],
+      "Casting Director": ["https://officiallondontheatre.com/show/the-book-of-mormon/"],
+      "Director": ["https://officiallondontheatre.com/show/the-book-of-mormon/"],
+      "Writer": ["https://officiallondontheatre.com/show/the-book-of-mormon/"]
+    }
+  }
+]

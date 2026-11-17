@@ -998,5 +998,255 @@
   "evidence": "Based on the play by Maurine Dallas Watkins, the musical has a book by Fred Ebb and Bob Fosse, music by Kander and lyrics by Ebb.",
   "rule": "K",
   "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Stuart Burt",
+  "role": "Casting director",
+  "production": "One Day The Musical (Garrick Theatre)",
+  "venue": "Garrick Theatre, London",
+  "url": "https://thegarricktheatre.co.uk/tickets/one-day-the-musical/",
+  "evidence": "Stuart Burt CDG / Casting Director",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Max Webster",
+  "role": "Director",
+  "production": "One Day The Musical (Garrick Theatre)",
+  "venue": "Garrick Theatre, London",
+  "url": "https://thegarricktheatre.co.uk/tickets/one-day-the-musical/",
+  "evidence": "Max Webster / Director",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "David Greig",
+  "role": "Writer",
+  "production": "One Day The Musical (Garrick Theatre)",
+  "venue": "Garrick Theatre, London",
+  "url": "https://www.westend.com/shows/one-day-the-musical/",
+  "evidence": "David Greig / Book",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Abner Ramirez",
+  "role": "Composer",
+  "production": "One Day The Musical (Garrick Theatre)",
+  "venue": "Garrick Theatre, London",
+  "url": "https://www.westend.com/shows/one-day-the-musical/",
+  "evidence": "Abner Ramirez / Music & Lyrics",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Amanda Ramirez",
+  "role": "Composer",
+  "production": "One Day The Musical (Garrick Theatre)",
+  "venue": "Garrick Theatre, London",
+  "url": "https://www.westend.com/shows/one-day-the-musical/",
+  "evidence": "Music & Lyrics / Amanda Ramirez",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Abner Ramirez",
+  "role": "Lyricist",
+  "production": "One Day The Musical (Garrick Theatre)",
+  "venue": "Garrick Theatre, London",
+  "url": "https://www.westend.com/shows/one-day-the-musical/",
+  "evidence": "Abner Ramirez / Music & Lyrics",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Amanda Ramirez",
+  "role": "Lyricist",
+  "production": "One Day The Musical (Garrick Theatre)",
+  "venue": "Garrick Theatre, London",
+  "url": "https://www.westend.com/shows/one-day-the-musical/",
+  "evidence": "Music & Lyrics / Amanda Ramirez",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "David Grindrod",
+  "role": "Casting director",
+  "production": "Pride (Bridge Theatre)",
+  "venue": "Bridge Theatre, London",
+  "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825",
+  "evidence": "…nal orchestrations Josh Cohen and DJ Walde, lighting designer Hugh Vanstone, sound designer Bobby Aitken, hair, wig & make-up design Campbell Young Associates and casting director David Grindrod CDG CSA.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Matthew Warchus",
+  "role": "Director",
+  "production": "Pride (Bridge Theatre)",
+  "venue": "Bridge Theatre, London",
+  "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825",
+  "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Stephen Beresford",
+  "role": "Writer",
+  "production": "Pride (Bridge Theatre)",
+  "venue": "Bridge Theatre, London",
+  "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825",
+  "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Stephen Beresford",
+  "role": "Lyricist",
+  "production": "Pride (Bridge Theatre)",
+  "venue": "Bridge Theatre, London",
+  "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825",
+  "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Christopher Nightingale",
+  "role": "Composer",
+  "production": "Pride (Bridge Theatre)",
+  "venue": "Bridge Theatre, London",
+  "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825",
+  "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Josh Cohen",
+  "role": "Composer",
+  "production": "Pride (Bridge Theatre)",
+  "venue": "Bridge Theatre, London",
+  "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825",
+  "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "DJ Walde",
+  "role": "Composer",
+  "production": "Pride (Bridge Theatre)",
+  "venue": "Bridge Theatre, London",
+  "url": "https://www.broadwayworld.com/article/PRIDE-Musical-to-Transfer-to-The-Bridge-Theatre-20260825",
+  "evidence": "Matthew Warchus directs the musical, with book and lyrics by Stephen Beresford and a score by Christopher Nightingale, Josh Cohen and DJ Walde.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Natalia Gallacher",
+  "role": "Casting director",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "UK Casting - / Natalia Gallacher for Pippa Ailion Casting",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Pippa Ailion Casting",
+  "role": "Casting director",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "UK Casting - / Natalia Gallacher for Pippa Ailion Casting",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Trey Parker",
+  "role": "Writer",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Co-Director, Book, Music and Lyrics - / Trey Parker",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Robert Lopez",
+  "role": "Writer",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Matt Stone",
+  "role": "Writer",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Trey Parker",
+  "role": "Composer",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Co-Director, Book, Music and Lyrics - / Trey Parker",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Robert Lopez",
+  "role": "Composer",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Matt Stone",
+  "role": "Composer",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Trey Parker",
+  "role": "Lyricist",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Co-Director, Book, Music and Lyrics - / Trey Parker",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Robert Lopez",
+  "role": "Lyricist",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "Matt Stone",
+  "role": "Lyricist",
+  "production": "The Book of Mormon (Prince of Wales Theatre)",
+  "venue": "Prince of Wales Theatre, London",
+  "url": "https://officiallondontheatre.com/show/the-book-of-mormon/",
+  "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone",
+  "rule": "K",
+  "lookup_file": "2026-11-17-9.json"
  }
 ]

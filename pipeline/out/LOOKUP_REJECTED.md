@@ -2,9 +2,11 @@
 
 Found by the production-credits-lookup skill, but the check script could not confirm them on the cited page, so they are not in the network.
 
-## Name is on the page, but not next to the role (director) (1)
+## Name is on the page, but not next to the role (director) (3)
 
 - The Choir of Man · Director: Nic Doodson · https://www.whatsonstage.com/news/the-choir-of-man-announces-cast-for-london-return_1736521/, https://www.whatsonstage.com/news/the-choir-of-man-to-return-to-london-in-time-for-christmas_1730279/
+- The Book of Mormon · Director: Trey Parker · https://officiallondontheatre.com/show/the-book-of-mormon/
+- The Book of Mormon · Director: Casey Nicholaw · https://officiallondontheatre.com/show/the-book-of-mormon/
 
 ## Name is on the page, but not next to the role (writer) (1)
 
