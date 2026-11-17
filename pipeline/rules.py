@@ -110,3 +110,64 @@ def agent_cv(text):
 LAYOUTS = {
     "unitedagents.co.uk": ("A1", agent_cv),
 }
+
+
+# ---- G1: role label next to a name, on any site (no per-site rule needed) ----
+# A line that is exactly a role label, next to a line that is only a name, is a credit.
+# Lines naming other jobs ("Associate Director", "Lighting Designer") are recognised so they keep the
+# pairing in step, but give no credit. A page must use one orientation throughout (name then role,
+# or role then name); a page that mixes them gives nothing and is listed instead.
+G1_ROLES = {
+    "casting director": "Casting director", "casting directors": "Casting director", "casting": "Casting director", "casting by": "Casting director",
+    "director": "Director", "directors": "Director", "directed by": "Director",
+    "writer": "Writer", "writers": "Writer", "written by": "Writer", "playwright": "Writer", "book": "Writer", "book by": "Writer",
+    "choreographer": "Choreographer", "choreography": "Choreographer", "choreography by": "Choreographer",
+    "composer": "Composer", "music by": "Composer",
+}
+OTHER_JOB = re.compile(r"^(?:[A-Z][\w'’&/-]*\s?){0,4}(Director|Designer|Supervisor|Manager|Producer|Assistant|Associate|Arranger|Orchestrator|"
+                       r"Orchestrations|Captain|Coach|Consultant|Lyricist|Lyrics|Dramaturg|Choreographer|Writer|Composer|Casting|Illusions|Puppetry|Swing|Understudy|Administrator|Administration)s?\b.*$")
+VENUE_WORDS = re.compile(r"\b(Playhouse|Palace|Theatre|Theater|Hall|House|Centre|Center|Coliseum|Studios?|Arena|Pavilion|Opera|Arts|Rep|Lyceum|Festival|Tour|Productions?)\b")
+NAME_LINE = re.compile(r"^(?P<names>" + NAME + r"(?:(?:,| and| &) " + NAME + r")*)(?: (?:CDG|CSA))*$")
+
+
+def _kind(line):
+    key = line.strip().rstrip(":").strip().lower()
+    if key in G1_ROLES:
+        return ("role", G1_ROLES[key])
+    if OTHER_JOB.match(line.strip()):
+        return ("other", None)
+    m = NAME_LINE.match(line.strip())
+    if m and not NOT_A_NAME.search(m.group("names")) and not VENUE_WORDS.search(m.group("names")):
+        return ("name", m.group("names"))
+    return (None, None)
+
+
+def label_pairs(text):
+    """Return (credits, status). credits: [(rule, role, name, evidence)]. status: 'ok', 'none' or 'mixed'."""
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    kinds = [_kind(l) for l in lines]
+    runs, cur = [], []
+    for i, (k, v) in enumerate(kinds):
+        is_label = k in ("role", "other")
+        if k is None or (cur and (kinds[cur[-1]][0] == "name") == (k == "name")):
+            if len(cur) >= 2:
+                runs.append(cur)
+            cur = [i] if k else []
+            continue
+        cur.append(i)
+    if len(cur) >= 2:
+        runs.append(cur)
+    if not runs:
+        return [], "none"
+    orient = {"role-first" if kinds[r[0]][0] != "name" else "name-first" for r in runs}
+    if len(orient) > 1:
+        return [], "mixed"
+    role_first = orient.pop() == "role-first"
+    out = []
+    for r in runs:
+        for a, b in zip(r[0::2], r[1::2]):
+            lab, nm = (a, b) if role_first else (b, a)
+            if kinds[lab][0] == "role" and kinds[nm][0] == "name":
+                for n in split_names(kinds[nm][1]):
+                    out.append(("G1", kinds[lab][1], n, lines[a] + " / " + lines[b]))
+    return out, "ok"

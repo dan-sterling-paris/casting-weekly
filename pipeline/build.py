@@ -15,7 +15,7 @@ from collections import defaultdict
 from common import CACHE, OUT, ROOT, seeds
 from link import confirm, norm, norm_work
 from common import host
-from rules import LAYOUTS, credits, production
+from rules import LAYOUTS, credits, label_pairs, production
 
 pages = [p for p in json.loads((OUT / "pages.json").read_text()) if p.get("status") == 200]
 sources = {s["id"]: s for s in json.loads((OUT / "sources.json").read_text())}
@@ -30,7 +30,17 @@ for p in pages:
         own[norm(s["person"])] += "\n" + text_of[p["url"]]
 
 nodes, edges = {}, []
-coverage = {"no_production": [], "title_unreadable": [], "no_credits": [], "official_site_no_credits": []}
+coverage = {"no_production": [], "title_unreadable": [], "no_credits": [], "official_site_no_credits": [], "g1_mixed_layout": []}
+
+
+def all_credits(url, text):
+    """Sentence rules (C1-C6) plus the general label rule (G1); G1 adds only what the sentence rules didn't find."""
+    found = credits(text)
+    g1, status = label_pairs(text)
+    if status == "mixed":
+        coverage["g1_mixed_layout"].append(url)
+    have = {(r, n.lower()) for _, r, n, _ in found}
+    return found + [c for c in g1 if (c[1], c[2].lower()) not in have]
 
 
 def node(nid, kind, label, **kw):
@@ -70,7 +80,7 @@ for p in sorted(pages, key=lambda x: x["url"]):
             coverage["title_unreadable"].append({"url": p["url"], "sentence": sent}); continue
         org, prod = node("org:" + s["id"], "organisation", s["name"].split(" (")[0]), prod_node(title)
         add_edge({"source": org, "target": prod, "type": "produces", "rule": rid, "sentence": sent, **prov})
-        found = credits(t)
+        found = all_credits(p["url"], t)
         if not found:
             coverage["no_credits"].append(p["url"])
         for crid, role, name, csent in found:
@@ -79,7 +89,7 @@ for p in sorted(pages, key=lambda x: x["url"]):
                       "rule": crid, "sentence": csent, "identity": idn, "identity_evidence": ev, **prov})
     elif s["kind"] == "production-site":
         prod = prod_node(s["production"])
-        found = credits(t)
+        found = all_credits(p["url"], t)
         if not found:
             coverage["official_site_no_credits"].append(p["url"])
         for crid, role, name, csent in found:

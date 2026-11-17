@@ -30,6 +30,18 @@ A credit is **not** taken when the role has a qualifier in front of it (Associat
 
 A NAME is 2–4 capitalised words on one line (with "de", "van", "von", "di" allowed). Several names joined by "and", "&" or commas give several credits.
 
+## General label rule (any site)
+
+| ID | Matches |
+|---|---|
+| G1 | A line that is exactly a role label (Casting Director, Director, Writer, Book, Choreographer, Composer…) next to a line that is only a name. Works for "name, then role" and "role, then name" layouts. |
+
+- Lines that name other jobs (Associate Director, Lighting Designer, Fight Director, Administrator…) are recognised so the pairing stays in step, but they give no credit.
+- Names containing venue words (Playhouse, Palace, Theatre, Hall, Centre…) are not treated as people.
+- A page must use one orientation throughout. A page that mixes them gives nothing and is listed under `coverage.g1_mixed_layout`.
+- G1 adds only credits the sentence rules didn't already find.
+- Tested in `test_g1.py` on real Leeds Playhouse and Royal Lyceum credit blocks, plus cases that must give nothing.
+
 ## Layout rules (chosen by site)
 
 | ID | Site | Layout |
