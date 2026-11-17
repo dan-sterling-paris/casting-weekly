@@ -628,5 +628,55 @@
   "evidence": "The musical is based on E R Braithwaite’s memoir and features the title song, made famous by Lulu and written by Don Black and Mark London, alongside new music and lyrics by John Farrar and Kara DioGuardi.",
   "rule": "K",
   "lookup_file": "2026-11-17-4.json"
+ },
+ {
+  "person": "Lotte Wakeham",
+  "role": "Director",
+  "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+  "venue": "Octagon Theatre Bolton",
+  "url": "https://www.whatsonstage.com/news/bolton-octagon-announces-60th-anniversary-season-with-sunset-boulevard-educating-rita-and-more_1732868/",
+  "evidence": "Artistic director Lotte Wakeham directs a new production of Andrew Lloyd Webber’s Sunset Boulevard, performed by a company of actor-musicians.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-5.json"
+ },
+ {
+  "person": "Don Black",
+  "role": "Writer",
+  "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+  "venue": "Octagon Theatre Bolton",
+  "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+  "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-5.json"
+ },
+ {
+  "person": "Christopher Hampton",
+  "role": "Writer",
+  "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+  "venue": "Octagon Theatre Bolton",
+  "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+  "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-5.json"
+ },
+ {
+  "person": "Don Black",
+  "role": "Lyricist",
+  "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+  "venue": "Octagon Theatre Bolton",
+  "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+  "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-5.json"
+ },
+ {
+  "person": "Christopher Hampton",
+  "role": "Lyricist",
+  "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+  "venue": "Octagon Theatre Bolton",
+  "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+  "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-5.json"
  }
 ]

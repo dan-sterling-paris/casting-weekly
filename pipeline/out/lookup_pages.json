@@ -131,5 +131,19 @@
   "final": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
   "title": "To Sir, With Love musical to tour – with initial casting confirmed",
   "file": "cf1616e4b550fffa.txt"
+ },
+ "https://www.whatsonstage.com/news/bolton-octagon-announces-60th-anniversary-season-with-sunset-boulevard-educating-rita-and-more_1732868/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:27:40Z",
+  "final": "https://www.whatsonstage.com/news/bolton-octagon-announces-60th-anniversary-season-with-sunset-boulevard-educating-rita-and-more_1732868/",
+  "title": "Bolton Octagon announces 60th anniversary season with Sunset Boulevard, Educating Rita and more",
+  "file": "2d4b65e4d54b62c0.txt"
+ },
+ "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:27:41Z",
+  "final": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+  "title": "Sunset Boulevard revival to tour next spring",
+  "file": "b02af8182a3a854e.txt"
  }
 }

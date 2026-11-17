@@ -629,6 +629,56 @@
    "url": "https://www.whatsonstage.com/news/to-sir-with-love-musical-to-tour-with-initial-casting-confirmed_1737234/",
    "venue": "UK tour",
    "year": null
+  },
+  {
+   "evidence": "Artistic director Lotte Wakeham directs a new production of Andrew Lloyd Webber’s Sunset Boulevard, performed by a company of actor-musicians.",
+   "person": "Lotte Wakeham",
+   "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+   "role": "Director",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/bolton-octagon-announces-60th-anniversary-season-with-sunset-boulevard-educating-rita-and-more_1732868/",
+   "venue": "Octagon Theatre Bolton",
+   "year": null
+  },
+  {
+   "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
+   "person": "Don Black",
+   "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+   "role": "Writer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+   "venue": "Octagon Theatre Bolton",
+   "year": null
+  },
+  {
+   "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
+   "person": "Christopher Hampton",
+   "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+   "role": "Writer",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+   "venue": "Octagon Theatre Bolton",
+   "year": null
+  },
+  {
+   "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
+   "person": "Don Black",
+   "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+   "role": "Lyricist",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+   "venue": "Octagon Theatre Bolton",
+   "year": null
+  },
+  {
+   "evidence": "The musical has music by Lloyd Webber and a book and lyrics by Don Black and Christopher Hampton.",
+   "person": "Christopher Hampton",
+   "production": "Sunset Boulevard (Octagon Theatre Bolton)",
+   "role": "Lyricist",
+   "rule": "K",
+   "url": "https://www.whatsonstage.com/news/sunset-boulevard-revival-to-tour-next-spring_1732877/",
+   "venue": "Octagon Theatre Bolton",
+   "year": null
   }
  ],
  "method": "scrape -> text -> patterns S, L, B; no AI; plus K: skill lookups checked on the page by script",

@@ -23,7 +23,7 @@ WRITER_PART = {"book": "Writer", "music": "Composer", "lyrics": "Lyricist", "mus
 
 # the role must be stated next to the name: in the same sentence, or on the line just before or after it
 ROLE_WORD = {"Casting director": r"casting", "Director": r"direct", "Writer": r"writ|book|creat|playwright|adapt|monologue|script",
-             "Composer": r"music(?!al)|compos|score", "Lyricist": r"lyric"}
+             "Composer": r"music\b|compos|score", "Lyricist": r"lyric"}
 
 
 def around(sentence, name, width=180):
