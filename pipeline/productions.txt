@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-Jesus Christ Superstar, 2027 UK Tour
-Pretty Woman, 2027 UK Tour
-Sister Act, 2027 UK Tour
 Hairspray, 2027 UK Tour
 Grease, 2027 UK Tour
 How the Grinch Stole Christmas, 2026 Leeds Playhouse

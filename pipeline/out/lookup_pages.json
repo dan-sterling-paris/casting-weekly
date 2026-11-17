@@ -400,5 +400,54 @@
   "final": "https://theatreweekly.com/full-casting-announced-for-uk-and-ireland-tour-and-west-end-return-of-billy-elliot-the-musical/",
   "title": "Full Casting Announced for UK and Ireland Tour and West End Return of Billy Elliot The Musical - Theatre Weekly",
   "file": "d73aff08869c4ac0.txt"
+ },
+ "https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:08:54Z",
+  "final": "https://www.whatsonstage.com/news/jesus-christ-superstar-with-sam-ryder-to-tour-in-2027_1725680/",
+  "title": "Jesus Christ Superstar with Sam Ryder to tour in 2027",
+  "file": "490cb8fb22debd78.txt"
+ },
+ "https://www.broadwayworld.com/article/Cast-Set-For-PRETTY-WOMAN-THE-MUSICAL-UK-Tour-20261020": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:08:57Z",
+  "final": "https://www.broadwayworld.com/westend/article/Cast-Set-For-PRETTY-WOMAN-THE-MUSICAL-UK-Tour-20261020",
+  "title": "Cast Set For PRETTY WOMAN: THE MUSICAL UK Tour | BroadwayWorld",
+  "file": "bf3da1dda52169f2.txt"
+ },
+ "https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:09:01Z",
+  "final": "https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/",
+  "title": "Molly Rainford, Danny Walters and Bernadette Bangura to Lead UK Tour of Pretty Woman: The Musical - Theatre Weekly",
+  "file": "06fc4f345af16a96.txt"
+ },
+ "https://www.londonboxoffice.co.uk/news/post/casting-announced-for-pretty-woman-the-musical": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:09:03Z",
+  "final": "https://www.londonboxoffice.co.uk/news/post/casting-announced-for-pretty-woman-the-musical",
+  "title": "Casting announced for PRETTY WOMAN: THE MUSICAL - West End Theatre News and Reviews",
+  "file": "bb9b36ab1d0cb25a.txt"
+ },
+ "https://theatreweekly.com/sister-act-the-musical-announces-major-uk-and-ireland-tour-starring-craig-revel-horwood-paul-chuckle-and-zoe-birkett/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:09:06Z",
+  "final": "https://theatreweekly.com/sister-act-the-musical-announces-major-uk-and-ireland-tour-starring-craig-revel-horwood-paul-chuckle-and-zoe-birkett/",
+  "title": "Sister Act The Musical announces major UK and Ireland tour starring Craig Revel Horwood, Paul Chuckle and Zoe Birkett - Theatre Weekly",
+  "file": "847fb6f16946a7d1.txt"
+ },
+ "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:09:06Z",
+  "final": "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/",
+  "title": "Sister Act to embark on new tour in 2027",
+  "file": "d717db3633d1e572.txt"
+ },
+ "https://www.londonboxoffice.co.uk/news/post/sister-act-to-embark-on-tour-with-initial-casting-announced": {
+  "status": 200,
+  "fetched_at": "2026-11-17T16:09:07Z",
+  "final": "https://www.londonboxoffice.co.uk/news/post/sister-act-to-embark-on-tour-with-initial-casting-announced",
+  "title": "SISTER ACT to embark on UK and Ireland tour with initial casting announced - West End Theatre News and Reviews",
+  "file": "bf3ec0643705699d.txt"
  }
 }

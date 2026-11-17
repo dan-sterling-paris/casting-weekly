@@ -27,3 +27,6 @@ The Lives of Others, London  →  2026-11-17-10.json
 Cloud 9, 2026 National Theatre London  →  2026-11-17-11.json
 Cats, 2026 UK Tour  →  2026-11-17-11.json
 Billy Elliot, UK Tour  →  2026-11-17-11.json
+Jesus Christ Superstar, 2027 UK Tour  →  2026-11-17-12.json
+Pretty Woman, 2027 UK Tour  →  2026-11-17-12.json
+Sister Act, 2027 UK Tour  →  2026-11-17-12.json

@@ -19,6 +19,28 @@
   ]
  },
  {
+  "show": "Pretty Woman: The Musical",
+  "role": "Writer",
+  "name": "J.F. Lawton",
+  "reason": "role_missing",
+  "urls": [
+   "https://theatreweekly.com/molly-rainford-danny-walters-and-bernadette-bangura-to-lead-uk-tour-of-pretty-woman-the-musical/",
+   "https://www.londonboxoffice.co.uk/news/post/casting-announced-for-pretty-woman-the-musical",
+   "https://www.broadwayworld.com/article/Cast-Set-For-PRETTY-WOMAN-THE-MUSICAL-UK-Tour-20261020"
+  ]
+ },
+ {
+  "show": "Sister Act",
+  "role": "Writer",
+  "name": "Bill Steinkellner",
+  "reason": "not_on_page",
+  "urls": [
+   "https://www.whatsonstage.com/news/sister-act-to-embark-on-new-tour-in-2027_1735481/",
+   "https://theatreweekly.com/sister-act-the-musical-announces-major-uk-and-ireland-tour-starring-craig-revel-horwood-paul-chuckle-and-zoe-birkett/",
+   "https://www.londonboxoffice.co.uk/news/post/sister-act-to-embark-on-tour-with-initial-casting-announced"
+  ]
+ },
+ {
   "show": "The Phantom of the Opera",
   "role": "Writer",
   "name": "Andrew Lloyd Webber",
