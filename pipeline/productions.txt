@@ -1,2 +1,7 @@
 # Productions for the production-credits-lookup skill, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
+The Choir of Man, London
+Beetlejuice, London
+Burlesque, UK Tour
+Wicked, London
+Paddington, London
