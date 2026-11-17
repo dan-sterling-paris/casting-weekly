@@ -1,5 +1,1 @@
-catalogue/cache/
 __pycache__/
-*.log
-pipeline/html/
-pipeline/html_reviews/

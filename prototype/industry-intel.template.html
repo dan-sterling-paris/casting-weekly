@@ -163,7 +163,7 @@ button,input{font:inherit;color:inherit}
 "use strict";
 const RAW = JSON.parse(document.getElementById("data").textContent);
 const HAS_K = RAW.edges.some(e => e.rule === "K");   // any credits from checked lookups (not pattern-only)
-if(HAS_K) document.getElementById("hudMethod").textContent = "LIVE NETWORK · PATTERNS + CHECKED LOOKUPS";
+document.getElementById("hudMethod").textContent = "LIVE NETWORK · CHECKED LOOKUPS";
 const E = RAW.edges, TNAME = RAW.theatres;
 const KIND = {cd:{label:"Casting director", color:"var(--amber)", chip:"amber"}, person:{label:"Creative", color:"var(--person)", chip:""}, prod:{label:"Production", color:"var(--cyan)", chip:"cyan"}, theatre:{label:"Producer / company", color:"var(--violet)", chip:"violet"}};
 
@@ -204,7 +204,7 @@ document.getElementById("m-links").textContent = E.length;
 document.getElementById("swept").textContent = RAW.swept;
 const sources = new Set(E.map(e=>e.url)).size;
 document.getElementById("status").innerHTML = "";
-[["SOURCE PAGES", sources], ["ORGANISATIONS", count("theatre")], ["METHOD", HAS_K ? "PATTERN RULES + CHECKED LOOKUPS" : "PATTERN RULES · NO AI"], ["EVERY LINK", "QUOTED FROM ITS SOURCE"], ["LAST SWEEP", RAW.swept]].forEach(([k,v]) => {
+[["SOURCE PAGES", sources], ["ORGANISATIONS", count("theatre")], ["METHOD", "CLAUDE LOOKUP · CHECKED BY SCRIPT"], ["EVERY LINK", "QUOTED FROM ITS SOURCE"], ["LAST SWEEP", RAW.swept]].forEach(([k,v]) => {
   const s = document.createElement("span"); s.innerHTML = ""; s.append(k + " ", Object.assign(document.createElement("b"), {textContent: v})); document.getElementById("status").append(s);
 });
 

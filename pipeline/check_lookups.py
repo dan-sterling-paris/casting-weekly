@@ -13,7 +13,19 @@ import re
 from collections import defaultdict
 from urllib.parse import urlparse
 from common import CACHE, OUT, ROOT, UA, get, html_to_text, key, now, robots, sha
-from rules import QUALIFIERS, sentences
+
+# a role word with one of these in front is a different job ("Associate Director", "Musical Director")
+QUALIFIERS = (r"(Associate|Assistant|Resident|Fight|Intimacy|Movement|Musical|Music|Artistic|Video|Lighting|Sound|Co-|Deputy|"
+              r"Executive|Creative|Production|Technical|Puppetry|Voice|Dialect|Children's|Children’s|Revival)")
+
+
+def sentences(text):
+    out = []
+    for line in text.split("\n"):
+        for s in re.split(r"(?<=[.!?])\s+(?=[A-Z“\"])", line):
+            if len(s.strip()) > 3:
+                out.append(s.strip())
+    return out
 
 LOOKUPS = ROOT / "lookups"
 PAGES = OUT / "lookup_pages.json"
