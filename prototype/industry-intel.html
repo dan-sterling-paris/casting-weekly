@@ -106,7 +106,9 @@ button,input{font:inherit;color:inherit}
 /* status */
 .status{grid-column:1/-1;display:flex;gap:22px;align-items:center;padding:0 16px;border-top:1px solid var(--line);background:var(--bg2);font:10.5px var(--mono);letter-spacing:.12em;color:var(--faint);white-space:nowrap;overflow:hidden}
 .status b{color:var(--dim);font-weight:500}
-@media (max-width:1100px){.app{grid-template-columns:0 minmax(0,1fr) 340px}.rail{display:none}}
+.centre-pick{display:none;position:absolute;left:14px;bottom:14px;z-index:2;font:12px var(--mono);color:var(--dim);background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:6px 8px;gap:6px;align-items:center}
+.centre-pick select{font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:4px 6px}
+@media (max-width:1100px){.app{grid-template-columns:0 minmax(0,1fr) 340px}.rail{display:none}.centre-pick{display:flex}}
 @media (max-width:760px){
   body{overflow:auto}.app{display:flex;flex-direction:column;height:auto}
   .stage{height:62vh}.dossier{border-left:0;border-top:1px solid var(--line)}.live{display:none}.status{flex-wrap:wrap;padding:8px 16px;gap:6px 16px}
@@ -135,6 +137,8 @@ button,input{font:inherit;color:inherit}
       <div class="metric"><b id="m-prods">0</b><span>Productions</span></div>
       <div class="metric"><b id="m-links">0</b><span>Verified links</span></div>
     </div>
+    <p class="lbl">Centre on</p>
+    <div class="toggles" id="centre" role="group" aria-label="Centre the network on"></div>
     <p class="lbl">Show</p>
     <div class="toggles" id="toggles"></div>
     <p class="lbl">Casting directors</p>
@@ -143,6 +147,7 @@ button,input{font:inherit;color:inherit}
 
   <main class="stage" id="stage" aria-label="Network graph">
     <div class="hud"><b>LIVE NETWORK · NO AI</b> · CLICK A NODE TO OPEN ITS FILE · DRAG · SCROLL TO ZOOM</div>
+    <label class="centre-pick">Centre on <select id="centreSel"><option value="cd">Casting directors</option><option value="prod">Productions</option><option value="theatre">Producers &amp; venues</option><option value="person">Creatives</option></select></label>
     <div class="zoom"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zfit" aria-label="Fit to screen">⤢</button></div>
   </main>
 
@@ -203,13 +208,21 @@ document.getElementById("status").innerHTML = "";
 
 /* ---- filters ---- */
 const visible = {cd:true, person:false, prod:true, theatre:true};  // casting directors first; other creatives and venues on request
-const tg = document.getElementById("toggles");
+const tg = document.getElementById("toggles"), toggleBtn = {};
 for(const k of ["cd","person","prod","theatre"]){
   const b = document.createElement("button"); b.className = "tg"; b.type = "button"; b.setAttribute("aria-pressed", String(visible[k]));
   const sw = document.createElement("i"); sw.className = "sw" + (k==="prod" ? " sq" : ""); sw.style.background = KIND[k].color;
   b.append(sw, ({cd:"Casting directors",person:"Creatives",prod:"Productions",theatre:"Producers & companies"})[k], Object.assign(document.createElement("small"), {textContent: count(k)}));
   b.addEventListener("click", () => { visible[k] = !visible[k]; b.setAttribute("aria-pressed", visible[k]); paint(); });
-  tg.append(b);
+  tg.append(b); toggleBtn[k] = b;
+}
+const centreBox = document.getElementById("centre"), centreBtn = {};
+for(const k of ["cd","prod","theatre","person"]){
+  const b = document.createElement("button"); b.className = "tg"; b.type = "button"; b.setAttribute("aria-pressed", String(k === "cd"));
+  const sw = document.createElement("i"); sw.className = "sw" + (k==="prod" ? " sq" : ""); sw.style.background = KIND[k].color;
+  b.append(sw, ({cd:"Casting directors",prod:"Productions",theatre:"Producers & venues",person:"Creatives"})[k]);
+  b.addEventListener("click", () => layout(k));
+  centreBox.append(b); centreBtn[k] = b;
 }
 const idx = document.getElementById("cdindex");
 N.filter(n=>n.kind==="cd").sort((a,b)=>b.credits.length-a.credits.length || a.label.localeCompare(b.label)).forEach(n => {
@@ -232,50 +245,80 @@ svg.call(zoom).on("dblclick.zoom", null);
 const L = root.append("g").selectAll("line").data(links).join("line")
   .attr("stroke", d => d.kind === "venue" ? "rgba(169,155,255,.18)" : d.role === "Casting director" ? "rgba(245,184,61,.35)" : "rgba(201,211,223,.16)")
   .attr("stroke-width", d => d.kind === "venue" ? 1 : 1.3).attr("stroke-dasharray", d => d.kind === "venue" ? "3 4" : null);
-const size = n => n.kind === "cd" ? 16 + Math.min(n.credits.length, 8) * 2.5 : n.kind === "prod" ? 7 : n.kind === "theatre" ? 6 : 3.5;
+const HUB_MAX = {cd: 40, prod: 12, theatre: 12, person: 12};
+const RING_TEXT = {cd: "CASTING DIRECTOR NOT STATED ON THE SOURCES READ", prod: "NOT LINKED TO A LEADING PRODUCTION",
+                   theatre: "NOT LINKED TO A LEADING PRODUCER OR VENUE", person: "NOT LINKED TO A LEADING CREATIVE"};
+let CENTRE = "cd", HUBS = [], R_IN = 150, R_RING = 400;
+const deg = n => n.nbrs.size;
+const size = n => n.hub ? 16 + Math.min(deg(n), 8) * 2.5 : n.kind === "prod" ? 7 : n.kind === "theatre" ? 6 : n.kind === "cd" ? 6 : 3.5;
 const G = root.append("g").selectAll("g").data(N).join("g").attr("class","n").style("cursor","pointer")
   .attr("tabindex", 0).attr("role","button").attr("aria-label", n => KIND[n.kind].label + ": " + n.label)
   .on("click", (ev,n) => select(n)).on("keydown", (ev,n) => { if(ev.key === "Enter") select(n); });
-G.each(function(n){
-  const g = d3.select(this);
-  if(n.kind === "prod") g.append("rect").attr("x",-size(n)).attr("y",-size(n)).attr("width",size(n)*2).attr("height",size(n)*2).attr("transform","rotate(45)").attr("fill","var(--bg)").attr("stroke","var(--cyan)").attr("stroke-width",1.6);
-  else if(n.kind === "theatre") g.append("circle").attr("r",size(n)).attr("fill","rgba(169,155,255,.12)").attr("stroke","var(--violet)").attr("stroke-width",1.6);
-  else if(n.kind === "cd"){
-    g.append("circle").attr("r", size(n) + 9).attr("fill","none").attr("stroke","rgba(245,184,61,.25)").attr("stroke-width",1).attr("stroke-dasharray","2 4");
-    g.append("circle").attr("class","core").attr("r",size(n)).attr("fill","var(--amber)").attr("filter","url(#glow)");
-    g.append("text").attr("text-anchor","middle").attr("dy","0.35em").attr("style","font:600 12px var(--mono);fill:#121317;pointer-events:none").text(n.label.split(/\s+/).map(w=>w[0]).join("").slice(0,3).toUpperCase());
-  }
-  else g.append("circle").attr("r",size(n)).attr("fill", KIND[n.kind].color).attr("opacity",.8);
-});
-G.append("title").text(n => n.label);   // hover any dot to see its name
 G.call(d3.drag().on("start",(ev,d)=>{ if(!ev.active) sim.alphaTarget(.25).restart(); d.fx=d.x; d.fy=d.y; })
   .on("drag",(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on("end",(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
-const T = root.append("g").selectAll("text").data(N).join("text").attr("class", n => "node-label" + (n.kind==="prod" ? " prod" : "") + (n.kind==="cd" ? " cd" : "")).attr("dy", n => n.kind === "theatre" ? size(n) + 18 : n.kind === "cd" ? size(n) + 26 : -size(n) - 8).attr("text-anchor","middle").text(n => n.label.length > 34 ? n.label.slice(0,32) + "…" : n.label);
-
-const CDS = N.filter(n=>n.kind==="cd").sort((a,b)=>b.credits.length-a.credits.length || a.label.localeCompare(b.label));
-const R_IN = CDS.length > 1 ? 150 : 0, R_OUT = 400;
-CDS.forEach((c,i) => { const a = -Math.PI/2 + i*2*Math.PI/CDS.length; c.tx = R_IN*Math.cos(a); c.ty = R_IN*Math.sin(a); });
-const UNCAST = N.filter(n=>n.kind==="prod" && !n.cds.length);
-UNCAST.forEach((p,i) => { const a = -Math.PI/2 + (i+.5)*2*Math.PI/UNCAST.length; p.tx = R_OUT*Math.cos(a); p.ty = R_OUT*Math.sin(a); });
-for(const p of N.filter(n=>n.kind==="prod" && n.cds.length)){
-  const mx = d3.mean(p.cds, c=>c.tx), my = d3.mean(p.cds, c=>c.ty), d = Math.hypot(mx,my) || 1;
-  p.tx = mx + (CDS.length > 1 ? mx/d : 0) * 110; p.ty = my + (CDS.length > 1 ? my/d : 1) * 110;
+const T = root.append("g").selectAll("text").data(N).join("text").attr("text-anchor","middle").text(n => n.label.length > 34 ? n.label.slice(0,32) + "…" : n.label);
+function draw(){
+  G.selectAll("*").remove();
+  G.each(function(n){
+    const g = d3.select(this);
+    if(n.hub){
+      g.append("circle").attr("r", size(n) + 9).attr("fill","none").attr("stroke", KIND[n.kind].color).attr("stroke-opacity",.35).attr("stroke-width",1).attr("stroke-dasharray","2 4");
+      g.append("circle").attr("class","core").attr("r",size(n)).attr("fill", KIND[n.kind].color).attr("filter","url(#glow)");
+      g.append("text").attr("text-anchor","middle").attr("dy","0.35em").attr("style","font:600 12px var(--mono);fill:#121317;pointer-events:none").text(n.label.split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).map(w=>w[0]).join("").slice(0,3).toUpperCase());
+    }
+    else if(n.kind === "prod") g.append("rect").attr("x",-size(n)).attr("y",-size(n)).attr("width",size(n)*2).attr("height",size(n)*2).attr("transform","rotate(45)").attr("fill","var(--bg)").attr("stroke","var(--cyan)").attr("stroke-width",1.6);
+    else if(n.kind === "theatre") g.append("circle").attr("r",size(n)).attr("fill","rgba(169,155,255,.12)").attr("stroke","var(--violet)").attr("stroke-width",1.6);
+    else g.append("circle").attr("r",size(n)).attr("fill", KIND[n.kind].color).attr("opacity",.85);
+  });
+  G.append("title").text(n => n.label);   // hover any dot to see its name
+  T.attr("class", n => "node-label" + (n.hub ? " cd" : n.kind==="prod" ? " prod" : "")).style("fill", n => n.hub ? KIND[n.kind].color : null)
+   .attr("dy", n => n.hub ? size(n) + 26 : n.kind === "theatre" ? size(n) + 18 : -size(n) - 8);
 }
-N.forEach(n => { if(n.tx != null){ n.x = n.tx + (Math.random()-.5)*20; n.y = n.ty + (Math.random()-.5)*20; } });
-const pull = n => n.kind === "cd" ? .9 : n.kind === "prod" ? (n.cds.length ? .12 : .5) : 0;
+const pull = n => n.hub ? .9 : n.loose ? .5 : n.tx != null ? .12 : 0;
 const sim = d3.forceSimulation(N)
-  .force("link", d3.forceLink(links).id(d=>d.id).distance(l => l.kind === "venue" ? 60 : l.role === "Casting director" ? 95 : 38).strength(l => l.role === "Casting director" ? .25 : .6))
-  .force("charge", d3.forceManyBody().strength(n => n.kind === "cd" ? -500 : n.kind === "prod" ? -160 : -40))
-  .force("collide", d3.forceCollide(n => size(n) + (n.kind === "cd" ? 22 : 10)))
-  .force("x", d3.forceX(n => n.tx ?? 0).strength(pull)).force("y", d3.forceY(n => n.ty ?? 0).strength(pull))
+  .force("link", d3.forceLink(links).id(d=>d.id))
+  .force("charge", d3.forceManyBody())
+  .force("collide", d3.forceCollide())
+  .force("x", d3.forceX(n => n.tx ?? 0)).force("y", d3.forceY(n => n.ty ?? 0))
   .on("tick", () => {
     L.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
     G.attr("transform", d => `translate(${d.x},${d.y})`); T.attr("x",d=>d.x).attr("y",d=>d.y);
   });
-if(UNCAST.length){
-  const ring = root.insert("g", ":first-child").attr("pointer-events","none");
-  ring.append("circle").attr("r", R_OUT).attr("fill","none").attr("stroke","rgba(255,255,255,.07)").attr("stroke-dasharray","3 6");
-  ring.append("text").attr("y", -R_OUT - 14).attr("text-anchor","middle").attr("style","font:500 11px var(--mono);letter-spacing:.14em;fill:var(--faint)").text("CASTING DIRECTOR NOT STATED ON THE SOURCES READ");
+const ring = root.insert("g", ":first-child").attr("pointer-events","none");
+const ringCircle = ring.append("circle").attr("fill","none").attr("stroke","rgba(255,255,255,.07)").attr("stroke-dasharray","3 6");
+const ringText = ring.append("text").attr("text-anchor","middle").attr("style","font:500 11px var(--mono);letter-spacing:.14em;fill:var(--faint)");
+
+function layout(kind){
+  CENTRE = kind;
+  visible[kind] = true; toggleBtn[kind].setAttribute("aria-pressed","true");
+  for(const k in centreBtn) centreBtn[k].setAttribute("aria-pressed", String(k === kind));
+  document.getElementById("centreSel").value = kind;
+  N.forEach(n => { n.hub = false; n.loose = false; n.tx = n.ty = null; });
+  HUBS = N.filter(n=>n.kind===kind && !/ not stated$/.test(n.label)).sort((a,b)=>deg(b)-deg(a) || a.label.localeCompare(b.label)).slice(0, HUB_MAX[kind]);
+  HUBS.forEach(h => h.hub = true);
+  R_IN = HUBS.length > 1 ? Math.max(150, HUBS.length * 16) : 0; R_RING = R_IN + 260;
+  HUBS.forEach((h,i) => { const a = -Math.PI/2 + i*2*Math.PI/HUBS.length; h.tx = R_IN*Math.cos(a); h.ty = R_IN*Math.sin(a); });
+  const hubSet = new Set(HUBS), loose = [];
+  for(const n of N){
+    if(n.hub) continue;
+    const hs = [...n.nbrs].map(id=>nodes.get(id)).filter(x=>hubSet.has(x));
+    if(hs.length){
+      const mx = d3.mean(hs,h=>h.tx), my = d3.mean(hs,h=>h.ty), d = Math.hypot(mx,my) || 1;
+      n.tx = mx + (HUBS.length > 1 ? mx/d : 0) * 110; n.ty = my + (HUBS.length > 1 ? my/d : 1) * 110;
+    } else if(n.kind === "prod" || n.kind === kind){ n.loose = true; loose.push(n); }
+  }
+  loose.forEach((p,i) => { const a = -Math.PI/2 + (i+.5)*2*Math.PI/loose.length; p.tx = R_RING*Math.cos(a); p.ty = R_RING*Math.sin(a); });
+  N.forEach(n => { if(n.tx != null){ n.x = n.tx + (Math.random()-.5)*20; n.y = n.ty + (Math.random()-.5)*20; } });
+  ring.style("display", loose.length ? null : "none");
+  ringCircle.attr("r", R_RING); ringText.attr("y", -R_RING - 14).text(RING_TEXT[kind]);
+  draw();
+  sim.force("link").distance(l => (l.source.hub || l.target.hub) ? 95 : l.kind === "venue" ? 60 : 38).strength(l => (l.source.hub || l.target.hub) ? .25 : .6);
+  sim.force("charge").strength(n => n.hub ? -500 : n.kind === "prod" ? -160 : -40);
+  sim.force("collide").radius(n => size(n) + (n.hub ? 22 : 10));
+  sim.force("x").x(n => n.tx ?? 0).strength(pull); sim.force("y").y(n => n.ty ?? 0).strength(pull);
+  selected = null; paint(); renderDossier();
+  sim.alpha(1).restart();
+  setTimeout(() => { fit(); if(HUBS[0]) select(HUBS[0]); }, 1400);
 }
 sim.on("end", () => { if(!selected) fit(); });
 
@@ -289,7 +332,7 @@ function paint(){
    .attr("stroke-width", n => n === selected ? 3 : (n.kind==="prod"||n.kind==="theatre") ? 1.6 : 0).attr("stroke", n => n === selected ? "#fff" : (n.kind==="prod" ? "var(--cyan)" : n.kind==="theatre" ? "var(--violet)" : null));
   L.style("display", l => show(l.source) && show(l.target) ? null : "none").style("opacity", l => !f || (f.has(l.source.id) && f.has(l.target.id)) ? 1 : .05);
   const few = f && f.size <= 45;   // name the neighbourhood only when it is small enough to read
-  T.style("display", n => show(n) && (n.kind === "cd" || (few && f.has(n.id))) ? null : "none")
+  T.style("display", n => show(n) && (n.hub || (few && f.has(n.id))) ? null : "none")
    .style("opacity", n => !f || f.has(n.id) ? 1 : .25);
 }
 function fit(dur=700){
@@ -407,8 +450,8 @@ addEventListener("keydown", e => { if(e.key === "/" && document.activeElement !=
 addEventListener("resize", () => fit(0));
 
 paint(); renderDossier();
-const first = N.filter(n=>n.kind==="cd").sort((a,b)=>b.credits.length-a.credits.length)[0];
-setTimeout(() => { fit(); if(CDS[0]) select(CDS[0]); }, 1400);
+document.getElementById("centreSel").addEventListener("change", e => layout(e.target.value));
+layout("cd");
 })();
 </script>
 </body>
