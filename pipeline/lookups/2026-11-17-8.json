@@ -1,0 +1,54 @@
+[
+  {
+    "Production Name": "Moulin Rouge! The Musical",
+    "Venue": "Piccadilly Theatre, London",
+    "Casting Director": "Pippa Ailion CDG; Natalie Gallacher CDG",
+    "Director": "Alex Timbers",
+    "Writer": "Book: John Logan; Additional Lyrics: Justin Levine",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/", "https://moulinrougemusical.co.uk/", "https://www.global-creatures.com/news/moulin-rouge-the-musical-london-cast/"],
+      "Casting Director": ["https://moulinrougemusical.co.uk/creative/", "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/", "https://www.global-creatures.com/news/moulin-rouge-the-musical-london-cast/", "https://britishtheatre.com/posts/moulin-rouge-the-musical-london-announces-casting"],
+      "Director": ["https://moulinrougemusical.co.uk/creative/", "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/", "https://www.global-creatures.com/news/moulin-rouge-the-musical-london-cast/", "https://britishtheatre.com/posts/moulin-rouge-the-musical-london-announces-casting"],
+      "Writer": ["https://moulinrougemusical.co.uk/creative/", "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/", "https://www.global-creatures.com/news/moulin-rouge-the-musical-london-cast/"]
+    }
+  },
+  {
+    "Production Name": "Hamilton",
+    "Venue": "Victoria Palace Theatre, London",
+    "Casting Director": "Unknown",
+    "Director": "Thomas Kail",
+    "Writer": "Book: Lin-Manuel Miranda; Music: Lin-Manuel Miranda; Lyrics: Lin-Manuel Miranda",
+    "Sources": {
+      "Venue": ["https://hamiltonmusical.com/london/", "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428", "https://www.broadwayworld.com/article/HAMILTON-in-London-Reveals-New-Cast-20250509"],
+      "Casting Director": [],
+      "Director": ["https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428", "https://www.broadwayworld.com/article/HAMILTON-in-London-Reveals-New-Cast-20250509", "https://www.whatsonstage.com/news/hamilton-announces-new-west-end-cast_1598473"],
+      "Writer": ["https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428", "https://www.broadwayworld.com/article/HAMILTON-in-London-Reveals-New-Cast-20250509", "https://www.whatsonstage.com/news/hamilton-announces-new-west-end-cast_1598473"]
+    }
+  },
+  {
+    "Production Name": "Chicago",
+    "Venue": "UK and Ireland tour (2027)",
+    "Casting Director": "Unknown",
+    "Director": "Unknown",
+    "Writer": "Book: Fred Ebb and Bob Fosse; Music: John Kander; Lyrics: Fred Ebb",
+    "Sources": {
+      "Venue": ["https://chicagothemusical.com/uk-tour", "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/", "https://www.broadwayworld.com/article/CHICAGO-Will-Embark-on-2027-UK-and-Ireland-Tour-20260618"],
+      "Casting Director": [],
+      "Director": [],
+      "Writer": ["https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/", "https://www.broadwayworld.com/article/CHICAGO-Will-Embark-on-2027-UK-and-Ireland-Tour-20260618"]
+    }
+  },
+  {
+    "Production Name": "Chicago",
+    "Venue": "UK and Ireland tour (2025)",
+    "Casting Director": "Unknown",
+    "Director": "Unknown",
+    "Writer": "Book: Fred Ebb and Bob Fosse; Music: John Kander; Lyrics: Fred Ebb",
+    "Sources": {
+      "Venue": ["https://norwichtheatre.org/darren-day-to-star-as-billy-flynn-and-sinitta-to-star-as-mama-morton-in-the-uk-and-ireland-tour-of-chicago-the-musical/", "https://www.westendbestfriend.co.uk/news/burton-day-sinitta-chicago-uk-ireland-tour"],
+      "Casting Director": [],
+      "Director": [],
+      "Writer": ["https://norwichtheatre.org/darren-day-to-star-as-billy-flynn-and-sinitta-to-star-as-mama-morton-in-the-uk-and-ireland-tour-of-chicago-the-musical/"]
+    }
+  }
+]

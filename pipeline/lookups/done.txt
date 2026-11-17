@@ -15,3 +15,6 @@ The Jungle Book, National Theatre London  →  2026-11-17-6.json
 Hadestown, London  →  2026-11-17-7.json
 Lion King, London  →  2026-11-17-7.json
 Cabaret, London  →  2026-11-17-7.json
+Moulin Rouge, London  →  2026-11-17-8.json
+Hamilton, London  →  2026-11-17-8.json
+Chicago, UK Tour  →  2026-11-17-8.json

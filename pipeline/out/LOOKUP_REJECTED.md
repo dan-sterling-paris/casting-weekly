@@ -17,3 +17,7 @@ Found by the production-credits-lookup skill, but the check script could not con
 ## Name not on any cited page (1)
 
 - The Jungle Book · Writer: Anupama Chandrasekhar from Rudyard Kipling's The Jungle Book · https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-JUNGLE-BOOK-at-the-National-Theatre-20260914, https://www.whatsonstage.com/news/national-theatre-announces-the-jungle-books-full-company_1731628/
+
+## Page could not be read (blocked by robots.txt) (1)
+
+- Moulin Rouge! The Musical · Lyricist: Justin Levine · https://moulinrougemusical.co.uk/creative/, https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/, https://www.global-creatures.com/news/moulin-rouge-the-musical-london-cast/

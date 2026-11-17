@@ -201,5 +201,71 @@
   "final": "https://www.whatsonstage.com/news/cabaret-announces-new-casting-for-autumn-2026_1729292/",
   "title": "Cabaret announces new casting for autumn 2026",
   "file": "2f12b3fcb996e6fc.txt"
+ },
+ "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:45:41Z",
+  "final": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/",
+  "title": "Moulin Rouge! The Musical Tickets | Piccadilly TheatrefacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketPlay IconShowReelAll ImagesLocationChevron DownAccess InfoTickCalendarClockGenre MaskAge InfoNoticePhoneEmail",
+  "file": "7ebe61d480a70bb9.txt"
+ },
+ "https://moulinrougemusical.co.uk/creative/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:45:44Z",
+  "final": "https://moulinrougemusical.co.uk/creative/",
+  "title": "Creative -  Moulin Rouge! The Musical",
+  "file": "37ef8f8743076ade.txt"
+ },
+ "https://www.global-creatures.com/news/moulin-rouge-the-musical-london-cast/": {
+  "status": "blocked by robots.txt"
+ },
+ "https://hamiltonmusical.com/london/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:45:51Z",
+  "final": "https://hamiltonmusical.com/london/",
+  "title": "Home - London - Hamilton Official Site",
+  "file": "5955e1db581aaf28.txt"
+ },
+ "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:45:53Z",
+  "final": "https://www.broadwayworld.com/westend/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428",
+  "title": "Stephenson Ardern-Sodje and More Join the Cast of HAMILTON at The Victoria Palace Theatre | BroadwayWorld",
+  "file": "1b9530f66baf0a06.txt"
+ },
+ "https://chicagothemusical.com/uk-tour": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:45:56Z",
+  "final": "https://chicagothemusical.com/uk-tour",
+  "title": "Chicago the Musical | Official SiteUK, Ireland & European Tour - Chicago the Musical",
+  "file": "cbac0b0acd8670f9.txt"
+ },
+ "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:45:58Z",
+  "final": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/",
+  "title": "Cast for Chicago tour announced, including Strictly Come Dancing’s Lauren Oakley",
+  "file": "aa716fb4dd215891.txt"
+ },
+ "https://www.broadwayworld.com/article/CHICAGO-Will-Embark-on-2027-UK-and-Ireland-Tour-20260618": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:45:58Z",
+  "final": "https://www.broadwayworld.com/westend/article/CHICAGO-Will-Embark-on-2027-UK-and-Ireland-Tour-20260618",
+  "title": "CHICAGO Will Embark on 2027 UK and Ireland Tour | BroadwayWorld",
+  "file": "02f8fd64b6c3d05f.txt"
+ },
+ "https://norwichtheatre.org/darren-day-to-star-as-billy-flynn-and-sinitta-to-star-as-mama-morton-in-the-uk-and-ireland-tour-of-chicago-the-musical/": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:46:01Z",
+  "final": "https://norwichtheatre.org/darren-day-to-star-as-billy-flynn-and-sinitta-to-star-as-mama-morton-in-the-uk-and-ireland-tour-of-chicago-the-musical/",
+  "title": "Darren Day to star as 'Billy Flynn' and Sinitta to star as 'Mama Morton' in the UK and Ireland tour of Chicago the Musical | Norwich Theatre",
+  "file": "6c29ab02ec84252d.txt"
+ },
+ "https://www.westendbestfriend.co.uk/news/burton-day-sinitta-chicago-uk-ireland-tour": {
+  "status": 200,
+  "fetched_at": "2026-11-17T13:46:03Z",
+  "final": "https://www.westendbestfriend.co.uk/news/burton-day-sinitta-chicago-uk-ireland-tour",
+  "title": "Dan Burton, Darren Day and Sinitta to join CHICAGO UK and Ireland tour | West End Best Friend",
+  "file": "0f3812021133b46f.txt"
  }
 }

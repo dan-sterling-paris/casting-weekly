@@ -878,5 +878,125 @@
   "evidence": "Featuring music by John Kander, lyrics by Fred Ebb and a book by Joe Masteroff, Cabaret is based on the play by John Van Druten and stories by Christopher Isherwood.",
   "rule": "K",
   "lookup_file": "2026-11-17-7.json"
+ },
+ {
+  "person": "Pippa Ailion",
+  "role": "Casting director",
+  "production": "Moulin Rouge! The Musical (Piccadilly Theatre)",
+  "venue": "Piccadilly Theatre, London",
+  "url": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/",
+  "evidence": "Casting by - / Pippa Ailion CDG and Natalie Gallacher CDG",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Natalie Gallacher",
+  "role": "Casting director",
+  "production": "Moulin Rouge! The Musical (Piccadilly Theatre)",
+  "venue": "Piccadilly Theatre, London",
+  "url": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/",
+  "evidence": "Casting by - / Pippa Ailion CDG and Natalie Gallacher CDG",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Alex Timbers",
+  "role": "Director",
+  "production": "Moulin Rouge! The Musical (Piccadilly Theatre)",
+  "venue": "Piccadilly Theatre, London",
+  "url": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/",
+  "evidence": "Director - / Alex Timbers",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "John Logan",
+  "role": "Writer",
+  "production": "Moulin Rouge! The Musical (Piccadilly Theatre)",
+  "venue": "Piccadilly Theatre, London",
+  "url": "https://officiallondontheatre.com/show/moulin-rouge-the-musical-tickets-111421793/",
+  "evidence": "Book by - / John Logan",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Thomas Kail",
+  "role": "Director",
+  "production": "Hamilton (Victoria Palace Theatre)",
+  "venue": "Victoria Palace Theatre, London",
+  "url": "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428",
+  "evidence": "Hamilton has book, music and lyrics by Lin-Manuel Miranda, is directed by Thomas Kail, with choreography by Andy Blankenbuehler, musical supervision and orchestrations by Alex Lacamoire and is based on Ron Chernow's biography of Alexander Hamilton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Lin-Manuel Miranda",
+  "role": "Writer",
+  "production": "Hamilton (Victoria Palace Theatre)",
+  "venue": "Victoria Palace Theatre, London",
+  "url": "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428",
+  "evidence": "Hamilton has book, music and lyrics by Lin-Manuel Miranda, is directed by Thomas Kail, with choreography by Andy Blankenbuehler, musical supervision and orchestrations by Alex Lacamoire and is based on Ron Chernow's biography of Alexander Hamilton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Lin-Manuel Miranda",
+  "role": "Composer",
+  "production": "Hamilton (Victoria Palace Theatre)",
+  "venue": "Victoria Palace Theatre, London",
+  "url": "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428",
+  "evidence": "Hamilton has book, music and lyrics by Lin-Manuel Miranda, is directed by Thomas Kail, with choreography by Andy Blankenbuehler, musical supervision and orchestrations by Alex Lacamoire and is based on Ron Chernow's biography of Alexander Hamilton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Lin-Manuel Miranda",
+  "role": "Lyricist",
+  "production": "Hamilton (Victoria Palace Theatre)",
+  "venue": "Victoria Palace Theatre, London",
+  "url": "https://www.broadwayworld.com/nashville/article/Stephenson-Ardern-Sodje-and-More-Join-the-Cast-of-HAMILTON-at-The-Victoria-Palace-Theatre-20260428",
+  "evidence": "Hamilton has book, music and lyrics by Lin-Manuel Miranda, is directed by Thomas Kail, with choreography by Andy Blankenbuehler, musical supervision and orchestrations by Alex Lacamoire and is based on Ron Chernow's biography of Alexander Hamilton.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Fred Ebb",
+  "role": "Writer",
+  "production": "Chicago",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/",
+  "evidence": "Based on the play by Maurine Dallas Watkins, the musical has a book by Fred Ebb and Bob Fosse, music by Kander and lyrics by Ebb.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Bob Fosse",
+  "role": "Writer",
+  "production": "Chicago",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/",
+  "evidence": "Based on the play by Maurine Dallas Watkins, the musical has a book by Fred Ebb and Bob Fosse, music by Kander and lyrics by Ebb.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "John Kander",
+  "role": "Composer",
+  "production": "Chicago",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/",
+  "evidence": "Chicago features a score by John Kander and Fred Ebb, with songs including “Razzle Dazzle”, “Cell Block Tango” and “All That Jazz”.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
+ },
+ {
+  "person": "Fred Ebb",
+  "role": "Lyricist",
+  "production": "Chicago",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/cast-for-chicago-tour-announced-including-strictly-come-dancings-lauren-oakley_1736816/",
+  "evidence": "Based on the play by Maurine Dallas Watkins, the musical has a book by Fred Ebb and Bob Fosse, music by Kander and lyrics by Ebb.",
+  "rule": "K",
+  "lookup_file": "2026-11-17-8.json"
  }
 ]
