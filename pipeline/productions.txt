@@ -1,3 +1,24 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
+Sinatra The Musical, Aldwych Theatre London
+Matilda The Musical, London
+Titanique, Criterion Theatre London
+The Devil Wears Prada, London
+The Play That Goes Wrong, London
+Rent, 2026 Duke of York's Theatre London
+Operation Mincemeat, London
+My Neighbour Totoro, Gillian Lynne Theatre London
+The Cherry Orchard, 2026 Harold Pinter Theatre London
+Into the Woods, 2026 Noël Coward Theatre London
+Harry Potter and the Cursed Child, London
+The Snowman, 2026 Peacock Theatre London
+Stranger Things: The First Shadow, London
+Jesus Christ Superstar, 2026 Theatre Royal Drury Lane London
+The Standard of Living, Theatre Royal Haymarket London
+Oh, Mary!, London
+Hay Fever, 2026 Wyndham's Theatre London
+Who's Afraid of Virginia Woolf?, 2026 @sohoplace London
+The Mousetrap, London
+SIX, London
+Magic Mike Live, London
