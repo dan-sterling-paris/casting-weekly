@@ -547,5 +547,54 @@
   "final": "https://www.whatsonstage.com/news/cast-for-my-fair-lady-at-chichester-festival-theatre-announced_1722365/",
   "title": "Cast for My Fair Lady at Chichester Festival Theatre announced",
   "file": "cc90a4e33adf12bd.txt"
+ },
+ "https://www.londontheatre.co.uk/show/46142-sinatra-the-musical": {
+  "status": 200,
+  "fetched_at": "2026-11-24T23:03:43Z",
+  "final": "https://www.londontheatre.co.uk/show/46142-sinatra-the-musical",
+  "title": "Sinatra The Musical Tickets | Aldwych Theatre | London Theatre",
+  "file": "75f4168e051e0c6c.txt"
+ },
+ "https://www.whatsonstage.com/news/sinatra-the-musical-unveils-full-west-end-cast-including-jenna-russell_1717684": {
+  "status": 200,
+  "fetched_at": "2026-11-24T23:03:46Z",
+  "final": "https://www.whatsonstage.com/news/sinatra-the-musical-unveils-full-west-end-cast-including-jenna-russell_1717684/",
+  "title": "Sinatra the Musical unveils full West End cast including Jenna Russell",
+  "file": "09f62e1864c3e52b.txt"
+ },
+ "https://www.london-theatreland.co.uk/shows/aldwych-theatre/sinatra-the-musical": {
+  "status": 200,
+  "fetched_at": "2026-11-24T23:03:49Z",
+  "final": "https://www.london-theatreland.co.uk/shows/aldwych-theatre/sinatra-the-musical",
+  "title": "Sinatra The Musical · Aldwych Theatre London, LON · Open Run · Tickets, information, reviews",
+  "file": "73ac89dda5d4f644.txt"
+ },
+ "https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/": {
+  "status": 200,
+  "fetched_at": "2026-11-24T23:03:51Z",
+  "final": "https://officiallondontheatre.com/show/matilda-the-musical-116048/",
+  "title": "Matilda The Musical Tickets | Cambridge Theatre | Musical TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketPlay IconShowReelAll ImagesLocationChevron DownTickCalendarClockGenre MaskAge InfoNotice",
+  "file": "0a3baf1259a77df8.txt"
+ },
+ "https://www.londontheatre.co.uk/show/40903": {
+  "status": 200,
+  "fetched_at": "2026-11-24T23:03:53Z",
+  "final": "https://www.londontheatre.co.uk/show/40903-titanique",
+  "title": "Titanique Tickets | Criterion Theatre | London Theatre",
+  "file": "283b90548683868c.txt"
+ },
+ "https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/": {
+  "status": 200,
+  "fetched_at": "2026-11-24T23:03:55Z",
+  "final": "https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/",
+  "title": "Titanique gives casting update – with Myra DuBois joining the show",
+  "file": "a05b3f67a3b8d9fa.txt"
+ },
+ "https://www.whatsonstage.com/news/full-titanique-company-announced-for-west-end-premiere_1637276": {
+  "status": 200,
+  "fetched_at": "2026-11-24T23:03:57Z",
+  "final": "https://www.whatsonstage.com/news/full-titanique-company-announced-for-west-end-premiere_1637276/",
+  "title": "Full Titanique company announced for West End premiere",
+  "file": "a05dcdda43d2237c.txt"
  }
 }

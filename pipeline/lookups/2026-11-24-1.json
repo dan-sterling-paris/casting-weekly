@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Sinatra The Musical",
+    "Venue": "Aldwych Theatre, London",
+    "Casting Director": "David Grindrod CDG; Jim Carnahan; Jason Thinger",
+    "Director": "Kathleen Marshall",
+    "Writer": "Book: Joe DiPietro",
+    "Sources": {
+      "Venue": ["https://www.londontheatre.co.uk/show/46142-sinatra-the-musical", "https://www.westendbestfriend.co.uk/news/jenna-russell-to-star-in-sinatra-the-musical-full-cast-announced"],
+      "Casting Director": ["https://www.whatsonstage.com/news/sinatra-the-musical-unveils-full-west-end-cast-including-jenna-russell_1717684", "https://www.westendbestfriend.co.uk/news/jenna-russell-to-star-in-sinatra-the-musical-full-cast-announced"],
+      "Director": ["https://www.london-theatreland.co.uk/shows/aldwych-theatre/sinatra-the-musical", "https://www.westendbestfriend.co.uk/news/jenna-russell-to-star-in-sinatra-the-musical-full-cast-announced", "https://www.londontheatre.co.uk/show/46142-sinatra-the-musical"],
+      "Writer": ["https://www.londontheatre.co.uk/show/46142-sinatra-the-musical", "https://www.london-theatreland.co.uk/shows/aldwych-theatre/sinatra-the-musical"]
+    }
+  },
+  {
+    "Production Name": "Matilda The Musical",
+    "Venue": "Cambridge Theatre, London",
+    "Casting Director": "Will Burton CDG; Amy Beadel",
+    "Director": "Matthew Warchus",
+    "Writer": "Book: Dennis Kelly; Music: Tim Minchin; Lyrics: Tim Minchin",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/", "https://www.londontheatredirect.com/news/matilda-casting-15th-year"],
+      "Casting Director": ["https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/"],
+      "Director": ["https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/", "https://www.whatsonstage.com/news/matilda-the-musical-announces-new-west-end-cast_1727496/"],
+      "Writer": ["https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/", "https://www.whatsonstage.com/news/matilda-the-musical-announces-new-west-end-cast_1727496/"]
+    }
+  },
+  {
+    "Production Name": "Titanique",
+    "Venue": "Criterion Theatre, London",
+    "Casting Director": "Pearson Casting CDG; Richard Johnston",
+    "Director": "Tye Blue",
+    "Writer": "Tye Blue; Marla Mindelle; Constantine Rousouli",
+    "Sources": {
+      "Venue": ["https://www.londontheatre.co.uk/show/40903", "https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/", "https://www.whatsonstage.com/news/cast-including-william-hanson-to-join-titanique-in-the-west-end_1721763/"],
+      "Director": ["https://www.whatsonstage.com/news/full-titanique-company-announced-for-west-end-premiere_1637276", "https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/"],
+      "Writer": ["https://www.londontheatre.co.uk/show/40903", "https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/", "https://www.whatsonstage.com/news/full-titanique-company-announced-for-west-end-premiere_1637276"]
+    }
+  }
+]

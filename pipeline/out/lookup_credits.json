@@ -2098,5 +2098,165 @@
   "evidence": "Book, Music and Lyrics - / Robert Lopez and Matt Stone",
   "rule": "K",
   "lookup_file": "2026-11-17-9.json"
+ },
+ {
+  "person": "David Grindrod",
+  "role": "Casting director",
+  "production": "Sinatra The Musical (Aldwych Theatre)",
+  "venue": "Aldwych Theatre, London",
+  "url": "https://www.whatsonstage.com/news/sinatra-the-musical-unveils-full-west-end-cast-including-jenna-russell_1717684",
+  "evidence": "Casting is by David Grindrod for Grindrod Burton Casting, with Jim Carnahan and Jason Thinger handling US casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Jim Carnahan",
+  "role": "Casting director",
+  "production": "Sinatra The Musical (Aldwych Theatre)",
+  "venue": "Aldwych Theatre, London",
+  "url": "https://www.whatsonstage.com/news/sinatra-the-musical-unveils-full-west-end-cast-including-jenna-russell_1717684",
+  "evidence": "Casting is by David Grindrod for Grindrod Burton Casting, with Jim Carnahan and Jason Thinger handling US casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Jason Thinger",
+  "role": "Casting director",
+  "production": "Sinatra The Musical (Aldwych Theatre)",
+  "venue": "Aldwych Theatre, London",
+  "url": "https://www.whatsonstage.com/news/sinatra-the-musical-unveils-full-west-end-cast-including-jenna-russell_1717684",
+  "evidence": "Casting is by David Grindrod for Grindrod Burton Casting, with Jim Carnahan and Jason Thinger handling US casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Kathleen Marshall",
+  "role": "Director",
+  "production": "Sinatra The Musical (Aldwych Theatre)",
+  "venue": "Aldwych Theatre, London",
+  "url": "https://www.london-theatreland.co.uk/shows/aldwych-theatre/sinatra-the-musical",
+  "evidence": "Backed by a world-class creative team, including a book by two-time Tony winner Joe DiPietro (Memphis, What's New Pussycat?) and directed by Olivier and three-time Tony winner Kathleen Marshall (Anything Goes, Top Hat).",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Joe DiPietro",
+  "role": "Writer",
+  "production": "Sinatra The Musical (Aldwych Theatre)",
+  "venue": "Aldwych Theatre, London",
+  "url": "https://www.londontheatre.co.uk/show/46142-sinatra-the-musical",
+  "evidence": "Sinatra The Musical in London includes a book by two-time Tony Award-winning writer Joe DiPietro and is directed and choreographed by Olivier Award winner and three-time Tony Award winner Kathleen Marshall.",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Will Burton",
+  "role": "Casting director",
+  "production": "Matilda The Musical (Cambridge Theatre)",
+  "venue": "Cambridge Theatre, London",
+  "url": "https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/",
+  "evidence": "Casting Director - / Will Burton CDG for Grindrod Burton Casting",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Amy Beadel",
+  "role": "Casting director",
+  "production": "Matilda The Musical (Cambridge Theatre)",
+  "venue": "Cambridge Theatre, London",
+  "url": "https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/",
+  "evidence": "Amy Beadel for Jessica Ronane Casting",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Matthew Warchus",
+  "role": "Director",
+  "production": "Matilda The Musical (Cambridge Theatre)",
+  "venue": "Cambridge Theatre, London",
+  "url": "https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/",
+  "evidence": "Developed & Directed by - / Matthew Warchus",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Dennis Kelly",
+  "role": "Writer",
+  "production": "Matilda The Musical (Cambridge Theatre)",
+  "venue": "Cambridge Theatre, London",
+  "url": "https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/",
+  "evidence": "Book - / Dennis Kelly",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Tim Minchin",
+  "role": "Composer",
+  "production": "Matilda The Musical (Cambridge Theatre)",
+  "venue": "Cambridge Theatre, London",
+  "url": "https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/",
+  "evidence": "Music & Lyrics - / Tim Minchin",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Tim Minchin",
+  "role": "Lyricist",
+  "production": "Matilda The Musical (Cambridge Theatre)",
+  "venue": "Cambridge Theatre, London",
+  "url": "https://officiallondontheatre.com/london-shows/show/item116048/matilda-the-musical/",
+  "evidence": "Music & Lyrics - / Tim Minchin",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Pearson Casting",
+  "role": "Casting director",
+  "production": "Titanique (Criterion Theatre)",
+  "venue": "Criterion Theatre, London",
+  "url": "https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/",
+  "evidence": "Casting is by Pearson Casting CDG and Richard Johnston.",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Richard Johnston",
+  "role": "Casting director",
+  "production": "Titanique (Criterion Theatre)",
+  "venue": "Criterion Theatre, London",
+  "url": "https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/",
+  "evidence": "Casting is by Pearson Casting CDG and Richard Johnston.",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Tye Blue",
+  "role": "Writer",
+  "production": "Titanique (Criterion Theatre)",
+  "venue": "Criterion Theatre, London",
+  "url": "https://www.londontheatre.co.uk/show/40903",
+  "evidence": "Titanique cast and creative team / By: Marla Mindelle, Constantine Rousouli & Tye Blue",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Marla Mindelle",
+  "role": "Writer",
+  "production": "Titanique (Criterion Theatre)",
+  "venue": "Criterion Theatre, London",
+  "url": "https://www.londontheatre.co.uk/show/40903",
+  "evidence": "Titanique cast and creative team / By: Marla Mindelle, Constantine Rousouli & Tye Blue",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Constantine Rousouli",
+  "role": "Writer",
+  "production": "Titanique (Criterion Theatre)",
+  "venue": "Criterion Theatre, London",
+  "url": "https://www.londontheatre.co.uk/show/40903",
+  "evidence": "Titanique cast and creative team / By: Marla Mindelle, Constantine Rousouli & Tye Blue",
+  "rule": "K",
+  "lookup_file": "2026-11-24-1.json"
  }
 ]
