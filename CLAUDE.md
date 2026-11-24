@@ -19,17 +19,19 @@ scheduled "Casting Weekly lookup" message arrives:
    `pipeline/name_rules.txt` with `same:` / `different:` lines overrides it); `extract.py` builds `site/artifact.html`
    (the artifact) and `site/index.html` (the standalone page for castingweekly.com/site/).
 6. Commit and push to `claude/adoring-babbage-p2ckfa`. If the push is rejected, `git pull --no-edit` and push again. Never force-push.
+   Then run `bash pipeline/push_main.sh` to copy the build onto `main`, which updates castingweekly.com/site/ (GitHub Pages).
+   It never changes the holding page (`index.html`), `proto.html` or `CNAME` on `main`, and never force-pushes.
 7. Publish `site/artifact.html` with the Artifact tool to https://claude.ai/artifact/VeDkFx2Y9h3ykZVb2c8quL
    (same URL; read it first if this conversation hasn't published it). The site's own text must not mention
    crawling, scraping or AI.
 8. On a scheduled run, send one PushNotification (under 200 characters): shows looked up, credits kept/rejected,
-   casting director(s) found or "casting not stated", any credit resting on a single page, and any new name merge or review.
+   casting director(s) found or "casting not stated", any credit resting on a single page, and any new name merge or review; say so if the push to `main` failed.
 
 ## Corrections and takedowns
 
 The site's takedown page stores requests from signed-in visitors in the artifact's database (collection `takedowns`,
 one document per sender with a `requests` subcollection); others email privacy@castingweekly.com. When Dan grants one,
 add `remove: <name>` or `remove: <name> | <show>` to `pipeline/name_rules.txt`, run `python3 pipeline/extract.py`,
-commit, push and republish. The castingweekly.com copy updates only when the branch is pushed to `main`. The person or credit stays off the site on every later run.
+commit, push, run `bash pipeline/push_main.sh` (so the castingweekly.com copy updates too) and republish. The person or credit stays off the site on every later run.
 
 Never research a line already in `done.txt`. To redo a show, Dan deletes its line from `done.txt` and adds it to the queue.
