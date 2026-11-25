@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "12 Letters to My Name",
+    "Venue": "Sheffield Playhouse, Sheffield",
+    "Casting Director": "Unknown",
+    "Director": "Unknown",
+    "Writer": "Lettie Precious",
+    "Sources": {
+      "Venue": ["https://ett.org.uk/our-work/twelve-letters-to-my-name/", "https://graeae.org/?p=16055"],
+      "Casting Director": [],
+      "Director": [],
+      "Writer": ["https://ett.org.uk/our-work/twelve-letters-to-my-name/", "https://graeae.org/?p=16055"]
+    }
+  },
+  {
+    "Production Name": "A Tale of Two Cities",
+    "Venue": "UK tour",
+    "Casting Director": "Helena Palmer",
+    "Director": "Michael Fentiman",
+    "Writer": "Terence Rattigan; John Gielgud",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/a-tale-of-two-cities-casting-and-tour-dates-announced_1728513/", "https://marlowetheatre.com/blog/marlowe-theatre-announces-cast-and-uk-tour-dates-for-a-tale-of-two-cities"],
+      "Casting Director": ["https://www.whatsonstage.com/news/a-tale-of-two-cities-casting-and-tour-dates-announced_1728513/"],
+      "Director": ["https://www.whatsonstage.com/news/a-tale-of-two-cities-casting-and-tour-dates-announced_1728513/", "https://marlowetheatre.com/blog/marlowe-theatre-announces-cast-and-uk-tour-dates-for-a-tale-of-two-cities"],
+      "Writer": ["https://marlowetheatre.com/blog/marlowe-theatre-announces-cast-and-uk-tour-dates-for-a-tale-of-two-cities", "https://www.whatsonstage.com/news/a-tale-of-two-cities-casting-and-tour-dates-announced_1728513/"]
+    }
+  },
+  {
+    "Production Name": "Punch",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Christopher Worrall CDG",
+    "Director": "Adam Penford",
+    "Writer": "James Graham",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/punch-confirms-2027-tour-cast_1737681/", "https://theatreweekly.com/full-cast-announced-for-uk-and-ireland-tour-of-punch/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/punch-confirms-2027-tour-cast_1737681/", "https://theatreweekly.com/full-cast-announced-for-uk-and-ireland-tour-of-punch/"],
+      "Director": ["https://www.whatsonstage.com/news/punch-confirms-2027-tour-cast_1737681/", "https://theatreweekly.com/full-cast-announced-for-uk-and-ireland-tour-of-punch/"],
+      "Writer": ["https://nottinghamplayhouse.co.uk/events/punch-on-tour/"]
+    }
+  }
+]
