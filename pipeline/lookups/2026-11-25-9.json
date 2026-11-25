@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Back to the Future The Musical",
+    "Venue": "UK tour",
+    "Casting Director": "David Grindrod",
+    "Director": "John Rando",
+    "Writer": "Book: Bob Gale; Music: Alan Silvestri; Music: Glen Ballard; Lyrics: Alan Silvestri; Lyrics: Glen Ballard",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/", "https://www.westendbestfriend.co.uk/news/full-casting-back-to-the-future-the-musical-uk-tour"],
+      "Casting Director": ["https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/"],
+      "Director": ["https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/"],
+      "Writer": ["https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/"]
+    }
+  },
+  {
+    "Production Name": "Annie",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Nikolai Foster",
+    "Writer": "Book: Thomas Meehan; Music: Charles Strouse; Lyrics: Martin Charnin",
+    "Sources": {
+      "Venue": ["https://www.londonboxoffice.co.uk/news/post/cast-announced-for-2026-uk-and-ireland-tour-annie", "https://theatreweekly.com/annie-announces-uk-and-ireland-tour-opening-at-new-wimbledon-theatre-in-may-2026/"],
+      "Casting Director": [],
+      "Director": ["https://www.londonboxoffice.co.uk/news/post/cast-announced-for-2026-uk-and-ireland-tour-annie", "https://theatreweekly.com/annie-announces-uk-and-ireland-tour-opening-at-new-wimbledon-theatre-in-may-2026/", "https://www.whatsonstage.com/news/annie-tour-announces-further-casting_1710424"],
+      "Writer": ["https://www.londonboxoffice.co.uk/news/post/cast-announced-for-2026-uk-and-ireland-tour-annie", "https://theatreweekly.com/annie-announces-uk-and-ireland-tour-opening-at-new-wimbledon-theatre-in-may-2026/"]
+    }
+  },
+  {
+    "Production Name": "Mrs. Doubtfire",
+    "Venue": "UK tour",
+    "Casting Director": "Stuart Burt; Verity Naughton",
+    "Director": "Jerry Zaks",
+    "Writer": "Book: Karey Kirkpatrick; Book: John O'Farrell; Music: Wayne Kirkpatrick; Music: Karey Kirkpatrick; Lyrics: Wayne Kirkpatrick; Lyrics: Karey Kirkpatrick",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/mrs-doubtfire-musical-announces-full-tour-casting_1722712/", "https://theatreroyal.com/press/news/mrsdoubtfirefullcasting/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/mrs-doubtfire-musical-announces-full-tour-casting_1722712/", "https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527", "https://theatreroyal.com/press/news/mrsdoubtfirefullcasting/"],
+      "Director": ["https://www.whatsonstage.com/news/mrs-doubtfire-musical-announces-full-tour-casting_1722712/", "https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527", "https://theatreroyal.com/press/news/mrsdoubtfirefullcasting/"],
+      "Writer": ["https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527", "https://theatreroyal.com/press/news/mrsdoubtfirefullcasting/", "https://www.whatsonstage.com/news/mrs-doubtfire-musical-announces-full-tour-casting_1722712/"]
+    }
+  }
+]

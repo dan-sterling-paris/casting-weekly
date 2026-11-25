@@ -2442,6 +2442,156 @@
  {
   "person": "Pearson Casting",
   "role": "Casting director",
+  "production": "Dog Man The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/",
+  "evidence": "Casting is by Pearson Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Jen Wineman",
+  "role": "Director",
+  "production": "Dog Man The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/",
+  "evidence": "The musical features a book and lyrics by Kevin Del Aguila, with music by Brad Alexander, and direction and choreography by Jen Wineman.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Kevin Del Aguila",
+  "role": "Writer",
+  "production": "Dog Man The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/",
+  "evidence": "The musical features a book and lyrics by Kevin Del Aguila, with music by Brad Alexander, and direction and choreography by Jen Wineman.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Brad Alexander",
+  "role": "Composer",
+  "production": "Dog Man The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/",
+  "evidence": "The musical features a book and lyrics by Kevin Del Aguila, with music by Brad Alexander, and direction and choreography by Jen Wineman.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Kevin Del Aguila",
+  "role": "Lyricist",
+  "production": "Dog Man The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/",
+  "evidence": "The musical features a book and lyrics by Kevin Del Aguila, with music by Brad Alexander, and direction and choreography by Jen Wineman.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Jill Green",
+  "role": "Casting director",
+  "production": "Jersey Boys (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/",
+  "evidence": "Orchestrations are by Steve Orich, casting is by Jill Green, associate UK musical supervision is by Ed Bussey, musical direction is by Lauren Ronan and resident direction is by Luke Zammit.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Des McAnuff",
+  "role": "Director",
+  "production": "Jersey Boys (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/",
+  "evidence": "The tour reunites the original Broadway creative team, with direction by Des McAnuff and choreography by Sergio Trujillo.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Marshall Brickman",
+  "role": "Writer",
+  "production": "Jersey Boys (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/",
+  "evidence": "The piece has a book by Marshall Brickman and Rick Elice, music by Bob Gaudio and lyrics by Bob Crewe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Rick Elice",
+  "role": "Writer",
+  "production": "Jersey Boys (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/",
+  "evidence": "The piece has a book by Marshall Brickman and Rick Elice, music by Bob Gaudio and lyrics by Bob Crewe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Bob Gaudio",
+  "role": "Composer",
+  "production": "Jersey Boys (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/",
+  "evidence": "The piece has a book by Marshall Brickman and Rick Elice, music by Bob Gaudio and lyrics by Bob Crewe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Bob Crewe",
+  "role": "Lyricist",
+  "production": "Jersey Boys (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/",
+  "evidence": "The piece has a book by Marshall Brickman and Rick Elice, music by Bob Gaudio and lyrics by Bob Crewe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Will Burton",
+  "role": "Casting director",
+  "production": "Everybody's Talking About Jamie (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/everybodys-talking-about-jamie-announces-full-tour-company_1732384/",
+  "evidence": "The tour will be directed by Matt Ryan, with design by Anna Fleischle, choreography by Kate Prince, lighting design by Lucy Carter, sound design by Paul Groothuis, musical supervision by Theo Jamieson and casting by Will Burton.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Matt Ryan",
+  "role": "Director",
+  "production": "Everybody's Talking About Jamie (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/everybodys-talking-about-jamie-announces-full-tour-company_1732384/",
+  "evidence": "The tour will be directed by Matt Ryan, with design by Anna Fleischle, choreography by Kate Prince, lighting design by Lucy Carter, sound design by Paul Groothuis, musical supervision by Theo Jamieson and casting by Will Burton.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Tom MacRae",
+  "role": "Writer",
+  "production": "Everybody's Talking About Jamie (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/everybodys-talking-about-jamie-announces-full-tour-company_1732384/",
+  "evidence": "The tour will mark a decade since the musical first premiered at the Sheffield Crucible and will include a newly written song by composer Dan Gillespie Sells and writer Tom MacRae.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Dan Gillespie Sells",
+  "role": "Composer",
+  "production": "Everybody's Talking About Jamie (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/everybodys-talking-about-jamie-announces-full-tour-company_1732384/",
+  "evidence": "The tour will mark a decade since the musical first premiered at the Sheffield Crucible and will include a newly written song by composer Dan Gillespie Sells and writer Tom MacRae.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-10.json"
+ },
+ {
+  "person": "Pearson Casting",
+  "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",
   "venue": "Fortune Theatre, London",
   "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",
@@ -3138,5 +3288,385 @@
   "evidence": "The show is directed by Andy Fickman, with choreography by Gary Lloyd, design by David Shields, lighting by Ben Cracknell, sound by Dan Samson and musical supervision by Jeremy Wootton and Will Joy.",
   "rule": "K",
   "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Harry Blumenau CDG CDA",
+  "role": "Casting director",
+  "production": "Legally Blonde",
+  "venue": "Venue not stated",
+  "url": "https://www.londonboxoffice.co.uk/news/post/legally-blonde-the-musical-2026-uk-tour-cast",
+  "evidence": "… End, Broadway and International Tour), lighting design by Ben Cracknell (The Wizard of Oz, London Palladium), sound design by Adam Fisher (Evita, London Palladium) and casting by Harry Blumenau CDG CDA.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Nikolai Foster",
+  "role": "Director",
+  "production": "Legally Blonde",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805",
+  "evidence": "Curve artistic director Nikolai Foster will direct the new production, produced by Curve and ROYO, who also collaborated on the tour of Kinky Boots set to arrive in the West End.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Heather Hach",
+  "role": "Writer",
+  "production": "Legally Blonde",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805",
+  "evidence": "With music and lyrics by Laurence O’Keefe and Nell Benjamin, and a book by Heather Hach, the musical is based on the novel by Amanda Brown and the Metro-Goldwyn-Mayer motion picture of the same name.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Laurence O'Keefe",
+  "role": "Composer",
+  "production": "Legally Blonde",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805",
+  "evidence": "With music and lyrics by Laurence O’Keefe and Nell Benjamin, and a book by Heather Hach, the musical is based on the novel by Amanda Brown and the Metro-Goldwyn-Mayer motion picture of the same name.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Nell Benjamin",
+  "role": "Composer",
+  "production": "Legally Blonde",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805",
+  "evidence": "With music and lyrics by Laurence O’Keefe and Nell Benjamin, and a book by Heather Hach, the musical is based on the novel by Amanda Brown and the Metro-Goldwyn-Mayer motion picture of the same name.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Laurence O'Keefe",
+  "role": "Lyricist",
+  "production": "Legally Blonde",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805",
+  "evidence": "With music and lyrics by Laurence O’Keefe and Nell Benjamin, and a book by Heather Hach, the musical is based on the novel by Amanda Brown and the Metro-Goldwyn-Mayer motion picture of the same name.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Nell Benjamin",
+  "role": "Lyricist",
+  "production": "Legally Blonde",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805",
+  "evidence": "With music and lyrics by Laurence O’Keefe and Nell Benjamin, and a book by Heather Hach, the musical is based on the novel by Amanda Brown and the Metro-Goldwyn-Mayer motion picture of the same name.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Natalie Gallacher",
+  "role": "Casting director",
+  "production": "Mean Girls (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/",
+  "evidence": "… dance, incidental and additional music arrangements by Mary-Mitchell Campbell, orchestrations by John Clancy, dance and incidental music arrangements by Glen Kelly and casting by Natalie Gallacher for Pippa Ailion and Natalie Gallacher Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Casey Nicholaw",
+  "role": "Director",
+  "production": "Mean Girls (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/",
+  "evidence": "The musical has a book by Tina Fey, music and vocal arrangements by Jeff Richmond, lyrics by Nell Benjamin, direction and choreography by Casey Nicholaw, scenic design by Scott Pask, costume design by Katrina Lindsay, lighting design by Kenneth Posner, sound design by Brian Ronan, hair design by Josh Marquette, musical supervision…",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Tina Fey",
+  "role": "Writer",
+  "production": "Mean Girls (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/",
+  "evidence": "The musical has a book by Tina Fey, music and vocal arrangements by Jeff Richmond, lyrics by Nell Benjamin, direction and choreography by Casey Nicholaw, scenic design by Scott Pask, costume design by Katrina Linds…",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Jeff Richmond",
+  "role": "Composer",
+  "production": "Mean Girls (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/",
+  "evidence": "The musical has a book by Tina Fey, music and vocal arrangements by Jeff Richmond, lyrics by Nell Benjamin, direction and choreography by Casey Nicholaw, scenic design by Scott Pask, costume design by Katrina Lindsay, lighting design by Kenneth Posner, sound de…",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Nell Benjamin",
+  "role": "Lyricist",
+  "production": "Mean Girls (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/",
+  "evidence": "The musical has a book by Tina Fey, music and vocal arrangements by Jeff Richmond, lyrics by Nell Benjamin, direction and choreography by Casey Nicholaw, scenic design by Scott Pask, costume design by Katrina Lindsay, lighting design by Kenneth Posner, sound design by Brian Ronan, hair…",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Phyllida Lloyd",
+  "role": "Director",
+  "production": "Mamma Mia! (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/mamma-mia-announces-new-tour-company_1725818/",
+  "evidence": "The show is directed by Phyllida Lloyd, with choreography by Anthony Van Laast, design by Mark Thompson, lighting design by Howard Harrison, sound design by Andrew Bruce and Bobby Aitken, and musical supervision, additional material and arrangements by Martin Koch.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Catherine Johnson",
+  "role": "Writer",
+  "production": "Mamma Mia! (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/new-cast-announced-for-mamma-mia-uk-tour-as-hit-musical-continues-through-2027/",
+  "evidence": "Featuring music and lyrics by Benny Andersson and Björn Ulvaeus, a book by Catherine Johnson, direction by Phyllida Lloyd and choreography by Anthony Van Laast, the production continues to captivate audiences around the globe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Benny Andersson",
+  "role": "Composer",
+  "production": "Mamma Mia! (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/new-cast-announced-for-mamma-mia-uk-tour-as-hit-musical-continues-through-2027/",
+  "evidence": "Featuring music and lyrics by Benny Andersson and Björn Ulvaeus, a book by Catherine Johnson, direction by Phyllida Lloyd and choreography by Anthony Van Laast, the production continues to captivate audiences around the globe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Björn Ulvaeus",
+  "role": "Composer",
+  "production": "Mamma Mia! (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/new-cast-announced-for-mamma-mia-uk-tour-as-hit-musical-continues-through-2027/",
+  "evidence": "Featuring music and lyrics by Benny Andersson and Björn Ulvaeus, a book by Catherine Johnson, direction by Phyllida Lloyd and choreography by Anthony Van Laast, the production continues to captivate audiences around the globe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Benny Andersson",
+  "role": "Lyricist",
+  "production": "Mamma Mia! (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/new-cast-announced-for-mamma-mia-uk-tour-as-hit-musical-continues-through-2027/",
+  "evidence": "Featuring music and lyrics by Benny Andersson and Björn Ulvaeus, a book by Catherine Johnson, direction by Phyllida Lloyd and choreography by Anthony Van Laast, the production continues to captivate audiences around the globe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "Björn Ulvaeus",
+  "role": "Lyricist",
+  "production": "Mamma Mia! (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/new-cast-announced-for-mamma-mia-uk-tour-as-hit-musical-continues-through-2027/",
+  "evidence": "Featuring music and lyrics by Benny Andersson and Björn Ulvaeus, a book by Catherine Johnson, direction by Phyllida Lloyd and choreography by Anthony Van Laast, the production continues to captivate audiences around the globe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-8.json"
+ },
+ {
+  "person": "David Grindrod",
+  "role": "Casting director",
+  "production": "Back to the Future The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/",
+  "evidence": "Casting by David Grindrod for Grindrod Burton Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "John Rando",
+  "role": "Director",
+  "production": "Back to the Future The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/",
+  "evidence": "The musical is directed by John Rando, with Tim Hatley as set and costume designer, Chris Bailey as choreographer, Chris Fisher as illusion designer, Tim Lutkin and Hugh Vanstone as lighting designers, Gareth Owen as sound designer and Finn Ross as video designer.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Bob Gale",
+  "role": "Writer",
+  "production": "Back to the Future The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/",
+  "evidence": "Based on the 1985 film, the WhatsOnStage Award-winning Back to the Future The Musical has a book by Bob Gale, with music and lyrics by Alan Silvestri and Glen Ballard.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Alan Silvestri",
+  "role": "Composer",
+  "production": "Back to the Future The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/",
+  "evidence": "Based on the 1985 film, the WhatsOnStage Award-winning Back to the Future The Musical has a book by Bob Gale, with music and lyrics by Alan Silvestri and Glen Ballard.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Glen Ballard",
+  "role": "Composer",
+  "production": "Back to the Future The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/",
+  "evidence": "Based on the 1985 film, the WhatsOnStage Award-winning Back to the Future The Musical has a book by Bob Gale, with music and lyrics by Alan Silvestri and Glen Ballard.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Alan Silvestri",
+  "role": "Lyricist",
+  "production": "Back to the Future The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/",
+  "evidence": "Based on the 1985 film, the WhatsOnStage Award-winning Back to the Future The Musical has a book by Bob Gale, with music and lyrics by Alan Silvestri and Glen Ballard.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Glen Ballard",
+  "role": "Lyricist",
+  "production": "Back to the Future The Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/back-to-the-future-the-musical-tour-announces-full-company_1731211/",
+  "evidence": "Based on the 1985 film, the WhatsOnStage Award-winning Back to the Future The Musical has a book by Bob Gale, with music and lyrics by Alan Silvestri and Glen Ballard.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Nikolai Foster",
+  "role": "Director",
+  "production": "Annie (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.londonboxoffice.co.uk/news/post/cast-announced-for-2026-uk-and-ireland-tour-annie",
+  "evidence": "It is directed by Curve’s Artistic Director Nikolai Foster, who also directs Kinky Boots, which is coming to London this Spring.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Thomas Meehan",
+  "role": "Writer",
+  "production": "Annie (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.londonboxoffice.co.uk/news/post/cast-announced-for-2026-uk-and-ireland-tour-annie",
+  "evidence": "With a Tony award-winning book by Thomas Meehan, music by Charles Strouse, and lyrics by Martin Charnin, Annie follows the spirited orphan girl who lives in a New York City orphanage during the Great Depression.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Charles Strouse",
+  "role": "Composer",
+  "production": "Annie (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.londonboxoffice.co.uk/news/post/cast-announced-for-2026-uk-and-ireland-tour-annie",
+  "evidence": "With a Tony award-winning book by Thomas Meehan, music by Charles Strouse, and lyrics by Martin Charnin, Annie follows the spirited orphan girl who lives in a New York City orphanage during the Great Depression.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Martin Charnin",
+  "role": "Lyricist",
+  "production": "Annie (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.londonboxoffice.co.uk/news/post/cast-announced-for-2026-uk-and-ireland-tour-annie",
+  "evidence": "With a Tony award-winning book by Thomas Meehan, music by Charles Strouse, and lyrics by Martin Charnin, Annie follows the spirited orphan girl who lives in a New York City orphanage during the Great Depression.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Stuart Burt",
+  "role": "Casting director",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/mrs-doubtfire-musical-announces-full-tour-casting_1722712/",
+  "evidence": "The Musical), lighting design by Philip S Rosenberg (Pretty Woman The Musical), sound design by Brian Ronan (Beautiful: The Carole King Musical), hair design by David Brian Brown (Frozen), casting by Stuart Burt (Cabaret) and children’s casting by Verity Naughton.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Verity Naughton",
+  "role": "Casting director",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/mrs-doubtfire-musical-announces-full-tour-casting_1722712/",
+  "evidence": "The Musical), lighting design by Philip S Rosenberg (Pretty Woman The Musical), sound design by Brian Ronan (Beautiful: The Carole King Musical), hair design by David Brian Brown (Frozen), casting by Stuart Burt (Cabaret) and children’s casting by Verity Naughton.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Jerry Zaks",
+  "role": "Director",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/mrs-doubtfire-musical-announces-full-tour-casting_1722712/",
+  "evidence": "Direction is by Tony winner Jerry Zaks (Hello, Dolly!), choreography by Lorin Latarro (Waitress), and music supervision, arrangements and orchestrations by Ethan Popp (Tina: The Tina Turner Musical).",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Karey Kirkpatrick",
+  "role": "Writer",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527",
+  "evidence": "Doubtfire has been created by a transatlantic team of award-winning artists, with Original Music and Lyrics by Wayne Kirkpatrick and Karey Kirkpatrick, and a Book by Karey Kirkpatrick and John O'Farrell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "John O'Farrell",
+  "role": "Writer",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527",
+  "evidence": "Doubtfire has been created by a transatlantic team of award-winning artists, with Original Music and Lyrics by Wayne Kirkpatrick and Karey Kirkpatrick, and a Book by Karey Kirkpatrick and John O'Farrell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Wayne Kirkpatrick",
+  "role": "Composer",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527",
+  "evidence": "Doubtfire has been created by a transatlantic team of award-winning artists, with Original Music and Lyrics by Wayne Kirkpatrick and Karey Kirkpatrick, and a Book by Karey Kirkpatrick and John O'Farrell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Karey Kirkpatrick",
+  "role": "Composer",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527",
+  "evidence": "Doubtfire has been created by a transatlantic team of award-winning artists, with Original Music and Lyrics by Wayne Kirkpatrick and Karey Kirkpatrick, and a Book by Karey Kirkpatrick and John O'Farrell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Wayne Kirkpatrick",
+  "role": "Lyricist",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527",
+  "evidence": "Doubtfire has been created by a transatlantic team of award-winning artists, with Original Music and Lyrics by Wayne Kirkpatrick and Karey Kirkpatrick, and a Book by Karey Kirkpatrick and John O'Farrell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
+ },
+ {
+  "person": "Karey Kirkpatrick",
+  "role": "Lyricist",
+  "production": "Mrs. Doubtfire",
+  "venue": "Venue not stated",
+  "url": "https://www.broadwayworld.com/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527",
+  "evidence": "Doubtfire has been created by a transatlantic team of award-winning artists, with Original Music and Lyrics by Wayne Kirkpatrick and Karey Kirkpatrick, and a Book by Karey Kirkpatrick and John O'Farrell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-9.json"
  }
 ]
