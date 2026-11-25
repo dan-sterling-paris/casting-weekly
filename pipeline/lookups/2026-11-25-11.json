@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Blood Brothers",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Bob Tomson; Bill Kenwright",
+    "Writer": "Willy Russell",
+    "Sources": {
+      "Venue": ["https://www.kenwright.com/productions/blood-brothers-uk-tour/", "https://www.whatsonstage.com/news/blood-brothers-announces-2027-tour-stops_1729953/"],
+      "Casting Director": [],
+      "Director": ["https://www.kenwright.com/productions/blood-brothers-uk-tour/", "https://www.whatsonstage.com/news/blood-brothers-announces-2027-tour-stops_1729953/"],
+      "Writer": ["https://www.kenwright.com/productions/blood-brothers-uk-tour/", "https://www.whatsonstage.com/news/blood-brothers-announces-2027-tour-stops_1729953/", "https://www.broadwayworld.com/article/Autumn-Cast-and-Further-Dates-Set-For-BLOOD-BROTHERS-Tour-20260825"]
+    }
+  },
+  {
+    "Production Name": "Singin' in the Rain",
+    "Venue": "UK tour",
+    "Casting Director": "Olivia Laydon",
+    "Director": "Jonathan Church",
+    "Writer": "Book: Betty Comden; Book: Adolph Green",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/", "https://theatreweekly.com/singin-in-the-rain-uk-and-ireland-tour-announces-full-cast-for-2027-run/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/", "https://www.broadwayworld.com/article/Cast-Set-For-SINGIN-IN-THE-RAIN-UK-and-Ireland-Tour-20260922"],
+      "Director": ["https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/", "https://www.broadwayworld.com/article/Cast-Set-For-SINGIN-IN-THE-RAIN-UK-and-Ireland-Tour-20260922", "https://theatreweekly.com/singin-in-the-rain-uk-and-ireland-tour-announces-full-cast-for-2027-run/"],
+      "Writer": ["https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/"]
+    }
+  },
+  {
+    "Production Name": "Hadestown",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Unknown",
+    "Director": "Rachel Chavkin",
+    "Writer": "Book: Anaïs Mitchell; Music: Anaïs Mitchell; Lyrics: Anaïs Mitchell",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/hadestown-to-embark-on-first-uk-and-ireland-tour_1723660/", "https://www.broadwayworld.com/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604"],
+      "Casting Director": [],
+      "Director": ["https://www.broadwayworld.com/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604"],
+      "Writer": ["https://www.broadwayworld.com/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604"]
+    }
+  }
+]
