@@ -47,3 +47,6 @@ Rent, 2026 Duke of York's Theatre London  →  2026-11-25-1.json
 Operation Mincemeat, London  →  2026-11-25-2.json
 My Neighbour Totoro, Gillian Lynne Theatre London  →  2026-11-25-2.json
 The Cherry Orchard, 2026 Harold Pinter Theatre London  →  2026-11-25-2.json
+Into the Woods, 2026 Noël Coward Theatre London  →  2026-11-25-3.json
+Harry Potter and the Cursed Child, London  →  2026-11-25-3.json
+The Snowman, 2026 Peacock Theatre London  →  2026-11-25-3.json

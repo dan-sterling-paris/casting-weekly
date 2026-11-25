@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Into the Woods",
+    "Venue": "Noël Coward Theatre, London",
+    "Casting Director": "Stuart Burt",
+    "Director": "Jordan Fein",
+    "Writer": "Book: James Lapine; Music: Stephen Sondheim; Lyrics: Stephen Sondheim",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/", "https://www.londonboxoffice.co.uk/news/post/into-the-woods-announces-full-west-end-cast"],
+      "Casting Director": ["https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/", "https://www.londonboxoffice.co.uk/news/post/into-the-woods-announces-full-west-end-cast"],
+      "Director": ["https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/", "https://www.londonboxoffice.co.uk/news/post/into-the-woods-announces-full-west-end-cast", "https://www.londontheatre.co.uk/theatre-news/news/into-the-woods-announces-full-west-end-cast"],
+      "Writer": ["https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/"]
+    }
+  },
+  {
+    "Production Name": "Harry Potter and the Cursed Child",
+    "Venue": "Palace Theatre, London",
+    "Casting Director": "Unknown",
+    "Director": "John Tiffany",
+    "Writer": "Written by Jack Thorne, based on an original story by J.K. Rowling, Jack Thorne and John Tiffany",
+    "Sources": {
+      "Venue": ["https://www.harrypotter.com/news/first-cast-revealed-for-one-part-production-of-harry-potter-and-the-cursed-child", "https://theatreweekly.com/harry-potter-and-the-cursed-child-announces-first-cast-for-reimagined-one-part-production/"],
+      "Casting Director": [],
+      "Director": ["https://theatreweekly.com/harry-potter-and-the-cursed-child-announces-first-cast-for-reimagined-one-part-production/"],
+      "Writer": ["https://theatreweekly.com/harry-potter-and-the-cursed-child-announces-first-cast-for-reimagined-one-part-production/"]
+    }
+  },
+  {
+    "Production Name": "The Snowman",
+    "Venue": "Peacock Theatre, London",
+    "Casting Director": "Amy Beadel CDG",
+    "Director": "Will Tuckett",
+    "Writer": "Music: Howard Blake; Libretto: Howard Blake; Based on the book by Raymond Briggs",
+    "Sources": {
+      "Venue": ["https://www.sadlerswells.com/whats-on/the-snowman-2026/", "https://www.whatsonstage.com/news/the-snowman-announces-complete-casting-with-paddington-puppet-designer-joining-show_1730675/"],
+      "Casting Director": ["https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/", "https://www.londonboxoffice.co.uk/news/post/cast-and-creative-team-announced-for-the-snowman", "https://www.whatsonstage.com/news/the-snowman-announces-complete-casting-with-paddington-puppet-designer-joining-show_1730675/"],
+      "Director": ["https://www.sadlerswells.com/whats-on/the-snowman-2026/", "https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/", "https://www.whatsonstage.com/news/the-snowman-announces-complete-casting-with-paddington-puppet-designer-joining-show_1730675/"],
+      "Writer": ["https://www.sadlerswells.com/whats-on/the-snowman-2026/", "https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/"]
+    }
+  }
+]
