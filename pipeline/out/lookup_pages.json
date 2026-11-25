@@ -596,5 +596,215 @@
   "final": "https://www.whatsonstage.com/news/full-titanique-company-announced-for-west-end-premiere_1637276/",
   "title": "Full Titanique company announced for West End premiere",
   "file": "a05dcdda43d2237c.txt"
+ },
+ "https://devilwearspradamusical.com/cast-and-creative": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:22Z",
+  "final": "https://devilwearspradamusical.com/cast-and-creative/",
+  "title": "Cast & Creative | The Devil Wears Prada Musical | Dominion Theatre London | Official UK Site",
+  "file": "ceaca8a4166fc7ae.txt"
+ },
+ "https://www.whatsonstage.com/news/the-devil-wears-prada-announces-further-lead-casting_1732361/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:24Z",
+  "final": "https://www.whatsonstage.com/news/the-devil-wears-prada-announces-further-lead-casting_1732361/",
+  "title": "The Devil Wears Prada announces further lead casting",
+  "file": "8fa6076d6f65f3c2.txt"
+ },
+ "https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:27Z",
+  "final": "https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026",
+  "title": "'The Play That Goes Wrong' announces new West End cast  | London Theatre",
+  "file": "56ea08fe84f4cc4f.txt"
+ },
+ "https://www.london-theater-tickets.com/the-play-that-goes-wrong-tickets/cast-and-creatives/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:31Z",
+  "final": "https://www.london-theater-tickets.com/plays/the-play-that-goes-wrong-tickets/cast-and-creatives/",
+  "title": "Cast of The Play That Goes Wrong | London Play",
+  "file": "2d05e2d6c5332788.txt"
+ },
+ "https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:33Z",
+  "final": "https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026",
+  "title": "Rent (London, Duke of York's Theatre, 2026) | Playbill",
+  "file": "ada0dab199d73c1d.txt"
+ },
+ "https://www.whatsonstage.com/news/rent-announces-complete-west-end-cast-with-new-mimi-revealed_1729666/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:33Z",
+  "final": "https://www.whatsonstage.com/news/rent-announces-complete-west-end-cast-with-new-mimi-revealed_1729666/",
+  "title": "Rent announces complete West End cast with new Mimi revealed",
+  "file": "647e8fd76d513ffb.txt"
+ },
+ "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:35Z",
+  "final": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",
+  "title": "Operation Mincemeat announces new West End cast",
+  "file": "f167b9a7e3335720.txt"
+ },
+ "https://www.whatsonstage.com/news/my-neighbour-totoro-announces-new-west-end-cast_1713486": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:39Z",
+  "final": "https://www.whatsonstage.com/news/my-neighbour-totoro-announces-new-west-end-cast_1713486/",
+  "title": "My Neighbour Totoro announces new West End cast",
+  "file": "9521575b4b2f9447.txt"
+ },
+ "https://www.broadwayworld.com/article/MY-NEIGHBOUR-TOTORO-Reveals-New-Cast-Ahead-of-West-End-Anniversary-20260225": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:41Z",
+  "final": "https://www.broadwayworld.com/westend/article/MY-NEIGHBOUR-TOTORO-Reveals-New-Cast-Ahead-of-West-End-Anniversary-20260225",
+  "title": "MY NEIGHBOUR TOTORO Reveals New Cast Ahead of West End Anniversary | BroadwayWorld",
+  "file": "b3b3e14eda9c5b34.txt"
+ },
+ "https://totoroshow.com/news/cast-announced-for-the-west-end-transfer/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:43Z",
+  "final": "https://totoroshow.com/news/cast-announced-for-the-west-end-transfer/",
+  "title": "Cast announced for the West End transfer | My Neighbour Totoro",
+  "file": "16cf7b7a96cf015b.txt"
+ },
+ "https://www.rsc.org.uk/news/my-neighbour-totoro-announces-full-cast-for-west-end-transfer": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:47Z",
+  "final": "https://www.rsc.org.uk/news/my-neighbour-totoro-announces-full-cast-for-west-end-transfer",
+  "title": "My Neighbour Totoro Announces Full Cast For West End Transfer | Royal Shakespeare Company",
+  "file": "af4c97930765bd7f.txt"
+ },
+ "https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:49Z",
+  "final": "https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas",
+  "title": "Sonia Friedman Productions presents THE CHERRY ORCHARD  starring the multi-award winning Kristin Scott Thomas | Sonia Friedman",
+  "file": "53bcd222f1c26ee8.txt"
+ },
+ "https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:49Z",
+  "final": "https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/",
+  "title": "Into the Woods announces complete West End casting",
+  "file": "dafe40818c5de023.txt"
+ },
+ "https://www.harrypotter.com/news/first-cast-revealed-for-one-part-production-of-harry-potter-and-the-cursed-child": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:52Z",
+  "final": "https://www.harrypotter.com/news/first-cast-revealed-for-one-part-production-of-harry-potter-and-the-cursed-child",
+  "title": "Harry Potter | First cast revealed for the reimagined one-part production of Harry Potter and the Cursed Child in London | Wizarding World",
+  "file": "60f9e04487cc2750.txt"
+ },
+ "https://theatreweekly.com/harry-potter-and-the-cursed-child-announces-first-cast-for-reimagined-one-part-production/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:56Z",
+  "final": "https://theatreweekly.com/harry-potter-and-the-cursed-child-announces-first-cast-for-reimagined-one-part-production/",
+  "title": "Harry Potter and the Cursed Child announces first cast for reimagined one-part production - Theatre Weekly",
+  "file": "af4d3ca1817e3410.txt"
+ },
+ "https://www.sadlerswells.com/whats-on/the-snowman-2026/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:32:59Z",
+  "final": "https://www.sadlerswells.com/whats-on/the-snowman-2026/",
+  "title": "The Snowman - Peacock Theatre - Sadler's WellsSadler's Wells Peacock",
+  "file": "7b9bc7ad5272b071.txt"
+ },
+ "https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:03Z",
+  "final": "https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/",
+  "title": "The Snowman™ | Birmingham Rep",
+  "file": "f064d0a1acd921ac.txt"
+ },
+ "https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:04Z",
+  "final": "https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667/",
+  "title": "Stranger Things: The First Shadow confirms full company",
+  "file": "5dff94d8f49995e9.txt"
+ },
+ "https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:05Z",
+  "final": "https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/",
+  "title": "Full cast for Jesus Christ Superstar at Theatre Royal Drury Lane confirmed, with on-stage ticket plans revealed",
+  "file": "9dd280b01d312a56.txt"
+ },
+ "https://officiallondontheatre.com/show/the-standard-of-living-111474083/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:08Z",
+  "final": "https://officiallondontheatre.com/show/the-standard-of-living-111474083/",
+  "title": "The Standard Of Living Tickets | Theatre Royal HaymarketfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketPlay IconShowReelAll ImagesLocationChevron DownTickCalendarClockGenre MaskAge InfoNotice",
+  "file": "ec013b40bf5bd9d8.txt"
+ },
+ "https://www.londontheatre.co.uk/theatre-news/news/oh-mary-sets-full-west-end-cast-joining-lolly-adefope": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:08Z",
+  "final": "https://www.londontheatre.co.uk/theatre-news/news/oh-mary-sets-full-west-end-cast-joining-lolly-adefope",
+  "title": "'Oh, Mary!' sets full West End cast joining Lolly Adefope | London Theatre",
+  "file": "4c083255a0efd8cf.txt"
+ },
+ "https://www.whatsonstage.com/news/oh-mary-announces-full-cast-joining-lolly-adefope_1731352/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:09Z",
+  "final": "https://www.whatsonstage.com/news/oh-mary-announces-full-cast-joining-lolly-adefope_1731352/",
+  "title": "Oh, Mary! announces full cast joining Lolly Adefope",
+  "file": "88c370524247a1d7.txt"
+ },
+ "https://officiallondontheatre.com/show/hay-fever-111474197/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:10Z",
+  "final": "https://officiallondontheatre.com/show/hay-fever-111474197/",
+  "title": "Hay Fever Tickets | Wyndham's Theatre | Comedy TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketAll ImagesLocationChevron DownTickCalendarClockGenre MaskAge InfoNotice",
+  "file": "265581b9f10c764b.txt"
+ },
+ "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-hay-fever": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:12Z",
+  "final": "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-hay-fever",
+  "title": "Full cast announced for Noel Coward's HAY FEVER - West End Theatre News and Reviews",
+  "file": "2973a210975ebea6.txt"
+ },
+ "https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:13Z",
+  "final": "https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F",
+  "title": "Front Row Seats Released and Full Company Announced for EDWARD ALBEE'S WHO'S AFRAID OF VIRGINIA WOOLF? | Sonia Friedman",
+  "file": "7561d57c36ffdd5e.txt"
+ },
+ "https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:13Z",
+  "final": "https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/",
+  "title": "The Mousetrap announces new cast, director, design and refurbishment as it prepares for its 75th anniversary",
+  "file": "ae60ae86f2c8adef.txt"
+ },
+ "https://www.whatsonstage.com/news/six-reveals-new-west-end-queens-as-the-show-extends-into-2027_1708660": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:15Z",
+  "final": "https://www.whatsonstage.com/news/six-reveals-new-west-end-queens-as-the-show-extends-into-2027_1708660/",
+  "title": "Six reveals new West End Queens as the show extends into 2027",
+  "file": "f1c953bfa311b14b.txt"
+ },
+ "https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:16Z",
+  "final": "https://www.broadwayworld.com/westend/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114",
+  "title": "SIX THE MUSICAL Welcomes New Queens and Extends Run at the Vaudeville Theatre | BroadwayWorld",
+  "file": "4907e016d99f0b2d.txt"
+ },
+ "https://officiallondontheatre.com/show/magic-mike-live-111418847/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:16Z",
+  "final": "https://officiallondontheatre.com/show/magic-mike-live-111418847/",
+  "title": "Magic Mike Live Tickets | Hippodrome Casino | Entertainment TicketsfacebooktwittertiktokyoutubeinstagramSearch LargeMailTicketAll ImagesLocationChevron DownTickCalendarClockGenre MaskAge InfoNotice",
+  "file": "f87de1bc80d37dd1.txt"
+ },
+ "https://www.broadwayworld.com/article/MAGIC-MIKE-LIVE-Reveals-New-Cast-20260303": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:33:18Z",
+  "final": "https://www.broadwayworld.com/westend/article/MAGIC-MIKE-LIVE-Reveals-New-Cast-20260303",
+  "title": "MAGIC MIKE LIVE Reveals New Cast | BroadwayWorld",
+  "file": "829a64f886344c5e.txt"
  }
 }

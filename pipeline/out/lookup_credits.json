@@ -2258,5 +2258,785 @@
   "evidence": "Titanique cast and creative team / By: Marla Mindelle, Constantine Rousouli & Tye Blue",
   "rule": "K",
   "lookup_file": "2026-11-24-1.json"
+ },
+ {
+  "person": "Jill Green",
+  "role": "Casting director",
+  "production": "The Devil Wears Prada (Dominion Theatre)",
+  "venue": "Dominion Theatre, London",
+  "url": "https://devilwearspradamusical.com/cast-and-creative",
+  "evidence": "CASTING / Jill Green CDG",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Jerry Mitchell",
+  "role": "Director",
+  "production": "The Devil Wears Prada (Dominion Theatre)",
+  "venue": "Dominion Theatre, London",
+  "url": "https://devilwearspradamusical.com/cast-and-creative",
+  "evidence": "Director and Choreographer / jerry mitchell",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Kate Wetherhead",
+  "role": "Writer",
+  "production": "The Devil Wears Prada (Dominion Theatre)",
+  "venue": "Dominion Theatre, London",
+  "url": "https://devilwearspradamusical.com/cast-and-creative",
+  "evidence": "Book / KATE WETHERHEAD",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Elton John",
+  "role": "Composer",
+  "production": "The Devil Wears Prada (Dominion Theatre)",
+  "venue": "Dominion Theatre, London",
+  "url": "https://devilwearspradamusical.com/cast-and-creative",
+  "evidence": "Music / Elton John",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Shaina Taub",
+  "role": "Lyricist",
+  "production": "The Devil Wears Prada (Dominion Theatre)",
+  "venue": "Dominion Theatre, London",
+  "url": "https://devilwearspradamusical.com/cast-and-creative",
+  "evidence": "Lyrics / Shaina Taub &",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Mark Sonnenblick",
+  "role": "Lyricist",
+  "production": "The Devil Wears Prada (Dominion Theatre)",
+  "venue": "Dominion Theatre, London",
+  "url": "https://www.whatsonstage.com/news/the-devil-wears-prada-announces-further-lead-casting_1732361/",
+  "evidence": "The musical features music by John, lyrics by Shaina Taub and Mark Sonnenblick, a book by Kate Wetherhead, and direction and choreography by Jerry Mitchell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Lucy Jenkins",
+  "role": "Casting director",
+  "production": "The Play That Goes Wrong (Duchess Theatre)",
+  "venue": "Duchess Theatre, London",
+  "url": "https://www.london-theater-tickets.com/the-play-that-goes-wrong-tickets/cast-and-creatives/",
+  "evidence": "Casting: Lucy Jenkins CDG, Sooki McShane CG",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Sooki McShane",
+  "role": "Casting director",
+  "production": "The Play That Goes Wrong (Duchess Theatre)",
+  "venue": "Duchess Theatre, London",
+  "url": "https://www.london-theater-tickets.com/the-play-that-goes-wrong-tickets/cast-and-creatives/",
+  "evidence": "Casting: Lucy Jenkins CDG, Sooki McShane CG",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Mark Bell",
+  "role": "Director",
+  "production": "The Play That Goes Wrong (Duchess Theatre)",
+  "venue": "Duchess Theatre, London",
+  "url": "https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026",
+  "evidence": "The Play That Goes Wrong is directed by Mark Bell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Henry Lewis",
+  "role": "Writer",
+  "production": "The Play That Goes Wrong (Duchess Theatre)",
+  "venue": "Duchess Theatre, London",
+  "url": "https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026",
+  "evidence": "The Play That Goes Wrong was written by Henry Lewis, Jonathan Sayer, Henry Shields.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Jonathan Sayer",
+  "role": "Writer",
+  "production": "The Play That Goes Wrong (Duchess Theatre)",
+  "venue": "Duchess Theatre, London",
+  "url": "https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026",
+  "evidence": "The Play That Goes Wrong was written by Henry Lewis, Jonathan Sayer, Henry Shields.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Henry Shields",
+  "role": "Writer",
+  "production": "The Play That Goes Wrong (Duchess Theatre)",
+  "venue": "Duchess Theatre, London",
+  "url": "https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026",
+  "evidence": "The Play That Goes Wrong was written by Henry Lewis, Jonathan Sayer, Henry Shields.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Pearson Casting",
+  "role": "Casting director",
+  "production": "Rent (Duke of York's Theatre)",
+  "venue": "Duke of York's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/rent-announces-complete-west-end-cast-with-new-mimi-revealed_1729666/",
+  "evidence": "… audio production and sound design by Paul Gatehouse, video design and cinematography by George Reeve and Nathan Amzi, make-up and hair design by Jackie Saundercock, UK casting by Pearson Casting and US Casting by Jim Carnahan.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Jim Carnahan",
+  "role": "Casting director",
+  "production": "Rent (Duke of York's Theatre)",
+  "venue": "Duke of York's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/rent-announces-complete-west-end-cast-with-new-mimi-revealed_1729666/",
+  "evidence": "… by Paul Gatehouse, video design and cinematography by George Reeve and Nathan Amzi, make-up and hair design by Jackie Saundercock, UK casting by Pearson Casting and US Casting by Jim Carnahan.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Luke Sheppard",
+  "role": "Director",
+  "production": "Rent (Duke of York's Theatre)",
+  "venue": "Duke of York's Theatre, London",
+  "url": "https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026",
+  "evidence": "Directed by Luke Sheppard",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Jonathan Larson",
+  "role": "Writer",
+  "production": "Rent (Duke of York's Theatre)",
+  "venue": "Duke of York's Theatre, London",
+  "url": "https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026",
+  "evidence": "Book: / Jonathan Larson",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Jonathan Larson",
+  "role": "Composer",
+  "production": "Rent (Duke of York's Theatre)",
+  "venue": "Duke of York's Theatre, London",
+  "url": "https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026",
+  "evidence": "Jonathan Larson / Music:",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Jonathan Larson",
+  "role": "Lyricist",
+  "production": "Rent (Duke of York's Theatre)",
+  "venue": "Duke of York's Theatre, London",
+  "url": "https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026",
+  "evidence": "Jonathan Larson / Lyrics:",
+  "rule": "K",
+  "lookup_file": "2026-11-25-1.json"
+ },
+ {
+  "person": "Pearson Casting",
+  "role": "Casting director",
+  "production": "Operation Mincemeat (Fortune Theatre)",
+  "venue": "Fortune Theatre, London",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",
+  "evidence": "Casting is by Pearson Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Robert Hastie",
+  "role": "Director",
+  "production": "Operation Mincemeat (Fortune Theatre)",
+  "venue": "Fortune Theatre, London",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",
+  "evidence": "The production is helmed by director Robert Hastie (Standing at the Sky’s Edge), who provided directorial support for the Riverside Studios run, and choreographed by Jenny Arnold (Jerry Springer: The Opera).",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "David Cumming",
+  "role": "Writer",
+  "production": "Operation Mincemeat (Fortune Theatre)",
+  "venue": "Fortune Theatre, London",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",
+  "evidence": "Written and composed by David Cumming, Felix Hagan, Natasha Hodgson and Zoë Roberts of SpitLip, the musical comedy is based on a true story of the twisted secret mission that helped win World War II.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Felix Hagan",
+  "role": "Writer",
+  "production": "Operation Mincemeat (Fortune Theatre)",
+  "venue": "Fortune Theatre, London",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",
+  "evidence": "Written and composed by David Cumming, Felix Hagan, Natasha Hodgson and Zoë Roberts of SpitLip, the musical comedy is based on a true story of the twisted secret mission that helped win World War II.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Natasha Hodgson",
+  "role": "Writer",
+  "production": "Operation Mincemeat (Fortune Theatre)",
+  "venue": "Fortune Theatre, London",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",
+  "evidence": "Written and composed by David Cumming, Felix Hagan, Natasha Hodgson and Zoë Roberts of SpitLip, the musical comedy is based on a true story of the twisted secret mission that helped win World War II.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Zoë Roberts",
+  "role": "Writer",
+  "production": "Operation Mincemeat (Fortune Theatre)",
+  "venue": "Fortune Theatre, London",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",
+  "evidence": "Written and composed by David Cumming, Felix Hagan, Natasha Hodgson and Zoë Roberts of SpitLip, the musical comedy is based on a true story of the twisted secret mission that helped win World War II.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Hannah Miller",
+  "role": "Casting director",
+  "production": "My Neighbour Totoro (Gillian Lynne Theatre)",
+  "venue": "Gillian Lynne Theatre, London",
+  "url": "https://www.broadwayworld.com/article/MY-NEIGHBOUR-TOTORO-Reveals-New-Cast-Ahead-of-West-End-Anniversary-20260225",
+  "evidence": "Video design is by Finn Ross and Andrea Scott, the Dramaturg is Pippa Hill, Casting Director is Hannah Miller CDG and Sound Effects & Soundscape Designer is Nicola T Chang.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Phelim McDermott",
+  "role": "Director",
+  "production": "My Neighbour Totoro (Gillian Lynne Theatre)",
+  "venue": "Gillian Lynne Theatre, London",
+  "url": "https://www.whatsonstage.com/news/my-neighbour-totoro-announces-new-west-end-cast_1713486",
+  "evidence": "The stage adaptation is directed by Phelim McDermott and adapted by Tom Morton-Smith from Hayao Miyazaki’s 1988 animated feature film.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Joe Hisaishi",
+  "role": "Composer",
+  "production": "My Neighbour Totoro (Gillian Lynne Theatre)",
+  "venue": "Gillian Lynne Theatre, London",
+  "url": "https://www.rsc.org.uk/news/my-neighbour-totoro-announces-full-cast-for-west-end-transfer",
+  "evidence": "My Neighbour Totoro is a collaboration between the RSC, Improbable and Nippon TV, adapted by Tom Morton-Smith (Oppenheimer) from the feature animation by Hayao Miyazaki, with music by Joe Hisaishi, and directed Phelim McDermott.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Amy Ball",
+  "role": "Casting director",
+  "production": "The Cherry Orchard (Harold Pinter Theatre)",
+  "venue": "Harold Pinter Theatre, London",
+  "url": "https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas",
+  "evidence": "The creative team for The Cherry Orchardincludes: Director: Ian Rickson; Set Designer: Chloe Lamford; Lighting Designer: Bruno Poet; Movement Director: Shelley Maxwell and Casting Director: Amy Ball CDG.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Ian Rickson",
+  "role": "Director",
+  "production": "The Cherry Orchard (Harold Pinter Theatre)",
+  "venue": "Harold Pinter Theatre, London",
+  "url": "https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas",
+  "evidence": "The BAFTA and Olivier Award-winning actor Kristin Scott Thomas (Electra, Slow Horses, Four Weddings and a Funeral) reunites with renowned director Ian Rickson (Uncle Vanya, Jerusalem, The Weir) for Conor McPherson’s (The Weir, Girl from the North Country, Uncle Vanya) new adaptation of The Cherry Orchard, playing the role of Lyubov Ranevskaya.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Conor McPherson",
+  "role": "Writer",
+  "production": "The Cherry Orchard (Harold Pinter Theatre)",
+  "venue": "Harold Pinter Theatre, London",
+  "url": "https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas",
+  "evidence": "The BAFTA and Olivier Award-winning actor Kristin Scott Thomas (Electra, Slow Horses, Four Weddings and a Funeral) reunites with renowned director Ian Rickson (Uncle Vanya, Jerusalem, The Weir) for Conor McPherson’s (The Weir, Girl from the North Country, Uncle Vanya) new adaptation of The Cherry Orchard, playing the role of Lyubov Ranevskaya.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-2.json"
+ },
+ {
+  "person": "Stuart Burt",
+  "role": "Casting director",
+  "production": "Into the Woods (Noël Coward Theatre)",
+  "venue": "Noël Coward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/",
+  "evidence": "… Jenny Ogilvie, wigs, hair and make-up designer Sam Cox, puppetry designers Cheryl “Chuck” Brown, Max Humphries and Tom Scutt, musical director Alex Beetschen and casting director Stuart Burt.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Jordan Fein",
+  "role": "Director",
+  "production": "Into the Woods (Noël Coward Theatre)",
+  "venue": "Noël Coward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/",
+  "evidence": "Directed by Jordan Fein, the Stephen Sondheim and James Lapine musical will begin previews at the Noël Coward Theatre on 22 September, ahead of an opening night on 7 October.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "James Lapine",
+  "role": "Writer",
+  "production": "Into the Woods (Noël Coward Theatre)",
+  "venue": "Noël Coward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/",
+  "evidence": "Into the Woods features music and lyrics by Stephen Sondheim and a book by James Lapine.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Stephen Sondheim",
+  "role": "Composer",
+  "production": "Into the Woods (Noël Coward Theatre)",
+  "venue": "Noël Coward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/",
+  "evidence": "Into the Woods features music and lyrics by Stephen Sondheim and a book by James Lapine.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Stephen Sondheim",
+  "role": "Lyricist",
+  "production": "Into the Woods (Noël Coward Theatre)",
+  "venue": "Noël Coward Theatre, London",
+  "url": "https://www.whatsonstage.com/news/into-the-woods-announces-complete-west-end-casting_1729416/",
+  "evidence": "Into the Woods features music and lyrics by Stephen Sondheim and a book by James Lapine.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "John Tiffany",
+  "role": "Director",
+  "production": "Harry Potter and the Cursed Child (Palace Theatre)",
+  "venue": "Palace Theatre, London",
+  "url": "https://theatreweekly.com/harry-potter-and-the-cursed-child-announces-first-cast-for-reimagined-one-part-production/",
+  "evidence": "Rowling, Jack Thorne and John Tiffany, the play is written by Thorne and directed by Tiffany.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "John Tiffany",
+  "role": "Writer",
+  "production": "Harry Potter and the Cursed Child (Palace Theatre)",
+  "venue": "Palace Theatre, London",
+  "url": "https://theatreweekly.com/harry-potter-and-the-cursed-child-announces-first-cast-for-reimagined-one-part-production/",
+  "evidence": "Rowling, Jack Thorne and John Tiffany, the play is written by Thorne and directed by Tiffany.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Amy Beadel",
+  "role": "Casting director",
+  "production": "The Snowman (Peacock Theatre)",
+  "venue": "Peacock Theatre, London",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/",
+  "evidence": "Casting Director / Amy Beadel CDG for Grindrod Burton Casting",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Will Tuckett",
+  "role": "Director",
+  "production": "The Snowman (Peacock Theatre)",
+  "venue": "Peacock Theatre, London",
+  "url": "https://www.sadlerswells.com/whats-on/the-snowman-2026/",
+  "evidence": "I want adults to become children and children never to forget it.Will Tuckett (Director)",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Howard Blake",
+  "role": "Composer",
+  "production": "The Snowman (Peacock Theatre)",
+  "venue": "Peacock Theatre, London",
+  "url": "https://www.sadlerswells.com/whats-on/the-snowman-2026/",
+  "evidence": "Based on Raymond Briggs’ cherished book, The Rep’s sparkling new production features Howard Blake’s iconic score including the classic ‘Walking in the Air’, beautifully crafted puppets and of course, a gravity-defying friendship.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Howard Blake",
+  "role": "Writer",
+  "production": "The Snowman (Peacock Theatre)",
+  "venue": "Peacock Theatre, London",
+  "url": "https://www.sadlerswells.com/whats-on/the-snowman-2026/",
+  "evidence": "Based on Raymond Briggs’ cherished book, The Rep’s sparkling new production features Howard Blake’s iconic score including the classic ‘Walking in the Air’, beautifully crafted puppets and of course, a gravity-defying friendship.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Based on the book by Raymond Briggs",
+  "role": "Writer",
+  "production": "The Snowman (Peacock Theatre)",
+  "venue": "Peacock Theatre, London",
+  "url": "https://www.sadlerswells.com/whats-on/the-snowman-2026/",
+  "evidence": "Based on the book by Raymond Briggs",
+  "rule": "K",
+  "lookup_file": "2026-11-25-3.json"
+ },
+ {
+  "person": "Jessica Ronane Casting",
+  "role": "Casting director",
+  "production": "Stranger Things: The First Shadow (Phoenix Theatre)",
+  "venue": "Phoenix Theatre, London",
+  "url": "https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667",
+  "evidence": "…n by Campbell Young Associates, technical director Gary Beestone for Gary Beestone Associates, props supervision by Mary Halliday, dialect coaching by William Conacher, casting by Jessica Ronane Casting CDG and international casting consultancy by Jim Carnahan.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Jim Carnahan",
+  "role": "Casting director",
+  "production": "Stranger Things: The First Shadow (Phoenix Theatre)",
+  "venue": "Phoenix Theatre, London",
+  "url": "https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667",
+  "evidence": "… Gary Beestone Associates, props supervision by Mary Halliday, dialect coaching by William Conacher, casting by Jessica Ronane Casting CDG and international casting consultancy by Jim Carnahan.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Stephen Daldry",
+  "role": "Director",
+  "production": "Stranger Things: The First Shadow (Phoenix Theatre)",
+  "venue": "Phoenix Theatre, London",
+  "url": "https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667",
+  "evidence": "Written by Kate Trefry, from an original story by the Duffer Brothers, Jack Thorne and Trefry, Stranger Things: The First Shadow is directed by Stephen Daldry with co-direction from Justin Martin.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Justin Martin",
+  "role": "Director",
+  "production": "Stranger Things: The First Shadow (Phoenix Theatre)",
+  "venue": "Phoenix Theatre, London",
+  "url": "https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667",
+  "evidence": "Written by Kate Trefry, from an original story by the Duffer Brothers, Jack Thorne and Trefry, Stranger Things: The First Shadow is directed by Stephen Daldry with co-direction from Justin Martin.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Kate Trefry, from an original story by the Duffer Brothers, Jack Thorne",
+  "role": "Writer",
+  "production": "Stranger Things: The First Shadow (Phoenix Theatre)",
+  "venue": "Phoenix Theatre, London",
+  "url": "https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667",
+  "evidence": "Written by Kate Trefry, from an original story by the Duffer Brothers, Jack Thorne and Trefry, Stranger Things: The First Shadow is directed by Stephen Daldry with co-direction from Justin Martin.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Kate Trefry",
+  "role": "Writer",
+  "production": "Stranger Things: The First Shadow (Phoenix Theatre)",
+  "venue": "Phoenix Theatre, London",
+  "url": "https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667",
+  "evidence": "Written by Kate Trefry, from an original story by the Duffer Brothers, Jack Thorne and Trefry, Stranger Things: The First Shadow is directed by Stephen Daldry with co-direction from Justin Martin.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Grindrod Burton Casting",
+  "role": "Casting director",
+  "production": "Jesus Christ Superstar (Theatre Royal Drury Lane)",
+  "venue": "Theatre Royal Drury Lane, London",
+  "url": "https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/",
+  "evidence": "The creative team also includes musical supervisor Tom Deering, lighting designer Lee Curran, sound designer Adam Fisher, wigs, hair and makeup designers Sam Cox and Maria Johal, fight director Kate Waters and casting directors Grindrod Burton Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Tim Sheader",
+  "role": "Director",
+  "production": "Jesus Christ Superstar (Theatre Royal Drury Lane)",
+  "venue": "Theatre Royal Drury Lane, London",
+  "url": "https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/",
+  "evidence": "Directed by Tim Sheader, the production features choreography by Drew McOnie and design by Tom Scutt.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Tim Rice",
+  "role": "Writer",
+  "production": "Jesus Christ Superstar (Theatre Royal Drury Lane)",
+  "venue": "Theatre Royal Drury Lane, London",
+  "url": "https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/",
+  "evidence": "Written by Tim Rice and Andrew Lloyd Webber, Jesus Christ Superstar follows the final days of Jesus Christ’s life from Judas’ perspective.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Andrew Lloyd Webber",
+  "role": "Writer",
+  "production": "Jesus Christ Superstar (Theatre Royal Drury Lane)",
+  "venue": "Theatre Royal Drury Lane, London",
+  "url": "https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/",
+  "evidence": "Written by Tim Rice and Andrew Lloyd Webber, Jesus Christ Superstar follows the final days of Jesus Christ’s life from Judas’ perspective.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Robert Sterne",
+  "role": "Casting director",
+  "production": "The Standard of Living (Theatre Royal Haymarket)",
+  "venue": "Theatre Royal Haymarket, London",
+  "url": "https://officiallondontheatre.com/show/the-standard-of-living-111474083/",
+  "evidence": "Casting Director - / Robert Sterne CDG",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Nicholas Hytner",
+  "role": "Director",
+  "production": "The Standard of Living (Theatre Royal Haymarket)",
+  "venue": "Theatre Royal Haymarket, London",
+  "url": "https://officiallondontheatre.com/show/the-standard-of-living-111474083/",
+  "evidence": "Director - / Nicholas Hytner",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "James Graham",
+  "role": "Writer",
+  "production": "The Standard of Living (Theatre Royal Haymarket)",
+  "venue": "Theatre Royal Haymarket, London",
+  "url": "https://officiallondontheatre.com/show/the-standard-of-living-111474083/",
+  "evidence": "Writer - / James Graham",
+  "rule": "K",
+  "lookup_file": "2026-11-25-4.json"
+ },
+ {
+  "person": "Stuart Burt",
+  "role": "Casting director",
+  "production": "Oh, Mary! (Trafalgar Theatre)",
+  "venue": "Trafalgar Theatre, London",
+  "url": "https://www.whatsonstage.com/news/oh-mary-announces-full-cast-joining-lolly-adefope_1731352/",
+  "evidence": "Loukas (wig designer), David Dabbon (arrangements), with casting by Stuart Burt.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Sam Pinkleton",
+  "role": "Director",
+  "production": "Oh, Mary! (Trafalgar Theatre)",
+  "venue": "Trafalgar Theatre, London",
+  "url": "https://www.whatsonstage.com/news/oh-mary-announces-full-cast-joining-lolly-adefope_1731352/",
+  "evidence": "Directed by Sam Pinkleton, the play premiered off-Broadway at the Lucille Lortel Theatre in January 2024 before transferring to Broadway’s Lyceum Theatre later that year.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Cole Escola",
+  "role": "Writer",
+  "production": "Oh, Mary! (Trafalgar Theatre)",
+  "venue": "Trafalgar Theatre, London",
+  "url": "https://www.londontheatre.co.uk/theatre-news/news/oh-mary-sets-full-west-end-cast-joining-lolly-adefope",
+  "evidence": "Cole Escola is the playwright.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Jim Carnahan",
+  "role": "Casting director",
+  "production": "Hay Fever (Wyndham's Theatre)",
+  "venue": "Wyndham's Theatre, London",
+  "url": "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-hay-fever",
+  "evidence": "The fight and intimacy director is Bethan Clark, the dialect coach is Danièle Lydon, the Associate Director is Blythe Stewart and Casting is by Jim Carnahan CSA and Liz Fraser CSA.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Liz Fraser",
+  "role": "Casting director",
+  "production": "Hay Fever (Wyndham's Theatre)",
+  "venue": "Wyndham's Theatre, London",
+  "url": "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-hay-fever",
+  "evidence": "The fight and intimacy director is Bethan Clark, the dialect coach is Danièle Lydon, the Associate Director is Blythe Stewart and Casting is by Jim Carnahan CSA and Liz Fraser CSA.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Emily Burns",
+  "role": "Director",
+  "production": "Hay Fever (Wyndham's Theatre)",
+  "venue": "Wyndham's Theatre, London",
+  "url": "https://officiallondontheatre.com/show/hay-fever-111474197/",
+  "evidence": "Director - / Emily Burns",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Noël Coward",
+  "role": "Writer",
+  "production": "Hay Fever (Wyndham's Theatre)",
+  "venue": "Wyndham's Theatre, London",
+  "url": "https://officiallondontheatre.com/show/hay-fever-111474197/",
+  "evidence": "Writer - / Noël Coward",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Jim Carnahan",
+  "role": "Casting director",
+  "production": "Who's Afraid of Virginia Woolf? (@sohoplace)",
+  "venue": "@sohoplace, London",
+  "url": "https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F",
+  "evidence": "The creative team are Marianne Elliott (Director), Miriam Buether (Designer), James Farncombe (Lighting Designer), Ian Dickinson (Sound Designer), Jim Carnahan, CSA and Liz Fraser, CSA (Casting Directors), Ingrid Mackinnon (Movement & Intimacy Director), Charmian Hoare (Voice & Dialect Coach) and Sam Lyon-Behan(Fight Director).",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Liz Fraser",
+  "role": "Casting director",
+  "production": "Who's Afraid of Virginia Woolf? (@sohoplace)",
+  "venue": "@sohoplace, London",
+  "url": "https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F",
+  "evidence": "The creative team are Marianne Elliott (Director), Miriam Buether (Designer), James Farncombe (Lighting Designer), Ian Dickinson (Sound Designer), Jim Carnahan, CSA and Liz Fraser, CSA (Casting Directors), Ingrid Mackinnon (Movement & Intimacy Director), Charmian Hoare (Voice & Dialect Coach) and Sam Lyon-Behan(Fight Director).",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Marianne Elliott",
+  "role": "Director",
+  "production": "Who's Afraid of Virginia Woolf? (@sohoplace)",
+  "venue": "@sohoplace, London",
+  "url": "https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F",
+  "evidence": "The production, directed in-the-round by Marianne Elliott, will run @sohoplace from 21 September until 19 December 2026, with press night on Wednesday 30 September at 7pm.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-5.json"
+ },
+ {
+  "person": "Marc Frankum",
+  "role": "Casting director",
+  "production": "The Mousetrap (St Martin's Theatre)",
+  "venue": "St Martin's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/",
+  "evidence": "The creative team also includes casting director Marc Frankum, fight and intimacy director Maisie Carter, costume supervisor Caroline Hannam, associate lighting designer Nicola Crawford and resident director Myles Brown.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Hannah Chissick",
+  "role": "Director",
+  "production": "The Mousetrap (St Martin's Theatre)",
+  "venue": "St Martin's Theatre, London",
+  "url": "https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/",
+  "evidence": "Hannah Chissick will direct the new West End company, which begins performances at St Martin’s Theatre on 11 November.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Pearson Casting",
+  "role": "Casting director",
+  "production": "SIX (Vaudeville Theatre)",
+  "venue": "Vaudeville Theatre, London",
+  "url": "https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114",
+  "evidence": "Choreography is by Carrie-Anne Ingrouille, with set design by Emma Bailey, costume design by Gabriella Slade, lighting design by Tim Deiling, sound design by Paul Gatehouse, musical orchestration by Tom Curran, and musical supervision by Joe Beighton, and casting by Pearson Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Lucy Moss",
+  "role": "Director",
+  "production": "SIX (Vaudeville Theatre)",
+  "venue": "Vaudeville Theatre, London",
+  "url": "https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114",
+  "evidence": "SIX is written by Toby Marlow and Lucy Moss, with direction by Lucy Moss and Jamie Armitage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Jamie Armitage",
+  "role": "Director",
+  "production": "SIX (Vaudeville Theatre)",
+  "venue": "Vaudeville Theatre, London",
+  "url": "https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114",
+  "evidence": "SIX is written by Toby Marlow and Lucy Moss, with direction by Lucy Moss and Jamie Armitage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Toby Marlow",
+  "role": "Writer",
+  "production": "SIX (Vaudeville Theatre)",
+  "venue": "Vaudeville Theatre, London",
+  "url": "https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114",
+  "evidence": "SIX is written by Toby Marlow and Lucy Moss, with direction by Lucy Moss and Jamie Armitage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Lucy Moss",
+  "role": "Writer",
+  "production": "SIX (Vaudeville Theatre)",
+  "venue": "Vaudeville Theatre, London",
+  "url": "https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114",
+  "evidence": "SIX is written by Toby Marlow and Lucy Moss, with direction by Lucy Moss and Jamie Armitage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "David Grindrod",
+  "role": "Casting director",
+  "production": "Magic Mike Live (Hippodrome Casino)",
+  "venue": "Hippodrome Casino, London",
+  "url": "https://officiallondontheatre.com/show/magic-mike-live-111418847/",
+  "evidence": "UK Casting Director - / David Grindrod",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Candice Fox",
+  "role": "Casting director",
+  "production": "Magic Mike Live (Hippodrome Casino)",
+  "venue": "Hippodrome Casino, London",
+  "url": "https://officiallondontheatre.com/show/magic-mike-live-111418847/",
+  "evidence": "Casting - / Candice Fox and Katie Zanca",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Katie Zanca",
+  "role": "Casting director",
+  "production": "Magic Mike Live (Hippodrome Casino)",
+  "venue": "Hippodrome Casino, London",
+  "url": "https://officiallondontheatre.com/show/magic-mike-live-111418847/",
+  "evidence": "Casting - / Candice Fox and Katie Zanca",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Channing Tatum",
+  "role": "Director",
+  "production": "Magic Mike Live (Hippodrome Casino)",
+  "venue": "Hippodrome Casino, London",
+  "url": "https://officiallondontheatre.com/show/magic-mike-live-111418847/",
+  "evidence": "Conceived And Directed By - / Channing Tatum and Reid Carolin",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Reid Carolin",
+  "role": "Director",
+  "production": "Magic Mike Live (Hippodrome Casino)",
+  "venue": "Hippodrome Casino, London",
+  "url": "https://officiallondontheatre.com/show/magic-mike-live-111418847/",
+  "evidence": "Conceived And Directed By - / Channing Tatum and Reid Carolin",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Alison Faulk",
+  "role": "Director",
+  "production": "Magic Mike Live (Hippodrome Casino)",
+  "venue": "Hippodrome Casino, London",
+  "url": "https://www.broadwayworld.com/article/MAGIC-MIKE-LIVE-Reveals-New-Cast-20260303",
+  "evidence": "Magic Mike Live in London is co-directed by Channing Tatum and Alison Faulk, with Luke Broadlick as associate director, and choreography by Alison Faulk and Luke Broadlick.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-6.json"
  }
 ]
