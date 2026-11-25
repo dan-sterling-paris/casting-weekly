@@ -65,3 +65,6 @@ Heathers the Musical, 2026 UK Tour  →  2026-11-25-7.json
 Legally Blonde, UK Tour  →  2026-11-25-8.json
 Mean Girls, UK Tour  →  2026-11-25-8.json
 Mamma Mia!, UK Tour  →  2026-11-25-8.json
+Back to the Future The Musical, UK Tour  →  2026-11-25-9.json
+Annie, 2026 UK Tour  →  2026-11-25-9.json
+Mrs. Doubtfire, 2027 UK Tour  →  2026-11-25-9.json
