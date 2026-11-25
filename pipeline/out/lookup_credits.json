@@ -3250,6 +3250,156 @@
   "lookup_file": "2026-11-25-17.json"
  },
  {
+  "person": "Jill Green",
+  "role": "Casting director",
+  "production": "A Little Night Music (Royal Exchange Theatre)",
+  "venue": "Royal Exchange Theatre, Manchester",
+  "url": "https://www.royalexchange.co.uk/?p=43518",
+  "evidence": "The team also includes associate director Nathanael Campbell, associate choreographer Jemima Brown, orchestral manager Elaine Ambridge, casting director Jill Green and casting associate Tom Shiels.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Selina Cartmell",
+  "role": "Director",
+  "production": "A Little Night Music (Royal Exchange Theatre)",
+  "venue": "Royal Exchange Theatre, Manchester",
+  "url": "https://www.royalexchange.co.uk/?p=43518",
+  "evidence": "Directed by the Royal Exchange’s Artistic Director Selina Cartmell, this major new production is the penultimate show in our landmark 50th anniversary season, A Homecoming.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Hugh Wheeler",
+  "role": "Writer",
+  "production": "A Little Night Music (Royal Exchange Theatre)",
+  "venue": "Royal Exchange Theatre, Manchester",
+  "url": "https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/",
+  "evidence": "The musical has music and lyrics by Stephen Sondheim, with a book by Hugh Wheeler, and is suggested by a film by Ingmar Bergman.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Stephen Sondheim",
+  "role": "Composer",
+  "production": "A Little Night Music (Royal Exchange Theatre)",
+  "venue": "Royal Exchange Theatre, Manchester",
+  "url": "https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/",
+  "evidence": "Exclusive: The Royal Exchange Theatre has announced the full cast for Stephen Sondheim’s A Little Night Music, directed by artistic director Selina Cartmell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Stephen Sondheim",
+  "role": "Lyricist",
+  "production": "A Little Night Music (Royal Exchange Theatre)",
+  "venue": "Royal Exchange Theatre, Manchester",
+  "url": "https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/",
+  "evidence": "The musical has music and lyrics by Stephen Sondheim, with a book by Hugh Wheeler, and is suggested by a film by Ingmar Bergman.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Sarah Punshon",
+  "role": "Director",
+  "production": "Cinderella: A Fairy Tale (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton",
+  "url": "https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115",
+  "evidence": "The show will be directed by Sarah Punshon, whose previous work at Bolton Octagon includes adapting Peter Pan for stage in 2021, and directing The Jungle Book in 2023.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Sally Cookson",
+  "role": "Writer",
+  "production": "Cinderella: A Fairy Tale (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton",
+  "url": "https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115",
+  "evidence": "Following on from the theatre's recent spectacular festive season shows, which have included A Christmas Carol, The Jungle Book and Around the World in 80 Days, this new stage production is being created by Sally Cookson, Adam Peck and the Original Company, with music and lyrics by Benji Bower and the Original Company.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Adam Peck",
+  "role": "Writer",
+  "production": "Cinderella: A Fairy Tale (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton",
+  "url": "https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115",
+  "evidence": "Following on from the theatre's recent spectacular festive season shows, which have included A Christmas Carol, The Jungle Book and Around the World in 80 Days, this new stage production is being created by Sally Cookson, Adam Peck and the Original Company, with music and lyrics by Benji Bower and the Original Company.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Benji Bower",
+  "role": "Composer",
+  "production": "Cinderella: A Fairy Tale (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton",
+  "url": "https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115",
+  "evidence": "Following on from the theatre's recent spectacular festive season shows, which have included A Christmas Carol, The Jungle Book and Around the World in 80 Days, this new stage production is being created by Sally Cookson, Adam Peck and the Original Company, with music and lyrics by Benji Bower and the Original Company.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Benji Bower",
+  "role": "Lyricist",
+  "production": "Cinderella: A Fairy Tale (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton",
+  "url": "https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115",
+  "evidence": "Following on from the theatre's recent spectacular festive season shows, which have included A Christmas Carol, The Jungle Book and Around the World in 80 Days, this new stage production is being created by Sally Cookson, Adam Peck and the Original Company, with music and lyrics by Benji Bower and the Original Company.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Annelie Powell",
+  "role": "Casting director",
+  "production": "Calendar Girls The Musical (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton and New Wolsey Theatre, Ipswich",
+  "url": "https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/",
+  "evidence": "Set and costume design are by Helen Coyston, musical direction and associate direction is by Alex Weatherill, choreography and intimacy direction by Stephanie Dattani, lighting is by Jane Lalljee, sound is by Simon Slater and casting is by Annelie Powell.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Paul Robinson",
+  "role": "Director",
+  "production": "Calendar Girls The Musical (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton and New Wolsey Theatre, Ipswich",
+  "url": "https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/",
+  "evidence": "Directed by Paul Robinson, the staging will be presented in the round.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Tim Firth",
+  "role": "Writer",
+  "production": "Calendar Girls The Musical (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton and New Wolsey Theatre, Ipswich",
+  "url": "https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/",
+  "evidence": "Based on the true story of a group of Yorkshire women who create a nude calendar to raise funds following the death of a much-loved husband, the musical features a book by Tim Firth and music and lyrics by Gary Barlow.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Gary Barlow",
+  "role": "Composer",
+  "production": "Calendar Girls The Musical (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton and New Wolsey Theatre, Ipswich",
+  "url": "https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/",
+  "evidence": "Based on the true story of a group of Yorkshire women who create a nude calendar to raise funds following the death of a much-loved husband, the musical features a book by Tim Firth and music and lyrics by Gary Barlow.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
+  "person": "Gary Barlow",
+  "role": "Lyricist",
+  "production": "Calendar Girls The Musical (Octagon Theatre)",
+  "venue": "Octagon Theatre, Bolton and New Wolsey Theatre, Ipswich",
+  "url": "https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/",
+  "evidence": "Based on the true story of a group of Yorkshire women who create a nude calendar to raise funds following the death of a much-loved husband, the musical features a book by Tim Firth and music and lyrics by Gary Barlow.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-18.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",

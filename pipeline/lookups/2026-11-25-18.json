@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "A Little Night Music",
+    "Venue": "Royal Exchange Theatre, Manchester",
+    "Casting Director": "Jill Green",
+    "Director": "Selina Cartmell",
+    "Writer": "Book: Hugh Wheeler; Music: Stephen Sondheim; Lyrics: Stephen Sondheim",
+    "Sources": {
+      "Venue": ["https://www.royalexchange.co.uk/?p=43518", "https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/"],
+      "Casting Director": ["https://www.royalexchange.co.uk/?p=43518", "https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/"],
+      "Director": ["https://www.royalexchange.co.uk/?p=43518", "https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/"],
+      "Writer": ["https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/"]
+    }
+  },
+  {
+    "Production Name": "Cinderella: A Fairy Tale",
+    "Venue": "Octagon Theatre, Bolton",
+    "Casting Director": "Unknown",
+    "Director": "Sarah Punshon",
+    "Writer": "Sally Cookson; Adam Peck; Music: Benji Bower; Lyrics: Benji Bower",
+    "Sources": {
+      "Venue": ["https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115", "https://www.creativetourist.com/event/cinderella-a-fairytale-2/"],
+      "Casting Director": [],
+      "Director": ["https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115", "https://www.creativetourist.com/event/cinderella-a-fairytale-2/"],
+      "Writer": ["https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115"]
+    }
+  },
+  {
+    "Production Name": "Calendar Girls The Musical",
+    "Venue": "Octagon Theatre, Bolton and New Wolsey Theatre, Ipswich",
+    "Casting Director": "Annelie Powell",
+    "Director": "Paul Robinson",
+    "Writer": "Book: Tim Firth; Music: Gary Barlow; Lyrics: Gary Barlow",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/"],
+      "Director": ["https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/"],
+      "Writer": ["https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/"]
+    }
+  }
+]
