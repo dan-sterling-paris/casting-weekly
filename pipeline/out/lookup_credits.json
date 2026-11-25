@@ -3000,6 +3000,66 @@
   "lookup_file": "2026-11-25-14.json"
  },
  {
+  "person": "Loveday Ingram",
+  "role": "Director",
+  "production": "Before I Go To Sleep (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/tom-chambers-joins-giovanna-fletcher-in-before-i-go-to-sleep-tour_1735569/",
+  "evidence": "As already revealed, Giovanna Fletcher will lead the world premiere stage show, written by Rachel Wagstaff and directed by Loveday Ingram.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-15.json"
+ },
+ {
+  "person": "Rachel Wagstaff",
+  "role": "Writer",
+  "production": "Before I Go To Sleep (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/tom-chambers-joins-giovanna-fletcher-in-before-i-go-to-sleep-tour_1735569/",
+  "evidence": "As already revealed, Giovanna Fletcher will lead the world premiere stage show, written by Rachel Wagstaff and directed by Loveday Ingram.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-15.json"
+ },
+ {
+  "person": "Denise Silvey",
+  "role": "Casting director",
+  "production": "The Mousetrap (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/the-mousetrap-announces-further-tour-cast-for-75th-anniversary_1729098/",
+  "evidence": "Denise Silvey is the casting director, joined on the creative team by lighting designer Nic Farman and resident director Myles Brown, for this new tour.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-15.json"
+ },
+ {
+  "person": "Hannah Chissick",
+  "role": "Director",
+  "production": "The Mousetrap (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/principal-cast-announced-for-75th-anniversary-uk-tour-of-the-mousetrap/",
+  "evidence": "The production will be directed by Hannah Chissick, who joins the tour alongside casting director Denise Silvey as The Mousetrap enters its milestone 75th anniversary year.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-15.json"
+ },
+ {
+  "person": "Sean Foley",
+  "role": "Director",
+  "production": "Victoria Wood's dinnerladies",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/victoria-woods-dinnerladies-tour-reveals-full-cast-joining-les-dennis_1734344/",
+  "evidence": "dinnerladies will be adapted for the stage by Beth and Emma Kilcoyne, featuring a storyline inspired by episodes from the original TV sitcom, and directed by Sean Foley.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-15.json"
+ },
+ {
+  "person": "Emma Kilcoyne",
+  "role": "Writer",
+  "production": "Victoria Wood's dinnerladies",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/victoria-woods-dinnerladies-tour-reveals-full-cast-joining-les-dennis_1734344/",
+  "evidence": "dinnerladies will be adapted for the stage by Beth and Emma Kilcoyne, featuring a storyline inspired by episodes from the original TV sitcom, and directed by Sean Foley.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-15.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",

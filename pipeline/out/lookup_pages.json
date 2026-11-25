@@ -1114,5 +1114,54 @@
   "final": "https://theatreroyal.com/press/news/poirotcastingannounced/",
   "title": "Poirot casting announced for the UK & Ireland tour of Agatha Christie's The Hollow | Theatre Royal Plymouth",
   "file": "f65ccd802c004792.txt"
+ },
+ "https://theatreweekly.com/giovanna-fletcher-to-star-in-world-stage-premiere-of-before-i-go-to-sleep/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T13:48:19Z",
+  "final": "https://theatreweekly.com/giovanna-fletcher-to-star-in-world-stage-premiere-of-before-i-go-to-sleep/",
+  "title": "Giovanna Fletcher to star in world stage premiere of Before I Go To Sleep - Theatre Weekly",
+  "file": "4f09cf5c8b9e93d3.txt"
+ },
+ "https://www.whatsonstage.com/news/tom-chambers-joins-giovanna-fletcher-in-before-i-go-to-sleep-tour_1735569/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T13:48:21Z",
+  "final": "https://www.whatsonstage.com/news/tom-chambers-joins-giovanna-fletcher-in-before-i-go-to-sleep-tour_1735569/",
+  "title": "Tom Chambers joins Giovanna Fletcher in Before I Go To Sleep tour",
+  "file": "5294b7ff5c6482d9.txt"
+ },
+ "https://theatreweekly.com/principal-cast-announced-for-75th-anniversary-uk-tour-of-the-mousetrap/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T13:48:23Z",
+  "final": "https://theatreweekly.com/principal-cast-announced-for-75th-anniversary-uk-tour-of-the-mousetrap/",
+  "title": "Principal cast announced for 75th anniversary UK tour of The Mousetrap - Theatre Weekly",
+  "file": "7f15a1ae38154139.txt"
+ },
+ "https://www.whatsonstage.com/news/the-mousetrap-announces-further-tour-cast-for-75th-anniversary_1729098/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T13:48:24Z",
+  "final": "https://www.whatsonstage.com/news/the-mousetrap-announces-further-tour-cast-for-75th-anniversary_1729098/",
+  "title": "The Mousetrap announces further tour cast for 75th anniversary",
+  "file": "8b4fd4deb18243fc.txt"
+ },
+ "https://theatreweekly.com/full-cast-announced-for-dinnerladies-2027-uk-tour/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T13:48:26Z",
+  "final": "https://theatreweekly.com/full-cast-announced-for-dinnerladies-2027-uk-tour/",
+  "title": "Full Cast Announced for dinnerladies 2027 UK Tour - Theatre Weekly",
+  "file": "ef9da4d899a0aee7.txt"
+ },
+ "https://www.broadwayworld.com/article/Sue-Cleaver-to-Join-Les-Dennis-in-UK-Tour-of-DINNERLADIES-20261005": {
+  "status": 200,
+  "fetched_at": "2026-11-25T13:48:28Z",
+  "final": "https://www.broadwayworld.com/uk-regional/article/Sue-Cleaver-to-Join-Les-Dennis-in-UK-Tour-of-DINNERLADIES-20261005",
+  "title": "Sue Cleaver to Join Les Dennis in UK Tour of DINNERLADIES | BroadwayWorld",
+  "file": "e196d1ed7aa026ba.txt"
+ },
+ "https://www.whatsonstage.com/news/victoria-woods-dinnerladies-tour-reveals-full-cast-joining-les-dennis_1734344/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T13:48:29Z",
+  "final": "https://www.whatsonstage.com/news/victoria-woods-dinnerladies-tour-reveals-full-cast-joining-les-dennis_1734344/",
+  "title": "Victoria Wood’s dinnerladies tour reveals full cast joining Les Dennis",
+  "file": "cca7047420fc423a.txt"
  }
 }
