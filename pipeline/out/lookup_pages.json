@@ -1352,5 +1352,54 @@
   "final": "https://www.afridiziak.com/whatson/never-look-back-by-john-rwothomack/",
   "title": "Never Look Back By John Rwothomack 27 Feb – 13 Mar 2027 • Afridiziak Theatre News",
   "file": "f09197629bcc8c3d.txt"
+ },
+ "https://ett.org.uk/our-work/twelve-letters-to-my-name/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T20:48:48Z",
+  "final": "https://ett.org.uk/our-work/twelve-letters-to-my-name/",
+  "title": "Twelve Letters To My Name - English Touring Theatre",
+  "file": "94897cff18e84cb4.txt"
+ },
+ "https://graeae.org/?p=16055": {
+  "status": 200,
+  "fetched_at": "2026-11-25T20:48:51Z",
+  "final": "https://graeae.org/event/12-letters-to-my-name/",
+  "title": "12 Letters To My Name - GraeaeBloomberg PhilanthropiesArts Council England",
+  "file": "54e04c225973faf6.txt"
+ },
+ "https://www.whatsonstage.com/news/a-tale-of-two-cities-casting-and-tour-dates-announced_1728513/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T20:48:53Z",
+  "final": "https://www.whatsonstage.com/news/a-tale-of-two-cities-casting-and-tour-dates-announced_1728513/",
+  "title": "A Tale of Two Cities casting and tour dates announced",
+  "file": "beeb09ee7ff49b1e.txt"
+ },
+ "https://marlowetheatre.com/blog/marlowe-theatre-announces-cast-and-uk-tour-dates-for-a-tale-of-two-cities": {
+  "status": 200,
+  "fetched_at": "2026-11-25T20:48:57Z",
+  "final": "https://marlowetheatre.com/news/marlowe-theatre-announces-cast-and-uk-tour-dates-for-a-tale-of-two-cities/",
+  "title": "Marlowe Theatre announces cast and UK tour dates for A Tale of Two Cities - Marlowe Theatre",
+  "file": "6e8291fb0e298af4.txt"
+ },
+ "https://www.whatsonstage.com/news/punch-confirms-2027-tour-cast_1737681/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T20:48:57Z",
+  "final": "https://www.whatsonstage.com/news/punch-confirms-2027-tour-cast_1737681/",
+  "title": "Punch confirms 2027 tour cast",
+  "file": "bd2666fc5a85707e.txt"
+ },
+ "https://theatreweekly.com/full-cast-announced-for-uk-and-ireland-tour-of-punch/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T20:49:02Z",
+  "final": "https://theatreweekly.com/full-cast-announced-for-uk-and-ireland-tour-of-punch/",
+  "title": "Full Cast Announced for UK and Ireland Tour of Punch - Theatre Weekly",
+  "file": "6d5eeb0d556cc156.txt"
+ },
+ "https://nottinghamplayhouse.co.uk/events/punch-on-tour/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T20:49:04Z",
+  "final": "https://nottinghamplayhouse.co.uk/events/punch-on-tour/",
+  "title": "Punch On Tour - Nottingham Playhouse",
+  "file": "5a6f02d50279843c.txt"
  }
 }

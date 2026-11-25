@@ -3820,6 +3820,76 @@
   "lookup_file": "2026-11-25-21.json"
  },
  {
+  "person": "Helena Palmer",
+  "role": "Casting director",
+  "production": "A Tale of Two Cities (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/a-tale-of-two-cities-casting-and-tour-dates-announced_1728513/",
+  "evidence": "…signer Ben Jacobs, sound designer Richard Hammarton, composer Barnaby Race, video designer Nina Dunn for PixelLux, wigs, hair and make-up designer Susanna Peretz, casting director Helena Palmer, fight director Jonathan Holby, creative associate Audrey Brisson, associate director Pip Minnithorpe and dramaturg Leo Butler.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-22.json"
+ },
+ {
+  "person": "Michael Fentiman",
+  "role": "Director",
+  "production": "A Tale of Two Cities (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/a-tale-of-two-cities-casting-and-tour-dates-announced_1728513/",
+  "evidence": "The new production features Terence Rattigan and John Gielgud’s adaptation from Charles Dickens’ classic novel, now directed by Michael Fentiman.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-22.json"
+ },
+ {
+  "person": "Terence Rattigan",
+  "role": "Writer",
+  "production": "A Tale of Two Cities (UK tour)",
+  "venue": "UK tour",
+  "url": "https://marlowetheatre.com/blog/marlowe-theatre-announces-cast-and-uk-tour-dates-for-a-tale-of-two-cities",
+  "evidence": "Adapted for the stage by Terence Rattigan and John Gielgud, and directed by acclaimed theatre-maker Michael Fentiman, this major new production brings one of Dickens’ most celebrated novels thrillingly to life for contemporary audiences.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-22.json"
+ },
+ {
+  "person": "John Gielgud",
+  "role": "Writer",
+  "production": "A Tale of Two Cities (UK tour)",
+  "venue": "UK tour",
+  "url": "https://marlowetheatre.com/blog/marlowe-theatre-announces-cast-and-uk-tour-dates-for-a-tale-of-two-cities",
+  "evidence": "Adapted for the stage by Terence Rattigan and John Gielgud, and directed by acclaimed theatre-maker Michael Fentiman, this major new production brings one of Dickens’ most celebrated novels thrillingly to life for contemporary audiences.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-22.json"
+ },
+ {
+  "person": "Christopher Worrall",
+  "role": "Casting director",
+  "production": "Punch (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/punch-confirms-2027-tour-cast_1737681/",
+  "evidence": "The original creative team returns, including production designer Anna Fleischle, lighting designer Robbie Butler, sound designer and composer Alexandra Faye Braithwaite, movement director Leanne Pinder and casting director Christopher Worrall.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-22.json"
+ },
+ {
+  "person": "Adam Penford",
+  "role": "Director",
+  "production": "Punch (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/punch-confirms-2027-tour-cast_1737681/",
+  "evidence": "The production, directed by Adam Penford, premiered at Nottingham Playhouse in 2024 and later ran at the Young Vic.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-22.json"
+ },
+ {
+  "person": "James Graham",
+  "role": "Writer",
+  "production": "Punch (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://nottinghamplayhouse.co.uk/events/punch-on-tour/",
+  "evidence": "Olivier Award-winning writer James Graham (Dear England, This House, BBC’s Sherwood),  has brought  Jacob Dunne’s extraordinary true story to the stage in a gripping, high-energy and deeply moving production.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-22.json"
+ },
+ {
   "person": "Stuart Burt",
   "role": "Casting director",
   "production": "Into the Woods (Noël Coward Theatre)",

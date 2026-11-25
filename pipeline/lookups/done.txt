@@ -104,3 +104,6 @@ Romeo and Juliet, 2027 English Touring Theatre with Royal Lyceum, Leeds Playhous
 Guys and Dolls, 2027 Royal Lyceum Edinburgh  →  2026-11-25-21.json
 Little Shop of Horrors, 2027 Leeds Playhouse  →  2026-11-25-21.json
 Never Look Back, 2027 Sheffield Crucible  →  2026-11-25-21.json
+12 Letters to My Name, 2027 Sheffield Theatres and Graeae  →  2026-11-25-22.json
+A Tale of Two Cities, 2027 Chichester Festival Theatre  →  2026-11-25-22.json
+Punch, 2027 Chichester Festival Theatre  →  2026-11-25-22.json
