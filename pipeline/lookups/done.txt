@@ -41,3 +41,6 @@ My Fair Lady, 2026 Chichester Festival Theatre  →  2026-11-17-15.json
 Sinatra The Musical, Aldwych Theatre London  →  2026-11-24-1.json
 Matilda The Musical, London  →  2026-11-24-1.json
 Titanique, Criterion Theatre London  →  2026-11-24-1.json
+The Devil Wears Prada, London  →  2026-11-25-1.json
+The Play That Goes Wrong, London  →  2026-11-25-1.json
+Rent, 2026 Duke of York's Theatre London  →  2026-11-25-1.json

@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-The Devil Wears Prada, London
-The Play That Goes Wrong, London
-Rent, 2026 Duke of York's Theatre London
 Operation Mincemeat, London
 My Neighbour Totoro, Gillian Lynne Theatre London
 The Cherry Orchard, 2026 Harold Pinter Theatre London

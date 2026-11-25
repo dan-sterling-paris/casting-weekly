@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "The Devil Wears Prada",
+    "Venue": "Dominion Theatre, London",
+    "Casting Director": "Jill Green CDG",
+    "Director": "Jerry Mitchell",
+    "Writer": "Book: Kate Wetherhead; Music: Elton John; Lyrics: Shaina Taub; Lyrics: Mark Sonnenblick",
+    "Sources": {
+      "Venue": ["https://devilwearspradamusical.com/cast-and-creative", "https://www.westendbestfriend.co.uk/news/full-casting-announced-for-the-devil-wears-prada-in-the-west-end"],
+      "Casting Director": ["https://devilwearspradamusical.com/cast-and-creative", "https://www.whatsonstage.com/news/the-devil-wears-prada-announces-further-lead-casting_1732361/", "https://www.westendbestfriend.co.uk/news/full-casting-announced-for-the-devil-wears-prada-in-the-west-end"],
+      "Director": ["https://devilwearspradamusical.com/cast-and-creative", "https://www.whatsonstage.com/news/the-devil-wears-prada-announces-further-lead-casting_1732361/", "https://www.westendbestfriend.co.uk/news/full-casting-announced-for-the-devil-wears-prada-in-the-west-end"],
+      "Writer": ["https://devilwearspradamusical.com/cast-and-creative", "https://www.whatsonstage.com/news/the-devil-wears-prada-announces-further-lead-casting_1732361/"]
+    }
+  },
+  {
+    "Production Name": "The Play That Goes Wrong",
+    "Venue": "Duchess Theatre, London",
+    "Casting Director": "Lucy Jenkins CDG; Sooki McShane",
+    "Director": "Mark Bell",
+    "Writer": "Henry Lewis; Jonathan Sayer; Henry Shields",
+    "Sources": {
+      "Venue": ["https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026", "https://www.london-theater-tickets.com/the-play-that-goes-wrong-tickets/cast-and-creatives/"],
+      "Casting Director": ["https://www.london-theater-tickets.com/the-play-that-goes-wrong-tickets/cast-and-creatives/", "https://www.whatsonstage.com/news/the-play-that-goes-wrong-announces-new-west-end-cast-and-booking-extension_1577967"],
+      "Director": ["https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026", "https://www.london-theater-tickets.com/the-play-that-goes-wrong-tickets/cast-and-creatives/"],
+      "Writer": ["https://www.londontheatre.co.uk/theatre-news/news/the-play-that-goes-wrong-announces-new-west-end-cast-2026", "https://www.london-theater-tickets.com/the-play-that-goes-wrong-tickets/cast-and-creatives/"]
+    }
+  },
+  {
+    "Production Name": "Rent",
+    "Venue": "Duke of York's Theatre, London",
+    "Casting Director": "Pearson Casting; Jim Carnahan",
+    "Director": "Luke Sheppard",
+    "Writer": "Book: Jonathan Larson; Music: Jonathan Larson; Lyrics: Jonathan Larson",
+    "Sources": {
+      "Venue": ["https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026", "https://www.whatsonstage.com/news/rent-announces-complete-west-end-cast-with-new-mimi-revealed_1729666/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/rent-announces-complete-west-end-cast-with-new-mimi-revealed_1729666/"],
+      "Director": ["https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026", "https://www.whatsonstage.com/news/rent-announces-complete-west-end-cast-with-new-mimi-revealed_1729666/", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-west-end-revival-of-rent"],
+      "Writer": ["https://playbill.com/production/rent-london-duke-of-yorks-theatre-2026", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-west-end-revival-of-rent"]
+    }
+  }
+]
