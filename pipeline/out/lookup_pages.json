@@ -1450,5 +1450,19 @@
   "final": "https://theatkinson.co.uk/events/easter-pantomime-rapunzel/",
   "title": "Easter Pantomime: Rapunzel - The Atkinson",
   "file": "c035abdf2cd47b16.txt"
+ },
+ "https://www.chelmsfordtheatre.co.uk/event/tinderella": {
+  "status": 200,
+  "fetched_at": "2026-11-25T23:47:18Z",
+  "final": "https://www.chelmsfordtheatre.co.uk/events/tinderella",
+  "title": "Tinderella - Two Big Balls One Happy Ending  | Chelmsford Theatre",
+  "file": "dcf6b42ea92f69c0.txt"
+ },
+ "https://www.albanytheatre.co.uk/?p=30147": {
+  "status": 200,
+  "fetched_at": "2026-11-25T23:47:24Z",
+  "final": "https://www.albanytheatre.co.uk/shows/tinderella/",
+  "title": "Tinderella » The Albany Theatre",
+  "file": "82705ddcc422588b.txt"
  }
 }
