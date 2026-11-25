@@ -3038,5 +3038,105 @@
   "evidence": "Magic Mike Live in London is co-directed by Channing Tatum and Alison Faulk, with Luke Broadlick as associate director, and choreography by Alison Faulk and Luke Broadlick.",
   "rule": "K",
   "lookup_file": "2026-11-25-6.json"
+ },
+ {
+  "person": "Pearson Casting",
+  "role": "Casting director",
+  "production": "Operation Mincemeat (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711",
+  "evidence": "Casting is by Pearson Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Robert Hastie",
+  "role": "Director",
+  "production": "Operation Mincemeat (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711",
+  "evidence": "Directed by Robert Hastie, with choreography by Jenny Arnold, the creative team includes Ben Stones as set and costume designer, Mark Henderson as lighting designer, Mike Walker as sound designer, Steve Sidwell as orchestrator and vocal arranger, Joe Bunker as musical supervisor and Sam Sommerfeld as musical director.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "David Cumming",
+  "role": "Writer",
+  "production": "Operation Mincemeat (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711",
+  "evidence": "Written and composed by David Cumming, Felix Hagan, Natasha Hodgson and Zoë Roberts of SpitLip, the musical comedy is based on a true story of the secret mission that helped win World War II.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Felix Hagan",
+  "role": "Writer",
+  "production": "Operation Mincemeat (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711",
+  "evidence": "Written and composed by David Cumming, Felix Hagan, Natasha Hodgson and Zoë Roberts of SpitLip, the musical comedy is based on a true story of the secret mission that helped win World War II.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Natasha Hodgson",
+  "role": "Writer",
+  "production": "Operation Mincemeat (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711",
+  "evidence": "Written and composed by David Cumming, Felix Hagan, Natasha Hodgson and Zoë Roberts of SpitLip, the musical comedy is based on a true story of the secret mission that helped win World War II.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Zoë Roberts",
+  "role": "Writer",
+  "production": "Operation Mincemeat (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711",
+  "evidence": "Written and composed by David Cumming, Felix Hagan, Natasha Hodgson and Zoë Roberts of SpitLip, the musical comedy is based on a true story of the secret mission that helped win World War II.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Harry Blumenau",
+  "role": "Casting director",
+  "production": "Dirty Dancing (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/",
+  "evidence": "The lighting designer is Valerio Tiberi, the sound designer is Chris Whybrow, the supervising musical director is Richard John, the associate director is Juliet Gough, the original music supervisor is Conrad Helfrich, the costume designer is Jennifer Irwin and casting is by Harry Blumenau.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Federico Bellone",
+  "role": "Director",
+  "production": "Dirty Dancing (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/",
+  "evidence": "The production will once again be directed by Federico Bellone, who has also designed the set, and choreographed by Austin Wilks.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Eleanor Bergstein",
+  "role": "Writer",
+  "production": "Dirty Dancing (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/",
+  "evidence": "The show is written by Eleanor Bergstein, who penned the original 1987 screenplay and produced by Sydow in association with Lionsgate, Magic Hour Productions, and Ivan MacTaggart, co-producer for Freedom Riders.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
+ },
+ {
+  "person": "Andy Fickman",
+  "role": "Director",
+  "production": "Heathers the Musical (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/heathers-the-musical-announces-2026-complete-casting_1725570/",
+  "evidence": "The show is directed by Andy Fickman, with choreography by Gary Lloyd, design by David Shields, lighting by Ben Cracknell, sound by Dan Samson and musical supervision by Jeremy Wootton and Will Joy.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-7.json"
  }
 ]

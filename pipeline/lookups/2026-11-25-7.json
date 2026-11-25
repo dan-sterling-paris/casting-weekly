@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Operation Mincemeat",
+    "Venue": "UK tour",
+    "Casting Director": "Pearson Casting",
+    "Director": "Robert Hastie",
+    "Writer": "David Cumming; Felix Hagan; Natasha Hodgson; Zoë Roberts",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711", "https://www.broadwayworld.com/article/Cast-Set-For-OPERATION-MINCEMEAT-UK-Tour-20251208"],
+      "Casting Director": ["https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711", "https://www.broadwayworld.com/article/Cast-Set-For-OPERATION-MINCEMEAT-UK-Tour-20251208"],
+      "Director": ["https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711", "https://www.broadwayworld.com/article/Cast-Set-For-OPERATION-MINCEMEAT-UK-Tour-20251208"],
+      "Writer": ["https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711", "https://www.broadwayworld.com/article/Cast-Set-For-OPERATION-MINCEMEAT-UK-Tour-20251208"]
+    }
+  },
+  {
+    "Production Name": "Dirty Dancing",
+    "Venue": "UK tour",
+    "Casting Director": "Harry Blumenau",
+    "Director": "Federico Bellone",
+    "Writer": "Eleanor Bergstein",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/", "https://www.broadwayworld.com/article/Final-Cast-Set-For-DIRTY-DANCING-UK-Tour-20260727"],
+      "Casting Director": ["https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/"],
+      "Director": ["https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/", "https://www.broadwayworld.com/article/Final-Cast-Set-For-DIRTY-DANCING-UK-Tour-20260727", "https://www.westendbestfriend.co.uk/news/initial-casting-final-dates-dirty-dancing-26-27-tour"],
+      "Writer": ["https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/"]
+    }
+  },
+  {
+    "Production Name": "Heathers the Musical",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Andy Fickman",
+    "Writer": "Kevin Murphy; Laurence O'Keefe",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/heathers-the-musical-reveals-full-london-and-uk-tour-cast-for-2026-and-2027/", "https://www.whatsonstage.com/news/heathers-the-musical-announces-2026-complete-casting_1725570/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/heathers-the-musical-announces-2026-complete-casting_1725570/", "https://theatreweekly.com/heathers-the-musical-reveals-full-london-and-uk-tour-cast-for-2026-and-2027/", "https://www.broadwayworld.com/article/HEATHERS-THE-MUSICAL-Announces-London-And-Tour-Cast-20260619"],
+      "Writer": ["https://www.whatsonstage.com/news/heathers-the-musical-announces-2026-complete-casting_1725570/"]
+    }
+  }
+]

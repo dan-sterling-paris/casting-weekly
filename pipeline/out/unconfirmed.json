@@ -145,5 +145,23 @@
   "urls": [
    "https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/"
   ]
+ },
+ {
+  "show": "Heathers the Musical",
+  "role": "Writer",
+  "name": "Kevin Murphy",
+  "reason": "role_missing",
+  "urls": [
+   "https://www.whatsonstage.com/news/heathers-the-musical-announces-2026-complete-casting_1725570/"
+  ]
+ },
+ {
+  "show": "Heathers the Musical",
+  "role": "Writer",
+  "name": "Laurence O'Keefe",
+  "reason": "role_missing",
+  "urls": [
+   "https://www.whatsonstage.com/news/heathers-the-musical-announces-2026-complete-casting_1725570/"
+  ]
  }
 ]

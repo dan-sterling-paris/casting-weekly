@@ -806,5 +806,40 @@
   "final": "https://www.broadwayworld.com/westend/article/MAGIC-MIKE-LIVE-Reveals-New-Cast-20260303",
   "title": "MAGIC MIKE LIVE Reveals New Cast | BroadwayWorld",
   "file": "829a64f886344c5e.txt"
+ },
+ "https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:48:26Z",
+  "final": "https://www.whatsonstage.com/news/operation-mincemeat-announces-tour-company_1705711/",
+  "title": "Operation Mincemeat announces tour company",
+  "file": "87cad59e3c1100aa.txt"
+ },
+ "https://www.broadwayworld.com/article/Cast-Set-For-OPERATION-MINCEMEAT-UK-Tour-20251208": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:48:28Z",
+  "final": "https://www.broadwayworld.com/westend/article/Cast-Set-For-OPERATION-MINCEMEAT-UK-Tour-20251208",
+  "title": "Cast Set For OPERATION MINCEMEAT UK Tour | BroadwayWorld",
+  "file": "7275d6d07b0f6de1.txt"
+ },
+ "https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:48:29Z",
+  "final": "https://www.whatsonstage.com/news/dirty-dancing-announces-full-casting-for-2026-tour_1728187/",
+  "title": "Dirty Dancing announces full casting for 2026 tour",
+  "file": "5345d90e7f4cfd11.txt"
+ },
+ "https://theatreweekly.com/heathers-the-musical-reveals-full-london-and-uk-tour-cast-for-2026-and-2027/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:48:33Z",
+  "final": "https://theatreweekly.com/heathers-the-musical-reveals-full-london-and-uk-tour-cast-for-2026-and-2027/",
+  "title": "Heathers the Musical reveals full London and UK tour cast for 2026 and 2027 - Theatre Weekly",
+  "file": "f80699cea057c2f5.txt"
+ },
+ "https://www.whatsonstage.com/news/heathers-the-musical-announces-2026-complete-casting_1725570/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T05:48:34Z",
+  "final": "https://www.whatsonstage.com/news/heathers-the-musical-announces-2026-complete-casting_1725570/",
+  "title": "Heathers the Musical announces 2026 complete casting",
+  "file": "06b38c054e7d2391.txt"
  }
 }
