@@ -1429,5 +1429,26 @@
   "final": "https://everyonetheatres.com/whats-on/snow-white/",
   "title": "Snow White | Everyone Theatres",
   "file": "39becb1da96f98e4.txt"
+ },
+ "https://entertainers.co.uk/shows/ghost-house-a-haunting-new-play": {
+  "status": 200,
+  "fetched_at": "2026-11-25T22:48:36Z",
+  "final": "https://entertainers.co.uk/shows/ghost-house-a-haunting-new-play",
+  "title": "Ghost House | Tour Dates & Tickets",
+  "file": "e1e6d9759e9ce02b.txt"
+ },
+ "https://theatreweekly.com/a-shoddy-detective-and-the-art-of-deception-to-embark-on-major-uk-tour-in-2027/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T22:48:40Z",
+  "final": "https://theatreweekly.com/a-shoddy-detective-and-the-art-of-deception-to-embark-on-major-uk-tour-in-2027/",
+  "title": "A Shoddy Detective and the Art of Deception to embark on major UK tour in 2027 - Theatre Weekly",
+  "file": "8f2ef795da57f37c.txt"
+ },
+ "https://theatkinson.co.uk/events/easter-pantomime-rapunzel/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T22:48:42Z",
+  "final": "https://theatkinson.co.uk/events/easter-pantomime-rapunzel/",
+  "title": "Easter Pantomime: Rapunzel - The Atkinson",
+  "file": "c035abdf2cd47b16.txt"
  }
 }

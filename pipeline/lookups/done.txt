@@ -110,3 +110,6 @@ Punch, 2027 Chichester Festival Theatre  →  2026-11-25-22.json
 The 39 Steps, 2027 New Vic Theatre Newcastle-under-Lyme  →  2026-11-25-23.json
 The Ferry, 2027 Traverse Theatre Edinburgh  →  2026-11-25-23.json
 Snow White, 2026 Gordon Craig Theatre Stevenage  →  2026-11-25-23.json
+Ghost House, 2027 UK Tour  →  2026-11-25-24.json
+A Shoddy Detective and The Art of Deception, 2027 UK Tour  →  2026-11-25-24.json
+Rapunzel, 2027 KD Theatre Productions Easter Panto Tour  →  2026-11-25-24.json

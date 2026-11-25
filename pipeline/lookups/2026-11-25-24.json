@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Ghost House",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Unknown",
+    "Writer": "Unknown",
+    "Sources": {
+      "Venue": ["https://entertainers.co.uk/shows/ghost-house-a-haunting-new-play"],
+      "Casting Director": [],
+      "Director": [],
+      "Writer": []
+    }
+  },
+  {
+    "Production Name": "A Shoddy Detective and The Art of Deception",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Daniel Buckroyd",
+    "Writer": "Mitch Donaldson; Becky Bartram",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/a-shoddy-detective-and-the-art-of-deception-to-embark-on-major-uk-tour-in-2027/"],
+      "Casting Director": [],
+      "Director": ["https://theatreweekly.com/a-shoddy-detective-and-the-art-of-deception-to-embark-on-major-uk-tour-in-2027/", "https://exeternorthcott.co.uk/events/a-shoddy-detective/"],
+      "Writer": ["https://theatreweekly.com/a-shoddy-detective-and-the-art-of-deception-to-embark-on-major-uk-tour-in-2027/", "https://exeternorthcott.co.uk/events/a-shoddy-detective/"]
+    }
+  },
+  {
+    "Production Name": "Rapunzel",
+    "Venue": "UK tour (KD Theatre Productions Easter panto)",
+    "Casting Director": "Unknown",
+    "Director": "Unknown",
+    "Writer": "Unknown",
+    "Sources": {
+      "Venue": ["https://theatkinson.co.uk/events/easter-pantomime-rapunzel/"],
+      "Casting Director": [],
+      "Director": [],
+      "Writer": []
+    }
+  }
+]

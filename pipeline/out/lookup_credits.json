@@ -3930,6 +3930,36 @@
   "lookup_file": "2026-11-25-23.json"
  },
  {
+  "person": "Daniel Buckroyd",
+  "role": "Director",
+  "production": "A Shoddy Detective and The Art of Deception (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/a-shoddy-detective-and-the-art-of-deception-to-embark-on-major-uk-tour-in-2027/",
+  "evidence": "A Shoddy Detective and the Art of Deception is written by Mitch Donaldson and Becky Bartram and directed by Daniel Buckroyd.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-24.json"
+ },
+ {
+  "person": "Mitch Donaldson",
+  "role": "Writer",
+  "production": "A Shoddy Detective and The Art of Deception (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/a-shoddy-detective-and-the-art-of-deception-to-embark-on-major-uk-tour-in-2027/",
+  "evidence": "A Shoddy Detective and the Art of Deception is written by Mitch Donaldson and Becky Bartram and directed by Daniel Buckroyd.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-24.json"
+ },
+ {
+  "person": "Becky Bartram",
+  "role": "Writer",
+  "production": "A Shoddy Detective and The Art of Deception (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/a-shoddy-detective-and-the-art-of-deception-to-embark-on-major-uk-tour-in-2027/",
+  "evidence": "A Shoddy Detective and the Art of Deception is written by Mitch Donaldson and Becky Bartram and directed by Daniel Buckroyd.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-24.json"
+ },
+ {
   "person": "Stuart Burt",
   "role": "Casting director",
   "production": "Into the Woods (Noël Coward Theatre)",
