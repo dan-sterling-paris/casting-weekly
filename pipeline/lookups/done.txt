@@ -56,3 +56,6 @@ The Standard of Living, Theatre Royal Haymarket London  →  2026-11-25-4.json
 Oh, Mary!, London  →  2026-11-25-5.json
 Hay Fever, 2026 Wyndham's Theatre London  →  2026-11-25-5.json
 Who's Afraid of Virginia Woolf?, 2026 @sohoplace London  →  2026-11-25-5.json
+The Mousetrap, London  →  2026-11-25-6.json
+SIX, London  →  2026-11-25-6.json
+Magic Mike Live, London  →  2026-11-25-6.json

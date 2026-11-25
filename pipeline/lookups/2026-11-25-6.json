@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "The Mousetrap",
+    "Venue": "St Martin's Theatre, London",
+    "Casting Director": "Marc Frankum",
+    "Director": "Hannah Chissick",
+    "Writer": "Agatha Christie",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/", "https://www.londonboxoffice.co.uk/news/post/the-mouse-trap-celebrates-75th-anniversary"],
+      "Casting Director": ["https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/"],
+      "Director": ["https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/", "https://www.londonboxoffice.co.uk/news/post/the-mouse-trap-celebrates-75th-anniversary", "https://theatreweekly.com/the-mousetrap-enters-its-75th-year-in-the-west-end-with-new-cast-creative-team-and-theatre-refurbishment/"],
+      "Writer": ["https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/"]
+    }
+  },
+  {
+    "Production Name": "SIX",
+    "Venue": "Vaudeville Theatre, London",
+    "Casting Director": "Pearson Casting",
+    "Director": "Lucy Moss; Jamie Armitage",
+    "Writer": "Toby Marlow; Lucy Moss",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/six-reveals-new-west-end-queens-as-the-show-extends-into-2027_1708660", "https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114"],
+      "Casting Director": ["https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114", "https://www.whatsonstage.com/news/six-reveals-new-west-end-queens-as-the-show-extends-into-2027_1708660"],
+      "Director": ["https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114", "https://www.londontheatre.co.uk/theatre-news/news/six-the-musical-welcomes-new-queens-as-musical-extends-through-january-2027"],
+      "Writer": ["https://www.broadwayworld.com/article/SIX-THE-MUSICAL-Welcomes-New-Queens-and-Extends-Run-at-the-Vaudeville-Theatre-20260114", "https://www.londontheatre.co.uk/theatre-news/news/six-the-musical-welcomes-new-queens-as-musical-extends-through-january-2027"]
+    }
+  },
+  {
+    "Production Name": "Magic Mike Live",
+    "Venue": "Hippodrome Casino, London",
+    "Casting Director": "David Grindrod; Candice Fox; Katie Zanca",
+    "Director": "Channing Tatum; Reid Carolin; Alison Faulk",
+    "Writer": "Unknown",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/magic-mike-live-111418847/", "https://www.broadwayworld.com/article/MAGIC-MIKE-LIVE-Reveals-New-Cast-20260303"],
+      "Casting Director": ["https://officiallondontheatre.com/show/magic-mike-live-111418847/"],
+      "Director": ["https://officiallondontheatre.com/show/magic-mike-live-111418847/", "https://www.broadwayworld.com/article/MAGIC-MIKE-LIVE-Reveals-New-Cast-20260303", "https://www.londonboxoffice.co.uk/news/post/new-cast-announced-for-magic-mike-live"],
+      "Writer": []
+    }
+  }
+]
