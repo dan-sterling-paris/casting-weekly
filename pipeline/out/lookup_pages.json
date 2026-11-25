@@ -995,5 +995,40 @@
   "final": "https://www.broadwayworld.com/westend/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604",
   "title": "HADESTOWN Will Embark on First-Ever UK and Ireland Tour in 2027 | BroadwayWorld",
   "file": "d070516b76365a71.txt"
+ },
+ "https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T10:47:47Z",
+  "final": "https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/",
+  "title": "Just For One Day – The Live Aid Musical Announces Major UK and Ireland Tour - Theatre Weekly",
+  "file": "d07f2e5c645d9588.txt"
+ },
+ "https://www.whatsonstage.com/news/starlight-express-announces-initial-tour-dates_1721061/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T10:47:49Z",
+  "final": "https://www.whatsonstage.com/news/starlight-express-announces-initial-tour-dates_1721061/",
+  "title": "Starlight Express announces initial tour dates",
+  "file": "34fd107fcedf92b1.txt"
+ },
+ "https://theatreweekly.com/starlight-express-world-tour-announced-with-uk-opening-in-leicester-in-2027/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T10:47:51Z",
+  "final": "https://theatreweekly.com/starlight-express-world-tour-announced-with-uk-opening-in-leicester-in-2027/",
+  "title": "Starlight Express world tour announced with UK opening in Leicester in 2027 - Theatre Weekly",
+  "file": "ba7bc0946874745c.txt"
+ },
+ "https://www.whatsonstage.com/news/only-fools-and-horses-musical-to-embark-on-brand-new-tour-with-initial-casting-confirmed_1737744/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T10:47:51Z",
+  "final": "https://www.whatsonstage.com/news/only-fools-and-horses-musical-to-embark-on-brand-new-tour-with-initial-casting-confirmed_1737744/",
+  "title": "Only Fools and Horses musical to embark on brand new tour – with initial casting confirmed",
+  "file": "7067e9045fe41f45.txt"
+ },
+ "https://theatreweekly.com/only-fools-and-horses-the-musical-announces-major-uk-and-ireland-tour-for-2027-28/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T10:47:53Z",
+  "final": "https://theatreweekly.com/only-fools-and-horses-the-musical-announces-major-uk-and-ireland-tour-for-2027-28/",
+  "title": "Only Fools and Horses The Musical announces major UK and Ireland tour for 2027-28 - Theatre Weekly",
+  "file": "c36d0d24dec19bb4.txt"
  }
 }

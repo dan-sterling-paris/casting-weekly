@@ -2700,6 +2700,96 @@
   "lookup_file": "2026-11-25-11.json"
  },
  {
+  "person": "Stuart Burt",
+  "role": "Casting director",
+  "production": "Just For One Day – The Live Aid Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/",
+  "evidence": "Written by John O’Farrell and directed by Luke Sheppard, the creative team includes musical supervision by Matthew Brind, choreography by Ebony Molina, and casting by Stuart Burt CDG.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
+  "person": "Luke Sheppard",
+  "role": "Director",
+  "production": "Just For One Day – The Live Aid Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/",
+  "evidence": "Written by John O’Farrell and directed by Luke Sheppard, the creative team includes musical supervision by Matthew Brind, choreography by Ebony Molina, and casting by Stuart Burt CDG.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
+  "person": "John O'Farrell",
+  "role": "Writer",
+  "production": "Just For One Day – The Live Aid Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/",
+  "evidence": "Written by John O’Farrell and directed by Luke Sheppard, the creative team includes musical supervision by Matthew Brind, choreography by Ebony Molina, and casting by Stuart Burt CDG.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
+  "person": "Luke Sheppard",
+  "role": "Director",
+  "production": "Starlight Express",
+  "venue": "Venue not stated",
+  "url": "https://theatreweekly.com/starlight-express-world-tour-announced-with-uk-opening-in-leicester-in-2027/",
+  "evidence": "The production features music by Andrew Lloyd Webber and lyrics by Richard Stilgoe, and is directed by Luke Sheppard.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
+  "person": "Andrew Lloyd Webber",
+  "role": "Composer",
+  "production": "Starlight Express",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/starlight-express-announces-initial-tour-dates_1721061/",
+  "evidence": "Andrew Lloyd Webber’s extraordinary score, combined with the show’s unique sense of spectacle, exhilaration and heart, continues to captivate audiences across generations.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
+  "person": "Richard Stilgoe",
+  "role": "Lyricist",
+  "production": "Starlight Express",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/starlight-express-announces-initial-tour-dates_1721061/",
+  "evidence": "The musical features music by Andrew Lloyd Webber and lyrics by Richard Stilgoe.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
+  "person": "Caroline Jay Ranger",
+  "role": "Director",
+  "production": "Only Fools and Horses The Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/only-fools-and-horses-musical-to-embark-on-brand-new-tour-with-initial-casting-confirmed_1737744/",
+  "evidence": "Caroline Jay Ranger, who directed the original West End production, directs again.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
+  "person": "Paul Whitehouse",
+  "role": "Writer",
+  "production": "Only Fools and Horses The Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/only-fools-and-horses-the-musical-announces-major-uk-and-ireland-tour-for-2027-28/",
+  "evidence": "Based on John Sullivan’s beloved television sitcom, the stage adaptation features a script and original score by Jim Sullivan and Paul Whitehouse, alongside musical contributions from John Sullivan and Chas Hodges.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
+  "person": "Jim Sullivan",
+  "role": "Writer",
+  "production": "Only Fools and Horses The Musical (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://theatreweekly.com/only-fools-and-horses-the-musical-announces-major-uk-and-ireland-tour-for-2027-28/",
+  "evidence": "Based on John Sullivan’s beloved television sitcom, the stage adaptation features a script and original score by Jim Sullivan and Paul Whitehouse, alongside musical contributions from John Sullivan and Chas Hodges.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-12.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",
