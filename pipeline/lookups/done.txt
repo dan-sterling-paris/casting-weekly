@@ -74,3 +74,6 @@ Everybody's Talking About Jamie, 2027 UK Tour  →  2026-11-25-10.json
 Blood Brothers, 2027 UK Tour  →  2026-11-25-11.json
 Singin' in the Rain, 2027 UK Tour  →  2026-11-25-11.json
 Hadestown, 2027 UK and Ireland Tour  →  2026-11-25-11.json
+Just For One Day The Live Aid Musical, 2027 UK Tour  →  2026-11-25-12.json
+Starlight Express, 2027 UK Tour  →  2026-11-25-12.json
+Only Fools and Horses The Musical, 2027 UK Tour  →  2026-11-25-12.json

@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Just For One Day – The Live Aid Musical",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Stuart Burt CDG",
+    "Director": "Luke Sheppard",
+    "Writer": "John O'Farrell",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/", "https://www.whatsonstage.com/news/just-for-one-day-the-live-aid-musical-announces-extra-tour-dates-and-venues_1727177/"],
+      "Casting Director": ["https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/", "https://www.broadwayworld.com/article/JUST-FOR-ONE-DAY-THE-LIVE-AID-MUSICAL-To-Launch-UK-And-Ireland-Tour-In-2027-20251216", "https://www.whatsonstage.com/news/just-for-one-day-the-live-aid-musical-announces-extra-tour-dates-and-venues_1727177/"],
+      "Director": ["https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/", "https://www.whatsonstage.com/news/just-for-one-day-the-live-aid-musical-announces-extra-tour-dates-and-venues_1727177/", "https://www.broadwayworld.com/article/JUST-FOR-ONE-DAY-THE-LIVE-AID-MUSICAL-To-Launch-UK-And-Ireland-Tour-In-2027-20251216"],
+      "Writer": ["https://theatreweekly.com/just-for-one-day-the-live-aid-musical-announces-major-uk-and-ireland-tour/", "https://www.broadwayworld.com/article/JUST-FOR-ONE-DAY-THE-LIVE-AID-MUSICAL-To-Launch-UK-And-Ireland-Tour-In-2027-20251216", "https://www.whatsonstage.com/news/just-for-one-day-the-live-aid-musical-announces-extra-tour-dates-and-venues_1727177/"]
+    }
+  },
+  {
+    "Production Name": "Starlight Express",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Luke Sheppard",
+    "Writer": "Music: Andrew Lloyd Webber; Lyrics: Richard Stilgoe",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/starlight-express-announces-initial-tour-dates_1721061/", "https://theatreweekly.com/starlight-express-world-tour-announced-with-uk-opening-in-leicester-in-2027/"],
+      "Casting Director": [],
+      "Director": ["https://theatreweekly.com/starlight-express-world-tour-announced-with-uk-opening-in-leicester-in-2027/", "https://www.broadwayworld.com/article/Andrew-Lloyd-Webbers-STARLIGHT-EXPRESS-Will-Embark-on-World-Tour-20260513"],
+      "Writer": ["https://www.whatsonstage.com/news/starlight-express-announces-initial-tour-dates_1721061/", "https://theatreweekly.com/starlight-express-world-tour-announced-with-uk-opening-in-leicester-in-2027/", "https://www.broadwayworld.com/article/Andrew-Lloyd-Webbers-STARLIGHT-EXPRESS-Will-Embark-on-World-Tour-20260513"]
+    }
+  },
+  {
+    "Production Name": "Only Fools and Horses The Musical",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Unknown",
+    "Director": "Caroline Jay Ranger",
+    "Writer": "Paul Whitehouse; Jim Sullivan",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/only-fools-and-horses-musical-to-embark-on-brand-new-tour-with-initial-casting-confirmed_1737744/", "https://theatreweekly.com/only-fools-and-horses-the-musical-announces-major-uk-and-ireland-tour-for-2027-28/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/only-fools-and-horses-musical-to-embark-on-brand-new-tour-with-initial-casting-confirmed_1737744/", "https://theatreweekly.com/only-fools-and-horses-the-musical-announces-major-uk-and-ireland-tour-for-2027-28/"],
+      "Writer": ["https://theatreweekly.com/only-fools-and-horses-the-musical-announces-major-uk-and-ireland-tour-for-2027-28/", "https://www.whatsonstage.com/news/only-fools-and-horses-musical-to-embark-on-brand-new-tour-with-initial-casting-confirmed_1737744/"]
+    }
+  }
+]

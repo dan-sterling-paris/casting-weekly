@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-Just For One Day The Live Aid Musical, 2027 UK Tour
-Starlight Express, 2027 UK Tour
-Only Fools and Horses The Musical, 2027 UK Tour
 SIX, 2027 UK Outdoor Tour
 The Rise and Fall of Little Voice, National Theatre UK Tour
 A Christmas Carol Goes Wrong, 2027 UK Tour
