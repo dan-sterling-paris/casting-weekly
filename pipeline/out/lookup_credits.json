@@ -3670,6 +3670,96 @@
   "lookup_file": "2026-11-25-2.json"
  },
  {
+  "person": "Matthew Dewsbury",
+  "role": "Casting director",
+  "production": "The Three Musketeers (Royal Shakespeare Theatre)",
+  "venue": "Royal Shakespeare Theatre, Stratford-upon-Avon",
+  "url": "https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/",
+  "evidence": "The production is adapted and directed by Hunter, with a creative team comprising set and costume designer Michael Vale, lighting designer Aideen Malone, composer Ian Ross, sound designer Tingying Dong, choreographer Jennifer Jackson, physical comedy consultant Jos Houben, dramaturg Stewart Pringle and casting director Matthew Dewsbury CDG.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
+  "person": "Paul Hunter",
+  "role": "Director",
+  "production": "The Three Musketeers (Royal Shakespeare Theatre)",
+  "venue": "Royal Shakespeare Theatre, Stratford-upon-Avon",
+  "url": "https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/",
+  "evidence": "The Royal Shakespeare Company (RSC) and Told by an Idiot have announced the full cast for The Three Musketeers, adapted and directed by Told by an Idiot co-founder and artistic director Paul Hunter.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
+  "person": "Paul Hunter",
+  "role": "Writer",
+  "production": "The Three Musketeers (Royal Shakespeare Theatre)",
+  "venue": "Royal Shakespeare Theatre, Stratford-upon-Avon",
+  "url": "https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/",
+  "evidence": "The Royal Shakespeare Company (RSC) and Told by an Idiot have announced the full cast for The Three Musketeers, adapted and directed by Told by an Idiot co-founder and artistic director Paul Hunter.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
+  "person": "Charlotte Sutton",
+  "role": "Casting director",
+  "production": "Middlemarch (Swan Theatre)",
+  "venue": "Swan Theatre, Stratford-upon-Avon",
+  "url": "https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/",
+  "evidence": "… Grace Smart, lighting designer Ben Jacobs, composer Paul Englishby, sound designer Nicola T Chang, movement director Lucy Cullingford, dramaturg Rebecca Latham, casting directors Charlotte Sutton and Christopher Worrall, music director Nathan Feeney, voice and dialect coach Emma Woodvine and associate director Molly Stacey.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
+  "person": "Christopher Worrall",
+  "role": "Casting director",
+  "production": "Middlemarch (Swan Theatre)",
+  "venue": "Swan Theatre, Stratford-upon-Avon",
+  "url": "https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/",
+  "evidence": "…g designer Ben Jacobs, composer Paul Englishby, sound designer Nicola T Chang, movement director Lucy Cullingford, dramaturg Rebecca Latham, casting directors Charlotte Sutton and Christopher Worrall, music director Nathan Feeney, voice and dialect coach Emma Woodvine and associate director Molly Stacey.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
+  "person": "Jeremy Herrin",
+  "role": "Director",
+  "production": "Middlemarch (Swan Theatre)",
+  "venue": "Swan Theatre, Stratford-upon-Avon",
+  "url": "https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/",
+  "evidence": "The Royal Shakespeare Company has announced the full cast for its forthcoming production of Middlemarch, directed by Jeremy Herrin.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
+  "person": "Nina Raine",
+  "role": "Writer",
+  "production": "Middlemarch (Swan Theatre)",
+  "venue": "Swan Theatre, Stratford-upon-Avon",
+  "url": "https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/",
+  "evidence": "George Eliot’s novel, an expansive study on provincial life, has been adapted for the stage by Nina Raine.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
+  "person": "Becky Paris",
+  "role": "Casting director",
+  "production": "Romeo and Juliet",
+  "venue": "Venue not stated",
+  "url": "https://ett.org.uk/our-work/romeo-and-juliet-2/",
+  "evidence": "Casting Director / Becky Paris",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
+  "person": "Chelsea Walker",
+  "role": "Director",
+  "production": "Romeo and Juliet",
+  "venue": "Venue not stated",
+  "url": "https://ett.org.uk/our-work/romeo-and-juliet-2/",
+  "evidence": "Director / Chelsea Walker",
+  "rule": "K",
+  "lookup_file": "2026-11-25-20.json"
+ },
+ {
   "person": "Stuart Burt",
   "role": "Casting director",
   "production": "Into the Woods (Noël Coward Theatre)",
