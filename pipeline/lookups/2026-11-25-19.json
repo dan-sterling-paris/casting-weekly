@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Pinocchio",
+    "Venue": "Watermill Theatre, Newbury",
+    "Casting Director": "Cydney Beech",
+    "Director": "Indiana Lown-Collins; Elle While",
+    "Writer": "Simon Reade; Music: Chris Larner; Lyrics: Chris Larner",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/"],
+      "Director": ["https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/"],
+      "Writer": ["https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/"]
+    }
+  },
+  {
+    "Production Name": "The Snow Queen",
+    "Venue": "Northern Stage, Newcastle",
+    "Casting Director": "Jenkins Mcshane",
+    "Director": "Natalie Ibu",
+    "Writer": "Laura Lindow; Music: Hatty Carman; Music: Tom Rasmussen; Lyrics: Hatty Carman; Lyrics: Tom Rasmussen",
+    "Sources": {
+      "Venue": ["https://northernstage.co.uk/whats-on/the-snow-queen/", "https://northernstage.co.uk/autumn-2026-at-northern-stage/"],
+      "Casting Director": ["https://northernstage.co.uk/whats-on/the-snow-queen/"],
+      "Director": ["https://northernstage.co.uk/whats-on/the-snow-queen/", "https://northernstage.co.uk/autumn-2026-at-northern-stage/"],
+      "Writer": ["https://northernstage.co.uk/whats-on/the-snow-queen/", "https://northernstage.co.uk/autumn-2026-at-northern-stage/"]
+    }
+  },
+  {
+    "Production Name": "A Christmas Carol",
+    "Venue": "Royal Lyceum Theatre, Edinburgh",
+    "Casting Director": "Unknown",
+    "Director": "James Brining",
+    "Writer": "Deborah McAndrew",
+    "Sources": {
+      "Venue": ["https://theqr.co.uk/2026/06/09/royal-lyceum-theatre-edinburgh-announces-2026-27-season/", "https://www.whatsonstage.com/news/edinburghs-lyceum-announces-2026-27-season_1724169/"],
+      "Casting Director": [],
+      "Director": ["https://theqr.co.uk/2026/06/09/royal-lyceum-theatre-edinburgh-announces-2026-27-season/", "https://www.whatsonstage.com/news/edinburghs-lyceum-announces-2026-27-season_1724169/"],
+      "Writer": ["https://theqr.co.uk/2026/06/09/royal-lyceum-theatre-edinburgh-announces-2026-27-season/"]
+    }
+  }
+]

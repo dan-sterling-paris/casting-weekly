@@ -1268,5 +1268,26 @@
   "final": "https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/",
   "title": "The Calendar Girls musical revival announces casting",
   "file": "70457bc07815f16f.txt"
+ },
+ "https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T17:48:39Z",
+  "final": "https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/",
+  "title": "Pinocchio company confirmed for return to the Watermill Theatre",
+  "file": "a125178c690f64a3.txt"
+ },
+ "https://northernstage.co.uk/whats-on/the-snow-queen/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T17:48:42Z",
+  "final": "https://northernstage.co.uk/whats-on/the-snow-queen/",
+  "title": "The Snow Queen | Northern Stage",
+  "file": "4b42b59ae1a9f340.txt"
+ },
+ "https://theqr.co.uk/2026/06/09/royal-lyceum-theatre-edinburgh-announces-2026-27-season/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T17:48:48Z",
+  "final": "https://theqr.co.uk/2026/06/09/royal-lyceum-theatre-edinburgh-announces-2026-27-season/",
+  "title": "Royal Lyceum Theatre Edinburgh Announces 2026/27 Season",
+  "file": "d1e87bc334e19835.txt"
  }
 }

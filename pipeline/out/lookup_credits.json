@@ -3400,6 +3400,156 @@
   "lookup_file": "2026-11-25-18.json"
  },
  {
+  "person": "Cydney Beech",
+  "role": "Casting director",
+  "production": "Pinocchio (Watermill Theatre)",
+  "venue": "Watermill Theatre, Newbury",
+  "url": "https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/",
+  "evidence": "Casting is by Cydney Beech.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Indiana Lown-Collins",
+  "role": "Director",
+  "production": "Pinocchio (Watermill Theatre)",
+  "venue": "Watermill Theatre, Newbury",
+  "url": "https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/",
+  "evidence": "Co-directors Indiana Lown-Collins and Elle While said: “We first brought you this production in 2024, and we’re so excited to bring it back.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Elle While",
+  "role": "Director",
+  "production": "Pinocchio (Watermill Theatre)",
+  "venue": "Watermill Theatre, Newbury",
+  "url": "https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/",
+  "evidence": "Co-directors Indiana Lown-Collins and Elle While said: “We first brought you this production in 2024, and we’re so excited to bring it back.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Simon Reade",
+  "role": "Writer",
+  "production": "Pinocchio (Watermill Theatre)",
+  "venue": "Watermill Theatre, Newbury",
+  "url": "https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/",
+  "evidence": "Pinocchio is adapted by Simon Reade with music and lyrics by Chris Larner and will be co-directed by Lown-Collins and While.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Chris Larner",
+  "role": "Composer",
+  "production": "Pinocchio (Watermill Theatre)",
+  "venue": "Watermill Theatre, Newbury",
+  "url": "https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/",
+  "evidence": "Pinocchio is adapted by Simon Reade with music and lyrics by Chris Larner and will be co-directed by Lown-Collins and While.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Chris Larner",
+  "role": "Lyricist",
+  "production": "Pinocchio (Watermill Theatre)",
+  "venue": "Watermill Theatre, Newbury",
+  "url": "https://www.whatsonstage.com/news/pinocchio-company-confirmed-for-return-to-the-watermill-theatre_1732237/",
+  "evidence": "Pinocchio is adapted by Simon Reade with music and lyrics by Chris Larner and will be co-directed by Lown-Collins and While.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Jenkins Mcshane",
+  "role": "Casting director",
+  "production": "The Snow Queen (Northern Stage)",
+  "venue": "Northern Stage, Newcastle",
+  "url": "https://northernstage.co.uk/whats-on/the-snow-queen/",
+  "evidence": "Casting / Jenkins Mcshane",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Natalie Ibu",
+  "role": "Director",
+  "production": "The Snow Queen (Northern Stage)",
+  "venue": "Northern Stage, Newcastle",
+  "url": "https://northernstage.co.uk/whats-on/the-snow-queen/",
+  "evidence": "Director / Natalie Ibu",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Laura Lindow",
+  "role": "Writer",
+  "production": "The Snow Queen (Northern Stage)",
+  "venue": "Northern Stage, Newcastle",
+  "url": "https://northernstage.co.uk/whats-on/the-snow-queen/",
+  "evidence": "Written by / Laura Lindow",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Hatty Carman",
+  "role": "Composer",
+  "production": "The Snow Queen (Northern Stage)",
+  "venue": "Northern Stage, Newcastle",
+  "url": "https://northernstage.co.uk/whats-on/the-snow-queen/",
+  "evidence": "Music and Lyrics / Hatty Carman, Tom Rasmussen",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Tom Rasmussen",
+  "role": "Composer",
+  "production": "The Snow Queen (Northern Stage)",
+  "venue": "Northern Stage, Newcastle",
+  "url": "https://northernstage.co.uk/whats-on/the-snow-queen/",
+  "evidence": "Music and Lyrics / Hatty Carman, Tom Rasmussen",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Hatty Carman",
+  "role": "Lyricist",
+  "production": "The Snow Queen (Northern Stage)",
+  "venue": "Northern Stage, Newcastle",
+  "url": "https://northernstage.co.uk/whats-on/the-snow-queen/",
+  "evidence": "Music and Lyrics / Hatty Carman, Tom Rasmussen",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Tom Rasmussen",
+  "role": "Lyricist",
+  "production": "The Snow Queen (Northern Stage)",
+  "venue": "Northern Stage, Newcastle",
+  "url": "https://northernstage.co.uk/whats-on/the-snow-queen/",
+  "evidence": "Music and Lyrics / Hatty Carman, Tom Rasmussen",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "James Brining",
+  "role": "Director",
+  "production": "A Christmas Carol (Royal Lyceum Theatre)",
+  "venue": "Royal Lyceum Theatre, Edinburgh",
+  "url": "https://theqr.co.uk/2026/06/09/royal-lyceum-theatre-edinburgh-announces-2026-27-season/",
+  "evidence": "Launching the new programme, Artistic Director James Brining promised a season of “epic tales that take us from the darkest corners of human experience to stories of intense joy, love and redemption.” He added, “These are stories which reflect our world and how we want to share it with the people around us.”",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
+  "person": "Deborah McAndrew",
+  "role": "Writer",
+  "production": "A Christmas Carol (Royal Lyceum Theatre)",
+  "venue": "Royal Lyceum Theatre, Edinburgh",
+  "url": "https://theqr.co.uk/2026/06/09/royal-lyceum-theatre-edinburgh-announces-2026-27-season/",
+  "evidence": "Deborah McAndrew (Adaptor), James Brining (Director).",
+  "rule": "K",
+  "lookup_file": "2026-11-25-19.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",
