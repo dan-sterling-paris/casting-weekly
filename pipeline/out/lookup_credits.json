@@ -2792,6 +2792,136 @@
  {
   "person": "Pearson Casting",
   "role": "Casting director",
+  "production": "SIX Outdoor – The Royal Homecoming Tour",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/",
+  "evidence": "Orchestrations are by Tom Curran, musical supervision is by Joe Beighton and casting is by Pearson Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Lucy Moss",
+  "role": "Director",
+  "production": "SIX Outdoor – The Royal Homecoming Tour",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/",
+  "evidence": "Six is written by Toby Marlow and Lucy Moss and directed by Moss and Jamie Armitage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Jamie Armitage",
+  "role": "Director",
+  "production": "SIX Outdoor – The Royal Homecoming Tour",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/",
+  "evidence": "Six is written by Toby Marlow and Lucy Moss and directed by Moss and Jamie Armitage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Toby Marlow",
+  "role": "Writer",
+  "production": "SIX Outdoor – The Royal Homecoming Tour",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/",
+  "evidence": "Six is written by Toby Marlow and Lucy Moss and directed by Moss and Jamie Armitage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Lucy Moss",
+  "role": "Writer",
+  "production": "SIX Outdoor – The Royal Homecoming Tour",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/",
+  "evidence": "Six is written by Toby Marlow and Lucy Moss and directed by Moss and Jamie Armitage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Alastair Coomer",
+  "role": "Casting director",
+  "production": "The Rise and Fall of Little Voice (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/national-theatre-completes-cast-for-the-rise-and-fall-of-little-voice-in-london-and-on-tour_1732323/",
+  "evidence": "… Pyant, sound designer Mike Walker, composer and music director David Shrubsole, movement director Ira Mandela Siobhan, fight and intimacy director Bethan Clark, casting directors Alastair Coomer and Harry McDonald, dialect coach Hazel Holder and voice coach Zoe Littleton.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Harry McDonald",
+  "role": "Casting director",
+  "production": "The Rise and Fall of Little Voice (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/national-theatre-completes-cast-for-the-rise-and-fall-of-little-voice-in-london-and-on-tour_1732323/",
+  "evidence": "…er Mike Walker, composer and music director David Shrubsole, movement director Ira Mandela Siobhan, fight and intimacy director Bethan Clark, casting directors Alastair Coomer and Harry McDonald, dialect coach Hazel Holder and voice coach Zoe Littleton.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Robert Hastie",
+  "role": "Director",
+  "production": "The Rise and Fall of Little Voice (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/national-theatre-completes-cast-for-the-rise-and-fall-of-little-voice-in-london-and-on-tour_1732323/",
+  "evidence": "Exclusive: The National Theatre has announced full casting for Jim Cartwright’s The Rise and Fall of Little Voice, directed by National Theatre deputy artistic director Robert Hastie.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Jim Cartwright",
+  "role": "Writer",
+  "production": "The Rise and Fall of Little Voice (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.londontheatre.co.uk/theatre-news/news/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national",
+  "evidence": "The Rise and Fall of Little Voice was written by Jim Cartwright.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Matt DiCarlo",
+  "role": "Director",
+  "production": "Christmas Carol Goes Wrong (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/christmas-carol-goes-wrong-announces-west-end-and-2027-tour-cast_1731134/",
+  "evidence": "The show is written by original Mischief members Henry Lewis, Sayer and Shields, and directed by Matt DiCarlo.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Henry Lewis",
+  "role": "Writer",
+  "production": "Christmas Carol Goes Wrong (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/",
+  "evidence": "Written by Henry Lewis, Jonathan Sayer and Henry Shields, and directed by Matt DiCarlo, the festive comedy sees the Cornley Amateur Drama Society attempt to stage Charles Dickens’ classic A Christmas Carol, with predictably disastrous results.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Jonathan Sayer",
+  "role": "Writer",
+  "production": "Christmas Carol Goes Wrong (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/",
+  "evidence": "Written by Henry Lewis, Jonathan Sayer and Henry Shields, and directed by Matt DiCarlo, the festive comedy sees the Cornley Amateur Drama Society attempt to stage Charles Dickens’ classic A Christmas Carol, with predictably disastrous results.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Henry Shields",
+  "role": "Writer",
+  "production": "Christmas Carol Goes Wrong (UK tour)",
+  "venue": "UK tour",
+  "url": "https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/",
+  "evidence": "Written by Henry Lewis, Jonathan Sayer and Henry Shields, and directed by Matt DiCarlo, the festive comedy sees the Cornley Amateur Drama Society attempt to stage Charles Dickens’ classic A Christmas Carol, with predictably disastrous results.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-13.json"
+ },
+ {
+  "person": "Pearson Casting",
+  "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",
   "venue": "Fortune Theatre, London",
   "url": "https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/",

@@ -1030,5 +1030,54 @@
   "final": "https://theatreweekly.com/only-fools-and-horses-the-musical-announces-major-uk-and-ireland-tour-for-2027-28/",
   "title": "Only Fools and Horses The Musical announces major UK and Ireland tour for 2027-28 - Theatre Weekly",
   "file": "c36d0d24dec19bb4.txt"
+ },
+ "https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T11:48:21Z",
+  "final": "https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/",
+  "title": "Six to embark on first ever outdoor tour",
+  "file": "5d895ee67769d556.txt"
+ },
+ "https://theatreweekly.com/six-the-musical-announces-first-ever-outdoor-tour-to-celebrate-tenth-anniversary/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T11:48:26Z",
+  "final": "https://theatreweekly.com/six-the-musical-announces-first-ever-outdoor-tour-to-celebrate-tenth-anniversary/",
+  "title": "SIX The Musical announces first-ever outdoor tour to celebrate tenth anniversary - Theatre Weekly",
+  "file": "47ec6c423f5ad58b.txt"
+ },
+ "https://theatreweekly.com/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national-theatre-and-2027-uk-tour/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T11:48:28Z",
+  "final": "https://theatreweekly.com/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national-theatre-and-2027-uk-tour/",
+  "title": "Full Casting Announced for The Rise and Fall of Little Voice at the National Theatre and 2027 UK Tour - Theatre Weekly",
+  "file": "01a4ef87129b187c.txt"
+ },
+ "https://www.whatsonstage.com/news/national-theatre-completes-cast-for-the-rise-and-fall-of-little-voice-in-london-and-on-tour_1732323/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T11:48:29Z",
+  "final": "https://www.whatsonstage.com/news/national-theatre-completes-cast-for-the-rise-and-fall-of-little-voice-in-london-and-on-tour_1732323/",
+  "title": "National Theatre completes cast for The Rise and Fall of Little Voice in London and on tour",
+  "file": "00902895b6fcb87b.txt"
+ },
+ "https://www.londontheatre.co.uk/theatre-news/news/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national": {
+  "status": 200,
+  "fetched_at": "2026-11-25T11:48:32Z",
+  "final": "https://www.londontheatre.co.uk/theatre-news/news/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national",
+  "title": "Full casting announced for 'The Rise and Fall of Little Voice' at the National | London Theatre",
+  "file": "5eade3a9a1cef85a.txt"
+ },
+ "https://www.whatsonstage.com/news/christmas-carol-goes-wrong-announces-west-end-and-2027-tour-cast_1731134/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T11:48:32Z",
+  "final": "https://www.whatsonstage.com/news/christmas-carol-goes-wrong-announces-west-end-and-2027-tour-cast_1731134/",
+  "title": "Christmas Carol Goes Wrong announces West End and 2027 tour cast",
+  "file": "53a95d1b15b047ce.txt"
+ },
+ "https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T11:48:34Z",
+  "final": "https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/",
+  "title": "Mischief announces West End and UK tour cast for Christmas Carol Goes Wrong - Theatre Weekly",
+  "file": "4560127de8762d25.txt"
  }
 }

@@ -77,3 +77,6 @@ Hadestown, 2027 UK and Ireland Tour  →  2026-11-25-11.json
 Just For One Day The Live Aid Musical, 2027 UK Tour  →  2026-11-25-12.json
 Starlight Express, 2027 UK Tour  →  2026-11-25-12.json
 Only Fools and Horses The Musical, 2027 UK Tour  →  2026-11-25-12.json
+SIX, 2027 UK Outdoor Tour  →  2026-11-25-13.json
+The Rise and Fall of Little Voice, National Theatre UK Tour  →  2026-11-25-13.json
+A Christmas Carol Goes Wrong, 2027 UK Tour  →  2026-11-25-13.json
