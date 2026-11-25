@@ -1401,5 +1401,33 @@
   "final": "https://nottinghamplayhouse.co.uk/events/punch-on-tour/",
   "title": "Punch On Tour - Nottingham Playhouse",
   "file": "5a6f02d50279843c.txt"
+ },
+ "https://www.whatsonstage.com/news/new-vic-theatre-unveils-2027-spring-season_1736395/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T21:49:04Z",
+  "final": "https://www.whatsonstage.com/news/new-vic-theatre-unveils-2027-spring-season_1736395/",
+  "title": "New Vic Theatre unveils 2027 spring season",
+  "file": "d405415f34103301.txt"
+ },
+ "https://theatreweekly.com/new-vic-theatre-unveils-spring-2027-season-featuring-the-39-steps-folk-and-the-unfriend/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T21:49:06Z",
+  "final": "https://theatreweekly.com/new-vic-theatre-unveils-spring-2027-season-featuring-the-39-steps-folk-and-the-unfriend/",
+  "title": "One moment, please...Loader",
+  "file": "c19a192dff1f2561.txt"
+ },
+ "https://www.whatsonstage.com/news/dundee-rep-and-scottish-dance-theatre-announce-2027-season-including-stanley-baxter-play_1737529/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T21:49:07Z",
+  "final": "https://www.whatsonstage.com/news/dundee-rep-and-scottish-dance-theatre-announce-2027-season-including-stanley-baxter-play_1737529/",
+  "title": "Dundee Rep and Scottish Dance Theatre announce 2027 season including Stanley Baxter play",
+  "file": "40d5495f1f01bcec.txt"
+ },
+ "https://everyonetheatres.com/whats-on/snow-white/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T21:49:10Z",
+  "final": "https://everyonetheatres.com/whats-on/snow-white/",
+  "title": "Snow White | Everyone Theatres",
+  "file": "39becb1da96f98e4.txt"
  }
 }
