@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Stranger Things: The First Shadow",
+    "Venue": "Phoenix Theatre, London",
+    "Casting Director": "Jessica Ronane Casting CDG; Jim Carnahan",
+    "Director": "Stephen Daldry; Justin Martin",
+    "Writer": "Written by Kate Trefry, from an original story by the Duffer Brothers, Jack Thorne and Kate Trefry",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667", "https://www.londontheatre.co.uk/theatre-news/news/new-casting-revealed-for-stranger-things-the-first-shadow"],
+      "Casting Director": ["https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667", "https://playbill.com/article/londons-stranger-things-finds-full-new-company-joining-in-november"],
+      "Director": ["https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667", "https://www.londontheatre.co.uk/theatre-news/news/new-casting-revealed-for-stranger-things-the-first-shadow"],
+      "Writer": ["https://www.whatsonstage.com/news/stranger-things-the-first-shadow-confirms-full-company_1695667", "https://www.londontheatre.co.uk/theatre-news/news/new-casting-revealed-for-stranger-things-the-first-shadow", "https://playbill.com/article/londons-stranger-things-finds-full-new-company-joining-in-november"]
+    }
+  },
+  {
+    "Production Name": "Jesus Christ Superstar",
+    "Venue": "Theatre Royal Drury Lane, London",
+    "Casting Director": "Grindrod Burton Casting",
+    "Director": "Tim Sheader",
+    "Writer": "Tim Rice; Andrew Lloyd Webber",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/", "https://www.londontheatredirect.com/news/jesus-christ-superstar-to-transfer-to-theatre-royal-drury-lane-following-summer-run-at-the-london-palladium"],
+      "Casting Director": ["https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/"],
+      "Director": ["https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/"],
+      "Writer": ["https://www.whatsonstage.com/news/full-cast-for-jesus-christ-superstar-at-theatre-royal-drury-lane-confirmed-with-on-stage-ticket-plans-revealed_1731065/", "https://www.londontheatredirect.com/news/jesus-christ-superstar-to-transfer-to-theatre-royal-drury-lane-following-summer-run-at-the-london-palladium"]
+    }
+  },
+  {
+    "Production Name": "The Standard of Living",
+    "Venue": "Theatre Royal Haymarket, London",
+    "Casting Director": "Robert Sterne CDG",
+    "Director": "Nicholas Hytner",
+    "Writer": "James Graham",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/the-standard-of-living-111474083/", "https://www.whatsonstage.com/news/james-grahams-new-play-the-standard-of-living-confirms-west-end-cast_1728732/"],
+      "Casting Director": ["https://officiallondontheatre.com/show/the-standard-of-living-111474083/", "https://www.whatsonstage.com/news/james-grahams-new-play-the-standard-of-living-confirms-west-end-cast_1728732/", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-the-standard-of-living"],
+      "Director": ["https://officiallondontheatre.com/show/the-standard-of-living-111474083/", "https://www.whatsonstage.com/news/james-grahams-new-play-the-standard-of-living-confirms-west-end-cast_1728732/", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-the-standard-of-living"],
+      "Writer": ["https://officiallondontheatre.com/show/the-standard-of-living-111474083/"]
+    }
+  }
+]

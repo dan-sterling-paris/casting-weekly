@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Oh, Mary!",
+    "Venue": "Trafalgar Theatre, London",
+    "Casting Director": "Stuart Burt",
+    "Director": "Sam Pinkleton",
+    "Writer": "Cole Escola",
+    "Sources": {
+      "Venue": ["https://www.londontheatre.co.uk/theatre-news/news/oh-mary-sets-full-west-end-cast-joining-lolly-adefope", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-summer-performances-of-oh-mary"],
+      "Casting Director": ["https://www.whatsonstage.com/news/oh-mary-announces-full-cast-joining-lolly-adefope_1731352/"],
+      "Director": ["https://www.whatsonstage.com/news/oh-mary-announces-full-cast-joining-lolly-adefope_1731352/", "https://www.londontheatre.co.uk/theatre-news/news/oh-mary-sets-full-west-end-cast-joining-lolly-adefope"],
+      "Writer": ["https://www.londontheatre.co.uk/theatre-news/news/oh-mary-sets-full-west-end-cast-joining-lolly-adefope"]
+    }
+  },
+  {
+    "Production Name": "Hay Fever",
+    "Venue": "Wyndham's Theatre, London",
+    "Casting Director": "Jim Carnahan CSA; Liz Fraser CSA",
+    "Director": "Emily Burns",
+    "Writer": "Noël Coward",
+    "Sources": {
+      "Venue": ["https://officiallondontheatre.com/show/hay-fever-111474197/", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-hay-fever"],
+      "Casting Director": ["https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-hay-fever", "https://www.whatsonstage.com/news/hay-fever-with-richard-e-grant-and-christine-baranski-unveils-star-studded-full-company_1729889/"],
+      "Director": ["https://officiallondontheatre.com/show/hay-fever-111474197/", "https://www.londonboxoffice.co.uk/news/post/full-cast-announced-for-hay-fever", "https://www.whatsonstage.com/news/hay-fever-with-richard-e-grant-and-christine-baranski-unveils-star-studded-full-company_1729889/"],
+      "Writer": ["https://officiallondontheatre.com/show/hay-fever-111474197/"]
+    }
+  },
+  {
+    "Production Name": "Who's Afraid of Virginia Woolf?",
+    "Venue": "@sohoplace, London",
+    "Casting Director": "Jim Carnahan CSA; Liz Fraser CSA",
+    "Director": "Marianne Elliott",
+    "Writer": "Edward Albee",
+    "Sources": {
+      "Venue": ["https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F", "https://www.londonboxoffice.co.uk/news/post/further-casting-and-rehearsal-images-for-whos-afraid-of-virginia-woolf"],
+      "Casting Director": ["https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F", "https://www.whatsonstage.com/news/whos-afraid-of-virginia-woolf-with-gillian-anderson-and-billy-crudup-announces-full-cast-and-front-row-seats_1728781/", "https://www.londonboxoffice.co.uk/news/post/further-casting-and-rehearsal-images-for-whos-afraid-of-virginia-woolf"],
+      "Director": ["https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F", "https://www.whatsonstage.com/news/whos-afraid-of-virginia-woolf-with-gillian-anderson-and-billy-crudup-announces-full-cast-and-front-row-seats_1728781/"],
+      "Writer": ["https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F"]
+    }
+  }
+]

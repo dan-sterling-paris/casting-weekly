@@ -107,5 +107,43 @@
    "https://www.whatsonstage.com/news/full-titanique-company-announced-for-west-end-premiere_1637276",
    "https://www.whatsonstage.com/news/titanique-gives-casting-update-with-myra-dubois-joining-the-show_1725237/"
   ]
+ },
+ {
+  "show": "My Neighbour Totoro",
+  "role": "Writer",
+  "name": "Tom Morton-Smith from the feature animation by Hayao Miyazaki",
+  "reason": "not_on_page",
+  "urls": [
+   "https://totoroshow.com/news/cast-announced-for-the-west-end-transfer/",
+   "https://www.rsc.org.uk/news/my-neighbour-totoro-announces-full-cast-for-west-end-transfer",
+   "https://www.whatsonstage.com/news/my-neighbour-totoro-announces-new-west-end-cast_1713486"
+  ]
+ },
+ {
+  "show": "Harry Potter and the Cursed Child",
+  "role": "Writer",
+  "name": "Jack Thorne, based on an original story by J.K. Rowling, Jack Thorne",
+  "reason": "not_on_page",
+  "urls": [
+   "https://theatreweekly.com/harry-potter-and-the-cursed-child-announces-first-cast-for-reimagined-one-part-production/"
+  ]
+ },
+ {
+  "show": "Who's Afraid of Virginia Woolf?",
+  "role": "Writer",
+  "name": "Edward Albee",
+  "reason": "role_missing",
+  "urls": [
+   "https://www.soniafriedman.com/news/front-row-seats-released-and-full-company-announced-for-edward-albee's-who's-afraid-of-virginia-woolf%3F"
+  ]
+ },
+ {
+  "show": "The Mousetrap",
+  "role": "Writer",
+  "name": "Agatha Christie",
+  "reason": "role_missing",
+  "urls": [
+   "https://www.whatsonstage.com/news/the-mousetrap-announces-new-cast-director-design-and-refurbishment-as-it-prepares-for-its-75th-anniversary_1735704/"
+  ]
  }
 ]

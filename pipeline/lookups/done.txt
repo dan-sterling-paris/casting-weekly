@@ -41,3 +41,21 @@ My Fair Lady, 2026 Chichester Festival Theatre  →  2026-11-17-15.json
 Sinatra The Musical, Aldwych Theatre London  →  2026-11-24-1.json
 Matilda The Musical, London  →  2026-11-24-1.json
 Titanique, Criterion Theatre London  →  2026-11-24-1.json
+The Devil Wears Prada, London  →  2026-11-25-1.json
+The Play That Goes Wrong, London  →  2026-11-25-1.json
+Rent, 2026 Duke of York's Theatre London  →  2026-11-25-1.json
+Operation Mincemeat, London  →  2026-11-25-2.json
+My Neighbour Totoro, Gillian Lynne Theatre London  →  2026-11-25-2.json
+The Cherry Orchard, 2026 Harold Pinter Theatre London  →  2026-11-25-2.json
+Into the Woods, 2026 Noël Coward Theatre London  →  2026-11-25-3.json
+Harry Potter and the Cursed Child, London  →  2026-11-25-3.json
+The Snowman, 2026 Peacock Theatre London  →  2026-11-25-3.json
+Stranger Things: The First Shadow, London  →  2026-11-25-4.json
+Jesus Christ Superstar, 2026 Theatre Royal Drury Lane London  →  2026-11-25-4.json
+The Standard of Living, Theatre Royal Haymarket London  →  2026-11-25-4.json
+Oh, Mary!, London  →  2026-11-25-5.json
+Hay Fever, 2026 Wyndham's Theatre London  →  2026-11-25-5.json
+Who's Afraid of Virginia Woolf?, 2026 @sohoplace London  →  2026-11-25-5.json
+The Mousetrap, London  →  2026-11-25-6.json
+SIX, London  →  2026-11-25-6.json
+Magic Mike Live, London  →  2026-11-25-6.json
