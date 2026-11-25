@@ -50,3 +50,6 @@ The Cherry Orchard, 2026 Harold Pinter Theatre London  →  2026-11-25-2.json
 Into the Woods, 2026 Noël Coward Theatre London  →  2026-11-25-3.json
 Harry Potter and the Cursed Child, London  →  2026-11-25-3.json
 The Snowman, 2026 Peacock Theatre London  →  2026-11-25-3.json
+Stranger Things: The First Shadow, London  →  2026-11-25-4.json
+Jesus Christ Superstar, 2026 Theatre Royal Drury Lane London  →  2026-11-25-4.json
+The Standard of Living, Theatre Royal Haymarket London  →  2026-11-25-4.json
