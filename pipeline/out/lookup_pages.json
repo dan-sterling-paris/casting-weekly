@@ -1163,5 +1163,47 @@
   "final": "https://www.whatsonstage.com/news/victoria-woods-dinnerladies-tour-reveals-full-cast-joining-les-dennis_1734344/",
   "title": "Victoria Wood’s dinnerladies tour reveals full cast joining Les Dennis",
   "file": "cca7047420fc423a.txt"
+ },
+ "https://www.whatsonstage.com/news/jeeves-and-wooster-in-perfect-nonsense-to-tour-in-2027-with-tom-rosenthal-and-adrian-scarborough_1736161/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T14:48:27Z",
+  "final": "https://www.whatsonstage.com/news/jeeves-and-wooster-in-perfect-nonsense-to-tour-in-2027-with-tom-rosenthal-and-adrian-scarborough_1736161/",
+  "title": "Jeeves and Wooster in Perfect Nonsense to tour in 2027 with Tom Rosenthal and Adrian Scarborough",
+  "file": "25c6e9cf455cc99a.txt"
+ },
+ "https://bristololdvic.org.uk/whats-on/cinderella-a-fairytale": {
+  "status": 200,
+  "fetched_at": "2026-11-25T14:48:29Z",
+  "final": "https://bristololdvic.org.uk/whats-on/cinderella-a-fairytale",
+  "title": "CINDERELLA: A FAIRYTALE | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammaildownloadmailfacebookinstagramace-logo",
+  "file": "16842a54a9517890.txt"
+ },
+ "https://bristololdvic.org.uk/blog/christmas-creative-team-announced-for-cinderella-a-fairytale": {
+  "status": 200,
+  "fetched_at": "2026-11-25T14:48:31Z",
+  "final": "https://bristololdvic.org.uk/blog/christmas-creative-team-announced-for-cinderella-a-fairytale",
+  "title": "Christmas Creative Team announced for \"Cinderella:… | Bristol Old Viccross--smallmenuclosebasketaccountsearchsearchfacebookinstagrammailarrow-rightmailfacebookinstagramace-logo",
+  "file": "297afc50db1dea0b.txt"
+ },
+ "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T14:48:31Z",
+  "final": "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/",
+  "title": "Bristol Old Vic reveals full cast for Cinderella: A Fairytale",
+  "file": "33631396ba673108.txt"
+ },
+ "https://www.birmingham-rep.co.uk/whats-on/peter-pan": {
+  "status": 200,
+  "fetched_at": "2026-11-25T14:48:36Z",
+  "final": "https://www.birmingham-rep.co.uk/whats-on/peter-pan/",
+  "title": "Peter Pan | Birmingham Rep",
+  "file": "6bb99575aa08849b.txt"
+ },
+ "https://www.whatsonlive.co.uk/birmingham/news/birmingham-rep-announces-full-casting-for-peter-pan/66091": {
+  "status": 200,
+  "fetched_at": "2026-11-25T14:48:39Z",
+  "final": "https://www.whatsonlive.co.uk/birmingham/news/birmingham-rep-announces-full-casting-for-peter-pan/66091",
+  "title": "Birmingham Rep announces full casting for Peter Pan",
+  "file": "7a81374d32aa993b.txt"
  }
 }

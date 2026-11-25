@@ -86,3 +86,6 @@ Agatha Christie's The Hollow, 2027 UK Tour  →  2026-11-25-14.json
 Before I Go To Sleep, 2027 UK Tour  →  2026-11-25-15.json
 The Mousetrap, 2027 UK Tour  →  2026-11-25-15.json
 Victoria Wood's dinnerladies, 2027 UK Tour  →  2026-11-25-15.json
+Jeeves and Wooster in Perfect Nonsense, 2027 UK Tour  →  2026-11-25-16.json
+Cinderella: A Fairytale, 2026 Bristol Old Vic  →  2026-11-25-16.json
+Peter Pan, 2026 Birmingham Rep  →  2026-11-25-16.json

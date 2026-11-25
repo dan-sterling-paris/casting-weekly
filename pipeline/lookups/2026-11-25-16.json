@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Jeeves and Wooster in Perfect Nonsense",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Phillip Breen",
+    "Writer": "Robert Goodale; David Goodale",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/jeeves-and-wooster-in-perfect-nonsense-to-tour-in-2027-with-tom-rosenthal-and-adrian-scarborough_1736161/", "https://theatreweekly.com/tom-rosenthal-and-adrian-scarborough-to-star-in-2027-uk-tour-of-jeeves-and-wooster-in-perfect-nonsense/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/jeeves-and-wooster-in-perfect-nonsense-to-tour-in-2027-with-tom-rosenthal-and-adrian-scarborough_1736161/", "https://theatreweekly.com/tom-rosenthal-and-adrian-scarborough-to-star-in-2027-uk-tour-of-jeeves-and-wooster-in-perfect-nonsense/"],
+      "Writer": ["https://www.whatsonstage.com/news/jeeves-and-wooster-in-perfect-nonsense-to-tour-in-2027-with-tom-rosenthal-and-adrian-scarborough_1736161/", "https://theatreweekly.com/tom-rosenthal-and-adrian-scarborough-to-star-in-2027-uk-tour-of-jeeves-and-wooster-in-perfect-nonsense/"]
+    }
+  },
+  {
+    "Production Name": "Cinderella: A Fairytale",
+    "Venue": "Bristol Old Vic, Bristol",
+    "Casting Director": "Ruby Gilmour",
+    "Director": "Lisa Gregan",
+    "Writer": "Sally Cookson; Adam Peck",
+    "Sources": {
+      "Venue": ["https://bristololdvic.org.uk/whats-on/cinderella-a-fairytale", "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/"],
+      "Casting Director": ["https://bristololdvic.org.uk/blog/christmas-creative-team-announced-for-cinderella-a-fairytale", "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/"],
+      "Director": ["https://bristololdvic.org.uk/whats-on/cinderella-a-fairytale", "https://bristololdvic.org.uk/blog/christmas-creative-team-announced-for-cinderella-a-fairytale", "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/"],
+      "Writer": ["https://bristololdvic.org.uk/whats-on/cinderella-a-fairytale", "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/"]
+    }
+  },
+  {
+    "Production Name": "Peter Pan",
+    "Venue": "Birmingham Repertory Theatre, Birmingham",
+    "Casting Director": "Helena Palmer CDG",
+    "Director": "Joe Murphy",
+    "Writer": "Phil Porter; J M Barrie; Music: Ruth Chan",
+    "Sources": {
+      "Venue": ["https://www.birmingham-rep.co.uk/whats-on/peter-pan", "https://www.whatsonlive.co.uk/birmingham/news/birmingham-rep-announces-full-casting-for-peter-pan/66091"],
+      "Casting Director": ["https://www.birmingham-rep.co.uk/whats-on/peter-pan"],
+      "Director": ["https://www.birmingham-rep.co.uk/whats-on/peter-pan", "https://www.whatsonlive.co.uk/birmingham/news/birmingham-rep-announces-full-casting-for-peter-pan/66091"],
+      "Writer": ["https://www.birmingham-rep.co.uk/whats-on/peter-pan", "https://www.whatsonlive.co.uk/birmingham/news/birmingham-rep-announces-full-casting-for-peter-pan/66091"]
+    }
+  }
+]
