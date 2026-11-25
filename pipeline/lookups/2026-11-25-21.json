@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Guys and Dolls",
+    "Venue": "Royal Lyceum Theatre, Edinburgh",
+    "Casting Director": "Unknown",
+    "Director": "James Brining",
+    "Writer": "Book: Jo Swerling; Book: Abe Burrows; Music: Frank Loesser; Lyrics: Frank Loesser",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/", "https://dundeerep.co.uk/events/guys-and-dolls"],
+      "Writer": ["https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/"]
+    }
+  },
+  {
+    "Production Name": "Little Shop of Horrors",
+    "Venue": "Leeds Playhouse, Leeds",
+    "Casting Director": "Unknown",
+    "Director": "Jamie Sophia Fletcher",
+    "Writer": "Unknown",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/details-revealed-about-new-little-shop-of-horrors-revival-in-leeds_1719993/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/details-revealed-about-new-little-shop-of-horrors-revival-in-leeds_1719993/"],
+      "Writer": []
+    }
+  },
+  {
+    "Production Name": "Never Look Back",
+    "Venue": "Crucible Theatre, Sheffield",
+    "Casting Director": "Unknown",
+    "Director": "Unknown",
+    "Writer": "John Rwothomack",
+    "Sources": {
+      "Venue": ["https://www.afridiziak.com/whatson/never-look-back-by-john-rwothomack/"],
+      "Casting Director": [],
+      "Director": [],
+      "Writer": ["https://www.afridiziak.com/whatson/never-look-back-by-john-rwothomack/"]
+    }
+  }
+]

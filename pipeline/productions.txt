@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-Guys and Dolls, 2027 Royal Lyceum Edinburgh
-Little Shop of Horrors, 2027 Leeds Playhouse
-Never Look Back, 2027 Sheffield Crucible
 12 Letters to My Name, 2027 Sheffield Theatres and Graeae
 A Tale of Two Cities, 2027 Chichester Festival Theatre
 Punch, 2027 Chichester Festival Theatre
