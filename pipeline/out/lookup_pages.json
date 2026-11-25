@@ -1240,5 +1240,33 @@
   "final": "https://www.broadwayworld.com/uk-regional/article/BEAUTY-AND-THE-BEAST-Panto-to-Open-at-Liverpool-Everyman-20261015",
   "title": "BEAUTY AND THE BEAST Panto to Open at Liverpool Everyman | BroadwayWorld",
   "file": "053902a09fd34e30.txt"
+ },
+ "https://www.royalexchange.co.uk/?p=43518": {
+  "status": 200,
+  "fetched_at": "2026-11-25T16:48:23Z",
+  "final": "https://www.royalexchange.co.uk/news/michelle-gomez-and-michael-d-xavier-to-make-royal-exchange-theatre-debut-in-a-little-night-music/",
+  "title": "Michelle Gomez and Michael D. Xavier to make Royal Exchange Theatre debut in A Little Night Music - Royal Exchange Theatre",
+  "file": "3fd5e5f8af816e7c.txt"
+ },
+ "https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T16:48:25Z",
+  "final": "https://www.whatsonstage.com/news/a-little-night-music-revival-announces-company_1731469/",
+  "title": "WhatsOnStage.com",
+  "file": "f531512ca1ad4c2b.txt"
+ },
+ "https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115": {
+  "status": 200,
+  "fetched_at": "2026-11-25T16:48:27Z",
+  "final": "https://www.broadwayworld.com/uk-regional/article/Octagon-Theatre-Bolton-Will-Stage-CINDERELLA-A-FAIRY-TALE-This-Christmas-20260115",
+  "title": "Octagon Theatre Bolton Will Stage CINDERELLA: A FAIRY TALE This Christmas",
+  "file": "8688d18d33a2bbe1.txt"
+ },
+ "https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T16:48:28Z",
+  "final": "https://www.whatsonstage.com/news/the-calendar-girls-musical-revival-announces-casting_1719834/",
+  "title": "The Calendar Girls musical revival announces casting",
+  "file": "70457bc07815f16f.txt"
  }
 }
