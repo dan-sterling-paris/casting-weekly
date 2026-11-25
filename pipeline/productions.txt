@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-Pinocchio, 2026 Watermill Theatre Newbury
-The Snow Queen, 2026 Northern Stage Newcastle
-A Christmas Carol, 2026 Royal Lyceum Edinburgh
 The Three Musketeers, 2026 RSC Stratford-upon-Avon
 Middlemarch, 2026 RSC Stratford-upon-Avon
 Romeo and Juliet, 2027 English Touring Theatre with Royal Lyceum, Leeds Playhouse and Nottingham Playhouse

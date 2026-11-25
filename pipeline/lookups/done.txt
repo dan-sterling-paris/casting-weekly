@@ -95,3 +95,6 @@ Beauty and the Beast, 2026 Liverpool Everyman  →  2026-11-25-17.json
 A Little Night Music, 2026 Royal Exchange Manchester  →  2026-11-25-18.json
 Cinderella: A Fairy Tale, 2026 Octagon Bolton  →  2026-11-25-18.json
 Calendar Girls The Musical, 2026 Octagon Bolton and New Wolsey Ipswich  →  2026-11-25-18.json
+Pinocchio, 2026 Watermill Theatre Newbury  →  2026-11-25-19.json
+The Snow Queen, 2026 Northern Stage Newcastle  →  2026-11-25-19.json
+A Christmas Carol, 2026 Royal Lyceum Edinburgh  →  2026-11-25-19.json
