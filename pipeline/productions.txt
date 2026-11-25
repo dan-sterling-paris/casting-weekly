@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-The Three Musketeers, 2026 RSC Stratford-upon-Avon
-Middlemarch, 2026 RSC Stratford-upon-Avon
-Romeo and Juliet, 2027 English Touring Theatre with Royal Lyceum, Leeds Playhouse and Nottingham Playhouse
 Guys and Dolls, 2027 Royal Lyceum Edinburgh
 Little Shop of Horrors, 2027 Leeds Playhouse
 Never Look Back, 2027 Sheffield Crucible

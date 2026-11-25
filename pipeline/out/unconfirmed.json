@@ -151,6 +151,15 @@
   ]
  },
  {
+  "show": "Romeo and Juliet",
+  "role": "Writer",
+  "name": "William Shakespeare",
+  "reason": "role_missing",
+  "urls": [
+   "https://nottinghamplayhouse.co.uk/events/romeo-juliet/"
+  ]
+ },
+ {
   "show": "Harry Potter and the Cursed Child",
   "role": "Writer",
   "name": "Jack Thorne, based on an original story by J.K. Rowling, Jack Thorne",

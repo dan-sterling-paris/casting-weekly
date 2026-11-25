@@ -1289,5 +1289,47 @@
   "final": "https://theqr.co.uk/2026/06/09/royal-lyceum-theatre-edinburgh-announces-2026-27-season/",
   "title": "Royal Lyceum Theatre Edinburgh Announces 2026/27 Season",
   "file": "d1e87bc334e19835.txt"
+ },
+ "https://www.rsc.org.uk/the-three-musketeers": {
+  "status": 200,
+  "fetched_at": "2026-11-25T18:47:54Z",
+  "final": "https://www.rsc.org.uk/the-three-musketeers",
+  "title": "The Three Musketeers | About the Play | Royal Shakespeare Company",
+  "file": "2207bfdc73a6f157.txt"
+ },
+ "https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T18:47:56Z",
+  "final": "https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/",
+  "title": "RSC announces The Three Musketeers’ complete company",
+  "file": "d75fa7651870ea41.txt"
+ },
+ "https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T18:47:58Z",
+  "final": "https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/",
+  "title": "The RSC announces complete casting for Middlemarch",
+  "file": "a7641ec116d83fcf.txt"
+ },
+ "https://ett.org.uk/our-work/romeo-and-juliet-2/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T18:48:01Z",
+  "final": "https://ett.org.uk/our-work/romeo-and-juliet-2/",
+  "title": "Romeo and Juliet - English Touring Theatre",
+  "file": "07e7766740372c53.txt"
+ },
+ "https://www.whatsonstage.com/news/cast-for-romeo-and-juliet-tour-revealed_1737347/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T18:48:02Z",
+  "final": "https://www.whatsonstage.com/news/cast-for-romeo-and-juliet-tour-revealed_1737347/",
+  "title": "Cast for Romeo and Juliet tour revealed",
+  "file": "11a6d34229f0c777.txt"
+ },
+ "https://nottinghamplayhouse.co.uk/events/romeo-juliet/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T18:48:04Z",
+  "final": "https://nottinghamplayhouse.co.uk/events/romeo-juliet/",
+  "title": "Romeo & Juliet - Nottingham Playhouse",
+  "file": "bb3f92382f8d2530.txt"
  }
 }

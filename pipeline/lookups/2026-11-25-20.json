@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "The Three Musketeers",
+    "Venue": "Royal Shakespeare Theatre, Stratford-upon-Avon",
+    "Casting Director": "Matthew Dewsbury CDG",
+    "Director": "Paul Hunter",
+    "Writer": "Paul Hunter",
+    "Sources": {
+      "Venue": ["https://www.rsc.org.uk/the-three-musketeers", "https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/", "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-THREE-MUSKETEERS-at-the-RSC-20261013"],
+      "Director": ["https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/", "https://www.broadwayworld.com/article/Full-Cast-Set-For-THE-THREE-MUSKETEERS-at-the-RSC-20261013"],
+      "Writer": ["https://www.rsc.org.uk/the-three-musketeers", "https://www.whatsonstage.com/news/rsc-announces-the-three-musketeers-complete-company_1734934/"]
+    }
+  },
+  {
+    "Production Name": "Middlemarch",
+    "Venue": "Swan Theatre, Stratford-upon-Avon",
+    "Casting Director": "Charlotte Sutton; Christopher Worrall",
+    "Director": "Jeremy Herrin",
+    "Writer": "Nina Raine",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/"],
+      "Director": ["https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/", "https://www.rsc.org.uk/middlemarch/cast-and-creatives"],
+      "Writer": ["https://www.whatsonstage.com/news/the-rsc-announces-complete-casting-for-middlemarch_1728413/"]
+    }
+  },
+  {
+    "Production Name": "Romeo and Juliet",
+    "Venue": "UK tour (Royal Lyceum Theatre, Edinburgh; Leeds Playhouse; Nottingham Playhouse)",
+    "Casting Director": "Becky Paris",
+    "Director": "Chelsea Walker",
+    "Writer": "William Shakespeare",
+    "Sources": {
+      "Venue": ["https://ett.org.uk/our-work/romeo-and-juliet-2/", "https://www.whatsonstage.com/news/cast-for-romeo-and-juliet-tour-revealed_1737347/"],
+      "Casting Director": ["https://ett.org.uk/our-work/romeo-and-juliet-2/", "https://www.whatsonstage.com/news/cast-for-romeo-and-juliet-tour-revealed_1737347/"],
+      "Director": ["https://ett.org.uk/our-work/romeo-and-juliet-2/", "https://www.whatsonstage.com/news/cast-for-romeo-and-juliet-tour-revealed_1737347/", "https://nottinghamplayhouse.co.uk/events/romeo-juliet/"],
+      "Writer": ["https://nottinghamplayhouse.co.uk/events/romeo-juliet/"]
+    }
+  }
+]
