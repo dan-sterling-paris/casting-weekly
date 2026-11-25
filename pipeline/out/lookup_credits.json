@@ -2590,6 +2590,116 @@
   "lookup_file": "2026-11-25-10.json"
  },
  {
+  "person": "Bob Tomson",
+  "role": "Director",
+  "production": "Blood Brothers (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.kenwright.com/productions/blood-brothers-uk-tour/",
+  "evidence": "Directed by / BOB TOMSON & BILL KENWRIGHT",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Bill Kenwright",
+  "role": "Director",
+  "production": "Blood Brothers (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.kenwright.com/productions/blood-brothers-uk-tour/",
+  "evidence": "Directed by / BOB TOMSON & BILL KENWRIGHT",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Willy Russell",
+  "role": "Writer",
+  "production": "Blood Brothers (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.kenwright.com/productions/blood-brothers-uk-tour/",
+  "evidence": "Written by / WILLY RUSSELL",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Olivia Laydon",
+  "role": "Casting director",
+  "production": "Singin' in the Rain",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/",
+  "evidence": "The creative team also includes associate director Brendan Cull, associate choreographer Kelly Ewins, associate costume designer Karen Large, original fight direction by Malcolm Ranson and casting director Olivia Laydon for Jill Green Casting.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Jonathan Church",
+  "role": "Director",
+  "production": "Singin' in the Rain",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/",
+  "evidence": "Singin’ in the Rain is directed by Jonathan Church, with choreography by Andrew Wright, additional choreography by Jaye Elster, set and costume design by Simon Higlett, lighting design by Tim Mitchell, sound design by Gareth Owen, video design by Ian Galloway, musical supervision by Robert Scott and orchestrations by Larry Wilcox and Larry Blank.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Betty Comden",
+  "role": "Writer",
+  "production": "Singin' in the Rain",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/",
+  "evidence": "The musical has a book by Betty Comden and Adolph Green, with songs by Nacio Herb Brown and Arthur Freed.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Adolph Green",
+  "role": "Writer",
+  "production": "Singin' in the Rain",
+  "venue": "Venue not stated",
+  "url": "https://www.whatsonstage.com/news/singin-in-the-rain-tour-announces-full-company-including-karen-hauer-natalie-anderson-and-more_1732245/",
+  "evidence": "The musical has a book by Betty Comden and Adolph Green, with songs by Nacio Herb Brown and Arthur Freed.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Rachel Chavkin",
+  "role": "Director",
+  "production": "Hadestown (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.broadwayworld.com/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604",
+  "evidence": "…town as an indie theatre project and acclaimed album, before transforming the show into a genre-defying new musical alongside artistic collaborator and Tony Award-winning director Rachel Chavkin.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Anaïs Mitchell",
+  "role": "Writer",
+  "production": "Hadestown (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.broadwayworld.com/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604",
+  "evidence": "Blending American songwriting traditions, from indie folk, to pop, blues, and New Orleans-inspired jazz, Hadestown has music, lyrics, and book by acclaimed Tony and Grammy-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell who originated Hadestown as an indie theatre project and acclaimed album, before transforming the show into a ge…",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Anaïs Mitchell",
+  "role": "Composer",
+  "production": "Hadestown (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.broadwayworld.com/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604",
+  "evidence": "Blending American songwriting traditions, from indie folk, to pop, blues, and New Orleans-inspired jazz, Hadestown has music, lyrics, and book by acclaimed Tony and Grammy-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell who originated Hadestown as an indie theatre project and acclaimed album, before transforming the show into a ge…",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
+  "person": "Anaïs Mitchell",
+  "role": "Lyricist",
+  "production": "Hadestown (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.broadwayworld.com/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604",
+  "evidence": "Blending American songwriting traditions, from indie folk, to pop, blues, and New Orleans-inspired jazz, Hadestown has music, lyrics, and book by acclaimed Tony and Grammy-winning singer-songwriter and BBC Radio 2 Folk Award-winner Anaïs Mitchell who originated Hadestown as an indie theatre project and acclaimed album, before transforming the show into a ge…",
+  "rule": "K",
+  "lookup_file": "2026-11-25-11.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",

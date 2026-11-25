@@ -71,3 +71,6 @@ Mrs. Doubtfire, 2027 UK Tour  →  2026-11-25-9.json
 Dog Man The Musical, 2027 UK Tour  →  2026-11-25-10.json
 Jersey Boys, 2027 UK Tour  →  2026-11-25-10.json
 Everybody's Talking About Jamie, 2027 UK Tour  →  2026-11-25-10.json
+Blood Brothers, 2027 UK Tour  →  2026-11-25-11.json
+Singin' in the Rain, 2027 UK Tour  →  2026-11-25-11.json
+Hadestown, 2027 UK and Ireland Tour  →  2026-11-25-11.json

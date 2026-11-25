@@ -960,5 +960,40 @@
   "final": "https://www.broadwayworld.com/westend/article/Full-Cast-Set-For-MRS-DOUBTFIRE-UK-and-Ireland-Tour-20260527",
   "title": "Full Cast Set For MRS DOUBTFIRE UK and Ireland Tour | BroadwayWorld",
   "file": "09a1eca3ae33c116.txt"
+ },
+ "https://www.kenwright.com/productions/blood-brothers-uk-tour/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T09:47:56Z",
+  "final": "https://www.kenwright.com/productions/blood-brothers-uk-tour/",
+  "title": "Blood Brothers | UK & Ireland Tour – Bill Kenwright Limited",
+  "file": "479412e1d9c3e98d.txt"
+ },
+ "https://www.whatsonstage.com/news/blood-brothers-announces-2027-tour-stops_1729953/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T09:47:58Z",
+  "final": "https://www.whatsonstage.com/news/blood-brothers-announces-2027-tour-stops_1729953/",
+  "title": "WhatsOnStage.com",
+  "file": "edd3e2bb9a3f10dc.txt"
+ },
+ "https://theatreweekly.com/singin-in-the-rain-uk-and-ireland-tour-announces-full-cast-for-2027-run/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T09:48:02Z",
+  "final": "https://theatreweekly.com/singin-in-the-rain-uk-and-ireland-tour-announces-full-cast-for-2027-run/",
+  "title": "Singin’ in the Rain UK and Ireland Tour Announces Full Cast for 2027 Run - Theatre Weekly",
+  "file": "8039b25c2b637ae0.txt"
+ },
+ "https://www.whatsonstage.com/news/hadestown-to-embark-on-first-uk-and-ireland-tour_1723660/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T09:48:03Z",
+  "final": "https://www.whatsonstage.com/news/hadestown-to-embark-on-first-uk-and-ireland-tour_1723660/",
+  "title": "Hadestown to embark on first UK and Ireland tour",
+  "file": "277a46decf6e1b6c.txt"
+ },
+ "https://www.broadwayworld.com/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604": {
+  "status": 200,
+  "fetched_at": "2026-11-25T09:48:05Z",
+  "final": "https://www.broadwayworld.com/westend/article/HADESTOWN-Will-Embark-on-First-Ever-UK-and-Ireland-Tour-in-2027-20260604",
+  "title": "HADESTOWN Will Embark on First-Ever UK and Ireland Tour in 2027 | BroadwayWorld",
+  "file": "d070516b76365a71.txt"
  }
 }

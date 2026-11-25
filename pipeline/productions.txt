@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-Blood Brothers, 2027 UK Tour
-Singin' in the Rain, 2027 UK Tour
-Hadestown, 2027 UK and Ireland Tour
 Just For One Day The Live Aid Musical, 2027 UK Tour
 Starlight Express, 2027 UK Tour
 Only Fools and Horses The Musical, 2027 UK Tour
