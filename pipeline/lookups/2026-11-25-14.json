@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Paranormal Activity",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Ginny Schiller CDG",
+    "Director": "Felix Barrett",
+    "Writer": "Levi Holloway",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/", "https://www.westendbestfriend.co.uk/news/casting-uk-ireland-haunting-paranormal-activity"],
+      "Casting Director": ["https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/", "https://www.westendbestfriend.co.uk/news/casting-uk-ireland-haunting-paranormal-activity", "https://www.broadwayworld.com/article/Cast-Set-For-PARANORMAL-ACTIVITY-UK-and-Ireland-Tour-20260601"],
+      "Director": ["https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/", "https://www.westendbestfriend.co.uk/news/casting-uk-ireland-haunting-paranormal-activity", "https://www.broadwayworld.com/article/Cast-Set-For-PARANORMAL-ACTIVITY-UK-and-Ireland-Tour-20260601"],
+      "Writer": ["https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/", "https://www.westendbestfriend.co.uk/news/casting-uk-ireland-haunting-paranormal-activity", "https://www.broadwayworld.com/article/Cast-Set-For-PARANORMAL-ACTIVITY-UK-and-Ireland-Tour-20260601"]
+    }
+  },
+  {
+    "Production Name": "The Silence of the Lambs",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Harry Blumenau CDG CSA",
+    "Director": "Nikolai Foster",
+    "Writer": "Gina Gionfriddo",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/", "https://theatreweekly.com/full-casting-announced-for-world-stage-premiere-tour-of-the-silence-of-the-lambs/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/", "https://theatreweekly.com/full-casting-announced-for-world-stage-premiere-tour-of-the-silence-of-the-lambs/", "https://www.londonboxoffice.co.uk/news/post/casting-announced-for-silence-of-the-lambs"],
+      "Director": ["https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/", "https://theatreweekly.com/full-casting-announced-for-world-stage-premiere-tour-of-the-silence-of-the-lambs/", "https://www.londonboxoffice.co.uk/news/post/casting-announced-for-silence-of-the-lambs"],
+      "Writer": ["https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/", "https://theatreweekly.com/full-casting-announced-for-world-stage-premiere-tour-of-the-silence-of-the-lambs/", "https://www.londonboxoffice.co.uk/news/post/casting-announced-for-silence-of-the-lambs"]
+    }
+  },
+  {
+    "Production Name": "Agatha Christie's The Hollow",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Ginny Schiller",
+    "Director": "Lucy Bailey",
+    "Writer": "Tamsin Oglesby",
+    "Sources": {
+      "Venue": ["https://www.agathachristie.com/theatre/the-hollow", "https://www.whatsonstage.com/news/poirot-thriller-the-hollow-completes-tour-cast_1731173/"],
+      "Casting Director": ["https://www.agathachristie.com/theatre/the-hollow", "https://www.whatsonstage.com/news/poirot-thriller-the-hollow-completes-tour-cast_1731173/", "https://theatreroyal.com/press/news/poirotcastingannounced/"],
+      "Director": ["https://www.agathachristie.com/theatre/the-hollow", "https://www.whatsonstage.com/news/poirot-thriller-the-hollow-completes-tour-cast_1731173/", "https://theatreroyal.com/press/news/poirotcastingannounced/"],
+      "Writer": ["https://www.agathachristie.com/theatre/the-hollow", "https://www.whatsonstage.com/news/poirot-thriller-the-hollow-completes-tour-cast_1731173/", "https://theatreroyal.com/press/news/poirotcastingannounced/"]
+    }
+  }
+]

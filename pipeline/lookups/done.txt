@@ -80,3 +80,6 @@ Only Fools and Horses The Musical, 2027 UK Tour  →  2026-11-25-12.json
 SIX, 2027 UK Outdoor Tour  →  2026-11-25-13.json
 The Rise and Fall of Little Voice, National Theatre UK Tour  →  2026-11-25-13.json
 A Christmas Carol Goes Wrong, 2027 UK Tour  →  2026-11-25-13.json
+Paranormal Activity, UK Tour  →  2026-11-25-14.json
+The Silence of the Lambs, 2027 UK Tour  →  2026-11-25-14.json
+Agatha Christie's The Hollow, 2027 UK Tour  →  2026-11-25-14.json

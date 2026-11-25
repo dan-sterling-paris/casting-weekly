@@ -2920,6 +2920,86 @@
   "lookup_file": "2026-11-25-13.json"
  },
  {
+  "person": "Ginny Schiller",
+  "role": "Casting director",
+  "production": "Paranormal Activity (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/",
+  "evidence": "The creative team includes Fly Davis as set and costume designer, Chris Fisher providing illusions, Anna Watson as lighting designer, Gareth Fry as sound designer, Luke Halls as video designer, and casting director Ginny Schiller.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-14.json"
+ },
+ {
+  "person": "Felix Barrett",
+  "role": "Director",
+  "production": "Paranormal Activity (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/",
+  "evidence": "The stage show is directed by Felix Barrett, founder and artistic director of Punchdrunk, and written by Levi Holloway, who previously wrote the stage thriller Grey House.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-14.json"
+ },
+ {
+  "person": "Levi Holloway",
+  "role": "Writer",
+  "production": "Paranormal Activity (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/",
+  "evidence": "The stage show is directed by Felix Barrett, founder and artistic director of Punchdrunk, and written by Levi Holloway, who previously wrote the stage thriller Grey House.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-14.json"
+ },
+ {
+  "person": "Harry Blumenau",
+  "role": "Casting director",
+  "production": "The Silence of the Lambs (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/",
+  "evidence": "The tour’s creative team is completed by designer Michael Taylor, sound designer Carolyn Downing, projection designer George Reeve, composer Grant Olding, lighting designer Howard Hudson and casting by Harry Blumenau.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-14.json"
+ },
+ {
+  "person": "Nikolai Foster",
+  "role": "Director",
+  "production": "The Silence of the Lambs (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/",
+  "evidence": "The play is adapted by Gina Gionfriddo from Thomas Harris’s novel and directed by Nikolai Foster.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-14.json"
+ },
+ {
+  "person": "Gina Gionfriddo",
+  "role": "Writer",
+  "production": "The Silence of the Lambs (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/",
+  "evidence": "The play is adapted by Gina Gionfriddo from Thomas Harris’s novel and directed by Nikolai Foster.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-14.json"
+ },
+ {
+  "person": "Ginny Schiller",
+  "role": "Casting director",
+  "production": "Agatha Christie's The Hollow (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.agathachristie.com/theatre/the-hollow",
+  "evidence": "It will be directed by Lucy Bailey, designed by Joanna Parker with lighting designed by Chris Davey and casting by Ginny Schiller.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-14.json"
+ },
+ {
+  "person": "Lucy Bailey",
+  "role": "Director",
+  "production": "Agatha Christie's The Hollow (UK and Ireland tour)",
+  "venue": "UK and Ireland tour",
+  "url": "https://www.agathachristie.com/theatre/the-hollow",
+  "evidence": "Following sell-out tours of And Then There Were None, Murder on the Orient Express and Death on the Nile, producers Fiery Angel and director Lucy Bailey (director of the hit London show Witness for the Prosecution) partner once again to bring one of Agatha Christie’s psychologically complex mysteries to the stage.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-14.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",

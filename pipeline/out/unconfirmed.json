@@ -118,6 +118,17 @@
   ]
  },
  {
+  "show": "Agatha Christie's The Hollow",
+  "role": "Writer",
+  "name": "Tamsin Oglesby",
+  "reason": "role_missing",
+  "urls": [
+   "https://www.agathachristie.com/theatre/the-hollow",
+   "https://www.whatsonstage.com/news/poirot-thriller-the-hollow-completes-tour-cast_1731173/",
+   "https://theatreroyal.com/press/news/poirotcastingannounced/"
+  ]
+ },
+ {
   "show": "My Neighbour Totoro",
   "role": "Writer",
   "name": "Tom Morton-Smith from the feature animation by Hayao Miyazaki",
