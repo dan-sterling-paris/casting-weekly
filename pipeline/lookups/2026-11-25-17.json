@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "The Ugly Duckling",
+    "Venue": "Birmingham Repertory Theatre (The Door), Birmingham",
+    "Casting Director": "Unknown",
+    "Director": "Caroline Wilkes",
+    "Writer": "Katherine Chandler",
+    "Sources": {
+      "Venue": ["https://www.birmingham-rep.co.uk/whats-on/the-ugly-duckling/", "https://www.birmingham-rep.co.uk/news/eleven-new-shows-joining-our-2026-season"],
+      "Casting Director": [],
+      "Director": ["https://www.birmingham-rep.co.uk/whats-on/the-ugly-duckling/", "https://www.birmingham-rep.co.uk/news/eleven-new-shows-joining-our-2026-season"],
+      "Writer": ["https://www.birmingham-rep.co.uk/whats-on/the-ugly-duckling/", "https://www.birmingham-rep.co.uk/news/eleven-new-shows-joining-our-2026-season"]
+    }
+  },
+  {
+    "Production Name": "Aladdin",
+    "Venue": "Nottingham Playhouse, Nottingham",
+    "Casting Director": "Unknown",
+    "Director": "Adam Penford",
+    "Writer": "Adam Penford",
+    "Sources": {
+      "Venue": ["https://nottinghamplayhouse.co.uk/events/aladdin", "https://marketingnottingham.uk/?p=368480"],
+      "Casting Director": [],
+      "Director": ["https://nottinghamplayhouse.co.uk/events/aladdin", "https://marketingnottingham.uk/?p=368480"],
+      "Writer": ["https://nottinghamplayhouse.co.uk/events/aladdin", "https://marketingnottingham.uk/?p=368480"]
+    }
+  },
+  {
+    "Production Name": "Beauty and the Beast",
+    "Venue": "Liverpool Everyman, Liverpool",
+    "Casting Director": "Yvonne Lawlor",
+    "Director": "Nathan Powell",
+    "Writer": "Joe Ward Munrow",
+    "Sources": {
+      "Venue": ["https://everymanplayhouse.com/event/the-rock-n-roll-panto-2026-beauty-and-the-beast/", "https://www.broadwayworld.com/article/BEAUTY-AND-THE-BEAST-Panto-to-Open-at-Liverpool-Everyman-20261015"],
+      "Casting Director": ["https://everymanplayhouse.com/event/the-rock-n-roll-panto-2026-beauty-and-the-beast/"],
+      "Director": ["https://www.broadwayworld.com/article/BEAUTY-AND-THE-BEAST-Panto-to-Open-at-Liverpool-Everyman-20261015", "https://everymanplayhouse.com/event/the-rock-n-roll-panto-2026-beauty-and-the-beast/"],
+      "Writer": ["https://www.broadwayworld.com/article/BEAUTY-AND-THE-BEAST-Panto-to-Open-at-Liverpool-Everyman-20261015", "https://everymanplayhouse.com/event/the-rock-n-roll-panto-2026-beauty-and-the-beast/"]
+    }
+  }
+]

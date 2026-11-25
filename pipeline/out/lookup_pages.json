@@ -1205,5 +1205,40 @@
   "final": "https://www.whatsonlive.co.uk/birmingham/news/birmingham-rep-announces-full-casting-for-peter-pan/66091",
   "title": "Birmingham Rep announces full casting for Peter Pan",
   "file": "7a81374d32aa993b.txt"
+ },
+ "https://www.birmingham-rep.co.uk/whats-on/the-ugly-duckling/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T15:48:08Z",
+  "final": "https://www.birmingham-rep.co.uk/whats-on/the-ugly-duckling/",
+  "title": "The Ugly Duckling | Birmingham Rep",
+  "file": "2f8470a6a4ca0b14.txt"
+ },
+ "https://www.birmingham-rep.co.uk/news/eleven-new-shows-joining-our-2026-season": {
+  "status": 200,
+  "fetched_at": "2026-11-25T15:48:10Z",
+  "final": "https://www.birmingham-rep.co.uk/news/eleven-new-shows-joining-our-2026-season/",
+  "title": "Eleven New Shows joining our 2026 Season | Birmingham Rep",
+  "file": "ac89d68c9a7d1213.txt"
+ },
+ "https://nottinghamplayhouse.co.uk/events/aladdin": {
+  "status": 200,
+  "fetched_at": "2026-11-25T15:48:16Z",
+  "final": "https://nottinghamplayhouse.co.uk/events/aladdin",
+  "title": "Aladdin - Nottingham Playhouse",
+  "file": "612aaac2273a7896.txt"
+ },
+ "https://everymanplayhouse.com/event/the-rock-n-roll-panto-2026-beauty-and-the-beast/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T15:48:19Z",
+  "final": "https://everymanplayhouse.com/event/the-rock-n-roll-panto-2026-beauty-and-the-beast/",
+  "title": "The Rock ‘n’ Roll Panto 2026: Beauty and the Beast - Liverpool Everyman & Playhouse Theatres",
+  "file": "a561d73f8541baef.txt"
+ },
+ "https://www.broadwayworld.com/article/BEAUTY-AND-THE-BEAST-Panto-to-Open-at-Liverpool-Everyman-20261015": {
+  "status": 200,
+  "fetched_at": "2026-11-25T15:48:21Z",
+  "final": "https://www.broadwayworld.com/uk-regional/article/BEAUTY-AND-THE-BEAST-Panto-to-Open-at-Liverpool-Everyman-20261015",
+  "title": "BEAUTY AND THE BEAST Panto to Open at Liverpool Everyman | BroadwayWorld",
+  "file": "053902a09fd34e30.txt"
  }
 }

@@ -3180,6 +3180,76 @@
   "lookup_file": "2026-11-25-16.json"
  },
  {
+  "person": "Caroline Wilkes",
+  "role": "Director",
+  "production": "The Ugly Duckling",
+  "venue": "Venue not stated",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/the-ugly-duckling/",
+  "evidence": "Directed by / Caroline Wilkes",
+  "rule": "K",
+  "lookup_file": "2026-11-25-17.json"
+ },
+ {
+  "person": "Katherine Chandler",
+  "role": "Writer",
+  "production": "The Ugly Duckling",
+  "venue": "Venue not stated",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/the-ugly-duckling/",
+  "evidence": "Adapted by / Katherine Chandler",
+  "rule": "K",
+  "lookup_file": "2026-11-25-17.json"
+ },
+ {
+  "person": "Adam Penford",
+  "role": "Director",
+  "production": "Aladdin (Nottingham Playhouse)",
+  "venue": "Nottingham Playhouse, Nottingham",
+  "url": "https://nottinghamplayhouse.co.uk/events/aladdin",
+  "evidence": "Writer and Director / Adam Penford",
+  "rule": "K",
+  "lookup_file": "2026-11-25-17.json"
+ },
+ {
+  "person": "Adam Penford",
+  "role": "Writer",
+  "production": "Aladdin (Nottingham Playhouse)",
+  "venue": "Nottingham Playhouse, Nottingham",
+  "url": "https://nottinghamplayhouse.co.uk/events/aladdin",
+  "evidence": "Writer and Director / Adam Penford",
+  "rule": "K",
+  "lookup_file": "2026-11-25-17.json"
+ },
+ {
+  "person": "Yvonne Lawlor",
+  "role": "Casting director",
+  "production": "Beauty and the Beast (Liverpool Everyman)",
+  "venue": "Liverpool Everyman, Liverpool",
+  "url": "https://everymanplayhouse.com/event/the-rock-n-roll-panto-2026-beauty-and-the-beast/",
+  "evidence": "Yvonne Lawlor / Casting Director",
+  "rule": "K",
+  "lookup_file": "2026-11-25-17.json"
+ },
+ {
+  "person": "Nathan Powell",
+  "role": "Director",
+  "production": "Beauty and the Beast (Liverpool Everyman)",
+  "venue": "Liverpool Everyman, Liverpool",
+  "url": "https://www.broadwayworld.com/article/BEAUTY-AND-THE-BEAST-Panto-to-Open-at-Liverpool-Everyman-20261015",
+  "evidence": "Nathan Powell directs the annual rock 'n' roll panto, written by award-winning playwright Joe Ward Munrow.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-17.json"
+ },
+ {
+  "person": "Joe Ward Munrow",
+  "role": "Writer",
+  "production": "Beauty and the Beast (Liverpool Everyman)",
+  "venue": "Liverpool Everyman, Liverpool",
+  "url": "https://www.broadwayworld.com/article/BEAUTY-AND-THE-BEAST-Panto-to-Open-at-Liverpool-Everyman-20261015",
+  "evidence": "Nathan Powell directs the annual rock 'n' roll panto, written by award-winning playwright Joe Ward Munrow.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-17.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",
