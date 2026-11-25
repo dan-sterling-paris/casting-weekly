@@ -62,3 +62,6 @@ Magic Mike Live, London  →  2026-11-25-6.json
 Operation Mincemeat, 2026 UK Tour  →  2026-11-25-7.json
 Dirty Dancing, UK Tour  →  2026-11-25-7.json
 Heathers the Musical, 2026 UK Tour  →  2026-11-25-7.json
+Legally Blonde, UK Tour  →  2026-11-25-8.json
+Mean Girls, UK Tour  →  2026-11-25-8.json
+Mamma Mia!, UK Tour  →  2026-11-25-8.json

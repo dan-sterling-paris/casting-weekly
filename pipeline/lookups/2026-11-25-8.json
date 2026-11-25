@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Legally Blonde",
+    "Venue": "UK tour",
+    "Casting Director": "Harry Blumenau CDG CDA",
+    "Director": "Nikolai Foster",
+    "Writer": "Book: Heather Hach; Music: Laurence O'Keefe; Music: Nell Benjamin; Lyrics: Laurence O'Keefe; Lyrics: Nell Benjamin",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805", "https://theatreweekly.com/full-cast-announced-for-legally-blonde-the-musical-uk-and-ireland-tour/"],
+      "Casting Director": ["https://www.londonboxoffice.co.uk/news/post/legally-blonde-the-musical-2026-uk-tour-cast", "https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805", "https://theatreweekly.com/full-cast-announced-for-legally-blonde-the-musical-uk-and-ireland-tour/"],
+      "Director": ["https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805", "https://theatreweekly.com/full-cast-announced-for-legally-blonde-the-musical-uk-and-ireland-tour/"],
+      "Writer": ["https://www.whatsonstage.com/news/legally-blonde-musical-tour-sets-full-cast-joining-amber-davies_1707805"]
+    }
+  },
+  {
+    "Production Name": "Mean Girls",
+    "Venue": "UK tour",
+    "Casting Director": "Natalie Gallacher",
+    "Director": "Casey Nicholaw",
+    "Writer": "Book: Tina Fey; Music: Jeff Richmond; Lyrics: Nell Benjamin",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/", "https://www.londonboxoffice.co.uk/news/post/mean-girls-musical-uk-tour-cast-announced"],
+      "Casting Director": ["https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/"],
+      "Director": ["https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/", "https://www.whatsonstage.com/news/mean-girls-announces-full-casting-for-first-uk-tour_1709215"],
+      "Writer": ["https://www.whatsonstage.com/news/mean-girls-tour-issues-casting-update_1729179/", "https://www.whatsonstage.com/news/mean-girls-announces-full-casting-for-first-uk-tour_1709215"]
+    }
+  },
+  {
+    "Production Name": "Mamma Mia!",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Phyllida Lloyd",
+    "Writer": "Book: Catherine Johnson; Music: Benny Andersson; Music: Björn Ulvaeus; Lyrics: Benny Andersson; Lyrics: Björn Ulvaeus",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/mamma-mia-announces-new-tour-company_1725818/", "https://theatreweekly.com/new-cast-announced-for-mamma-mia-uk-tour-as-hit-musical-continues-through-2027/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/mamma-mia-announces-new-tour-company_1725818/", "https://theatreweekly.com/new-cast-announced-for-mamma-mia-uk-tour-as-hit-musical-continues-through-2027/"],
+      "Writer": ["https://theatreweekly.com/new-cast-announced-for-mamma-mia-uk-tour-as-hit-musical-continues-through-2027/"]
+    }
+  }
+]

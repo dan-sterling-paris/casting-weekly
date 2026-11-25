@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-Legally Blonde, UK Tour
-Mean Girls, UK Tour
-Mamma Mia!, UK Tour
 Back to the Future The Musical, UK Tour
 Annie, 2026 UK Tour
 Mrs. Doubtfire, 2027 UK Tour
