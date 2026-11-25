@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Operation Mincemeat",
+    "Venue": "Fortune Theatre, London",
+    "Casting Director": "Pearson Casting",
+    "Director": "Robert Hastie",
+    "Writer": "David Cumming; Felix Hagan; Natasha Hodgson; Zoë Roberts",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/", "https://www.londonboxoffice.co.uk/news/post/operation-mincemeat-announces-west-end-cast"],
+      "Casting Director": ["https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/", "https://www.westendbestfriend.co.uk/news/full-casting-and-creative-team-announced-for-operation-mincemeat-in-the-west-end"],
+      "Director": ["https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/", "https://www.londonboxoffice.co.uk/news/post/operation-mincemeat-announces-west-end-cast", "https://www.westendbestfriend.co.uk/news/full-casting-and-creative-team-announced-for-operation-mincemeat-in-the-west-end"],
+      "Writer": ["https://www.whatsonstage.com/news/operation-mincemeat-announces-new-west-end-cast_1720713/", "https://www.londonboxoffice.co.uk/news/post/operation-mincemeat-announces-west-end-cast", "https://www.westendbestfriend.co.uk/news/full-casting-and-creative-team-announced-for-operation-mincemeat-in-the-west-end"]
+    }
+  },
+  {
+    "Production Name": "My Neighbour Totoro",
+    "Venue": "Gillian Lynne Theatre, London",
+    "Casting Director": "Hannah Miller CDG",
+    "Director": "Phelim McDermott",
+    "Writer": "Adapted by Tom Morton-Smith from the feature animation by Hayao Miyazaki; Music: Joe Hisaishi",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/my-neighbour-totoro-announces-new-west-end-cast_1713486", "https://www.broadwayworld.com/article/MY-NEIGHBOUR-TOTORO-Reveals-New-Cast-Ahead-of-West-End-Anniversary-20260225"],
+      "Casting Director": ["https://www.broadwayworld.com/article/MY-NEIGHBOUR-TOTORO-Reveals-New-Cast-Ahead-of-West-End-Anniversary-20260225", "https://www.whatsonstage.com/news/my-neighbour-totoro-announces-new-west-end-cast_1713486"],
+      "Director": ["https://totoroshow.com/news/cast-announced-for-the-west-end-transfer/", "https://www.whatsonstage.com/news/my-neighbour-totoro-announces-new-west-end-cast_1713486", "https://www.broadwayworld.com/article/MY-NEIGHBOUR-TOTORO-Reveals-New-Cast-Ahead-of-West-End-Anniversary-20260225"],
+      "Writer": ["https://totoroshow.com/news/cast-announced-for-the-west-end-transfer/", "https://www.rsc.org.uk/news/my-neighbour-totoro-announces-full-cast-for-west-end-transfer", "https://www.whatsonstage.com/news/my-neighbour-totoro-announces-new-west-end-cast_1713486"]
+    }
+  },
+  {
+    "Production Name": "The Cherry Orchard",
+    "Venue": "Harold Pinter Theatre, London",
+    "Casting Director": "Amy Ball CDG",
+    "Director": "Ian Rickson",
+    "Writer": "Adapted by Conor McPherson from the play by Anton Chekhov",
+    "Sources": {
+      "Venue": ["https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas", "https://www.whatsonstage.com/news/west-end-cherry-orchard-adds-more-casting_1729912/"],
+      "Casting Director": ["https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas", "https://www.whatsonstage.com/news/west-end-cherry-orchard-adds-more-casting_1729912/"],
+      "Director": ["https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas", "https://www.whatsonstage.com/news/west-end-cherry-orchard-adds-more-casting_1729912/", "https://www.londontheatre.co.uk/theatre-news/news/everything-you-need-to-know-about-the-cherry-orchard-in-the-west-end"],
+      "Writer": ["https://www.soniafriedman.com/news/sonia-friedman-productions-presents-the-cherry-orchard--starring-the-multi-award-winning-kristin-scott-thomas", "https://www.whatsonstage.com/news/west-end-cherry-orchard-adds-more-casting_1729912/", "https://www.londontheatre.co.uk/theatre-news/news/everything-you-need-to-know-about-the-cherry-orchard-in-the-west-end"]
+    }
+  }
+]
