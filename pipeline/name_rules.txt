@@ -5,3 +5,5 @@
 #   different: <name> | <name>                            never merge these two names
 #   remove: <name>                                        granted takedown: drop the person from the site
 #   remove: <name> | <show>                               granted takedown: drop one credit
+different: Will Burton | Grindrod Burton Casting
+different: Adolph Green | Jill Green Casting
