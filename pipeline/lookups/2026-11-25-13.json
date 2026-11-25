@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "SIX Outdoor – The Royal Homecoming Tour",
+    "Venue": "UK outdoor tour",
+    "Casting Director": "Pearson Casting",
+    "Director": "Lucy Moss; Jamie Armitage",
+    "Writer": "Toby Marlow; Lucy Moss",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/", "https://theatreweekly.com/six-the-musical-announces-first-ever-outdoor-tour-to-celebrate-tenth-anniversary/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/"],
+      "Director": ["https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/"],
+      "Writer": ["https://www.whatsonstage.com/news/six-to-embark-on-first-ever-outdoor-tour_1737749/"]
+    }
+  },
+  {
+    "Production Name": "The Rise and Fall of Little Voice",
+    "Venue": "UK tour",
+    "Casting Director": "Alastair Coomer; Harry McDonald",
+    "Director": "Robert Hastie",
+    "Writer": "Jim Cartwright",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national-theatre-and-2027-uk-tour/", "https://www.whatsonstage.com/news/national-theatre-completes-cast-for-the-rise-and-fall-of-little-voice-in-london-and-on-tour_1732323/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/national-theatre-completes-cast-for-the-rise-and-fall-of-little-voice-in-london-and-on-tour_1732323/"],
+      "Director": ["https://www.whatsonstage.com/news/national-theatre-completes-cast-for-the-rise-and-fall-of-little-voice-in-london-and-on-tour_1732323/", "https://theatreweekly.com/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national-theatre-and-2027-uk-tour/", "https://www.londontheatre.co.uk/theatre-news/news/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national"],
+      "Writer": ["https://www.londontheatre.co.uk/theatre-news/news/full-casting-announced-for-the-rise-and-fall-of-little-voice-at-the-national"]
+    }
+  },
+  {
+    "Production Name": "Christmas Carol Goes Wrong",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Matt DiCarlo",
+    "Writer": "Henry Lewis; Jonathan Sayer; Henry Shields",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/christmas-carol-goes-wrong-announces-west-end-and-2027-tour-cast_1731134/", "https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/christmas-carol-goes-wrong-announces-west-end-and-2027-tour-cast_1731134/", "https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/"],
+      "Writer": ["https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/"]
+    }
+  }
+]
