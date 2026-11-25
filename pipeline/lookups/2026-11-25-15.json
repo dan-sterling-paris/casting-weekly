@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Before I Go To Sleep",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Unknown",
+    "Director": "Loveday Ingram",
+    "Writer": "Rachel Wagstaff",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/giovanna-fletcher-to-star-in-world-stage-premiere-of-before-i-go-to-sleep/", "https://www.broadwayworld.com/article/Giovanna-Fletcher-Will-Star-in-BEFORE-I-GO-TO-SLEEP-UK-and-Ireland-Tour-20260520"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/tom-chambers-joins-giovanna-fletcher-in-before-i-go-to-sleep-tour_1735569/", "https://www.broadwayworld.com/article/Giovanna-Fletcher-Will-Star-in-BEFORE-I-GO-TO-SLEEP-UK-and-Ireland-Tour-20260520", "https://theatreweekly.com/giovanna-fletcher-to-star-in-world-stage-premiere-of-before-i-go-to-sleep/"],
+      "Writer": ["https://www.whatsonstage.com/news/tom-chambers-joins-giovanna-fletcher-in-before-i-go-to-sleep-tour_1735569/", "https://www.broadwayworld.com/article/Giovanna-Fletcher-Will-Star-in-BEFORE-I-GO-TO-SLEEP-UK-and-Ireland-Tour-20260520"]
+    }
+  },
+  {
+    "Production Name": "The Mousetrap",
+    "Venue": "UK and Ireland tour",
+    "Casting Director": "Denise Silvey",
+    "Director": "Hannah Chissick",
+    "Writer": "Unknown",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/principal-cast-announced-for-75th-anniversary-uk-tour-of-the-mousetrap/", "https://www.whatsonstage.com/news/the-mousetrap-announces-further-tour-cast-for-75th-anniversary_1729098/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/the-mousetrap-announces-further-tour-cast-for-75th-anniversary_1729098/", "https://theatreweekly.com/principal-cast-announced-for-75th-anniversary-uk-tour-of-the-mousetrap/", "https://www.westendbestfriend.co.uk/news/principal-cast-75th-anniversary-uk-tour-the-mousetrap"],
+      "Director": ["https://theatreweekly.com/principal-cast-announced-for-75th-anniversary-uk-tour-of-the-mousetrap/", "https://www.whatsonstage.com/news/the-mousetrap-announces-further-tour-cast-for-75th-anniversary_1729098/", "https://www.westendbestfriend.co.uk/news/principal-cast-75th-anniversary-uk-tour-the-mousetrap"],
+      "Writer": []
+    }
+  },
+  {
+    "Production Name": "Victoria Wood's dinnerladies",
+    "Venue": "UK tour",
+    "Casting Director": "Unknown",
+    "Director": "Sean Foley",
+    "Writer": "Beth Kilcoyne; Emma Kilcoyne",
+    "Sources": {
+      "Venue": ["https://theatreweekly.com/full-cast-announced-for-dinnerladies-2027-uk-tour/", "https://www.broadwayworld.com/article/Sue-Cleaver-to-Join-Les-Dennis-in-UK-Tour-of-DINNERLADIES-20261005"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/victoria-woods-dinnerladies-tour-reveals-full-cast-joining-les-dennis_1734344/", "https://theatreweekly.com/full-cast-announced-for-dinnerladies-2027-uk-tour/", "https://www.broadwayworld.com/article/Sue-Cleaver-to-Join-Les-Dennis-in-UK-Tour-of-DINNERLADIES-20261005"],
+      "Writer": ["https://theatreweekly.com/full-cast-announced-for-dinnerladies-2027-uk-tour/", "https://www.broadwayworld.com/article/Sue-Cleaver-to-Join-Les-Dennis-in-UK-Tour-of-DINNERLADIES-20261005", "https://www.whatsonstage.com/news/victoria-woods-dinnerladies-tour-reveals-full-cast-joining-les-dennis_1734344/"]
+    }
+  }
+]
