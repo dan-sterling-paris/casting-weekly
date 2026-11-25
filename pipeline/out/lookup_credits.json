@@ -3760,6 +3760,66 @@
   "lookup_file": "2026-11-25-20.json"
  },
  {
+  "person": "James Brining",
+  "role": "Director",
+  "production": "Guys and Dolls (Royal Lyceum Theatre)",
+  "venue": "Royal Lyceum Theatre, Edinburgh",
+  "url": "https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/",
+  "evidence": "The musical will be directed by artistic director James Brining.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-21.json"
+ },
+ {
+  "person": "Jo Swerling",
+  "role": "Writer",
+  "production": "Guys and Dolls (Royal Lyceum Theatre)",
+  "venue": "Royal Lyceum Theatre, Edinburgh",
+  "url": "https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/",
+  "evidence": "It features music and lyrics by Frank Loesser and a book by Jo Swerling and Abe Burrows, with numbers including “Sit Down You’re Rockin’ the Boat” and “Luck Be A Lady.”",
+  "rule": "K",
+  "lookup_file": "2026-11-25-21.json"
+ },
+ {
+  "person": "Abe Burrows",
+  "role": "Writer",
+  "production": "Guys and Dolls (Royal Lyceum Theatre)",
+  "venue": "Royal Lyceum Theatre, Edinburgh",
+  "url": "https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/",
+  "evidence": "It features music and lyrics by Frank Loesser and a book by Jo Swerling and Abe Burrows, with numbers including “Sit Down You’re Rockin’ the Boat” and “Luck Be A Lady.”",
+  "rule": "K",
+  "lookup_file": "2026-11-25-21.json"
+ },
+ {
+  "person": "Frank Loesser",
+  "role": "Composer",
+  "production": "Guys and Dolls (Royal Lyceum Theatre)",
+  "venue": "Royal Lyceum Theatre, Edinburgh",
+  "url": "https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/",
+  "evidence": "It features music and lyrics by Frank Loesser and a book by Jo Swerling and Abe Burrows, with numbers including “Sit Down You’re Rockin’ the Boat” and “Luck Be A Lady.”",
+  "rule": "K",
+  "lookup_file": "2026-11-25-21.json"
+ },
+ {
+  "person": "Frank Loesser",
+  "role": "Lyricist",
+  "production": "Guys and Dolls (Royal Lyceum Theatre)",
+  "venue": "Royal Lyceum Theatre, Edinburgh",
+  "url": "https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/",
+  "evidence": "It features music and lyrics by Frank Loesser and a book by Jo Swerling and Abe Burrows, with numbers including “Sit Down You’re Rockin’ the Boat” and “Luck Be A Lady.”",
+  "rule": "K",
+  "lookup_file": "2026-11-25-21.json"
+ },
+ {
+  "person": "Jamie Sophia Fletcher",
+  "role": "Director",
+  "production": "Little Shop of Horrors (Leeds Playhouse)",
+  "venue": "Leeds Playhouse, Leeds",
+  "url": "https://www.whatsonstage.com/news/details-revealed-about-new-little-shop-of-horrors-revival-in-leeds_1719993/",
+  "evidence": "As a co-production with Oxford Playhouse, the revival will be directed by Jamie Sophia Fletcher.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-21.json"
+ },
+ {
   "person": "Stuart Burt",
   "role": "Casting director",
   "production": "Into the Woods (Noël Coward Theatre)",

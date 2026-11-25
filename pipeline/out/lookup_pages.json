@@ -1331,5 +1331,26 @@
   "final": "https://nottinghamplayhouse.co.uk/events/romeo-juliet/",
   "title": "Romeo & Juliet - Nottingham Playhouse",
   "file": "bb3f92382f8d2530.txt"
+ },
+ "https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T19:47:59Z",
+  "final": "https://www.whatsonstage.com/news/guys-and-dolls-revival-to-tour-scotland-next-year_1724175/",
+  "title": "Guys and Dolls revival to tour Scotland next year",
+  "file": "db0793a6105e7830.txt"
+ },
+ "https://www.whatsonstage.com/news/details-revealed-about-new-little-shop-of-horrors-revival-in-leeds_1719993/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T19:48:01Z",
+  "final": "https://www.whatsonstage.com/news/details-revealed-about-new-little-shop-of-horrors-revival-in-leeds_1719993/",
+  "title": "Details revealed about new Little Shop of Horrors revival in Leeds",
+  "file": "06d4850e80d4365a.txt"
+ },
+ "https://www.afridiziak.com/whatson/never-look-back-by-john-rwothomack/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T19:48:04Z",
+  "final": "https://www.afridiziak.com/whatson/never-look-back-by-john-rwothomack/",
+  "title": "Never Look Back By John Rwothomack 27 Feb – 13 Mar 2027 • Afridiziak Theatre News",
+  "file": "f09197629bcc8c3d.txt"
  }
 }

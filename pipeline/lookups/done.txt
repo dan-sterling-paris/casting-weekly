@@ -101,3 +101,6 @@ A Christmas Carol, 2026 Royal Lyceum Edinburgh  →  2026-11-25-19.json
 The Three Musketeers, 2026 RSC Stratford-upon-Avon  →  2026-11-25-20.json
 Middlemarch, 2026 RSC Stratford-upon-Avon  →  2026-11-25-20.json
 Romeo and Juliet, 2027 English Touring Theatre with Royal Lyceum, Leeds Playhouse and Nottingham Playhouse  →  2026-11-25-20.json
+Guys and Dolls, 2027 Royal Lyceum Edinburgh  →  2026-11-25-21.json
+Little Shop of Horrors, 2027 Leeds Playhouse  →  2026-11-25-21.json
+Never Look Back, 2027 Sheffield Crucible  →  2026-11-25-21.json
