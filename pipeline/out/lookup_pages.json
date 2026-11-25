@@ -1079,5 +1079,40 @@
   "final": "https://theatreweekly.com/mischief-announces-west-end-and-uk-tour-cast-for-christmas-carol-goes-wrong/",
   "title": "Mischief announces West End and UK tour cast for Christmas Carol Goes Wrong - Theatre Weekly",
   "file": "4560127de8762d25.txt"
+ },
+ "https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T12:49:08Z",
+  "final": "https://www.whatsonstage.com/news/paranormal-activity-announces-uk-and-ireland-tour-casting_1723351/",
+  "title": "Paranormal Activity announces UK and Ireland tour casting",
+  "file": "894b7eb7872946ec.txt"
+ },
+ "https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T12:49:09Z",
+  "final": "https://www.whatsonstage.com/news/silence-of-the-lambs-stage-play-reveals-full-cast_1726367/",
+  "title": "Silence of the Lambs stage play reveals full cast",
+  "file": "2f495a4553169f9a.txt"
+ },
+ "https://www.agathachristie.com/theatre/the-hollow": {
+  "status": 200,
+  "fetched_at": "2026-11-25T12:49:11Z",
+  "final": "https://www.agathachristie.com/theatre/the-hollow",
+  "title": "The Hollow - Agatha ChristieSearchSearchSearchSearchSearchSearchSearchXInstagram",
+  "file": "7493c274a9954db6.txt"
+ },
+ "https://www.whatsonstage.com/news/poirot-thriller-the-hollow-completes-tour-cast_1731173/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T12:49:12Z",
+  "final": "https://www.whatsonstage.com/news/poirot-thriller-the-hollow-completes-tour-cast_1731173/",
+  "title": "Poirot thriller The Hollow completes tour cast",
+  "file": "c559ae717861011b.txt"
+ },
+ "https://theatreroyal.com/press/news/poirotcastingannounced/": {
+  "status": 200,
+  "fetched_at": "2026-11-25T12:49:15Z",
+  "final": "https://theatreroyal.com/press/news/poirotcastingannounced/",
+  "title": "Poirot casting announced for the UK & Ireland tour of Agatha Christie's The Hollow | Theatre Royal Plymouth",
+  "file": "f65ccd802c004792.txt"
  }
 }
