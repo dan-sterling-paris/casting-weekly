@@ -89,3 +89,6 @@ Victoria Wood's dinnerladies, 2027 UK Tour  →  2026-11-25-15.json
 Jeeves and Wooster in Perfect Nonsense, 2027 UK Tour  →  2026-11-25-16.json
 Cinderella: A Fairytale, 2026 Bristol Old Vic  →  2026-11-25-16.json
 Peter Pan, 2026 Birmingham Rep  →  2026-11-25-16.json
+The Ugly Duckling, 2026 Birmingham Rep  →  2026-11-25-17.json
+Aladdin, 2026 Nottingham Playhouse  →  2026-11-25-17.json
+Beauty and the Beast, 2026 Liverpool Everyman  →  2026-11-25-17.json

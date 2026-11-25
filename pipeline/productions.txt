@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-The Ugly Duckling, 2026 Birmingham Rep
-Aladdin, 2026 Nottingham Playhouse
-Beauty and the Beast, 2026 Liverpool Everyman
 A Little Night Music, 2026 Royal Exchange Manchester
 Cinderella: A Fairy Tale, 2026 Octagon Bolton
 Calendar Girls The Musical, 2026 Octagon Bolton and New Wolsey Ipswich
