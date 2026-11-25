@@ -3890,6 +3890,46 @@
   "lookup_file": "2026-11-25-22.json"
  },
  {
+  "person": "Theresa Heskins",
+  "role": "Director",
+  "production": "The 39 Steps (New Vic Theatre)",
+  "venue": "New Vic Theatre, Newcastle-under-Lyme",
+  "url": "https://www.whatsonstage.com/news/new-vic-theatre-unveils-2027-spring-season_1736395/",
+  "evidence": "Directed by New Vic artistic director Theresa Heskins, the production runs from 20 March to 17 April 2027 and marks the conclusion of the venue’s 40th-anniversary celebrations.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-23.json"
+ },
+ {
+  "person": "Patrick Barlow",
+  "role": "Writer",
+  "production": "The 39 Steps (New Vic Theatre)",
+  "venue": "New Vic Theatre, Newcastle-under-Lyme",
+  "url": "https://www.whatsonstage.com/news/new-vic-theatre-unveils-2027-spring-season_1736395/",
+  "evidence": "The programme opens with Patrick Barlow’s adaptation of The 39 Steps, based on the novel by John Buchan and the Alfred Hitchcock film.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-23.json"
+ },
+ {
+  "person": "Jemima Levick",
+  "role": "Director",
+  "production": "The Ferry (Traverse Theatre)",
+  "venue": "Traverse Theatre, Edinburgh",
+  "url": "https://www.whatsonstage.com/news/dundee-rep-and-scottish-dance-theatre-announce-2027-season-including-stanley-baxter-play_1737529/",
+  "evidence": "The season opens with The Ferry, written by Linda McLean from an original idea by Paul Rattray and directed by Jemima Levick.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-23.json"
+ },
+ {
+  "person": "Linda McLean",
+  "role": "Writer",
+  "production": "The Ferry (Traverse Theatre)",
+  "venue": "Traverse Theatre, Edinburgh",
+  "url": "https://www.whatsonstage.com/news/dundee-rep-and-scottish-dance-theatre-announce-2027-season-including-stanley-baxter-play_1737529/",
+  "evidence": "The season opens with The Ferry, written by Linda McLean from an original idea by Paul Rattray and directed by Jemima Levick.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-23.json"
+ },
+ {
   "person": "Stuart Burt",
   "role": "Casting director",
   "production": "Into the Woods (Noël Coward Theatre)",

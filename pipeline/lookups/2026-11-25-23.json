@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "The 39 Steps",
+    "Venue": "New Vic Theatre, Newcastle-under-Lyme",
+    "Casting Director": "Unknown",
+    "Director": "Theresa Heskins",
+    "Writer": "Patrick Barlow",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/new-vic-theatre-unveils-2027-spring-season_1736395/", "https://theatreweekly.com/new-vic-theatre-unveils-spring-2027-season-featuring-the-39-steps-folk-and-the-unfriend/"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/new-vic-theatre-unveils-2027-spring-season_1736395/", "https://theatreweekly.com/new-vic-theatre-unveils-spring-2027-season-featuring-the-39-steps-folk-and-the-unfriend/"],
+      "Writer": ["https://theatreweekly.com/new-vic-theatre-unveils-spring-2027-season-featuring-the-39-steps-folk-and-the-unfriend/", "https://www.whatsonstage.com/news/new-vic-theatre-unveils-2027-spring-season_1736395/"]
+    }
+  },
+  {
+    "Production Name": "The Ferry",
+    "Venue": "Traverse Theatre, Edinburgh",
+    "Casting Director": "Unknown",
+    "Director": "Jemima Levick",
+    "Writer": "Linda McLean",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/dundee-rep-and-scottish-dance-theatre-announce-2027-season-including-stanley-baxter-play_1737529/", "https://www.broadwayworld.com/article/THE-FERRY-to-Make-World-Premiere-at-Dundee-Rep-Theatre-20260924"],
+      "Casting Director": [],
+      "Director": ["https://www.whatsonstage.com/news/dundee-rep-and-scottish-dance-theatre-announce-2027-season-including-stanley-baxter-play_1737529/", "https://www.broadwayworld.com/article/THE-FERRY-to-Make-World-Premiere-at-Dundee-Rep-Theatre-20260924"],
+      "Writer": ["https://www.whatsonstage.com/news/dundee-rep-and-scottish-dance-theatre-announce-2027-season-including-stanley-baxter-play_1737529/", "https://www.broadwayworld.com/article/THE-FERRY-to-Make-World-Premiere-at-Dundee-Rep-Theatre-20260924"]
+    }
+  },
+  {
+    "Production Name": "Snow White",
+    "Venue": "Gordon Craig Theatre, Stevenage",
+    "Casting Director": "Unknown",
+    "Director": "Unknown",
+    "Writer": "Unknown",
+    "Sources": {
+      "Venue": ["https://everyonetheatres.com/whats-on/snow-white/"],
+      "Casting Director": [],
+      "Director": [],
+      "Writer": []
+    }
+  }
+]

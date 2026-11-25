@@ -107,3 +107,6 @@ Never Look Back, 2027 Sheffield Crucible  →  2026-11-25-21.json
 12 Letters to My Name, 2027 Sheffield Theatres and Graeae  →  2026-11-25-22.json
 A Tale of Two Cities, 2027 Chichester Festival Theatre  →  2026-11-25-22.json
 Punch, 2027 Chichester Festival Theatre  →  2026-11-25-22.json
+The 39 Steps, 2027 New Vic Theatre Newcastle-under-Lyme  →  2026-11-25-23.json
+The Ferry, 2027 Traverse Theatre Edinburgh  →  2026-11-25-23.json
+Snow White, 2026 Gordon Craig Theatre Stevenage  →  2026-11-25-23.json
