@@ -53,3 +53,6 @@ The Snowman, 2026 Peacock Theatre London  →  2026-11-25-3.json
 Stranger Things: The First Shadow, London  →  2026-11-25-4.json
 Jesus Christ Superstar, 2026 Theatre Royal Drury Lane London  →  2026-11-25-4.json
 The Standard of Living, Theatre Royal Haymarket London  →  2026-11-25-4.json
+Oh, Mary!, London  →  2026-11-25-5.json
+Hay Fever, 2026 Wyndham's Theatre London  →  2026-11-25-5.json
+Who's Afraid of Virginia Woolf?, 2026 @sohoplace London  →  2026-11-25-5.json
