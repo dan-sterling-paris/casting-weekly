@@ -68,3 +68,6 @@ Mamma Mia!, UK Tour  →  2026-11-25-8.json
 Back to the Future The Musical, UK Tour  →  2026-11-25-9.json
 Annie, 2026 UK Tour  →  2026-11-25-9.json
 Mrs. Doubtfire, 2027 UK Tour  →  2026-11-25-9.json
+Dog Man The Musical, 2027 UK Tour  →  2026-11-25-10.json
+Jersey Boys, 2027 UK Tour  →  2026-11-25-10.json
+Everybody's Talking About Jamie, 2027 UK Tour  →  2026-11-25-10.json

@@ -1,0 +1,41 @@
+[
+  {
+    "Production Name": "Dog Man The Musical",
+    "Venue": "UK tour",
+    "Casting Director": "Pearson Casting",
+    "Director": "Jen Wineman",
+    "Writer": "Book: Kevin Del Aguila; Music: Brad Alexander; Lyrics: Kevin Del Aguila",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/", "https://theatreweekly.com/cast-announced-for-european-premiere-uk-tour-of-dog-man-the-musical/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/", "https://www.whatsonstage.com/news/dog-man-the-musical-adds-2027-tour-dates-including-london-return_1735505/"],
+      "Director": ["https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/", "https://theatreweekly.com/cast-announced-for-european-premiere-uk-tour-of-dog-man-the-musical/"],
+      "Writer": ["https://www.whatsonstage.com/news/dog-man-the-musical-reveals-tour-cast_1723414/", "https://theatreweekly.com/cast-announced-for-european-premiere-uk-tour-of-dog-man-the-musical/"]
+    }
+  },
+  {
+    "Production Name": "Jersey Boys",
+    "Venue": "UK tour",
+    "Casting Director": "Jill Green CDG",
+    "Director": "Des McAnuff",
+    "Writer": "Book: Marshall Brickman; Book: Rick Elice; Music: Bob Gaudio; Lyrics: Bob Crewe",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/", "https://theatreweekly.com/full-cast-announced-for-jersey-boys-20th-anniversary-uk-and-ireland-tour/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/", "https://www.broadwayworld.com/article/Full-Cast-Set-for-JERSEY-BOYS-20th-Anniversary-UK-and-Ireland-Tour-20260511"],
+      "Director": ["https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/", "https://theatreweekly.com/full-cast-announced-for-jersey-boys-20th-anniversary-uk-and-ireland-tour/", "https://www.broadwayworld.com/article/Full-Cast-Set-for-JERSEY-BOYS-20th-Anniversary-UK-and-Ireland-Tour-20260511"],
+      "Writer": ["https://www.whatsonstage.com/news/exclusive-jersey-boys-announces-anniversary-tour-cast_1720772/", "https://theatreweekly.com/full-cast-announced-for-jersey-boys-20th-anniversary-uk-and-ireland-tour/"]
+    }
+  },
+  {
+    "Production Name": "Everybody's Talking About Jamie",
+    "Venue": "UK tour",
+    "Casting Director": "Will Burton",
+    "Director": "Matt Ryan",
+    "Writer": "Book: Tom MacRae; Music: Dan Gillespie Sells; Lyrics: Tom MacRae",
+    "Sources": {
+      "Venue": ["https://www.whatsonstage.com/news/everybodys-talking-about-jamie-announces-full-tour-company_1732384/", "https://theatreweekly.com/full-cast-announced-for-10th-anniversary-uk-tour-of-everybodys-talking-about-jamie/"],
+      "Casting Director": ["https://www.whatsonstage.com/news/everybodys-talking-about-jamie-announces-full-tour-company_1732384/"],
+      "Director": ["https://www.whatsonstage.com/news/everybodys-talking-about-jamie-announces-full-tour-company_1732384/"],
+      "Writer": ["https://www.whatsonstage.com/news/everybodys-talking-about-jamie-announces-full-tour-company_1732384/"]
+    }
+  }
+]

@@ -1,9 +1,6 @@
 # Queue of shows to look up, one per line. Typed by Dan.
 # Add the venue or year after a comma if the name alone could mean more than one production.
 # Lines disappear once looked up (they move to lookups/done.txt). Empty means nothing is waiting.
-Dog Man The Musical, 2027 UK Tour
-Jersey Boys, 2027 UK Tour
-Everybody's Talking About Jamie, 2027 UK Tour
 Blood Brothers, 2027 UK Tour
 Singin' in the Rain, 2027 UK Tour
 Hadestown, 2027 UK and Ireland Tour
