@@ -3060,6 +3060,126 @@
   "lookup_file": "2026-11-25-15.json"
  },
  {
+  "person": "Phillip Breen",
+  "role": "Director",
+  "production": "Jeeves and Wooster in Perfect Nonsense (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/jeeves-and-wooster-in-perfect-nonsense-to-tour-in-2027-with-tom-rosenthal-and-adrian-scarborough_1736161/",
+  "evidence": "The production is written by Robert Goodale and David Goodale and directed by Phillip Breen.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Robert Goodale",
+  "role": "Writer",
+  "production": "Jeeves and Wooster in Perfect Nonsense (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/jeeves-and-wooster-in-perfect-nonsense-to-tour-in-2027-with-tom-rosenthal-and-adrian-scarborough_1736161/",
+  "evidence": "The production is written by Robert Goodale and David Goodale and directed by Phillip Breen.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "David Goodale",
+  "role": "Writer",
+  "production": "Jeeves and Wooster in Perfect Nonsense (UK tour)",
+  "venue": "UK tour",
+  "url": "https://www.whatsonstage.com/news/jeeves-and-wooster-in-perfect-nonsense-to-tour-in-2027-with-tom-rosenthal-and-adrian-scarborough_1736161/",
+  "evidence": "The production is written by Robert Goodale and David Goodale and directed by Phillip Breen.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Ruby Gilmour",
+  "role": "Casting director",
+  "production": "Cinderella: A Fairytale (Bristol Old Vic)",
+  "venue": "Bristol Old Vic, Bristol",
+  "url": "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/",
+  "evidence": "The production’s composer Alex Heane acts as the on-stage musical director, while the company also features set, costume and puppet designer and puppet director Rachael Canning, movement director Chi-San Howard, lighting designer Mike Gunning, sound designer Elena Peña, casting director Ruby Gilmour and associate director Robert Furey.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Lisa Gregan",
+  "role": "Director",
+  "production": "Cinderella: A Fairytale (Bristol Old Vic)",
+  "venue": "Bristol Old Vic, Bristol",
+  "url": "https://bristololdvic.org.uk/whats-on/cinderella-a-fairytale",
+  "evidence": "By Sally Cookson, Adam Peck and the Original Company | Directed by Lisa Gregan",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Sally Cookson",
+  "role": "Writer",
+  "production": "Cinderella: A Fairytale (Bristol Old Vic)",
+  "venue": "Bristol Old Vic, Bristol",
+  "url": "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/",
+  "evidence": "Written by Sally Cookson, Adam Peck and the original company, the Bristol Old Vic production runs from 27 November 2026 to 2 January 2027.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Adam Peck",
+  "role": "Writer",
+  "production": "Cinderella: A Fairytale (Bristol Old Vic)",
+  "venue": "Bristol Old Vic, Bristol",
+  "url": "https://www.whatsonstage.com/news/bristol-old-vic-reveals-full-cast-for-cinderella-a-fairytale_1727708/",
+  "evidence": "Written by Sally Cookson, Adam Peck and the original company, the Bristol Old Vic production runs from 27 November 2026 to 2 January 2027.",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Helena Palmer",
+  "role": "Casting director",
+  "production": "Peter Pan",
+  "venue": "Venue not stated",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/peter-pan",
+  "evidence": "Casting Director / Helena Palmer CDG",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Joe Murphy",
+  "role": "Director",
+  "production": "Peter Pan",
+  "venue": "Venue not stated",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/peter-pan",
+  "evidence": "Directed by / Joe Murphy",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Phil Porter",
+  "role": "Writer",
+  "production": "Peter Pan",
+  "venue": "Venue not stated",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/peter-pan",
+  "evidence": "Adapted by / Phil Porter",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "J M Barrie",
+  "role": "Writer",
+  "production": "Peter Pan",
+  "venue": "Venue not stated",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/peter-pan",
+  "evidence": "Written by / J M Barrie",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
+  "person": "Ruth Chan",
+  "role": "Composer",
+  "production": "Peter Pan",
+  "venue": "Venue not stated",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/peter-pan",
+  "evidence": "Original Music by / Ruth Chan",
+  "rule": "K",
+  "lookup_file": "2026-11-25-16.json"
+ },
+ {
   "person": "Pearson Casting",
   "role": "Casting director",
   "production": "Operation Mincemeat (Fortune Theatre)",
